@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "@vocab": "http://project-kitchenchef.fr/schema#",
+    "name": "name",
+    "importance": "ratingValue",
+    "display_name": "address",
+    "licence": "license",
+    "display_name": "address",
+    "lat": {
+      "@id": "latitude",
+      "@type": "xsd:float"
+    },
+    "lon": {
+      "@id": "longitude",
+      "@type": "xsd:float"
+    }
+  }
+}

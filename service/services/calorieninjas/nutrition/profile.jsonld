@@ -1,0 +1,18 @@
+{
+  "@context": {
+    "@vocab": "http://project-kitchenchef.fr/schema#",
+    "@base": "http://project-kitchenchef.fr/food/",
+    "name":"@id",
+    "calories": "hasCalories",
+    "serving_size_g": "hasServingSize",
+    "fat_total_g": "hasTotalFat",
+    "fat_saturated_g": "hasSaturatedFat",
+    "protein_g": "hasProtein",
+    "sodium_mg": "hasSodium",
+    "potassium_mg": "hasPotassium",
+    "cholesterol_mg": "hasCholesterol",
+    "carbohydrates_total_g": "hasCarbohydratesTotal",
+    "fiber_g": "hasFiber",
+    "sugar_g": "hasSugar"
+  }
+}
