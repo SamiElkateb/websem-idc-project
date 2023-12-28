@@ -1,0 +1,27 @@
+@prefix :<http://project-kitchenchef.fr/schema#> .
+@prefix food:<http://project-kitchenchef.fr/food/data#> .
+@prefix tmp:<http://project-kitchenchef.fr/tmp-schema#> .
+
+CONSTRUCT {
+  ?newSubj ?pred ?obj
+  ?newSubj :averageWeight [
+          :value ?value ;
+          :unit ?unit ;
+        ]
+} WHERE {
+  ?subj ?pred ?obj .
+  filter(?pred != :averageWeight)
+
+  BIND(STR(?subj) AS ?subjStr)
+  BIND(REPLACE(?subjStr, "%20", "") AS ?noSpace)
+  BIND(REPLACE(?noSpace, "%2A", "") AS ?noStar)
+  BIND(REPLACE(?noStar, "%27", "") AS ?noApostrophe)
+  BIND(REPLACE(REPLACE(?noApostrophe, "%28", ""), "%29", "") AS ?noParenthesis)
+  BIND(IRI(?noParenthesis) AS ?newSubj)
+
+  ?subj :averageWeight ?weight
+  BIND(STRAFTER(STR(?weight), " ") AS ?unit)
+  BIND(STRBEFORE(STR(?weight), " ") AS ?value)
+
+}
+
