@@ -1,3 +1,4 @@
+all: recipes2rdf foodweights2rdf
 recipes2rdf:
 	@./tools/csv2rdf \
 		--mode annotated \

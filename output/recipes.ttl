@@ -2306,7 +2306,7 @@ _:b1239 :name "egg yolks, slightly beaten" ;
   :quantity "3" .
 
 _:b1238 :name "sugar" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cup" .
 
 _:b1599 :name "water chestnuts, sliced" ;
@@ -2353,7 +2353,7 @@ _:b426 :name "flour" ;
   :unit "cups" .
 
 _:b425 :name "salt" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b424 :name "allspice" ;
@@ -2389,15 +2389,15 @@ _:b420 :name "flour" ;
   :unit "cups" .
 
 _:b782 :name "mint apple jelly" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cup" .
 
 _:b781 :name "sugar" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b780 :name "oil" ;
-  :quantity "03-Feb" ;
+  :quantity "2/3" ;
   :unit "cup" .
 
 _:b1585 :name "garlic, crushed or 1/8 tsp. garlic pwder." ;
@@ -2408,7 +2408,7 @@ _:b1584 :name "pepper" ;
   :unit "dash" .
 
 _:b1583 :name "salt" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "tsp" .
 
 _:b1582 :name "vegetable oil" ;
@@ -2416,7 +2416,7 @@ _:b1582 :name "vegetable oil" ;
   :unit "Tbsp" .
 
 _:b1581 :name "oregano" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b419 :name "walnuts" ;
@@ -2439,7 +2439,7 @@ _:b416 :name "vanilla" ;
   :unit "tsp" .
 
 _:b415 :name "butter" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b414 :name "white corn syrup" ;
@@ -2447,11 +2447,11 @@ _:b414 :name "white corn syrup" ;
   :unit "tbsp" .
 
 _:b413 :name "soda water" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b412 :name "buttermilk" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b411 :name "sugar" ;
@@ -2459,7 +2459,7 @@ _:b411 :name "sugar" ;
   :unit "cup" .
 
 _:b410 :name "chopped nuts" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1219 :name "ice water or 7-up" ;
@@ -2467,14 +2467,14 @@ _:b1219 :name "ice water or 7-up" ;
   :unit "Tbsp" .
 
 _:b1218 :name "shortening" ;
-  :quantity "03-Feb" ;
+  :quantity "2/3" ;
   :unit "cup" .
 
 _:b1579 :name "green onions, sliced" ;
   :quantity "4" .
 
 _:b1217 :name "salt" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b1578 :name "fresh mushrooms, sliced" ;
@@ -2501,7 +2501,7 @@ _:b407 :name "buttermilk" ;
   :unit "cup" .
 
 _:b406 :name "baking powder" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b768 :name "Lemon juice" ;
@@ -2517,11 +2517,11 @@ _:b767 :name "lemon peel" ;
   :unit "Tbsp" .
 
 _:b404 :name "salt" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b766 :name "salt" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b403 :name "flour" ;
@@ -2529,7 +2529,7 @@ _:b403 :name "flour" ;
   :unit "cups" .
 
 _:b765 :name "baking powder" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b402 :name "nutmeg, cinnamon, and allspice" ;
@@ -2552,11 +2552,11 @@ _:b400 :name "oil" ;
   :unit "cup" .
 
 _:b762 :name "powdered sugar" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b761 :name "margarine" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b760 :name "flour" ;
@@ -2571,7 +2571,7 @@ _:b1202 :name "pie shell, unbaked" ;
   :quantity "1" .
 
 _:b1201 :name "chunk style peanut butter" ;
-  :quantity "03-Jan" ;
+  :quantity "1/3" ;
   :unit "cup" .
 
 _:b1562 :name "Dream Whip" ;
@@ -2579,7 +2579,7 @@ _:b1562 :name "Dream Whip" ;
   :unit "cups" .
 
 _:b1200 :name "vanilla" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b1561 :name "bananas, sliced" ;
@@ -2621,23 +2621,23 @@ _:b743 :name "fruit jello" ;
   :unit "oz. pkg." .
 
 _:b742 :name "sugar" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b741 :name "margarine" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cup" .
 
 _:b1548 :name "vinegar" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b1547 :name "kelp" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "tsp" .
 
 _:b1546 :name "pepper" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b1545 :name "salt" ;
@@ -2649,11 +2649,11 @@ _:b1544 :name "onion powder" ;
   :unit "tsp" .
 
 _:b1543 :name "oil" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1542 :name "buttermilk" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cup" .
 
 _:b1541 :name "sour cream" ;
@@ -2677,23 +2677,23 @@ _:b734 :name "cold water" ;
   :unit "tbsp" .
 
 _:b733 :name "oil" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b732 :name "honey" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b731 :name "cinnamon" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b730 :name "shortening" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1539 :name "horseradish" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1893 :name "lettuce, shredded" ;
@@ -2706,7 +2706,7 @@ _:b1891 :name "corn tortillas" ;
   :quantity "3" .
 
 _:b729 :name "brown sugar" ;
-  :quantity "03-Jan" ;
+  :quantity "1/3" ;
   :unit "cup" .
 
 _:b1890 :name "chopped green chiles" ;
@@ -2714,7 +2714,7 @@ _:b1890 :name "chopped green chiles" ;
   :unit "4 oz. can" .
 
 _:b728 :name "whole wheat flour" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b722 :name "flour" ;
@@ -2722,7 +2722,7 @@ _:b722 :name "flour" ;
   :unit "cups" .
 
 _:b1889 :name "tomato, chopped" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1888 :name "water" ;
@@ -2754,7 +2754,7 @@ _:b1523 :name "cream cheese" ;
   :unit "oz" .
 
 _:b1884 :name "ground cumin" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b1522 :name "crushed pineapple" ;
@@ -2762,7 +2762,7 @@ _:b1522 :name "crushed pineapple" ;
   :unit "cup" .
 
 _:b1883 :name "onion, chopped" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1521 :name "pineapple juice + water" ;
@@ -2803,11 +2803,11 @@ _:b1871 :name "stewed tomatoes" ;
   :unit "large can" .
 
 _:b709 :name "cloves" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b1870 :name "cabbage, chopped" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "head" .
 
 _:b708 :name "cinnamon" ;
@@ -2819,7 +2819,7 @@ _:b707 :name "ginger" ;
   :unit "tsp" .
 
 _:b706 :name "molasses" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b705 :name "egg" ;
@@ -2830,7 +2830,7 @@ _:b704 :name "brown sugar" ;
   :unit "cup" .
 
 _:b703 :name "shortening" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cup" .
 
 _:b1869 :name "zucchini, diced" ;
@@ -2857,7 +2857,7 @@ _:b1866 :name "stalks of celery, chopped" ;
   :quantity "3" .
 
 _:b1504 :name "red onion, chopped" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1865 :name "carrots, diced" ;
@@ -2872,7 +2872,7 @@ _:b1864 :name "onion, chopped" ;
   :unit "large" .
 
 _:b1502 :name "salad oil" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cup" .
 
 _:b1863 :name "potatoes, cubed" ;
@@ -2887,7 +2887,7 @@ _:b1862 :name "hamburger" ;
   :unit "pound" .
 
 _:b1861 :name "instant rice" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1860 :name "tomato sauce" ;
@@ -2934,26 +2934,26 @@ _:b1850 :name "chili powder" ;
   :unit "tsp" .
 
 _:b1849 :name "cumin" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b1848 :name "oregano" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b1847 :name "garlic powder" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b1846 :name "onion, finely chopped" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b1845 :name "egg" ;
   :quantity "1" .
 
 _:b1844 :name "minute rice" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b1843 :name "hamburger" ;
@@ -2963,7 +2963,7 @@ _:b1843 :name "hamburger" ;
 _:b1832 :name "salt, to taste" .
 
 _:b1831 :name "cabbage" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "head" .
 
 _:b1830 :name "tomatoes, crushed" ;
@@ -3024,11 +3024,11 @@ _:b385 :name "nutmeg" ;
   :unit "tsp" .
 
 _:b384 :name "sherry cooking wine" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cup" .
 
 _:b383 :name "oil" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cup" .
 
 _:b382 :name "eggs" ;
@@ -3043,7 +3043,7 @@ _:b380 :name "yellow cake mix" ;
   :unit "pkg" .
 
 _:b1183 :name "chunk style peanut buter" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1182 :name "vanilla ice cream" ;
@@ -3051,23 +3051,23 @@ _:b1182 :name "vanilla ice cream" ;
   :unit "quart" .
 
 _:b1181 :name "whipped cream or cool whip" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1180 :name "margarine, melted" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b372 :name "heavy cream" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b371 :name "lemon juice" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b8 :name "chopped nuts" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b370 :name "grated lemon rind" ;
@@ -3087,7 +3087,7 @@ _:b5 :name "soda water" ;
   :unit "tsp" .
 
 _:b4 :name "sour milk" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b3 :quantity "pinch" ;
@@ -3101,11 +3101,11 @@ _:b1 :name "sugar" ;
   :unit "cups" .
 
 _:b0 :name "shortening" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1179 :name "sugar" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b1178 :name "graham cracker crumbs, 18 squares" ;
@@ -3117,18 +3117,18 @@ _:b369 :name "cottage cheese" ;
   :unit "pound" .
 
 _:b368 :name "milk" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b367 :name "salt" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b366 :name "eggs, separated" ;
   :quantity "2" .
 
 _:b365 :name "cold water" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b364 :name "gelatin" ;
@@ -3136,11 +3136,11 @@ _:b364 :name "gelatin" ;
   :unit "tbsp" .
 
 _:b363 :name "sugar" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b362 :name "butter" ;
-  :quantity "03-Jan" ;
+  :quantity "1/3" ;
   :unit "cup" .
 
 _:b361 :name "cornflakes" ;
@@ -3148,14 +3148,14 @@ _:b361 :name "cornflakes" ;
   :unit "cups" .
 
 _:b1165 :name "heavy cream" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1164 :name "baked pie shell, chilled" ;
   :quantity "1" .
 
 _:b1163 :name "sugar" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b1162 :name "fresh peaches, peeled and diced" ;
@@ -3170,7 +3170,7 @@ _:b1160 :name "hot water" ;
   :unit "cups" .
 
 _:b350 :name "nutmeg" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b1159 :name "peach or lemon gelatin" ;
@@ -3178,7 +3178,7 @@ _:b1159 :name "peach or lemon gelatin" ;
   :unit "3 ounce box" .
 
 _:b349 :name "cinnamon" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "tsp" .
 
 _:b348 :name "pumpkin" ;
@@ -3193,7 +3193,7 @@ _:b346 :name "vanilla" ;
   :unit "tsp" .
 
 _:b345 :name "sugar" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cups" .
 
 _:b344 :name "lite cream cheese" ;
@@ -3201,7 +3201,7 @@ _:b344 :name "lite cream cheese" ;
   :unit "8 oz. pkgs." .
 
 _:b343 :name "melted margarine" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cups" .
 
 _:b342 :name "vanilla wafer crumbs" ;
@@ -3213,7 +3213,7 @@ _:b1147 :name "pie shell" ;
   :unit "9 inch" .
 
 _:b1146 :name "almond extract" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b1145 :name "salt" ;
@@ -3228,7 +3228,7 @@ _:b1143 :name "cornstarch" ;
   :unit "Tbsp" .
 
 _:b1142 :name "sugar" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b1141 :name "lemon juice" ;
@@ -3244,7 +3244,7 @@ _:b696 :name "chopped nuts" ;
   :unit "cup" .
 
 _:b695 :name "milk" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b332 :name "vanilla" ;
@@ -3252,7 +3252,7 @@ _:b332 :name "vanilla" ;
   :unit "tsp" .
 
 _:b694 :name "cloves" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b331 :name "chopped walnuts" ;
@@ -3260,7 +3260,7 @@ _:b331 :name "chopped walnuts" ;
   :unit "cup" .
 
 _:b693 :name "ginger" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b330 :name "cocoa" ;
@@ -3268,15 +3268,15 @@ _:b330 :name "cocoa" ;
   :unit "tsp" .
 
 _:b692 :name "cinnamon" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b691 :name "salt" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b690 :name "soda" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b1491 :name "Italian Dressing" .
@@ -3307,11 +3307,11 @@ _:b688 :name "vanilla" ;
   :unit "tsp" .
 
 _:b325 :name "milk" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b687 :name "molasses" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b324 :name "shortening" ;
@@ -3346,13 +3346,13 @@ _:b1125 :name "butter" ;
 _:b1486 :name "radishes" .
 
 _:b1124 :name "water" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1485 :name "green onions" .
 
 _:b1123 :name "cinnamon" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b1484 :name "cauliflower" .
@@ -3382,7 +3382,7 @@ _:b317 :name "powdered sugar" ;
   :unit "cups" .
 
 _:b316 :name "margarine" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "pound" .
 
 _:b315 :name "cream cheese" ;
@@ -3421,21 +3421,21 @@ _:b672 :name "brown sugar" ;
   :unit "cup" .
 
 _:b671 :name "vanilla" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b670 :name "eggs" ;
   :quantity "2" .
 
 _:b1111 :name "sugar" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b1110 :name "egg whites" ;
   :quantity "3" .
 
 _:b309 :name "salt" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b308 :name "soda" ;
@@ -3454,7 +3454,7 @@ _:b306 :name "eggs" ;
   :quantity "4" .
 
 _:b668 :name "shortening" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cups" .
 
 _:b305 :name "sugar" ;
@@ -3470,7 +3470,7 @@ _:b304 :name "oil" ;
   :unit "cup" .
 
 _:b666 :name "salt" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b665 :name "sifted flour" ;
@@ -3489,7 +3489,7 @@ _:b1107 :name "grated lemon juice" ;
   :unit "tsp" .
 
 _:b1106 :name "lemon juice, fresh or bottled" ;
-  :quantity "03-Jan" ;
+  :quantity "1/3" ;
   :unit "cup" .
 
 _:b1467 :name "sour cream" ;
@@ -3505,7 +3505,7 @@ _:b1466 :name "marshmallows" ;
   :unit "cup" .
 
 _:b1104 :name "salt" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b1465 :name "coconut" ;
@@ -3541,15 +3541,15 @@ _:b650 :name "soda" ;
   :unit "tsps" .
 
 _:b1452 :name "oil" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1451 :name "vinegar" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1450 :name "sugar" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b649 :name "flour" ;
@@ -3617,7 +3617,7 @@ _:b994 :name "vanilla" ;
   :unit "tsp" .
 
 _:b631 :name "sugar" ;
-  :quantity "03-Jan" ;
+  :quantity "1/3" ;
   :unit "cup" .
 
 _:b993 :name "margarine or butter" ;
@@ -3640,13 +3640,13 @@ _:b990 :name "water" ;
   :unit "cups" .
 
 _:b1797 :name "pine nuts, toasted" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1796 :name "ground pepper, to taste" .
 
 _:b1795 :name "sour cream" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1794 :name "fresh basil, or 1/4 tsp dried" ;
@@ -3654,11 +3654,11 @@ _:b1794 :name "fresh basil, or 1/4 tsp dried" ;
   :unit "tsp" .
 
 _:b1793 :name "fresh oregano, chopped or 1/4 tsp dried" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b1792 :name "milk" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1430 :name "lemon juice" ;
@@ -3682,7 +3682,7 @@ _:b628 :name "vanilla" ;
   :unit "tsp" .
 
 _:b627 :name "butter" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cup" .
 
 _:b989 :name "cornstarch" ;
@@ -3717,7 +3717,7 @@ _:b1426 :name "salt" ;
   :unit "tsp" .
 
 _:b1787 :name "onion, chopped" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cups" .
 
 _:b1425 :name "cucumbers, sliced" ;
@@ -3759,7 +3759,7 @@ _:b611 :name "brown sugar" ;
   :unit "cup" .
 
 _:b973 :name "nutmeg" ;
-  :quantity "03-Jan" ;
+  :quantity "1/3" ;
   :unit "tsp" .
 
 _:b610 :name "flake coconut" ;
@@ -3790,7 +3790,7 @@ _:b1772 :name "milk" ;
   :unit "quart" .
 
 _:b1410 :name "nuts, chopped" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1771 :name "half and half" ;
@@ -3814,7 +3814,7 @@ _:b969 :name "margarine" ;
   :unit "cup" .
 
 _:b82 :name "lemon juice" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cups" .
 
 _:b81 :name "powdered sugar" ;
@@ -3855,11 +3855,11 @@ _:b1406 :name "hot water" ;
   :unit "cups" .
 
 _:b1767 :name "bacon, chopped and browned" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "pound" .
 
 _:b79 :name "vegetable oil" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cup" .
 
 _:b78 :name "lemon jello" ;
@@ -3867,7 +3867,7 @@ _:b78 :name "lemon jello" ;
   :unit "small pkg" .
 
 _:b77 :name "water" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cup" .
 
 _:b76 :name "lemon cake mix" ;
@@ -3883,7 +3883,7 @@ _:b954 :name "vanilla" ;
   :unit "tsp" .
 
 _:b953 :name "salt" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b952 :name "sugar" ;
@@ -3894,7 +3894,7 @@ _:b951 :name "egg" ;
   :quantity "1" .
 
 _:b950 :name "Crisco (shortening)" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1756 :name "narrow egg noodles" ;
@@ -3952,7 +3952,7 @@ _:b1748 :name "chicken, cooked and chopped" ;
   :unit "cups" .
 
 _:b59 :name "cocoa" ;
-  :quantity "03-Jan" ;
+  :quantity "1/3" ;
   :unit "cup" .
 
 _:b58 :name "sugar" ;
@@ -3968,11 +3968,11 @@ _:b939 :name "sour cream" ;
   :unit "cups" .
 
 _:b938 :name "baking soda" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b937 :name "baking powder" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b936 :name "salt" ;
@@ -3995,7 +3995,7 @@ _:b932 :name "sugar" ;
   :unit "cups" .
 
 _:b931 :name "butter or margarine" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1738 :name "dill" ;
@@ -4003,7 +4003,7 @@ _:b1738 :name "dill" ;
   :unit "tsp" .
 
 _:b1737 :name "low-fat milk" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cups" .
 
 _:b1736 :name "cheddar cheese, grated" ;
@@ -4039,7 +4039,7 @@ _:b47 :name "vanilla" ;
   :unit "tsp" .
 
 _:b46 :name "cloves" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b45 :name "flour" ;
@@ -4051,11 +4051,11 @@ _:b44 :name "baking soda" ;
   :unit "tsp" .
 
 _:b43 :name "sour milk" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b42 :name "salt" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b41 :name "cocoa" ;
@@ -4078,7 +4078,7 @@ _:b39 :name "sugar" ;
   :unit "cups" .
 
 _:b38 :name "margarine" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b919 :name "sugar" ;
@@ -4093,11 +4093,11 @@ _:b917 :name "sugar" ;
   :unit "cups" .
 
 _:b916 :name "margarine" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cups" .
 
 _:b915 :name "salt" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b914 :name "baking soda" ;
@@ -4118,7 +4118,7 @@ _:b1716 :name "tart apples, cut in chunks" ;
   :quantity "2 or 3" .
 
 _:b1715 :name "green onions, sliced" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1714 :name "zucchini, coarsely shredded" ;
@@ -4142,7 +4142,7 @@ _:b28 :name "blueberries" ;
   :unit "cups" .
 
 _:b1710 :name "mayonnaise" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b27 :name "milk" ;
@@ -4162,7 +4162,7 @@ _:b908 :name "flour" ;
   :unit "cups" .
 
 _:b24 :name "butter" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b907 :name "pumpkin pie spice" ;
@@ -4201,11 +4201,11 @@ _:b903 :name "pumpkin pie spice" ;
   :unit "tsp" .
 
 _:b902 :name "ginger" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "tsp" .
 
 _:b901 :name "allspice" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b900 :name "raisins" ;
@@ -4248,7 +4248,7 @@ _:b1088 :name "egg yolks, slightly beaten" ;
   :quantity "3" .
 
 _:b1087 :name "lemon juice" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b1086 :name "lemon rind, grated" ;
@@ -4256,7 +4256,7 @@ _:b1086 :name "lemon rind, grated" ;
   :unit "Tbsp" .
 
 _:b1085 :name "butter" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b1084 :name "cornstarch" ;
@@ -4272,7 +4272,7 @@ _:b278 :name "fresh orange juice" ;
   :unit "tsp" .
 
 _:b277 :name "powdered sugar" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b276 :name "poppy seeds" ;
@@ -4280,15 +4280,15 @@ _:b276 :name "poppy seeds" ;
   :unit "tbsp" .
 
 _:b275 :name "salt" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b274 :name "baking soda" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b273 :name "baking powder" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "tsp" .
 
 _:b272 :name "eggs" ;
@@ -4296,7 +4296,7 @@ _:b272 :name "eggs" ;
   :unit "large" .
 
 _:b271 :name "fresh orange juice" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b270 :name "unsifted cake flour" ;
@@ -4329,7 +4329,7 @@ _:b1069 :name "eggs" ;
   :quantity "2" .
 
 _:b1068 :name "lemon juice" ;
-  :quantity "03-Jan" ;
+  :quantity "1/3" ;
   :unit "cup" .
 
 _:b1067 :name "lemon rind, grated" ;
@@ -4341,7 +4341,7 @@ _:b1066 :name "water" ;
   :unit "cup" .
 
 _:b1065 :name "cornstarch" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1064 :name "sugar" ;
@@ -4349,7 +4349,7 @@ _:b1064 :name "sugar" ;
   :unit "cup" .
 
 _:b250 :name "plain low fat yogurt" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1052 :name "pie shell, baked" ;
@@ -4368,7 +4368,7 @@ _:b249 :name "frozen light whipped topping, thawed" ;
   :unit "container" .
 
 _:b248 :name "frozen orange juice concentrate, thawed" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cup" .
 
 _:b247 :name "angel food cake mix" ;
@@ -4388,7 +4388,7 @@ _:b241 :name "butter" ;
   :unit "tbsp" .
 
 _:b240 :name "evaporated milk" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1049 :name "butter" ;
@@ -4424,7 +4424,7 @@ _:b237 :name "nutmeg" ;
   :unit "tsp" .
 
 _:b599 :name "light corn syrup" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b236 :name "soda" ;
@@ -4436,7 +4436,7 @@ _:b598 :name "semisweet chocolate chips" ;
   :unit "cup" .
 
 _:b235 :name "salt" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b597 :name "flour" ;
@@ -4448,7 +4448,7 @@ _:b234 :name "flour" ;
   :unit "cups" .
 
 _:b596 :name "salt" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b233 :name "eggs" ;
@@ -4459,11 +4459,11 @@ _:b595 :name "vanilla" ;
   :unit "tsp" .
 
 _:b232 :name "margarine" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b594 :name "coconut" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b231 :name "white sugar" ;
@@ -4471,7 +4471,7 @@ _:b231 :name "white sugar" ;
   :unit "cup" .
 
 _:b593 :name "light brown sugar" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cup" .
 
 _:b230 :name "brown sugar" ;
@@ -4482,7 +4482,7 @@ _:b592 :name "eggs, well beaten" ;
   :quantity "2" .
 
 _:b591 :name "salt" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b590 :name "sifted flour" ;
@@ -4496,15 +4496,15 @@ _:b1394 :name "caraway seed (optional)" ;
 _:b1393 :name "salt and pepper" .
 
 _:b1031 :name "cinnamon" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b1392 :name "horseradish" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b1030 :name "butter" ;
-  :quantity "03-Jan" ;
+  :quantity "1/3" ;
   :unit "cup" .
 
 _:b1391 :name "sugar" ;
@@ -4524,11 +4524,11 @@ _:b228 :name "oatmeal" ;
   :unit "cup" .
 
 _:b589 :name "margarine" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b1029 :name "flour" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cup" .
 
 _:b1028 :name "cinnamon" ;
@@ -4536,7 +4536,7 @@ _:b1028 :name "cinnamon" ;
   :unit "tsp" .
 
 _:b1389 :name "sour cream" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1027 :name "sugar" ;
@@ -4544,14 +4544,14 @@ _:b1027 :name "sugar" ;
   :unit "cup" .
 
 _:b1388 :name "mayonnaise" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b1026 :name "large apples, sliced" ;
   :quantity "4" .
 
 _:b1387 :name "cabbage" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "head" .
 
 _:b219 :name "hot water" ;
@@ -4559,11 +4559,11 @@ _:b219 :name "hot water" ;
   :unit "cup" .
 
 _:b218 :name "salt" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b217 :name "cloves" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b579 :name "Special K cereal" ;
@@ -4575,7 +4575,7 @@ _:b216 :name "ginger" ;
   :unit "tsp" .
 
 _:b578 :name "crunchy peanut butter" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b215 :name "cinnamon" ;
@@ -4606,22 +4606,22 @@ _:b212 :name "molasses" ;
   :unit "cup" .
 
 _:b574 :name "salt" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b211 :name "egg" ;
   :quantity "1" .
 
 _:b573 :name "crunchy peanut butter" ;
-  :quantity "03-Jan" ;
+  :quantity "1/3" ;
   :unit "cup" .
 
 _:b210 :name "butter" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b572 :name "margarine" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b571 :name "brown sugar" ;
@@ -4647,7 +4647,7 @@ _:b1373 :name "carrot pieces" ;
   :unit "cups" .
 
 _:b1011 :name "salt" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b1372 :name "salad dressing" ;
@@ -4655,19 +4655,19 @@ _:b1372 :name "salad dressing" ;
   :unit "cup" .
 
 _:b1010 :name "flour" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b1371 :name "salt" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b209 :name "sugar" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1370 :name "boiling orange juice" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b202 :name "brandy flavoring" ;
@@ -4724,11 +4724,11 @@ _:b554 :name "margarine" ;
   :unit "cup" .
 
 _:b553 :name "salt" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b552 :name "baking soda" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b551 :name "flour" ;
@@ -4748,7 +4748,7 @@ _:b1354 :name "mayonnaise" ;
   :unit "cup" .
 
 _:b1353 :name "sunflower seeds" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1352 :name "red onion, chopped fine" ;
@@ -4775,7 +4775,7 @@ _:b899 :name "nuts" ;
   :unit "cup" .
 
 _:b536 :name "powdered sugar" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b898 :name "salt" ;
@@ -4791,7 +4791,7 @@ _:b897 :name "soda" ;
   :unit "tsp" .
 
 _:b534 :name "bourbon (or light cream)" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b896 :name "oatmeal" ;
@@ -4826,7 +4826,7 @@ _:b1697 :name "frozen peas" ;
   :unit "cup" .
 
 _:b1335 :name "sugar" ;
-  :quantity "03-Jan" ;
+  :quantity "1/3" ;
   :unit "cup" .
 
 _:b1696 :name "red onion" .
@@ -4842,7 +4842,7 @@ _:b1333 :name "crisp bacon, crumbled" ;
   :unit "strips" .
 
 _:b1694 :name "sugar" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b1332 :name "red onion, chopped" ;
@@ -4850,7 +4850,7 @@ _:b1332 :name "red onion, chopped" ;
   :unit "small" .
 
 _:b1693 :name "vinegar" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b1331 :name "mozzarella cheese, shredded" ;
@@ -4858,7 +4858,7 @@ _:b1331 :name "mozzarella cheese, shredded" ;
   :unit "ounce" .
 
 _:b1692 :name "oil" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b1330 :name "broccoli florets, bite size" ;
@@ -4872,11 +4872,11 @@ _:b1691 :name "chicken Ramen" ;
 _:b886 :name "confectioner's sugar" .
 
 _:b885 :name "coconut" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b522 :name "walnuts" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cups" .
 
 _:b884 :name "walnuts, chopped" ;
@@ -4892,7 +4892,7 @@ _:b883 :name "vanilla" ;
   :unit "tsp" .
 
 _:b520 :name "salt" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b882 :name "lemon juice" ;
@@ -4907,7 +4907,7 @@ _:b880 :name "brown sugar" ;
   :unit "cup" .
 
 _:b519 :name "baking soda" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b518 :name "flour" ;
@@ -4918,7 +4918,7 @@ _:b517 :name "egg" ;
   :quantity "1" .
 
 _:b879 :name "salt" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b516 :name "vanilla" ;
@@ -4926,11 +4926,11 @@ _:b516 :name "vanilla" ;
   :unit "tsp" .
 
 _:b878 :name "baking powder" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b515 :name "brown sugar" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b877 :name "sifted flour" ;
@@ -4938,19 +4938,19 @@ _:b877 :name "sifted flour" ;
   :unit "cups" .
 
 _:b514 :name "sugar" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b876 :name "sugar" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b513 :name "cold butter" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b875 :name "margarine" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b874 :name "pitted prunes" ;
@@ -4980,7 +4980,7 @@ _:b1314 :name "white sauterne wine" ;
   :unit "ounces" .
 
 _:b1675 :name "cantaloupe, cut into chunks" ;
-  :quantity "02-Jan" .
+  :quantity "1/2" .
 
 _:b1313 :name "mayonnaise" ;
   :quantity "1" ;
@@ -5007,11 +5007,11 @@ _:b1672 :name "pineapple chunks in juice" ;
   :unit "can" .
 
 _:b502 :name "salt" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b501 :name "baking powder" ;
-  :quantity "03-Jan" ;
+  :quantity "1/3" ;
   :unit "tsp" .
 
 _:b500 :name "sifted flour" ;
@@ -5019,7 +5019,7 @@ _:b500 :name "sifted flour" ;
   :unit "cup" .
 
 _:b861 :name "walnuts, chopped" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b860 :name "crushed pineapple, drained." ;
@@ -5037,22 +5037,22 @@ _:b1661 :name "lemon juice" .
 _:b1660 :name "catsup" .
 
 _:b859 :name "graham cracker crumbs" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b858 :name "sifted flour" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b857 :name "egg" ;
   :quantity "1" .
 
 _:b856 :name "light brown sugar, firmly packed" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b855 :name "butter or margarine" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b1659 :name "mayonnaise" .
@@ -5074,7 +5074,7 @@ _:b844 :name "vanilla" ;
   :unit "tsp" .
 
 _:b843 :name "salt" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b842 :name "soda" ;
@@ -5094,7 +5094,7 @@ _:b1647 :name "bacon, crisp and crumbled" ;
   :unit "slices" .
 
 _:b1646 :name "olive oil" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1645 :name "vinegar" ;
@@ -5102,19 +5102,19 @@ _:b1645 :name "vinegar" ;
   :unit "Tbsp" .
 
 _:b1644 :name "pepper" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b1643 :name "paprika" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b1642 :name "lemon peel" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b1641 :name "salt" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b1640 :name "garlic, crushed" ;
@@ -5141,11 +5141,11 @@ _:b832 :name "vanilla" ;
   :unit "tsp" .
 
 _:b831 :name "walnuts, chopped" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b830 :name "salt" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b1639 :name "sour cream" ;
@@ -5171,7 +5171,7 @@ _:b1634 :name "fresh spinach" ;
   :unit "pound" .
 
 _:b829 :name "sweetened condensed milk" ;
-  :quantity "03-Jan" ;
+  :quantity "1/3" ;
   :unit "cup" .
 
 _:b828 :name "butter or margarine" ;
@@ -5186,7 +5186,7 @@ _:b826 :quantity "1" ;
   :unit "tsp" .
 
 _:b825 :name "walnuts, chopped" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b824 :name "quick-cooking oats" ;
@@ -5194,19 +5194,19 @@ _:b824 :name "quick-cooking oats" ;
   :unit "cups" .
 
 _:b823 :name "salt" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b822 :name "baking soda" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b821 :name "sifted flour" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cup" .
 
 _:b820 :name "vanilla" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b1624 :name "sour cream" ;
@@ -5235,15 +5235,15 @@ _:b818 :name "light brown sugar, firmly packed" ;
   :unit "cup" .
 
 _:b817 :name "shortening" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1619 :name "water" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1618 :name "vinegar" ;
-  :quantity "03-Feb" ;
+  :quantity "2/3" ;
   :unit "cup" .
 
 _:b1617 :name "bacon" ;
@@ -5255,7 +5255,7 @@ _:b1616 :name "onion, red is best" ;
   :unit "medium" .
 
 _:b1615 :name "spinach leaves" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "pound" .
 
 _:b809 :name "walnuts" ;
@@ -5338,7 +5338,7 @@ _:b192 :name "salt" ;
   :unit "tsp" .
 
 _:b191 :name "baking powder" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b190 :name "sifted flour" ;
@@ -5346,11 +5346,11 @@ _:b190 :name "sifted flour" ;
   :unit "cups" .
 
 _:b176 :name "poppy seeds" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b175 :name "oil" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b174 :name "water" ;
@@ -5373,7 +5373,7 @@ _:b161 :name "vanilla" ;
   :unit "tsp" .
 
 _:b160 :name "cloves" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b159 :name "flour" ;
@@ -5385,11 +5385,11 @@ _:b158 :name "baking soda" ;
   :unit "tsp" .
 
 _:b157 :name "sour milk" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b156 :name "salt" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b155 :name "cocoa" ;
@@ -5404,7 +5404,7 @@ _:b153 :name "sugar" ;
   :unit "cups" .
 
 _:b152 :name "margarine" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b138 :name "chopped nuts" ;
@@ -5431,7 +5431,7 @@ _:b135 :name "sour milk" ;
   :unit "cup" .
 
 _:b497 :name "sugar" ;
-  :quantity "03-Feb" ;
+  :quantity "2/3" ;
   :unit "cup" .
 
 _:b134 :name "sugar" ;
@@ -5442,23 +5442,23 @@ _:b496 :name "eggs" ;
   :quantity "2" .
 
 _:b133 :name "butter" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b495 :name "brown sugar" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b494 :name "butter" ;
-  :quantity "03-Jan" ;
+  :quantity "1/3" ;
   :unit "cup" .
 
 _:b1299 :name "marshmallows" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "pound" .
 
 _:b1298 :name "walnuts, chopped" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b1297 :name "pineapple tidbits" ;
@@ -5477,7 +5477,7 @@ _:b1294 :name "pineapple juice" ;
   :unit "cup" .
 
 _:b1293 :name "sugar" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b1292 :name "cornstarch" ;
@@ -5503,7 +5503,7 @@ _:b480 :name "Best Foods Mayonnaise" ;
   :unit "cups" .
 
 _:b119 :name "milk" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b118 :name "sugar" ;
@@ -5529,7 +5529,7 @@ _:b115 :name "flour" ;
   :unit "cups" .
 
 _:b477 :name "cocoa" ;
-  :quantity "03-Jan" ;
+  :quantity "1/3" ;
   :unit "cup" .
 
 _:b114 :name "butter" ;
@@ -5553,7 +5553,7 @@ _:b1277 :name "vanilla" ;
   :unit "tsp" .
 
 _:b1276 :name "butter" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b1275 :name "walnuts, chopped" ;
@@ -5564,7 +5564,7 @@ _:b1274 :name "eggs" ;
   :quantity "3" .
 
 _:b1273 :name "sugar" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cup" .
 
 _:b105 :name "salt" ;
@@ -5576,7 +5576,7 @@ _:b104 :name "baking soda" ;
   :unit "tsp" .
 
 _:b103 :name "vegetable oil" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cups" .
 
 _:b102 :name "cinnamon" ;
@@ -5608,7 +5608,7 @@ _:b460 :name "baking soda" ;
   :unit "tsps" .
 
 _:b1260 :name "nutmeg" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "tsp" .
 
 _:b459 :name "baking powder" ;
@@ -5616,7 +5616,7 @@ _:b459 :name "baking powder" ;
   :unit "tsps" .
 
 _:b458 :name "cocoa" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cups" .
 
 _:b457 :name "sugar" ;
@@ -5643,11 +5643,11 @@ _:b1256 :name "eggs" ;
   :quantity "3" .
 
 _:b1255 :name "light corn syrup" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cup" .
 
 _:b1254 :name "sugar" ;
-  :quantity "04-Mar" ;
+  :quantity "3/4" ;
   :unit "cup" .
 
 _:b445 :name "eggs" ;
@@ -5674,7 +5674,7 @@ _:b440 :name "salt" ;
   :unit "tsp" .
 
 _:b1242 :name "nutmeg" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b1241 :name "vanilla" ;
@@ -5706,18 +5706,18 @@ _:b798 :name "brown sugar" ;
   :unit "cups" .
 
 _:b433 :name "unsalted butter" ;
-  :quantity "04-Jan" ;
+  :quantity "1/4" ;
   :unit "cup" .
 
 _:b432 :name "soda" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "tsp" .
 
 _:b431 :name "buttermilk" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
 _:b430 :name "sugar" ;
-  :quantity "02-Jan" ;
+  :quantity "1/2" ;
   :unit "cup" .
 
