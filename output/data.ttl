@@ -1,0 +1,5723 @@
+@prefix : <http://project-kitchenchef.fr/schema#> .
+@prefix tmp: <http://project-kitchenchef.fr/tmp-schema#> .
+@prefix recipes: <http://project-kitchenchef.fr/recipes/data#> .
+
+recipes:PeanutButterCookies :ingredient _:b836 ;
+  :ingredient _:b837 ;
+  :ingredient _:b838 ;
+  :ingredient _:b839 ;
+  :ingredient _:b840 ;
+  :ingredient _:b841 ;
+  :ingredient _:b842 ;
+  :ingredient _:b843 ;
+  :ingredient _:b844 ;
+  :ingredient _:b845 ;
+  :ingredient _:b846 ;
+  :ingredient _:b847 ;
+  :ingredient _:b848 ;
+  :ingredient _:b849 ;
+  :ingredient _:b850 ;
+  :ingredient _:b851 ;
+  :ingredient _:b852 ;
+  :ingredient _:b853 ;
+  :ingredient _:b854 ;
+  :instructions "Form into balls.  Flatten with fork dipped in flour or sugar. Bake for 8 minutes at 375 degrees." ;
+  :name "Peanut Butter Cookies" ;
+  :recipeCategory "Cookies" .
+
+recipes:PeachAlmondPie :ingredient _:b1140 ;
+  :ingredient _:b1141 ;
+  :ingredient _:b1142 ;
+  :ingredient _:b1143 ;
+  :ingredient _:b1144 ;
+  :ingredient _:b1145 ;
+  :ingredient _:b1146 ;
+  :ingredient _:b1147 ;
+  :ingredient _:b1148 ;
+  :ingredient _:b1149 ;
+  :ingredient _:b1150 ;
+  :ingredient _:b1151 ;
+  :ingredient _:b1152 ;
+  :ingredient _:b1153 ;
+  :ingredient _:b1154 ;
+  :ingredient _:b1155 ;
+  :ingredient _:b1156 ;
+  :ingredient _:b1157 ;
+  :ingredient _:b1158 ;
+  :instructions "Sprinkle peaches with lemon and sugar.  Let stand 1 hour.  Drain to get 1 cup syrup.  Add cornstarch to syrup and blend.  Cook over low heat until thick.  Remove from heat.  Add butter, salt, and almond extract.  Cool.  Carefully stir in peaches.  Put in shell.  Chill.  Serve with whipped cream, topped with slivered almonds and marachino cherries." ;
+  :name "Peach Almond Pie" ;
+  :recipeCategory "Pies" .
+
+recipes:ChocolateMayonaiseCake :ingredient _:b57 ;
+  :ingredient _:b58 ;
+  :ingredient _:b59 ;
+  :ingredient _:b60 ;
+  :ingredient _:b61 ;
+  :ingredient _:b62 ;
+  :ingredient _:b63 ;
+  :ingredient _:b64 ;
+  :ingredient _:b65 ;
+  :ingredient _:b66 ;
+  :ingredient _:b67 ;
+  :ingredient _:b68 ;
+  :ingredient _:b69 ;
+  :ingredient _:b70 ;
+  :ingredient _:b71 ;
+  :ingredient _:b72 ;
+  :ingredient _:b73 ;
+  :ingredient _:b74 ;
+  :ingredient _:b75 ;
+  :instructions "Makes  2 layer cake." ;
+  :name "Chocolate Mayonaise Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:WalnutSquares :ingredient _:b969 ;
+  :ingredient _:b970 ;
+  :ingredient _:b971 ;
+  :ingredient _:b972 ;
+  :ingredient _:b973 ;
+  :ingredient _:b974 ;
+  :ingredient _:b975 ;
+  :ingredient _:b976 ;
+  :ingredient _:b977 ;
+  :ingredient _:b978 ;
+  :ingredient _:b979 ;
+  :ingredient _:b980 ;
+  :ingredient _:b981 ;
+  :ingredient _:b982 ;
+  :ingredient _:b983 ;
+  :ingredient _:b984 ;
+  :ingredient _:b985 ;
+  :ingredient _:b986 ;
+  :ingredient _:b987 ;
+  :instructions "Cream butter and sugar.  Beat in egg yolk.  Sift four and spice, add to creamed mixture.  Spread dough in 15\"x10\"x1\" jelly roll pan.  Press flat with hands.  Beat egg white slightly, brush on dough.  Sprinkle nuts on top and press into dough.  Bake in 250 degree oven for 1 hour.  While hot cut into 1 1/2\" squares.  Cool.  Makes about 70." ;
+  :name "Walnut Squares" ;
+  :recipeCategory "Cookies" .
+
+recipes:LemonCloudPie :ingredient _:b1064 ;
+  :ingredient _:b1065 ;
+  :ingredient _:b1066 ;
+  :ingredient _:b1067 ;
+  :ingredient _:b1068 ;
+  :ingredient _:b1069 ;
+  :ingredient _:b1070 ;
+  :ingredient _:b1071 ;
+  :ingredient _:b1072 ;
+  :ingredient _:b1073 ;
+  :ingredient _:b1074 ;
+  :ingredient _:b1075 ;
+  :ingredient _:b1076 ;
+  :ingredient _:b1077 ;
+  :ingredient _:b1078 ;
+  :ingredient _:b1079 ;
+  :ingredient _:b1080 ;
+  :ingredient _:b1081 ;
+  :ingredient _:b1082 ;
+  :instructions "Combine in sauce pan 3/4 cup sugar, cornstarch, water, lemon rind, and juice, and slightly beaten egg yolk.  Cook over medium heat stirring constantly until thick.  Remove from heat.  Add softened cheese, blend well.  Cool.  Beat egg whites until stiff.  Add 1/4 sugar.  Fold into lemon mixture.  Spoon into crust.  Chill 2 hours.  Serve with whipped cream." ;
+  :name "Lemon Cloud Pie" ;
+  :recipeCategory "Pies" .
+
+recipes:Pineapple-CarrotCake :ingredient _:b304 ;
+  :ingredient _:b305 ;
+  :ingredient _:b306 ;
+  :ingredient _:b307 ;
+  :ingredient _:b308 ;
+  :ingredient _:b309 ;
+  :ingredient _:b310 ;
+  :ingredient _:b311 ;
+  :ingredient _:b312 ;
+  :ingredient _:b313 ;
+  :ingredient _:b314 ;
+  :ingredient _:b315 ;
+  :ingredient _:b316 ;
+  :ingredient _:b317 ;
+  :ingredient _:b318 ;
+  :ingredient _:b319 ;
+  :ingredient _:b320 ;
+  :ingredient _:b321 ;
+  :ingredient _:b322 ;
+  :instructions "Mix all cake ingredients.  Bake in greased and floured 9\"x13\" pan at 350 degrees for 35 minutes.  Frost when cool." ;
+  :name "Pineapple-Carrot Cake*" ;
+  :recipeCategory "Cakes" .
+
+recipes:FiveCupSalad :ingredient _:b1463 ;
+  :ingredient _:b1464 ;
+  :ingredient _:b1465 ;
+  :ingredient _:b1466 ;
+  :ingredient _:b1467 ;
+  :ingredient _:b1468 ;
+  :ingredient _:b1469 ;
+  :ingredient _:b1470 ;
+  :ingredient _:b1471 ;
+  :ingredient _:b1472 ;
+  :ingredient _:b1473 ;
+  :ingredient _:b1474 ;
+  :ingredient _:b1475 ;
+  :ingredient _:b1476 ;
+  :ingredient _:b1477 ;
+  :ingredient _:b1478 ;
+  :ingredient _:b1479 ;
+  :ingredient _:b1480 ;
+  :ingredient _:b1481 ;
+  :instructions "Combine all ingredients.  Chill overnight." ;
+  :name "Five Cup Salad" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:ThumbprintCookies :ingredient _:b950 ;
+  :ingredient _:b951 ;
+  :ingredient _:b952 ;
+  :ingredient _:b953 ;
+  :ingredient _:b954 ;
+  :ingredient _:b955 ;
+  :ingredient _:b956 ;
+  :ingredient _:b957 ;
+  :ingredient _:b958 ;
+  :ingredient _:b959 ;
+  :ingredient _:b960 ;
+  :ingredient _:b961 ;
+  :ingredient _:b962 ;
+  :ingredient _:b963 ;
+  :ingredient _:b964 ;
+  :ingredient _:b965 ;
+  :ingredient _:b966 ;
+  :ingredient _:b967 ;
+  :ingredient _:b968 ;
+  :instructions "Mix first 5 ingredients.  Add flour.  Roll into ball.   Make a thumbprint in each ball.  Cook 8-10 minutes at 350 degrees.  Fill with jelly or chopped nuts." ;
+  :name "Thumbprint Cookies" ;
+  :recipeCategory "Cookies" .
+
+recipes:ZucchiniAppleSlaw :ingredient _:b1710 ;
+  :ingredient _:b1711 ;
+  :ingredient _:b1712 ;
+  :ingredient _:b1713 ;
+  :ingredient _:b1714 ;
+  :ingredient _:b1715 ;
+  :ingredient _:b1716 ;
+  :ingredient _:b1717 ;
+  :ingredient _:b1718 ;
+  :ingredient _:b1719 ;
+  :ingredient _:b1720 ;
+  :ingredient _:b1721 ;
+  :ingredient _:b1722 ;
+  :ingredient _:b1723 ;
+  :ingredient _:b1724 ;
+  :ingredient _:b1725 ;
+  :ingredient _:b1726 ;
+  :ingredient _:b1727 ;
+  :ingredient _:b1728 ;
+  :instructions "Mix together.  Put on crisp lettuce.  Top with dressing." ;
+  :name "Zucchini Apple Slaw" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:TortillaSoup :ingredient _:b1881 ;
+  :ingredient _:b1882 ;
+  :ingredient _:b1883 ;
+  :ingredient _:b1884 ;
+  :ingredient _:b1885 ;
+  :ingredient _:b1886 ;
+  :ingredient _:b1887 ;
+  :ingredient _:b1888 ;
+  :ingredient _:b1889 ;
+  :ingredient _:b1890 ;
+  :ingredient _:b1891 ;
+  :ingredient _:b1892 ;
+  :ingredient _:b1893 ;
+  :ingredient _:b1894 ;
+  :ingredient _:b1895 ;
+  :ingredient _:b1896 ;
+  :ingredient _:b1897 ;
+  :ingredient _:b1898 ;
+  :ingredient _:b1899 ;
+  :instructions "Cut 3 thin slices from the lime; set aside.  Squeeze 1 tsp juice from remaining lime; set aside.  In 2-qt. saucepan over medium heat, in 1 tbsp hot oil, cook onion, cumin, oregano, and garlic until onion is tender.  Add broth, water, tomato, chiles, and reserved lime juice.  Heat to boiling.  Reduce heat to low and cook for 10 minutes.  Meanwhile, cut tortillas into thin strips.  In a 10-inch skillet heat 1/2 inch oil to 375 degree.  Fry tortilla strips, a few at a time until crisp.  Remove to paper towel to drain.  Place several tortilla strips in 3 bowls.  Ladle soup into bowls; sprinkle with cheese.  Top with reserved lime slices and lettuce.  Serve immediately." ;
+  :name "Tortilla Soup" ;
+  :recipeCategory "Soup" .
+
+recipes:ChocolateCake :ingredient _:b38 ;
+  :ingredient _:b39 ;
+  :ingredient _:b40 ;
+  :ingredient _:b41 ;
+  :ingredient _:b42 ;
+  :ingredient _:b43 ;
+  :ingredient _:b44 ;
+  :ingredient _:b45 ;
+  :ingredient _:b46 ;
+  :ingredient _:b47 ;
+  :ingredient _:b48 ;
+  :ingredient _:b49 ;
+  :ingredient _:b50 ;
+  :ingredient _:b51 ;
+  :ingredient _:b52 ;
+  :ingredient _:b53 ;
+  :ingredient _:b54 ;
+  :ingredient _:b55 ;
+  :ingredient _:b56 ;
+  :instructions "Mix all ingredients together.  Pour in 1 cup boiling water.  Mix well.  Bake about 35 minutes at 375 degrees." ;
+  :name "Chocolate Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:LemonMeringuePie :ingredient _:b1102 ;
+  :ingredient _:b1103 ;
+  :ingredient _:b1104 ;
+  :ingredient _:b1105 ;
+  :ingredient _:b1106 ;
+  :ingredient _:b1107 ;
+  :ingredient _:b1108 ;
+  :ingredient _:b1109 ;
+  :ingredient _:b1110 ;
+  :ingredient _:b1111 ;
+  :ingredient _:b1112 ;
+  :ingredient _:b1113 ;
+  :ingredient _:b1114 ;
+  :ingredient _:b1115 ;
+  :ingredient _:b1116 ;
+  :ingredient _:b1117 ;
+  :ingredient _:b1118 ;
+  :ingredient _:b1119 ;
+  :ingredient _:b1120 ;
+  :instructions "Mix sugar, cornstarch, and salt in top of double boiler.  Place over boiling water and add remaining ingredients.  Cook until thick, stirring with whip.  Put into baked pie shell.  Top with meringue.  To make meringue whip 3 egg whites until stiff.  Add 1/4 cup sugar.  Brown 5 to 10 minutes in 400 degree oven.  Chill." ;
+  :name "Lemon Meringue Pie" ;
+  :recipeCategory "Pies" .
+
+recipes:Minties :ingredient _:b779 ;
+  :ingredient _:b780 ;
+  :ingredient _:b781 ;
+  :ingredient _:b782 ;
+  :ingredient _:b783 ;
+  :ingredient _:b784 ;
+  :ingredient _:b785 ;
+  :ingredient _:b786 ;
+  :ingredient _:b787 ;
+  :ingredient _:b788 ;
+  :ingredient _:b789 ;
+  :ingredient _:b790 ;
+  :ingredient _:b791 ;
+  :ingredient _:b792 ;
+  :ingredient _:b793 ;
+  :ingredient _:b794 ;
+  :ingredient _:b795 ;
+  :ingredient _:b796 ;
+  :ingredient _:b797 ;
+  :instructions "Beat eggs until thick and foamy.  Gradually add sugar and continue to beat.  Soften mint jelly with a fork and add oil.  Mix well.  Add the flour, baking powder, and salt.  Spread mixture in a 9\"x13\" pan that is oiled.  Bake at 350 degrees for 25 minutes.  Frost with mint frosting:  Cream 1/4 cup margarine.  Add 1/2 cup mint jelly.  Blend.  Add 2 cups sifted powdered sugar.  Mix Well.  Cut into 32 bars." ;
+  :name "Minties" ;
+  :recipeCategory "Cookies" .
+
+recipes:GardenVegetablePasta :ingredient _:b1482 ;
+  :ingredient _:b1483 ;
+  :ingredient _:b1484 ;
+  :ingredient _:b1485 ;
+  :ingredient _:b1486 ;
+  :ingredient _:b1487 ;
+  :ingredient _:b1488 ;
+  :ingredient _:b1489 ;
+  :ingredient _:b1490 ;
+  :ingredient _:b1491 ;
+  :ingredient _:b1492 ;
+  :ingredient _:b1493 ;
+  :ingredient _:b1494 ;
+  :ingredient _:b1495 ;
+  :ingredient _:b1496 ;
+  :ingredient _:b1497 ;
+  :ingredient _:b1498 ;
+  :ingredient _:b1499 ;
+  :ingredient _:b1500 ;
+  :instructions "Cut vegetables into birte size pieces.  Cook 5 minutes, until fork tender.  Rinse with cold water.  Cook and chill pasta.  Toss all with Italian Dressing." ;
+  :name "Garden Vegetable Pasta" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:GrahamCrackerCake :ingredient _:b133 ;
+  :ingredient _:b134 ;
+  :ingredient _:b135 ;
+  :ingredient _:b136 ;
+  :ingredient _:b137 ;
+  :ingredient _:b138 ;
+  :ingredient _:b139 ;
+  :ingredient _:b140 ;
+  :ingredient _:b141 ;
+  :ingredient _:b142 ;
+  :ingredient _:b143 ;
+  :ingredient _:b144 ;
+  :ingredient _:b145 ;
+  :ingredient _:b146 ;
+  :ingredient _:b147 ;
+  :ingredient _:b148 ;
+  :ingredient _:b149 ;
+  :ingredient _:b150 ;
+  :ingredient _:b151 ;
+  :instructions "Cream butter and sugar.  Add crushed crackers, sour milk, and soda.  Stir in nuts.  Bake in 10 inch square baking pan.  Bake in 350 degree oven for 30-35 minutes.  Serve with whipped cream or thin powdered sugar icing." ;
+  :name "Graham Cracker Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:ElephantStew :ingredient _:b1805 ;
+  :ingredient _:b1806 ;
+  :ingredient _:b1807 ;
+  :ingredient _:b1808 ;
+  :ingredient _:b1809 ;
+  :ingredient _:b1810 ;
+  :ingredient _:b1811 ;
+  :ingredient _:b1812 ;
+  :ingredient _:b1813 ;
+  :ingredient _:b1814 ;
+  :ingredient _:b1815 ;
+  :ingredient _:b1816 ;
+  :ingredient _:b1817 ;
+  :ingredient _:b1818 ;
+  :ingredient _:b1819 ;
+  :ingredient _:b1820 ;
+  :ingredient _:b1821 ;
+  :ingredient _:b1822 ;
+  :ingredient _:b1823 ;
+  :instructions "Cut elephant into bite-size pieces.  (Allow approximately 12 months.)  Add enough gravy to cover.  Cook over kerosene fire for 4 weeks at 463 degrees.  Makes 3,300 servings.  To extend recipe add rabbits, but only if necessary, as some people do not like to find hare in their stew." ;
+  :name "Elephant Stew" ;
+  :recipeCategory "Soup" .
+
+recipes:SpinachSaladwithAvocado :ingredient _:b1634 ;
+  :ingredient _:b1635 ;
+  :ingredient _:b1636 ;
+  :ingredient _:b1637 ;
+  :ingredient _:b1638 ;
+  :ingredient _:b1639 ;
+  :ingredient _:b1640 ;
+  :ingredient _:b1641 ;
+  :ingredient _:b1642 ;
+  :ingredient _:b1643 ;
+  :ingredient _:b1644 ;
+  :ingredient _:b1645 ;
+  :ingredient _:b1646 ;
+  :ingredient _:b1647 ;
+  :ingredient _:b1648 ;
+  :ingredient _:b1649 ;
+  :ingredient _:b1650 ;
+  :ingredient _:b1651 ;
+  :ingredient _:b1652 ;
+  :instructions "Clean spinach.  Tear for salad.  Cut avocado in small pieces.  Sprinkle with lemon.  Slice onion as thin as possible.  Combine spinach, avocado, onion, and oranges.  Mix remaining ingredients to make dressing.  Pour dressing over salad.  Sprinkle on bacon bits." ;
+  :name "Spinach Salad with Avocado" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:CrazyCake :ingredient _:b76 ;
+  :ingredient _:b77 ;
+  :ingredient _:b78 ;
+  :ingredient _:b79 ;
+  :ingredient _:b80 ;
+  :ingredient _:b81 ;
+  :ingredient _:b82 ;
+  :ingredient _:b83 ;
+  :ingredient _:b84 ;
+  :ingredient _:b85 ;
+  :ingredient _:b86 ;
+  :ingredient _:b87 ;
+  :ingredient _:b88 ;
+  :ingredient _:b89 ;
+  :ingredient _:b90 ;
+  :ingredient _:b91 ;
+  :ingredient _:b92 ;
+  :ingredient _:b93 ;
+  :ingredient _:b94 ;
+  :instructions "Mix first 5 ingredients well, about 4 minutes.  Bake at 350 degrees in a 9x13 pan for 35 minutes. Poke holes in warm cake and pour on mixture of powdered sugar and lemon juice." ;
+  :name "Crazy Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:CreamyZucchiniMushroomSoup :ingredient _:b1786 ;
+  :ingredient _:b1787 ;
+  :ingredient _:b1788 ;
+  :ingredient _:b1789 ;
+  :ingredient _:b1790 ;
+  :ingredient _:b1791 ;
+  :ingredient _:b1792 ;
+  :ingredient _:b1793 ;
+  :ingredient _:b1794 ;
+  :ingredient _:b1795 ;
+  :ingredient _:b1796 ;
+  :ingredient _:b1797 ;
+  :ingredient _:b1798 ;
+  :ingredient _:b1799 ;
+  :ingredient _:b1800 ;
+  :ingredient _:b1801 ;
+  :ingredient _:b1802 ;
+  :ingredient _:b1803 ;
+  :ingredient _:b1804 ;
+  :instructions "Combine zucchini, onion, garlic and butter in 2 qt. microwave-safe casserole.  Cover and microwave on high setting 5 to 7 minutes, stirring every 3 minutes, until vegetables are tender.  Place zucchini mixture in blender container; blend until smooth.  Return to casserole dish; add all remaining ingredients except sour cream, pepper and pine nuts.  Cover and microwave 5 to 6 minutes, or until heated through.  Stir in sour cream and season to taste with pepper.  Ladle into soup bowls and garnish with sprinkle of pine nuts.  Serve immediately." ;
+  :name "Creamy Zucchini Mushroom Soup" ;
+  :recipeCategory "Soup" .
+
+recipes:FreshAppleCake :ingredient _:b95 ;
+  :ingredient _:b96 ;
+  :ingredient _:b97 ;
+  :ingredient _:b98 ;
+  :ingredient _:b99 ;
+  :ingredient _:b100 ;
+  :ingredient _:b101 ;
+  :ingredient _:b102 ;
+  :ingredient _:b103 ;
+  :ingredient _:b104 ;
+  :ingredient _:b105 ;
+  :ingredient _:b106 ;
+  :ingredient _:b107 ;
+  :ingredient _:b108 ;
+  :ingredient _:b109 ;
+  :ingredient _:b110 ;
+  :ingredient _:b111 ;
+  :ingredient _:b112 ;
+  :ingredient _:b113 ;
+  :instructions "Mix apples and sugar well.  Add oil, nuts, and eggs.  Add vanilla and dry ingredients.  Bake at 350 degrees for 40-45 minutes.  Serve with whipped cream or top with cream cheese frosting." ;
+  :name "Fresh Apple Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:PeanutButterPie :ingredient _:b1197 ;
+  :ingredient _:b1198 ;
+  :ingredient _:b1199 ;
+  :ingredient _:b1200 ;
+  :ingredient _:b1201 ;
+  :ingredient _:b1202 ;
+  :ingredient _:b1203 ;
+  :ingredient _:b1204 ;
+  :ingredient _:b1205 ;
+  :ingredient _:b1206 ;
+  :ingredient _:b1207 ;
+  :ingredient _:b1208 ;
+  :ingredient _:b1209 ;
+  :ingredient _:b1210 ;
+  :ingredient _:b1211 ;
+  :ingredient _:b1212 ;
+  :ingredient _:b1213 ;
+  :ingredient _:b1214 ;
+  :ingredient _:b1215 ;
+  :instructions "Combine first 5 ingredients.  Mix thoroughly.  Pour into pie shell.  Bake at 350 degrees for 15 minutes.  Reduce heat to 350 degrees and bake for 30 to 35 minutes.  It should appear less set in the center.  Chill.  Top with whipped cream." ;
+  :name "Peanut Butter Pie" ;
+  :recipeCategory "Pies" .
+
+recipes:SpinachSalad :ingredient _:b1615 ;
+  :ingredient _:b1616 ;
+  :ingredient _:b1617 ;
+  :ingredient _:b1618 ;
+  :ingredient _:b1619 ;
+  :ingredient _:b1620 ;
+  :ingredient _:b1621 ;
+  :ingredient _:b1622 ;
+  :ingredient _:b1623 ;
+  :ingredient _:b1624 ;
+  :ingredient _:b1625 ;
+  :ingredient _:b1626 ;
+  :ingredient _:b1627 ;
+  :ingredient _:b1628 ;
+  :ingredient _:b1629 ;
+  :ingredient _:b1630 ;
+  :ingredient _:b1631 ;
+  :ingredient _:b1632 ;
+  :ingredient _:b1633 ;
+  :instructions "Mix spinach and thinly sliced onion.  Fry bacon until crisp, drain.  To drippings add vinegar, water, sugar, and salt.  Bring to a boil.  Beat egg until light.  Add sour cream.  Pour boiling liquid over egg then pour back in skillet.  Cook over low heat until thick.  Pour over spinach, add bacon and chopped egg.  Toss lightly." ;
+  :name "Spinach Salad" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:LemonLusciousPie :ingredient _:b1083 ;
+  :ingredient _:b1084 ;
+  :ingredient _:b1085 ;
+  :ingredient _:b1086 ;
+  :ingredient _:b1087 ;
+  :ingredient _:b1088 ;
+  :ingredient _:b1089 ;
+  :ingredient _:b1090 ;
+  :ingredient _:b1091 ;
+  :ingredient _:b1092 ;
+  :ingredient _:b1093 ;
+  :ingredient _:b1094 ;
+  :ingredient _:b1095 ;
+  :ingredient _:b1096 ;
+  :ingredient _:b1097 ;
+  :ingredient _:b1098 ;
+  :ingredient _:b1099 ;
+  :ingredient _:b1100 ;
+  :ingredient _:b1101 ;
+  :instructions "Combine sugar, cornstarch, butter, lemon rind, and egg yolk in saucepan.  Stir in milk.  Cook over medium heat, stirring until mixture thickens.  Cool.  Fold in sour cream.  Spoon into pie shell.  Col 12 hours or longer.  Top with whipped cream.  Garnish with chopped walnuts if desired." ;
+  :name "Lemon Luscious Pie" ;
+  :recipeCategory "Pies" .
+
+recipes:HorseradishDressing :ingredient _:b1539 ;
+  :ingredient _:b1540 ;
+  :ingredient _:b1541 ;
+  :ingredient _:b1542 ;
+  :ingredient _:b1543 ;
+  :ingredient _:b1544 ;
+  :ingredient _:b1545 ;
+  :ingredient _:b1546 ;
+  :ingredient _:b1547 ;
+  :ingredient _:b1548 ;
+  :ingredient _:b1549 ;
+  :ingredient _:b1550 ;
+  :ingredient _:b1551 ;
+  :ingredient _:b1552 ;
+  :ingredient _:b1553 ;
+  :ingredient _:b1554 ;
+  :ingredient _:b1555 ;
+  :ingredient _:b1556 ;
+  :ingredient _:b1557 ;
+  :instructions "Combine all ingredients in blender or food processor." ;
+  :name "Horseradish Dressing" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:BroccoliCheeseSoup :ingredient _:b1729 ;
+  :ingredient _:b1730 ;
+  :ingredient _:b1731 ;
+  :ingredient _:b1732 ;
+  :ingredient _:b1733 ;
+  :ingredient _:b1734 ;
+  :ingredient _:b1735 ;
+  :ingredient _:b1736 ;
+  :ingredient _:b1737 ;
+  :ingredient _:b1738 ;
+  :ingredient _:b1739 ;
+  :ingredient _:b1740 ;
+  :ingredient _:b1741 ;
+  :ingredient _:b1742 ;
+  :ingredient _:b1743 ;
+  :ingredient _:b1744 ;
+  :ingredient _:b1745 ;
+  :ingredient _:b1746 ;
+  :ingredient _:b1747 ;
+  :instructions "Place potato, broccoli (reserve 2 cups), carrots, garlic, onion, salt, and water in large saucepan.  Bring to boil, then simmer until all vegetables are very tender.  Puree in blender or food processor, and transfer to kettle or dutch oven.  Steam reserved broccoli pieces until just tender.  Add to puree along with all remaining ingredients.  Heat gently.  Serve topped with additional grated cheddar cheese." ;
+  :name "Broccoli Cheese Soup" ;
+  :recipeCategory "Soup" .
+
+recipes:DutchApplePie :ingredient _:b1026 ;
+  :ingredient _:b1027 ;
+  :ingredient _:b1028 ;
+  :ingredient _:b1029 ;
+  :ingredient _:b1030 ;
+  :ingredient _:b1031 ;
+  :ingredient _:b1032 ;
+  :ingredient _:b1033 ;
+  :ingredient _:b1034 ;
+  :ingredient _:b1035 ;
+  :ingredient _:b1036 ;
+  :ingredient _:b1037 ;
+  :ingredient _:b1038 ;
+  :ingredient _:b1039 ;
+  :ingredient _:b1040 ;
+  :ingredient _:b1041 ;
+  :ingredient _:b1042 ;
+  :ingredient _:b1043 ;
+  :ingredient _:b1044 ;
+  :instructions "Combine apples, 1/2 cup sugar, and cinnamon.  Put into the unbaked pie shell.  Top with 1/2 cup sugar, flour, butter, and cinnamon.  Bake 45-50 minutes at 350 degrees." ;
+  :name "Dutch Apple Pie" ;
+  :recipeCategory "Pies" .
+
+recipes:PotatoeCake :ingredient _:b323 ;
+  :ingredient _:b324 ;
+  :ingredient _:b325 ;
+  :ingredient _:b326 ;
+  :ingredient _:b327 ;
+  :ingredient _:b328 ;
+  :ingredient _:b329 ;
+  :ingredient _:b330 ;
+  :ingredient _:b331 ;
+  :ingredient _:b332 ;
+  :ingredient _:b333 ;
+  :ingredient _:b334 ;
+  :ingredient _:b335 ;
+  :ingredient _:b336 ;
+  :ingredient _:b337 ;
+  :ingredient _:b338 ;
+  :ingredient _:b339 ;
+  :ingredient _:b340 ;
+  :ingredient _:b341 ;
+  :instructions "Mix in order given.   Bake at 350 degrees for 25 minutes in two, 9\" pans." ;
+  :name "Potatoe Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:PeanutButterIceCreamPie :ingredient _:b1178 ;
+  :ingredient _:b1179 ;
+  :ingredient _:b1180 ;
+  :ingredient _:b1181 ;
+  :ingredient _:b1182 ;
+  :ingredient _:b1183 ;
+  :ingredient _:b1184 ;
+  :ingredient _:b1185 ;
+  :ingredient _:b1186 ;
+  :ingredient _:b1187 ;
+  :ingredient _:b1188 ;
+  :ingredient _:b1189 ;
+  :ingredient _:b1190 ;
+  :ingredient _:b1191 ;
+  :ingredient _:b1192 ;
+  :ingredient _:b1193 ;
+  :ingredient _:b1194 ;
+  :ingredient _:b1195 ;
+  :ingredient _:b1196 ;
+  :instructions "Mix graham cracker crumbs, sugar, and melted margarine.  Press into 9\" pie pan.  Chill.  To make filling whip 1/2 cup whipping cream.  Place ice cream in a bowl and stir to soften.  Fold in peanut butter; then fold in whipped cream.  Spoon mixture into crust.  Freeze about 5 hours.  Remove from freezer about 15 minutes before serving." ;
+  :name "Peanut Butter Ice Cream Pie" ;
+  :recipeCategory "Pies" .
+
+recipes:BroccoliSaladwithPineapple :ingredient _:b1349 ;
+  :ingredient _:b1350 ;
+  :ingredient _:b1351 ;
+  :ingredient _:b1352 ;
+  :ingredient _:b1353 ;
+  :ingredient _:b1354 ;
+  :ingredient _:b1355 ;
+  :ingredient _:b1356 ;
+  :ingredient _:b1357 ;
+  :ingredient _:b1358 ;
+  :ingredient _:b1359 ;
+  :ingredient _:b1360 ;
+  :ingredient _:b1361 ;
+  :ingredient _:b1362 ;
+  :ingredient _:b1363 ;
+  :ingredient _:b1364 ;
+  :ingredient _:b1365 ;
+  :ingredient _:b1366 ;
+  :ingredient _:b1367 ;
+  :instructions "Cut broccoli flowers.  Chop the top 2 inches of the stems into small pieces.  Mix together broccoli, crisp bacon, drained pineapple, onion, and sunflower seeds.  Blend mayonnaise, sugar, and vinegar to make dressing.  Pour over top of broccoli mixture.  Toss and serve.  Note:  This salad is also great with sliced raw carrots and cauliflower." ;
+  :name "Broccoli Salad with Pineapple" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:LimaBeanSalad :ingredient _:b1577 ;
+  :ingredient _:b1578 ;
+  :ingredient _:b1579 ;
+  :ingredient _:b1580 ;
+  :ingredient _:b1581 ;
+  :ingredient _:b1582 ;
+  :ingredient _:b1583 ;
+  :ingredient _:b1584 ;
+  :ingredient _:b1585 ;
+  :ingredient _:b1586 ;
+  :ingredient _:b1587 ;
+  :ingredient _:b1588 ;
+  :ingredient _:b1589 ;
+  :ingredient _:b1590 ;
+  :ingredient _:b1591 ;
+  :ingredient _:b1592 ;
+  :ingredient _:b1593 ;
+  :ingredient _:b1594 ;
+  :ingredient _:b1595 ;
+  :instructions "Thoroughly mix vinegar, vegetable oil, and salt.  Cook beans until tender, drain and rinse under cold water.  Add other ingredients and toss.  Chill in refrigerator for 1-2 hours." ;
+  :name "Lima Bean Salad" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:LemonCloudSalad :ingredient _:b1558 ;
+  :ingredient _:b1559 ;
+  :ingredient _:b1560 ;
+  :ingredient _:b1561 ;
+  :ingredient _:b1562 ;
+  :ingredient _:b1563 ;
+  :ingredient _:b1564 ;
+  :ingredient _:b1565 ;
+  :ingredient _:b1566 ;
+  :ingredient _:b1567 ;
+  :ingredient _:b1568 ;
+  :ingredient _:b1569 ;
+  :ingredient _:b1570 ;
+  :ingredient _:b1571 ;
+  :ingredient _:b1572 ;
+  :ingredient _:b1573 ;
+  :ingredient _:b1574 ;
+  :ingredient _:b1575 ;
+  :ingredient _:b1576 ;
+  :instructions "Set jello with 1/2 c. less water than package instructions.  When partially set stir in Dream Whip.  Add fruits.  Set several hours to chill." ;
+  :name "Lemon Cloud Salad" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:SpinachSaladwithAlfalfaSprouts :ingredient _:b1653 ;
+  :ingredient _:b1654 ;
+  :ingredient _:b1655 ;
+  :ingredient _:b1656 ;
+  :ingredient _:b1657 ;
+  :ingredient _:b1658 ;
+  :ingredient _:b1659 ;
+  :ingredient _:b1660 ;
+  :ingredient _:b1661 ;
+  :ingredient _:b1662 ;
+  :ingredient _:b1663 ;
+  :ingredient _:b1664 ;
+  :ingredient _:b1665 ;
+  :ingredient _:b1666 ;
+  :ingredient _:b1667 ;
+  :ingredient _:b1668 ;
+  :ingredient _:b1669 ;
+  :ingredient _:b1670 ;
+  :ingredient _:b1671 ;
+  :instructions "Mix dressing ingredients:  mayonnaise, catsup, lemon juice, and sugar.  Combine remaining ingredients.  Toss with dressing." ;
+  :name "Spinach Salad with Alfalfa Sprouts" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:SourCreamRaisinPie :ingredient _:b1235 ;
+  :ingredient _:b1236 ;
+  :ingredient _:b1237 ;
+  :ingredient _:b1238 ;
+  :ingredient _:b1239 ;
+  :ingredient _:b1240 ;
+  :ingredient _:b1241 ;
+  :ingredient _:b1242 ;
+  :ingredient _:b1243 ;
+  :ingredient _:b1244 ;
+  :ingredient _:b1245 ;
+  :ingredient _:b1246 ;
+  :ingredient _:b1247 ;
+  :ingredient _:b1248 ;
+  :ingredient _:b1249 ;
+  :ingredient _:b1250 ;
+  :ingredient _:b1251 ;
+  :ingredient _:b1252 ;
+  :ingredient _:b1253 ;
+  :instructions "Boil raisins in water until plump.  Add flour and sugar.  Cook to thicken slightly then add egg yolks, sour cream, vanilla and nutmeg.  Pour into 9\" bottom crust.  Add top crust.  Sprinkle with sugar.  Bake 50 minutes at 350 degrees." ;
+  :name "Sour Cream Raisin Pie" ;
+  :recipeCategory "Pies" .
+
+recipes:FrostedDelights :ingredient _:b665 ;
+  :ingredient _:b666 ;
+  :ingredient _:b667 ;
+  :ingredient _:b668 ;
+  :ingredient _:b669 ;
+  :ingredient _:b670 ;
+  :ingredient _:b671 ;
+  :ingredient _:b672 ;
+  :ingredient _:b673 ;
+  :ingredient _:b674 ;
+  :ingredient _:b675 ;
+  :ingredient _:b676 ;
+  :ingredient _:b677 ;
+  :ingredient _:b678 ;
+  :ingredient _:b679 ;
+  :ingredient _:b680 ;
+  :ingredient _:b681 ;
+  :ingredient _:b682 ;
+  :ingredient _:b683 ;
+  :instructions "Sift flour, salt and baking powder together.  Cream shortening with sugar until fluffy.  Add eggs, vanilla and sifted ingredients and mix well.  Spread batter very thin on baking sheets.  Fold brown sugar into egg whites, add nuts.  Spread over cookie batter.  Bake at 325 degrees for 30 minutes.  Cut into squares.  Makes 30." ;
+  :name "Frosted Delights" ;
+  :recipeCategory "Cookies" .
+
+recipes:OatmealCake :ingredient _:b228 ;
+  :ingredient _:b229 ;
+  :ingredient _:b230 ;
+  :ingredient _:b231 ;
+  :ingredient _:b232 ;
+  :ingredient _:b233 ;
+  :ingredient _:b234 ;
+  :ingredient _:b235 ;
+  :ingredient _:b236 ;
+  :ingredient _:b237 ;
+  :ingredient _:b238 ;
+  :ingredient _:b239 ;
+  :ingredient _:b240 ;
+  :ingredient _:b241 ;
+  :ingredient _:b242 ;
+  :ingredient _:b243 ;
+  :ingredient _:b244 ;
+  :ingredient _:b245 ;
+  :ingredient _:b246 ;
+  :instructions "Pour the water over the oatmeal.  Let stand for 20 minutes.  Add remaining cake ingredients.  Mix well and pour into a greased 9\"x12\" pan.  Let stand while mixing topping.  To prepare topping:  Mix all ingredients together over low heat, until butter melts.  Spoon over unbaked cake.  Bake 45 minutes at 350 degrees." ;
+  :name "Oatmeal Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:MinestroneSoup :ingredient _:b1862 ;
+  :ingredient _:b1863 ;
+  :ingredient _:b1864 ;
+  :ingredient _:b1865 ;
+  :ingredient _:b1866 ;
+  :ingredient _:b1867 ;
+  :ingredient _:b1868 ;
+  :ingredient _:b1869 ;
+  :ingredient _:b1870 ;
+  :ingredient _:b1871 ;
+  :ingredient _:b1872 ;
+  :ingredient _:b1873 ;
+  :ingredient _:b1874 ;
+  :ingredient _:b1875 ;
+  :ingredient _:b1876 ;
+  :ingredient _:b1877 ;
+  :ingredient _:b1878 ;
+  :ingredient _:b1879 ;
+  :ingredient _:b1880 ;
+  :instructions "Brown hamburger and onions.  Add all other ingredients with enough water to cover.  Simmer two to three hours then add spaghetti and cook until tender." ;
+  :name "Minestrone Soup" ;
+  :recipeCategory "Soup" .
+
+recipes:Coleslaw :ingredient _:b1387 ;
+  :ingredient _:b1388 ;
+  :ingredient _:b1389 ;
+  :ingredient _:b1390 ;
+  :ingredient _:b1391 ;
+  :ingredient _:b1392 ;
+  :ingredient _:b1393 ;
+  :ingredient _:b1394 ;
+  :ingredient _:b1395 ;
+  :ingredient _:b1396 ;
+  :ingredient _:b1397 ;
+  :ingredient _:b1398 ;
+  :ingredient _:b1399 ;
+  :ingredient _:b1400 ;
+  :ingredient _:b1401 ;
+  :ingredient _:b1402 ;
+  :ingredient _:b1403 ;
+  :ingredient _:b1404 ;
+  :ingredient _:b1405 ;
+  :instructions "Shred cabbage.  Mix remaining ingredients to make dressing.  Stir together." ;
+  :name "Coleslaw" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:RefrigeratorCheesecake :ingredient _:b361 ;
+  :ingredient _:b362 ;
+  :ingredient _:b363 ;
+  :ingredient _:b364 ;
+  :ingredient _:b365 ;
+  :ingredient _:b366 ;
+  :ingredient _:b367 ;
+  :ingredient _:b368 ;
+  :ingredient _:b369 ;
+  :ingredient _:b370 ;
+  :ingredient _:b371 ;
+  :ingredient _:b372 ;
+  :ingredient _:b373 ;
+  :ingredient _:b374 ;
+  :ingredient _:b375 ;
+  :ingredient _:b376 ;
+  :ingredient _:b377 ;
+  :ingredient _:b378 ;
+  :ingredient _:b379 ;
+  :instructions "Crush flakes, mix with butter and sugar.  Press 3/4 of mixture into spring for pan.  Chill.  Soften gelatin in water.  Beat egg yolks slightly; stir in salt, sugar and milk.  Cook over hot water or very low heat.  Stir constantly until it thickens.  Remove from heat.  Stir in softened gelatin.  Cool.  Beat cheese until creamy.  Combine with lemon rind and juice.  Add to gelatin mixture, mixing well.  Whip cream until stiff.  Beat egg whites until stiff but not dry.  Fold cheese mixture to whipped cream.  Spread in pan over crumb mixture.  Sprinkle remaining crumbs on top.  Chill until firm." ;
+  :name "Refrigerator Cheesecake" ;
+  :recipeCategory "Cakes" .
+
+recipes:CrispOatmealFruitStrips :ingredient _:b646 ;
+  :ingredient _:b647 ;
+  :ingredient _:b648 ;
+  :ingredient _:b649 ;
+  :ingredient _:b650 ;
+  :ingredient _:b651 ;
+  :ingredient _:b652 ;
+  :ingredient _:b653 ;
+  :ingredient _:b654 ;
+  :ingredient _:b655 ;
+  :ingredient _:b656 ;
+  :ingredient _:b657 ;
+  :ingredient _:b658 ;
+  :ingredient _:b659 ;
+  :ingredient _:b660 ;
+  :ingredient _:b661 ;
+  :ingredient _:b662 ;
+  :ingredient _:b663 ;
+  :ingredient _:b664 ;
+  :instructions "Beat butter and sugar together until fluffy; beat in egg.  Stir flour with soda, then stir into creamed mixture with raisins and rolled oats.  Mix well.  Divide dough into 15 equal portions.  Place 3 or 4 portions each on ungreased 12\" by 15\" baking sheet.  Pinch dough to shape 8\" ropes and place at least 2 inches apart.  Flatten each rope into a 2\" wide strip.  Bake in a 30 degree oven until golden brown, about 10 minutes.  Let cool on pan about 2 minutes, then cut each strip diagonally into 1 inch wide bars.  Let cookies cool on pan then transfer from pan with a wide spatula.  Store in an airtight container at room temperature up to 2 weeks.  Makes about 12 dozen." ;
+  :name "Crisp Oatmeal Fruit Strips" ;
+  :recipeCategory "Cookies" .
+
+recipes:AngelHash :ingredient _:b1292 ;
+  :ingredient _:b1293 ;
+  :ingredient _:b1294 ;
+  :ingredient _:b1295 ;
+  :ingredient _:b1296 ;
+  :ingredient _:b1297 ;
+  :ingredient _:b1298 ;
+  :ingredient _:b1299 ;
+  :ingredient _:b1300 ;
+  :ingredient _:b1301 ;
+  :ingredient _:b1302 ;
+  :ingredient _:b1303 ;
+  :ingredient _:b1304 ;
+  :ingredient _:b1305 ;
+  :ingredient _:b1306 ;
+  :ingredient _:b1307 ;
+  :ingredient _:b1308 ;
+  :ingredient _:b1309 ;
+  :ingredient _:b1310 ;
+  :instructions "Cook cornstarch, sugar, pineapple juice, and egg yolks until thick.  Cool and fold in remaining ingredients." ;
+  :name "Angel Hash" ;
+  :recipeCategory "Pies" .
+
+recipes:HungryBearVegetableSoup :ingredient _:b1824 ;
+  :ingredient _:b1825 ;
+  :ingredient _:b1826 ;
+  :ingredient _:b1827 ;
+  :ingredient _:b1828 ;
+  :ingredient _:b1829 ;
+  :ingredient _:b1830 ;
+  :ingredient _:b1831 ;
+  :ingredient _:b1832 ;
+  :ingredient _:b1833 ;
+  :ingredient _:b1834 ;
+  :ingredient _:b1835 ;
+  :ingredient _:b1836 ;
+  :ingredient _:b1837 ;
+  :ingredient _:b1838 ;
+  :ingredient _:b1839 ;
+  :ingredient _:b1840 ;
+  :ingredient _:b1841 ;
+  :ingredient _:b1842 ;
+  :instructions "Brown the meat, then add all of the ingredients, except the cabbage. Cover with water and simmer for about an hour until veggies are tender.  Then add the chopped cabbage and simmer again for about a half hour.  Add more liquid if necessary." ;
+  :name "Hungry Bear Vegetable Soup" ;
+  :recipeCategory "Soup" .
+
+recipes:SpicyFruitandNutCake :ingredient _:b418 ;
+  :ingredient _:b419 ;
+  :ingredient _:b420 ;
+  :ingredient _:b421 ;
+  :ingredient _:b422 ;
+  :ingredient _:b423 ;
+  :ingredient _:b424 ;
+  :ingredient _:b425 ;
+  :ingredient _:b426 ;
+  :ingredient _:b427 ;
+  :ingredient _:b428 ;
+  :ingredient _:b429 ;
+  :ingredient _:b430 ;
+  :ingredient _:b431 ;
+  :ingredient _:b432 ;
+  :ingredient _:b433 ;
+  :ingredient _:b434 ;
+  :ingredient _:b435 ;
+  :ingredient _:b436 ;
+  :instructions "Bake in greased and floured 9\" bundt pan at 350 degrees for 45-50 minutes.  Cool 15 minutes.  Loosen around edges with thin spatula.  Pierce with a wooden pick.  Glaze directions:  Cook glaze ingredients over medium heat until full boil and butter melts.  Ladle glaze over cake." ;
+  :name "Spicy Fruit and Nut Cake*" ;
+  :recipeCategory "Cakes" .
+
+recipes:PeachParfaitPie :ingredient _:b1159 ;
+  :ingredient _:b1160 ;
+  :ingredient _:b1161 ;
+  :ingredient _:b1162 ;
+  :ingredient _:b1163 ;
+  :ingredient _:b1164 ;
+  :ingredient _:b1165 ;
+  :ingredient _:b1166 ;
+  :ingredient _:b1167 ;
+  :ingredient _:b1168 ;
+  :ingredient _:b1169 ;
+  :ingredient _:b1170 ;
+  :ingredient _:b1171 ;
+  :ingredient _:b1172 ;
+  :ingredient _:b1173 ;
+  :ingredient _:b1174 ;
+  :ingredient _:b1175 ;
+  :ingredient _:b1176 ;
+  :ingredient _:b1177 ;
+  :instructions "Dissolve gelatin in hot water.  At once add 1/4 of ice cream and stir until blended.  Repeat until all of ice cream is added.  Chill until almost firm.  Mix peaches with sugar and fold into mixture.  Pour into baked shell and chill unit firm.  Whip cream and spread on pie." ;
+  :name "Peach Parfait Pie" ;
+  :recipeCategory "Pies" .
+
+recipes:BlueCheeseDressing :ingredient _:b1311 ;
+  :ingredient _:b1312 ;
+  :ingredient _:b1313 ;
+  :ingredient _:b1314 ;
+  :ingredient _:b1315 ;
+  :ingredient _:b1316 ;
+  :ingredient _:b1317 ;
+  :ingredient _:b1318 ;
+  :ingredient _:b1319 ;
+  :ingredient _:b1320 ;
+  :ingredient _:b1321 ;
+  :ingredient _:b1322 ;
+  :ingredient _:b1323 ;
+  :ingredient _:b1324 ;
+  :ingredient _:b1325 ;
+  :ingredient _:b1326 ;
+  :ingredient _:b1327 ;
+  :ingredient _:b1328 ;
+  :ingredient _:b1329 ;
+  :instructions "Mix or shake well." ;
+  :name "Blue Cheese Dressing" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:GingerSnaps :ingredient _:b703 ;
+  :ingredient _:b704 ;
+  :ingredient _:b705 ;
+  :ingredient _:b706 ;
+  :ingredient _:b707 ;
+  :ingredient _:b708 ;
+  :ingredient _:b709 ;
+  :ingredient _:b710 ;
+  :ingredient _:b711 ;
+  :ingredient _:b712 ;
+  :ingredient _:b713 ;
+  :ingredient _:b714 ;
+  :ingredient _:b715 ;
+  :ingredient _:b716 ;
+  :ingredient _:b717 ;
+  :ingredient _:b718 ;
+  :ingredient _:b719 ;
+  :ingredient _:b720 ;
+  :ingredient _:b721 ;
+  :instructions "Roll in little balls.  Dip in sugar and flatten with glass dipped in water.  Bake at 350 degrees about 7 minutes." ;
+  :name "Ginger Snaps" ;
+  :recipeCategory "Cookies" .
+
+recipes:BananaCreamPie :ingredient _:b988 ;
+  :ingredient _:b989 ;
+  :ingredient _:b990 ;
+  :ingredient _:b991 ;
+  :ingredient _:b992 ;
+  :ingredient _:b993 ;
+  :ingredient _:b994 ;
+  :ingredient _:b995 ;
+  :ingredient _:b996 ;
+  :ingredient _:b997 ;
+  :ingredient _:b998 ;
+  :ingredient _:b999 ;
+  :ingredient _:b1000 ;
+  :ingredient _:b1001 ;
+  :ingredient _:b1002 ;
+  :ingredient _:b1003 ;
+  :ingredient _:b1004 ;
+  :ingredient _:b1005 ;
+  :ingredient _:b1006 ;
+  :instructions "In a heavy saucepan dissolve cornstarch inwater; stir in sweetened condensed milk and egg yolks.  Cook and stir until thickened and bubbly.  Remove from heat; add margarine and vanilla.  Cool slightly.  Slice 2 bananas; dip in lemon juice and drain.  Arrange on bottom of prepare crust.  Pour filling over bananas; cover.  Chill 4 hours or until set.  Spread top with whipped cream.  Slice remaining bananas; dip in lemon juice, drain and garnish top of pie.  Refrigerate leftovers." ;
+  :name "Banana Cream Pie" ;
+  :recipeCategory "Pies" .
+
+recipes:Snickerdoodles :ingredient _:b912 ;
+  :ingredient _:b913 ;
+  :ingredient _:b914 ;
+  :ingredient _:b915 ;
+  :ingredient _:b916 ;
+  :ingredient _:b917 ;
+  :ingredient _:b918 ;
+  :ingredient _:b919 ;
+  :ingredient _:b920 ;
+  :ingredient _:b921 ;
+  :ingredient _:b922 ;
+  :ingredient _:b923 ;
+  :ingredient _:b924 ;
+  :ingredient _:b925 ;
+  :ingredient _:b926 ;
+  :ingredient _:b927 ;
+  :ingredient _:b928 ;
+  :ingredient _:b929 ;
+  :ingredient _:b930 ;
+  :instructions "Mix first 7 ingredients.  Roll in balls.  Dip in mixture of cinnamon and sugar.  Bake for 8-10 minutes at 375 degrees.  Makes 4 dozen." ;
+  :name "Snickerdoodles" ;
+  :recipeCategory "Cookies" .
+
+recipes:StrawberrySpiceLoaf :ingredient _:b437 ;
+  :ingredient _:b438 ;
+  :ingredient _:b439 ;
+  :ingredient _:b440 ;
+  :ingredient _:b441 ;
+  :ingredient _:b442 ;
+  :ingredient _:b443 ;
+  :ingredient _:b444 ;
+  :ingredient _:b445 ;
+  :ingredient _:b446 ;
+  :ingredient _:b447 ;
+  :ingredient _:b448 ;
+  :ingredient _:b449 ;
+  :ingredient _:b450 ;
+  :ingredient _:b451 ;
+  :ingredient _:b452 ;
+  :ingredient _:b453 ;
+  :ingredient _:b454 ;
+  :ingredient _:b455 ;
+  :instructions "Bake in two 9\" loaf pans, greased and floured, at 350 degrees for one hour." ;
+  :name "Strawberry Spice Loaf" ;
+  :recipeCategory "Cakes" .
+
+recipes:GreenBeanSalad :ingredient _:b1501 ;
+  :ingredient _:b1502 ;
+  :ingredient _:b1503 ;
+  :ingredient _:b1504 ;
+  :ingredient _:b1505 ;
+  :ingredient _:b1506 ;
+  :ingredient _:b1507 ;
+  :ingredient _:b1508 ;
+  :ingredient _:b1509 ;
+  :ingredient _:b1510 ;
+  :ingredient _:b1511 ;
+  :ingredient _:b1512 ;
+  :ingredient _:b1513 ;
+  :ingredient _:b1514 ;
+  :ingredient _:b1515 ;
+  :ingredient _:b1516 ;
+  :ingredient _:b1517 ;
+  :ingredient _:b1518 ;
+  :ingredient _:b1519 ;
+  :instructions "Mix oil, vinegar, onion, and lemon.  Pour over beans.  Chill 3 hour or longer.  Spoon beans onto lettuce with slotted spoon.  Top with crumbled blue cheese and coarsely chopped walnuts" ;
+  :name "Green Bean Salad" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:FiveBeanSalad :ingredient _:b1444 ;
+  :ingredient _:b1445 ;
+  :ingredient _:b1446 ;
+  :ingredient _:b1447 ;
+  :ingredient _:b1448 ;
+  :ingredient _:b1449 ;
+  :ingredient _:b1450 ;
+  :ingredient _:b1451 ;
+  :ingredient _:b1452 ;
+  :ingredient _:b1453 ;
+  :ingredient _:b1454 ;
+  :ingredient _:b1455 ;
+  :ingredient _:b1456 ;
+  :ingredient _:b1457 ;
+  :ingredient _:b1458 ;
+  :ingredient _:b1459 ;
+  :ingredient _:b1460 ;
+  :ingredient _:b1461 ;
+  :ingredient _:b1462 ;
+  :instructions "Drain beans and stir together.  Mix ingredients for dressing.  Combine dressing and beans." ;
+  :name "Five Bean Salad" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:CarrotCarousel :ingredient _:b1368 ;
+  :ingredient _:b1369 ;
+  :ingredient _:b1370 ;
+  :ingredient _:b1371 ;
+  :ingredient _:b1372 ;
+  :ingredient _:b1373 ;
+  :ingredient _:b1374 ;
+  :ingredient _:b1375 ;
+  :ingredient _:b1376 ;
+  :ingredient _:b1377 ;
+  :ingredient _:b1378 ;
+  :ingredient _:b1379 ;
+  :ingredient _:b1380 ;
+  :ingredient _:b1381 ;
+  :ingredient _:b1382 ;
+  :ingredient _:b1383 ;
+  :ingredient _:b1384 ;
+  :ingredient _:b1385 ;
+  :ingredient _:b1386 ;
+  :instructions "Sprinkle gelatine over 1/2 cup of cold orange juice in blender container that will hold 5 cups.  Add boiling orange juice; cover and process at low speed until gelatin dissolves.  Add remaining 1 cup cold orange juice, salt, and salad dressing; process until well blended.  Add carrot pieces; cover and turn to high speed, on and off several times until carrots are finely grated.  Stir in pineapple and syrup; pour into 6 cup mold.  Chill until firm." ;
+  :name "Carrot Carousel" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:MyBestGingerbread :ingredient _:b209 ;
+  :ingredient _:b210 ;
+  :ingredient _:b211 ;
+  :ingredient _:b212 ;
+  :ingredient _:b213 ;
+  :ingredient _:b214 ;
+  :ingredient _:b215 ;
+  :ingredient _:b216 ;
+  :ingredient _:b217 ;
+  :ingredient _:b218 ;
+  :ingredient _:b219 ;
+  :ingredient _:b220 ;
+  :ingredient _:b221 ;
+  :ingredient _:b222 ;
+  :ingredient _:b223 ;
+  :ingredient _:b224 ;
+  :ingredient _:b225 ;
+  :ingredient _:b226 ;
+  :ingredient _:b227 ;
+  :instructions "Bake in greased pan for 35 minutes at 325-350 degrees." ;
+  :name "My Best Gingerbread" ;
+  :recipeCategory "Cakes" .
+
+recipes:PumpkinOatmealCookies :ingredient _:b893 ;
+  :ingredient _:b894 ;
+  :ingredient _:b895 ;
+  :ingredient _:b896 ;
+  :ingredient _:b897 ;
+  :ingredient _:b898 ;
+  :ingredient _:b899 ;
+  :ingredient _:b900 ;
+  :ingredient _:b901 ;
+  :ingredient _:b902 ;
+  :ingredient _:b903 ;
+  :ingredient _:b904 ;
+  :ingredient _:b905 ;
+  :ingredient _:b906 ;
+  :ingredient _:b907 ;
+  :ingredient _:b908 ;
+  :ingredient _:b909 ;
+  :ingredient _:b910 ;
+  :ingredient _:b911 ;
+  :instructions "Mix eggs, sugar, oil, spices, and pumpkin.  Add oats, soda, salt nuts, and raisins.  Mix well.  Add flour, 1/2 at a time.  Drop by teaspoons on ungreased cookie sheet.  (These will not spread.)  Bake 10 minutes at 325 degrees.  Remove from pan.  Store in tightly sealed container." ;
+  :name "Pumpkin Oatmeal Cookies" ;
+  :recipeCategory "Cookies" .
+
+recipes:BlueChipCookies :ingredient _:b513 ;
+  :ingredient _:b514 ;
+  :ingredient _:b515 ;
+  :ingredient _:b516 ;
+  :ingredient _:b517 ;
+  :ingredient _:b518 ;
+  :ingredient _:b519 ;
+  :ingredient _:b520 ;
+  :ingredient _:b521 ;
+  :ingredient _:b522 ;
+  :ingredient _:b523 ;
+  :ingredient _:b524 ;
+  :ingredient _:b525 ;
+  :ingredient _:b526 ;
+  :ingredient _:b527 ;
+  :ingredient _:b528 ;
+  :ingredient _:b529 ;
+  :ingredient _:b530 ;
+  :ingredient _:b531 ;
+  :instructions "Mix at low speed.  Add chocolate chips and nuts by hand.  Press into balls in cookie scoop.  Bake at 300 degrees for 15 minutes on middle rack." ;
+  :name "Blue Chip Cookies" ;
+  :recipeCategory "Cookies" .
+
+recipes:SummerFruitSalad :ingredient _:b1672 ;
+  :ingredient _:b1673 ;
+  :ingredient _:b1674 ;
+  :ingredient _:b1675 ;
+  :ingredient _:b1676 ;
+  :ingredient _:b1677 ;
+  :ingredient _:b1678 ;
+  :ingredient _:b1679 ;
+  :ingredient _:b1680 ;
+  :ingredient _:b1681 ;
+  :ingredient _:b1682 ;
+  :ingredient _:b1683 ;
+  :ingredient _:b1684 ;
+  :ingredient _:b1685 ;
+  :ingredient _:b1686 ;
+  :ingredient _:b1687 ;
+  :ingredient _:b1688 ;
+  :ingredient _:b1689 ;
+  :ingredient _:b1690 ;
+  :instructions "Combine all ingredients.  Cover and chill several hours or overnight." ;
+  :name "Summer Fruit Salad" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:PeaSalad :ingredient _:b1596 ;
+  :ingredient _:b1597 ;
+  :ingredient _:b1598 ;
+  :ingredient _:b1599 ;
+  :ingredient _:b1600 ;
+  :ingredient _:b1601 ;
+  :ingredient _:b1602 ;
+  :ingredient _:b1603 ;
+  :ingredient _:b1604 ;
+  :ingredient _:b1605 ;
+  :ingredient _:b1606 ;
+  :ingredient _:b1607 ;
+  :ingredient _:b1608 ;
+  :ingredient _:b1609 ;
+  :ingredient _:b1610 ;
+  :ingredient _:b1611 ;
+  :ingredient _:b1612 ;
+  :ingredient _:b1613 ;
+  :ingredient _:b1614 ;
+  :instructions "Stir together and enjoy." ;
+  :name "Pea Salad" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:BroccoliSalad :ingredient _:b1330 ;
+  :ingredient _:b1331 ;
+  :ingredient _:b1332 ;
+  :ingredient _:b1333 ;
+  :ingredient _:b1334 ;
+  :ingredient _:b1335 ;
+  :ingredient _:b1336 ;
+  :ingredient _:b1337 ;
+  :ingredient _:b1338 ;
+  :ingredient _:b1339 ;
+  :ingredient _:b1340 ;
+  :ingredient _:b1341 ;
+  :ingredient _:b1342 ;
+  :ingredient _:b1343 ;
+  :ingredient _:b1344 ;
+  :ingredient _:b1345 ;
+  :ingredient _:b1346 ;
+  :ingredient _:b1347 ;
+  :ingredient _:b1348 ;
+  :instructions "Pour dressing over salad two hours before serving." ;
+  :name "Broccoli Salad" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:UpsideDownCake :ingredient _:b494 ;
+  :ingredient _:b495 ;
+  :ingredient _:b496 ;
+  :ingredient _:b497 ;
+  :ingredient _:b498 ;
+  :ingredient _:b499 ;
+  :ingredient _:b500 ;
+  :ingredient _:b501 ;
+  :ingredient _:b502 ;
+  :ingredient _:b503 ;
+  :ingredient _:b504 ;
+  :ingredient _:b505 ;
+  :ingredient _:b506 ;
+  :ingredient _:b507 ;
+  :ingredient _:b508 ;
+  :ingredient _:b509 ;
+  :ingredient _:b510 ;
+  :ingredient _:b511 ;
+  :ingredient _:b512 ;
+  :instructions "Melt butter in oven-proof skillet.  Add brown sugar.  Arrange fruit in pan.  To make cake batter, beat eggs about 5 minutes until thick and lemon colored.  Gradually add sugar.  Then add all at once fruit juice an vanilla.  Sift together and beat in flour, baking powder, and salt.  Pour batter over fruit an bake until done, about 45 minutes at 350 degrees." ;
+  :name "Upside Down Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:OldFashionedApplePie :ingredient _:b1121 ;
+  :ingredient _:b1122 ;
+  :ingredient _:b1123 ;
+  :ingredient _:b1124 ;
+  :ingredient _:b1125 ;
+  :ingredient _:b1126 ;
+  :ingredient _:b1127 ;
+  :ingredient _:b1128 ;
+  :ingredient _:b1129 ;
+  :ingredient _:b1130 ;
+  :ingredient _:b1131 ;
+  :ingredient _:b1132 ;
+  :ingredient _:b1133 ;
+  :ingredient _:b1134 ;
+  :ingredient _:b1135 ;
+  :ingredient _:b1136 ;
+  :ingredient _:b1137 ;
+  :ingredient _:b1138 ;
+  :ingredient _:b1139 ;
+  :instructions "Combine first 4 ingredients.  Put in unbaked pie shell.  Slice butter on top. Cover with top crust.  Bake at 350 degrees for 1 hour." ;
+  :name "Old Fashioned Apple Pie" ;
+  :recipeCategory "Pies" .
+
+recipes:PineappleGrahamBars :ingredient _:b855 ;
+  :ingredient _:b856 ;
+  :ingredient _:b857 ;
+  :ingredient _:b858 ;
+  :ingredient _:b859 ;
+  :ingredient _:b860 ;
+  :ingredient _:b861 ;
+  :ingredient _:b862 ;
+  :ingredient _:b863 ;
+  :ingredient _:b864 ;
+  :ingredient _:b865 ;
+  :ingredient _:b866 ;
+  :ingredient _:b867 ;
+  :ingredient _:b868 ;
+  :ingredient _:b869 ;
+  :ingredient _:b870 ;
+  :ingredient _:b871 ;
+  :ingredient _:b872 ;
+  :ingredient _:b873 ;
+  :instructions "Preheat oven to 350 degrees.  Lightly grease 8\"x8\"x2\" pan.  Mix butter with sugar until light.  Beat in egg.  Stir in flour, graham cracker crumbs, pineapple, and walnuts.  Bake 30-35 minutes or until browned and surface is firm to the touch.  Let cool completely in plan. Cut into 20 bars." ;
+  :name "Pineapple Graham Bars" ;
+  :recipeCategory "Cookies" .
+
+recipes:PieCrust :ingredient _:b1216 ;
+  :ingredient _:b1217 ;
+  :ingredient _:b1218 ;
+  :ingredient _:b1219 ;
+  :ingredient _:b1220 ;
+  :ingredient _:b1221 ;
+  :ingredient _:b1222 ;
+  :ingredient _:b1223 ;
+  :ingredient _:b1224 ;
+  :ingredient _:b1225 ;
+  :ingredient _:b1226 ;
+  :ingredient _:b1227 ;
+  :ingredient _:b1228 ;
+  :ingredient _:b1229 ;
+  :ingredient _:b1230 ;
+  :ingredient _:b1231 ;
+  :ingredient _:b1232 ;
+  :ingredient _:b1233 ;
+  :ingredient _:b1234 ;
+  :instructions "Mix flour, salt, and shortening.  Stir in water enough to bind mixture together to form soft dough.  Makes two 9\" pie crusts or 1 double crust.  For double crust pie bake at 350 degrees for 1 hour.  For pie shell bake at 400 degrees for 10 minutes." ;
+  :name "Pie Crust" ;
+  :recipeCategory "Pies" .
+
+recipes:BananaCake :ingredient _:b0 ;
+  :ingredient _:b1 ;
+  :ingredient _:b2 ;
+  :ingredient _:b3 ;
+  :ingredient _:b4 ;
+  :ingredient _:b5 ;
+  :ingredient _:b6 ;
+  :ingredient _:b7 ;
+  :ingredient _:b8 ;
+  :ingredient _:b9 ;
+  :ingredient _:b10 ;
+  :ingredient _:b11 ;
+  :ingredient _:b12 ;
+  :ingredient _:b13 ;
+  :ingredient _:b14 ;
+  :ingredient _:b15 ;
+  :ingredient _:b16 ;
+  :ingredient _:b17 ;
+  :ingredient _:b18 ;
+  :instructions "Bake in three layer pans at 350 degrees." ;
+  :name "Banana Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:ChristmasLogs :ingredient _:b608 ;
+  :ingredient _:b609 ;
+  :ingredient _:b610 ;
+  :ingredient _:b611 ;
+  :ingredient _:b612 ;
+  :ingredient _:b613 ;
+  :ingredient _:b614 ;
+  :ingredient _:b615 ;
+  :ingredient _:b616 ;
+  :ingredient _:b617 ;
+  :ingredient _:b618 ;
+  :ingredient _:b619 ;
+  :ingredient _:b620 ;
+  :ingredient _:b621 ;
+  :ingredient _:b622 ;
+  :ingredient _:b623 ;
+  :ingredient _:b624 ;
+  :ingredient _:b625 ;
+  :ingredient _:b626 ;
+  :instructions "Preheat oven to 350 degrees.  Put walnuts and dates through coarse blade of grinder.  Combine with 1 1/2 cup coconut, sugar, and eggs.  Mix well.  Shape by spoonfuls into 3\" logs, 3/4\" wide.  Roll in rest of coconut, coating well.  Bake 10-12 minutes until golden.  Cool.  Makes 30 logs." ;
+  :name "Christmas Logs" ;
+  :recipeCategory "Cookies" .
+
+recipes:BourbonBalls :ingredient _:b532 ;
+  :ingredient _:b533 ;
+  :ingredient _:b534 ;
+  :ingredient _:b535 ;
+  :ingredient _:b536 ;
+  :ingredient _:b537 ;
+  :ingredient _:b538 ;
+  :ingredient _:b539 ;
+  :ingredient _:b540 ;
+  :ingredient _:b541 ;
+  :ingredient _:b542 ;
+  :ingredient _:b543 ;
+  :ingredient _:b544 ;
+  :ingredient _:b545 ;
+  :ingredient _:b546 ;
+  :ingredient _:b547 ;
+  :ingredient _:b548 ;
+  :ingredient _:b549 ;
+  :ingredient _:b550 ;
+  :instructions "Melt chocolate in double boiler over hot water.  Combine syrup and liquid.  Combine crumbs, sugar, and nuts.  Add chocolate mixture.  Let stand 30 minutes.  Shape in 1\" balls.  Roll in granulated or powdered sugar.  Let ripen i covered container at lest 3 days." ;
+  :name "Bourbon Balls" ;
+  :recipeCategory "Cookies" .
+
+recipes:LightOldFashionedFruitCake :ingredient _:b190 ;
+  :ingredient _:b191 ;
+  :ingredient _:b192 ;
+  :ingredient _:b193 ;
+  :ingredient _:b194 ;
+  :ingredient _:b195 ;
+  :ingredient _:b196 ;
+  :ingredient _:b197 ;
+  :ingredient _:b198 ;
+  :ingredient _:b199 ;
+  :ingredient _:b200 ;
+  :ingredient _:b201 ;
+  :ingredient _:b202 ;
+  :ingredient _:b203 ;
+  :ingredient _:b204 ;
+  :ingredient _:b205 ;
+  :ingredient _:b206 ;
+  :ingredient _:b207 ;
+  :ingredient _:b208 ;
+  :instructions "Sift dry ingredients into a 4 quart bowl.  Add fruit and nuts.  Mix until well coated.  Set aside.  Cream butter, gradually add sugar and cream until fluffy.  Add eggs one at a time, beating well after each.  Add brandy.  Combine with fruit mixture.  Mix well.  Turn into a 10 inch tube pan or four 1# coffee cans lined with foil, filling pans 2/3 full. Bake in slow oven, 275 degrees for 2 3/4 to 3 hours.  About 1/2 hour before done brush lightly with honey or light corn syrup.  Cool completely then wrap tightly in foil to store for several weeks.  Brush with brandy about once a week." ;
+  :name "Light Old Fashioned Fruit Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:FreshStrawberryPie :ingredient _:b1045 ;
+  :ingredient _:b1046 ;
+  :ingredient _:b1047 ;
+  :ingredient _:b1048 ;
+  :ingredient _:b1049 ;
+  :ingredient _:b1050 ;
+  :ingredient _:b1051 ;
+  :ingredient _:b1052 ;
+  :ingredient _:b1053 ;
+  :ingredient _:b1054 ;
+  :ingredient _:b1055 ;
+  :ingredient _:b1056 ;
+  :ingredient _:b1057 ;
+  :ingredient _:b1058 ;
+  :ingredient _:b1059 ;
+  :ingredient _:b1060 ;
+  :ingredient _:b1061 ;
+  :ingredient _:b1062 ;
+  :ingredient _:b1063 ;
+  :instructions "Slice 1 basket of strawberries.  Put half the berries in the bottom of a baked pie shell. Prepare glaze by combining remaining ingredients and cooking in a double-boiler until thickened.   Stir the other half of the berries into the glaze.  Pour into the shell.  Cool.  Top with whipped cream and halved berries." ;
+  :name "Fresh Strawberry Pie" ;
+  :recipeCategory "Pies" .
+
+recipes:CreamyApplePie :ingredient _:b1007 ;
+  :ingredient _:b1008 ;
+  :ingredient _:b1009 ;
+  :ingredient _:b1010 ;
+  :ingredient _:b1011 ;
+  :ingredient _:b1012 ;
+  :ingredient _:b1013 ;
+  :ingredient _:b1014 ;
+  :ingredient _:b1015 ;
+  :ingredient _:b1016 ;
+  :ingredient _:b1017 ;
+  :ingredient _:b1018 ;
+  :ingredient _:b1019 ;
+  :ingredient _:b1020 ;
+  :ingredient _:b1021 ;
+  :ingredient _:b1022 ;
+  :ingredient _:b1023 ;
+  :ingredient _:b1024 ;
+  :ingredient _:b1025 ;
+  :instructions "Place apples in the pie shell.  Mix together sugar, flour, and salt.  Sprinkle over apples.  in a sauce pan bring cream to boiling point.  Pour over apples.  Sprinkle generously with cinnamon.  Bake at 375 degrees for 45 minutes, until firm." ;
+  :name "Creamy Apple Pie" ;
+  :recipeCategory "Pies" .
+
+recipes:OatmealFudgeBars :ingredient _:b817 ;
+  :ingredient _:b818 ;
+  :ingredient _:b819 ;
+  :ingredient _:b820 ;
+  :ingredient _:b821 ;
+  :ingredient _:b822 ;
+  :ingredient _:b823 ;
+  :ingredient _:b824 ;
+  :ingredient _:b825 ;
+  :ingredient _:b826 ;
+  :ingredient _:b827 ;
+  :ingredient _:b828 ;
+  :ingredient _:b829 ;
+  :ingredient _:b830 ;
+  :ingredient _:b831 ;
+  :ingredient _:b832 ;
+  :ingredient _:b833 ;
+  :ingredient _:b834 ;
+  :ingredient _:b835 ;
+  :instructions "Oatmeal Layer:  Grease 9\"x9\" baking pan.  Beat shortening with sugar until fluffy.  Beat in egg and vanilla.  Sift flour with soda and salt into sugar mixture.  Mix well.  Stir in oats and nuts.  Remove 1 cup for topping.  Press the rest of the mixture evenly into the bottom of the pan.\nFudge Layer:  Preheat oven to 350 degrees. In small sauce pan combine chocolate chips butter, milk, and salt.  Cook over low heat, stirring until chocolate and butter are melted.  Remove from the heat.  Stir in nuts and vanilla.  Spread chocolate mixture over oatmeal layer.  Sprinkle top with reserved oatmeal mixture.  Bake 25 minutes or until topping is lightly browned." ;
+  :name "Oatmeal Fudge Bars*" ;
+  :recipeCategory "Cookies" .
+
+recipes:FreshPearCake :ingredient _:b114 ;
+  :ingredient _:b115 ;
+  :ingredient _:b116 ;
+  :ingredient _:b117 ;
+  :ingredient _:b118 ;
+  :ingredient _:b119 ;
+  :ingredient _:b120 ;
+  :ingredient _:b121 ;
+  :ingredient _:b122 ;
+  :ingredient _:b123 ;
+  :ingredient _:b124 ;
+  :ingredient _:b125 ;
+  :ingredient _:b126 ;
+  :ingredient _:b127 ;
+  :ingredient _:b128 ;
+  :ingredient _:b129 ;
+  :ingredient _:b130 ;
+  :ingredient _:b131 ;
+  :ingredient _:b132 ;
+  :instructions "Butter and flour a 9 inch round pan.  Peel and slice pears.  Blend eggs, sugar, milk, and salt.  Add flour, mix well.  Fold 1/2 of pears into batter.  Pour into pan, fan remaining pears on top.  Dot with butter.  Bake at 350 degrees about 55 minutes.  Sprinkle with powdered sugar." ;
+  :name "Fresh Pear Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:HeavenlyCheeseSalad :ingredient _:b1520 ;
+  :ingredient _:b1521 ;
+  :ingredient _:b1522 ;
+  :ingredient _:b1523 ;
+  :ingredient _:b1524 ;
+  :ingredient _:b1525 ;
+  :ingredient _:b1526 ;
+  :ingredient _:b1527 ;
+  :ingredient _:b1528 ;
+  :ingredient _:b1529 ;
+  :ingredient _:b1530 ;
+  :ingredient _:b1531 ;
+  :ingredient _:b1532 ;
+  :ingredient _:b1533 ;
+  :ingredient _:b1534 ;
+  :ingredient _:b1535 ;
+  :ingredient _:b1536 ;
+  :ingredient _:b1537 ;
+  :ingredient _:b1538 ;
+  :instructions "Bring juice to a boil, pour over jello.  Cool.  Mix pineapple, nuts, and cheese.  Add to jello.  Fold in whipped cream.  Pour into mold.  Chill." ;
+  :name "Heavenly Cheese Salad" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:SpecialPruneCake :ingredient _:b399 ;
+  :ingredient _:b400 ;
+  :ingredient _:b401 ;
+  :ingredient _:b402 ;
+  :ingredient _:b403 ;
+  :ingredient _:b404 ;
+  :ingredient _:b405 ;
+  :ingredient _:b406 ;
+  :ingredient _:b407 ;
+  :ingredient _:b408 ;
+  :ingredient _:b409 ;
+  :ingredient _:b410 ;
+  :ingredient _:b411 ;
+  :ingredient _:b412 ;
+  :ingredient _:b413 ;
+  :ingredient _:b414 ;
+  :ingredient _:b415 ;
+  :ingredient _:b416 ;
+  :ingredient _:b417 ;
+  :instructions "Blend sugar and oil.  Add beaten eggs.  Add dry ingredients with buttermilk.  Add vanilla, prunes, and nuts.  Pour into buttered pan about 12\"x8\" in size.  Bake at 300 degrees for 45 minutes.  When cake is done and brown remove from oven and while still hot cover with icing.  \nIcing Directions:  Put all ingredients in medium saucepan and boil to soft ball stage.  This will take 15 or 20 minutes, so start this before cake is to come out of the oven so icing may be poured on to cake immediately.  Leave in pan, cut in squares to serve." ;
+  :name "Special Prune Cake*" ;
+  :recipeCategory "Cakes" .
+
+recipes:PineappleCake :ingredient _:b285 ;
+  :ingredient _:b286 ;
+  :ingredient _:b287 ;
+  :ingredient _:b288 ;
+  :ingredient _:b289 ;
+  :ingredient _:b290 ;
+  :ingredient _:b291 ;
+  :ingredient _:b292 ;
+  :ingredient _:b293 ;
+  :ingredient _:b294 ;
+  :ingredient _:b295 ;
+  :ingredient _:b296 ;
+  :ingredient _:b297 ;
+  :ingredient _:b298 ;
+  :ingredient _:b299 ;
+  :ingredient _:b300 ;
+  :ingredient _:b301 ;
+  :ingredient _:b302 ;
+  :ingredient _:b303 ;
+  :instructions "Spread pineapple in baking dish.  Sprinkle cake mix on this.  Dice butter on top. Sprinkle with almonds.  Bake at 350 degrees for 30 minutes." ;
+  :name "Pineapple Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:ChocolateCrispBranCookies :ingredient _:b551 ;
+  :ingredient _:b552 ;
+  :ingredient _:b553 ;
+  :ingredient _:b554 ;
+  :ingredient _:b555 ;
+  :ingredient _:b556 ;
+  :ingredient _:b557 ;
+  :ingredient _:b558 ;
+  :ingredient _:b559 ;
+  :ingredient _:b560 ;
+  :ingredient _:b561 ;
+  :ingredient _:b562 ;
+  :ingredient _:b563 ;
+  :ingredient _:b564 ;
+  :ingredient _:b565 ;
+  :ingredient _:b566 ;
+  :ingredient _:b567 ;
+  :ingredient _:b568 ;
+  :ingredient _:b569 ;
+  :instructions "Sift flour, soda, and salt.  Blend butter and sugar.  Add eggs and vanilla; beat well.  Add All-Bran cereal and chocolate chips.  Add dry ingredients, mix well.  Drop by spoonful onto cookie sheet.  Bake at 375 degrees about 12 minutes." ;
+  :name "Chocolate Crisp Bran Cookies" ;
+  :recipeCategory "Cookies" .
+
+recipes:LemonPoppyCake :ingredient _:b171 ;
+  :ingredient _:b172 ;
+  :ingredient _:b173 ;
+  :ingredient _:b174 ;
+  :ingredient _:b175 ;
+  :ingredient _:b176 ;
+  :ingredient _:b177 ;
+  :ingredient _:b178 ;
+  :ingredient _:b179 ;
+  :ingredient _:b180 ;
+  :ingredient _:b181 ;
+  :ingredient _:b182 ;
+  :ingredient _:b183 ;
+  :ingredient _:b184 ;
+  :ingredient _:b185 ;
+  :ingredient _:b186 ;
+  :ingredient _:b187 ;
+  :ingredient _:b188 ;
+  :ingredient _:b189 ;
+  :instructions "Mix all for 4 minutes.  Bake at 350 degrees for 40 minutes." ;
+  :name "Lemon Poppy Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:OatmealCookies :ingredient _:b798 ;
+  :ingredient _:b799 ;
+  :ingredient _:b800 ;
+  :ingredient _:b801 ;
+  :ingredient _:b802 ;
+  :ingredient _:b803 ;
+  :ingredient _:b804 ;
+  :ingredient _:b805 ;
+  :ingredient _:b806 ;
+  :ingredient _:b807 ;
+  :ingredient _:b808 ;
+  :ingredient _:b809 ;
+  :ingredient _:b810 ;
+  :ingredient _:b811 ;
+  :ingredient _:b812 ;
+  :ingredient _:b813 ;
+  :ingredient _:b814 ;
+  :ingredient _:b815 ;
+  :ingredient _:b816 ;
+  :instructions "Mix ingredients in the order given.  Drop by teaspoonful onto a cookie sheet.  Bake 8-10 minutes at 350 degrees." ;
+  :name "Oatmeal Cookies" ;
+  :recipeCategory "Cookies" .
+
+recipes:CleosClamChowder :ingredient _:b1767 ;
+  :ingredient _:b1768 ;
+  :ingredient _:b1769 ;
+  :ingredient _:b1770 ;
+  :ingredient _:b1771 ;
+  :ingredient _:b1772 ;
+  :ingredient _:b1773 ;
+  :ingredient _:b1774 ;
+  :ingredient _:b1775 ;
+  :ingredient _:b1776 ;
+  :ingredient _:b1777 ;
+  :ingredient _:b1778 ;
+  :ingredient _:b1779 ;
+  :ingredient _:b1780 ;
+  :ingredient _:b1781 ;
+  :ingredient _:b1782 ;
+  :ingredient _:b1783 ;
+  :ingredient _:b1784 ;
+  :ingredient _:b1785 ;
+  :instructions "Boil potatoes.  Save water.  When potatoes are tender add bacon, onion, and celery.  Add half and half, milk and seasonings.  Thicken with a cup of flour mixed with water.  Add to boiling soup.  Stir in clams, but not too soon or they will get tough." ;
+  :name "Cleo's Clam Chowder" ;
+  :recipeCategory "Soup" .
+
+recipes:BlueberryCoffeeCake :ingredient _:b19 ;
+  :ingredient _:b20 ;
+  :ingredient _:b21 ;
+  :ingredient _:b22 ;
+  :ingredient _:b23 ;
+  :ingredient _:b24 ;
+  :ingredient _:b25 ;
+  :ingredient _:b26 ;
+  :ingredient _:b27 ;
+  :ingredient _:b28 ;
+  :ingredient _:b29 ;
+  :ingredient _:b30 ;
+  :ingredient _:b31 ;
+  :ingredient _:b32 ;
+  :ingredient _:b33 ;
+  :ingredient _:b34 ;
+  :ingredient _:b35 ;
+  :ingredient _:b36 ;
+  :ingredient _:b37 ;
+  :instructions "Mix butter, 1 cup sugar, flour, 2 eggs, 2 tsp vanilla, baking powder, and milk to make cake batter. Blend easily.  Add 3 cups of blueberries.  Put 2 1/2 cups of batter in pan.\nMix cream cheese, 1/2 cup sugar, 1 egg, lemon juice and 1 tsp vanilla to make filling.  Put filling on top of batter.  Top with remaining batter.\nMake streusel topping from flour, butter, brown sugar, ad cinnamon.  Sprinkle on top of cake.\nBake at 375 degrees for 1 hour and 5 minutes.  Check after 50 minutes." ;
+  :name "Blueberry Coffee Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:MexicanMeatballSoup :ingredient _:b1843 ;
+  :ingredient _:b1844 ;
+  :ingredient _:b1845 ;
+  :ingredient _:b1846 ;
+  :ingredient _:b1847 ;
+  :ingredient _:b1848 ;
+  :ingredient _:b1849 ;
+  :ingredient _:b1850 ;
+  :ingredient _:b1851 ;
+  :ingredient _:b1852 ;
+  :ingredient _:b1853 ;
+  :ingredient _:b1854 ;
+  :ingredient _:b1855 ;
+  :ingredient _:b1856 ;
+  :ingredient _:b1857 ;
+  :ingredient _:b1858 ;
+  :ingredient _:b1859 ;
+  :ingredient _:b1860 ;
+  :ingredient _:b1861 ;
+  :instructions "Mix first 8 ingredients.  Shape into 1' balls.  Brown in small amount of oil.  Put remaining ingredients in a large pot.  Heat to boiling.  Add meatballs.  Cover and simmer 15 minutes.  Salt and pepper to taste.  Add rice and simmer 15 minutes.  Salt and pepper to taste.  Add rice and simmer 15 minutes." ;
+  :name "Mexican Meatball Soup" ;
+  :recipeCategory "Soup" .
+
+recipes:JelloPastelCookies :ingredient _:b741 ;
+  :ingredient _:b742 ;
+  :ingredient _:b743 ;
+  :ingredient _:b744 ;
+  :ingredient _:b745 ;
+  :ingredient _:b746 ;
+  :ingredient _:b747 ;
+  :ingredient _:b748 ;
+  :ingredient _:b749 ;
+  :ingredient _:b750 ;
+  :ingredient _:b751 ;
+  :ingredient _:b752 ;
+  :ingredient _:b753 ;
+  :ingredient _:b754 ;
+  :ingredient _:b755 ;
+  :ingredient _:b756 ;
+  :ingredient _:b757 ;
+  :ingredient _:b758 ;
+  :ingredient _:b759 ;
+  :instructions "Mix shortening, sugar, gelatin, eggs, and vanilla.  Blend in dry ingredients.  Roll into 3/4\" balls.  Place 3\" apart on a cookie sheet.  Flatten each with the bottom of a glass dipped in sugar.  Bake 6-8 minutes at 375 degrees.  Makes 4 dozen." ;
+  :name "Jello Pastel Cookies" ;
+  :recipeCategory "Cookies" .
+
+recipes:PruneNutBars :ingredient _:b874 ;
+  :ingredient _:b875 ;
+  :ingredient _:b876 ;
+  :ingredient _:b877 ;
+  :ingredient _:b878 ;
+  :ingredient _:b879 ;
+  :ingredient _:b880 ;
+  :ingredient _:b881 ;
+  :ingredient _:b882 ;
+  :ingredient _:b883 ;
+  :ingredient _:b884 ;
+  :ingredient _:b885 ;
+  :ingredient _:b886 ;
+  :ingredient _:b887 ;
+  :ingredient _:b888 ;
+  :ingredient _:b889 ;
+  :ingredient _:b890 ;
+  :ingredient _:b891 ;
+  :ingredient _:b892 ;
+  :instructions "Cook Prunes - drain and chop.  Mix margarine, sugar and 1 cup of four.  Press into 9\" square pan.  Bake at 350 degrees for 25 minutes.   Sift remaining 1/3 cup flour with baking powder and salt.  Beat brown sugar into eggs, lemon and vanilla.  Add flour, mix well.  Add prunes, nuts, and coconut.  Spread over baked bars.  Bake at 350 degrees for 30-35 minutes.  Cool.  Cut into 24 bars.  Roll in confectioner's sugar." ;
+  :name "Prune Nut Bars" ;
+  :recipeCategory "Cookies" .
+
+recipes:WalnutPie :ingredient _:b1254 ;
+  :ingredient _:b1255 ;
+  :ingredient _:b1256 ;
+  :ingredient _:b1257 ;
+  :ingredient _:b1258 ;
+  :ingredient _:b1259 ;
+  :ingredient _:b1260 ;
+  :ingredient _:b1261 ;
+  :ingredient _:b1262 ;
+  :ingredient _:b1263 ;
+  :ingredient _:b1264 ;
+  :ingredient _:b1265 ;
+  :ingredient _:b1266 ;
+  :ingredient _:b1267 ;
+  :ingredient _:b1268 ;
+  :ingredient _:b1269 ;
+  :ingredient _:b1270 ;
+  :ingredient _:b1271 ;
+  :ingredient _:b1272 ;
+  :instructions "Mix well.  Pour into unbaked pie shell.  Top with 1 cup walnuts or pecans.  Bake at 350 degrees for 1 hour." ;
+  :name "Walnut Pie" ;
+  :recipeCategory "Pies" .
+
+recipes:LemonSquares :ingredient _:b760 ;
+  :ingredient _:b761 ;
+  :ingredient _:b762 ;
+  :ingredient _:b763 ;
+  :ingredient _:b764 ;
+  :ingredient _:b765 ;
+  :ingredient _:b766 ;
+  :ingredient _:b767 ;
+  :ingredient _:b768 ;
+  :ingredient _:b769 ;
+  :ingredient _:b770 ;
+  :ingredient _:b771 ;
+  :ingredient _:b772 ;
+  :ingredient _:b773 ;
+  :ingredient _:b774 ;
+  :ingredient _:b775 ;
+  :ingredient _:b776 ;
+  :ingredient _:b777 ;
+  :ingredient _:b778 ;
+  :instructions "Mix first 3 ingredients well.  Press into 8\"x8\"x2\" pan.  Build up 1/2\" edge.  Bake 20 minutes at 350 degrees.  Beat remaining 6 ingredients until light and fluffy.  Pour over hot crust.  Bake another 25 minutes.  Cool.  Dust with the powdered sugar.  Cut into squares." ;
+  :name "Lemon Squares" ;
+  :recipeCategory "Cookies" .
+
+recipes:SherryWineCake :ingredient _:b380 ;
+  :ingredient _:b381 ;
+  :ingredient _:b382 ;
+  :ingredient _:b383 ;
+  :ingredient _:b384 ;
+  :ingredient _:b385 ;
+  :ingredient _:b386 ;
+  :ingredient _:b387 ;
+  :ingredient _:b388 ;
+  :ingredient _:b389 ;
+  :ingredient _:b390 ;
+  :ingredient _:b391 ;
+  :ingredient _:b392 ;
+  :ingredient _:b393 ;
+  :ingredient _:b394 ;
+  :ingredient _:b395 ;
+  :ingredient _:b396 ;
+  :ingredient _:b397 ;
+  :ingredient _:b398 ;
+  :instructions "Beat for 5 minutes.  Bake for 45 minutes at 350 degrees in angel food pan that has been greased and floured.  Turn to 300 degrees after 20 minutes." ;
+  :name "Sherry Wine Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:ChickenNoodleSoup :ingredient _:b1748 ;
+  :ingredient _:b1749 ;
+  :ingredient _:b1750 ;
+  :ingredient _:b1751 ;
+  :ingredient _:b1752 ;
+  :ingredient _:b1753 ;
+  :ingredient _:b1754 ;
+  :ingredient _:b1755 ;
+  :ingredient _:b1756 ;
+  :ingredient _:b1757 ;
+  :ingredient _:b1758 ;
+  :ingredient _:b1759 ;
+  :ingredient _:b1760 ;
+  :ingredient _:b1761 ;
+  :ingredient _:b1762 ;
+  :ingredient _:b1763 ;
+  :ingredient _:b1764 ;
+  :ingredient _:b1765 ;
+  :ingredient _:b1766 ;
+  :instructions "Boil chicken, remove from bones and chop.  Set aside.  Cook potato, carrots, celery, and onion in water to cover.  When tender add the chicken, bouillon cubes, poultry seasoning, and salt.  Add a large handful of narrow egg noodles.  Add more liquid if necessary and cook until noodles are tender." ;
+  :name "Chicken Noodle Soup" ;
+  :recipeCategory "Soup" .
+
+recipes:ChocolateTrioSquares :ingredient _:b589 ;
+  :ingredient _:b590 ;
+  :ingredient _:b591 ;
+  :ingredient _:b592 ;
+  :ingredient _:b593 ;
+  :ingredient _:b594 ;
+  :ingredient _:b595 ;
+  :ingredient _:b596 ;
+  :ingredient _:b597 ;
+  :ingredient _:b598 ;
+  :ingredient _:b599 ;
+  :ingredient _:b600 ;
+  :ingredient _:b601 ;
+  :ingredient _:b602 ;
+  :ingredient _:b603 ;
+  :ingredient _:b604 ;
+  :ingredient _:b605 ;
+  :ingredient _:b606 ;
+  :ingredient _:b607 ;
+  :instructions "Cream butter, mis in four, and salt.  Spread in greased and floured 9\" pan.  Bake 15 minutes at 350 degrees.  Beat eggs and sugar until smooth. Stir in all other ingredients and blend well.  Spread over first layer.  Bake 350 degrees for 15 minutes.  Cool in pan.\nMelt chocolate.  Blend in syrup and water,  Spread over cookies.  Sprinkle on nuts.  Leave in pan overnight.  Cut into 36 squares." ;
+  :name "Chocolate Trio Squares*" ;
+  :recipeCategory "Cookies" .
+
+recipes:Walnut-Raisinpie :ingredient _:b1273 ;
+  :ingredient _:b1274 ;
+  :ingredient _:b1275 ;
+  :ingredient _:b1276 ;
+  :ingredient _:b1277 ;
+  :ingredient _:b1278 ;
+  :ingredient _:b1279 ;
+  :ingredient _:b1280 ;
+  :ingredient _:b1281 ;
+  :ingredient _:b1282 ;
+  :ingredient _:b1283 ;
+  :ingredient _:b1284 ;
+  :ingredient _:b1285 ;
+  :ingredient _:b1286 ;
+  :ingredient _:b1287 ;
+  :ingredient _:b1288 ;
+  :ingredient _:b1289 ;
+  :ingredient _:b1290 ;
+  :ingredient _:b1291 ;
+  :instructions "Mix sugar and butter.  Add eggs one at a time, beating after each is added.  Add raisins nuts, and vanilla. Pour into unbaked pie shell.  Bake at 400 degrees for 10 minutes.  Reduce heat to 375 degrees for 30 minutes." ;
+  :name "Walnut-Raisin pie" ;
+  :recipeCategory "Pies" .
+
+recipes:CucumbersinSourCream :ingredient _:b1425 ;
+  :ingredient _:b1426 ;
+  :ingredient _:b1427 ;
+  :ingredient _:b1428 ;
+  :ingredient _:b1429 ;
+  :ingredient _:b1430 ;
+  :ingredient _:b1431 ;
+  :ingredient _:b1432 ;
+  :ingredient _:b1433 ;
+  :ingredient _:b1434 ;
+  :ingredient _:b1435 ;
+  :ingredient _:b1436 ;
+  :ingredient _:b1437 ;
+  :ingredient _:b1438 ;
+  :ingredient _:b1439 ;
+  :ingredient _:b1440 ;
+  :ingredient _:b1441 ;
+  :ingredient _:b1442 ;
+  :ingredient _:b1443 ;
+  :instructions "Stir together.  Refrigerate 30 minutes." ;
+  :name "Cucumbers in Sour Cream" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:CranberryMold :ingredient _:b1406 ;
+  :ingredient _:b1407 ;
+  :ingredient _:b1408 ;
+  :ingredient _:b1409 ;
+  :ingredient _:b1410 ;
+  :ingredient _:b1411 ;
+  :ingredient _:b1412 ;
+  :ingredient _:b1413 ;
+  :ingredient _:b1414 ;
+  :ingredient _:b1415 ;
+  :ingredient _:b1416 ;
+  :ingredient _:b1417 ;
+  :ingredient _:b1418 ;
+  :ingredient _:b1419 ;
+  :ingredient _:b1420 ;
+  :ingredient _:b1421 ;
+  :ingredient _:b1422 ;
+  :ingredient _:b1423 ;
+  :ingredient _:b1424 ;
+  :instructions "Mix jello with hot water.  Jell slightly then add cranberry sauce, sour cream, and nuts.  Mix and chill until set." ;
+  :name "Cranberry Mold" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:PumpkinSwirlCheesecake :ingredient _:b342 ;
+  :ingredient _:b343 ;
+  :ingredient _:b344 ;
+  :ingredient _:b345 ;
+  :ingredient _:b346 ;
+  :ingredient _:b347 ;
+  :ingredient _:b348 ;
+  :ingredient _:b349 ;
+  :ingredient _:b350 ;
+  :ingredient _:b351 ;
+  :ingredient _:b352 ;
+  :ingredient _:b353 ;
+  :ingredient _:b354 ;
+  :ingredient _:b355 ;
+  :ingredient _:b356 ;
+  :ingredient _:b357 ;
+  :ingredient _:b358 ;
+  :ingredient _:b359 ;
+  :ingredient _:b360 ;
+  :instructions "CRUST:  Combine crumbs and melted margarine, press into bottom and sides of 9 inch form pan.\nFILLING:  Combine cheese, 1/2 cup sugar and vanilla.  Mix at medium speed until well blended.  Add eggs, one at a time.  Reserve 1 cup of this mixture, then add pumpkin, remaining sugar and spices to remaining cheese mixture.  Mix well.  Layer half of pumpkin mixture an half of cheese mixture over crust.  Repeat layers.  Cut through bater with knife several times to marble.  Bake at 350 degrees for 55 minutes.  Loosen from rim of pan.  Cool before removing.  Chill." ;
+  :name "Pumpkin Swirl Cheesecake" ;
+  :recipeCategory "Cakes" .
+
+recipes:TopRamenSalad :ingredient _:b1691 ;
+  :ingredient _:b1692 ;
+  :ingredient _:b1693 ;
+  :ingredient _:b1694 ;
+  :ingredient _:b1695 ;
+  :ingredient _:b1696 ;
+  :ingredient _:b1697 ;
+  :ingredient _:b1698 ;
+  :ingredient _:b1699 ;
+  :ingredient _:b1700 ;
+  :ingredient _:b1701 ;
+  :ingredient _:b1702 ;
+  :ingredient _:b1703 ;
+  :ingredient _:b1704 ;
+  :ingredient _:b1705 ;
+  :ingredient _:b1706 ;
+  :ingredient _:b1707 ;
+  :ingredient _:b1708 ;
+  :ingredient _:b1709 ;
+  :instructions "Mix Ramen seasoning packet with oil, vinegar, and sugar.  pour over mixture of salad greens, red onion, and peas.  Add crushed Ramen noodles." ;
+  :name "Top Ramen Salad" ;
+  :recipeCategory "Salads and Dressings" .
+
+recipes:HotWaterChocolateCake :ingredient _:b152 ;
+  :ingredient _:b153 ;
+  :ingredient _:b154 ;
+  :ingredient _:b155 ;
+  :ingredient _:b156 ;
+  :ingredient _:b157 ;
+  :ingredient _:b158 ;
+  :ingredient _:b159 ;
+  :ingredient _:b160 ;
+  :ingredient _:b161 ;
+  :ingredient _:b162 ;
+  :ingredient _:b163 ;
+  :ingredient _:b164 ;
+  :ingredient _:b165 ;
+  :ingredient _:b166 ;
+  :ingredient _:b167 ;
+  :ingredient _:b168 ;
+  :ingredient _:b169 ;
+  :ingredient _:b170 ;
+  :instructions "Mix all ingredients together.  Pour in 1 cup boiling water. Mix well.  Bake about 35 minutes at 375 degrees." ;
+  :name "Hot Water Chocolate Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:ThreeLayerChocolateMayonnaiseCake :ingredient _:b456 ;
+  :ingredient _:b457 ;
+  :ingredient _:b458 ;
+  :ingredient _:b459 ;
+  :ingredient _:b460 ;
+  :ingredient _:b461 ;
+  :ingredient _:b462 ;
+  :ingredient _:b463 ;
+  :ingredient _:b464 ;
+  :ingredient _:b465 ;
+  :ingredient _:b466 ;
+  :ingredient _:b467 ;
+  :ingredient _:b468 ;
+  :ingredient _:b469 ;
+  :ingredient _:b470 ;
+  :ingredient _:b471 ;
+  :ingredient _:b472 ;
+  :ingredient _:b473 ;
+  :ingredient _:b474 ;
+  :instructions "Grease three 9\" layer pans, one with waxed paper.  Sift dry ingredients into large bowl.  Stir in mayonnaise.  Stir in water and vanilla until smooth.  Pour into pans.  Bake at 350 degrees for 30 minutes.  Cool.  Frost with chocolate frosting." ;
+  :name "Three Layer Chocolate Mayonnaise Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:Orange-PoppySeedPoundCake :ingredient _:b266 ;
+  :ingredient _:b267 ;
+  :ingredient _:b268 ;
+  :ingredient _:b269 ;
+  :ingredient _:b270 ;
+  :ingredient _:b271 ;
+  :ingredient _:b272 ;
+  :ingredient _:b273 ;
+  :ingredient _:b274 ;
+  :ingredient _:b275 ;
+  :ingredient _:b276 ;
+  :ingredient _:b277 ;
+  :ingredient _:b278 ;
+  :ingredient _:b279 ;
+  :ingredient _:b280 ;
+  :ingredient _:b281 ;
+  :ingredient _:b282 ;
+  :ingredient _:b283 ;
+  :ingredient _:b284 ;
+  :instructions "Preheat oven to 325 degrees.  Grease and flour a 9x5x3 inch loaf pan; tap out excess flour.  In large bowl beat together softened butter, sugar, vanilla, and orange peel until pale and fluffy.  Beat in flour, then remaining ingredients, except the glaze (powdered sugar and 2 1/2 tsp. orange juice).  Mix until well blended.  Spread in prepared pan.  With handle of a wooden spoon, make 1/2 inch deep score down center length of batter.  Bake 50-60 minutes, until wooden pick inserted in center comes out clean.  Cool in pan on rack 30 minutes; invert onto rack; remove pan.  Cool completely.  To prepare glaze seal powdered sugar and orange juice in small zipper-style bag.  Gently massage mixture with fingers until blended and smooth.  Snip off corner of bag.  Drizzle glaze over cake.  Let stand 1 hour or until glaze is set." ;
+  :name "Orange-Poppy Seed Pound Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:OrangeAngelFoodCake :ingredient _:b247 ;
+  :ingredient _:b248 ;
+  :ingredient _:b249 ;
+  :ingredient _:b250 ;
+  :ingredient _:b251 ;
+  :ingredient _:b252 ;
+  :ingredient _:b253 ;
+  :ingredient _:b254 ;
+  :ingredient _:b255 ;
+  :ingredient _:b256 ;
+  :ingredient _:b257 ;
+  :ingredient _:b258 ;
+  :ingredient _:b259 ;
+  :ingredient _:b260 ;
+  :ingredient _:b261 ;
+  :ingredient _:b262 ;
+  :ingredient _:b263 ;
+  :ingredient _:b264 ;
+  :ingredient _:b265 ;
+  :instructions "Prepare angel food cake as directed on package, but pour 1/3 cup of the thawed orange juice into a 2 cup measure and add enough water for the mixture to equal the amount of water called for in package directions.  Continue to prepare cake as directed, baking the batter in an ungreased 10 inch tube pan.  Immediately invert the cake, leaving in pan.  Cool completely.  Loosen sides of cake from pan; remove cake.  To make the topping, in a medium bowl, gently stir together the thawed topping and yogurt.  Fold in remaining orange juice concentrate.  Spread topping mixture over top ad sides of cake." ;
+  :name "Orange Angel Food Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:TwoLayerChocolateMayonnaiseCake :ingredient _:b475 ;
+  :ingredient _:b476 ;
+  :ingredient _:b477 ;
+  :ingredient _:b478 ;
+  :ingredient _:b479 ;
+  :ingredient _:b480 ;
+  :ingredient _:b481 ;
+  :ingredient _:b482 ;
+  :ingredient _:b483 ;
+  :ingredient _:b484 ;
+  :ingredient _:b485 ;
+  :ingredient _:b486 ;
+  :ingredient _:b487 ;
+  :ingredient _:b488 ;
+  :ingredient _:b489 ;
+  :ingredient _:b490 ;
+  :ingredient _:b491 ;
+  :ingredient _:b492 ;
+  :ingredient _:b493 ;
+  :instructions "Grease two 9\" layer pans, line with waxed paper.  Sift dry ingredients into large bowl.  Stir in mayonnaise.  Stir in water and vanilla until smooth.  Pour into pans.  Bake at 350 degrees for 30 minutes.  Cool.  Frost with chocolate frosting." ;
+  :name "Two Layer Chocolate Mayonnaise Cake" ;
+  :recipeCategory "Cakes" .
+
+recipes:ChristmasSnowballs :ingredient _:b627 ;
+  :ingredient _:b628 ;
+  :ingredient _:b629 ;
+  :ingredient _:b630 ;
+  :ingredient _:b631 ;
+  :ingredient _:b632 ;
+  :ingredient _:b633 ;
+  :ingredient _:b634 ;
+  :ingredient _:b635 ;
+  :ingredient _:b636 ;
+  :ingredient _:b637 ;
+  :ingredient _:b638 ;
+  :ingredient _:b639 ;
+  :ingredient _:b640 ;
+  :ingredient _:b641 ;
+  :ingredient _:b642 ;
+  :ingredient _:b643 ;
+  :ingredient _:b644 ;
+  :ingredient _:b645 ;
+  :instructions "Combine first 5 ingredients.  Blend well.  Stir in flour, chocolate chips, and nuts.  Form 1\" balls.   Place on ungreased cookie sheet.  Bake 30 minutes at 350 degrees. Roll in powdered sugar while still warm. Makes approx. 5 dozen." ;
+  :name "Christmas Snowballs" ;
+  :recipeCategory "Cookies" .
+
+recipes:HoneyGrahamCrackers :ingredient _:b722 ;
+  :ingredient _:b723 ;
+  :ingredient _:b724 ;
+  :ingredient _:b725 ;
+  :ingredient _:b726 ;
+  :ingredient _:b727 ;
+  :ingredient _:b728 ;
+  :ingredient _:b729 ;
+  :ingredient _:b730 ;
+  :ingredient _:b731 ;
+  :ingredient _:b732 ;
+  :ingredient _:b733 ;
+  :ingredient _:b734 ;
+  :ingredient _:b735 ;
+  :ingredient _:b736 ;
+  :ingredient _:b737 ;
+  :ingredient _:b738 ;
+  :ingredient _:b739 ;
+  :ingredient _:b740 ;
+  :instructions "Stir all ingredients about 3 minutes to mix well.  Divide in half.  Place each half on 17\"x14\" baking sheet.  Flatten and roll to 12\" x 10\" rectangle, dusting with flour to prevent sticking.  Cut into 2\" squares.  Prick with fork.Bake at 425 degrees for 8-10 minutes until lightly browned.  Cut apart while hot.  Cool on baking sheet.  Makes 60.  50 calories each." ;
+  :name "Honey Graham Crackers" ;
+  :recipeCategory "Cookies" .
+
+recipes:ChocolatePeanutBrunchBars :ingredient _:b570 ;
+  :ingredient _:b571 ;
+  :ingredient _:b572 ;
+  :ingredient _:b573 ;
+  :ingredient _:b574 ;
+  :ingredient _:b575 ;
+  :ingredient _:b576 ;
+  :ingredient _:b577 ;
+  :ingredient _:b578 ;
+  :ingredient _:b579 ;
+  :ingredient _:b580 ;
+  :ingredient _:b581 ;
+  :ingredient _:b582 ;
+  :ingredient _:b583 ;
+  :ingredient _:b584 ;
+  :ingredient _:b585 ;
+  :ingredient _:b586 ;
+  :ingredient _:b587 ;
+  :ingredient _:b588 ;
+  :instructions "Blend first 5 ingredients until it resembles corn meal.  Add egg and vanilla.  Mix well.  Press firmly into ungreased jelly roll pan.  Bake at 350 degrees for 25 minutes.  Cool slightly.  Melt chocolate over hot water.  Stir in peanut butter and cereal.  Spread on cookie dough.  Let stand until chocolate sets.  Cut into 35 bars." ;
+  :name "Chocolate Peanut Brunch Bars" ;
+  :recipeCategory "Cookies" .
+
+recipes:SoftSugarCookies :ingredient _:b931 ;
+  :ingredient _:b932 ;
+  :ingredient _:b933 ;
+  :ingredient _:b934 ;
+  :ingredient _:b935 ;
+  :ingredient _:b936 ;
+  :ingredient _:b937 ;
+  :ingredient _:b938 ;
+  :ingredient _:b939 ;
+  :ingredient _:b940 ;
+  :ingredient _:b941 ;
+  :ingredient _:b942 ;
+  :ingredient _:b943 ;
+  :ingredient _:b944 ;
+  :ingredient _:b945 ;
+  :ingredient _:b946 ;
+  :ingredient _:b947 ;
+  :ingredient _:b948 ;
+  :ingredient _:b949 ;
+  :instructions "Cream butter.  Add sugar gradually while continuing to cream.  Ad eggs one at a time, beating well after each.  Add vanilla.  Beat until light and fluffy.  Add mixed dry ingredients, alternately with sour cream; begin and end with dry ingredients.  For 3 inch cookies drop by heaping teaspoons.  With spatula flatten into circles about 2 inch wide.  Sprinkle with sugar and cinnamon.  Bake in hot oven - 400 degrees for 10-20 minutes.  Makes about thirty - 3 inch cookies." ;
+  :name "Soft Sugar Cookies" ;
+  :recipeCategory "Cookies" .
+
+recipes:GingerSnapBars :ingredient _:b684 ;
+  :ingredient _:b685 ;
+  :ingredient _:b686 ;
+  :ingredient _:b687 ;
+  :ingredient _:b688 ;
+  :ingredient _:b689 ;
+  :ingredient _:b690 ;
+  :ingredient _:b691 ;
+  :ingredient _:b692 ;
+  :ingredient _:b693 ;
+  :ingredient _:b694 ;
+  :ingredient _:b695 ;
+  :ingredient _:b696 ;
+  :ingredient _:b697 ;
+  :ingredient _:b698 ;
+  :ingredient _:b699 ;
+  :ingredient _:b700 ;
+  :ingredient _:b701 ;
+  :ingredient _:b702 ;
+  :instructions "Mix first four ingredients.  Add dry ingredients with milk.  Mix well.  Add nuts.  Pour into greased 9\" square pan.  Bake at 350 degrees for 35 to 40 minutes.  Cool in pan.  Cut into 24 bars, roll in powdered sugar." ;
+  :name "Ginger Snap Bars" ;
+  :recipeCategory "Cookies" .
+
+_:b1239 :name "egg yolks, slightly beaten" ;
+  :quantity "3" .
+
+_:b1238 :name "sugar" ;
+  :quantity "04-Mar" ;
+  :unit "cup" .
+
+_:b1599 :name "water chestnuts, sliced" ;
+  :quantity "1" ;
+  :unit "can" .
+
+_:b1237 :name "flour" ;
+  :quantity "1 1/2" ;
+  :unit "Tbsp" .
+
+_:b1598 :name "crumbled bacon bits" ;
+  :quantity "1/2 to 1" ;
+  :unit "cup" .
+
+_:b1236 :name "water" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b1597 :name "green onion, chopped" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1235 :name "raisins" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b1596 :name "frozen peas, uncooked" ;
+  :quantity "1" ;
+  :unit "bag" .
+
+_:b429 :name "eggs" ;
+  :quantity "3" .
+
+_:b428 :name "buttermilk" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b427 :name "vegetable oil" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b426 :name "flour" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b425 :name "salt" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b424 :name "allspice" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b423 :name "nutmeg" ;
+  :quantity "1 1/2" ;
+  :unit "tsps" .
+
+_:b785 :name "salt" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b422 :name "cinnamon" ;
+  :quantity "1 1/2" ;
+  :unit "tsps" .
+
+_:b784 :name "baking powder" ;
+  :quantity "1 1/2" ;
+  :unit "tsp" .
+
+_:b421 :name "baking soda" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b783 :name "flour" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b420 :name "flour" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b782 :name "mint apple jelly" ;
+  :quantity "04-Mar" ;
+  :unit "cup" .
+
+_:b781 :name "sugar" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b780 :name "oil" ;
+  :quantity "03-Feb" ;
+  :unit "cup" .
+
+_:b1585 :name "garlic, crushed or 1/8 tsp. garlic pwder." ;
+  :quantity "1" ;
+  :unit "clove" .
+
+_:b1584 :name "pepper" ;
+  :unit "dash" .
+
+_:b1583 :name "salt" ;
+  :quantity "04-Mar" ;
+  :unit "tsp" .
+
+_:b1582 :name "vegetable oil" ;
+  :quantity "1" ;
+  :unit "Tbsp" .
+
+_:b1581 :name "oregano" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b419 :name "walnuts" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1580 :name "parsley, choped" ;
+  :quantity "1" ;
+  :unit "Tbsp" .
+
+_:b418 :name "chopped pitted prunes" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b779 :name "egg" ;
+  :quantity "1" .
+
+_:b416 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b415 :name "butter" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b414 :name "white corn syrup" ;
+  :quantity "1" ;
+  :unit "tbsp" .
+
+_:b413 :name "soda water" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b412 :name "buttermilk" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b411 :name "sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b410 :name "chopped nuts" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1219 :name "ice water or 7-up" ;
+  :quantity "4 or 5" ;
+  :unit "Tbsp" .
+
+_:b1218 :name "shortening" ;
+  :quantity "03-Feb" ;
+  :unit "cup" .
+
+_:b1579 :name "green onions, sliced" ;
+  :quantity "4" .
+
+_:b1217 :name "salt" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b1578 :name "fresh mushrooms, sliced" ;
+  :quantity "8" .
+
+_:b1216 :name "sifted flour" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b1577 :name "frozen lima beans" ;
+  :quantity "1" ;
+  :unit "10z. pkg." .
+
+_:b409 :name "cooked prunes" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b408 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b407 :name "buttermilk" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b406 :name "baking powder" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b768 :name "Lemon juice" ;
+  :quantity "2" ;
+  :unit "Tbsp" .
+
+_:b405 :name "soda" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b767 :name "lemon peel" ;
+  :quantity "2" ;
+  :unit "Tbsp" .
+
+_:b404 :name "salt" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b766 :name "salt" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b403 :name "flour" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b765 :name "baking powder" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b402 :name "nutmeg, cinnamon, and allspice" ;
+  :quantity "1" ;
+  :unit "tsp. each" .
+
+_:b764 :name "sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b401 :name "sugar" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b763 :quantity "2" ;
+  :unit "eggs" .
+
+_:b400 :name "oil" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b762 :name "powdered sugar" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b761 :name "margarine" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b760 :name "flour" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1203 :name "whipped cream" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1202 :name "pie shell, unbaked" ;
+  :quantity "1" .
+
+_:b1201 :name "chunk style peanut butter" ;
+  :quantity "03-Jan" ;
+  :unit "cup" .
+
+_:b1562 :name "Dream Whip" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b1200 :name "vanilla" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b1561 :name "bananas, sliced" ;
+  :quantity "2" .
+
+_:b1560 :name "pineapple tidbits" ;
+  :quantity "1" ;
+  :unit "med. can" .
+
+_:b1559 :name "mandarin oranges" ;
+  :quantity "1" ;
+  :unit "can" .
+
+_:b1558 :name "lemon jello" ;
+  :quantity "1" ;
+  :unit "large package" .
+
+_:b748 :name "salt" ;
+  :quantity "1" ;
+  :unit "tsp." .
+
+_:b747 :name "baking powder" ;
+  :quantity "1" ;
+  :unit "tsp." .
+
+_:b746 :name "flour" ;
+  :quantity "2 1/2" ;
+  :unit "cups" .
+
+_:b745 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp." .
+
+_:b744 :quantity "2" ;
+  :unit "eggs" .
+
+_:b743 :name "fruit jello" ;
+  :quantity "3" ;
+  :unit "oz. pkg." .
+
+_:b742 :name "sugar" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b741 :name "margarine" ;
+  :quantity "04-Mar" ;
+  :unit "cup" .
+
+_:b1548 :name "vinegar" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b1547 :name "kelp" ;
+  :quantity "04-Mar" ;
+  :unit "tsp" .
+
+_:b1546 :name "pepper" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b1545 :name "salt" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1544 :name "onion powder" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1543 :name "oil" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1542 :name "buttermilk" ;
+  :quantity "04-Mar" ;
+  :unit "cup" .
+
+_:b1541 :name "sour cream" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1540 :name "mayonnaise" ;
+  :quantity "4" ;
+  :unit "cups" .
+
+_:b736 :name "baking soda" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b735 :name "salt" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b734 :name "cold water" ;
+  :quantity "3" ;
+  :unit "tbsp" .
+
+_:b733 :name "oil" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b732 :name "honey" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b731 :name "cinnamon" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b730 :name "shortening" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1539 :name "horseradish" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1893 :name "lettuce, shredded" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1892 :name "monterey jack or cheddar cheese, shredded" .
+
+_:b1891 :name "corn tortillas" ;
+  :quantity "3" .
+
+_:b729 :name "brown sugar" ;
+  :quantity "03-Jan" ;
+  :unit "cup" .
+
+_:b1890 :name "chopped green chiles" ;
+  :quantity "1" ;
+  :unit "4 oz. can" .
+
+_:b728 :name "whole wheat flour" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b722 :name "flour" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b1889 :name "tomato, chopped" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1888 :name "water" ;
+  :quantity "1" ;
+  :unit "soup can" .
+
+_:b1887 :name "Campbell's condensed chicken broth" ;
+  :quantity "1" ;
+  :unit "can" .
+
+_:b1525 :name "whipped cream" ;
+  :quantity "1" ;
+  :unit "pint" .
+
+_:b1886 :name "garlic, minced" ;
+  :quantity "1" ;
+  :unit "clove" .
+
+_:b1524 :name "walnuts, chopped" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1885 :name "diced oregano leaves, crushed" ;
+  :quantity "08-Jan" ;
+  :unit "tsp" .
+
+_:b1523 :name "cream cheese" ;
+  :quantity "8" ;
+  :unit "oz" .
+
+_:b1884 :name "ground cumin" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b1522 :name "crushed pineapple" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1883 :name "onion, chopped" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1521 :name "pineapple juice + water" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1882 :name "vegetable oil" .
+
+_:b1520 :name "lemon jello" ;
+  :quantity "1" ;
+  :unit "small package" .
+
+_:b1881 :name "lime" ;
+  :quantity "1" .
+
+_:b711 :name "flour" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b710 :name "soda" ;
+  :quantity "2" ;
+  :unit "tsp" .
+
+_:b1874 :name "broken spaghetti" ;
+  :quantity "1" ;
+  :unit "handful" .
+
+_:b1873 :name "spaghetti sauce mix" ;
+  :quantity "1" ;
+  :unit "package" .
+
+_:b1872 :name "tomato sauce" ;
+  :quantity "1" ;
+  :unit "large can" .
+
+_:b1871 :name "stewed tomatoes" ;
+  :quantity "1" ;
+  :unit "large can" .
+
+_:b709 :name "cloves" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b1870 :name "cabbage, chopped" ;
+  :quantity "02-Jan" ;
+  :unit "head" .
+
+_:b708 :name "cinnamon" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b707 :name "ginger" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b706 :name "molasses" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b705 :name "egg" ;
+  :quantity "1" .
+
+_:b704 :name "brown sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b703 :name "shortening" ;
+  :quantity "04-Mar" ;
+  :unit "cup" .
+
+_:b1869 :name "zucchini, diced" ;
+  :quantity "2" ;
+  :unit "small" .
+
+_:b1507 :name "walnuts, chopped" .
+
+_:b1868 :name "frozen spinach" ;
+  :quantity "1" ;
+  :unit "package" .
+
+_:b1506 :name "blue cheese" .
+
+_:b1867 :name "kidney beans" ;
+  :quantity "1" ;
+  :unit "can" .
+
+_:b1505 :name "grated lemon rind" ;
+  :quantity "2" ;
+  :unit "tsp" .
+
+_:b1866 :name "stalks of celery, chopped" ;
+  :quantity "3" .
+
+_:b1504 :name "red onion, chopped" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1865 :name "carrots, diced" ;
+  :quantity "6" .
+
+_:b1503 :name "white vinegar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1864 :name "onion, chopped" ;
+  :quantity "1" ;
+  :unit "large" .
+
+_:b1502 :name "salad oil" ;
+  :quantity "04-Mar" ;
+  :unit "cup" .
+
+_:b1863 :name "potatoes, cubed" ;
+  :quantity "4" .
+
+_:b1501 :name "fresh beans" ;
+  :quantity "1" ;
+  :unit "pound" .
+
+_:b1862 :name "hamburger" ;
+  :quantity "1" ;
+  :unit "pound" .
+
+_:b1861 :name "instant rice" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1860 :name "tomato sauce" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1859 :name "chili powder" ;
+  :quantity "1" ;
+  :unit "Tbsp" .
+
+_:b1858 :name "cumin" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1857 :name "oregano" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1856 :name "garlic powder" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1855 :name "celery, chopped" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1854 :name "onion, chopped" ;
+  :quantity "1" .
+
+_:b1853 :name "carrots, chopped" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1852 :name "tomatoes, crushed" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b1851 :name "chicken or beef broth" ;
+  :quantity "4" ;
+  :unit "cups" .
+
+_:b1850 :name "chili powder" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1849 :name "cumin" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b1848 :name "oregano" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b1847 :name "garlic powder" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b1846 :name "onion, finely chopped" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b1845 :name "egg" ;
+  :quantity "1" .
+
+_:b1844 :name "minute rice" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b1843 :name "hamburger" ;
+  :quantity "1" ;
+  :unit "pound" .
+
+_:b1832 :name "salt, to taste" .
+
+_:b1831 :name "cabbage" ;
+  :quantity "02-Jan" ;
+  :unit "head" .
+
+_:b1830 :name "tomatoes, crushed" ;
+  :quantity "1" ;
+  :unit "small can" .
+
+_:b1829 :name "stewed tomatoes, crushed" ;
+  :quantity "1" ;
+  :unit "large can" .
+
+_:b1828 :name "celery, sliced" ;
+  :quantity "2" ;
+  :unit "stalks" .
+
+_:b1827 :name "onion, coarsely chopped" ;
+  :quantity "1" ;
+  :unit "large" .
+
+_:b1826 :name "carrots, diced" ;
+  :quantity "4" ;
+  :unit "large" .
+
+_:b1825 :name "potatoes, diced" ;
+  :quantity "2" ;
+  :unit "large" .
+
+_:b1824 :name "hamburger" ;
+  :quantity "1" ;
+  :unit "pound" .
+
+_:b1808 :name "rabbits" ;
+  :quantity "2" .
+
+_:b1807 :name "brown gravy" .
+
+_:b1806 :name "salt and pepper to taste" .
+
+_:b1805 :name "elephant" ;
+  :quantity "1" ;
+  :unit "medium" .
+
+_:b399 :name "eggs" ;
+  :quantity "3" .
+
+_:b1199 :name "eggs, slightly beaten" ;
+  :quantity "3" .
+
+_:b1198 :name "sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1197 :name "light or dark corn syrup" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b385 :name "nutmeg" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b384 :name "sherry cooking wine" ;
+  :quantity "04-Mar" ;
+  :unit "cup" .
+
+_:b383 :name "oil" ;
+  :quantity "04-Mar" ;
+  :unit "cup" .
+
+_:b382 :name "eggs" ;
+  :quantity "4" .
+
+_:b381 :name "instant vanilla pudding" ;
+  :quantity "1" ;
+  :unit "pkg" .
+
+_:b380 :name "yellow cake mix" ;
+  :quantity "1" ;
+  :unit "pkg" .
+
+_:b1183 :name "chunk style peanut buter" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1182 :name "vanilla ice cream" ;
+  :quantity "1" ;
+  :unit "quart" .
+
+_:b1181 :name "whipped cream or cool whip" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1180 :name "margarine, melted" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b372 :name "heavy cream" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b371 :name "lemon juice" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b8 :name "chopped nuts" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b370 :name "grated lemon rind" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b7 :name "baking powder" ;
+  :quantity "1 1/2" ;
+  :unit "tsp" .
+
+_:b6 :name "flour" ;
+  :quantity "1 3/4" ;
+  :unit "cups" .
+
+_:b5 :name "soda water" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b4 :name "sour milk" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b3 :quantity "pinch" ;
+  :unit "salt" .
+
+_:b2 :quantity "2" ;
+  :unit "eggs" .
+
+_:b1 :name "sugar" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b0 :name "shortening" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1179 :name "sugar" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b1178 :name "graham cracker crumbs, 18 squares" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b369 :name "cottage cheese" ;
+  :quantity "1" ;
+  :unit "pound" .
+
+_:b368 :name "milk" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b367 :name "salt" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b366 :name "eggs, separated" ;
+  :quantity "2" .
+
+_:b365 :name "cold water" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b364 :name "gelatin" ;
+  :quantity "1 1/2" ;
+  :unit "tbsp" .
+
+_:b363 :name "sugar" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b362 :name "butter" ;
+  :quantity "03-Jan" ;
+  :unit "cup" .
+
+_:b361 :name "cornflakes" ;
+  :quantity "4" ;
+  :unit "cups" .
+
+_:b1165 :name "heavy cream" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1164 :name "baked pie shell, chilled" ;
+  :quantity "1" .
+
+_:b1163 :name "sugar" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b1162 :name "fresh peaches, peeled and diced" ;
+  :quantity "2" .
+
+_:b1161 :name "Peach or vanilla ice cream" ;
+  :quantity "1" ;
+  :unit "pint" .
+
+_:b1160 :name "hot water" ;
+  :quantity "1 1/4" ;
+  :unit "cups" .
+
+_:b350 :name "nutmeg" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b1159 :name "peach or lemon gelatin" ;
+  :quantity "1" ;
+  :unit "3 ounce box" .
+
+_:b349 :name "cinnamon" ;
+  :quantity "04-Mar" ;
+  :unit "tsp" .
+
+_:b348 :name "pumpkin" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b347 :name "eggs" ;
+  :quantity "3" .
+
+_:b346 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b345 :name "sugar" ;
+  :quantity "04-Mar" ;
+  :unit "cups" .
+
+_:b344 :name "lite cream cheese" ;
+  :quantity "2" ;
+  :unit "8 oz. pkgs." .
+
+_:b343 :name "melted margarine" ;
+  :quantity "04-Jan" ;
+  :unit "cups" .
+
+_:b342 :name "vanilla wafer crumbs" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b1147 :name "pie shell" ;
+  :quantity "1" ;
+  :unit "9 inch" .
+
+_:b1146 :name "almond extract" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b1145 :name "salt" ;
+  :unit "dash" .
+
+_:b1144 :name "butter" ;
+  :quantity "2" ;
+  :unit "tsp" .
+
+_:b1143 :name "cornstarch" ;
+  :quantity "3" ;
+  :unit "Tbsp" .
+
+_:b1142 :name "sugar" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b1141 :name "lemon juice" ;
+  :quantity "1" ;
+  :unit "Tbsp" .
+
+_:b1140 :name "fresh peaches, sliced" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b696 :name "chopped nuts" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b695 :name "milk" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b332 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b694 :name "cloves" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b331 :name "chopped walnuts" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b693 :name "ginger" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b330 :name "cocoa" ;
+  :quantity "2" ;
+  :unit "tsp" .
+
+_:b692 :name "cinnamon" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b691 :name "salt" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b690 :name "soda" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b1491 :name "Italian Dressing" .
+
+_:b329 :name "baking powder" ;
+  :quantity "2" ;
+  :unit "tsp" .
+
+_:b1490 :name "pasta" .
+
+_:b328 :name "flour" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b327 :name "eggs, beaten separately" ;
+  :quantity "4" .
+
+_:b689 :name "flour" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b326 :name "mashed potatoes" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b688 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b325 :name "milk" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b687 :name "molasses" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b324 :name "shortening" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b686 :name "margarine" ;
+  :quantity "2" ;
+  :unit "tbsp" .
+
+_:b323 :name "sugar" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b685 :name "egg" ;
+  :quantity "1" .
+
+_:b684 :name "brown sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1489 :name "fresh mushrooms" .
+
+_:b1488 :name "avacado" .
+
+_:b1487 :name "peeled tomato" .
+
+_:b1125 :name "butter" ;
+  :quantity "1" ;
+  :unit "Tbsp" .
+
+_:b1486 :name "radishes" .
+
+_:b1124 :name "water" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1485 :name "green onions" .
+
+_:b1123 :name "cinnamon" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b1484 :name "cauliflower" .
+
+_:b1122 :name "sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1483 :name "broccoli" .
+
+_:b1121 :name "sliced" ;
+  :quantity "5" ;
+  :unit "apples" .
+
+_:b1482 :name "asparagus" .
+
+_:b319 :name "water" ;
+  :quantity "2" ;
+  :unit "Tbsp" .
+
+_:b318 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b317 :name "powdered sugar" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b316 :name "margarine" ;
+  :quantity "04-Jan" ;
+  :unit "pound" .
+
+_:b315 :name "cream cheese" ;
+  :quantity "3" ;
+  :unit "ounces" .
+
+_:b314 :name "chopped walnuts" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b313 :name "grated carrots" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b312 :name "crushed pineapple, drained" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b674 :name "chopped nuts" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b311 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b673 :name "egg white, stiffly beaten" ;
+  :quantity "1" .
+
+_:b310 :name "cinnamon" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b672 :name "brown sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b671 :name "vanilla" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b670 :name "eggs" ;
+  :quantity "2" .
+
+_:b1111 :name "sugar" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b1110 :name "egg whites" ;
+  :quantity "3" .
+
+_:b309 :name "salt" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b308 :name "soda" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b307 :name "flour" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b669 :name "granulated sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b306 :name "eggs" ;
+  :quantity "4" .
+
+_:b668 :name "shortening" ;
+  :quantity "02-Jan" ;
+  :unit "cups" .
+
+_:b305 :name "sugar" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b667 :name "baking soda" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b304 :name "oil" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b666 :name "salt" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b665 :name "sifted flour" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b1109 :name "butter" ;
+  :quantity "1" ;
+  :unit "Tbsp" .
+
+_:b1108 :name "egg yolks" ;
+  :quantity "3" .
+
+_:b1107 :name "grated lemon juice" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1106 :name "lemon juice, fresh or bottled" ;
+  :quantity "03-Jan" ;
+  :unit "cup" .
+
+_:b1467 :name "sour cream" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1105 :name "hot water" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b1466 :name "marshmallows" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1104 :name "salt" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b1465 :name "coconut" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1103 :name "cornstarch" ;
+  :quantity "4" ;
+  :unit "Tbsp" .
+
+_:b1464 :name "mandarin oranges" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1102 :name "sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1463 :name "pineapple chunks" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b652 :name "rolled oats" ;
+  :quantity "1 1/4" ;
+  :unit "cups" .
+
+_:b651 :name "raisins (or finely diced prunes or dates)" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b650 :name "soda" ;
+  :quantity "2" ;
+  :unit "tsps" .
+
+_:b1452 :name "oil" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1451 :name "vinegar" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1450 :name "sugar" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b649 :name "flour" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b648 :name "egg" ;
+  :quantity "1" .
+
+_:b647 :name "sugar" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b646 :name "butter or margarine" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1449 :name "red onion, sliced" ;
+  :quantity "1" .
+
+_:b1448 :name "bean sprouts" ;
+  :quantity "1" ;
+  :unit "can" .
+
+_:b1447 :name "garbanzo beans" ;
+  :quantity "1" ;
+  :unit "can" .
+
+_:b1446 :name "kidney beans" ;
+  :quantity "1" ;
+  :unit "can" .
+
+_:b1445 :name "wax beans" ;
+  :quantity "1" ;
+  :unit "can" .
+
+_:b1444 :name "green beans" ;
+  :quantity "1" ;
+  :unit "can" .
+
+_:b635 :name "powdered sugar" .
+
+_:b997 :name "whipped cream" .
+
+_:b634 :name "finely chopped walnuts" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b996 :name "lemon juice from concentrate" .
+
+_:b633 :name "chocolate chips" ;
+  :quantity "6" ;
+  :unit "oz." .
+
+_:b995 :name "bananas" ;
+  :quantity "3" ;
+  :unit "medium" .
+
+_:b632 :name "flour" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b994 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b631 :name "sugar" ;
+  :quantity "03-Jan" ;
+  :unit "cup" .
+
+_:b993 :name "margarine or butter" ;
+  :quantity "2" ;
+  :unit "Tbsp" .
+
+_:b630 :name "salt" ;
+  :quantity "08-Jan" ;
+  :unit "tsp" .
+
+_:b992 :name "egg yolks, beaten" ;
+  :quantity "3" .
+
+_:b991 :name "sweetened condensed milk" ;
+  :quantity "1" ;
+  :unit "14 oz can" .
+
+_:b990 :name "water" ;
+  :quantity "1 2/3" ;
+  :unit "cups" .
+
+_:b1797 :name "pine nuts, toasted" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1796 :name "ground pepper, to taste" .
+
+_:b1795 :name "sour cream" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1794 :name "fresh basil, or 1/4 tsp dried" ;
+  :quantity "1 1/2" ;
+  :unit "tsp" .
+
+_:b1793 :name "fresh oregano, chopped or 1/4 tsp dried" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b1792 :name "milk" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1430 :name "lemon juice" ;
+  :quantity "2" ;
+  :unit "Tbsp" .
+
+_:b1791 :name "water" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b629 :name "water" ;
+  :quantity "1" ;
+  :unit "tbsp" .
+
+_:b1790 :name "cream of mushroom soup, condensed" ;
+  :quantity "1" ;
+  :unit "10 oz. can" .
+
+_:b628 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b627 :name "butter" ;
+  :quantity "04-Mar" ;
+  :unit "cup" .
+
+_:b989 :name "cornstarch" ;
+  :quantity "3" ;
+  :unit "Tbsp" .
+
+_:b988 :name "baked pastry shell" ;
+  :quantity "1" .
+
+_:b1429 :name "sour cream" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1428 :name "chives or scallions, minced" ;
+  :quantity "3" ;
+  :unit "Tbsp" .
+
+_:b1789 :name "butter or margarine" ;
+  :quantity "1" ;
+  :unit "Tbsp" .
+
+_:b1427 :name "pepper" ;
+  :quantity "08-Jan" ;
+  :unit "tsp" .
+
+_:b1788 :name "garlic, minced" ;
+  :quantity "3" ;
+  :unit "cloves" .
+
+_:b1426 :name "salt" ;
+  :quantity "1 1/2" ;
+  :unit "tsp" .
+
+_:b1787 :name "onion, chopped" ;
+  :quantity "04-Jan" ;
+  :unit "cups" .
+
+_:b1425 :name "cucumbers, sliced" ;
+  :quantity "3" ;
+  :unit "cups" .
+
+_:b1786 :name "zucchini, thinly sliced (about 3/4 lb.)" ;
+  :quantity "3" ;
+  :unit "cups" .
+
+_:b99 :name "vanilla" ;
+  :quantity "2" ;
+  :unit "tsp" .
+
+_:b98 :name "eggs, well beaten" ;
+  :quantity "2" .
+
+_:b97 :name "chopped nuts" ;
+  :quantity "1" ;
+  :unit "cups" .
+
+_:b96 :name "sugar" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b95 :name "diced apples" ;
+  :quantity "4" ;
+  :unit "cups" .
+
+_:b612 :name "eggs" ;
+  :quantity "2" .
+
+_:b974 :name "nuts, chopped" ;
+  :quantity "1" ;
+  :unit "cups" .
+
+_:b611 :name "brown sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b973 :name "nutmeg" ;
+  :quantity "03-Jan" ;
+  :unit "tsp" .
+
+_:b610 :name "flake coconut" ;
+  :quantity "2 1/2" ;
+  :unit "cups" .
+
+_:b972 :name "flour" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b971 :name "egg" ;
+  :quantity "1" .
+
+_:b970 :name "sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1775 :name "chopped clams with juice" ;
+  :quantity "4" ;
+  :unit "cans" .
+
+_:b1774 :name "thyme or basil" .
+
+_:b1773 :name "salt and pepper" .
+
+_:b1772 :name "milk" ;
+  :quantity "1" ;
+  :unit "quart" .
+
+_:b1410 :name "nuts, chopped" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1771 :name "half and half" ;
+  :quantity "1" ;
+  :unit "pint" .
+
+_:b609 :name "pitted dates" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1770 :name "potatoes, peeled and diced" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b608 :name "crushed walnuts" ;
+  :quantity "8" ;
+  :unit "ounces" .
+
+_:b969 :name "margarine" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b82 :name "lemon juice" ;
+  :quantity "02-Jan" ;
+  :unit "cups" .
+
+_:b81 :name "powdered sugar" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b80 :name "eggs" ;
+  :quantity "4" .
+
+_:b601 :name "chopped nuts" .
+
+_:b600 :name "water" ;
+  :quantity "1" ;
+  :unit "tbsp" .
+
+_:b1409 :name "sour cream" ;
+  :quantity "1" ;
+  :unit "pint" .
+
+_:b1408 :name "whole cranberry sauce" ;
+  :quantity "1" ;
+  :unit "can" .
+
+_:b1769 :name "celery, sauted" ;
+  :quantity "3" ;
+  :unit "stocks" .
+
+_:b1407 :name "cherry jello, or 1 large" ;
+  :quantity "2" ;
+  :unit "packages" .
+
+_:b1768 :name "onion, suated" ;
+  :quantity "1" ;
+  :unit "large" .
+
+_:b1406 :name "hot water" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b1767 :name "bacon, chopped and browned" ;
+  :quantity "02-Jan" ;
+  :unit "pound" .
+
+_:b79 :name "vegetable oil" ;
+  :quantity "04-Mar" ;
+  :unit "cup" .
+
+_:b78 :name "lemon jello" ;
+  :quantity "1" ;
+  :unit "small pkg" .
+
+_:b77 :name "water" ;
+  :quantity "04-Mar" ;
+  :unit "cup" .
+
+_:b76 :name "lemon cake mix" ;
+  :quantity "1" ;
+  :unit "box" .
+
+_:b955 :name "flour" ;
+  :quantity "1 2/3" ;
+  :unit "cups" .
+
+_:b954 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b953 :name "salt" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b952 :name "sugar" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b951 :name "egg" ;
+  :quantity "1" .
+
+_:b950 :name "Crisco (shortening)" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1756 :name "narrow egg noodles" ;
+  :unit "large handful" .
+
+_:b1755 :name "salt, to taste" .
+
+_:b1754 :name "poultry seasoning" ;
+  :unit "dash" .
+
+_:b1753 :name "chicken bouillion" ;
+  :quantity "2" ;
+  :unit "cubes" .
+
+_:b1752 :name "onion, chopped" ;
+  :quantity "1" ;
+  :unit "large" .
+
+_:b1751 :name "celery, sliced" ;
+  :quantity "2" ;
+  :unit "stalks" .
+
+_:b1750 :name "carrots, diced" ;
+  :quantity "3" ;
+  :unit "large" .
+
+_:b64 :name "vanilla" ;
+  :quantity "1 1/2" ;
+  :unit "tsp" .
+
+_:b63 :name "water" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b62 :name "Best Foods Mayonnaise" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b61 :name "baking soda" ;
+  :quantity "1 1/2" ;
+  :unit "tsp" .
+
+_:b60 :name "baking powder" ;
+  :quantity "2 1/4" ;
+  :unit "tsp" .
+
+_:b940 :name "cinnamon and sugar" .
+
+_:b1749 :name "potato, diced" ;
+  :quantity "1" ;
+  :unit "large" .
+
+_:b1748 :name "chicken, cooked and chopped" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b59 :name "cocoa" ;
+  :quantity "03-Jan" ;
+  :unit "cup" .
+
+_:b58 :name "sugar" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b57 :name "flour" ;
+  :quantity "3" ;
+  :unit "cups" .
+
+_:b939 :name "sour cream" ;
+  :quantity "1" ;
+  :unit "cups" .
+
+_:b938 :name "baking soda" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b937 :name "baking powder" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b936 :name "salt" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b935 :name "sifted flour" ;
+  :quantity "3" ;
+  :unit "cups" .
+
+_:b934 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b933 :name "eggs" ;
+  :quantity "2" .
+
+_:b932 :name "sugar" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b931 :name "butter or margarine" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1738 :name "dill" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1737 :name "low-fat milk" ;
+  :quantity "04-Mar" ;
+  :unit "cups" .
+
+_:b1736 :name "cheddar cheese, grated" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b1735 :name "water" ;
+  :quantity "4" ;
+  :unit "cups" .
+
+_:b1734 :name "salt" ;
+  :quantity "1 1/2" ;
+  :unit "tsp" .
+
+_:b1733 :name "onion, chopped" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b1732 :name "cloves of garlic, peeled" ;
+  :quantity "3" ;
+  :unit "medium" .
+
+_:b1731 :name "carrot, peeled and chopped" ;
+  :quantity "1" ;
+  :unit "medium" .
+
+_:b1730 :name "broccoli florets, cut or broken" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b47 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b46 :name "cloves" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b45 :name "flour" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b44 :name "baking soda" ;
+  :quantity "2" ;
+  :unit "tsp" .
+
+_:b43 :name "sour milk" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b42 :name "salt" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b41 :name "cocoa" ;
+  :quantity "5" ;
+  :unit "tbsp" .
+
+_:b40 :name "eggs" ;
+  :quantity "2" .
+
+_:b920 :name "cinnamon" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1729 :name "potato (2-3 cups), peeled and diced" ;
+  :quantity "1" ;
+  :unit "large" .
+
+_:b39 :name "sugar" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b38 :name "margarine" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b919 :name "sugar" ;
+  :quantity "2" ;
+  :unit "Tbps" .
+
+_:b918 :name "eggs" ;
+  :quantity "2" .
+
+_:b917 :name "sugar" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b916 :name "margarine" ;
+  :quantity "04-Mar" ;
+  :unit "cups" .
+
+_:b915 :name "salt" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b914 :name "baking soda" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b913 :name "cream of tartar" ;
+  :quantity "2" ;
+  :unit "tsp" .
+
+_:b912 :name "flour" ;
+  :quantity "2 3/4" ;
+  :unit "cups" .
+
+_:b1717 :name "salt and pepper" .
+
+_:b1716 :name "tart apples, cut in chunks" ;
+  :quantity "2 or 3" .
+
+_:b1715 :name "green onions, sliced" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1714 :name "zucchini, coarsely shredded" ;
+  :quantity "4" ;
+  :unit "cups" .
+
+_:b1713 :name "caraway seed" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1712 :name "sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1711 :name "vinegar" ;
+  :quantity "3" ;
+  :unit "Tbsp" .
+
+_:b28 :name "blueberries" ;
+  :quantity "3" ;
+  :unit "cups" .
+
+_:b1710 :name "mayonnaise" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b27 :name "milk" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b26 :name "baking powder" ;
+  :quantity "1" ;
+  :unit "tbsp + 1 tsp" .
+
+_:b25 :name "flour" ;
+  :quantity "4" ;
+  :unit "cups" .
+
+_:b908 :name "flour" ;
+  :quantity "4" ;
+  :unit "cups" .
+
+_:b24 :name "butter" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b907 :name "pumpkin pie spice" ;
+  :quantity "1" ;
+  :unit "small can" .
+
+_:b23 :name "vanilla" ;
+  :quantity "3" ;
+  :unit "tsp" .
+
+_:b906 :name "nutmeg" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b22 :name "lemon juice" ;
+  :quantity "1" ;
+  :unit "tbps" .
+
+_:b905 :name "cloves" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b21 :name "eggs" ;
+  :quantity "3" .
+
+_:b904 :name "cinnamon" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b20 :name "sugar" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b903 :name "pumpkin pie spice" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b902 :name "ginger" ;
+  :quantity "04-Mar" ;
+  :unit "tsp" .
+
+_:b901 :name "allspice" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b900 :name "raisins" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b19 :name "cream cheese" ;
+  :quantity "12" ;
+  :unit "ounces" .
+
+_:b1091 :name "pie shell" ;
+  :quantity "1" ;
+  :unit "8\"" .
+
+_:b1090 :name "sour cream" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b288 :name "sliced almonds" ;
+  :quantity "1" ;
+  :unit "pkg" .
+
+_:b287 :name "butter" ;
+  :quantity "1" ;
+  :unit "cube" .
+
+_:b286 :name "yellow cake mix" ;
+  :quantity "1" ;
+  :unit "pkg" .
+
+_:b285 :name "crushed pineapple" ;
+  :quantity "1" ;
+  :unit "2 pound can" .
+
+_:b1089 :name "milk" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1088 :name "egg yolks, slightly beaten" ;
+  :quantity "3" .
+
+_:b1087 :name "lemon juice" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b1086 :name "lemon rind, grated" ;
+  :quantity "1" ;
+  :unit "Tbsp" .
+
+_:b1085 :name "butter" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b1084 :name "cornstarch" ;
+  :quantity "3" ;
+  :unit "Tbsp" .
+
+_:b1083 :name "sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b278 :name "fresh orange juice" ;
+  :quantity "2 1/2" ;
+  :unit "tsp" .
+
+_:b277 :name "powdered sugar" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b276 :name "poppy seeds" ;
+  :quantity "2" ;
+  :unit "tbsp" .
+
+_:b275 :name "salt" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b274 :name "baking soda" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b273 :name "baking powder" ;
+  :quantity "04-Mar" ;
+  :unit "tsp" .
+
+_:b272 :name "eggs" ;
+  :quantity "4" ;
+  :unit "large" .
+
+_:b271 :name "fresh orange juice" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b270 :name "unsifted cake flour" ;
+  :quantity "2 1/4" ;
+  :unit "cups" .
+
+_:b1071 :name "graham cracker crust" .
+
+_:b1070 :name "cream cheese" ;
+  :quantity "4" ;
+  :unit "ounces" .
+
+_:b269 :name "grated orange peel" ;
+  :quantity "2" ;
+  :unit "tsp" .
+
+_:b268 :name "vanilla" ;
+  :quantity "2" ;
+  :unit "tsp" .
+
+_:b267 :name "sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b266 :name "unsalted butter, softened" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1069 :name "eggs" ;
+  :quantity "2" .
+
+_:b1068 :name "lemon juice" ;
+  :quantity "03-Jan" ;
+  :unit "cup" .
+
+_:b1067 :name "lemon rind, grated" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1066 :name "water" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1065 :name "cornstarch" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1064 :name "sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b250 :name "plain low fat yogurt" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1052 :name "pie shell, baked" ;
+  :quantity "1" .
+
+_:b1051 :name "strawberries" ;
+  :quantity "1" ;
+  :unit "basket" .
+
+_:b1050 :name "lemon juice" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b249 :name "frozen light whipped topping, thawed" ;
+  :quantity "1" ;
+  :unit "container" .
+
+_:b248 :name "frozen orange juice concentrate, thawed" ;
+  :quantity "04-Mar" ;
+  :unit "cup" .
+
+_:b247 :name "angel food cake mix" ;
+  :quantity "1" ;
+  :unit "15-16 ounce pkg" .
+
+_:b243 :name "valencia peanuts" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b242 :name "coconut" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b241 :name "butter" ;
+  :quantity "6" ;
+  :unit "tbsp" .
+
+_:b240 :name "evaporated milk" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1049 :name "butter" ;
+  :quantity "1" ;
+  :unit "Tbsp" .
+
+_:b1048 :name "red food coloring" ;
+  :quantity "a few" ;
+  :unit "drops" .
+
+_:b1047 :name "water" ;
+  :quantity "1 1/4" ;
+  :unit "cups" .
+
+_:b1046 :name "sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1045 :name "cornstarch" ;
+  :quantity "2" ;
+  :unit "Tbsp" .
+
+_:b239 :name "chopped nuts" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b238 :name "cinnamon" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b237 :name "nutmeg" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b599 :name "light corn syrup" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b236 :name "soda" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b598 :name "semisweet chocolate chips" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b235 :name "salt" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b597 :name "flour" ;
+  :quantity "2" ;
+  :unit "tbsp" .
+
+_:b234 :name "flour" ;
+  :quantity "1 1/3" ;
+  :unit "cups" .
+
+_:b596 :name "salt" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b233 :name "eggs" ;
+  :quantity "2" .
+
+_:b595 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b232 :name "margarine" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b594 :name "coconut" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b231 :name "white sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b593 :name "light brown sugar" ;
+  :quantity "04-Mar" ;
+  :unit "cup" .
+
+_:b230 :name "brown sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b592 :name "eggs, well beaten" ;
+  :quantity "2" .
+
+_:b591 :name "salt" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b590 :name "sifted flour" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1394 :name "caraway seed (optional)" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1393 :name "salt and pepper" .
+
+_:b1031 :name "cinnamon" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b1392 :name "horseradish" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b1030 :name "butter" ;
+  :quantity "03-Jan" ;
+  :unit "cup" .
+
+_:b1391 :name "sugar" ;
+  :quantity "1" ;
+  :unit "Tbsp" .
+
+_:b229 :name "boiling water" ;
+  :quantity "1 1/4" ;
+  :unit "cups" .
+
+_:b1390 :name "vinegar" ;
+  :quantity "1" ;
+  :unit "Tbsp" .
+
+_:b228 :name "oatmeal" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b589 :name "margarine" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b1029 :name "flour" ;
+  :quantity "04-Mar" ;
+  :unit "cup" .
+
+_:b1028 :name "cinnamon" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1389 :name "sour cream" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1027 :name "sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1388 :name "mayonnaise" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b1026 :name "large apples, sliced" ;
+  :quantity "4" .
+
+_:b1387 :name "cabbage" ;
+  :quantity "02-Jan" ;
+  :unit "head" .
+
+_:b219 :name "hot water" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b218 :name "salt" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b217 :name "cloves" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b579 :name "Special K cereal" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b216 :name "ginger" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b578 :name "crunchy peanut butter" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b215 :name "cinnamon" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b577 :name "chocolate chips" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b214 :name "soda" ;
+  :quantity "1 1/2" ;
+  :unit "tsp" .
+
+_:b576 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b213 :name "sifted flour" ;
+  :quantity "2 1/2" ;
+  :unit "cups" .
+
+_:b575 :name "egg yolk, beaten" ;
+  :quantity "1" .
+
+_:b212 :name "molasses" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b574 :name "salt" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b211 :name "egg" ;
+  :quantity "1" .
+
+_:b573 :name "crunchy peanut butter" ;
+  :quantity "03-Jan" ;
+  :unit "cup" .
+
+_:b210 :name "butter" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b572 :name "margarine" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b571 :name "brown sugar" ;
+  :quantity "1 1/4" ;
+  :unit "cups" .
+
+_:b570 :name "flour" ;
+  :quantity "3" ;
+  :unit "cups" .
+
+_:b1013 :name "cinnamon" .
+
+_:b1374 :name "crushed pineapple" ;
+  :quantity "1" ;
+  :unit "13.4 oz. can" .
+
+_:b1012 :name "heavy cream" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1373 :name "carrot pieces" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b1011 :name "salt" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b1372 :name "salad dressing" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1010 :name "flour" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b1371 :name "salt" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b209 :name "sugar" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1370 :name "boiling orange juice" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b202 :name "brandy flavoring" ;
+  :quantity "3" ;
+  :unit "tbsp" .
+
+_:b201 :name "eggs" ;
+  :quantity "6" .
+
+_:b200 :name "sugar" ;
+  :quantity "2 1/4" ;
+  :unit "cups" .
+
+_:b1009 :name "sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1008 :name "tart apples, peeled and sliced" ;
+  :quantity "4 or 5" .
+
+_:b1369 :name "cold orange juice, divided" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b1007 :name "pie shell, unbaked" ;
+  :quantity "1" ;
+  :unit "9 inch" .
+
+_:b1368 :name "Knox Unflavored Gelatin" ;
+  :quantity "2" ;
+  :unit "envelopes" .
+
+_:b559 :name "chocolate chips" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b558 :name "All-Bran cereal" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b557 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b556 :name "eggs" ;
+  :quantity "2" .
+
+_:b555 :name "sugar" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b554 :name "margarine" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b553 :name "salt" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b552 :name "baking soda" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b551 :name "flour" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b1356 :name "vinegar" ;
+  :quantity "2" ;
+  :unit "Tbsp" .
+
+_:b1355 :name "sugar" ;
+  :quantity "1" ;
+  :unit "Tbsp" .
+
+_:b1354 :name "mayonnaise" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1353 :name "sunflower seeds" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1352 :name "red onion, chopped fine" ;
+  :quantity "1" .
+
+_:b1351 :name "crushed pineapple, well drained" ;
+  :quantity "1" ;
+  :unit "16 oz. can" .
+
+_:b1350 :name "broccoli" ;
+  :quantity "1" ;
+  :unit "bunch" .
+
+_:b1349 :name "bacon, but small, fry until crisp" ;
+  :quantity "5 to 6" ;
+  :unit "strips" .
+
+_:b537 :name "finely chopped walnuts" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b899 :name "nuts" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b536 :name "powdered sugar" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b898 :name "salt" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b535 :name "crushed vanilla wafers" ;
+  :quantity "2 1/2" ;
+  :unit "cups" .
+
+_:b897 :name "soda" ;
+  :quantity "2" ;
+  :unit "tsp" .
+
+_:b534 :name "bourbon (or light cream)" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b896 :name "oatmeal" ;
+  :quantity "3" ;
+  :unit "cups" .
+
+_:b533 :name "light corn syrup" ;
+  :quantity "3" ;
+  :unit "tbsp" .
+
+_:b895 :name "oil" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b532 :name "semisweet chocolate chips" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b894 :name "sugar" ;
+  :quantity "3" ;
+  :unit "cups" .
+
+_:b893 :name "eggs" ;
+  :quantity "4" .
+
+_:b1336 :name "vinegar" ;
+  :quantity "2" ;
+  :unit "Tbsp" .
+
+_:b1697 :name "frozen peas" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1335 :name "sugar" ;
+  :quantity "03-Jan" ;
+  :unit "cup" .
+
+_:b1696 :name "red onion" .
+
+_:b1334 :name "mayonnaise" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1695 :name "salad greens" .
+
+_:b1333 :name "crisp bacon, crumbled" ;
+  :quantity "4 to 5" ;
+  :unit "strips" .
+
+_:b1694 :name "sugar" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b1332 :name "red onion, chopped" ;
+  :quantity "1" ;
+  :unit "small" .
+
+_:b1693 :name "vinegar" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b1331 :name "mozzarella cheese, shredded" ;
+  :quantity "8" ;
+  :unit "ounce" .
+
+_:b1692 :name "oil" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b1330 :name "broccoli florets, bite size" ;
+  :quantity "2 or 3" ;
+  :unit "heads" .
+
+_:b1691 :name "chicken Ramen" ;
+  :quantity "1" ;
+  :unit "pkg." .
+
+_:b886 :name "confectioner's sugar" .
+
+_:b885 :name "coconut" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b522 :name "walnuts" ;
+  :quantity "02-Jan" ;
+  :unit "cups" .
+
+_:b884 :name "walnuts, chopped" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b521 :name "chocolate chips" ;
+  :quantity "1" ;
+  :unit "package" .
+
+_:b883 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b520 :name "salt" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b882 :name "lemon juice" ;
+  :quantity "2" ;
+  :unit "tsp" .
+
+_:b881 :name "eggs" ;
+  :quantity "2" .
+
+_:b880 :name "brown sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b519 :name "baking soda" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b518 :name "flour" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b517 :name "egg" ;
+  :quantity "1" .
+
+_:b879 :name "salt" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b516 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b878 :name "baking powder" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b515 :name "brown sugar" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b877 :name "sifted flour" ;
+  :quantity "1 1/3" ;
+  :unit "cups" .
+
+_:b514 :name "sugar" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b876 :name "sugar" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b513 :name "cold butter" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b875 :name "margarine" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b874 :name "pitted prunes" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b1678 :name "sour cream" ;
+  :quantity "1" ;
+  :unit "pint" .
+
+_:b1316 :name "accent seasoning mix" ;
+  :unit "dash" .
+
+_:b1677 :name "marshmallows" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b1315 :name "garlic powder" ;
+  :unit "dash" .
+
+_:b1676 :name "watermelon chunks" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b1314 :name "white sauterne wine" ;
+  :quantity "1 1/2" ;
+  :unit "ounces" .
+
+_:b1675 :name "cantaloupe, cut into chunks" ;
+  :quantity "02-Jan" .
+
+_:b1313 :name "mayonnaise" ;
+  :quantity "1" ;
+  :unit "quart" .
+
+_:b1674 :name "seedless grapes" ;
+  :quantity "1" ;
+  :unit "can" .
+
+_:b1312 :name "buttermilk" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1673 :name "mandarin oranges" ;
+  :quantity "1" ;
+  :unit "can" .
+
+_:b1311 :name "blue cheese" ;
+  :quantity "6" ;
+  :unit "ounces" .
+
+_:b1672 :name "pineapple chunks in juice" ;
+  :quantity "1" ;
+  :unit "can" .
+
+_:b502 :name "salt" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b501 :name "baking powder" ;
+  :quantity "03-Jan" ;
+  :unit "tsp" .
+
+_:b500 :name "sifted flour" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b861 :name "walnuts, chopped" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b860 :name "crushed pineapple, drained." ;
+  :quantity "1" ;
+  :unit "8 1/2 oz. can" .
+
+_:b1662 :name "sugar" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1300 :name "bananas, sliced" .
+
+_:b1661 :name "lemon juice" .
+
+_:b1660 :name "catsup" .
+
+_:b859 :name "graham cracker crumbs" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b858 :name "sifted flour" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b857 :name "egg" ;
+  :quantity "1" .
+
+_:b856 :name "light brown sugar, firmly packed" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b855 :name "butter or margarine" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b1659 :name "mayonnaise" .
+
+_:b1658 :name "sunflower seeds" .
+
+_:b1657 :name "grated jack cheese" .
+
+_:b1656 :name "bacon bits" .
+
+_:b1655 :name "alfalfa sprouts" .
+
+_:b1654 :name "sliced onion" .
+
+_:b1653 :name "spinach greens" .
+
+_:b844 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b843 :name "salt" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b842 :name "soda" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b841 :name "flour" ;
+  :quantity "3" ;
+  :unit "cups" .
+
+_:b840 :name "peanut butter" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1647 :name "bacon, crisp and crumbled" ;
+  :quantity "6" ;
+  :unit "slices" .
+
+_:b1646 :name "olive oil" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1645 :name "vinegar" ;
+  :quantity "2" ;
+  :unit "Tbsp" .
+
+_:b1644 :name "pepper" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b1643 :name "paprika" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b1642 :name "lemon peel" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b1641 :name "salt" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b1640 :name "garlic, crushed" ;
+  :quantity "1" ;
+  :unit "clove" .
+
+_:b839 :name "eggs" ;
+  :quantity "2" .
+
+_:b838 :name "margarine" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b837 :name "brown sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b836 :name "sugar" ;
+  :quantity "1 1/4" ;
+  :unit "cups" .
+
+_:b832 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b831 :name "walnuts, chopped" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b830 :name "salt" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b1639 :name "sour cream" ;
+  :quantity "2" ;
+  :unit "Tbsp" .
+
+_:b1638 :name "mandarin oranges" ;
+  :quantity "1" ;
+  :unit "can" .
+
+_:b1637 :name "red onion" ;
+  :quantity "1" .
+
+_:b1636 :name "lemon juice" ;
+  :quantity "1" ;
+  :unit "Tbsp" .
+
+_:b1635 :name "avocado" ;
+  :quantity "1" .
+
+_:b1634 :name "fresh spinach" ;
+  :quantity "1" ;
+  :unit "pound" .
+
+_:b829 :name "sweetened condensed milk" ;
+  :quantity "03-Jan" ;
+  :unit "cup" .
+
+_:b828 :name "butter or margarine" ;
+  :quantity "1" ;
+  :unit "Tbps." .
+
+_:b827 :name "semi-sweet chocolate chips" ;
+  :quantity "1" ;
+  :unit "6 oz. pkg." .
+
+_:b826 :quantity "1" ;
+  :unit "tsp" .
+
+_:b825 :name "walnuts, chopped" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b824 :name "quick-cooking oats" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b823 :name "salt" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b822 :name "baking soda" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b821 :name "sifted flour" ;
+  :quantity "04-Mar" ;
+  :unit "cup" .
+
+_:b820 :name "vanilla" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b1624 :name "sour cream" ;
+  :quantity "2" ;
+  :unit "Tbsp" .
+
+_:b1623 :name "egg, hard-boiled" ;
+  :quantity "1" .
+
+_:b1622 :name "egg, slightly beaten" ;
+  :quantity "1" .
+
+_:b1621 :name "salt" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1620 :name "sugar" ;
+  :quantity "1" ;
+  :unit "Tbsp" .
+
+_:b819 :name "egg" ;
+  :quantity "1" .
+
+_:b818 :name "light brown sugar, firmly packed" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b817 :name "shortening" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1619 :name "water" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1618 :name "vinegar" ;
+  :quantity "03-Feb" ;
+  :unit "cup" .
+
+_:b1617 :name "bacon" ;
+  :quantity "2" ;
+  :unit "slices" .
+
+_:b1616 :name "onion, red is best" ;
+  :quantity "1" ;
+  :unit "medium" .
+
+_:b1615 :name "spinach leaves" ;
+  :quantity "02-Jan" ;
+  :unit "pound" .
+
+_:b809 :name "walnuts" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b808 :name "all-spice" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b807 :name "cinnamon" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b806 :name "raisins, boiled 20 min." ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b805 :name "salt" ;
+  :quantity "1" ;
+  :unit "pinch" .
+
+_:b804 :name "oats" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b803 :name "flour" ;
+  :quantity "2 1/2" ;
+  :unit "cups" .
+
+_:b802 :name "soda, dissolved in raisin liquid" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b801 :name "raisin liquid" ;
+  :quantity "5" ;
+  :unit "tsp" .
+
+_:b800 :name "eggs" ;
+  :quantity "2" .
+
+_:b1601 :name "sour cream" ;
+  :quantity "1" ;
+  :unit "small carton" .
+
+_:b1600 :name "salted cashew pieces." ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b199 :name "butter" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b198 :name "golden raisins" ;
+  :quantity "3 1/4" ;
+  :unit "cups" .
+
+_:b197 :name "whole canned cherries" ;
+  :quantity "1 3/4" ;
+  :unit "cups" .
+
+_:b196 :name "canned pineapple, chopped" ;
+  :quantity "1 3/4" ;
+  :unit "cups" .
+
+_:b195 :name "whole pecans" ;
+  :quantity "24" ;
+  :unit "ounces" .
+
+_:b194 :name "nutmeg" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b193 :name "cinnamon" ;
+  :quantity "1 1/2" ;
+  :unit "tsp" .
+
+_:b192 :name "salt" ;
+  :quantity "1 1/2" ;
+  :unit "tsp" .
+
+_:b191 :name "baking powder" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b190 :name "sifted flour" ;
+  :quantity "4" ;
+  :unit "cups" .
+
+_:b176 :name "poppy seeds" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b175 :name "oil" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b174 :name "water" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b173 :name "lemon instant pudding" ;
+  :quantity "1" ;
+  :unit "small pkg" .
+
+_:b172 :name "eggs" ;
+  :quantity "4" .
+
+_:b171 :name "lemon cake mix" ;
+  :quantity "1" ;
+  :unit "pkg" .
+
+_:b161 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b160 :name "cloves" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b159 :name "flour" ;
+  :quantity "2" ;
+  :unit "cup" .
+
+_:b158 :name "baking soda" ;
+  :quantity "2" ;
+  :unit "tsp" .
+
+_:b157 :name "sour milk" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b156 :name "salt" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b155 :name "cocoa" ;
+  :quantity "5" ;
+  :unit "tbsp" .
+
+_:b154 :name "eggs" ;
+  :quantity "2" .
+
+_:b153 :name "sugar" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b152 :name "margarine" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b138 :name "chopped nuts" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b137 :name "baking soda" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b499 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b136 :name "graham crackers, crushed" ;
+  :quantity "32" .
+
+_:b498 :name "fruit juice" ;
+  :quantity "6" ;
+  :unit "tbsp" .
+
+_:b135 :name "sour milk" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b497 :name "sugar" ;
+  :quantity "03-Feb" ;
+  :unit "cup" .
+
+_:b134 :name "sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b496 :name "eggs" ;
+  :quantity "2" .
+
+_:b133 :name "butter" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b495 :name "brown sugar" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b494 :name "butter" ;
+  :quantity "03-Jan" ;
+  :unit "cup" .
+
+_:b1299 :name "marshmallows" ;
+  :quantity "04-Jan" ;
+  :unit "pound" .
+
+_:b1298 :name "walnuts, chopped" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b1297 :name "pineapple tidbits" ;
+  :quantity "2 1/2" ;
+  :unit "cups" .
+
+_:b1296 :name "Dream Whip or whipped cream" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1295 :name "eggs" ;
+  :quantity "2" .
+
+_:b1294 :name "pineapple juice" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1293 :name "sugar" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b1292 :name "cornstarch" ;
+  :quantity "2" ;
+  :unit "Tbsp" .
+
+_:b121 :name "powdered sugar" .
+
+_:b120 :name "salt" ;
+  :quantity "08-Jan" ;
+  :unit "tsp" .
+
+_:b482 :name "vanilla" ;
+  :quantity "1 1/2" ;
+  :unit "tsps" .
+
+_:b481 :name "water" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b480 :name "Best Foods Mayonnaise" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b119 :name "milk" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b118 :name "sugar" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b117 :name "eggs" ;
+  :quantity "2" .
+
+_:b479 :name "baking soda" ;
+  :quantity "1 1/2" ;
+  :unit "tsps" .
+
+_:b116 :name "pears" ;
+  :quantity "3" .
+
+_:b478 :name "baking powder" ;
+  :quantity "2 1/4" ;
+  :unit "tsps" .
+
+_:b115 :name "flour" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b477 :name "cocoa" ;
+  :quantity "03-Jan" ;
+  :unit "cup" .
+
+_:b114 :name "butter" ;
+  :quantity "2" ;
+  :unit "tbps" .
+
+_:b476 :name "sugar" ;
+  :quantity "1 1/2" ;
+  :unit "cups" .
+
+_:b475 :name "flour" ;
+  :quantity "3" ;
+  :unit "cups" .
+
+_:b1278 :name "raisins" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1277 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1276 :name "butter" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b1275 :name "walnuts, chopped" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1274 :name "eggs" ;
+  :quantity "3" .
+
+_:b1273 :name "sugar" ;
+  :quantity "04-Mar" ;
+  :unit "cup" .
+
+_:b105 :name "salt" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b104 :name "baking soda" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b103 :name "vegetable oil" ;
+  :quantity "02-Jan" ;
+  :unit "cups" .
+
+_:b102 :name "cinnamon" ;
+  :quantity "2" ;
+  :unit "tsp" .
+
+_:b101 :name "baking powder" ;
+  :quantity "2" ;
+  :unit "tsp" .
+
+_:b463 :name "vanilla" ;
+  :quantity "2 1/4" ;
+  :unit "tsps" .
+
+_:b100 :name "flour" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b462 :name "water" ;
+  :quantity "2 1/4" ;
+  :unit "cups" .
+
+_:b461 :name "Best Foods Mayonnaise" ;
+  :quantity "2 1/4" ;
+  :unit "cups" .
+
+_:b460 :name "baking soda" ;
+  :quantity "2 1/4" ;
+  :unit "tsps" .
+
+_:b1260 :name "nutmeg" ;
+  :quantity "04-Jan" ;
+  :unit "tsp" .
+
+_:b459 :name "baking powder" ;
+  :quantity "3 1/2" ;
+  :unit "tsps" .
+
+_:b458 :name "cocoa" ;
+  :quantity "02-Jan" ;
+  :unit "cups" .
+
+_:b457 :name "sugar" ;
+  :quantity "2 1/4" ;
+  :unit "cups" .
+
+_:b456 :name "flour" ;
+  :quantity "4 1/2" ;
+  :unit "cups" .
+
+_:b1259 :name "flour" ;
+  :quantity "2" ;
+  :unit "Tbsp" .
+
+_:b1258 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1257 :name "evaporated milk" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b1256 :name "eggs" ;
+  :quantity "3" .
+
+_:b1255 :name "light corn syrup" ;
+  :quantity "04-Mar" ;
+  :unit "cup" .
+
+_:b1254 :name "sugar" ;
+  :quantity "04-Mar" ;
+  :unit "cup" .
+
+_:b445 :name "eggs" ;
+  :quantity "4" .
+
+_:b444 :name "oil" ;
+  :quantity "1 1/4" ;
+  :unit "cups" .
+
+_:b443 :name "soda water" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b442 :name "nutmeg" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b441 :name "cinnamon" ;
+  :quantity "3" ;
+  :unit "tsps" .
+
+_:b440 :name "salt" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1242 :name "nutmeg" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b1241 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" .
+
+_:b1240 :name "sour cream" ;
+  :quantity "1" ;
+  :unit "cup" .
+
+_:b439 :name "sugar" ;
+  :quantity "2" ;
+  :unit "cups" .
+
+_:b438 :name "flour" ;
+  :quantity "3" ;
+  :unit "cups" .
+
+_:b437 :name "berries" ;
+  :quantity "3" ;
+  :unit "cups" .
+
+_:b799 :name "shortening" ;
+  :quantity "1" ;
+  :unit "scant cup" .
+
+_:b798 :name "brown sugar" ;
+  :quantity "1 1/4" ;
+  :unit "cups" .
+
+_:b433 :name "unsalted butter" ;
+  :quantity "04-Jan" ;
+  :unit "cup" .
+
+_:b432 :name "soda" ;
+  :quantity "02-Jan" ;
+  :unit "tsp" .
+
+_:b431 :name "buttermilk" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
+_:b430 :name "sugar" ;
+  :quantity "02-Jan" ;
+  :unit "cup" .
+
