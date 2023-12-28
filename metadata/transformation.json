@@ -1,0 +1,314 @@
+{
+  "@context": "http://www.w3.org/ns/csvw",
+  "url": "../data/table_ciqual.csv",
+  "tableSchema": {
+    "primaryKey": "alim_code",
+    "aboutUrl": "http://project-kitchenchef.fr/ingredients/data#{alim_code}",
+    "columns": [
+      {
+        "titles": "alim_grp_code",
+        "name": "alim_grp_code"
+      },
+      {
+        "titles": "alim_ssgrp_code",
+        "name": "alim_ssgrp_code"
+      },
+      {
+        "titles": "alim_ssssgrp_code",
+        "name": "alim_ssssgrp_code"
+      },
+      {
+        "titles": "alim_grp_nom_fr",
+        "name": "alim_grp_name_fr"
+      },
+      {
+        "titles": "alim_ssgrp_nom_fr",
+        "name": "alim_ssgrp_name_fr"
+      },
+      {
+        "titles": "alim_ssssgrp_nom_fr",
+        "name": "alim_ssssgrp_name_fr"
+      },
+      {
+        "titles": "alim_code",
+        "name": "alim_code"
+      },
+      {
+        "titles": "alim_nom_fr",
+        "name": "alim_name_fr"
+      },
+      {
+        "titles": "alim_nom_sci",
+        "name": "alim_sci_name"
+      },
+      {
+        "titles": "Energie, Règlement UE N° 1169/2011 (kJ/100 g)",
+        "name": "energy_EU_regulation_kJ_per100g"
+      },
+      {
+        "titles": "Energie, Règlement UE N° 1169/2011 (kcal/100 g)",
+        "name": "energy_EU_regulation_kcal_per100g"
+      },
+      {
+        "titles": "Energie, N x facteur Jones, avec fibres  (kJ/100 g)",
+        "name": "energy_Jones_factor_with_fibers_kJ_per100g"
+      },
+      {
+        "titles": "Energie, N x facteur Jones, avec fibres  (kcal/100 g)",
+        "name": "energy_Jones_factor_with_fibers_kcal_per100g"
+      },
+      {
+        "titles": "Eau (g/100 g)",
+        "name": "water_g_per100g"
+      },
+      {
+        "titles": "Protéines, N x facteur de Jones (g/100 g)",
+        "name": "proteins_Jones_factor_g_per100g"
+      },
+      {
+        "titles": "Protéines, N x 6.25 (g/100 g)",
+        "name": "proteins_Nx6.25_g_per100g"
+      },
+      {
+        "titles": "Glucides (g/100 g)",
+        "name": "carbohydrates_g_per100g"
+      },
+      {
+        "titles": "Lipides (g/100 g)",
+        "name": "lipids_g_per100g"
+      },
+      {
+        "titles": "Sucres (g/100 g)",
+        "name": "sugars_g_per100g"
+      },
+      {
+        "titles": "Fructose (g/100 g)",
+        "name": "fructose_g_per100g"
+      },
+      {
+        "titles": "Galactose (g/100 g)",
+        "name": "galactose_g_per100g"
+      },
+      {
+        "titles": "Glucose (g/100 g)",
+        "name": "glucose_g_per100g"
+      },
+      {
+        "titles": "Lactose (g/100 g)",
+        "name": "lactose_g_per100g"
+      },
+      {
+        "titles": "Maltose (g/100 g)",
+        "name": "maltose_g_per100g"
+      },
+      {
+        "titles": "Saccharose (g/100 g)",
+        "name": "sucrose_g_per100g"
+      },
+      {
+        "titles": "Amidon (g/100 g)",
+        "name": "starch_g_per100g"
+      },
+      {
+        "titles": "Fibres alimentaires (g/100 g)",
+        "name": "dietary_fibers_g_per100g"
+      },
+      {
+        "titles": "Polyols totaux (g/100 g)",
+        "name": "total_polyols_g_per100g"
+      },
+      {
+        "titles": "Cendres (g/100 g)",
+        "name": "ashes_g_per100g"
+      },
+      {
+        "titles": "Alcool (g/100 g)",
+        "name": "alcohol_g_per100g"
+      },
+      {
+        "titles": "Acides organiques (g/100 g)",
+        "name": "organic_acids_g_per100g"
+      },
+      {
+        "titles": "AG saturés (g/100 g)",
+        "name": "saturated_fatty_acids_g_per100g"
+      },
+      {
+        "titles": "AG monoinsaturés (g/100 g)",
+        "name": "monounsaturated_fatty_acids_g_per100g"
+      },
+      {
+        "titles": "AG polyinsaturés (g/100 g)",
+        "name": "polyunsaturated_fatty_acids_g_per100g"
+      },
+      {
+        "titles": "AG 4:0, butyrique (g/100 g)",
+        "name": "fatty_acid_4_0_butyric_g_per100g"
+      },
+      {
+        "titles": "AG 6:0, caproïque (g/100 g)",
+        "name": "fatty_acid_6_0_caproic_g_per100g"
+      },
+      {
+        "titles": "AG 8:0, caprylique (g/100 g)",
+        "name": "fatty_acid_8_0_caprylic_g_per100g"
+      },
+      {
+        "titles": "AG 10:0, caprique (g/100 g)",
+        "name": "fatty_acid_10_0_capric_g_per100g"
+      },
+      {
+        "titles": "AG 12:0, laurique (g/100 g)",
+        "name": "fatty_acid_12_0_lauric_g_per100g"
+      },
+      {
+        "titles": "AG 14:0, myristique (g/100 g)",
+        "name": "fatty_acid_14_0_myristic_g_per100g"
+      },
+      {
+        "titles": "AG 16:0, palmitique (g/100 g)",
+        "name": "fatty_acid_16_0_palmitic_g_per100g"
+      },
+      {
+        "titles": "AG 18:0, stéarique (g/100 g)",
+        "name": "fatty_acid_18_0_stearic_g_per100g"
+      },
+      {
+        "titles": "AG 18:1 9c (n-9), oléique (g/100 g)",
+        "name": "fatty_acid_18_1_9c_oleic_g_per100g"
+      },
+      {
+        "titles": "AG 18:2 9c,12c (n-6), linoléique (g/100 g)",
+        "name": "fatty_acid_18_2_9c_12c_linoleic_g_per100g"
+      },
+      {
+        "titles": "AG 18:3 c9,c12,c15 (n-3), alpha-linolénique (g/100 g)",
+        "name": "fatty_acid_18_3_c9_c12_c15_alpha_linolenic_g_per100g"
+      },
+      {
+        "titles": "AG 20:4 5c,8c,11c,14c (n-6), arachidonique (g/100 g)",
+        "name": "fatty_acid_20_4_5c_8c_11c_14c_arachidonic_g_per100g"
+      },
+      {
+        "titles": "AG 20:5 5c,8c,11c,14c,17c (n-3) EPA (g/100 g)",
+        "name": "fatty_acid_20_5_5c_8c_11c_14c_17c_EPA_g_per100g"
+      },
+      {
+        "titles": "AG 22:6 4c,7c,10c,13c,16c,19c (n-3) DHA (g/100 g)",
+        "name": "fatty_acid_22_6_4c_7c_10c_13c_16c_19c_DHA_g_per100g"
+      },
+      {
+        "titles": "Cholestérol (mg/100 g)",
+        "name": "cholesterol_mg_per100g"
+      },
+      {
+        "titles": "Sel chlorure de sodium (g/100 g)",
+        "name": "salt_sodium_chloride_g_per100g"
+      },
+      {
+        "titles": "Calcium (mg/100 g)",
+        "name": "calcium_mg_per100g"
+      },
+      {
+        "titles": "Chlorure (mg/100 g)",
+        "name": "chloride_mg_per100g"
+      },
+      {
+        "titles": "Cuivre (mg/100 g)",
+        "name": "copper_mg_per100g"
+      },
+      {
+        "titles": "Fer (mg/100 g)",
+        "name": "iron_mg_per100g"
+      },
+      {
+        "titles": "Iode (µg/100 g)",
+        "name": "iodine_microg_per100g"
+      },
+      {
+        "titles": "Magnésium (mg/100 g)",
+        "name": "magnesium_mg_per100g"
+      },
+      {
+        "titles": "Manganèse (mg/100 g)",
+        "name": "manganese_mg_per100g"
+      },
+      {
+        "titles": "Phosphore (mg/100 g)",
+        "name": "phosphorus_mg_per100g"
+      },
+      {
+        "titles": "Potassium (mg/100 g)",
+        "name": "potassium_mg_per100g"
+      },
+      {
+        "titles": "Sélénium (µg/100 g)",
+        "name": "selenium_microg_per100g"
+      },
+      {
+        "titles": "Sodium (mg/100 g)",
+        "name": "sodium_mg_per100g"
+      },
+      {
+        "titles": "Zinc (mg/100 g)",
+        "name": "zinc_mg_per100g"
+      },
+      {
+        "titles": "Rétinol (µg/100 g)",
+        "name": "retinol_microg_per100g"
+      },
+      {
+        "titles": "Beta-Carotène (µg/100 g)",
+        "name": "beta_carotene_microg_per100g"
+      },
+      {
+        "titles": "Vitamine D (µg/100 g)",
+        "name": "vitamin_D_microg_per100g"
+      },
+      {
+        "titles": "Vitamine E (mg/100 g)",
+        "name": "vitamin_E_mg_per100g"
+      },
+      {
+        "titles": "Vitamine K1 (µg/100 g)",
+        "name": "vitamin_K1_microg_per100g"
+      },
+      {
+        "titles": "Vitamine K2 (µg/100 g)",
+        "name": "vitamin_K2_microg_per100g"
+      },
+      {
+        "titles": "Vitamine C (mg/100 g)",
+        "name": "vitamin_C_mg_per100g"
+      },
+      {
+        "titles": "Vitamine B1 ou Thiamine (mg/100 g)",
+        "name": "vitamin_B1_thiamine_mg_per100g"
+      },
+      {
+        "titles": "Vitamine B2 ou Riboflavine (mg/100 g)",
+        "name": "vitamin_B2_riboflavine_mg_per100g"
+      },
+      {
+        "titles": "Vitamine B3 ou PP ou Niacine (mg/100 g)",
+        "name": "vitamin_B3_PP_niacin_mg_per100g"
+      },
+      {
+        "titles": "Vitamine B5 ou Acide pantothénique (mg/100 g)",
+        "name": "vitamin_B5_pantothenic_acid_mg_per100g"
+      },
+      {
+        "titles": "Vitamine B6 (mg/100 g)",
+        "name": "vitamin_B6_mg_per100g"
+      },
+      {
+        "titles": "Vitamine B9 ou Folates totaux (µg/100 g)",
+        "name": "vitamin_B9_folates_total_microg_per100g"
+      },
+      {
+        "titles": "Vitamine B12 (µg/100 g)",
+        "name": "vitamin_B12_microg_per100g"
+      }
+    ]
+  }
+}

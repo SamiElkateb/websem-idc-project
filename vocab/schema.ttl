@@ -1,0 +1,39 @@
+@prefix : <http://project-kitchenchef.fr/schema#> .
+
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+
+
+: a owl:Ontology ;
+  rdfs:label "Medical Ontology";
+  rdfs:comment "An ontology representing medical entities and their relationships." ;
+  owl:priorVersion <http://project-wold.fr/schema#> .
+
+:Nutrient a owl:Class ;
+  rdfs:label    "Nutrient"@en, "Nutriment"@fr .
+  
+:Macronutrient a owl:Class ;
+  rdfs:label    "Macronutrient"@en, "Macronutriment"@fr ;
+  rdfs:subClassOf :Nutrient .
+
+:Micronutrient a owl:Class ;
+  rdfs:label    "Micronutrient"@en, "Micronutriment"@fr ;
+  rdfs:subClassOf :Nutrient .
+
+
+:Micronutrient a owl:Class ;
+  rdfs:label    "Micronutrient"@en, "Micronutriment"@fr ;
+  rdfs:subClassOf :Nutrient .
+
+
+:hasCalories a owl:ObjectProperty,
+    rdfs:label "has calories"@en, "a comme calories"@fr ;
+    rdfs:comment "Indicates the number of calories contained in a food item or nutrient."@en,
+                 "Indique le nombre de calories contenues dans un aliment ou un nutriment."@fr ;
+    rdfs:range xsd:integer .
