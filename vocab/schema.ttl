@@ -14,10 +14,35 @@
   rdfs:label "Ontology of Food and Nutrition"@en ;
   rdfs:comment "This ontology defines classes and properties related to food and nutrition."@en .
 
+# Classes
 :Food a owl:Class ;
   rdfs:label "Food"@en, "Aliment"@fr ;
   rdfs:comment "Represents any substance consumed to provide nutritional support for the body."@en,
               "Représente toute substance consommée pour fournir un soutien nutritionnel au corps."@fr .
+
+:Ingredient a owl:Class ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+              ""@fr .
+
+:MesurementUnit a owl:Class ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+              ""@fr .
+
+:VolumeMesurementUnit a owl:Class ;
+  rdfs:subClassOf foaf:MesurementUnit .
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+              ""@fr .
+
+:WeightMesurementUnit a owl:Class ;
+  rdfs:subClassOf foaf:MesurementUnit .
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+              ""@fr .
+
+# Properties
 
 :hasCalories a owl:ObjectProperty ;
   rdfs:label "has calories"@en, "a comme calories"@fr ;
