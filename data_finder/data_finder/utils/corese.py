@@ -53,3 +53,12 @@ def load(path):
 
     return graph
 
+def sparql_query(graph, query):
+    """Run a query on a graph
+
+    :param graph: the graph on which the query is executed
+    :param query: query to run
+    :returns: query result
+    """
+    exec = QueryProcess.create(graph)
+    return exec.query(query)
