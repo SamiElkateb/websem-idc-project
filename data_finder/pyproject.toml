@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "data-finder"
+version = "0.1.0"
+description = ""
+authors = ["Sami EL KATEB <67482346+SamiElkateb@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "data_finder"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyspotlight = "^0.7.2"
+sparqlwrapper = "^2.0.0"
+pandas = "^2.1.4"
+py4j = "^0.10.9.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

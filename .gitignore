@@ -1,6 +1,8 @@
 csv2rdf
 corese-command-4.5.0.jar
+.venv
 
 .DS_Store
 .env
 logs
+__pycache__
