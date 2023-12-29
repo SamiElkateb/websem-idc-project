@@ -16,3 +16,6 @@ foodweights2rdf:
 
 populate:
 	cd data_finder && poetry run python3 data_finder
+
+format:
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q metadata/format.rq -i vocab/recipes.ttl -o vocab/recipes.ttl
