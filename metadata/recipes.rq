@@ -7,97 +7,116 @@ CONSTRUCT {
   ?newSubj :instructions ?instructions .
   ?newSubj :recipeCategory ?recipeCategory 
 
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient01 ;
           :quantity ?quantity01 ;
           :unit ?unit01 ;
         ]
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient02 ;
           :quantity ?quantity02 ;
           :unit ?unit02 ;
         ]
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient03 ;
           :quantity ?quantity03 ;
           :unit ?unit03 ;
         ]
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient04 ;
           :quantity ?quantity04 ;
           :unit ?unit04 ;
         ]
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient05 ;
           :quantity ?quantity05 ;
           :unit ?unit05 ;
         ]
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient06 ;
           :quantity ?quantity06 ;
           :unit ?unit06 ;
         ]
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient07 ;
           :quantity ?quantity07 ;
           :unit ?unit07 ;
         ]
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient08 ;
           :quantity ?quantity08 ;
           :unit ?unit08 ;
         ]
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient09 ;
           :quantity ?quantity09 ;
           :unit ?unit09 ;
         ]
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient10 ;
           :quantity ?quantity10 ;
           :unit ?unit10 ;
         ]
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient11 ;
           :quantity ?quantity11 ;
           :unit ?unit11 ;
         ]
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient12 ;
           :quantity ?quantity12 ;
           :unit ?unit12 ;
         ]
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient13 ;
           :quantity ?quantity13 ;
           :unit ?unit13 ;
         ]
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient14 ;
           :quantity ?quantity14 ;
           :unit ?unit14 ;
         ]
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient15 ;
           :quantity ?quantity15 ;
           :unit ?unit15 ;
         ]
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient16 ;
           :quantity ?quantity16 ;
           :unit ?unit16 ;
         ]
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient17 ;
           :quantity ?quantity17 ;
           :unit ?unit17 ;
         ]
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient18 ;
           :quantity ?quantity18 ;
           :unit ?unit18 ;
         ]
-  ?newSubj :ingredient [
+  ?newSubj :hasIngredient [
+          a :Ingredient ;
           :name ?ingredient19 ;
           :quantity ?quantity19 ;
           :unit ?unit19 ;
@@ -189,5 +208,4 @@ CONSTRUCT {
   OPTIONAL { ?subj tmp:ingredient19 ?ingredient19 . }
   OPTIONAL { ?subj tmp:quantity19 ?quantity19 . }
   OPTIONAL { ?subj tmp:unit19 ?unit19 . }
-  
 }

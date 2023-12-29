@@ -1,0 +1,17 @@
+@prefix :<http://project-kitchenchef.fr/schema#> .
+@prefix recipes:<http://project-kitchenchef.fr/recipes/data#> .
+@prefix mesurements:<http://project-kitchenchef.fr/mesurements/data#> .
+
+CONSTRUCT {
+  ?subj ?pred ?obj .
+
+  ?tspIngredient :unit mesurements:Teaspoon .
+
+} WHERE {  
+  ?subj ?pred ?obj .
+
+  ?tspIngredient :unit ?teaspoonUnit .
+  FILTER (!REGEX(?obj, "^(tsps?|teaspoons?)$", "i"))
+  FILTER REGEX(?teaspoonUnit, "^(tsps?|teaspoons?)$", "i")
+}
+

@@ -1,0 +1,48 @@
+version: '3.2'
+services:
+  corese:
+    image: frmichel/corese4sms:v4.3.1
+    networks:
+      - sms-net
+    volumes:
+      - "./service/logs:/usr/local/corese/log"
+      - "./service/services:/services"
+
+  mongo:
+    image: mongo:3.7
+    networks:
+      - sms-net
+
+  sparql-micro-service:
+    image: frmichel/sparql-micro-service:v0.5.6
+    networks:
+      - sms-net
+    ports:
+      - "80:80"
+    volumes:
+      - "./service/logs:/var/www/sparql-ms/logs"
+      - "./service/services:/services"
+      - "./service/html:/var/www/html"
+      - type: bind
+        source: ./service/config/sparql-micro-service.ini
+        target: /var/www/sparql-ms/src/sparqlms/config.ini
+
+  dbpedia-spotlight:
+    build:
+      context: dbpedia-spotlight
+      dockerfile: Dockerfile
+    image: dbpedia-spotlight-local
+    container_name: dbpedia-spotlight.en
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - dbpedia-models:/opt/spotlight
+    command: spotlight.sh en
+
+volumes:
+  dbpedia-models:
+
+networks:
+  sms-net:
+    driver: bridge
