@@ -16,6 +16,14 @@ Inférence:
 
 ## À faire
 
+- corriger l'erreur de blank node inutiles de csv to rdf
+- corriger les erreurs de food (cold, fry, etc) éventuellement Keyword Extraction ou un LLM
+- ajouter des transformations d'ingrédients à partir de recettes (example: pates bolo)
+
+- ajouter une façon de trouver les calories et informations nutritionnelles à partir des recettes et ingrédients
+
+
+- utiliser https://fr.openfoodfacts.org pour avoir des informations plus juste sur les ingrédients à partir du code bar scanné sur application mobile
 
 
 ## CSV
