@@ -3,209 +3,229 @@
 @prefix tmp:<http://project-kitchenchef.fr/tmp-schema#> .
 
 CONSTRUCT {
-  ?newSubj :name ?name .
-  ?newSubj :instructions ?instructions .
-  ?newSubj :recipeCategory ?recipeCategory 
+?newSubj :name ?name .
+?newSubj :instructions ?instructions .
+?newSubj :recipeCategory ?recipeCategory
 
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient01 ;
-          :quantity ?quantity01 ;
-          :unit ?unit01 ;
-        ]
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient02 ;
-          :quantity ?quantity02 ;
-          :unit ?unit02 ;
-        ]
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient03 ;
-          :quantity ?quantity03 ;
-          :unit ?unit03 ;
-        ]
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient04 ;
-          :quantity ?quantity04 ;
-          :unit ?unit04 ;
-        ]
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient05 ;
-          :quantity ?quantity05 ;
-          :unit ?unit05 ;
-        ]
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient06 ;
-          :quantity ?quantity06 ;
-          :unit ?unit06 ;
-        ]
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient07 ;
-          :quantity ?quantity07 ;
-          :unit ?unit07 ;
-        ]
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient08 ;
-          :quantity ?quantity08 ;
-          :unit ?unit08 ;
-        ]
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient09 ;
-          :quantity ?quantity09 ;
-          :unit ?unit09 ;
-        ]
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient10 ;
-          :quantity ?quantity10 ;
-          :unit ?unit10 ;
-        ]
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient11 ;
-          :quantity ?quantity11 ;
-          :unit ?unit11 ;
-        ]
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient12 ;
-          :quantity ?quantity12 ;
-          :unit ?unit12 ;
-        ]
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient13 ;
-          :quantity ?quantity13 ;
-          :unit ?unit13 ;
-        ]
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient14 ;
-          :quantity ?quantity14 ;
-          :unit ?unit14 ;
-        ]
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient15 ;
-          :quantity ?quantity15 ;
-          :unit ?unit15 ;
-        ]
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient16 ;
-          :quantity ?quantity16 ;
-          :unit ?unit16 ;
-        ]
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient17 ;
-          :quantity ?quantity17 ;
-          :unit ?unit17 ;
-        ]
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient18 ;
-          :quantity ?quantity18 ;
-          :unit ?unit18 ;
-        ]
-  ?newSubj :hasIngredient [
-          a :Ingredient ;
-          :name ?ingredient19 ;
-          :quantity ?quantity19 ;
-          :unit ?unit19 ;
-        ]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient01 ;
+:quantity ?quantity01 ;
+:unit ?unit01 ;
+]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient02 ;
+:quantity ?quantity02 ;
+:unit ?unit02 ;
+]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient03 ;
+:quantity ?quantity03 ;
+:unit ?unit03 ;
+]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient04 ;
+:quantity ?quantity04 ;
+:unit ?unit04 ;
+]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient05 ;
+:quantity ?quantity05 ;
+:unit ?unit05 ;
+]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient06 ;
+:quantity ?quantity06 ;
+:unit ?unit06 ;
+]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient07 ;
+:quantity ?quantity07 ;
+:unit ?unit07 ;
+]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient08 ;
+:quantity ?quantity08 ;
+:unit ?unit08 ;
+]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient09 ;
+:quantity ?quantity09 ;
+:unit ?unit09 ;
+]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient10 ;
+:quantity ?quantity10 ;
+:unit ?unit10 ;
+]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient11 ;
+:quantity ?quantity11 ;
+:unit ?unit11 ;
+]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient12 ;
+:quantity ?quantity12 ;
+:unit ?unit12 ;
+]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient13 ;
+:quantity ?quantity13 ;
+:unit ?unit13 ;
+]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient14 ;
+:quantity ?quantity14 ;
+:unit ?unit14 ;
+]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient15 ;
+:quantity ?quantity15 ;
+:unit ?unit15 ;
+]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient16 ;
+:quantity ?quantity16 ;
+:unit ?unit16 ;
+]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient17 ;
+:quantity ?quantity17 ;
+:unit ?unit17 ;
+]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient18 ;
+:quantity ?quantity18 ;
+:unit ?unit18 ;
+]
+?newSubj :hasIngredient [
+a :Ingredient ;
+:name ?ingredient19 ;
+:quantity ?quantity19 ;
+:unit ?unit19 ;
+]
 
-} WHERE {  
-  ?subj :name ?name .
-  ?subj :instructions ?instructions .
-  ?subj :recipeCategory ?recipeCategory 
+} WHERE {
+?subj :name ?name .
+?subj :instructions ?instructions .
+?subj :recipeCategory ?recipeCategory
 
-  BIND(STR(?subj) AS ?subjStr)
-  BIND(REPLACE(?subjStr, "%20", "") AS ?noSpace)
-  BIND(REPLACE(?noSpace, "%2A", "") AS ?noStar)
-  BIND(REPLACE(?noStar, "%27", "") AS ?noApostrophe)
-  BIND(IRI(?noApostrophe) AS ?newSubj)
+BIND(STR(?subj) AS ?subjStr)
+BIND(REPLACE(?subjStr, "%20", "") AS ?noSpace)
+BIND(REPLACE(?noSpace, "%2A", "") AS ?noStar)
+BIND(REPLACE(?noStar, "%27", "") AS ?noApostrophe)
+BIND(IRI(?noApostrophe) AS ?newSubj)
 
-  OPTIONAL { ?subj tmp:ingredient01 ?ingredient01 . }
-  OPTIONAL { ?subj tmp:quantity01 ?quantity01 . }
-  OPTIONAL { ?subj tmp:unit01 ?unit01 . }
-  
-  OPTIONAL { ?subj tmp:ingredient02 ?ingredient02 . }
-  OPTIONAL { ?subj tmp:quantity02 ?quantity02 . }
-  OPTIONAL { ?subj tmp:unit02 ?unit02 . }
-  
-  OPTIONAL { ?subj tmp:ingredient03 ?ingredient03 . }
-  OPTIONAL { ?subj tmp:quantity03 ?quantity03 . }
-  OPTIONAL { ?subj tmp:unit03 ?unit03 . }
-  
-  OPTIONAL { ?subj tmp:ingredient04 ?ingredient04 . }
-  OPTIONAL { ?subj tmp:quantity04 ?quantity04 . }
-  OPTIONAL { ?subj tmp:unit04 ?unit04 . }
-  
-  OPTIONAL { ?subj tmp:ingredient05 ?ingredient05 . }
-  OPTIONAL { ?subj tmp:quantity05 ?quantity05 . }
-  OPTIONAL { ?subj tmp:unit05 ?unit05 . }
-  
-  OPTIONAL { ?subj tmp:ingredient06 ?ingredient06 . }
-  OPTIONAL { ?subj tmp:quantity06 ?quantity06 . }
-  OPTIONAL { ?subj tmp:unit06 ?unit06 . }
-  
-  OPTIONAL { ?subj tmp:ingredient07 ?ingredient07 . }
-  OPTIONAL { ?subj tmp:quantity07 ?quantity07 . }
-  OPTIONAL { ?subj tmp:unit07 ?unit07 . }
-  
-  OPTIONAL { ?subj tmp:ingredient08 ?ingredient08 . }
-  OPTIONAL { ?subj tmp:quantity08 ?quantity08 . }
-  OPTIONAL { ?subj tmp:unit08 ?unit08 . }
-  
-  OPTIONAL { ?subj tmp:ingredient09 ?ingredient09 . }
-  OPTIONAL { ?subj tmp:quantity09 ?quantity09 . }
-  OPTIONAL { ?subj tmp:unit09 ?unit09 . }
-  
-  OPTIONAL { ?subj tmp:ingredient10 ?ingredient10 . }
-  OPTIONAL { ?subj tmp:quantity10 ?quantity10 . }
-  OPTIONAL { ?subj tmp:unit10 ?unit10 . }
-  
-  OPTIONAL { ?subj tmp:ingredient11 ?ingredient11 . }
-  OPTIONAL { ?subj tmp:quantity11 ?quantity11 . }
-  OPTIONAL { ?subj tmp:unit11 ?unit11 . }
-  
-  OPTIONAL { ?subj tmp:ingredient12 ?ingredient12 . }
-  OPTIONAL { ?subj tmp:quantity12 ?quantity12 . }
-  OPTIONAL { ?subj tmp:unit12 ?unit12 . }
-  
-  OPTIONAL { ?subj tmp:ingredient13 ?ingredient13 . }
-  OPTIONAL { ?subj tmp:quantity13 ?quantity13 . }
-  OPTIONAL { ?subj tmp:unit13 ?unit13 . }
-  
-  OPTIONAL { ?subj tmp:ingredient14 ?ingredient14 . }
-  OPTIONAL { ?subj tmp:quantity14 ?quantity14 . }
-  OPTIONAL { ?subj tmp:unit14 ?unit14 . }
-  
-  OPTIONAL { ?subj tmp:ingredient15 ?ingredient15 . }
-  OPTIONAL { ?subj tmp:quantity15 ?quantity15 . }
-  OPTIONAL { ?subj tmp:unit15 ?unit15 . }
-  
-  OPTIONAL { ?subj tmp:ingredient16 ?ingredient16 . }
-  OPTIONAL { ?subj tmp:quantity16 ?quantity16 . }
-  OPTIONAL { ?subj tmp:unit16 ?unit16 . }
-  
-  OPTIONAL { ?subj tmp:ingredient17 ?ingredient17 . }
-  OPTIONAL { ?subj tmp:quantity17 ?quantity17 . }
-  OPTIONAL { ?subj tmp:unit17 ?unit17 . }
-  
-  OPTIONAL { ?subj tmp:ingredient18 ?ingredient18 . }
-  OPTIONAL { ?subj tmp:quantity18 ?quantity18 . }
-  OPTIONAL { ?subj tmp:unit18 ?unit18 . }
-  
-  OPTIONAL { ?subj tmp:ingredient19 ?ingredient19 . }
-  OPTIONAL { ?subj tmp:quantity19 ?quantity19 . }
-  OPTIONAL { ?subj tmp:unit19 ?unit19 . }
+OPTIONAL {  ?subj tmp:ingredient01 ?ingredient01 ;
+             tmp:quantity01 ?quantity01 .
+            OPTIONAL { ?subj tmp:unit01 ?unit01 . }
 }
+
+OPTIONAL {  ?subj tmp:ingredient02 ?ingredient02 ;
+tmp:quantity02 ?quantity02 .
+OPTIONAL { ?subj tmp:unit02 ?unit02 . }
+}
+
+OPTIONAL {  ?subj tmp:ingredient03 ?ingredient03 ;
+             tmp:quantity03 ?quantity03 .
+            OPTIONAL { ?subj tmp:unit03 ?unit03 . }
+}
+
+OPTIONAL {  ?subj tmp:ingredient04 ?ingredient04 ;
+             tmp:quantity04 ?quantity04 .
+            OPTIONAL { ?subj tmp:unit04 ?unit04 . }
+}
+
+OPTIONAL {  ?subj tmp:ingredient05 ?ingredient05 ;
+             tmp:quantity05 ?quantity05 .
+            OPTIONAL { ?subj tmp:unit05 ?unit05 . }
+}
+
+OPTIONAL {  ?subj tmp:ingredient06 ?ingredient06 ;
+             tmp:quantity06 ?quantity06 .
+            OPTIONAL { ?subj tmp:unit06 ?unit06 . }
+}
+
+OPTIONAL {  ?subj tmp:ingredient07 ?ingredient07 ;
+             tmp:quantity07 ?quantity07 .
+            OPTIONAL { ?subj tmp:unit07 ?unit07 . }
+}
+
+OPTIONAL {  ?subj tmp:ingredient08 ?ingredient08 ;
+             tmp:quantity08 ?quantity08 .
+            OPTIONAL { ?subj tmp:unit08 ?unit08 . }
+}
+
+OPTIONAL {  ?subj tmp:ingredient09 ?ingredient09 ;
+             tmp:quantity09 ?quantity09 .
+            OPTIONAL { ?subj tmp:unit09 ?unit09 . }
+}
+
+OPTIONAL {  ?subj tmp:ingredient10 ?ingredient10 ;
+             tmp:quantity10 ?quantity10 .
+            OPTIONAL { ?subj tmp:unit10 ?unit10 . }
+}
+
+OPTIONAL {  ?subj tmp:ingredient11 ?ingredient11 ;
+             tmp:quantity11 ?quantity11 .
+            OPTIONAL { ?subj tmp:unit11 ?unit11 . }
+}
+
+OPTIONAL {  ?subj tmp:ingredient12 ?ingredient12 ;
+             tmp:quantity12 ?quantity12 .
+            OPTIONAL { ?subj tmp:unit12 ?unit12 . }
+}
+
+OPTIONAL {  ?subj tmp:ingredient13 ?ingredient13 ;
+             tmp:quantity13 ?quantity13 .
+            OPTIONAL { ?subj tmp:unit13 ?unit13 . }
+}
+
+OPTIONAL {  ?subj tmp:ingredient14 ?ingredient14 ;
+             tmp:quantity14 ?quantity14 .
+            OPTIONAL { ?subj tmp:unit14 ?unit14 . }
+}
+
+OPTIONAL {  ?subj tmp:ingredient15 ?ingredient15 ;
+             tmp:quantity15 ?quantity15 .
+            OPTIONAL { ?subj tmp:unit15 ?unit15 . }
+}
+
+OPTIONAL {  ?subj tmp:ingredient16 ?ingredient16 ;
+             tmp:quantity16 ?quantity16 .
+            OPTIONAL { ?subj tmp:unit16 ?unit16 . }
+}
+
+OPTIONAL {  ?subj tmp:ingredient17 ?ingredient17 ;
+             tmp:quantity17 ?quantity17 .
+            OPTIONAL { ?subj tmp:unit17 ?unit17 . }
+}
+
+OPTIONAL {  ?subj tmp:ingredient18 ?ingredient18 ;
+             tmp:quantity18 ?quantity18 .
+            OPTIONAL { ?subj tmp:unit18 ?unit18 . }
+}
+
+OPTIONAL {  ?subj tmp:ingredient19 ?ingredient19 ;
+             tmp:quantity19 ?quantity19 .
+            OPTIONAL { ?subj tmp:unit19 ?unit19 . }
+}
+}
+

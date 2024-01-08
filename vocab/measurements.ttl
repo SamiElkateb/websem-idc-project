@@ -1,6 +1,6 @@
 @prefix : <http://project-kitchenchef.fr/schema#> .
 
-@prefix mesurements: <http://project-kitchenchef.fr/mesurements/data#> .
+@prefix measurements: <http://project-kitchenchef.fr/measurements/data#> .
 
 @prefix dbpedia: <http://dbpedia.org/resource/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -11,36 +11,36 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 
-mesurements:Tablespoon a :VolumeMesurementUnit,
+measurements:Tablespoon a :VolumeMesurementUnit,
         skos:Concept .
 
-mesurements:Teaspoon a :VolumeMesurementUnit,
+measurements:Teaspoon a :VolumeMesurementUnit,
         skos:Concept .
 
-mesurements:Liter a :VolumeMesurementUnit,
+measurements:Liter a :VolumeMesurementUnit,
         skos:Concept .
 
-mesurements:Cup a :VolumeMesurementUnit,
+measurements:Cup a :VolumeMesurementUnit,
         skos:Concept .
 
-mesurements:Package a :VolumeMesurementUnit,
+measurements:Package a :VolumeMesurementUnit,
         skos:Concept .
 
-mesurements:Pinch a :MesurementUnit,
+measurements:Pinch a :MesurementUnit,
         skos:Concept .
 
-mesurements:Slice a :MesurementUnit,
+measurements:Slice a :MesurementUnit,
         skos:Concept .
 
-mesurements:Pound a :WeightMesurementUnit,
+measurements:Pound a :WeightMesurementUnit,
         skos:Concept .
 
-mesurements:Ounce a :WeightMesurementUnit,
+measurements:Ounce a :WeightMesurementUnit,
         skos:Concept .
 
-mesurements:Gram a :WeightMesurementUnit,
+measurements:Gram a :WeightMesurementUnit,
         skos:Concept .
 
-mesurements:Kilogram a :WeightMesurementUnit,
+measurements:Kilogram a :WeightMesurementUnit,
         skos:Concept .
 

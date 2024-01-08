@@ -81,3 +81,7 @@ Extraction avec dbpédia
 Alignement avec dbpédia pour etre aligné sur les ingrédients
 Unités aligné apres le csvw
 
+## Instructions
+
+make all
+run python  

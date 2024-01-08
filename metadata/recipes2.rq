@@ -1,17 +1,35 @@
 @prefix :<http://project-kitchenchef.fr/schema#> .
 @prefix recipes:<http://project-kitchenchef.fr/recipes/data#> .
-@prefix mesurements:<http://project-kitchenchef.fr/mesurements/data#> .
+@prefix measurements:<http://project-kitchenchef.fr/measurements/data#> .
 
 CONSTRUCT {
-  ?subj ?pred ?obj .
-
-  ?tspIngredient :unit mesurements:Teaspoon .
-
-} WHERE {  
-  ?subj ?pred ?obj .
-
-  ?tspIngredient :unit ?teaspoonUnit .
-  FILTER (!REGEX(?obj, "^(tsps?|teaspoons?)$", "i"))
-  FILTER REGEX(?teaspoonUnit, "^(tsps?|teaspoons?)$", "i")
+    ?subj ?pred ?obj .
+    ?tspIngredient :unit measurements:Teaspoon .
+#    ?tbIngredient :unit measurements:Tablespoon .
+#    ?poundIngredient :unit measurements:Pound .
+#    ?ounceIngredient :unit measurements:Ounce .
+#    ?cupIngredient :unit measurements:Cup .
+#    ?quartIngredient :unit measurements:Quart .
+#    ?packageIngredient :unit measurements:Package .
+    ?sliceIngredient :unit measurements:Slice .
+} WHERE {
+    ?subj ?pred ?obj .
+    ?tspIngredient :unit ?teaspoonUnit .
+#    ?tbIngredient :unit ?tablespoonUnit .
+#    ?poundIngredient :unit ?pounds .
+    ?ounceIngredient :unit ?ounces .
+#    ?cupIngredient :unit ?cups .
+#    ?quartIngredient :unit ?quarts .
+#    ?packageIngredient :unit ?packages .
+    ?sliceIngredient :unit ?slices .
+    FILTER REGEX(?obj,"^(?:(?!tsp|teaspoon|tbsp|tbps|tablespoon|pound|lb|\\.z|oz|ounce|cup|quart|qt|slice|pkg|package).)*$", "i")
+    FILTER REGEX(?teaspoonUnit, "(tsp|teaspoon)", "i")
+#    FILTER REGEX(?tablespoonUnit, "(tbsp|tbps|tablespoon)", "i")
+#    FILTER REGEX(?pounds, "(pound|lb)", "i")
+#    FILTER REGEX(?ounces, "(\\.z|oz|ounce)", "i")
+#    FILTER REGEX(?cups, "(cup)", "i")
+#    FILTER REGEX(?quarts, "(quart|qt)", "i")
+    FILTER REGEX(?packages, "^(?:(?!oz|ounce|z\\.).)*(pkg|package).*", "i")
+    FILTER REGEX(?slices, "slice", "i")
 }
 
