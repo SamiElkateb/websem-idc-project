@@ -1,0 +1,14 @@
+@prefix :<http://project-kitchenchef.fr/schema#> .
+@prefix recipes:<http://project-kitchenchef.fr/recipes/data#> .
+@prefix measurements:<http://project-kitchenchef.fr/measurements/data#> .
+
+CONSTRUCT {
+    ?subj ?pred ?obj .
+    ?ingredient :unit measurements:Cup .
+} WHERE {
+    ?subj ?pred ?obj .
+    ?ingredient :unit ?unit .
+    FILTER (!REGEX(?obj, "^(cups?)$", "i"))
+    FILTER REGEX(?unit, "(cups?)", "i")
+}
+

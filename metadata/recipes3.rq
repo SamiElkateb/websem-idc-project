@@ -1,14 +1,14 @@
 @prefix :<http://project-kitchenchef.fr/schema#> .
 
 CONSTRUCT {
-?rec ?p ?divers; :hasIngredient ?x.
-?x ?y ?z.
+  ?rec ?p ?divers; :hasIngredient ?x.
+  ?x ?y ?z.
 }
 WHERE {
-?rec ?p ?divers; :hasIngredient ?x.
-VALUES ?p {:instructions :name :recipeCategory}
-?x a :Ingredient; ?y ?z.
-FILTER EXISTS{?x :quantity ?quantity}
+  ?rec ?p ?divers; :hasIngredient ?x.
+  VALUES ?p {:instructions :name :recipeCategory}
+  ?x a :Ingredient; ?y ?z.
+  FILTER EXISTS{?x :name ?name}
 }
 
 

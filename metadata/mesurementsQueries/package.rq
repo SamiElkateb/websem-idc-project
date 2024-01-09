@@ -1,0 +1,13 @@
+@prefix :<http://project-kitchenchef.fr/schema#> .
+@prefix recipes:<http://project-kitchenchef.fr/recipes/data#> .
+@prefix measurements:<http://project-kitchenchef.fr/measurements/data#> .
+
+CONSTRUCT {
+    ?subj ?pred ?obj .
+    ?ingredient :unit measurements:Package .
+} WHERE {
+    ?subj ?pred ?obj .
+    ?ingredient :unit ?unit .
+    FILTER (!REGEX(?obj, "^(?:(?!oz|ounce|z\\.).)*(pkg|package).*", "i"))
+    FILTER REGEX(?unit, "^(?:(?!oz|ounce|z\\.).)*(pkg|package).*", "i")
+}
