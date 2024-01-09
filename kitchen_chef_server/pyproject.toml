@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "kitchen-chef-server"
+version = "0.1.0"
+description = ""
+authors = ["Sami EL KATEB <67482346+SamiElkateb@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "kitchen_chef_server"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
