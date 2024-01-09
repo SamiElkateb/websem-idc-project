@@ -1,4 +1,4 @@
-all: recipes2rdf units foodweights2rdf populate 
+all: recipes2rdf units foodweights2rdf format populate 
 
 recipes2rdf:
 	@./tools/csv2rdf \
@@ -29,4 +29,4 @@ populate:
 	cd data_finder && poetry run python3 data_finder
 
 format:
-	@java -jar ./tools/corese-command-4.5.0.jar sparql -q metadata/format.rq -i vocab/recipes.ttl -o vocab/recipes.ttl
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q metadata/format.rq -i output/recipes.ttl -o output/recipes.ttl
