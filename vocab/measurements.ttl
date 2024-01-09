@@ -12,7 +12,11 @@
 
 
 measurements:Tablespoon a :VolumeMesurementUnit,
-        skos:Concept .
+        skos:Concept ;
+        :hasUnitConversion [
+          :unit measurements:Teaspoon ;
+          :conversionRatio 3
+        ] .
 
 measurements:Teaspoon a :VolumeMesurementUnit,
         skos:Concept .
@@ -20,11 +24,36 @@ measurements:Teaspoon a :VolumeMesurementUnit,
 measurements:Liter a :VolumeMesurementUnit,
         skos:Concept .
 
+measurements:centiLiter a :VolumeMesurementUnit,
+        skos:Concept ;
+        :hasUnitConversion [
+          :unit measurements:Liter ;
+          :conversionRatio 0.01
+        ] .
+
+measurements:milliLiter a :VolumeMesurementUnit,
+        skos:Concept ;
+        :hasUnitConversion [
+          :unit measurements:Liter ;
+          :conversionRatio 0.001
+        ] .
+
 measurements:Cup a :VolumeMesurementUnit,
-        skos:Concept .
+        skos:Concept ;
+        :hasUnitConversion [
+          :unit measurements:Liter ;
+          :conversionRatio 0.2366
+        ] .
 
 measurements:Package a :VolumeMesurementUnit,
         skos:Concept .
+
+measurements:VolumicOunce a :MesurementUnit,
+        skos:Concept ;
+        :hasUnitConversion [
+          :unit measurements:Liter ;
+          :conversionRatio 0.0296
+        ] .
 
 measurements:Pinch a :MesurementUnit,
         skos:Concept .
@@ -33,13 +62,25 @@ measurements:Slice a :MesurementUnit,
         skos:Concept .
 
 measurements:Pound a :WeightMesurementUnit,
-        skos:Concept .
+        skos:Concept ;
+        :hasUnitConversion [
+          :unit measurements:Kilogram ;
+          :conversionRatio 0.4536
+        ] .
 
-measurements:Ounce a :WeightMesurementUnit,
-        skos:Concept .
+measurements:WeightOunce a :WeightMesurementUnit,
+        skos:Concept ;
+        :hasUnitConversion [
+          :unit measurements:Kilogram ;
+          :conversionRatio 0.02835
+        ] .
 
 measurements:Gram a :WeightMesurementUnit,
-        skos:Concept .
+        skos:Concept ;
+        :hasUnitConversion [
+          :unit measurements:Kilogram ;
+          :conversionRatio 1000
+        ] .
 
 measurements:Kilogram a :WeightMesurementUnit,
         skos:Concept .

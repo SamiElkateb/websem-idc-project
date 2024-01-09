@@ -20,6 +20,11 @@
   rdfs:comment "Represents any substance consumed to provide nutritional support for the body."@en,
               "Représente toute substance consommée pour fournir un soutien nutritionnel au corps."@fr .
 
+:Quantity a owl:Class ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+              ""@fr .
+
 :Ingredient a owl:Class ;
   rdfs:label ""@en, ""@fr ;
   rdfs:comment ""@en,
@@ -38,6 +43,11 @@
 
 :WeightMesurementUnit a owl:Class ;
   rdfs:subClassOf foaf:MesurementUnit .
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+              ""@fr .
+
+:UnitConversion a owl:Class ;
   rdfs:label ""@en, ""@fr ;
   rdfs:comment ""@en,
               ""@fr .
@@ -120,3 +130,14 @@
                "Indique la teneur en cholestérol d'un aliment."@fr ;
   rdfs:domain :Food ;
   rdfs:range xsd:float .
+
+:hasUnitConversion a owl:ObjectProperty ;
+  rdfs:domain :MesurementUnit ;
+  rdfs:range xsd:UnitConversion .
+
+:hasUnitConversionTransitive a owl:ObjectProperty ;
+  rdfs:domain :MesurementUnit ;
+  rdfs:range xsd:UnitConversion .
+
+:conversionRatio a owl:ObjectProperty ;
+  rdfs:domain xsd:float .

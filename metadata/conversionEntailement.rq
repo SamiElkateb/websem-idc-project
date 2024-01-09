@@ -1,0 +1,19 @@
+@prefix :<http://project-kitchenchef.fr/schema#> .
+@prefix food:<http://project-kitchenchef.fr/food/data#> .
+@prefix measurements: <http://project-kitchenchef.fr/measurements/data#> .
+@prefix recipes: <http://project-kitchenchef.fr/recipes/data#> .
+
+INSERT {
+  ?destinationUnit :hasUnitConversion [
+      :unit ?sourceUnit ;
+      :conversionRatio ?inverseConversionRatio
+  ]
+} WHERE {
+  ?sourceUnit :hasUnitConversion ?unitConversion .
+  ?unitConversion :unit ?destinationUnit .
+  ?unitConversion :conversionRatio ?conversionRatio .
+
+  BIND((1 / ?conversionRatio) AS ?inverseConversionRatio)
+} 
+
+ ?sourceUnit :hasUnitConversion/(:unit/:hasUnitConversion)* ?hasUnitConversion
