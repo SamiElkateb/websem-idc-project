@@ -10,6 +10,11 @@ recipes:AngelHash :hasIngredient [ a :Ingredient ;
             :quantity "2" ;
             :unit measurements:Tablespoon ],
         [ a :Ingredient ;
+            :food food:Marshmallows ;
+            :name "marshmallows" ;
+            :quantity "1/4" ;
+            :unit measurements:Pound ],
+        [ a :Ingredient ;
             :food food:Sugar ;
             :name "sugar" ;
             :quantity "1/4" ;
@@ -34,11 +39,6 @@ recipes:AngelHash :hasIngredient [ a :Ingredient ;
             :name "walnuts, chopped" ;
             :quantity "1/4" ;
             :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:Marshmallows ;
-            :name "marshmallows" ;
-            :quantity "1/4" ;
-            :unit measurements:Ounce ],
         [ a :Ingredient ;
             :food food:Eggs ;
             :name "eggs" ;
@@ -107,14 +107,15 @@ recipes:BananaCreamPie :hasIngredient [ a :Ingredient ;
             :quantity "1 2/3" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Shell ;
-            :name "baked pastry shell" ;
-            :quantity "1" ],
-        [ a :Ingredient ;
             :food food:SweetenedCondensedMilk ;
             :name "sweetened condensed milk" ;
             :quantity "1" ;
-            :unit "14 oz can" ],
+            :unit measurements:Ounce,
+                "14 oz can" ],
+        [ a :Ingredient ;
+            :food food:Shell ;
+            :name "baked pastry shell" ;
+            :quantity "1" ],
         [ a :Ingredient ;
             :food food:EggYolks ;
             :name "egg yolks, beaten" ;
@@ -142,12 +143,12 @@ recipes:BlueCheeseDressing :hasIngredient [ a :Ingredient ;
             :food food:BlueCheese ;
             :name "blue cheese" ;
             :quantity "6" ;
-            :unit "ounces" ],
+            :unit measurements:Ounce ],
         [ a :Ingredient ;
             :food food:Wine ;
             :name "white sauterne wine" ;
             :quantity "1 1/2" ;
-            :unit "ounces" ] ;
+            :unit measurements:Ounce ] ;
     :instructions "Mix or shake well." ;
     :name "Blue Cheese Dressing" ;
     :recipeCategory "Salads and Dressings" .
@@ -213,6 +214,11 @@ recipes:BlueberryCoffeeCake :hasIngredient [ a :Ingredient ;
                 measurements:Teaspoon,
                 "tbsp + 1 tsp" ],
         [ a :Ingredient ;
+            :food food:LemonJuice ;
+            :name "lemon juice" ;
+            :quantity "1" ;
+            :unit measurements:Tablespoon ],
+        [ a :Ingredient ;
             :food food:Vanilla ;
             :name "vanilla" ;
             :quantity "3" ;
@@ -246,16 +252,11 @@ recipes:BlueberryCoffeeCake :hasIngredient [ a :Ingredient ;
             :food food:CreamCheese ;
             :name "cream cheese" ;
             :quantity "12" ;
-            :unit "ounces" ],
+            :unit measurements:Ounce ],
         [ a :Ingredient ;
             :food food:Eggs ;
             :name "eggs" ;
-            :quantity "3" ],
-        [ a :Ingredient ;
-            :food food:LemonJuice ;
-            :name "lemon juice" ;
-            :quantity "1" ;
-            :unit "tbps" ] ;
+            :quantity "3" ] ;
     :instructions """Mix butter, 1 cup sugar, flour, 2 eggs, 2 tsp vanilla, baking powder, and milk to make cake batter. Blend easily.  Add 3 cups of blueberries.  Put 2 1/2 cups of batter in pan.
 Mix cream cheese, 1/2 cup sugar, 1 egg, lemon juice and 1 tsp vanilla to make filling.  Put filling on top of batter.  Top with remaining batter.
 Make streusel topping from flour, butter, brown sugar, ad cinnamon.  Sprinkle on top of cake.
@@ -328,7 +329,7 @@ recipes:BroccoliCheeseSoup :hasIngredient [ a :Ingredient ;
             :quantity "2" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Low-fatMilk ;
+            :food food:Milk ;
             :name "low-fat milk" ;
             :quantity "3/4" ;
             :unit measurements:Cup ],
@@ -367,15 +368,15 @@ recipes:BroccoliSalad :hasIngredient [ a :Ingredient ;
             :quantity "1/3" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
+            :food food:Cheese ;
+            :name "mozzarella cheese, shredded" ;
+            :quantity "8" ;
+            :unit measurements:Ounce ],
+        [ a :Ingredient ;
             :food food:Florets ;
             :name "broccoli florets, bite size" ;
             :quantity "2 or 3" ;
             :unit "heads" ],
-        [ a :Ingredient ;
-            :food food:Cheese ;
-            :name "mozzarella cheese, shredded" ;
-            :quantity "8" ;
-            :unit "ounce" ],
         [ a :Ingredient ;
             :food food:Chopped ;
             :name "red onion, chopped" ;
@@ -411,7 +412,13 @@ recipes:BroccoliSaladwithPineapple :hasIngredient [ a :Ingredient ;
             :quantity "1" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Fry ;
+            :food food:Pineapple ;
+            :name "crushed pineapple, well drained" ;
+            :quantity "1" ;
+            :unit measurements:Ounce,
+                "16 oz. can" ],
+        [ a :Ingredient ;
+            :food food:Bacon ;
             :name "bacon, but small, fry until crisp" ;
             :quantity "5 to 6" ;
             :unit "strips" ],
@@ -421,12 +428,7 @@ recipes:BroccoliSaladwithPineapple :hasIngredient [ a :Ingredient ;
             :quantity "1" ;
             :unit "bunch" ],
         [ a :Ingredient ;
-            :food food:Pineapple ;
-            :name "crushed pineapple, well drained" ;
-            :quantity "1" ;
-            :unit "16 oz. can" ],
-        [ a :Ingredient ;
-            :food food:Fine ;
+            :food food:Chopped ;
             :name "red onion, chopped fine" ;
             :quantity "1" ] ;
     :instructions "Cut broccoli flowers.  Chop the top 2 inches of the stems into small pieces.  Mix together broccoli, crisp bacon, drained pineapple, onion, and sunflower seeds.  Blend mayonnaise, sugar, and vinegar to make dressing.  Pour over top of broccoli mixture.  Toss and serve.  Note:  This salad is also great with sliced raw carrots and cauliflower." ;
@@ -459,21 +461,22 @@ recipes:CarrotCarousel :hasIngredient [ a :Ingredient ;
             :quantity "1 1/2" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Gelatin ;
-            :name "Knox Unflavored Gelatin" ;
-            :quantity "2" ;
-            :unit "envelopes" ],
-        [ a :Ingredient ;
             :food food:Pineapple ;
             :name "crushed pineapple" ;
             :quantity "1" ;
-            :unit "13.4 oz. can" ] ;
+            :unit measurements:Ounce,
+                "13.4 oz. can" ],
+        [ a :Ingredient ;
+            :food food:Gelatin ;
+            :name "Knox Unflavored Gelatin" ;
+            :quantity "2" ;
+            :unit "envelopes" ] ;
     :instructions "Sprinkle gelatine over 1/2 cup of cold orange juice in blender container that will hold 5 cups.  Add boiling orange juice; cover and process at low speed until gelatin dissolves.  Add remaining 1 cup cold orange juice, salt, and salad dressing; process until well blended.  Add carrot pieces; cover and turn to high speed, on and off several times until carrots are finely grated.  Stir in pineapple and syrup; pour into 6 cup mold.  Chill until firm." ;
     :name "Carrot Carousel" ;
     :recipeCategory "Salads and Dressings" .
 
 recipes:ChickenNoodleSoup :hasIngredient [ a :Ingredient ;
-            :food food:Chicken ;
+            :food food:Chopped ;
             :name "chicken, cooked and chopped" ;
             :quantity "2" ;
             :unit measurements:Cup ],
@@ -638,7 +641,7 @@ recipes:ChocolateMayonaiseCake :hasIngredient [ a :Ingredient ;
             :quantity "1/3" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Mayonnaise ;
+            :food food:Foods ;
             :name "Best Foods Mayonnaise" ;
             :quantity "1 1/2" ;
             :unit measurements:Cup ],
@@ -787,7 +790,7 @@ recipes:ChristmasLogs :hasIngredient [ a :Ingredient ;
             :food food:Walnuts ;
             :name "crushed walnuts" ;
             :quantity "8" ;
-            :unit "ounces" ],
+            :unit measurements:Ounce ],
         [ a :Ingredient ;
             :food food:Eggs ;
             :name "eggs" ;
@@ -835,7 +838,7 @@ recipes:ChristmasSnowballs :hasIngredient [ a :Ingredient ;
             :food food:ChocolateChips ;
             :name "chocolate chips" ;
             :quantity "6" ;
-            :unit "oz." ] ;
+            :unit measurements:Ounce ] ;
     :instructions "Combine first 5 ingredients.  Blend well.  Stir in flour, chocolate chips, and nuts.  Form 1\" balls.   Place on ungreased cookie sheet.  Bake 30 minutes at 350 degrees. Roll in powdered sugar while still warm. Makes approx. 5 dozen." ;
     :name "Christmas Snowballs" ;
     :recipeCategory "Cookies" .
@@ -846,15 +849,15 @@ recipes:CleosClamChowder :hasIngredient [ a :Ingredient ;
             :quantity "1" ;
             :unit measurements:Quart ],
         [ a :Ingredient ;
+            :food food:Chopped ;
+            :name "bacon, chopped and browned" ;
+            :quantity "1/2" ;
+            :unit measurements:Pound ],
+        [ a :Ingredient ;
             :food food:Potatoes ;
             :name "potatoes, peeled and diced" ;
             :quantity "2" ;
             :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:Chopped ;
-            :name "bacon, chopped and browned" ;
-            :quantity "1/2" ;
-            :unit measurements:Ounce ],
         [ a :Ingredient ;
             :food food:Onion ;
             :name "onion, suated" ;
@@ -1011,7 +1014,7 @@ recipes:CreamyApplePie :hasIngredient [ a :Ingredient ;
             :quantity "1" ;
             :unit "9 inch" ],
         [ a :Ingredient ;
-            :food food:Sliced ;
+            :food food:TartApples ;
             :name "tart apples, peeled and sliced" ;
             :quantity "4 or 5" ] ;
     :instructions "Place apples in the pie shell.  Mix together sugar, flour, and salt.  Sprinkle over apples.  in a sauce pan bring cream to boiling point.  Pour over apples.  Sprinkle generously with cinnamon.  Bake at 375 degrees for 45 minutes, until firm." ;
@@ -1034,7 +1037,7 @@ recipes:CreamyZucchiniMushroomSoup :hasIngredient [ a :Ingredient ;
             :quantity "1 1/2" ;
             :unit measurements:Teaspoon ],
         [ a :Ingredient ;
-            :food food:Lb ;
+            :food food:Zucchini ;
             :name "zucchini, thinly sliced (about 3/4 lb.)" ;
             :quantity "3" ;
             :unit measurements:Cup ],
@@ -1064,15 +1067,16 @@ recipes:CreamyZucchiniMushroomSoup :hasIngredient [ a :Ingredient ;
             :quantity "1/2" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Garlic ;
-            :name "garlic, minced" ;
-            :quantity "3" ;
-            :unit "cloves" ],
-        [ a :Ingredient ;
             :food food:Mushroom ;
             :name "cream of mushroom soup, condensed" ;
             :quantity "1" ;
-            :unit "10 oz. can" ] ;
+            :unit measurements:Ounce,
+                "10 oz. can" ],
+        [ a :Ingredient ;
+            :food food:Garlic ;
+            :name "garlic, minced" ;
+            :quantity "3" ;
+            :unit "cloves" ] ;
     :instructions "Combine zucchini, onion, garlic and butter in 2 qt. microwave-safe casserole.  Cover and microwave on high setting 5 to 7 minutes, stirring every 3 minutes, until vegetables are tender.  Place zucchini mixture in blender container; blend until smooth.  Return to casserole dish; add all remaining ingredients except sour cream, pepper and pine nuts.  Cover and microwave 5 to 6 minutes, or until heated through.  Stir in sour cream and season to taste with pepper.  Ladle into soup bowls and garnish with sprinkle of pine nuts.  Serve immediately." ;
     :name "Creamy Zucchini Mushroom Soup" ;
     :recipeCategory "Soup" .
@@ -1098,7 +1102,7 @@ recipes:CrispOatmealFruitStrips :hasIngredient [ a :Ingredient ;
             :quantity "2" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Dates ;
+            :food food:Raisins ;
             :name "raisins (or finely diced prunes or dates)" ;
             :quantity "2" ;
             :unit measurements:Cup ],
@@ -1331,6 +1335,11 @@ recipes:FreshAppleCake :hasIngredient [ a :Ingredient ;
     :recipeCategory "Cakes" .
 
 recipes:FreshPearCake :hasIngredient [ a :Ingredient ;
+            :food food:Butter ;
+            :name "butter" ;
+            :quantity "2" ;
+            :unit measurements:Tablespoon ],
+        [ a :Ingredient ;
             :food food:Salt ;
             :name "salt" ;
             :quantity "08-Jan" ;
@@ -1350,11 +1359,6 @@ recipes:FreshPearCake :hasIngredient [ a :Ingredient ;
             :name "milk" ;
             :quantity "1/2" ;
             :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:Butter ;
-            :name "butter" ;
-            :quantity "2" ;
-            :unit "tbps" ],
         [ a :Ingredient ;
             :food food:Pears ;
             :name "pears" ;
@@ -1617,6 +1621,11 @@ recipes:GreenBeanSalad :hasIngredient [ a :Ingredient ;
             :quantity "2" ;
             :unit measurements:Teaspoon ],
         [ a :Ingredient ;
+            :food food:Fresh ;
+            :name "fresh beans" ;
+            :quantity "1" ;
+            :unit measurements:Pound ],
+        [ a :Ingredient ;
             :food food:SaladOil ;
             :name "salad oil" ;
             :quantity "3/4" ;
@@ -1630,12 +1639,7 @@ recipes:GreenBeanSalad :hasIngredient [ a :Ingredient ;
             :food food:Chopped ;
             :name "red onion, chopped" ;
             :quantity "1/2" ;
-            :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:Fresh ;
-            :name "fresh beans" ;
-            :quantity "1" ;
-            :unit measurements:Ounce ] ;
+            :unit measurements:Cup ] ;
     :instructions "Mix oil, vinegar, onion, and lemon.  Pour over beans.  Chill 3 hour or longer.  Spoon beans onto lettuce with slotted spoon.  Top with crumbled blue cheese and coarsely chopped walnuts" ;
     :name "Green Bean Salad" ;
     :recipeCategory "Salads and Dressings" .
@@ -1664,7 +1668,7 @@ recipes:HeavenlyCheeseSalad :hasIngredient [ a :Ingredient ;
             :food food:CreamCheese ;
             :name "cream cheese" ;
             :quantity "8" ;
-            :unit "oz" ],
+            :unit measurements:Ounce ],
         [ a :Ingredient ;
             :food food:WhippedCream ;
             :name "whipped cream" ;
@@ -1839,7 +1843,7 @@ recipes:HungryBearVegetableSoup :hasIngredient [ a :Ingredient ;
             :food food:Hamburger ;
             :name "hamburger" ;
             :quantity "1" ;
-            :unit measurements:Ounce ],
+            :unit measurements:Pound ],
         [ a :Ingredient ;
             :food food:Potatoes ;
             :name "potatoes, diced" ;
@@ -1916,7 +1920,8 @@ recipes:JelloPastelCookies :hasIngredient [ a :Ingredient ;
             :food food:Fruit ;
             :name "fruit jello" ;
             :quantity "3" ;
-            :unit "oz. pkg." ] ;
+            :unit measurements:Ounce,
+                "oz. pkg." ] ;
     :instructions "Mix shortening, sugar, gelatin, eggs, and vanilla.  Blend in dry ingredients.  Roll into 3/4\" balls.  Place 3\" apart on a cookie sheet.  Flatten each with the bottom of a glass dipped in sugar.  Bake 6-8 minutes at 375 degrees.  Makes 4 dozen." ;
     :name "Jello Pastel Cookies" ;
     :recipeCategory "Cookies" .
@@ -1947,14 +1952,14 @@ recipes:LemonCloudPie :hasIngredient [ a :Ingredient ;
             :quantity "1/3" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Eggs ;
-            :name "eggs" ;
-            :quantity "2" ],
-        [ a :Ingredient ;
             :food food:CreamCheese ;
             :name "cream cheese" ;
             :quantity "4" ;
-            :unit "ounces" ] ;
+            :unit measurements:Ounce ],
+        [ a :Ingredient ;
+            :food food:Eggs ;
+            :name "eggs" ;
+            :quantity "2" ] ;
     :instructions "Combine in sauce pan 3/4 cup sugar, cornstarch, water, lemon rind, and juice, and slightly beaten egg yolk.  Cook over medium heat stirring constantly until thick.  Remove from heat.  Add softened cheese, blend well.  Cool.  Beat egg whites until stiff.  Add 1/4 sugar.  Fold into lemon mixture.  Spoon into crust.  Chill 2 hours.  Serve with whipped cream." ;
     :name "Lemon Cloud Pie" ;
     :recipeCategory "Pies" .
@@ -1965,6 +1970,7 @@ recipes:LemonCloudSalad :hasIngredient [ a :Ingredient ;
             :quantity "1" ;
             :unit measurements:Package ],
         [ a :Ingredient ;
+            :food food:Whip ;
             :name "Dream Whip" ;
             :quantity "2" ;
             :unit measurements:Cup ],
@@ -2021,7 +2027,7 @@ recipes:LemonLusciousPie :hasIngredient [ a :Ingredient ;
             :quantity "1" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:EggYolks ;
+            :food food:Yolks ;
             :name "egg yolks, slightly beaten" ;
             :quantity "3" ],
         [ a :Ingredient ;
@@ -2221,7 +2227,7 @@ recipes:LightOldFashionedFruitCake :hasIngredient [ a :Ingredient ;
             :food food:Pecans ;
             :name "whole pecans" ;
             :quantity "24" ;
-            :unit "ounces" ],
+            :unit measurements:Ounce ],
         [ a :Ingredient ;
             :food food:Eggs ;
             :name "eggs" ;
@@ -2313,6 +2319,12 @@ recipes:MexicanMeatballSoup :hasIngredient [ a :Ingredient ;
             :quantity "1" ;
             :unit measurements:Teaspoon ],
         [ a :Ingredient ;
+            :food food:Hamburger ;
+            :name "hamburger" ;
+            :quantity "1" ;
+            :unit measurements:Pound ],
+        [ a :Ingredient ;
+            :food food:Rice ;
             :name "minute rice" ;
             :quantity "1/4" ;
             :unit measurements:Cup ],
@@ -2322,7 +2334,7 @@ recipes:MexicanMeatballSoup :hasIngredient [ a :Ingredient ;
             :quantity "1/4" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Chicken ;
+            :food food:BeefBroth ;
             :name "chicken or beef broth" ;
             :quantity "4" ;
             :unit measurements:Cup ],
@@ -2352,11 +2364,6 @@ recipes:MexicanMeatballSoup :hasIngredient [ a :Ingredient ;
             :quantity "1/2" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Hamburger ;
-            :name "hamburger" ;
-            :quantity "1" ;
-            :unit measurements:Ounce ],
-        [ a :Ingredient ;
             :food food:Egg ;
             :name "egg" ;
             :quantity "1" ],
@@ -2382,7 +2389,7 @@ recipes:MinestroneSoup :hasIngredient [ a :Ingredient ;
             :food food:Hamburger ;
             :name "hamburger" ;
             :quantity "1" ;
-            :unit measurements:Ounce ],
+            :unit measurements:Pound ],
         [ a :Ingredient ;
             :food food:Potatoes ;
             :name "potatoes, cubed" ;
@@ -2416,6 +2423,7 @@ recipes:MinestroneSoup :hasIngredient [ a :Ingredient ;
             :quantity "1/2" ;
             :unit "head" ],
         [ a :Ingredient ;
+            :food food:Tomatoes ;
             :name "stewed tomatoes" ;
             :quantity "1" ;
             :unit "large can" ],
@@ -2618,7 +2626,7 @@ recipes:OatmealCookies :hasIngredient [ a :Ingredient ;
             :quantity "5" ;
             :unit measurements:Teaspoon ],
         [ a :Ingredient ;
-            :food food:Liquid ;
+            :food food:Dissolved ;
             :name "soda, dissolved in raisin liquid" ;
             :quantity "1" ;
             :unit measurements:Teaspoon ],
@@ -2628,6 +2636,7 @@ recipes:OatmealCookies :hasIngredient [ a :Ingredient ;
             :quantity "1" ;
             :unit measurements:Teaspoon ],
         [ a :Ingredient ;
+            :food food:Spice ;
             :name "all-spice" ;
             :quantity "1" ;
             :unit measurements:Teaspoon ],
@@ -2676,6 +2685,12 @@ recipes:OatmealCookies :hasIngredient [ a :Ingredient ;
     :recipeCategory "Cookies" .
 
 recipes:OatmealFudgeBars :hasIngredient [ a :Ingredient ;
+            :food food:Butter ;
+            :name "butter or margarine" ;
+            :quantity "1" ;
+            :unit measurements:Tablespoon,
+                "Tbps." ],
+        [ a :Ingredient ;
             :food food:Vanilla ;
             :name "vanilla" ;
             :quantity "1/2" ;
@@ -2706,7 +2721,7 @@ recipes:OatmealFudgeBars :hasIngredient [ a :Ingredient ;
             :quantity "1/2" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Light ;
+            :food food:Sugar ;
             :name "light brown sugar, firmly packed" ;
             :quantity "1" ;
             :unit measurements:Cup ],
@@ -2716,7 +2731,7 @@ recipes:OatmealFudgeBars :hasIngredient [ a :Ingredient ;
             :quantity "3/4" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Oats ;
+            :food food:Quick ;
             :name "quick-cooking oats" ;
             :quantity "2" ;
             :unit measurements:Cup ],
@@ -2736,19 +2751,15 @@ recipes:OatmealFudgeBars :hasIngredient [ a :Ingredient ;
             :quantity "1/2" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Egg ;
-            :name "egg" ;
-            :quantity "1" ],
-        [ a :Ingredient ;
-            :food food:Semi-sweetChocolate ;
+            :food food:SweetChocolate ;
             :name "semi-sweet chocolate chips" ;
             :quantity "1" ;
-            :unit "6 oz. pkg." ],
+            :unit measurements:Ounce,
+                "6 oz. pkg." ],
         [ a :Ingredient ;
-            :food food:Butter ;
-            :name "butter or margarine" ;
-            :quantity "1" ;
-            :unit "Tbps." ] ;
+            :food food:Egg ;
+            :name "egg" ;
+            :quantity "1" ] ;
     :instructions """Oatmeal Layer:  Grease 9"x9" baking pan.  Beat shortening with sugar until fluffy.  Beat in egg and vanilla.  Sift flour with soda and salt into sugar mixture.  Mix well.  Stir in oats and nuts.  Remove 1 cup for topping.  Press the rest of the mixture evenly into the bottom of the pan.
 Fudge Layer:  Preheat oven to 350 degrees. In small sauce pan combine chocolate chips butter, milk, and salt.  Cook over low heat, stirring until chocolate and butter are melted.  Remove from the heat.  Stir in nuts and vanilla.  Spread chocolate mixture over oatmeal layer.  Sprinkle top with reserved oatmeal mixture.  Bake 25 minutes or until topping is lightly browned.""" ;
     :name "Oatmeal Fudge Bars*" ;
@@ -2863,12 +2874,13 @@ recipes:OrangeAngelFoodCake :hasIngredient [ a :Ingredient ;
             :quantity "1/2" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Mix ;
+            :food food:AngelFoodCake ;
             :name "angel food cake mix" ;
             :quantity "1" ;
-            :unit "15-16 ounce pkg" ],
+            :unit measurements:Ounce,
+                "15-16 ounce pkg" ],
         [ a :Ingredient ;
-            :food food:Light ;
+            :food food:WhippedTopping ;
             :name "frozen light whipped topping, thawed" ;
             :quantity "1" ;
             :unit "container" ] ;
@@ -2891,6 +2903,7 @@ recipes:PeaSalad :hasIngredient [ a :Ingredient ;
             :quantity "1" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
+            :food food:Peas ;
             :name "frozen peas, uncooked" ;
             :quantity "1" ;
             :unit "bag" ],
@@ -2966,9 +2979,10 @@ recipes:PeachParfaitPie :hasIngredient [ a :Ingredient ;
             :food food:Gelatin ;
             :name "peach or lemon gelatin" ;
             :quantity "1" ;
-            :unit "3 ounce box" ],
+            :unit measurements:Ounce,
+                "3 ounce box" ],
         [ a :Ingredient ;
-            :food food:Cream ;
+            :food food:Vanilla ;
             :name "Peach or vanilla ice cream" ;
             :quantity "1" ;
             :unit "pint" ],
@@ -3072,7 +3086,7 @@ recipes:PeanutButterPie :hasIngredient [ a :Ingredient ;
             :quantity "1/2" ;
             :unit measurements:Teaspoon ],
         [ a :Ingredient ;
-            :food food:Light ;
+            :food food:CornSyrup ;
             :name "light or dark corn syrup" ;
             :quantity "1" ;
             :unit measurements:Cup ],
@@ -3082,7 +3096,7 @@ recipes:PeanutButterPie :hasIngredient [ a :Ingredient ;
             :quantity "1" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:PeanutButter ;
+            :food food:Peanut ;
             :name "chunk style peanut butter" ;
             :quantity "1/3" ;
             :unit measurements:Cup ],
@@ -3158,6 +3172,11 @@ recipes:Pineapple-CarrotCake :hasIngredient [ a :Ingredient ;
             :quantity "1" ;
             :unit measurements:Teaspoon ],
         [ a :Ingredient ;
+            :food food:Margarine ;
+            :name "margarine" ;
+            :quantity "1/4" ;
+            :unit measurements:Pound ],
+        [ a :Ingredient ;
             :food food:Oil ;
             :name "oil" ;
             :quantity "1" ;
@@ -3193,19 +3212,14 @@ recipes:Pineapple-CarrotCake :hasIngredient [ a :Ingredient ;
             :quantity "2" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Margarine ;
-            :name "margarine" ;
-            :quantity "1/4" ;
+            :food food:CreamCheese ;
+            :name "cream cheese" ;
+            :quantity "3" ;
             :unit measurements:Ounce ],
         [ a :Ingredient ;
             :food food:Eggs ;
             :name "eggs" ;
-            :quantity "4" ],
-        [ a :Ingredient ;
-            :food food:CreamCheese ;
-            :name "cream cheese" ;
-            :quantity "3" ;
-            :unit "ounces" ] ;
+            :quantity "4" ] ;
     :instructions "Mix all cake ingredients.  Bake in greased and floured 9\"x13\" pan at 350 degrees for 35 minutes.  Frost when cool." ;
     :name "Pineapple-Carrot Cake*" ;
     :recipeCategory "Cakes" .
@@ -3224,8 +3238,7 @@ recipes:PineappleCake :hasIngredient [ a :Ingredient ;
             :food food:Pineapple ;
             :name "crushed pineapple" ;
             :quantity "1" ;
-            :unit measurements:Ounce,
-                measurements:Pound,
+            :unit measurements:Pound,
                 "2 pound can" ],
         [ a :Ingredient ;
             :food food:Butter ;
@@ -3242,7 +3255,7 @@ recipes:PineappleGrahamBars :hasIngredient [ a :Ingredient ;
             :quantity "1/4" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Light ;
+            :food food:Sugar ;
             :name "light brown sugar, firmly packed" ;
             :quantity "1/2" ;
             :unit measurements:Cup ],
@@ -3262,14 +3275,15 @@ recipes:PineappleGrahamBars :hasIngredient [ a :Ingredient ;
             :quantity "1/2" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Egg ;
-            :name "egg" ;
-            :quantity "1" ],
-        [ a :Ingredient ;
             :food food:Pineapple ;
             :name "crushed pineapple, drained." ;
             :quantity "1" ;
-            :unit "8 1/2 oz. can" ] ;
+            :unit measurements:Ounce,
+                "8 1/2 oz. can" ],
+        [ a :Ingredient ;
+            :food food:Egg ;
+            :name "egg" ;
+            :quantity "1" ] ;
     :instructions "Preheat oven to 350 degrees.  Lightly grease 8\"x8\"x2\" pan.  Mix butter with sugar until light.  Beat in egg.  Stir in flour, graham cracker crumbs, pineapple, and walnuts.  Bake 30-35 minutes or until browned and surface is firm to the touch.  Let cool completely in plan. Cut into 20 bars." ;
     :name "Pineapple Graham Bars" ;
     :recipeCategory "Cookies" .
@@ -3512,7 +3526,8 @@ recipes:PumpkinSwirlCheesecake :hasIngredient [ a :Ingredient ;
             :food food:CreamCheese ;
             :name "lite cream cheese" ;
             :quantity "2" ;
-            :unit "8 oz. pkgs." ],
+            :unit measurements:Ounce,
+                "8 oz. pkgs." ],
         [ a :Ingredient ;
             :food food:Eggs ;
             :name "eggs" ;
@@ -3537,6 +3552,11 @@ recipes:RefrigeratorCheesecake :hasIngredient [ a :Ingredient ;
             :name "grated lemon rind" ;
             :quantity "1" ;
             :unit measurements:Teaspoon ],
+        [ a :Ingredient ;
+            :food food:CottageCheese ;
+            :name "cottage cheese" ;
+            :quantity "1" ;
+            :unit measurements:Pound ],
         [ a :Ingredient ;
             :food food:Cornflakes ;
             :name "cornflakes" ;
@@ -3572,11 +3592,6 @@ recipes:RefrigeratorCheesecake :hasIngredient [ a :Ingredient ;
             :name "heavy cream" ;
             :quantity "1/2" ;
             :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:CottageCheese ;
-            :name "cottage cheese" ;
-            :quantity "1" ;
-            :unit measurements:Ounce ],
         [ a :Ingredient ;
             :food food:Eggs ;
             :name "eggs, separated" ;
@@ -3619,6 +3634,11 @@ recipes:SherryWineCake :hasIngredient [ a :Ingredient ;
     :recipeCategory "Cakes" .
 
 recipes:Snickerdoodles :hasIngredient [ a :Ingredient ;
+            :food food:Sugar ;
+            :name "sugar" ;
+            :quantity "2" ;
+            :unit measurements:Tablespoon ],
+        [ a :Ingredient ;
             :food food:Cream ;
             :name "cream of tartar" ;
             :quantity "2" ;
@@ -3656,12 +3676,7 @@ recipes:Snickerdoodles :hasIngredient [ a :Ingredient ;
         [ a :Ingredient ;
             :food food:Eggs ;
             :name "eggs" ;
-            :quantity "2" ],
-        [ a :Ingredient ;
-            :food food:Sugar ;
-            :name "sugar" ;
-            :quantity "2" ;
-            :unit "Tbps" ] ;
+            :quantity "2" ] ;
     :instructions "Mix first 7 ingredients.  Roll in balls.  Dip in mixture of cinnamon and sugar.  Bake for 8-10 minutes at 375 degrees.  Makes 4 dozen." ;
     :name "Snickerdoodles" ;
     :recipeCategory "Cookies" .
@@ -3750,7 +3765,7 @@ recipes:SourCreamRaisinPie :hasIngredient [ a :Ingredient ;
             :quantity "1" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:EggYolks ;
+            :food food:Yolks ;
             :name "egg yolks, slightly beaten" ;
             :quantity "3" ] ;
     :instructions "Boil raisins in water until plump.  Add flour and sugar.  Cook to thicken slightly then add egg yolks, sour cream, vanilla and nutmeg.  Pour into 9\" bottom crust.  Add top crust.  Sprinkle with sugar.  Bake 50 minutes at 350 degrees." ;
@@ -3956,6 +3971,11 @@ recipes:SpinachSalad :hasIngredient [ a :Ingredient ;
             :quantity "2" ;
             :unit measurements:Slice ],
         [ a :Ingredient ;
+            :food food:Leaves ;
+            :name "spinach leaves" ;
+            :quantity "1/2" ;
+            :unit measurements:Pound ],
+        [ a :Ingredient ;
             :food food:Vinegar ;
             :name "vinegar" ;
             :quantity "2/3" ;
@@ -3965,11 +3985,6 @@ recipes:SpinachSalad :hasIngredient [ a :Ingredient ;
             :name "water" ;
             :quantity "1/2" ;
             :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:Leaves ;
-            :name "spinach leaves" ;
-            :quantity "1/2" ;
-            :unit measurements:Ounce ],
         [ a :Ingredient ;
             :food food:Red ;
             :name "onion, red is best" ;
@@ -4032,20 +4047,20 @@ recipes:SpinachSaladwithAvocado :hasIngredient [ a :Ingredient ;
             :quantity "1/4" ;
             :unit measurements:Teaspoon ],
         [ a :Ingredient ;
-            :food food:Crumbled ;
+            :food food:Crisp ;
             :name "bacon, crisp and crumbled" ;
             :quantity "6" ;
             :unit measurements:Slice ],
+        [ a :Ingredient ;
+            :food food:Fresh ;
+            :name "fresh spinach" ;
+            :quantity "1" ;
+            :unit measurements:Pound ],
         [ a :Ingredient ;
             :food food:OliveOil ;
             :name "olive oil" ;
             :quantity "1/2" ;
             :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:Fresh ;
-            :name "fresh spinach" ;
-            :quantity "1" ;
-            :unit measurements:Ounce ],
         [ a :Ingredient ;
             :food food:Avocado ;
             :name "avocado" ;
@@ -4185,7 +4200,7 @@ recipes:ThreeLayerChocolateMayonnaiseCake :hasIngredient [ a :Ingredient ;
             :quantity "1/2" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Mayonnaise ;
+            :food food:Foods ;
             :name "Best Foods Mayonnaise" ;
             :quantity "2 1/4" ;
             :unit measurements:Cup ],
@@ -4252,6 +4267,7 @@ recipes:TopRamenSalad :hasIngredient [ a :Ingredient ;
             :quantity "1/4" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
+            :food food:Peas ;
             :name "frozen peas" ;
             :quantity "1" ;
             :unit measurements:Cup ] ;
@@ -4285,6 +4301,12 @@ recipes:TortillaSoup :hasIngredient [ a :Ingredient ;
             :quantity "1" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
+            :food food:Green ;
+            :name "chopped green chiles" ;
+            :quantity "1" ;
+            :unit measurements:Ounce,
+                "4 oz. can" ],
+        [ a :Ingredient ;
             :food food:Lime ;
             :name "lime" ;
             :quantity "1" ],
@@ -4303,11 +4325,6 @@ recipes:TortillaSoup :hasIngredient [ a :Ingredient ;
             :name "water" ;
             :quantity "1" ;
             :unit "soup can" ],
-        [ a :Ingredient ;
-            :food food:Green ;
-            :name "chopped green chiles" ;
-            :quantity "1" ;
-            :unit "4 oz. can" ],
         [ a :Ingredient ;
             :food food:Corn ;
             :name "corn tortillas" ;
@@ -4347,7 +4364,7 @@ recipes:TwoLayerChocolateMayonnaiseCake :hasIngredient [ a :Ingredient ;
             :quantity "1/3" ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Mayonnaise ;
+            :food food:Foods ;
             :name "Best Foods Mayonnaise" ;
             :quantity "1 1/2" ;
             :unit measurements:Cup ],
@@ -4554,17 +4571,19 @@ food:AlmondExtract owl:sameAs <http://dbpedia.org/resource/Almond> .
 
 food:Almonds owl:sameAs <http://dbpedia.org/resource/Almond> .
 
+food:AngelFoodCake owl:sameAs <http://dbpedia.org/resource/Angel_food_cake> .
+
 food:Apple owl:sameAs <http://dbpedia.org/resource/Apple> .
 
 food:Avocado owl:sameAs <http://dbpedia.org/resource/Avocado> .
-
-food:Bacon owl:sameAs <http://dbpedia.org/resource/Bacon> .
 
 food:BaconBits owl:sameAs <http://dbpedia.org/resource/Bacon> .
 
 food:BeanSprouts owl:sameAs <http://dbpedia.org/resource/Sprouting> .
 
 food:Beans owl:sameAs <http://dbpedia.org/resource/Bean> .
+
+food:BeefBroth owl:sameAs <http://dbpedia.org/resource/Broth> .
 
 food:Berries owl:sameAs <http://dbpedia.org/resource/Berry> .
 
@@ -4600,21 +4619,23 @@ food:CookingWine owl:sameAs <http://dbpedia.org/resource/Classification_of_wine>
 
 food:Corn owl:sameAs <http://dbpedia.org/resource/Maize> .
 
-food:CornSyrup owl:sameAs <http://dbpedia.org/resource/Corn_syrup> .
-
 food:Cornflakes owl:sameAs <http://dbpedia.org/resource/Corn_flakes> .
 
 food:CottageCheese owl:sameAs <http://dbpedia.org/resource/Cottage_cheese> .
 
 food:CranberrySauce owl:sameAs <http://dbpedia.org/resource/Cranberry_sauce> .
 
+food:Crisp owl:sameAs <http://dbpedia.org/resource/Potato_chip> .
+
+food:Crumbled owl:sameAs <http://dbpedia.org/resource/Peaceful_Revolution> .
+
 food:Crumbs owl:sameAs <http://dbpedia.org/resource/Bread_crumbs> .
 
 food:Cucumbers owl:sameAs <http://dbpedia.org/resource/Cucumber> .
 
-food:Dates owl:sameAs <http://dbpedia.org/resource/Date_palm> .
-
 food:Dill owl:sameAs <http://dbpedia.org/resource/Dill> .
+
+food:Dissolved owl:sameAs <http://dbpedia.org/resource/Dissolution_of_the_monasteries> .
 
 food:Divided owl:sameAs <http://dbpedia.org/resource/Dual_carriageway> .
 
@@ -4628,15 +4649,11 @@ food:Elephant owl:sameAs <http://dbpedia.org/resource/Elephant> .
 
 food:Fat owl:sameAs <http://dbpedia.org/resource/Fat> .
 
-food:Fine owl:sameAs <http://dbpedia.org/resource/Fine_art> .
-
 food:FoodColoring owl:sameAs <http://dbpedia.org/resource/Food_coloring> .
 
 food:Fruit owl:sameAs <http://dbpedia.org/resource/Fruit> .
 
 food:FruitJuice owl:sameAs <http://dbpedia.org/resource/Juice> .
-
-food:Fry owl:sameAs <http://dbpedia.org/resource/Frying> .
 
 food:GarbanzoBeans owl:sameAs <http://dbpedia.org/resource/Chickpea> .
 
@@ -4658,17 +4675,17 @@ food:Honey owl:sameAs <http://dbpedia.org/resource/Honey> .
 
 food:Kelp owl:sameAs <http://dbpedia.org/resource/Kelp> .
 
-food:Lb owl:sameAs <http://dbpedia.org/resource/Pound_(mass)> .
-
 food:Lettuce owl:sameAs <http://dbpedia.org/resource/Lettuce> .
 
 food:Lime owl:sameAs <http://dbpedia.org/resource/Calcium_oxide> .
 
-food:Low-fatMilk owl:sameAs <http://dbpedia.org/resource/Milk> .
+food:Liquid owl:sameAs <http://dbpedia.org/resource/Liquid> .
 
 food:MashedPotatoes owl:sameAs <http://dbpedia.org/resource/Mashed_potato> .
 
 food:Mushroom owl:sameAs <http://dbpedia.org/resource/Mushroom> .
+
+food:Oats owl:sameAs <http://dbpedia.org/resource/Oat> .
 
 food:OliveOil owl:sameAs <http://dbpedia.org/resource/Olive_oil> .
 
@@ -4682,8 +4699,6 @@ food:Parsley owl:sameAs <http://dbpedia.org/resource/Parsley> .
 
 food:Peaches owl:sameAs <http://dbpedia.org/resource/Peach> .
 
-food:Peanut owl:sameAs <http://dbpedia.org/resource/Peanut> .
-
 food:Pears owl:sameAs <http://dbpedia.org/resource/Pear> .
 
 food:Pecans owl:sameAs <http://dbpedia.org/resource/Pecan> .
@@ -4696,11 +4711,11 @@ food:Pudding owl:sameAs <http://dbpedia.org/resource/Pudding> .
 
 food:Pumpkin owl:sameAs <http://dbpedia.org/resource/Pumpkin> .
 
+food:Quick owl:sameAs <http://dbpedia.org/resource/Glossary_of_professional_wrestling_terms> .
+
 food:Rabbits owl:sameAs <http://dbpedia.org/resource/Rabbit> .
 
 food:Red owl:sameAs <http://dbpedia.org/resource/Red> .
-
-food:Rice owl:sameAs <http://dbpedia.org/resource/Rice> .
 
 food:RolledOats owl:sameAs <http://dbpedia.org/resource/Rolled_oats> .
 
@@ -4712,9 +4727,9 @@ food:Salted owl:sameAs <http://dbpedia.org/resource/Salt> .
 
 food:Scallions owl:sameAs <http://dbpedia.org/resource/Scallion> .
 
-food:Semi-sweetChocolate owl:sameAs <http://dbpedia.org/resource/Types_of_chocolate> .
-
 food:SpaghettiSauce owl:sameAs <http://dbpedia.org/resource/Tomato_sauce> .
+
+food:Spice owl:sameAs <http://dbpedia.org/resource/Spice> .
 
 food:Spinach owl:sameAs <http://dbpedia.org/resource/Spinach> .
 
@@ -4724,6 +4739,10 @@ food:Stalks owl:sameAs <http://dbpedia.org/resource/Plant_stem> .
 
 food:Strawberries owl:sameAs <http://dbpedia.org/resource/Strawberry> .
 
+food:SweetChocolate owl:sameAs <http://dbpedia.org/resource/Types_of_chocolate> .
+
+food:TartApples owl:sameAs <http://dbpedia.org/resource/Cooking_apple> .
+
 food:Toasted owl:sameAs <http://dbpedia.org/resource/Toast_(food)> .
 
 food:ValenciaPeanuts owl:sameAs <http://dbpedia.org/resource/Peanut> .
@@ -4731,6 +4750,10 @@ food:ValenciaPeanuts owl:sameAs <http://dbpedia.org/resource/Peanut> .
 food:Watermelon owl:sameAs <http://dbpedia.org/resource/Watermelon> .
 
 food:WheatFlour owl:sameAs <http://dbpedia.org/resource/Wheat_flour> .
+
+food:Whip owl:sameAs <http://dbpedia.org/resource/Whip> .
+
+food:WhippedTopping owl:sameAs <http://dbpedia.org/resource/Whipped_cream> .
 
 food:WhiteSugar owl:sameAs <http://dbpedia.org/resource/White_sugar> .
 
@@ -4742,6 +4765,8 @@ food:Allspice owl:sameAs <http://dbpedia.org/resource/Allspice> .
 
 food:Apples owl:sameAs <http://dbpedia.org/resource/Apple> .
 
+food:Bacon owl:sameAs <http://dbpedia.org/resource/Bacon> .
+
 food:Bananas owl:sameAs <http://dbpedia.org/resource/Banana> .
 
 food:CakeMix owl:sameAs <http://dbpedia.org/resource/Baking_mix> .
@@ -4750,17 +4775,24 @@ food:Carrot owl:sameAs <http://dbpedia.org/resource/Carrot> .
 
 food:Cereal owl:sameAs <http://dbpedia.org/resource/Cereal> .
 
+food:Chicken owl:sameAs <http://dbpedia.org/resource/Chicken>,
+        <http://dbpedia.org/resource/Chicken_as_food> .
+
 food:ChiliPowder owl:sameAs <http://dbpedia.org/resource/Chili_powder> .
 
 food:ColdWater owl:sameAs <http://dbpedia.org/resource/Water_industry> .
 
-food:Crumbled owl:sameAs <http://dbpedia.org/resource/Peaceful_Revolution> .
+food:CornSyrup owl:sameAs <http://dbpedia.org/resource/Corn_syrup> .
+
+food:Cream owl:sameAs <http://dbpedia.org/resource/Cream> .
 
 food:Crushed owl:sameAs <http://dbpedia.org/resource/Crusher> .
 
 food:Cumin owl:sameAs <http://dbpedia.org/resource/Cumin> .
 
 food:Cut owl:sameAs <http://dbpedia.org/resource/Cutting> .
+
+food:EggYolks owl:sameAs <http://dbpedia.org/resource/Yolk> .
 
 food:EvaporatedMilk owl:sameAs <http://dbpedia.org/resource/Evaporated_milk> .
 
@@ -4781,11 +4813,13 @@ food:Leaves owl:sameAs <http://dbpedia.org/resource/Leaf> .
 
 food:LemonPeel owl:sameAs <http://dbpedia.org/resource/Zest_(ingredient)> .
 
-food:Liquid owl:sameAs <http://dbpedia.org/resource/Liquid> .
+food:Mix owl:sameAs <http://dbpedia.org/resource/Audio_mixing_(recorded_music)> .
 
 food:Oatmeal owl:sameAs <http://dbpedia.org/resource/Oatmeal> .
 
-food:Oats owl:sameAs <http://dbpedia.org/resource/Oat> .
+food:Peanut owl:sameAs <http://dbpedia.org/resource/Peanut> .
+
+food:Peas owl:sameAs <http://dbpedia.org/resource/Pea> .
 
 food:Potato owl:sameAs <http://dbpedia.org/resource/Potato> .
 
@@ -4793,17 +4827,19 @@ food:PumpkinPieSpice owl:sameAs <http://dbpedia.org/resource/Pumpkin_pie_spice> 
 
 food:RedOnion owl:sameAs <http://dbpedia.org/resource/Red_onion> .
 
+food:Rice owl:sameAs <http://dbpedia.org/resource/Rice> .
+
+food:Sliced owl:sameAs <http://dbpedia.org/resource/Sliced_bread> .
+
 food:SweetenedCondensedMilk owl:sameAs <http://dbpedia.org/resource/Condensed_milk> .
 
 food:TomatoSauce owl:sameAs <http://dbpedia.org/resource/Tomato_sauce> .
 
-food:Tomatoes owl:sameAs <http://dbpedia.org/resource/Tomato> .
-
-food:Zucchini owl:sameAs <http://dbpedia.org/resource/Zucchini> .
+food:Yolks owl:sameAs <http://dbpedia.org/resource/Yolk> .
 
 food:Cabbage owl:sameAs <http://dbpedia.org/resource/Cabbage> .
 
-food:Cream owl:sameAs <http://dbpedia.org/resource/Cream> .
+food:Foods owl:sameAs <http://dbpedia.org/resource/Food> .
 
 food:Gelatin owl:sameAs <http://dbpedia.org/resource/Gelatin> .
 
@@ -4813,11 +4849,11 @@ food:HeavyCream owl:sameAs <http://dbpedia.org/resource/Cream> .
 
 food:Marshmallows owl:sameAs <http://dbpedia.org/resource/Marshmallow> .
 
-food:Mix owl:sameAs <http://dbpedia.org/resource/Audio_mixing_(recorded_music)> .
-
 food:Molasses owl:sameAs <http://dbpedia.org/resource/Molasses> .
 
 food:Oregano owl:sameAs <http://dbpedia.org/resource/Oregano> .
+
+food:PeanutButter owl:sameAs <http://dbpedia.org/resource/Peanut_butter> .
 
 food:Pepper owl:sameAs <http://dbpedia.org/resource/Black_pepper> .
 
@@ -4825,22 +4861,15 @@ food:Pitted owl:sameAs <http://dbpedia.org/resource/Pit_stop> .
 
 food:Potatoes owl:sameAs <http://dbpedia.org/resource/Potato> .
 
-food:Raisins owl:sameAs <http://dbpedia.org/resource/Raisin> .
-
 food:Seeds owl:sameAs <http://dbpedia.org/resource/Seed> .
-
-food:Sliced owl:sameAs <http://dbpedia.org/resource/Sliced_bread> .
 
 food:SodaWater owl:sameAs <http://dbpedia.org/resource/Carbonated_water> .
 
+food:Tomatoes owl:sameAs <http://dbpedia.org/resource/Tomato> .
+
+food:Zucchini owl:sameAs <http://dbpedia.org/resource/Zucchini> .
+
 food:Celery owl:sameAs <http://dbpedia.org/resource/Celery> .
-
-food:Chicken owl:sameAs <http://dbpedia.org/resource/Chicken>,
-        <http://dbpedia.org/resource/Chicken_as_food> .
-
-food:Chopped owl:sameAs <http://dbpedia.org/resource/Chopped_and_screwed> .
-
-food:EggYolks owl:sameAs <http://dbpedia.org/resource/Yolk> .
 
 food:Ginger owl:sameAs <http://dbpedia.org/resource/Ginger> .
 
@@ -4848,7 +4877,7 @@ food:Jello owl:sameAs <http://dbpedia.org/resource/Jell-O> .
 
 food:MandarinOranges owl:sameAs <http://dbpedia.org/resource/Mandarin_orange> .
 
-food:PeanutButter owl:sameAs <http://dbpedia.org/resource/Peanut_butter> .
+food:Raisins owl:sameAs <http://dbpedia.org/resource/Raisin> .
 
 food:Rind owl:sameAs <http://dbpedia.org/resource/Cheese> .
 
@@ -4866,29 +4895,30 @@ food:CreamCheese owl:sameAs <http://dbpedia.org/resource/Cream_cheese> .
 
 food:Garlic owl:sameAs <http://dbpedia.org/resource/Garlic> .
 
+food:Light owl:sameAs <http://dbpedia.org/resource/Light> .
+
 food:PowderedSugar owl:sameAs <http://dbpedia.org/resource/Powdered_sugar> .
 
 food:Buttermilk owl:sameAs <http://dbpedia.org/resource/Buttermilk> .
 
 food:ChocolateChips owl:sameAs <http://dbpedia.org/resource/Chocolate_chip> .
 
+food:Chopped owl:sameAs <http://dbpedia.org/resource/Chopped_and_screwed> .
+
 food:Cloves owl:sameAs <http://dbpedia.org/resource/Clove> .
 
 food:Cocoa owl:sameAs <http://dbpedia.org/resource/Cocoa_bean> .
+
+food:Mayonnaise owl:sameAs <http://dbpedia.org/resource/Mayonnaise> .
 
 food:Cornstarch owl:sameAs <http://dbpedia.org/resource/Corn_starch> .
 
 food:Shell owl:sameAs <http://dbpedia.org/resource/Gastropod_shell> .
 
-food:Milk owl:sameAs <http://dbpedia.org/resource/Milk> .
-
 food:Fresh owl:sameAs <http://dbpedia.org/resource/Fresh_water>,
-        <http://dbpedia.org/resource/Fruit>,
-        <http://dbpedia.org/resource/Pasta> .
+        <http://dbpedia.org/resource/Fruit> .
 
-food:Light owl:sameAs <http://dbpedia.org/resource/Light> .
-
-food:Mayonnaise owl:sameAs <http://dbpedia.org/resource/Mayonnaise> .
+food:Milk owl:sameAs <http://dbpedia.org/resource/Milk> .
 
 food:Shortening owl:sameAs <http://dbpedia.org/resource/Shortening> .
 

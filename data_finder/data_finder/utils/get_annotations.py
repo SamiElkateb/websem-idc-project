@@ -13,9 +13,10 @@ def __get_annotations__(text: str, confidence, support):
         return None
 
 
-def get_food_item(text: str, confidence=0.2, support=20):
-    result = __get_annotations__(text, confidence, support)
-    if not result:
-        result = __get_annotations__(text.capitalize(), confidence, support)
-    if result:
-        return sorted(result, key=lambda x: x.get('support'), reverse=True)
+def get_food_item(texts, confidence=0.2, support=20):
+    for keyword in texts:
+        result = __get_annotations__(keyword[0], confidence, support)
+        if not result:
+            result = __get_annotations__(keyword[0].capitalize(), confidence, support)
+        if result:
+            return sorted(result, key=lambda x: x.get('support'), reverse=True)

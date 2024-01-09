@@ -1268,7 +1268,7 @@ _:b515 :name "eggs" ;
 
 _:b514 :name "crushed walnuts" ;
   :quantity "8" ;
-  :unit "ounces" ;
+  :unit measurements:Ounce ;
   a :Ingredient .
 
 _:b513 :name "brown sugar" ;
@@ -1449,13 +1449,13 @@ _:b392 :name "salt" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
 
-_:b391 :name "sugar" ;
+_:b391 :name "eggs" ;
   :quantity "2" ;
-  :unit "Tbps" ;
   a :Ingredient .
 
-_:b390 :name "eggs" ;
-  :quantity "2" ;
+_:b390 :name "sugar" ;
+  :quantity "1 1/2" ;
+  :unit measurements:Cup ;
   a :Ingredient .
 
 _:b829 :name "brown sugar" ;
@@ -1507,39 +1507,39 @@ _:b820 :name "Special K cereal" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b389 :name "sugar" ;
-  :quantity "1 1/2" ;
-  :unit measurements:Cup ;
-  a :Ingredient .
-
-_:b388 :name "margarine" ;
+_:b389 :name "margarine" ;
   :quantity "3/4" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b387 :name "flour" ;
+_:b388 :name "flour" ;
   :quantity "2 3/4" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b386 :name "cinnamon" ;
+_:b387 :name "cinnamon" ;
   :quantity "1" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
 
-_:b385 :name "salt" ;
+_:b386 :name "salt" ;
   :quantity "1/2" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
 
-_:b384 :name "baking soda" ;
+_:b385 :name "baking soda" ;
   :quantity "1" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
 
-_:b383 :name "cream of tartar" ;
+_:b384 :name "cream of tartar" ;
   :quantity "2" ;
   :unit measurements:Teaspoon ;
+  a :Ingredient .
+
+_:b383 :name "sugar" ;
+  :quantity "2" ;
+  :unit measurements:Tablespoon ;
   a :Ingredient .
 
 _:b382 :name "bananas" ;
@@ -1551,9 +1551,8 @@ _:b381 :name "egg yolks, beaten" ;
   :quantity "3" ;
   a :Ingredient .
 
-_:b380 :name "sweetened condensed milk" ;
+_:b380 :name "baked pastry shell" ;
   :quantity "1" ;
-  :unit "14 oz can" ;
   a :Ingredient .
 
 _:b819 :name "crunchy peanut butter" ;
@@ -1606,8 +1605,10 @@ _:b810 :name "honey" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b379 :name "baked pastry shell" ;
+_:b379 :name "sweetened condensed milk" ;
   :quantity "1" ;
+  :unit measurements:Ounce ;
+  :unit "14 oz can" ;
   a :Ingredient .
 
 _:b378 :name "water" ;
@@ -1696,7 +1697,7 @@ _:b802 :name "cold water" ;
 
 _:b801 :name "chocolate chips" ;
   :quantity "6" ;
-  :unit "oz." ;
+  :unit measurements:Ounce ;
   a :Ingredient .
 
 _:b800 :name "finely chopped walnuts" ;
@@ -1726,12 +1727,12 @@ _:b366 :name "ginger" ;
 
 _:b365 :name "white sauterne wine" ;
   :quantity "1 1/2" ;
-  :unit "ounces" ;
+  :unit measurements:Ounce ;
   a :Ingredient .
 
 _:b364 :name "blue cheese" ;
   :quantity "6" ;
-  :unit "ounces" ;
+  :unit measurements:Ounce ;
   a :Ingredient .
 
 _:b363 :name "buttermilk" ;
@@ -1759,6 +1760,7 @@ _:b359 :name "Peach or vanilla ice cream" ;
 
 _:b358 :name "peach or lemon gelatin" ;
   :quantity "1" ;
+  :unit measurements:Ounce ;
   :unit "3 ounce box" ;
   a :Ingredient .
 
@@ -1933,7 +1935,7 @@ _:b692 :name "flour" ;
 
 _:b331 :name "hamburger" ;
   :quantity "1" ;
-  :unit measurements:Ounce ;
+  :unit measurements:Pound ;
   a :Ingredient .
 
 _:b691 :name "salt" ;
@@ -1950,9 +1952,9 @@ _:b690 :name "baking powder" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
 
-_:b329 :name "marshmallows" ;
+_:b329 :name "walnuts, chopped" ;
   :quantity "1/4" ;
-  :unit measurements:Ounce ;
+  :unit measurements:Cup ;
   a :Ingredient .
 
 _:b689 :name "Lemon juice" ;
@@ -1960,8 +1962,8 @@ _:b689 :name "Lemon juice" ;
   :unit measurements:Tablespoon ;
   a :Ingredient .
 
-_:b328 :name "walnuts, chopped" ;
-  :quantity "1/4" ;
+_:b328 :name "pineapple tidbits" ;
+  :quantity "2 1/2" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
@@ -1970,8 +1972,8 @@ _:b688 :name "lemon peel" ;
   :unit measurements:Tablespoon ;
   a :Ingredient .
 
-_:b327 :name "pineapple tidbits" ;
-  :quantity "2 1/2" ;
+_:b327 :name "Dream Whip or whipped cream" ;
+  :quantity "1" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
@@ -1979,7 +1981,7 @@ _:b687 :name "eggs" ;
   :quantity "3" ;
   a :Ingredient .
 
-_:b326 :name "Dream Whip or whipped cream" ;
+_:b326 :name "pineapple juice" ;
   :quantity "1" ;
   :unit measurements:Cup ;
   a :Ingredient .
@@ -1989,8 +1991,8 @@ _:b686 :name "evaporated milk" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b325 :name "pineapple juice" ;
-  :quantity "1" ;
+_:b325 :name "sugar" ;
+  :quantity "1/4" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
@@ -1999,9 +2001,9 @@ _:b685 :name "light corn syrup" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b324 :name "sugar" ;
+_:b324 :name "marshmallows" ;
   :quantity "1/4" ;
-  :unit measurements:Cup ;
+  :unit measurements:Pound ;
   a :Ingredient .
 
 _:b684 :name "sugar" ;
@@ -2165,93 +2167,93 @@ _:b668 :name "onion, chopped" ;
   :quantity "1" ;
   a :Ingredient .
 
-_:b307 :name "cottage cheese" ;
-  :quantity "1" ;
-  :unit measurements:Ounce ;
+_:b307 :name "heavy cream" ;
+  :quantity "1/2" ;
+  :unit measurements:Cup ;
   a :Ingredient .
 
 _:b667 :name "egg" ;
   :quantity "1" ;
   a :Ingredient .
 
-_:b306 :name "heavy cream" ;
-  :quantity "1/2" ;
-  :unit measurements:Cup ;
-  a :Ingredient .
-
-_:b666 :name "hamburger" ;
-  :quantity "1" ;
-  :unit measurements:Ounce ;
-  a :Ingredient .
-
-_:b305 :name "lemon juice" ;
+_:b306 :name "lemon juice" ;
   :quantity "1/4" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b665 :name "instant rice" ;
+_:b666 :name "instant rice" ;
   :quantity "1/2" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b304 :name "milk" ;
+_:b305 :name "milk" ;
   :quantity "1/2" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b664 :name "tomato sauce" ;
+_:b665 :name "tomato sauce" ;
   :quantity "1" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b303 :name "cold water" ;
+_:b304 :name "cold water" ;
   :quantity "1/2" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b663 :name "celery, chopped" ;
+_:b664 :name "celery, chopped" ;
   :quantity "1" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b302 :name "sugar" ;
+_:b303 :name "sugar" ;
   :quantity "1/4" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b662 :name "carrots, chopped" ;
+_:b663 :name "carrots, chopped" ;
   :quantity "1" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b301 :name "butter" ;
+_:b302 :name "butter" ;
   :quantity "1/3" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b661 :name "tomatoes, crushed" ;
+_:b662 :name "tomatoes, crushed" ;
   :quantity "2" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b300 :name "cornflakes" ;
+_:b301 :name "cornflakes" ;
   :quantity "4" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b660 :name "chicken or beef broth" ;
+_:b661 :name "chicken or beef broth" ;
   :quantity "4" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b659 :name "onion, finely chopped" ;
+_:b300 :name "cottage cheese" ;
+  :quantity "1" ;
+  :unit measurements:Pound ;
+  a :Ingredient .
+
+_:b660 :name "onion, finely chopped" ;
   :quantity "1/4" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b658 :name "minute rice" ;
+_:b659 :name "minute rice" ;
   :quantity "1/4" ;
   :unit measurements:Cup ;
+  a :Ingredient .
+
+_:b658 :name "hamburger" ;
+  :quantity "1" ;
+  :unit measurements:Pound ;
   a :Ingredient .
 
 _:b657 :name "cumin" ;
@@ -2296,6 +2298,7 @@ _:b650 :name "chili powder" ;
 
 _:b649 :name "fruit jello" ;
   :quantity "3" ;
+  :unit measurements:Ounce ;
   :unit "oz. pkg." ;
   a :Ingredient .
 
@@ -2352,14 +2355,14 @@ _:b639 :name "onion, suated" ;
   :unit "large" ;
   a :Ingredient .
 
-_:b638 :name "bacon, chopped and browned" ;
-  :quantity "1/2" ;
-  :unit measurements:Ounce ;
-  a :Ingredient .
-
-_:b637 :name "potatoes, peeled and diced" ;
+_:b638 :name "potatoes, peeled and diced" ;
   :quantity "2" ;
   :unit measurements:Cup ;
+  a :Ingredient .
+
+_:b637 :name "bacon, chopped and browned" ;
+  :quantity "1/2" ;
+  :unit measurements:Pound ;
   a :Ingredient .
 
 _:b636 :name "milk" ;
@@ -2367,32 +2370,32 @@ _:b636 :name "milk" ;
   :unit measurements:Quart ;
   a :Ingredient .
 
-_:b635 :name "lemon juice" ;
-  :quantity "1" ;
-  :unit "tbps" ;
-  a :Ingredient .
-
-_:b634 :name "eggs" ;
+_:b635 :name "eggs" ;
   :quantity "3" ;
   a :Ingredient .
 
-_:b633 :name "cream cheese" ;
+_:b634 :name "cream cheese" ;
   :quantity "12" ;
-  :unit "ounces" ;
+  :unit measurements:Ounce ;
   a :Ingredient .
 
-_:b632 :name "blueberries" ;
+_:b633 :name "blueberries" ;
   :quantity "3" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b631 :name "milk" ;
+_:b632 :name "milk" ;
   :quantity "1" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b630 :name "flour" ;
+_:b631 :name "flour" ;
   :quantity "4" ;
+  :unit measurements:Cup ;
+  a :Ingredient .
+
+_:b630 :name "butter" ;
+  :quantity "1/4" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
@@ -2446,19 +2449,19 @@ _:b190 :name "horseradish" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b629 :name "butter" ;
-  :quantity "1/4" ;
-  :unit measurements:Cup ;
-  a :Ingredient .
-
-_:b628 :name "sugar" ;
+_:b629 :name "sugar" ;
   :quantity "1 1/2" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b627 :name "vanilla" ;
+_:b628 :name "vanilla" ;
   :quantity "3" ;
   :unit measurements:Teaspoon ;
+  a :Ingredient .
+
+_:b627 :name "lemon juice" ;
+  :quantity "1" ;
+  :unit measurements:Tablespoon ;
   a :Ingredient .
 
 _:b626 :name "baking powder" ;
@@ -2530,19 +2533,19 @@ _:b183 :name "onion, red is best" ;
   :unit "medium" ;
   a :Ingredient .
 
-_:b182 :name "spinach leaves" ;
-  :quantity "1/2" ;
-  :unit measurements:Ounce ;
-  a :Ingredient .
-
-_:b181 :name "water" ;
+_:b182 :name "water" ;
   :quantity "1/2" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b180 :name "vinegar" ;
+_:b181 :name "vinegar" ;
   :quantity "2/3" ;
   :unit measurements:Cup ;
+  a :Ingredient .
+
+_:b180 :name "spinach leaves" ;
+  :quantity "1/2" ;
+  :unit measurements:Pound ;
   a :Ingredient .
 
 _:b619 :name "shortening" ;
@@ -2661,7 +2664,6 @@ _:b607 :name "butter" ;
 
 _:b606 :name "crushed pineapple" ;
   :quantity "1" ;
-  :unit measurements:Ounce ;
   :unit measurements:Pound ;
   :unit "2 pound can" ;
   a :Ingredient .
@@ -2797,14 +2799,15 @@ _:b149 :name "vanilla" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
 
-_:b148 :name "cream of mushroom soup, condensed" ;
-  :quantity "1" ;
-  :unit "10 oz. can" ;
-  a :Ingredient .
-
-_:b147 :name "garlic, minced" ;
+_:b148 :name "garlic, minced" ;
   :quantity "3" ;
   :unit "cloves" ;
+  a :Ingredient .
+
+_:b147 :name "cream of mushroom soup, condensed" ;
+  :quantity "1" ;
+  :unit measurements:Ounce ;
+  :unit "10 oz. can" ;
   a :Ingredient .
 
 _:b146 :name "pine nuts, toasted" ;
@@ -2852,17 +2855,18 @@ _:b138 :name "butter or margarine" ;
   :unit measurements:Tablespoon ;
   a :Ingredient .
 
-_:b499 :name "crushed pineapple, drained." ;
+_:b499 :name "egg" ;
   :quantity "1" ;
-  :unit "8 1/2 oz. can" ;
   a :Ingredient .
 
 _:b137 :name "eggs" ;
   :quantity "4" ;
   a :Ingredient .
 
-_:b498 :name "egg" ;
+_:b498 :name "crushed pineapple, drained." ;
   :quantity "1" ;
+  :unit measurements:Ounce ;
+  :unit "8 1/2 oz. can" ;
   a :Ingredient .
 
 _:b136 :name "lemon cake mix" ;
@@ -2963,18 +2967,18 @@ _:b488 :name "butter" ;
   :unit measurements:Tablespoon ;
   a :Ingredient .
 
-_:b126 :name "fresh spinach" ;
-  :quantity "1" ;
-  :unit measurements:Ounce ;
+_:b126 :name "olive oil" ;
+  :quantity "1/2" ;
+  :unit measurements:Cup ;
   a :Ingredient .
 
 _:b487 :name "eggs" ;
   :quantity "2" ;
   a :Ingredient .
 
-_:b125 :name "olive oil" ;
-  :quantity "1/2" ;
-  :unit measurements:Cup ;
+_:b125 :name "fresh spinach" ;
+  :quantity "1" ;
+  :unit measurements:Pound ;
   a :Ingredient .
 
 _:b486 :name "sifted flour" ;
@@ -3076,18 +3080,18 @@ _:b115 :name "elephant" ;
   :unit "medium" ;
   a :Ingredient .
 
-_:b476 :name "mozzarella cheese, shredded" ;
-  :quantity "8" ;
-  :unit "ounce" ;
+_:b476 :name "broccoli florets, bite size" ;
+  :quantity "2 or 3" ;
+  :unit "heads" ;
   a :Ingredient .
 
 _:b114 :name "graham crackers, crushed" ;
   :quantity "32" ;
   a :Ingredient .
 
-_:b475 :name "broccoli florets, bite size" ;
-  :quantity "2 or 3" ;
-  :unit "heads" ;
+_:b475 :name "mozzarella cheese, shredded" ;
+  :quantity "8" ;
+  :unit measurements:Ounce ;
   a :Ingredient .
 
 _:b113 :name "chopped nuts" ;
@@ -3405,6 +3409,7 @@ _:b432 :name "egg" ;
 
 _:b792 :name "angel food cake mix" ;
   :quantity "1" ;
+  :unit measurements:Ounce ;
   :unit "15-16 ounce pkg" ;
   a :Ingredient .
 
@@ -3597,9 +3602,9 @@ _:b773 :name "baking soda" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
 
-_:b412 :name "crushed pineapple" ;
-  :quantity "1" ;
-  :unit "13.4 oz. can" ;
+_:b412 :name "Knox Unflavored Gelatin" ;
+  :quantity "2" ;
+  :unit "envelopes" ;
   a :Ingredient .
 
 _:b772 :name "baking powder" ;
@@ -3607,9 +3612,10 @@ _:b772 :name "baking powder" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
 
-_:b411 :name "Knox Unflavored Gelatin" ;
-  :quantity "2" ;
-  :unit "envelopes" ;
+_:b411 :name "crushed pineapple" ;
+  :quantity "1" ;
+  :unit measurements:Ounce ;
+  :unit "13.4 oz. can" ;
   a :Ingredient .
 
 _:b771 :name "grated orange peel" ;
@@ -3666,9 +3672,9 @@ _:b766 :name "sour milk" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b405 :name "fresh beans" ;
-  :quantity "1" ;
-  :unit measurements:Ounce ;
+_:b405 :name "red onion, chopped" ;
+  :quantity "1/2" ;
+  :unit measurements:Cup ;
   a :Ingredient .
 
 _:b765 :name "sugar" ;
@@ -3676,8 +3682,8 @@ _:b765 :name "sugar" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b404 :name "red onion, chopped" ;
-  :quantity "1/2" ;
+_:b404 :name "white vinegar" ;
+  :quantity "1" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
@@ -3686,8 +3692,8 @@ _:b764 :name "margarine" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b403 :name "white vinegar" ;
-  :quantity "1" ;
+_:b403 :name "salad oil" ;
+  :quantity "3/4" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
@@ -3696,9 +3702,9 @@ _:b763 :name "vanilla" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
 
-_:b402 :name "salad oil" ;
-  :quantity "3/4" ;
-  :unit measurements:Cup ;
+_:b402 :name "fresh beans" ;
+  :quantity "1" ;
+  :unit measurements:Pound ;
   a :Ingredient .
 
 _:b762 :name "cloves" ;
@@ -3826,6 +3832,7 @@ _:b740 :name "eggs" ;
 
 _:b739 :name "lite cream cheese" ;
   :quantity "2" ;
+  :unit measurements:Ounce ;
   :unit "8 oz. pkgs." ;
   a :Ingredient .
 
@@ -3987,7 +3994,7 @@ _:b287 :name "potatoes, cubed" ;
 
 _:b286 :name "hamburger" ;
   :quantity "1" ;
-  :unit measurements:Ounce ;
+  :unit measurements:Pound ;
   a :Ingredient .
 
 _:b285 :name "spaghetti sauce mix" ;
@@ -4308,9 +4315,9 @@ _:b81 :name "corn tortillas" ;
   :quantity "3" ;
   a :Ingredient .
 
-_:b80 :name "chopped green chiles" ;
+_:b80 :name "water" ;
   :quantity "1" ;
-  :unit "4 oz. can" ;
+  :unit "soup can" ;
   a :Ingredient .
 
 _:b259 :name "baking soda" ;
@@ -4362,23 +4369,24 @@ _:b250 :name "flour" ;
   :unit measurements:Tablespoon ;
   a :Ingredient .
 
-_:b79 :name "water" ;
-  :quantity "1" ;
-  :unit "soup can" ;
-  a :Ingredient .
-
-_:b78 :name "Campbell's condensed chicken broth" ;
+_:b79 :name "Campbell's condensed chicken broth" ;
   :quantity "1" ;
   :unit "can" ;
   a :Ingredient .
 
-_:b77 :name "garlic, minced" ;
+_:b78 :name "garlic, minced" ;
   :quantity "1" ;
   :unit "clove" ;
   a :Ingredient .
 
-_:b76 :name "lime" ;
+_:b77 :name "lime" ;
   :quantity "1" ;
+  a :Ingredient .
+
+_:b76 :name "chopped green chiles" ;
+  :quantity "1" ;
+  :unit measurements:Ounce ;
+  :unit "4 oz. can" ;
   a :Ingredient .
 
 _:b75 :name "lettuce, shredded" ;
@@ -4555,18 +4563,18 @@ _:b595 :name "baking soda" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
 
-_:b234 :name "crushed pineapple, well drained" ;
+_:b234 :name "broccoli" ;
   :quantity "1" ;
-  :unit "16 oz. can" ;
+  :unit "bunch" ;
   a :Ingredient .
 
 _:b594 :name "eggs" ;
   :quantity "3" ;
   a :Ingredient .
 
-_:b233 :name "broccoli" ;
-  :quantity "1" ;
-  :unit "bunch" ;
+_:b233 :name "bacon, but small, fry until crisp" ;
+  :quantity "5 to 6" ;
+  :unit "strips" ;
   a :Ingredient .
 
 _:b593 :name "butter" ;
@@ -4574,9 +4582,10 @@ _:b593 :name "butter" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b232 :name "bacon, but small, fry until crisp" ;
-  :quantity "5 to 6" ;
-  :unit "strips" ;
+_:b232 :name "crushed pineapple, well drained" ;
+  :quantity "1" ;
+  :unit measurements:Ounce ;
+  :unit "16 oz. can" ;
   a :Ingredient .
 
 _:b592 :name "buttermilk" ;
@@ -4639,18 +4648,18 @@ _:b53 :name "pineapple chunks" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b52 :name "cream cheese" ;
-  :quantity "3" ;
-  :unit "ounces" ;
-  a :Ingredient .
-
-_:b51 :name "eggs" ;
+_:b52 :name "eggs" ;
   :quantity "4" ;
   a :Ingredient .
 
-_:b50 :name "margarine" ;
-  :quantity "1/4" ;
+_:b51 :name "cream cheese" ;
+  :quantity "3" ;
   :unit measurements:Ounce ;
+  a :Ingredient .
+
+_:b50 :name "powdered sugar" ;
+  :quantity "2" ;
+  :unit measurements:Cup ;
   a :Ingredient .
 
 _:b229 :name "vinegar" ;
@@ -4752,39 +4761,39 @@ _:b580 :name "soda" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
 
-_:b49 :name "powdered sugar" ;
-  :quantity "2" ;
-  :unit measurements:Cup ;
-  a :Ingredient .
-
-_:b48 :name "chopped walnuts" ;
+_:b49 :name "chopped walnuts" ;
   :quantity "1" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b47 :name "grated carrots" ;
+_:b48 :name "grated carrots" ;
   :quantity "2" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b46 :name "crushed pineapple, drained" ;
+_:b47 :name "crushed pineapple, drained" ;
   :quantity "1" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b45 :name "flour" ;
+_:b46 :name "flour" ;
   :quantity "2" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b44 :name "sugar" ;
+_:b45 :name "sugar" ;
   :quantity "2" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b43 :name "oil" ;
+_:b44 :name "oil" ;
   :quantity "1" ;
   :unit measurements:Cup ;
+  a :Ingredient .
+
+_:b43 :name "margarine" ;
+  :quantity "1/4" ;
+  :unit measurements:Pound ;
   a :Ingredient .
 
 _:b42 :name "vanilla" ;
@@ -4850,7 +4859,7 @@ _:b215 :name "sugar" ;
 
 _:b575 :name "cream cheese" ;
   :quantity "8" ;
-  :unit "oz" ;
+  :unit measurements:Ounce ;
   a :Ingredient .
 
 _:b214 :name "vanilla" ;
@@ -4917,13 +4926,13 @@ _:b37 :name "water" ;
   :unit measurements:Tablespoon ;
   a :Ingredient .
 
-_:b36 :name "cream cheese" ;
-  :quantity "4" ;
-  :unit "ounces" ;
+_:b36 :name "eggs" ;
+  :quantity "2" ;
   a :Ingredient .
 
-_:b35 :name "eggs" ;
-  :quantity "2" ;
+_:b35 :name "cream cheese" ;
+  :quantity "4" ;
+  :unit measurements:Ounce ;
   a :Ingredient .
 
 _:b34 :name "lemon juice" ;
@@ -4970,9 +4979,9 @@ _:b207 :name "cheddar cheese, grated" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b568 :name "butter" ;
-  :quantity "2" ;
-  :unit "tbps" ;
+_:b568 :name "milk" ;
+  :quantity "1/2" ;
+  :unit measurements:Cup ;
   a :Ingredient .
 
 _:b206 :name "water" ;
@@ -4980,8 +4989,8 @@ _:b206 :name "water" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b567 :name "milk" ;
-  :quantity "1/2" ;
+_:b567 :name "sugar" ;
+  :quantity "1" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
@@ -4990,8 +4999,8 @@ _:b205 :name "onion, chopped" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b566 :name "sugar" ;
-  :quantity "1" ;
+_:b566 :name "flour" ;
+  :quantity "1 1/2" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
@@ -5000,9 +5009,9 @@ _:b204 :name "broccoli florets, cut or broken" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b565 :name "flour" ;
-  :quantity "1 1/2" ;
-  :unit measurements:Cup ;
+_:b565 :name "salt" ;
+  :quantity "08-Jan" ;
+  :unit measurements:Teaspoon ;
   a :Ingredient .
 
 _:b203 :name "dill" ;
@@ -5010,9 +5019,9 @@ _:b203 :name "dill" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
 
-_:b564 :name "salt" ;
-  :quantity "08-Jan" ;
-  :unit measurements:Teaspoon ;
+_:b564 :name "butter" ;
+  :quantity "2" ;
+  :unit measurements:Tablespoon ;
   a :Ingredient .
 
 _:b202 :name "salt" ;
@@ -5020,9 +5029,8 @@ _:b202 :name "salt" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
 
-_:b563 :name "butter or margarine" ;
+_:b563 :name "egg" ;
   :quantity "1" ;
-  :unit "Tbps." ;
   a :Ingredient .
 
 _:b201 :name "large apples, sliced" ;
@@ -5031,6 +5039,7 @@ _:b201 :name "large apples, sliced" ;
 
 _:b562 :name "semi-sweet chocolate chips" ;
   :quantity "1" ;
+  :unit measurements:Ounce ;
   :unit "6 oz. pkg." ;
   a :Ingredient .
 
@@ -5039,12 +5048,13 @@ _:b200 :name "butter" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b561 :name "egg" ;
-  :quantity "1" ;
+_:b561 :name "walnuts, chopped" ;
+  :quantity "1/2" ;
+  :unit measurements:Cup ;
   a :Ingredient .
 
-_:b560 :name "walnuts, chopped" ;
-  :quantity "1/2" ;
+_:b560 :name "sweetened condensed milk" ;
+  :quantity "1/3" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
@@ -5106,8 +5116,8 @@ _:b8 :name "eggs" ;
   :quantity "2" ;
   a :Ingredient .
 
-_:b559 :name "sweetened condensed milk" ;
-  :quantity "1/3" ;
+_:b559 :name "walnuts, chopped" ;
+  :quantity "1/2" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
@@ -5116,8 +5126,8 @@ _:b7 :name "flour" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b558 :name "walnuts, chopped" ;
-  :quantity "1/2" ;
+_:b558 :name "quick-cooking oats" ;
+  :quantity "2" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
@@ -5126,8 +5136,8 @@ _:b6 :name "peanut butter" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b557 :name "quick-cooking oats" ;
-  :quantity "2" ;
+_:b557 :name "sifted flour" ;
+  :quantity "3/4" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
@@ -5136,8 +5146,8 @@ _:b5 :name "margarine" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b556 :name "sifted flour" ;
-  :quantity "3/4" ;
+_:b556 :name "light brown sugar, firmly packed" ;
+  :quantity "1" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
@@ -5146,8 +5156,8 @@ _:b4 :name "brown sugar" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b555 :name "light brown sugar, firmly packed" ;
-  :quantity "1" ;
+_:b555 :name "shortening" ;
+  :quantity "1/2" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
@@ -5156,9 +5166,9 @@ _:b3 :name "vanilla" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
 
-_:b554 :name "shortening" ;
-  :quantity "1/2" ;
-  :unit measurements:Cup ;
+_:b554 :name "vanilla" ;
+  :quantity "1" ;
+  :unit measurements:Teaspoon ;
   a :Ingredient .
 
 _:b2 :name "salt" ;
@@ -5166,8 +5176,8 @@ _:b2 :name "salt" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
 
-_:b553 :name "vanilla" ;
-  :quantity "1" ;
+_:b553 :name "salt" ;
+  :quantity "1/4" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
 
@@ -5177,7 +5187,7 @@ _:b1 :name "soda" ;
   a :Ingredient .
 
 _:b552 :name "salt" ;
-  :quantity "1/4" ;
+  :quantity "1/2" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
 
@@ -5186,12 +5196,12 @@ _:b0 :name "sugar" ;
   :unit measurements:Cup ;
   a :Ingredient .
 
-_:b551 :name "salt" ;
+_:b551 :name "baking soda" ;
   :quantity "1/2" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
 
-_:b550 :name "baking soda" ;
+_:b550 :name "vanilla" ;
   :quantity "1/2" ;
   :unit measurements:Teaspoon ;
   a :Ingredient .
@@ -5246,9 +5256,10 @@ _:b10 :name "cornstarch" ;
   :unit measurements:Tablespoon ;
   a :Ingredient .
 
-_:b549 :name "vanilla" ;
-  :quantity "1/2" ;
-  :unit measurements:Teaspoon ;
+_:b549 :name "butter or margarine" ;
+  :quantity "1" ;
+  :unit measurements:Tablespoon ;
+  :unit "Tbps." ;
   a :Ingredient .
 
 _:b548 :name "tart apples, peeled and sliced" ;
@@ -5325,7 +5336,7 @@ _:b534 :name "eggs" ;
 
 _:b533 :name "whole pecans" ;
   :quantity "24" ;
-  :unit "ounces" ;
+  :unit measurements:Ounce ;
   a :Ingredient .
 
 _:b532 :name "sugar" ;
