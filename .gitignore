@@ -7,3 +7,4 @@ corese-command-4.5.0.jar
 logs
 __pycache__
 .idea
+kitchen_chef_server/data/*.ttl

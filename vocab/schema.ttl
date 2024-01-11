@@ -32,20 +32,17 @@
 
 :MesurementUnit a owl:Class ;
   rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en,
-              ""@fr .
+  rdfs:comment ""@en, ""@fr .
 
 :VolumeMesurementUnit a owl:Class ;
-  rdfs:subClassOf foaf:MesurementUnit .
+  rdfs:subClassOf :MesurementUnit ;
   rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en,
-              ""@fr .
+  rdfs:comment ""@en, ""@fr .
 
 :WeightMesurementUnit a owl:Class ;
-  rdfs:subClassOf foaf:MesurementUnit .
+  rdfs:subClassOf :MesurementUnit ;
   rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en,
-              ""@fr .
+  rdfs:comment ""@en, ""@fr .
 
 :UnitConversion a owl:Class ;
   rdfs:label ""@en, ""@fr ;

@@ -1,4 +1,4 @@
-all: recipes2rdf units foodweights2rdf format populate 
+all: recipes2rdf units foodweights2rdf format populate update-server-data
 
 recipes2rdf:
 	@./tools/csv2rdf \
@@ -26,7 +26,17 @@ foodweights2rdf:
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q metadata/food_weights.rq -i output/food_weights.ttl -o output/food_weights.ttl
 
 populate:
-	cd data_finder && poetry run python3 data_finder
+	@cd data_finder && poetry run python3 data_finder
 
 format:
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q metadata/format.rq -i output/recipes.ttl -o output/recipes.ttl
+
+update-server-data:
+	@cp ./vocab/*.ttl ./kitchen_chef_server/data
+
+# TEST (not in pipeline)
+conversionentailment:
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/conversionEntailement.rq -i ./vocab/measurements.ttl -o ./vocab/measurements.ttl
+
+server:
+	 @cd ./kitchen_chef_server/ && poetry run uvicorn kitchen_chef_server.__main__:app --reload
