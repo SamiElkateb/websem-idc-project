@@ -5,6 +5,7 @@ from fastapi import FastAPI, HTTPException, Query
 from rdflib import Graph, Namespace, URIRef
 
 from kitchen_chef_server.app import app, g
+from kitchen_chef_server.factories.IngredientFactory import IngredientFactory
 from kitchen_chef_server.models.Ingredient import Ingredient
 from kitchen_chef_server.models.Recipe import Recipe
 from kitchen_chef_server.sparql.queries.build_search_query import \
@@ -32,39 +33,33 @@ async def get_recipes(
     if results is None:
         raise HTTPException(status_code=404, detail="Item not found")
 
-    recipes = {}
+    recipes = []
     for row in results:
-        name = str(row.name)
-        recipe_identifier = urlparse(row.recipe).fragment
-        food_identifier = urlparse(row.ingredientFood).fragment
-        ingredient_identifier = urlparse(row.ingredient).fragment
-        ingredient = Ingredient(
-            food_identifier,
-            ingredient_identifier,
-            row.ingredientName,
-            row.ingredientQuantity,
-            row.ingredientUnit,
+        ingredients = IngredientFactory.from_strings(
+            row.ingredientIds,
+            row.ingredientNames,
+            row.ingredientFoods,
+            row.ingredientQuantities,
+            row.ingredientUnits,
         )
-        instructions = str(row.instructions)
-        category = str(row.category)
+        recipe_identifier = urlparse(row.recipe).fragment
+        recipe = Recipe(recipe_identifier, row.name, ingredients, row.instructions, row.category)
+        recipes.append(recipe)
 
-        recipe = recipes.get(recipe_identifier)
-
-        if recipe:
-            recipe.add_ingredient(ingredient)
-        else:
-            recipes[recipe_identifier] = Recipe(
-                recipe_identifier, name, instructions, category
-            )
-            recipes[recipe_identifier].add_ingredient(ingredient)
-    return list(recipes.values())
+    return recipes
 
 
 @app.get("/recipe")  # TODO: JSON-LD
 async def get_recipe(recipe_identifier: str):
     query = """
     prefix :<http://project-kitchenchef.fr/schema#>
-    SELECT ?name ?category ?ingredientFood ?ingredientName ?ingredientQuantity ?instructions ?ingredientUnit WHERE {
+    SELECT ?recipe ?name ?category ?instructions
+            (group_concat(?ingredient; separator="|-|") AS ?ingredientIds)
+            (group_concat(?ingredientFood; separator="|-|") AS ?ingredientFoods)
+            (group_concat(?ingredientName; separator="|-|") AS ?ingredientNames)
+            (group_concat(?ingredientQuantity; separator="|-|") AS ?ingredientQuantities)
+            (group_concat(?ingredientUnit; separator="|-|") AS ?ingredientUnits)
+    WHERE {
         ?recipe :name ?name ;
                 :hasIngredient ?ingredient ;
                 :instructions ?instructions ;
@@ -74,7 +69,7 @@ async def get_recipe(recipe_identifier: str):
                     :quantity ?ingredientQuantity ;
                     :unit ?ingredientUnit .
         FILTER(?recipe = ?uri)
-    }
+    } GROUP BY ?recipe
     """
 
     results = g.query(
@@ -87,29 +82,13 @@ async def get_recipe(recipe_identifier: str):
     if results is None:
         raise HTTPException(status_code=404, detail="Item not found")
 
-    recipes = {}
     for row in results:
-        name = str(row.name)
-        recipe_identifier = urlparse(row.recipe).fragment
-        food_identifier = urlparse(row.ingredientFood).fragment
-        ingredient_identifier = urlparse(row.ingredient).fragment
-        ingredient = Ingredient(
-            food_identifier,
-            ingredient_identifier,
-            row.ingredientName,
-            row.ingredientQuantity,
-            row.ingredientUnit,
+        ingredients = IngredientFactory.from_strings(
+            row.ingredientIds,
+            row.ingredientNames,
+            row.ingredientFoods,
+            row.ingredientQuantities,
+            row.ingredientUnits,
         )
-        instructions = str(row.instructions)
-        category = str(row.category)
-
-        recipe = recipes.get(recipe_identifier)
-
-        if recipe:
-            recipe.add_ingredient(ingredient)
-        else:
-            recipes[recipe_identifier] = Recipe(
-                recipe_identifier, name, instructions, category
-            )
-            recipes[recipe_identifier].add_ingredient(ingredient)
-    return list(recipes.values())[0]
+        recipe_identifier = urlparse(row.recipe).fragment
+        return Recipe(recipe_identifier, row.name, ingredients, row.instructions, row.category)
