@@ -7,16 +7,10 @@ CONSTRUCT {
     ?ingredient :unit measurements:Teaspoon .
 } WHERE {
     ?subj ?pred ?obj .
-    ?ingredient :unit ?unit .
     FILTER (!REGEX(?obj, "^(tsps?|teaspoons?)$", "i"))
-
-    FILTER REGEX(?unit, "(tsps?|teaspoons?)", "i")
-  #FILTER REGEX(?tablespoonUnit, "(tbsps?|tablespoons?)", "i")
-#    FILTER REGEX(?pounds, "(pound|lb)", "i")
-#    FILTER REGEX(?ounces, "(\\.z|oz|ounce)", "i")
-#    FILTER REGEX(?cups, "(cup)", "i")
-#    FILTER REGEX(?quarts, "(quart|qt)", "i")
-#   FILTER REGEX(?packages, "^(?:(?!oz|ounce|z\\.).)*(pkg|package).*", "i")
-#   FILTER REGEX(?slices, "slice", "i")
+    OPTIONAL {
+        ?ingredient :unit ?unit .
+        FILTER REGEX(?unit, "^(tsps?|teaspoons?)$", "i")
+    }
 }
 

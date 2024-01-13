@@ -30,12 +30,12 @@ Informations sur les ingrédients :
 ## Déja fait
 - Récupérer les recettes avec les ingrédients et les étapes de préparation
 ## À faire
-[ ] Extraire le nom des ingrédients, convertir les unités
-[x] corriger l'erreur de blank node inutiles de csv to rdf
-[ ] corriger les erreurs de food (cold, fry, etc) éventuellement Keyword Extraction ou un LLM
-[ ] ajouter des transformations d'ingrédients à partir de recettes (example: pates bolo)
-[ ] ajouter une façon de trouver les calories et informations nutritionnelles à partir des recettes et ingrédients
-[ ] utiliser https://fr.openfoodfacts.org pour avoir des informations plus juste sur les ingrédients à partir du code bar scanné sur application mobile
+[x] Extraire le nom des ingrédients, convertir les unités\
+[x] corriger l'erreur de blank node inutiles de csv to rdf\  
+[ ] corriger les erreurs de food (cold, fry, etc) éventuellement Keyword Extraction ou un LLM\
+[ ] ajouter des transformations d'ingrédients à partir de recettes (example: pates bolo)\
+[ ] ajouter une façon de trouver les calories et informations nutritionnelles à partir des recettes et ingrédients\ 
+[ ] utiliser https://fr.openfoodfacts.org pour avoir des informations plus juste sur les ingrédients à partir du code bar scanné sur application mobile\
 
 
 ## CSV
@@ -83,10 +83,21 @@ Extraction avec dbpédia
 Alignement avec dbpédia pour etre aligné sur les ingrédients
 Unités aligné apres le csvw
 
-## Instructions
+## Instructions 
 
 make all
-run python  
+
+
+### Quantitées
+
+Few -> Unités pour un peu
+Sinon entiers
+
+Contraintes
+
+Si a skos:Concept, pas le droit de a owl:Class. a skos:Concept, :Quantity c'est bon
+
+ounces vs fl ounces a modifier 
 
 
 

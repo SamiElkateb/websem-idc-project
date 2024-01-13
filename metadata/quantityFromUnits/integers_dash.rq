@@ -1,0 +1,14 @@
+@prefix :<http://project-kitchenchef.fr/schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+CONSTRUCT {
+    ?rec ?p ?divers.
+    ?x :quantityFromUnit ?int.
+} WHERE {
+    ?rec ?p ?divers.
+    OPTIONAL {
+        ?x :unit ?dec.
+        FILTER REGEX(?dec, "^[0-9]+-")
+        BIND (xsd:decimal(STRBEFORE(?dec, "-")) AS ?int)
+    }
+}

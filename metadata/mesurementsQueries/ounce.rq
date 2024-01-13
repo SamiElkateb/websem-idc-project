@@ -7,8 +7,10 @@ CONSTRUCT {
     ?ingredient :unit measurements:Ounce .
 } WHERE {
     ?subj ?pred ?obj .
-    ?ingredient :unit ?unit .
     FILTER (!REGEX(?obj, "^(\\.z|oz\\.?|ounces?)$", "i"))
-    FILTER REGEX(?unit, "(\\.z|oz\\.?|ounces?)", "i")
+    OPTIONAL {
+        ?ingredient :unit ?unit .
+        FILTER REGEX(?unit, "^(\\.z|oz\\.?|ounces?)$", "i")
+    }
 }
 

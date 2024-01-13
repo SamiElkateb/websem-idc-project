@@ -1,0 +1,19 @@
+@prefix :<http://project-kitchenchef.fr/schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+CONSTRUCT {
+    ?rec ?p ?divers.
+    ?x :quantityFromUnit ?intConverted.
+} WHERE {
+    ?rec ?p ?divers.
+    OPTIONAL{
+        ?x :unit ?string.
+        FILTER REGEX(?string, "^[0-9]+/[0-9]+")
+        BIND (STRBEFORE(?string, " ") AS ?frac)
+        BIND (xsd:integer(STRBEFORE(?frac,"/")) AS ?numerateur)
+        BIND (xsd:integer(STRAFTER(?frac,"/")) AS ?denominateur)
+        BIND ((?numerateur/?denominateur) AS ?intConverted)
+    }
+}
+
+

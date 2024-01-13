@@ -7,7 +7,9 @@ CONSTRUCT {
     ?ingredient :unit measurements:Pound .
 } WHERE {
     ?subj ?pred ?obj .
-    ?ingredient :unit ?unit .
-    FILTER (!REGEX(?obj, "^(pounds?|lbs?)$", "i"))
-    FILTER REGEX(?unit, "(pounds?|lbs?)", "i")
+    FILTER (!REGEX(?obj, "(pounds?|lbs?)", "i"))
+    OPTIONAL {
+        ?ingredient :unit ?unit .
+        FILTER REGEX(?unit, "(pounds?|lbs?)", "i")
+    }
 }

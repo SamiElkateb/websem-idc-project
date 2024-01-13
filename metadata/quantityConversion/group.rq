@@ -1,0 +1,22 @@
+@prefix :<http://project-kitchenchef.fr/schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+CONSTRUCT {
+    ?rec ?p ?divers.
+    ?x :quantity ?adjustedValue.
+} WHERE {
+    ?rec ?p ?divers.
+    FILTER(
+        (?p != :quantityFromUnit && ?p != :quantity) || ?divers IN (:few, :some, :large)
+    )
+    OPTIONAL{
+        ?x :quantity ?int.
+        OPTIONAL {
+            ?x :quantityFromUnit ?intUnit.
+        }
+        FILTER(?int NOT IN (:few, :some, :large))
+        BIND( IF((BOUND(?intUnit) && DATATYPE(?int) = xsd:decimal),?intUnit*?int,?int) AS ?adjustedValue )
+    }
+}
+

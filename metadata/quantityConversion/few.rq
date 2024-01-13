@@ -1,0 +1,19 @@
+@prefix :<http://project-kitchenchef.fr/schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+CONSTRUCT {
+    ?rec ?p ?divers.
+    ?ing :quantity ?not_few.
+    ?x :quantity :few.
+} WHERE {
+    ?rec ?p ?divers.
+    ?ing :quantity ?not_few.
+    FILTER(?p != :quantity)
+    FILTER (!REGEX(?not_few, "few", "i"))
+    OPTIONAL {
+        ?x :quantity ?few.
+        FILTER REGEX(?few, "few", "i")
+    }
+}
+
+

@@ -125,7 +125,7 @@ a :Ingredient ;
 } WHERE {
 ?subj :name ?name .
 ?subj :instructions ?instructions .
-?subj :recipeCategory ?recipeCategory
+OPTIONAL {  ?subj :recipeCategory ?recipeCategory . }
 
 BIND(STR(?subj) AS ?subjStr)
 BIND(REPLACE(?subjStr, "%20", "") AS ?noSpace)

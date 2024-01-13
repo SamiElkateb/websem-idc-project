@@ -1,5 +1,5 @@
-all: recipes2rdf units foodweights2rdf format populate update-server-data
-
+all: recipes2rdf extract_quantity_from_units units quantityConversion foodweights2rdf format populate update-server-data
+recipesHandling : recipes2rdf extract_quantity_from_units units quantityConversion
 recipes2rdf:
 	@./tools/csv2rdf \
 		--mode annotated \
@@ -12,11 +12,24 @@ units:
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/mesurementsQueries/ounce.rq -i output/recipes.ttl -o output/recipes.ttl
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/mesurementsQueries/cup.rq -i output/recipes.ttl -o output/recipes.ttl
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/mesurementsQueries/pounds.rq -i output/recipes.ttl -o output/recipes.ttl
-	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/mesurementsQueries/quarts.rq -i output/recipes.ttl -o output/recipes.ttl
-	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/mesurementsQueries/slices.rq -i output/recipes.ttl -o output/recipes.ttl
-	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/mesurementsQueries/package.rq -i output/recipes.ttl -o output/recipes.ttl
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/mesurementsQueries/teaspoons.rq -i output/recipes.ttl -o output/recipes.ttl
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/mesurementsQueries/tablespoons.rq -i output/recipes.ttl -o output/recipes.ttl
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/mesurementsQueries/package.rq -i output/recipes.ttl -o output/recipes.ttl
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/mesurementsQueries/quarts.rq -i output/recipes.ttl -o output/recipes.ttl
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/mesurementsQueries/slices.rq -i output/recipes.ttl -o output/recipes.ttl
+
+extract_quantity_from_units:
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityFromUnits/integers.rq -i ./output/recipes.ttl -o ./output/recipes.ttl
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityFromUnits/integers_dash.rq -i ./output/recipes.ttl -o ./output/recipes.ttl
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityFromUnits/fractions_int.rq -i ./output/recipes.ttl -o ./output/recipes.ttl
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityFromUnits/fractions.rq -i ./output/recipes.ttl -o ./output/recipes.ttl
+
+quantityConversion :
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/few.rq -i output/recipes.ttl -o output/recipes.ttl
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/integers.rq -i output/recipes.ttl -o output/recipes.ttl
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/fractions.rq -i output/recipes.ttl -o output/recipes.ttl
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/entier_fractions.rq -i output/recipes.ttl -o output/recipes.ttl
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/group.rq -i output/recipes.ttl -o output/recipes.ttl
 
 foodweights2rdf:
 	@./tools/csv2rdf \
