@@ -23,9 +23,10 @@ Informations sur les ingrédients :
 #### DBpedia
 
 #### Inférence
-- unitées de mesure
-- recette végétarienne ou non
-- allergies
+
+- unitées de mesure (conversion)
+- recette végétarienne / vegan / allergies
+
 ## Déja fait
 - Récupérer les recettes avec les ingrédients et les étapes de préparation
 ## À faire
@@ -42,6 +43,7 @@ https://github.com/cweber/cookbook/blob/master/recipes.csv
 ## APIS
 
 https://calorieninjas.com/register
+
 https://fr.openfoodfacts.org/data
 
 https://fr.openfoodfacts.org
@@ -85,3 +87,18 @@ Unités aligné apres le csvw
 
 make all
 run python  
+
+
+
+## Tests
+### Requêtes serveur
+
+Récupérer les recettes filtrées par ingrédients:
+http://localhost:8000/recipes?q_ingredients=Cornstarch&q_ingredients=Marshmallows
+http://localhost:8000/recipes?q_ingredients=Cornstarch
+
+Récupérer une recette:
+http://localhost:8000/recipe?recipe_identifier=AngelHash
+
+Récupérer tous les ingrédients:
+http://localhost:8000/ingredients
