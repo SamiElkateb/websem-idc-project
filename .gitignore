@@ -8,3 +8,5 @@ logs
 __pycache__
 .idea
 kitchen_chef_server/data/*.ttl
+node_modules
+

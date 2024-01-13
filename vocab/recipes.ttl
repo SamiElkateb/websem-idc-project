@@ -4567,406 +4567,605 @@ recipes:ZucchiniAppleSlaw :hasIngredient [ a :Ingredient ;
     :name "Zucchini Apple Slaw" ;
     :recipeCategory "Salads and Dressings" .
 
-food:AlmondExtract owl:sameAs <http://dbpedia.org/resource/Almond> .
+food:AlmondExtract a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Almond> .
 
-food:Almonds owl:sameAs <http://dbpedia.org/resource/Almond> .
+food:Almonds a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Almond> .
 
-food:AngelFoodCake owl:sameAs <http://dbpedia.org/resource/Angel_food_cake> .
+food:AngelFoodCake a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Angel_food_cake> .
 
-food:Apple owl:sameAs <http://dbpedia.org/resource/Apple> .
+food:Apple a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Apple> .
 
-food:Avocado owl:sameAs <http://dbpedia.org/resource/Avocado> .
+food:Avocado a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Avocado> .
 
-food:BaconBits owl:sameAs <http://dbpedia.org/resource/Bacon> .
+food:BaconBits a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Bacon> .
 
-food:BeanSprouts owl:sameAs <http://dbpedia.org/resource/Sprouting> .
+food:BeanSprouts a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Sprouting> .
 
-food:Beans owl:sameAs <http://dbpedia.org/resource/Bean> .
+food:Beans a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Bean> .
 
-food:BeefBroth owl:sameAs <http://dbpedia.org/resource/Broth> .
+food:BeefBroth a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Broth> .
 
-food:Berries owl:sameAs <http://dbpedia.org/resource/Berry> .
+food:Berries a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Berry> .
 
-food:BlueCheese owl:sameAs <http://dbpedia.org/resource/Blue_cheese> .
+food:BlueCheese a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Blue_cheese> .
 
-food:Blueberries owl:sameAs <http://dbpedia.org/resource/Blueberry> .
+food:Blueberries a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Blueberry> .
 
-food:Boiled owl:sameAs <http://dbpedia.org/resource/Boiling> .
+food:Boiled a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Boiling> .
 
-food:Boiling owl:sameAs <http://dbpedia.org/resource/Boiling> .
+food:Boiling a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Boiling> .
 
-food:Brandy owl:sameAs <http://dbpedia.org/resource/Brandy> .
+food:Brandy a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Brandy> .
 
-food:Broccoli owl:sameAs <http://dbpedia.org/resource/Broccoli> .
+food:Broccoli a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Broccoli> .
 
-food:Broken owl:sameAs <http://dbpedia.org/resource/Ship_breaking> .
+food:Broken a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Ship_breaking> .
 
-food:CakeFlour owl:sameAs <http://dbpedia.org/resource/Wheat_flour> .
+food:CakeFlour a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Wheat_flour> .
 
-food:CarawaySeed owl:sameAs <http://dbpedia.org/resource/Caraway> .
+food:CarawaySeed a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Caraway> .
 
-food:CheddarCheese owl:sameAs <http://dbpedia.org/resource/Cheddar_cheese> .
+food:CheddarCheese a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Cheddar_cheese> .
 
-food:Cheese owl:sameAs <http://dbpedia.org/resource/Cheese> .
+food:Cheese a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Cheese> .
 
-food:Cherries owl:sameAs <http://dbpedia.org/resource/Cherry> .
+food:Cherries a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Cherry> .
 
-food:Clams owl:sameAs <http://dbpedia.org/resource/Clam> .
+food:Clams a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Clam> .
 
-food:Condensed owl:sameAs <http://dbpedia.org/resource/Soup> .
+food:Condensed a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Soup> .
 
-food:CookingWine owl:sameAs <http://dbpedia.org/resource/Classification_of_wine> .
+food:CookingWine a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Classification_of_wine> .
 
-food:Corn owl:sameAs <http://dbpedia.org/resource/Maize> .
+food:Corn a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Maize> .
 
-food:Cornflakes owl:sameAs <http://dbpedia.org/resource/Corn_flakes> .
+food:Cornflakes a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Corn_flakes> .
 
-food:CottageCheese owl:sameAs <http://dbpedia.org/resource/Cottage_cheese> .
+food:CottageCheese a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Cottage_cheese> .
 
-food:CranberrySauce owl:sameAs <http://dbpedia.org/resource/Cranberry_sauce> .
+food:CranberrySauce a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Cranberry_sauce> .
 
-food:Crisp owl:sameAs <http://dbpedia.org/resource/Potato_chip> .
+food:Crisp a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Potato_chip> .
 
-food:Crumbled owl:sameAs <http://dbpedia.org/resource/Peaceful_Revolution> .
+food:Crumbled a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Peaceful_Revolution> .
 
-food:Crumbs owl:sameAs <http://dbpedia.org/resource/Bread_crumbs> .
+food:Crumbs a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Bread_crumbs> .
 
-food:Cucumbers owl:sameAs <http://dbpedia.org/resource/Cucumber> .
+food:Cucumbers a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Cucumber> .
 
-food:Dill owl:sameAs <http://dbpedia.org/resource/Dill> .
+food:Dill a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Dill> .
 
-food:Dissolved owl:sameAs <http://dbpedia.org/resource/Dissolution_of_the_monasteries> .
+food:Dissolved a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Dissolution_of_the_monasteries> .
 
-food:Divided owl:sameAs <http://dbpedia.org/resource/Dual_carriageway> .
+food:Divided a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Dual_carriageway> .
 
-food:EggWhite owl:sameAs <http://dbpedia.org/resource/Egg_white> .
+food:EggWhite a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Egg_white> .
 
-food:EggWhites owl:sameAs <http://dbpedia.org/resource/Egg_white> .
+food:EggWhites a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Egg_white> .
 
-food:EggYolk owl:sameAs <http://dbpedia.org/resource/Yolk> .
+food:EggYolk a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Yolk> .
 
-food:Elephant owl:sameAs <http://dbpedia.org/resource/Elephant> .
+food:Elephant a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Elephant> .
 
-food:Fat owl:sameAs <http://dbpedia.org/resource/Fat> .
+food:Fat a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Fat> .
 
-food:FoodColoring owl:sameAs <http://dbpedia.org/resource/Food_coloring> .
+food:FoodColoring a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Food_coloring> .
 
-food:Fruit owl:sameAs <http://dbpedia.org/resource/Fruit> .
+food:Fruit a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Fruit> .
 
-food:FruitJuice owl:sameAs <http://dbpedia.org/resource/Juice> .
+food:FruitJuice a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Juice> .
 
-food:GarbanzoBeans owl:sameAs <http://dbpedia.org/resource/Chickpea> .
+food:GarbanzoBeans a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Chickpea> .
 
-food:Golden owl:sameAs <http://dbpedia.org/resource/Golden_eagle> .
+food:Golden a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Golden_eagle> .
 
-food:GranulatedSugar owl:sameAs <http://dbpedia.org/resource/White_sugar> .
+food:GranulatedSugar a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/White_sugar> .
 
-food:Grapes owl:sameAs <http://dbpedia.org/resource/Grape> .
+food:Grapes a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Grape> .
 
-food:Green owl:sameAs <http://dbpedia.org/resource/Green> .
+food:Green a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Green> .
 
-food:GreenBeans owl:sameAs <http://dbpedia.org/resource/Green_bean> .
+food:GreenBeans a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Green_bean> .
 
-food:Ground owl:sameAs <http://dbpedia.org/resource/Stadium> .
+food:Ground a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Stadium> .
 
-food:Half owl:sameAs <http://dbpedia.org/resource/One_half> .
+food:Half a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/One_half> .
 
-food:Honey owl:sameAs <http://dbpedia.org/resource/Honey> .
+food:Honey a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Honey> .
 
-food:Kelp owl:sameAs <http://dbpedia.org/resource/Kelp> .
+food:Kelp a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Kelp> .
 
-food:Lettuce owl:sameAs <http://dbpedia.org/resource/Lettuce> .
+food:Lettuce a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Lettuce> .
 
-food:Lime owl:sameAs <http://dbpedia.org/resource/Calcium_oxide> .
+food:Lime a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Calcium_oxide> .
 
-food:Liquid owl:sameAs <http://dbpedia.org/resource/Liquid> .
+food:Liquid a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Liquid> .
 
-food:MashedPotatoes owl:sameAs <http://dbpedia.org/resource/Mashed_potato> .
+food:MashedPotatoes a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Mashed_potato> .
 
-food:Mushroom owl:sameAs <http://dbpedia.org/resource/Mushroom> .
+food:Mushroom a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Mushroom> .
 
-food:Oats owl:sameAs <http://dbpedia.org/resource/Oat> .
+food:Oats a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Oat> .
 
-food:OliveOil owl:sameAs <http://dbpedia.org/resource/Olive_oil> .
+food:OliveOil a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Olive_oil> .
 
-food:Optional owl:sameAs <http://dbpedia.org/resource/SAT> .
+food:Optional a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/SAT> .
 
-food:OrangePeel owl:sameAs <http://dbpedia.org/resource/Orange_(fruit)> .
+food:OrangePeel a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Orange_(fruit)> .
 
-food:Paprika owl:sameAs <http://dbpedia.org/resource/Paprika> .
+food:Paprika a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Paprika> .
 
-food:Parsley owl:sameAs <http://dbpedia.org/resource/Parsley> .
+food:Parsley a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Parsley> .
 
-food:Peaches owl:sameAs <http://dbpedia.org/resource/Peach> .
+food:Peaches a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Peach> .
 
-food:Pears owl:sameAs <http://dbpedia.org/resource/Pear> .
+food:Pears a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Pear> .
 
-food:Pecans owl:sameAs <http://dbpedia.org/resource/Pecan> .
+food:Pecans a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Pecan> .
 
-food:PineappleJuice owl:sameAs <http://dbpedia.org/resource/Pineapple_juice> .
+food:PineappleJuice a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Pineapple_juice> .
 
-food:Prunes owl:sameAs <http://dbpedia.org/resource/Prune> .
+food:Prunes a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Prune> .
 
-food:Pudding owl:sameAs <http://dbpedia.org/resource/Pudding> .
+food:Pudding a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Pudding> .
 
-food:Pumpkin owl:sameAs <http://dbpedia.org/resource/Pumpkin> .
+food:Pumpkin a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Pumpkin> .
 
-food:Quick owl:sameAs <http://dbpedia.org/resource/Glossary_of_professional_wrestling_terms> .
+food:Quick a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Glossary_of_professional_wrestling_terms> .
 
-food:Rabbits owl:sameAs <http://dbpedia.org/resource/Rabbit> .
+food:Rabbits a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Rabbit> .
 
-food:Red owl:sameAs <http://dbpedia.org/resource/Red> .
+food:Red a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Red> .
 
-food:RolledOats owl:sameAs <http://dbpedia.org/resource/Rolled_oats> .
+food:RolledOats a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Rolled_oats> .
 
-food:SaladDressing owl:sameAs <http://dbpedia.org/resource/Salad_dressing> .
+food:SaladDressing a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Salad_dressing> .
 
-food:SaladOil owl:sameAs <http://dbpedia.org/resource/Vegetable_oil> .
+food:SaladOil a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Vegetable_oil> .
 
-food:Salted owl:sameAs <http://dbpedia.org/resource/Salt> .
+food:Salted a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Salt> .
 
-food:Scallions owl:sameAs <http://dbpedia.org/resource/Scallion> .
+food:Scallions a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Scallion> .
 
-food:SpaghettiSauce owl:sameAs <http://dbpedia.org/resource/Tomato_sauce> .
+food:SpaghettiSauce a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Tomato_sauce> .
 
-food:Spice owl:sameAs <http://dbpedia.org/resource/Spice> .
+food:Spice a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Spice> .
 
-food:Spinach owl:sameAs <http://dbpedia.org/resource/Spinach> .
+food:Spinach a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Spinach> .
 
-food:Squares owl:sameAs <http://dbpedia.org/resource/Square> .
+food:Squares a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Square> .
 
-food:Stalks owl:sameAs <http://dbpedia.org/resource/Plant_stem> .
+food:Stalks a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Plant_stem> .
 
-food:Strawberries owl:sameAs <http://dbpedia.org/resource/Strawberry> .
+food:Strawberries a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Strawberry> .
 
-food:SweetChocolate owl:sameAs <http://dbpedia.org/resource/Types_of_chocolate> .
+food:SweetChocolate a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Types_of_chocolate> .
 
-food:TartApples owl:sameAs <http://dbpedia.org/resource/Cooking_apple> .
+food:TartApples a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Cooking_apple> .
 
-food:Toasted owl:sameAs <http://dbpedia.org/resource/Toast_(food)> .
+food:Toasted a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Toast_(food)> .
 
-food:ValenciaPeanuts owl:sameAs <http://dbpedia.org/resource/Peanut> .
+food:ValenciaPeanuts a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Peanut> .
 
-food:Watermelon owl:sameAs <http://dbpedia.org/resource/Watermelon> .
+food:Watermelon a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Watermelon> .
 
-food:WheatFlour owl:sameAs <http://dbpedia.org/resource/Wheat_flour> .
+food:WheatFlour a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Wheat_flour> .
 
-food:Whip owl:sameAs <http://dbpedia.org/resource/Whip> .
+food:Whip a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Whip> .
 
-food:WhippedTopping owl:sameAs <http://dbpedia.org/resource/Whipped_cream> .
+food:WhippedTopping a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Whipped_cream> .
 
-food:WhiteSugar owl:sameAs <http://dbpedia.org/resource/White_sugar> .
+food:WhiteSugar a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/White_sugar> .
 
-food:WhiteVinegar owl:sameAs <http://dbpedia.org/resource/Vinegar> .
+food:WhiteVinegar a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Vinegar> .
 
-food:Wine owl:sameAs <http://dbpedia.org/resource/Wine> .
+food:Wine a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Wine> .
 
-food:Allspice owl:sameAs <http://dbpedia.org/resource/Allspice> .
+food:Allspice a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Allspice> .
 
-food:Apples owl:sameAs <http://dbpedia.org/resource/Apple> .
+food:Apples a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Apple> .
 
-food:Bacon owl:sameAs <http://dbpedia.org/resource/Bacon> .
+food:Bacon a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Bacon> .
 
-food:Bananas owl:sameAs <http://dbpedia.org/resource/Banana> .
+food:Bananas a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Banana> .
 
-food:CakeMix owl:sameAs <http://dbpedia.org/resource/Baking_mix> .
+food:CakeMix a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Baking_mix> .
 
-food:Carrot owl:sameAs <http://dbpedia.org/resource/Carrot> .
+food:Carrot a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Carrot> .
 
-food:Cereal owl:sameAs <http://dbpedia.org/resource/Cereal> .
+food:Cereal a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Cereal> .
 
-food:Chicken owl:sameAs <http://dbpedia.org/resource/Chicken>,
+food:Chicken a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Chicken>,
         <http://dbpedia.org/resource/Chicken_as_food> .
 
-food:ChiliPowder owl:sameAs <http://dbpedia.org/resource/Chili_powder> .
+food:ChiliPowder a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Chili_powder> .
 
-food:ColdWater owl:sameAs <http://dbpedia.org/resource/Water_industry> .
+food:ColdWater a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Water_industry> .
 
-food:CornSyrup owl:sameAs <http://dbpedia.org/resource/Corn_syrup> .
+food:CornSyrup a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Corn_syrup> .
 
-food:Cream owl:sameAs <http://dbpedia.org/resource/Cream> .
+food:Cream a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Cream> .
 
-food:Crushed owl:sameAs <http://dbpedia.org/resource/Crusher> .
+food:Crushed a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Crusher> .
 
-food:Cumin owl:sameAs <http://dbpedia.org/resource/Cumin> .
+food:Cumin a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Cumin> .
 
-food:Cut owl:sameAs <http://dbpedia.org/resource/Cutting> .
+food:Cut a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Cutting> .
 
-food:EggYolks owl:sameAs <http://dbpedia.org/resource/Yolk> .
+food:EggYolks a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Yolk> .
 
-food:EvaporatedMilk owl:sameAs <http://dbpedia.org/resource/Evaporated_milk> .
+food:EvaporatedMilk a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Evaporated_milk> .
 
-food:Florets owl:sameAs <http://dbpedia.org/resource/Glossary_of_botanical_terms> .
+food:Florets a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Glossary_of_botanical_terms> .
 
-food:Frozen owl:sameAs <http://dbpedia.org/resource/Freezing>,
+food:Frozen a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Freezing>,
         <http://dbpedia.org/resource/Frozen_food> .
 
-food:GarlicPowder owl:sameAs <http://dbpedia.org/resource/Garlic_powder> .
+food:GarlicPowder a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Garlic_powder> .
 
-food:GreenOnions owl:sameAs <http://dbpedia.org/resource/Scallion> .
+food:GreenOnions a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Scallion> .
 
-food:Horseradish owl:sameAs <http://dbpedia.org/resource/Horseradish> .
+food:Horseradish a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Horseradish> .
 
-food:KidneyBeans owl:sameAs <http://dbpedia.org/resource/Kidney_bean> .
+food:KidneyBeans a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Kidney_bean> .
 
-food:Leaves owl:sameAs <http://dbpedia.org/resource/Leaf> .
+food:Leaves a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Leaf> .
 
-food:LemonPeel owl:sameAs <http://dbpedia.org/resource/Zest_(ingredient)> .
+food:LemonPeel a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Zest_(ingredient)> .
 
-food:Mix owl:sameAs <http://dbpedia.org/resource/Audio_mixing_(recorded_music)> .
+food:Mix a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Audio_mixing_(recorded_music)> .
 
-food:Oatmeal owl:sameAs <http://dbpedia.org/resource/Oatmeal> .
+food:Oatmeal a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Oatmeal> .
 
-food:Peanut owl:sameAs <http://dbpedia.org/resource/Peanut> .
+food:Peanut a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Peanut> .
 
-food:Peas owl:sameAs <http://dbpedia.org/resource/Pea> .
+food:Peas a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Pea> .
 
-food:Potato owl:sameAs <http://dbpedia.org/resource/Potato> .
+food:Potato a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Potato> .
 
-food:PumpkinPieSpice owl:sameAs <http://dbpedia.org/resource/Pumpkin_pie_spice> .
+food:PumpkinPieSpice a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Pumpkin_pie_spice> .
 
-food:RedOnion owl:sameAs <http://dbpedia.org/resource/Red_onion> .
+food:RedOnion a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Red_onion> .
 
-food:Rice owl:sameAs <http://dbpedia.org/resource/Rice> .
+food:Rice a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Rice> .
 
-food:Sliced owl:sameAs <http://dbpedia.org/resource/Sliced_bread> .
+food:Sliced a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Sliced_bread> .
 
-food:SweetenedCondensedMilk owl:sameAs <http://dbpedia.org/resource/Condensed_milk> .
+food:SweetenedCondensedMilk a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Condensed_milk> .
 
-food:TomatoSauce owl:sameAs <http://dbpedia.org/resource/Tomato_sauce> .
+food:TomatoSauce a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Tomato_sauce> .
 
-food:Yolks owl:sameAs <http://dbpedia.org/resource/Yolk> .
+food:Yolks a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Yolk> .
 
-food:Cabbage owl:sameAs <http://dbpedia.org/resource/Cabbage> .
+food:Cabbage a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Cabbage> .
 
-food:Foods owl:sameAs <http://dbpedia.org/resource/Food> .
+food:Foods a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Food> .
 
-food:Gelatin owl:sameAs <http://dbpedia.org/resource/Gelatin> .
+food:Gelatin a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Gelatin> .
 
-food:Hamburger owl:sameAs <http://dbpedia.org/resource/Hamburger> .
+food:Hamburger a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Hamburger> .
 
-food:HeavyCream owl:sameAs <http://dbpedia.org/resource/Cream> .
+food:HeavyCream a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Cream> .
 
-food:Marshmallows owl:sameAs <http://dbpedia.org/resource/Marshmallow> .
+food:Marshmallows a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Marshmallow> .
 
-food:Molasses owl:sameAs <http://dbpedia.org/resource/Molasses> .
+food:Molasses a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Molasses> .
 
-food:Oregano owl:sameAs <http://dbpedia.org/resource/Oregano> .
+food:Oregano a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Oregano> .
 
-food:PeanutButter owl:sameAs <http://dbpedia.org/resource/Peanut_butter> .
+food:PeanutButter a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Peanut_butter> .
 
-food:Pepper owl:sameAs <http://dbpedia.org/resource/Black_pepper> .
+food:Pepper a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Black_pepper> .
 
-food:Pitted owl:sameAs <http://dbpedia.org/resource/Pit_stop> .
+food:Pitted a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Pit_stop> .
 
-food:Potatoes owl:sameAs <http://dbpedia.org/resource/Potato> .
+food:Potatoes a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Potato> .
 
-food:Seeds owl:sameAs <http://dbpedia.org/resource/Seed> .
+food:Seeds a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Seed> .
 
-food:SodaWater owl:sameAs <http://dbpedia.org/resource/Carbonated_water> .
+food:SodaWater a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Carbonated_water> .
 
-food:Tomatoes owl:sameAs <http://dbpedia.org/resource/Tomato> .
+food:Tomatoes a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Tomato> .
 
-food:Zucchini owl:sameAs <http://dbpedia.org/resource/Zucchini> .
+food:Zucchini a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Zucchini> .
 
-food:Celery owl:sameAs <http://dbpedia.org/resource/Celery> .
+food:Celery a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Celery> .
 
-food:Ginger owl:sameAs <http://dbpedia.org/resource/Ginger> .
+food:Ginger a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Ginger> .
 
-food:Jello owl:sameAs <http://dbpedia.org/resource/Jell-O> .
+food:Jello a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Jell-O> .
 
-food:MandarinOranges owl:sameAs <http://dbpedia.org/resource/Mandarin_orange> .
+food:MandarinOranges a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Mandarin_orange> .
 
-food:Raisins owl:sameAs <http://dbpedia.org/resource/Raisin> .
+food:Raisins a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Raisin> .
 
-food:Rind owl:sameAs <http://dbpedia.org/resource/Cheese> .
+food:Rind a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Cheese> .
 
-food:SourMilk owl:sameAs <http://dbpedia.org/resource/Soured_milk> .
+food:SourMilk a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Soured_milk> .
 
-food:VegetableOil owl:sameAs <http://dbpedia.org/resource/Vegetable_oil> .
+food:VegetableOil a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Vegetable_oil> .
 
-food:WhippedCream owl:sameAs <http://dbpedia.org/resource/Whipped_cream> .
+food:WhippedCream a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Whipped_cream> .
 
-food:Carrots owl:sameAs <http://dbpedia.org/resource/Carrot> .
+food:Carrots a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Carrot> .
 
-food:Coconut owl:sameAs <http://dbpedia.org/resource/Coconut> .
+food:Coconut a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Coconut> .
 
-food:CreamCheese owl:sameAs <http://dbpedia.org/resource/Cream_cheese> .
+food:CreamCheese a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Cream_cheese> .
 
-food:Garlic owl:sameAs <http://dbpedia.org/resource/Garlic> .
+food:Garlic a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Garlic> .
 
-food:Light owl:sameAs <http://dbpedia.org/resource/Light> .
+food:Light a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Light> .
 
-food:PowderedSugar owl:sameAs <http://dbpedia.org/resource/Powdered_sugar> .
+food:PowderedSugar a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Powdered_sugar> .
 
-food:Buttermilk owl:sameAs <http://dbpedia.org/resource/Buttermilk> .
+food:Buttermilk a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Buttermilk> .
 
-food:ChocolateChips owl:sameAs <http://dbpedia.org/resource/Chocolate_chip> .
+food:ChocolateChips a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Chocolate_chip> .
 
-food:Chopped owl:sameAs <http://dbpedia.org/resource/Chopped_and_screwed> .
+food:Chopped a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Chopped_and_screwed> .
 
-food:Cloves owl:sameAs <http://dbpedia.org/resource/Clove> .
+food:Cloves a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Clove> .
 
-food:Cocoa owl:sameAs <http://dbpedia.org/resource/Cocoa_bean> .
+food:Cocoa a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Cocoa_bean> .
 
-food:Mayonnaise owl:sameAs <http://dbpedia.org/resource/Mayonnaise> .
+food:Mayonnaise a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Mayonnaise> .
 
-food:Cornstarch owl:sameAs <http://dbpedia.org/resource/Corn_starch> .
+food:Cornstarch a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Corn_starch> .
 
-food:Shell owl:sameAs <http://dbpedia.org/resource/Gastropod_shell> .
+food:Shell a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Gastropod_shell> .
 
-food:Fresh owl:sameAs <http://dbpedia.org/resource/Fresh_water>,
+food:Fresh a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Fresh_water>,
         <http://dbpedia.org/resource/Fruit> .
 
-food:Milk owl:sameAs <http://dbpedia.org/resource/Milk> .
+food:Milk a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Milk> .
 
-food:Shortening owl:sameAs <http://dbpedia.org/resource/Shortening> .
+food:Shortening a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Shortening> .
 
-food:Vinegar owl:sameAs <http://dbpedia.org/resource/Vinegar> .
+food:Vinegar a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Vinegar> .
 
-food:Nutmeg owl:sameAs <http://dbpedia.org/resource/Nutmeg> .
+food:Nutmeg a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Nutmeg> .
 
-food:Nuts owl:sameAs <http://dbpedia.org/resource/Pine_nut> .
+food:Nuts a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Pine_nut> .
 
-food:Soda owl:sameAs <http://dbpedia.org/resource/Soft_drink> .
+food:Soda a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Soft_drink> .
 
-food:Oil owl:sameAs <http://dbpedia.org/resource/Oil> .
+food:Oil a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Oil> .
 
-food:Onion owl:sameAs <http://dbpedia.org/resource/Onion> .
+food:Onion a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Onion> .
 
-food:Pineapple owl:sameAs <http://dbpedia.org/resource/Pineapple> .
+food:Pineapple a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Pineapple> .
 
-food:BrownSugar owl:sameAs <http://dbpedia.org/resource/Brown_sugar> .
+food:BrownSugar a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Brown_sugar> .
 
-food:LemonJuice owl:sameAs <http://dbpedia.org/resource/Lemon> .
+food:LemonJuice a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Lemon> .
 
-food:Egg owl:sameAs <http://dbpedia.org/resource/Egg>,
+food:Egg a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Egg>,
         <http://dbpedia.org/resource/Egg_as_food> .
 
-food:SourCream owl:sameAs <http://dbpedia.org/resource/Sour_cream> .
+food:SourCream a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Sour_cream> .
 
-food:Walnuts owl:sameAs <http://dbpedia.org/resource/Walnut> .
+food:Walnuts a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Walnut> .
 
-food:BakingPowder owl:sameAs <http://dbpedia.org/resource/Baking_powder> .
+food:BakingPowder a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Baking_powder> .
 
-food:BakingSoda owl:sameAs <http://dbpedia.org/resource/Sodium_bicarbonate> .
+food:BakingSoda a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Sodium_bicarbonate> .
 
-food:Margarine owl:sameAs <http://dbpedia.org/resource/Margarine> .
+food:Margarine a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Margarine> .
 
-food:Cinnamon owl:sameAs <http://dbpedia.org/resource/Cinnamon> .
+food:Cinnamon a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Cinnamon> .
 
-food:Water owl:sameAs <http://dbpedia.org/resource/Water> .
+food:Water a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Water> .
 
-food:Butter owl:sameAs <http://dbpedia.org/resource/Butter> .
+food:Butter a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Butter> .
 
-food:Eggs owl:sameAs <http://dbpedia.org/resource/Egg>,
+food:Eggs a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Egg>,
         <http://dbpedia.org/resource/Egg_as_food> .
 
-food:Vanilla owl:sameAs <http://dbpedia.org/resource/Vanilla> .
+food:Vanilla a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Vanilla> .
 
-food:Salt owl:sameAs <http://dbpedia.org/resource/Salt> .
+food:Salt a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Salt> .
 
-food:Flour owl:sameAs <http://dbpedia.org/resource/Flour> .
+food:Flour a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Flour> .
 
-food:Sugar owl:sameAs <http://dbpedia.org/resource/Sugar> .
+food:Sugar a :Food ;
+    owl:sameAs <http://dbpedia.org/resource/Sugar> .
 

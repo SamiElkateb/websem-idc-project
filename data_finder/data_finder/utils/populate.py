@@ -24,7 +24,9 @@ def add_food_item(ingredient_name, food_id, dbpedia_uri):
         prefix owl:  <http://www.w3.org/2002/07/owl#>
         INSERT {
             ?ingredient :food ?foodURI .
-            ?foodURI owl:sameAs ?dbpediaURI .
+            ?foodURI a :Food ;
+                     owl:sameAs ?dbpediaURI .
+
         } WHERE {
             ?ingredient a :Ingredient .
             ?ingredient :name ?ingredientName .
