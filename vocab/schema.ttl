@@ -48,6 +48,10 @@
   rdfs:label ""@en, ""@fr ;
   rdfs:comment ""@en,
               ""@fr .
+:Image a owl:Class ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+              ""@fr .
 
 # Properties
 
@@ -138,3 +142,11 @@
 
 :conversionRatio a owl:ObjectProperty ;
   rdfs:domain xsd:float .
+
+# Display properties
+:hasThumbnail a owl:ObjectProperty ;
+  rdfs:label "has thumbnail"@en, "a pour vignette"@fr ;
+  rdfs:comment ""@en,
+               ""@fr ;
+  rdfs:range :Image .
+
