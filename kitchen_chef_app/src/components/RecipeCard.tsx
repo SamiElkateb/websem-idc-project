@@ -15,10 +15,14 @@ export default function RecipeCard({ title, description }) {
         title="green iguana"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h6" component="div" noWrap>
           {title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          noWrap
+        >
           {description}
         </Typography>
       </CardContent>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box } from '@mui/material';
+import Grid from '@mui/material/Grid';
 import RecipeSearchForm from '../form/RecipeSearchForm';
 import RecipeCard from '../components/RecipeCard';
 import { TRecipe } from '../models/recipes';
@@ -13,11 +13,13 @@ const RecipeListPage = () => {
   return (
     <>
       <RecipeSearchForm onUpdateRecipes={handleUpdateRecipes} />
-      <Box paddingY={10}>
+      <Grid container spacing={2} paddingY={10}>
         {recipes.map((recipe) => (
-          <RecipeCard title={recipe?.name} description={recipe?.instructions} />
+          <Grid item xs={12} sm={6} md={4} lg={3} key={recipe.id}>
+            <RecipeCard title={recipe?.name} description={recipe?.instructions} />
+          </Grid>
         ))}
-      </Box>
+      </Grid>
     </>
   );
 };

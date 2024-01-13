@@ -1,11 +1,13 @@
 import React from 'react';
 import Chip from '@mui/material/Chip';
+import { TIngredient } from '../../models/ingredients';
+import { TFilter } from '../../models/others';
 
 type FiltersProps = {
-  filters: { name: string, active: boolean }[]
-  ingredients?: string[]
-  onDeactiveFilter: (item: string) => void
-  onActivateFilter: (item: string) => void
+  filters: TFilter[]
+  ingredients?: TIngredient[]
+  onDeactiveFilter: (item: TFilter) => void
+  onActivateFilter: (item: TFilter) => void
   onRemoveIngredient : (item: string) => void
 };
 
@@ -38,9 +40,9 @@ const Filters:React.FC<FiltersProps> = ({
     ))}
     {ingredients!.map((item) => (
       <Chip
-        key={item}
-        label={item}
-        onDelete={() => onRemoveIngredient(item)}
+        key={item.id}
+        label={item.frLabel}
+        onDelete={() => onRemoveIngredient(item.id)}
         style={{ margin: '5px' }}
         color="primary"
       />

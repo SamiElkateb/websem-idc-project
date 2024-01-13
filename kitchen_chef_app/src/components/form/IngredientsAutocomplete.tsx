@@ -1,10 +1,10 @@
-import React, { useMemo, useState } from 'react';
+import React, { useState } from 'react';
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
 import { TIngredient } from '../../models/ingredients';
 
 type IngredientsAutocompleteProps = {
-  onAddIngredient: (item: string) => void
+  onAddIngredient: (item: TIngredient) => void
   availableIngredients: TIngredient[]
 };
 
@@ -12,35 +12,30 @@ const IngredientsAutocomplete: React.FC<IngredientsAutocompleteProps> = ({
   onAddIngredient,
   availableIngredients,
 }) => {
-  const [ingredient, setIngredient] = useState('');
-  const options = useMemo(
-    () => availableIngredients.map((item) => item.frLabel),
-    [availableIngredients],
-  );
+  const [ingredient, setIngredient] = useState<TIngredient>();
 
   const handleAddClick = () => {
     if (ingredient) {
       onAddIngredient(ingredient);
-      setIngredient('');
+      setIngredient(undefined);
     }
   };
 
   return (
     <div>
       <Autocomplete
-        value={ingredient}
-        onChange={(event, newValue) => {
+        onChange={(_, newValue) => {
           setIngredient(newValue);
         }}
-        options={options}
+        getOptionLabel={(option) => option.frLabel}
+        options={availableIngredients}
         renderInput={(params) => (
           <TextField
             {...params}
             label="Ingredient"
             onKeyDown={(e) => {
-              if ((e.code === 'Enter' | e.code == 'enter') && e.target.value) {
-                handleAddClick(e.target.value);
-                setIngredient('');
+              if ((e.code === 'Enter' || e.code === 'enter') && e.target.value) {
+                handleAddClick();
               }
             }}
           />
