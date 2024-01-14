@@ -15,4 +15,4 @@ def get_attr(name):
     pd.DataFrame(units).to_csv('../../../data/'+name.lower()+'.csv', index=False)
 
 if __name__ == '__main__':
-    get_attr('Quantity')
+    get_attr('Unit')

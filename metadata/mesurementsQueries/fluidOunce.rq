@@ -4,12 +4,13 @@
 
 CONSTRUCT {
     ?subj ?pred ?obj .
-    ?ingredient :unit measurements:Cup .
+    ?ingredient :unit measurements:FluidOunce .
 } WHERE {
     ?subj ?pred ?obj .
-    FILTER (!REGEX(?obj, "(cups?)", "i") || ?pred != :unit)
+    FILTER (!REGEX(?obj, "(z\\.?|oz\\.?|ounces?).*(cans?|jars?)", "i")|| ?pred != :unit)
     OPTIONAL {
         ?ingredient :unit ?unit .
-        FILTER REGEX(?unit, "(cups?)", "i")
+        FILTER REGEX(?unit, "(z\\.?|oz\\.?|ounces?).*(cans?|jars?)", "i")
     }
 }
+
