@@ -4,6 +4,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix recipes: <http://project-kitchenchef.fr/recipes/data#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 recipes:AlbertsChicken a :Recipe ;
@@ -2742,7 +2743,8 @@ recipes:ChickenwithArtichoke a :Recipe ;
     :name "Chicken with Artichoke" .
 
 recipes:ChiliCheesePuff a :Recipe ;
-    rdfs:label "Curry puff"@en ;
+    rdfs:label "Enchilada"@en,
+        "Enchilada"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Green ;
             :name "diced green chiles" ;
@@ -2778,12 +2780,12 @@ recipes:ChiliCheesePuff a :Recipe ;
             :name "jack cheese, shredded" ;
             :quantity "4" ;
             :unit "cups" ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Karipap_Daging.jpg?width=300> ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Enchilada_Rice_Beans.jpg?width=300> ;
     :instructions """Preheat oven to 350 degrees.
 In medium size bowl beat eggs until light and lemon colored. Add flour, baking powder, salt, cottage cheese, and jack cheese. Blend until smooth. Stir in chiles.
 Pour into buttered 9" x 13" baking dish. Bake 35 minutes or until top is brown and firm.""" ;
     :name "Chili Cheese Puff" ;
-    owl:sameAs <http://dbpedia.org/resource/Curry_puff> .
+    owl:sameAs <http://dbpedia.org/resource/Enchilada> .
 
 recipes:ChiliChicken a :Recipe ;
     rdfs:label "Kung Pao chicken"@en,
@@ -8096,6 +8098,8 @@ Cover, cook 20 minutes. Pour over chicken. Bake covered at 375 degrees for 1 hou
     :name "Savory Chicken Casserole" .
 
 recipes:SavoryGoulash a :Recipe ;
+    rdfs:label "Potato pancake"@en,
+        "Galette de pommes de terre"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Onions ;
             :name "sliced onions" ;
@@ -8135,9 +8139,10 @@ recipes:SavoryGoulash a :Recipe ;
             :name "sour cream" ;
             :quantity "4" ;
             :unit "tbsp" ] ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Latkas.jpg?width=300> ;
     :instructions "Brown onion and meat. Add tomato sauce and water. Cook for 2 hours and serve over hot noodles." ;
     :name "Savory Goulash" ;
-    owl:sameAs <http://dbpedia.org/resource/Kluski> .
+    owl:sameAs <http://dbpedia.org/resource/Potato_pancake> .
 
 recipes:SherryWineCake a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -18260,7 +18265,8 @@ recipes:ZucchiniPatties a :Recipe ;
     :instructions "Courslet shred zucchini into a bowl. Press out water. Add rest of ingredients, except oil. Heat oil in skillet. Drop mixture by spoonfuls. Brown on both sides. May also be topped with spaghetti sauce." ;
     :name "Zucchini Patties" .
 
-food:AngelFoodCake a :Food ;
+food:AngelFoodCake a :Food,
+        skos:Concept ;
     rdfs:label "Angel food cake"@en,
         "Gâteau des anges"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chocolate_angel_food_cake_with_various_toppings.jpg?width=300> ;
@@ -18268,7 +18274,8 @@ food:AngelFoodCake a :Food ;
         <http://dbpedia.org/resource/Category:Sponge_cakes> ;
     owl:sameAs <http://dbpedia.org/resource/Angel_food_cake> .
 
-food:Anise a :Food ;
+food:Anise a :Food,
+        skos:Concept ;
     rdfs:label "Anise"@en,
         "Anis vert"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Koehler1887-PimpinellaAnisum.jpg?width=300> ;
@@ -18283,7 +18290,8 @@ food:Anise a :Food ;
         <http://dbpedia.org/resource/Category:Spices> ;
     owl:sameAs <http://dbpedia.org/resource/Anise> .
 
-food:Artichokes a :Food ;
+food:Artichokes a :Food,
+        skos:Concept ;
     rdfs:label "Artichoke"@en,
         "Artichaut"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Artichoke_J1.jpg?width=300> ;
@@ -18297,7 +18305,8 @@ food:Artichokes a :Food ;
         <http://dbpedia.org/resource/Category:Taxa_named_by_Carl_Linnaeus> ;
     owl:sameAs <http://dbpedia.org/resource/Artichoke> .
 
-food:Bamboo a :Food ;
+food:Bamboo a :Food,
+        skos:Concept ;
     rdfs:label "Bamboo"@en,
         "Bambusoideae"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Bamboo_Forest,_Arashiyama,_Kyoto,_Japan.jpg?width=300> ;
@@ -18316,7 +18325,8 @@ food:Bamboo a :Food ;
         <http://dbpedia.org/resource/Category:Stem_vegetables> ;
     owl:sameAs <http://dbpedia.org/resource/Bamboo> .
 
-food:BeefBouillon a :Food ;
+food:BeefBouillon a :Food,
+        skos:Concept ;
     rdfs:label "Bouillon cube"@en,
         "Bouillon cube"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Brühwürfel-1.jpg?width=300> ;
@@ -18326,7 +18336,8 @@ food:BeefBouillon a :Food ;
         <http://dbpedia.org/resource/Category:Umami_enhancers> ;
     owl:sameAs <http://dbpedia.org/resource/Bouillon_cube> .
 
-food:Berries a :Food ;
+food:Berries a :Food,
+        skos:Concept ;
     rdfs:label "Berry"@en,
         "Petit fruit rouge"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Norwegian_blueberry.jpg?width=300> ;
@@ -18335,14 +18346,16 @@ food:Berries a :Food ;
         <http://dbpedia.org/resource/Category:Non-timber_forest_products> ;
     owl:sameAs <http://dbpedia.org/resource/Berry> .
 
-food:BlueCheese a :Food ;
+food:BlueCheese a :Food,
+        skos:Concept ;
     rdfs:label "Blue cheese"@en,
         "Fromage à pâte persillée"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Bleu_de_Gex.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Blue_cheeses> ;
     owl:sameAs <http://dbpedia.org/resource/Blue_cheese> .
 
-food:Blueberries a :Food ;
+food:Blueberries a :Food,
+        skos:Concept ;
     rdfs:label "Blueberry"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Blueberries.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Berries>,
@@ -18358,7 +18371,8 @@ food:Blueberries a :Food ;
         <http://dbpedia.org/resource/Category:Vaccinium> ;
     owl:sameAs <http://dbpedia.org/resource/Blueberry> .
 
-food:Bourbon a :Food ;
+food:Bourbon a :Food,
+        skos:Concept ;
     rdfs:label "Bourbon whiskey"@en,
         "Bourbon (eau-de-vie)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/DecaturBourbons.jpg?width=300> ;
@@ -18369,7 +18383,8 @@ food:Bourbon a :Food ;
         <http://dbpedia.org/resource/Category:Whisky> ;
     owl:sameAs <http://dbpedia.org/resource/Bourbon_whiskey> .
 
-food:Brandy a :Food ;
+food:Brandy a :Food,
+        skos:Concept ;
     rdfs:label "Brandy"@en,
         "Brandy (alcool)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cognac_glass.jpg?width=300> ;
@@ -18378,7 +18393,8 @@ food:Brandy a :Food ;
         <http://dbpedia.org/resource/Category:Distilled_drinks> ;
     owl:sameAs <http://dbpedia.org/resource/Brandy> .
 
-food:ButtonMushrooms a :Food ;
+food:ButtonMushrooms a :Food,
+        skos:Concept ;
     rdfs:label "Agaricus bisporus"@en,
         "Agaricus bisporus"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/ChampignonMushroom.jpg?width=300> ;
@@ -18391,7 +18407,8 @@ food:ButtonMushrooms a :Food ;
         <http://dbpedia.org/resource/Category:Fungi_of_North_America> ;
     owl:sameAs <http://dbpedia.org/resource/Agaricus_bisporus> .
 
-food:Cantaloupe a :Food ;
+food:Cantaloupe a :Food,
+        skos:Concept ;
     rdfs:label "Cantaloupe"@en,
         "Cantaloup"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Meloen_vrucht_met_bloem.jpg?width=300> ;
@@ -18401,7 +18418,8 @@ food:Cantaloupe a :Food ;
         <http://dbpedia.org/resource/Category:Taxa_named_by_Nicolas_Charles_Seringe> ;
     owl:sameAs <http://dbpedia.org/resource/Cantaloupe> .
 
-food:CashewNuts a :Food ;
+food:CashewNuts a :Food,
+        skos:Concept ;
     rdfs:label "Cashew"@en,
         "Anacardier"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cashew_apples.jpg?width=300> ;
@@ -18419,7 +18437,8 @@ food:CashewNuts a :Food ;
         <http://dbpedia.org/resource/Category:Tropical_agriculture> ;
     owl:sameAs <http://dbpedia.org/resource/Cashew> .
 
-food:Cayenne a :Food ;
+food:Cayenne a :Food,
+        skos:Concept ;
     rdfs:label "Cayenne pepper"@en,
         "Piment de Cayenne"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Capsicum_annuum_-_Köhler–s_Medizinal-Pflanzen-027.jpg?width=300> ;
@@ -18430,7 +18449,8 @@ food:Cayenne a :Food ;
         <http://dbpedia.org/resource/Category:Spices> ;
     owl:sameAs <http://dbpedia.org/resource/Cayenne_pepper> .
 
-food:CelerySalt a :Food ;
+food:CelerySalt a :Food,
+        skos:Concept ;
     rdfs:label "Celery salt"@en,
         "Sel au céleri"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Celery_Salt,_Penzeys_Spices,_Arlington_Heights_MA.jpg?width=300> ;
@@ -18438,7 +18458,8 @@ food:CelerySalt a :Food ;
         <http://dbpedia.org/resource/Category:Edible_salt> ;
     owl:sameAs <http://dbpedia.org/resource/Celery_salt> .
 
-food:Cherries a :Food ;
+food:Cherries a :Food,
+        skos:Concept ;
     rdfs:label "Cherry"@en,
         "Cerise"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cherry_season_(48216568227).jpg?width=300> ;
@@ -18448,7 +18469,8 @@ food:Cherries a :Food ;
         <http://dbpedia.org/resource/Category:Prunus> ;
     owl:sameAs <http://dbpedia.org/resource/Cherry> .
 
-food:ChickenWings a :Food ;
+food:ChickenWings a :Food,
+        skos:Concept ;
     rdfs:label "Buffalo wing"@en,
         "Ailes de poulet à la mode de Buffalo"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Buffalo_wings-01.jpg?width=300> ;
@@ -18462,14 +18484,16 @@ food:ChickenWings a :Food ;
         <http://dbpedia.org/resource/Category:Fried_chicken> ;
     owl:sameAs <http://dbpedia.org/resource/Buffalo_wing> .
 
-food:ChineseNoodles a :Food ;
+food:ChineseNoodles a :Food,
+        skos:Concept ;
     rdfs:label "Chinese noodles"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/On_Hing_Noodle_Shop_in_Tuen_Mun.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Articles_containing_video_clips>,
         <http://dbpedia.org/resource/Category:Chinese_noodles> ;
     owl:sameAs <http://dbpedia.org/resource/Chinese_noodles> .
 
-food:ChowMeinNoodles a :Food ;
+food:ChowMeinNoodles a :Food,
+        skos:Concept ;
     rdfs:label "Chow mein"@en,
         "Chow mein"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg?width=300> ;
@@ -18486,14 +18510,16 @@ food:ChowMeinNoodles a :Food ;
         <http://dbpedia.org/resource/Category:Polynesian_Chinese_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Chow_mein> .
 
-food:Chuck a :Food ;
+food:Chuck a :Food,
+        skos:Concept ;
     rdfs:label "Chuck steak"@en,
         "Paleron"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/BeefCutChuck.png?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Cuts_of_beef> ;
     owl:sameAs <http://dbpedia.org/resource/Chuck_steak> .
 
-food:CiderVinegar a :Food ;
+food:CiderVinegar a :Food,
+        skos:Concept ;
     rdfs:label "Apple cider vinegar"@en,
         "Vinaigre de cidre"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Apple_Cider_Vinegar_(4108653248).jpg?width=300> ;
@@ -18502,7 +18528,8 @@ food:CiderVinegar a :Food ;
         <http://dbpedia.org/resource/Category:Vinegar> ;
     owl:sameAs <http://dbpedia.org/resource/Apple_cider_vinegar> .
 
-food:Clams a :Food ;
+food:Clams a :Food,
+        skos:Concept ;
     rdfs:label "Clam"@en,
         "Palourde"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Clams_on_Sandy_Hook_beaches_-_panoramio.jpg?width=300> ;
@@ -18511,7 +18538,8 @@ food:Clams a :Food ;
         <http://dbpedia.org/resource/Category:Mollusc_products> ;
     owl:sameAs <http://dbpedia.org/resource/Clam> .
 
-food:CranberrySauce a :Food ;
+food:CranberrySauce a :Food,
+        skos:Concept ;
     rdfs:label "Cranberry sauce"@en,
         "Sauce aux canneberges"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cranberry_Sauce_(3617909597).jpg?width=300> ;
@@ -18522,7 +18550,8 @@ food:CranberrySauce a :Food ;
         <http://dbpedia.org/resource/Category:Thanksgiving_food> ;
     owl:sameAs <http://dbpedia.org/resource/Cranberry_sauce> .
 
-food:CreamedCorn a :Food ;
+food:CreamedCorn a :Food,
+        skos:Concept ;
     rdfs:label "Creamed corn"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Creamed_corn.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:American_vegetable_dishes>,
@@ -18534,7 +18563,8 @@ food:CreamedCorn a :Food ;
         <http://dbpedia.org/resource/Category:Thanksgiving_food> ;
     owl:sameAs <http://dbpedia.org/resource/Creamed_corn> .
 
-food:Crisp a :Food ;
+food:Crisp a :Food,
+        skos:Concept ;
     rdfs:label "Potato chip"@en,
         "Chips"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Potato-Chips.jpg?width=300> ;
@@ -18549,7 +18579,8 @@ food:Crisp a :Food ;
         <http://dbpedia.org/resource/Category:Potato_dishes> ;
     owl:sameAs <http://dbpedia.org/resource/Potato_chip> .
 
-food:Croutons a :Food ;
+food:Croutons a :Food,
+        skos:Concept ;
     rdfs:label "Crouton"@en,
         "Croûton"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Croutons_on_a_salad.jpg?width=300> ;
@@ -18558,14 +18589,16 @@ food:Croutons a :Food ;
         <http://dbpedia.org/resource/Category:Salads> ;
     owl:sameAs <http://dbpedia.org/resource/Crouton> .
 
-food:CrushedRedPepper a :Food ;
+food:CrushedRedPepper a :Food,
+        skos:Concept ;
     rdfs:label "Crushed red pepper"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/2014_Dried_chilli_flakes.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Chili_peppers>,
         <http://dbpedia.org/resource/Category:Condiments> ;
     owl:sameAs <http://dbpedia.org/resource/Crushed_red_pepper> .
 
-food:Cucumbers a :Food ;
+food:Cucumbers a :Food,
+        skos:Concept ;
     rdfs:label "Cucumber"@en,
         "Concombre"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/ARS_cucumber.jpg?width=300> ;
@@ -18574,7 +18607,8 @@ food:Cucumbers a :Food ;
         <http://dbpedia.org/resource/Category:Plants_described_in_1753> ;
     owl:sameAs <http://dbpedia.org/resource/Cucumber> .
 
-food:CurryPowder a :Food ;
+food:CurryPowder a :Food,
+        skos:Concept ;
     rdfs:label "Curry powder"@en,
         "Curry"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Curry_powder_in_the_spice-bazaar_in_Istanbul.jpg?width=300> ;
@@ -18585,7 +18619,8 @@ food:CurryPowder a :Food ;
         <http://dbpedia.org/resource/Category:Powders> ;
     owl:sameAs <http://dbpedia.org/resource/Curry_powder> .
 
-food:Dates a :Food ;
+food:Dates a :Food,
+        skos:Concept ;
     rdfs:label "Date palm"@en,
         "Phoenix dactylifera"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Dates005.jpg?width=300> ;
@@ -18604,7 +18639,8 @@ food:Dates a :Food ;
         <http://dbpedia.org/resource/Category:Tropical_agriculture> ;
     owl:sameAs <http://dbpedia.org/resource/Date_palm> .
 
-food:DijonMustard a :Food ;
+food:DijonMustard a :Food,
+        skos:Concept ;
     rdfs:label "Dijon mustard"@en,
         "Moutarde de Dijon"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Senf-5.jpg?width=300> ;
@@ -18613,7 +18649,8 @@ food:DijonMustard a :Food ;
         <http://dbpedia.org/resource/Category:Mustard_(condiment)> ;
     owl:sameAs <http://dbpedia.org/resource/Dijon_mustard> .
 
-food:Eggplant a :Food ;
+food:Eggplant a :Food,
+        skos:Concept ;
     rdfs:label "Eggplant"@en,
         "Aubergine"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Solanum_melongena_24_08_2012_(1).jpg?width=300> ;
@@ -18628,7 +18665,8 @@ food:Eggplant a :Food ;
         <http://dbpedia.org/resource/Category:Tropical_fruit> ;
     owl:sameAs <http://dbpedia.org/resource/Eggplant> .
 
-food:Filets a :Food ;
+food:Filets a :Food,
+        skos:Concept ;
     rdfs:label "Fillet (cut)"@en,
         "Filet (viande)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Doryfill.jpg?width=300> ;
@@ -18637,7 +18675,8 @@ food:Filets a :Food ;
         <http://dbpedia.org/resource/Category:Fish_processing> ;
     owl:sameAs <http://dbpedia.org/resource/Fillet_(cut)> .
 
-food:Fish a :Food ;
+food:Fish a :Food,
+        skos:Concept ;
     rdfs:label "Fish"@en,
         "Poisson"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Georgia_Aquarium_-_Giant_Grouper_edit.jpg?width=300> ;
@@ -18650,14 +18689,16 @@ food:Fish a :Food ;
         <http://dbpedia.org/resource/Category:Seafood> ;
     owl:sameAs <http://dbpedia.org/resource/Fish> .
 
-food:FishFillets a :Food ;
+food:FishFillets a :Food,
+        skos:Concept ;
     rdfs:label "Fish fillet"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pangasius_meat.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Cuts_of_meat>,
         <http://dbpedia.org/resource/Category:Fish_processing> ;
     owl:sameAs <http://dbpedia.org/resource/Fish_fillet> .
 
-food:FoodColoring a :Food ;
+food:FoodColoring a :Food,
+        skos:Concept ;
     rdfs:label "Food coloring"@en,
         "Colorant alimentaire"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Rainbow_of_food_natural_food_colors.jpg?width=300> ;
@@ -18666,13 +18707,15 @@ food:FoodColoring a :Food ;
         <http://dbpedia.org/resource/Category:Food_technology> ;
     owl:sameAs <http://dbpedia.org/resource/Food_coloring> .
 
-food:FrenchDressing a :Food ;
+food:FrenchDressing a :Food,
+        skos:Concept ;
     rdfs:label "French dressing"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Sandwich_with_Catalina_dressing.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Salad_dressings> ;
     owl:sameAs <http://dbpedia.org/resource/French_dressing> .
 
-food:Fruit a :Food ;
+food:Fruit a :Food,
+        skos:Concept ;
     rdfs:label "Fruit"@en,
         "Fruit (botanique)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Municipal_Market_of_São_Paulo_city.jpg?width=300> ;
@@ -18681,7 +18724,8 @@ food:Fruit a :Food ;
         <http://dbpedia.org/resource/Category:Types_of_food> ;
     owl:sameAs <http://dbpedia.org/resource/Fruit> .
 
-food:GarbanzoBeans a :Food ;
+food:GarbanzoBeans a :Food,
+        skos:Concept ;
     rdfs:label "Chickpea"@en,
         "Pois chiche"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Sa-whitegreen-chickpea.jpg?width=300> ;
@@ -18692,7 +18736,8 @@ food:GarbanzoBeans a :Food ;
         <http://dbpedia.org/resource/Category:Plants_described_in_1753> ;
     owl:sameAs <http://dbpedia.org/resource/Chickpea> .
 
-food:Gorgonzola a :Food ;
+food:Gorgonzola a :Food,
+        skos:Concept ;
     rdfs:label "Gorgonzola"@en,
         "Gorgonzola (fromage)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/A_big_blue_cheese_from_Holiday_Inn_Golden_Mile_Hong_Kong.jpg?width=300> ;
@@ -18703,7 +18748,8 @@ food:Gorgonzola a :Food ;
         <http://dbpedia.org/resource/Category:Lombard_cheeses> ;
     owl:sameAs <http://dbpedia.org/resource/Gorgonzola> .
 
-food:GrahamCrackers a :Food ;
+food:GrahamCrackers a :Food,
+        skos:Concept ;
     rdfs:label "Graham cracker"@en,
         "Biscuit Graham"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Graham-Cracker-Stack.jpg?width=300> ;
@@ -18711,7 +18757,8 @@ food:GrahamCrackers a :Food ;
         <http://dbpedia.org/resource/Category:Crackers_(food)> ;
     owl:sameAs <http://dbpedia.org/resource/Graham_cracker> .
 
-food:Grapes a :Food ;
+food:Grapes a :Food,
+        skos:Concept ;
     rdfs:label "Grape"@en,
         "Raisin"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Abhar-iran.jpg?width=300> ;
@@ -18724,7 +18771,8 @@ food:Grapes a :Food ;
         <http://dbpedia.org/resource/Category:Plants_in_the_Bible> ;
     owl:sameAs <http://dbpedia.org/resource/Grape> .
 
-food:GreenBeans a :Food ;
+food:GreenBeans a :Food,
+        skos:Concept ;
     rdfs:label "Green bean"@en,
         "Haricot vert"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Heaps_of_beans.jpg?width=300> ;
@@ -18734,7 +18782,8 @@ food:GreenBeans a :Food ;
         <http://dbpedia.org/resource/Category:Thanksgiving_food> ;
     owl:sameAs <http://dbpedia.org/resource/Green_bean> .
 
-food:Honey a :Food ;
+food:Honey a :Food,
+        skos:Concept ;
     rdfs:label "Honey"@en,
         "Miel"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Runny_hunny.jpg?width=300> ;
@@ -18745,7 +18794,8 @@ food:Honey a :Food ;
         <http://dbpedia.org/resource/Category:Sugar_substitutes> ;
     owl:sameAs <http://dbpedia.org/resource/Honey> .
 
-food:Kelp a :Food ;
+food:Kelp a :Food,
+        skos:Concept ;
     rdfs:label "Kelp"@en,
         "Laminariales"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Kelp_In_Freycinet_Tasmania.jpg?width=300> ;
@@ -18754,7 +18804,8 @@ food:Kelp a :Food ;
         <http://dbpedia.org/resource/Category:Seaweeds> ;
     owl:sameAs <http://dbpedia.org/resource/Kelp> .
 
-food:Lime a :Food ;
+food:Lime a :Food,
+        skos:Concept ;
     rdfs:label "Calcium oxide"@en,
         "Chaux (matière)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Calcium-oxide-3D-vdW.png?width=300> ;
@@ -18771,14 +18822,16 @@ food:Lime a :Food ;
         <http://dbpedia.org/resource/Category:Rock_salt_crystal_structure> ;
     owl:sameAs <http://dbpedia.org/resource/Calcium_oxide> .
 
-food:Linguini a :Food ;
+food:Linguini a :Food,
+        skos:Concept ;
     rdfs:label "Linguine"@en,
         "Linguine"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Linguine.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Types_of_pasta> ;
     owl:sameAs <http://dbpedia.org/resource/Linguine> .
 
-food:Livers a :Food ;
+food:Livers a :Food,
+        skos:Concept ;
     rdfs:label "Liver"@en,
         "Foie"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Anatomy_Abdomen_Tiesworks.jpg?width=300> ;
@@ -18786,7 +18839,8 @@ food:Livers a :Food ;
         <http://dbpedia.org/resource/Category:Organs_(anatomy)> ;
     owl:sameAs <http://dbpedia.org/resource/Liver> .
 
-food:Macaroni a :Food ;
+food:Macaroni a :Food,
+        skos:Concept ;
     rdfs:label "Macaroni"@en,
         "Macaroni"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg?width=300> ;
@@ -18795,7 +18849,8 @@ food:Macaroni a :Food ;
         <http://dbpedia.org/resource/Category:Types_of_pasta> ;
     owl:sameAs <http://dbpedia.org/resource/Macaroni> .
 
-food:MarinaraSauce a :Food ;
+food:MarinaraSauce a :Food,
+        skos:Concept ;
     rdfs:label "Marinara sauce"@en,
         "Sauce marinara"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Ravioli_Marinara.jpg?width=300> ;
@@ -18803,7 +18858,8 @@ food:MarinaraSauce a :Food ;
         <http://dbpedia.org/resource/Category:Tomato_sauces> ;
     owl:sameAs <http://dbpedia.org/resource/Marinara_sauce> .
 
-food:MashedPotatoes a :Food ;
+food:MashedPotatoes a :Food,
+        skos:Concept ;
     rdfs:label "Mashed potato"@en,
         "Purée de pommes de terre"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Sous_vide_mashed_potatoes.jpg?width=300> ;
@@ -18825,7 +18881,8 @@ food:MashedPotatoes a :Food ;
         <http://dbpedia.org/resource/Category:Thanksgiving_food> ;
     owl:sameAs <http://dbpedia.org/resource/Mashed_potato> .
 
-food:Meat a :Food ;
+food:Meat a :Food,
+        skos:Concept ;
     rdfs:label "Meat"@en,
         "Viande"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/FoodMeat.jpg?width=300> ;
@@ -18834,7 +18891,8 @@ food:Meat a :Food ;
         <http://dbpedia.org/resource/Category:Types_of_food> ;
     owl:sameAs <http://dbpedia.org/resource/Meat> .
 
-food:MontereyJack a :Food ;
+food:MontereyJack a :Food,
+        skos:Concept ;
     rdfs:label "Monterey Jack"@en,
         "Monterey jack"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Vella_Cheese_Young_Jack_(cropped).jpg?width=300> ;
@@ -18844,7 +18902,8 @@ food:MontereyJack a :Food ;
         <http://dbpedia.org/resource/Category:Tex-Mex_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Monterey_Jack> .
 
-food:Olives a :Food ;
+food:Olives a :Food,
+        skos:Concept ;
     rdfs:label "Olive"@en,
         "Olea europaea"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Olivesfromjordan.jpg?width=300> ;
@@ -18886,7 +18945,8 @@ food:Olives a :Food ;
         <http://dbpedia.org/resource/Category:Trees_of_Turkey> ;
     owl:sameAs <http://dbpedia.org/resource/Olive> .
 
-food:OrangeJuice a :Food ;
+food:OrangeJuice a :Food,
+        skos:Concept ;
     rdfs:label "Orange juice"@en,
         "Jus d'orange"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Orangejuice.jpg?width=300> ;
@@ -18900,7 +18960,8 @@ food:OrangeJuice a :Food ;
         <http://dbpedia.org/resource/Category:Symbols_of_Florida> ;
     owl:sameAs <http://dbpedia.org/resource/Orange_juice> .
 
-food:OrangeMarmalade a :Food ;
+food:OrangeMarmalade a :Food,
+        skos:Concept ;
     rdfs:label "Marmalade"@en,
         "Marmelade (confiserie)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Homemade_marmalade,_England.jpg?width=300> ;
@@ -18911,7 +18972,8 @@ food:OrangeMarmalade a :Food ;
         <http://dbpedia.org/resource/Category:Scottish_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Marmalade> .
 
-food:Pasta a :Food ;
+food:Pasta a :Food,
+        skos:Concept ;
     rdfs:label "Pasta"@en,
         "Nouille"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/(Pasta)_by_David_Adam_Kess_(pic.2).jpg?width=300> ;
@@ -18924,14 +18986,16 @@ food:Pasta a :Food ;
         <http://dbpedia.org/resource/Category:Wheat_dishes> ;
     owl:sameAs <http://dbpedia.org/resource/Pasta> .
 
-food:Pastry a :Food ;
+food:Pastry a :Food,
+        skos:Concept ;
     rdfs:label "Pastry"@en,
         "Pâtisserie"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Palmeras_de_hojaldre_1.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Pastries> ;
     owl:sameAs <http://dbpedia.org/resource/Pastry> .
 
-food:Pears a :Food ;
+food:Pears a :Food,
+        skos:Concept ;
     rdfs:label "Pear"@en,
         "Pyrus"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pears.jpg?width=300> ;
@@ -18945,14 +19009,16 @@ food:Pears a :Food ;
         <http://dbpedia.org/resource/Category:Pyrus> ;
     owl:sameAs <http://dbpedia.org/resource/Pear> .
 
-food:PepperSauce a :Food ;
+food:PepperSauce a :Food,
+        skos:Concept ;
     rdfs:label "Hot sauce"@en,
         "Sauce piquante"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Fermented_hot_sauce.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Hot_sauces> ;
     owl:sameAs <http://dbpedia.org/resource/Hot_sauce> .
 
-food:Pizza a :Food ;
+food:Pizza a :Food,
+        skos:Concept ;
     rdfs:label "Pizza"@en,
         "Pizza"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Eq_it-na_pizza-margherita_sep2005_sml.jpg?width=300> ;
@@ -18973,7 +19039,8 @@ food:Pizza a :Food ;
         <http://dbpedia.org/resource/Category:World_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Pizza> .
 
-food:PreparedMustard a :Food ;
+food:PreparedMustard a :Food,
+        skos:Concept ;
     rdfs:label "Mustard (condiment)"@en,
         "Moutarde (condiment)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mustard.jpg?width=300> ;
@@ -18983,7 +19050,8 @@ food:PreparedMustard a :Food ;
         <http://dbpedia.org/resource/Category:Spices> ;
     owl:sameAs <http://dbpedia.org/resource/Mustard_(condiment)> .
 
-food:Pudding a :Food ;
+food:Pudding a :Food,
+        skos:Concept ;
     rdfs:label "Pudding"@en,
         "Pudding"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger_on_glass_platter,_full_view.jpg?width=300> ;
@@ -18998,7 +19066,8 @@ food:Pudding a :Food ;
         <http://dbpedia.org/resource/Category:Types_of_food> ;
     owl:sameAs <http://dbpedia.org/resource/Pudding> .
 
-food:Pumpkin a :Food ;
+food:Pumpkin a :Food,
+        skos:Concept ;
     rdfs:label "Pumpkin"@en,
         "Citrouille"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/FrenchMarketPumpkinsB.jpg?width=300> ;
@@ -19013,7 +19082,8 @@ food:Pumpkin a :Food ;
         <http://dbpedia.org/resource/Category:Thanksgiving_food> ;
     owl:sameAs <http://dbpedia.org/resource/Pumpkin> .
 
-food:Rabbits a :Food ;
+food:Rabbits a :Food,
+        skos:Concept ;
     rdfs:label "Rabbit"@en,
         "Lapin"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Oryctolagus_cuniculus_Rcdo.jpg?width=300> ;
@@ -19026,7 +19096,8 @@ food:Rabbits a :Food ;
         <http://dbpedia.org/resource/Category:Paraphyletic_groups> ;
     owl:sameAs <http://dbpedia.org/resource/Rabbit> .
 
-food:RedCabbage a :Food ;
+food:RedCabbage a :Food,
+        skos:Concept ;
     rdfs:label "Red cabbage"@en,
         "Chou rouge"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Brassica_oleracea_var_capitata_Rubyball.jpg?width=300> ;
@@ -19034,7 +19105,8 @@ food:RedCabbage a :Food ;
         <http://dbpedia.org/resource/Category:Leaf_vegetables> ;
     owl:sameAs <http://dbpedia.org/resource/Red_cabbage> .
 
-food:RolledOats a :Food ;
+food:RolledOats a :Food,
+        skos:Concept ;
     rdfs:label "Rolled oats"@en,
         "Flocon d'avoine"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/rolled_oats.jpg?width=300> ;
@@ -19046,7 +19118,8 @@ food:RolledOats a :Food ;
         <http://dbpedia.org/resource/Category:Porridges> ;
     owl:sameAs <http://dbpedia.org/resource/Rolled_oats> .
 
-food:Sauerkraut a :Food ;
+food:Sauerkraut a :Food,
+        skos:Concept ;
     rdfs:label "Sauerkraut"@en,
         "Choucroute"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Wesselburenkraut_19.06.2012_18-35-26.jpg?width=300> ;
@@ -19063,7 +19136,8 @@ food:Sauerkraut a :Food ;
         <http://dbpedia.org/resource/Category:Vegan_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Sauerkraut> .
 
-food:Scallops a :Food ;
+food:Scallops a :Food,
+        skos:Concept ;
     rdfs:label "Scallop"@en,
         "Pectinidae"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Argopecten_irradians.jpg?width=300> ;
@@ -19075,14 +19149,16 @@ food:Scallops a :Food ;
         <http://dbpedia.org/resource/Category:Pectinidae> ;
     owl:sameAs <http://dbpedia.org/resource/Scallop> .
 
-food:SeasoningMix a :Food ;
+food:SeasoningMix a :Food,
+        skos:Concept ;
     rdfs:label "Spice mix"@en,
         "Liste de mélanges d'épices"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Garam_Masala.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Herb_and_spice_mixtures> ;
     owl:sameAs <http://dbpedia.org/resource/Spice_mix> .
 
-food:Spaghetti a :Food ;
+food:Spaghetti a :Food,
+        skos:Concept ;
     rdfs:label "Spaghetti"@en,
         "Spaghetti"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Spaghettoni.jpg?width=300> ;
@@ -19093,7 +19169,8 @@ food:Spaghetti a :Food ;
         <http://dbpedia.org/resource/Category:Types_of_pasta> ;
     owl:sameAs <http://dbpedia.org/resource/Spaghetti> .
 
-food:Strawberries a :Food ;
+food:Strawberries a :Food,
+        skos:Concept ;
     rdfs:label "Strawberry"@en,
         "Fraise"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Garden_strawberry_(Fragaria_×_ananassa)_single2.jpg?width=300> ;
@@ -19106,7 +19183,8 @@ food:Strawberries a :Food ;
         <http://dbpedia.org/resource/Category:Symbols_of_Delaware> ;
     owl:sameAs <http://dbpedia.org/resource/Strawberry> .
 
-food:Stuffing a :Food ;
+food:Stuffing a :Food,
+        skos:Concept ;
     rdfs:label "Stuffing"@en,
         "Farce (cuisine)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Stuffing_a_turkey.jpg?width=300> ;
@@ -19121,14 +19199,16 @@ food:Stuffing a :Food ;
         <http://dbpedia.org/resource/Category:Thanksgiving_food> ;
     owl:sameAs <http://dbpedia.org/resource/Stuffing> .
 
-food:SweetChocolate a :Food ;
+food:SweetChocolate a :Food,
+        skos:Concept ;
     rdfs:label "Types of chocolate"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Schokolade-schwarz-braun-weiss.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Chocolate>,
         <http://dbpedia.org/resource/Category:Types_of_chocolate> ;
     owl:sameAs <http://dbpedia.org/resource/Types_of_chocolate> .
 
-food:SweetPotatoes a :Food ;
+food:SweetPotatoes a :Food,
+        skos:Concept ;
     rdfs:label "Sweet potato"@en,
         "Patate douce"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Ipomoea_batatas_006.jpg?width=300> ;
@@ -19148,7 +19228,8 @@ food:SweetPotatoes a :Food ;
         <http://dbpedia.org/resource/Category:Tubers> ;
     owl:sameAs <http://dbpedia.org/resource/Sweet_potato> .
 
-food:Toasted a :Food ;
+food:Toasted a :Food,
+        skos:Concept ;
     rdfs:label "Toast (food)"@en,
         "Pain grillé"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Toast-3.jpg?width=300> ;
@@ -19158,7 +19239,8 @@ food:Toasted a :Food ;
         <http://dbpedia.org/resource/Category:Toast_dishes> ;
     owl:sameAs <http://dbpedia.org/resource/Toast_(food)> .
 
-food:TomatoPaste a :Food ;
+food:TomatoPaste a :Food,
+        skos:Concept ;
     rdfs:label "Tomato paste"@en,
         "Concentré de tomates"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Tomato_paste_on_spoon.jpg?width=300> ;
@@ -19167,7 +19249,8 @@ food:TomatoPaste a :Food ;
         <http://dbpedia.org/resource/Category:Tomato_products> ;
     owl:sameAs <http://dbpedia.org/resource/Tomato_paste> .
 
-food:Tortillas a :Food ;
+food:Tortillas a :Food,
+        skos:Concept ;
     rdfs:label "Tortilla"@en,
         "Tortilla"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mexican_tortilla.jpg?width=300> ;
@@ -19187,7 +19270,8 @@ food:Tortillas a :Food ;
         <http://dbpedia.org/resource/Category:Tortilla> ;
     owl:sameAs <http://dbpedia.org/resource/Tortilla> .
 
-food:Tuna a :Food ;
+food:Tuna a :Food,
+        skos:Concept ;
     rdfs:label "Tuna"@en,
         "Thunnini"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/tuna_assortment.png?width=300> ;
@@ -19198,7 +19282,8 @@ food:Tuna a :Food ;
         <http://dbpedia.org/resource/Category:Tuna> ;
     owl:sameAs <http://dbpedia.org/resource/Tuna> .
 
-food:TurkeyBreast a :Food ;
+food:TurkeyBreast a :Food,
+        skos:Concept ;
     rdfs:label "Turkey as food"@en,
         "Viande de dinde"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Thanksgiving_Turkey.jpg?width=300> ;
@@ -19213,7 +19298,8 @@ food:TurkeyBreast a :Food ;
         <http://dbpedia.org/resource/Category:Types_of_food> ;
     owl:sameAs <http://dbpedia.org/resource/Turkey_as_food> .
 
-food:ValenciaPeanuts a :Food ;
+food:ValenciaPeanuts a :Food,
+        skos:Concept ;
     rdfs:label "Peanut"@en,
         "Arachide"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Koeh-163.jpg?width=300> ;
@@ -19232,7 +19318,8 @@ food:ValenciaPeanuts a :Food ;
         <http://dbpedia.org/resource/Category:Taxa_named_by_Carl_Linnaeus> ;
     owl:sameAs <http://dbpedia.org/resource/Peanut> .
 
-food:Veal a :Food ;
+food:Veal a :Food,
+        skos:Concept ;
     rdfs:label "Veal"@en,
         "Viande de veau"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Holstein_cow_with_one-day_calf_01.jpg?width=300> ;
@@ -19240,7 +19327,8 @@ food:Veal a :Food ;
         <http://dbpedia.org/resource/Category:Veal> ;
     owl:sameAs <http://dbpedia.org/resource/Veal> .
 
-food:Vegetable a :Food ;
+food:Vegetable a :Food,
+        skos:Concept ;
     rdfs:label "Vegetable"@en,
         "Légume"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Marketvegetables.jpg?width=300> ;
@@ -19248,7 +19336,8 @@ food:Vegetable a :Food ;
         <http://dbpedia.org/resource/Category:Vegetables> ;
     owl:sameAs <http://dbpedia.org/resource/Vegetable> .
 
-food:Velveeta a :Food ;
+food:Velveeta a :Food,
+        skos:Concept ;
     rdfs:label "Velveeta"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Velveeta_2021.png?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:American_cheeses>,
@@ -19258,7 +19347,8 @@ food:Velveeta a :Food ;
         <http://dbpedia.org/resource/Category:Products_introduced_in_1918> ;
     owl:sameAs <http://dbpedia.org/resource/Velveeta> .
 
-food:WaterChestnuts a :Food ;
+food:WaterChestnuts a :Food,
+        skos:Concept ;
     rdfs:label "Eleocharis dulcis"@en,
         "Châtaigne d'eau chinoise"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Eleocharis_dulcis_Blanco1.15.jpg?width=300> ;
@@ -19274,7 +19364,8 @@ food:WaterChestnuts a :Food ;
         <http://dbpedia.org/resource/Category:Taxa_named_by_Nicolaas_Laurens_Burman> ;
     owl:sameAs <http://dbpedia.org/resource/Eleocharis_dulcis> .
 
-food:Watermelon a :Food ;
+food:Watermelon a :Food,
+        skos:Concept ;
     rdfs:label "Watermelon"@en,
         "Pastèque"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Taiwan_2009_Tainan_City_Organic_Farm_Watermelon_FRD_7962.jpg?width=300> ;
@@ -19287,7 +19378,8 @@ food:Watermelon a :Food ;
         <http://dbpedia.org/resource/Category:Watermelons> ;
     owl:sameAs <http://dbpedia.org/resource/Watermelon> .
 
-food:WheatFlour a :Food ;
+food:WheatFlour a :Food,
+        skos:Concept ;
     rdfs:label "Wheat flour"@en,
         "Farine de blé"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Wheat_flour.jpg?width=300> ;
@@ -19296,7 +19388,8 @@ food:WheatFlour a :Food ;
         <http://dbpedia.org/resource/Category:Wheat_flour> ;
     owl:sameAs <http://dbpedia.org/resource/Wheat_flour> .
 
-food:WhippedTopping a :Food ;
+food:WhippedTopping a :Food,
+        skos:Concept ;
     rdfs:label "Whipped cream"@en,
         "Crème chantilly"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Hot_chocolate_(2).jpg?width=300> ;
@@ -19305,20 +19398,23 @@ food:WhippedTopping a :Food ;
         <http://dbpedia.org/resource/Category:Toppings> ;
     owl:sameAs <http://dbpedia.org/resource/Whipped_cream> .
 
-food:WhiteSugar a :Food ;
+food:WhiteSugar a :Food,
+        skos:Concept ;
     rdfs:label "White sugar"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/A_Bowl_of_Sugar_2.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Sugar> ;
     owl:sameAs <http://dbpedia.org/resource/White_sugar> .
 
-food:Yolk a :Food ;
+food:Yolk a :Food,
+        skos:Concept ;
     rdfs:label "Yolk"@en,
         "Jaune d'œuf"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Raw_egg.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Eggs> ;
     owl:sameAs <http://dbpedia.org/resource/Yolk> .
 
-food:Allspice a :Food ;
+food:Allspice a :Food,
+        skos:Concept ;
     rdfs:label "Allspice"@en,
         "Piment de la Jamaïque"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pimenta_dioica_-_Köhler–s_Medizinal-Pflanzen-239.jpg?width=300> ;
@@ -19337,7 +19433,8 @@ food:Allspice a :Food ;
         <http://dbpedia.org/resource/Category:Trees_of_Belize> ;
     owl:sameAs <http://dbpedia.org/resource/Allspice> .
 
-food:Almonds a :Food ;
+food:Almonds a :Food,
+        skos:Concept ;
     rdfs:label "Almond"@en,
         "Amandier"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Prunus_dulcis_-_Köhler–s_Medizinal-Pflanzen-250.jpg?width=300> ;
@@ -19354,7 +19451,8 @@ food:Almonds a :Food ;
         <http://dbpedia.org/resource/Category:Symbols_of_California> ;
     owl:sameAs <http://dbpedia.org/resource/Almond> .
 
-food:Avocado a :Food ;
+food:Avocado a :Food,
+        skos:Concept ;
     rdfs:label "Avocado"@en,
         "Avocatier"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Persea_americana_fruit_2.jpg?width=300> ;
@@ -19375,7 +19473,8 @@ food:Avocado a :Food ;
         <http://dbpedia.org/resource/Category:Tropical_fruit> ;
     owl:sameAs <http://dbpedia.org/resource/Avocado> .
 
-food:Bananas a :Food ;
+food:Bananas a :Food,
+        skos:Concept ;
     rdfs:label "Banana"@en,
         "Banane"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Banana_and_cross_section.jpg?width=300> ;
@@ -19388,7 +19487,8 @@ food:Bananas a :Food ;
         <http://dbpedia.org/resource/Category:Tropical_agriculture> ;
     owl:sameAs <http://dbpedia.org/resource/Banana> .
 
-food:Bread a :Food ;
+food:Bread a :Food,
+        skos:Concept ;
     rdfs:label "Bread"@en,
         "Pain"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Korb_mit_Brötchen.jpg?width=300> ;
@@ -19400,7 +19500,8 @@ food:Bread a :Food ;
         <http://dbpedia.org/resource/Category:World_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Bread> .
 
-food:Cake a :Food ;
+food:Cake a :Food,
+        skos:Concept ;
     rdfs:label "Cake"@en,
         "Gâteau"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pound_layer_cake.jpg?width=300> ;
@@ -19412,7 +19513,8 @@ food:Cake a :Food ;
         <http://dbpedia.org/resource/Category:World_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Cake> .
 
-food:Cereal a :Food ;
+food:Cereal a :Food,
+        skos:Concept ;
     rdfs:label "Cereal"@en,
         "Céréale"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Dried_Cereal_grains_and_other_similar_products_in_Glass_jars_in_the_Herbarium_collection_at_Leiden.jpg?width=300> ;
@@ -19420,13 +19522,15 @@ food:Cereal a :Food ;
         <http://dbpedia.org/resource/Category:Crops> ;
     owl:sameAs <http://dbpedia.org/resource/Cereal> .
 
-food:ChickenStock a :Food ;
+food:ChickenStock a :Food,
+        skos:Concept ;
     rdfs:label "Stock (food)"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Making_stock_for_pho_bo.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Stock_(food)> ;
     owl:sameAs <http://dbpedia.org/resource/Stock_(food)> .
 
-food:Corn a :Food ;
+food:Corn a :Food,
+        skos:Concept ;
     rdfs:label "Maize"@en,
         "Maïs"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Koeh-283.jpg?width=300> ;
@@ -19450,7 +19554,8 @@ food:Corn a :Food ;
         <http://dbpedia.org/resource/Category:Zea_(plant)> ;
     owl:sameAs <http://dbpedia.org/resource/Maize> .
 
-food:CottageCheese a :Food ;
+food:CottageCheese a :Food,
+        skos:Concept ;
     rdfs:label "Cottage cheese"@en,
         "Cottage cheese"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cottagecheese200px.jpg?width=300> ;
@@ -19463,7 +19568,8 @@ food:CottageCheese a :Food ;
         <http://dbpedia.org/resource/Category:Jewish_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Cottage_cheese> .
 
-food:Dill a :Food ;
+food:Dill a :Food,
+        skos:Concept ;
     rdfs:label "Dill"@en,
         "Aneth"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Illustration_Anethum_graveolens_clean.jpg?width=300> ;
@@ -19482,7 +19588,8 @@ food:Dill a :Food ;
         <http://dbpedia.org/resource/Category:Spices> ;
     owl:sameAs <http://dbpedia.org/resource/Dill> .
 
-food:EggWhites a :Food ;
+food:EggWhites a :Food,
+        skos:Concept ;
     rdfs:label "Egg white"@en,
         "Blanc d'œuf"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chicken_egg01_monovular.jpg?width=300> ;
@@ -19490,7 +19597,8 @@ food:EggWhites a :Food ;
         <http://dbpedia.org/resource/Category:Eggs> ;
     owl:sameAs <http://dbpedia.org/resource/Egg_white> .
 
-food:EvaporatedMilk a :Food ;
+food:EvaporatedMilk a :Food,
+        skos:Concept ;
     rdfs:label "Evaporated milk"@en,
         "Lait concentré non sucré"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/MODOBordens.jpg?width=300> ;
@@ -19498,7 +19606,8 @@ food:EvaporatedMilk a :Food ;
         <http://dbpedia.org/resource/Category:Milk-based_drinks> ;
     owl:sameAs <http://dbpedia.org/resource/Evaporated_milk> .
 
-food:Fat a :Food ;
+food:Fat a :Food,
+        skos:Concept ;
     rdfs:label "Fat"@en,
         "Graisse"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Trimyristin-3D-vdW.png?width=300> ;
@@ -19506,7 +19615,8 @@ food:Fat a :Food ;
         <http://dbpedia.org/resource/Category:Nutrients> ;
     owl:sameAs <http://dbpedia.org/resource/Fat> .
 
-food:GroundBeef a :Food ;
+food:GroundBeef a :Food,
+        skos:Concept ;
     rdfs:label "Ground beef"@en,
         "Bœuf haché"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Hackfleisch-1.jpg?width=300> ;
@@ -19514,7 +19624,8 @@ food:GroundBeef a :Food ;
         <http://dbpedia.org/resource/Category:Ground_meat> ;
     owl:sameAs <http://dbpedia.org/resource/Ground_beef> .
 
-food:Ham a :Food ;
+food:Ham a :Food,
+        skos:Concept ;
     rdfs:label "Ham"@en,
         "Jambon"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Ham_(4).jpg?width=300> ;
@@ -19527,7 +19638,8 @@ food:Ham a :Food ;
         <http://dbpedia.org/resource/Category:Thanksgiving_food> ;
     owl:sameAs <http://dbpedia.org/resource/Ham> .
 
-food:Horseradish a :Food ;
+food:Horseradish a :Food,
+        skos:Concept ;
     rdfs:label "Horseradish"@en,
         "Raifort"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Armoracia_rusticana.jpg?width=300> ;
@@ -19544,7 +19656,8 @@ food:Horseradish a :Food ;
         <http://dbpedia.org/resource/Category:Vermont_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Horseradish> .
 
-food:LemonPeel a :Food ;
+food:LemonPeel a :Food,
+        skos:Concept ;
     rdfs:label "Zest (ingredient)"@en,
         "Zeste"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Zesting_an_orange.jpg?width=300> ;
@@ -19552,7 +19665,8 @@ food:LemonPeel a :Food ;
         <http://dbpedia.org/resource/Category:Food_ingredients> ;
     owl:sameAs <http://dbpedia.org/resource/Zest_(ingredient)> .
 
-food:LimaBeans a :Food ;
+food:LimaBeans a :Food,
+        skos:Concept ;
     rdfs:label "Lima bean"@en,
         "Haricot de Lima"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Phaseoulus_lunatus.jpg?width=300> ;
@@ -19564,7 +19678,8 @@ food:LimaBeans a :Food ;
         <http://dbpedia.org/resource/Category:Soul_food> ;
     owl:sameAs <http://dbpedia.org/resource/Lima_bean> .
 
-food:Liquid a :Food ;
+food:Liquid a :Food,
+        skos:Concept ;
     rdfs:label "Liquid"@en,
         "Liquide"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Water_drop_001.jpg?width=300> ;
@@ -19573,7 +19688,8 @@ food:Liquid a :Food ;
         <http://dbpedia.org/resource/Category:Viscosity> ;
     owl:sameAs <http://dbpedia.org/resource/Liquid> .
 
-food:Minced a :Food ;
+food:Minced a :Food,
+        skos:Concept ;
     rdfs:label "Mincing"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Minced_carrots.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Culinary_terminology>,
@@ -19581,10 +19697,20 @@ food:Minced a :Food ;
         <http://dbpedia.org/resource/Category:Food_preparation_techniques> ;
     owl:sameAs <http://dbpedia.org/resource/Mincing> .
 
-food:Mozzarella a :Food ;
+food:Mozzarella a :Food,
+        skos:Concept ;
+    rdfs:label "Mozzarella"@en,
+        "Mozzarella"@fr ;
+    dcterms:subject <http://dbpedia.org/resource/Category:Cow's-milk_cheeses>,
+        <http://dbpedia.org/resource/Category:Italian_cheeses>,
+        <http://dbpedia.org/resource/Category:Smoked_cheeses>,
+        <http://dbpedia.org/resource/Category:Stretched-curd_cheeses>,
+        <http://dbpedia.org/resource/Category:Traditional_Speciality_Guaranteed_products_from_Italy>,
+        <http://dbpedia.org/resource/Category:Water_buffalo's-milk_cheeses> ;
     owl:sameAs <http://dbpedia.org/resource/Mozzarella> .
 
-food:Mustard a :Food ;
+food:Mustard a :Food,
+        skos:Concept ;
     rdfs:label "Mustard plant"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mustard_plant_flower.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Brassica>,
@@ -19594,7 +19720,8 @@ food:Mustard a :Food ;
         <http://dbpedia.org/resource/Category:Plant_common_names> ;
     owl:sameAs <http://dbpedia.org/resource/Mustard_plant> .
 
-food:Noodles a :Food ;
+food:Noodles a :Food,
+        skos:Concept ;
     rdfs:label "Noodle"@en,
         "Nouille"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Dalian_Liaoning_China_Noodlemaker-01.jpg?width=300> ;
@@ -19606,7 +19733,8 @@ food:Noodles a :Food ;
         <http://dbpedia.org/resource/Category:Staple_foods> ;
     owl:sameAs <http://dbpedia.org/resource/Noodle> .
 
-food:Oatmeal a :Food ;
+food:Oatmeal a :Food,
+        skos:Concept ;
     rdfs:label "Oatmeal"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Oatmeal.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:American_breakfast_foods>,
@@ -19626,7 +19754,8 @@ food:Oatmeal a :Food ;
         <http://dbpedia.org/resource/Category:Scandinavian_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Oatmeal> .
 
-food:Oats a :Food ;
+food:Oats a :Food,
+        skos:Concept ;
     rdfs:label "Oat"@en,
         "Avoine cultivée"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Avena_sativa_L.jpg?width=300> ;
@@ -19640,7 +19769,8 @@ food:Oats a :Food ;
         <http://dbpedia.org/resource/Category:Staple_foods> ;
     owl:sameAs <http://dbpedia.org/resource/Oat> .
 
-food:OrangePeel a :Food ;
+food:OrangePeel a :Food,
+        skos:Concept ;
     rdfs:label "Orange (fruit)"@en,
         "Orange (fruit)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Oranges_-_whole-halved-segment.jpg?width=300> ;
@@ -19654,7 +19784,8 @@ food:OrangePeel a :Food ;
         <http://dbpedia.org/resource/Category:Tropical_agriculture> ;
     owl:sameAs <http://dbpedia.org/resource/Orange_(fruit)> .
 
-food:Parmesan a :Food ;
+food:Parmesan a :Food,
+        skos:Concept ;
     rdfs:label "Parmesan"@en,
         "Parmigiano Reggiano"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano_as_wedding_celebration_antipasti.jpg?width=300> ;
@@ -19670,7 +19801,8 @@ food:Parmesan a :Food ;
         <http://dbpedia.org/resource/Category:Western_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Parmesan> .
 
-food:Pecans a :Food ;
+food:Pecans a :Food,
+        skos:Concept ;
     rdfs:label "Pecan"@en,
         "Pacanier"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Carya_illinoinensis.jpg?width=300> ;
@@ -19700,7 +19832,8 @@ food:Pecans a :Food ;
         <http://dbpedia.org/resource/Category:Trees_of_the_Southern_United_States> ;
     owl:sameAs <http://dbpedia.org/resource/Pecan> .
 
-food:PhylloPastry a :Food ;
+food:PhylloPastry a :Food,
+        skos:Concept ;
     rdfs:label "Filo"@en,
         "Pâte phyllo"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Baklava.jpg?width=300> ;
@@ -19711,7 +19844,8 @@ food:PhylloPastry a :Food ;
         <http://dbpedia.org/resource/Category:Turkish_pastries> ;
     owl:sameAs <http://dbpedia.org/resource/Filo> .
 
-food:PineappleJuice a :Food ;
+food:PineappleJuice a :Food,
+        skos:Concept ;
     rdfs:label "Pineapple juice"@en,
         "Jus d'ananas"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Batido_de_piña.jpg?width=300> ;
@@ -19719,7 +19853,8 @@ food:PineappleJuice a :Food ;
         <http://dbpedia.org/resource/Category:Pineapple_drinks> ;
     owl:sameAs <http://dbpedia.org/resource/Pineapple_juice> .
 
-food:Potato a :Food ;
+food:Potato a :Food,
+        skos:Concept ;
     rdfs:label "Potato"@en,
         "Pomme de terre"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Patates.jpg?width=300> ;
@@ -19740,7 +19875,8 @@ food:Potato a :Food ;
         <http://dbpedia.org/resource/Category:Tubers> ;
     owl:sameAs <http://dbpedia.org/resource/Potato> .
 
-food:Poultry a :Food ;
+food:Poultry a :Food,
+        skos:Concept ;
     rdfs:label "Poultry"@en,
         "Poulet"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Poultry_of_the_world.jpg?width=300> ;
@@ -19750,20 +19886,23 @@ food:Poultry a :Food ;
         <http://dbpedia.org/resource/Category:Poultry> ;
     owl:sameAs <http://dbpedia.org/resource/Poultry> .
 
-food:RedOnion a :Food ;
+food:RedOnion a :Food,
+        skos:Concept ;
     rdfs:label "Red onion"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Red_Onion_on_White.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Onion_cultivars>,
         <http://dbpedia.org/resource/Category:Onions> ;
     owl:sameAs <http://dbpedia.org/resource/Red_onion> .
 
-food:SaladDressing a :Food ;
+food:SaladDressing a :Food,
+        skos:Concept ;
     rdfs:label "Salad dressing"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Salad_dressing_(cropped).jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Condiments> ;
     owl:sameAs <http://dbpedia.org/resource/Salad_dressing> .
 
-food:Sausage a :Food ;
+food:Sausage a :Food,
+        skos:Concept ;
     rdfs:label "Sausage"@en,
         "Saucisse"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Kielbasa7.jpg?width=300> ;
@@ -19779,7 +19918,8 @@ food:Sausage a :Food ;
         <http://dbpedia.org/resource/Category:World_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Sausage> .
 
-food:Seasoning a :Food ;
+food:Seasoning a :Food,
+        skos:Concept ;
     rdfs:label "Seasoning"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Achiote_paste_ingredients.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Cooking_techniques>,
@@ -19787,7 +19927,8 @@ food:Seasoning a :Food ;
         <http://dbpedia.org/resource/Category:Spices> ;
     owl:sameAs <http://dbpedia.org/resource/Seasoning> .
 
-food:Shallots a :Food ;
+food:Shallots a :Food,
+        skos:Concept ;
     rdfs:label "Shallot"@en,
         "Échalote"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Shallots_-_sliced_and_whole.jpg?width=300> ;
@@ -19800,7 +19941,8 @@ food:Shallots a :Food ;
         <http://dbpedia.org/resource/Category:Taxa_named_by_Carl_Linnaeus> ;
     owl:sameAs <http://dbpedia.org/resource/Shallot> .
 
-food:SweetenedCondensedMilk a :Food ;
+food:SweetenedCondensedMilk a :Food,
+        skos:Concept ;
     rdfs:label "Condensed milk"@en,
         "Lait concentré sucré"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/2016-03-26-Gezuckerte_Kondensmilch-4699.jpg?width=300> ;
@@ -19809,7 +19951,8 @@ food:SweetenedCondensedMilk a :Food ;
         <http://dbpedia.org/resource/Category:Milk-based_drinks> ;
     owl:sameAs <http://dbpedia.org/resource/Condensed_milk> .
 
-food:Thyme a :Food ;
+food:Thyme a :Food,
+        skos:Concept ;
     rdfs:label "Thyme"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Thyme-Bundle.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Albanian_cuisine>,
@@ -19825,14 +19968,16 @@ food:Thyme a :Food ;
         <http://dbpedia.org/resource/Category:Thymus_(plant)> ;
     owl:sameAs <http://dbpedia.org/resource/Thyme> .
 
-food:WhiteWine a :Food ;
+food:WhiteWine a :Food,
+        skos:Concept ;
     rdfs:label "White wine"@en,
         "Vin blanc"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/White_Wine_Glas.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Wine_styles> ;
     owl:sameAs <http://dbpedia.org/resource/White_wine> .
 
-food:WorcestershireSauce a :Food ;
+food:WorcestershireSauce a :Food,
+        skos:Concept ;
     rdfs:label "Worcestershire sauce"@en,
         "Sauce Worcestershire"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Worcester_Sauce_001.jpg?width=300> ;
@@ -19851,7 +19996,8 @@ food:WorcestershireSauce a :Food ;
         <http://dbpedia.org/resource/Category:Umami_enhancers> ;
     owl:sameAs <http://dbpedia.org/resource/Worcestershire_sauce> .
 
-food:Apple a :Food ;
+food:Apple a :Food,
+        skos:Concept ;
     rdfs:label "Apple"@en,
         "Pomme"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pink_lady_and_cross_section.jpg?width=300> ;
@@ -19861,7 +20007,8 @@ food:Apple a :Food ;
         <http://dbpedia.org/resource/Category:Plants_described_in_1768> ;
     owl:sameAs <http://dbpedia.org/resource/Apple> .
 
-food:Cornmeal a :Food ;
+food:Cornmeal a :Food,
+        skos:Concept ;
     rdfs:label "Cornmeal"@en,
         "Farine de maïs"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Polenta_uncooked.jpg?width=300> ;
@@ -19870,7 +20017,8 @@ food:Cornmeal a :Food ;
         <http://dbpedia.org/resource/Category:Maize_products> ;
     owl:sameAs <http://dbpedia.org/resource/Cornmeal> .
 
-food:Dried a :Food ;
+food:Dried a :Food,
+        skos:Concept ;
     rdfs:label "Dried fruit"@en,
         "Food drying"@en,
         "Fruit séché"@fr,
@@ -19887,7 +20035,8 @@ food:Dried a :Food ;
     owl:sameAs <http://dbpedia.org/resource/Dried_fruit>,
         <http://dbpedia.org/resource/Food_drying> .
 
-food:FlankSteak a :Food ;
+food:FlankSteak a :Food,
+        skos:Concept ;
     rdfs:label "Flank steak"@en,
         "Bavette (bœuf)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/BeefCutFlank.svg?width=300> ;
@@ -19895,7 +20044,8 @@ food:FlankSteak a :Food ;
         <http://dbpedia.org/resource/Category:Mexican_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Flank_steak> .
 
-food:Juice a :Food ;
+food:Juice a :Food,
+        skos:Concept ;
     rdfs:label "Juice"@en,
         "Jus"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Orange_juice_1.jpg?width=300> ;
@@ -19903,14 +20053,16 @@ food:Juice a :Food ;
         <http://dbpedia.org/resource/Category:Non-alcoholic_drinks> ;
     owl:sameAs <http://dbpedia.org/resource/Juice> .
 
-food:KidneyBeans a :Food ;
+food:KidneyBeans a :Food,
+        skos:Concept ;
     rdfs:label "Kidney bean"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Red_Rajma_BNC.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Edible_legumes>,
         <http://dbpedia.org/resource/Category:Phaseolus> ;
     owl:sameAs <http://dbpedia.org/resource/Kidney_bean> .
 
-food:Lettuce a :Food ;
+food:Lettuce a :Food,
+        skos:Concept ;
     rdfs:label "Lettuce"@en,
         "Laitue cultivée"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Iceberg_lettuce_in_SB.jpg?width=300> ;
@@ -19921,7 +20073,8 @@ food:Lettuce a :Food ;
         <http://dbpedia.org/resource/Category:Lettuce> ;
     owl:sameAs <http://dbpedia.org/resource/Lettuce> .
 
-food:Molasses a :Food ;
+food:Molasses a :Food,
+        skos:Concept ;
     rdfs:label "Molasses"@en,
         "Mélasse"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Blackstrapmolasses.jpg?width=300> ;
@@ -19930,7 +20083,8 @@ food:Molasses a :Food ;
         <http://dbpedia.org/resource/Category:Sugar> ;
     owl:sameAs <http://dbpedia.org/resource/Molasses> .
 
-food:Peaches a :Food ;
+food:Peaches a :Food,
+        skos:Concept ;
     rdfs:label "Peach"@en,
         "Pêcher"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Illustration_Prunus_persica0.jpg?width=300> ;
@@ -19948,7 +20102,8 @@ food:Peaches a :Food ;
         <http://dbpedia.org/resource/Category:Symbols_of_Georgia_(U.S._state)> ;
     owl:sameAs <http://dbpedia.org/resource/Peach> .
 
-food:PeanutButter a :Food ;
+food:PeanutButter a :Food,
+        skos:Concept ;
     rdfs:label "Peanut butter"@en,
         "Beurre de cacahuètes"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/PeanutButter.jpg?width=300> ;
@@ -19960,7 +20115,8 @@ food:PeanutButter a :Food ;
         <http://dbpedia.org/resource/Category:Peanut_butter> ;
     owl:sameAs <http://dbpedia.org/resource/Peanut_butter> .
 
-food:Peas a :Food ;
+food:Peas a :Food,
+        skos:Concept ;
     rdfs:label "Pea"@en,
         "Pois cultivé"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Peas_in_pods_-_Studio.jpg?width=300> ;
@@ -19973,7 +20129,8 @@ food:Peas a :Food ;
         <http://dbpedia.org/resource/Category:Taxa_named_by_Carl_Linnaeus> ;
     owl:sameAs <http://dbpedia.org/resource/Pea> .
 
-food:Pods a :Food ;
+food:Pods a :Food,
+        skos:Concept ;
     rdfs:label "Legume"@en,
         "Légume sec"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Various_legumes.jpg?width=300> ;
@@ -19984,7 +20141,8 @@ food:Pods a :Food ;
         <http://dbpedia.org/resource/Category:Vegetarian_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Legume> .
 
-food:RedPepper a :Food ;
+food:RedPepper a :Food,
+        skos:Concept ;
     rdfs:label "Capsicum"@en,
         "Chili pepper"@en,
         "Capsicum"@fr,
@@ -20015,7 +20173,8 @@ food:RedPepper a :Food ;
     owl:sameAs <http://dbpedia.org/resource/Capsicum>,
         <http://dbpedia.org/resource/Chili_pepper> .
 
-food:RedWine a :Food ;
+food:RedWine a :Food,
+        skos:Concept ;
     rdfs:label "Red wine"@en,
         "Vin rouge"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Red_Wine_Glass.jpg?width=300> ;
@@ -20023,7 +20182,8 @@ food:RedWine a :Food ;
         <http://dbpedia.org/resource/Category:Shades_of_red> ;
     owl:sameAs <http://dbpedia.org/resource/Red_wine> .
 
-food:Seeds a :Food ;
+food:Seeds a :Food,
+        skos:Concept ;
     rdfs:label "Seed"@en,
         "Graine"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Разнообразие_семян.jpg?width=300> ;
@@ -20033,7 +20193,8 @@ food:Seeds a :Food ;
         <http://dbpedia.org/resource/Category:Seeds> ;
     owl:sameAs <http://dbpedia.org/resource/Seed> .
 
-food:Shrimp a :Food ;
+food:Shrimp a :Food,
+        skos:Concept ;
     rdfs:label "Shrimp"@en,
         "Crevette"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Palaemon_serratus_Croazia.jpg?width=300> ;
@@ -20044,7 +20205,8 @@ food:Shrimp a :Food ;
         <http://dbpedia.org/resource/Category:Seafood> ;
     owl:sameAs <http://dbpedia.org/resource/Shrimp> .
 
-food:SodaWater a :Food ;
+food:SodaWater a :Food,
+        skos:Concept ;
     rdfs:label "Carbonated water"@en,
         "Eau gazeuse"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Drinking_glass_00118.gif?width=300> ;
@@ -20058,7 +20220,8 @@ food:SodaWater a :Food ;
         <http://dbpedia.org/resource/Category:Soft_drinks> ;
     owl:sameAs <http://dbpedia.org/resource/Carbonated_water> .
 
-food:Spice a :Food ;
+food:Spice a :Food,
+        skos:Concept ;
     rdfs:label "Spice"@en,
         "Épice"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Spices1.jpg?width=300> ;
@@ -20066,7 +20229,8 @@ food:Spice a :Food ;
         <http://dbpedia.org/resource/Category:Spices> ;
     owl:sameAs <http://dbpedia.org/resource/Spice> .
 
-food:Basil a :Food ;
+food:Basil a :Food,
+        skos:Concept ;
     rdfs:label "Basil"@en,
         "Basilic (plante)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Basil-Basilico-Ocimum_basilicum-albahaca.jpg?width=300> ;
@@ -20082,7 +20246,8 @@ food:Basil a :Food ;
         <http://dbpedia.org/resource/Category:Taxa_named_by_Carl_Linnaeus> ;
     owl:sameAs <http://dbpedia.org/resource/Basil> .
 
-food:Beef a :Food ;
+food:Beef a :Food,
+        skos:Concept ;
     rdfs:label "Beef"@en,
         "Viande bovine"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Standing-rib-roast.jpg?width=300> ;
@@ -20091,7 +20256,8 @@ food:Beef a :Food ;
         <http://dbpedia.org/resource/Category:Meat_by_animal> ;
     owl:sameAs <http://dbpedia.org/resource/Beef> .
 
-food:Cabbage a :Food ;
+food:Cabbage a :Food,
+        skos:Concept ;
     rdfs:label "Cabbage"@en,
         "Chou commun"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cabbage_and_cross_section_on_white.jpg?width=300> ;
@@ -20102,7 +20268,8 @@ food:Cabbage a :Food ;
         <http://dbpedia.org/resource/Category:Medicinal_plants> ;
     owl:sameAs <http://dbpedia.org/resource/Cabbage> .
 
-food:CarawaySeed a :Food ;
+food:CarawaySeed a :Food,
+        skos:Concept ;
     rdfs:label "Caraway"@en,
         "Carvi"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Carum_carvi_-_Köhler–s_Medizinal-Pflanzen-172.jpg?width=300> ;
@@ -20120,7 +20287,8 @@ food:CarawaySeed a :Food ;
         <http://dbpedia.org/resource/Category:Taxa_named_by_Carl_Linnaeus> ;
     owl:sameAs <http://dbpedia.org/resource/Caraway> .
 
-food:GarlicPowder a :Food ;
+food:GarlicPowder a :Food,
+        skos:Concept ;
     rdfs:label "Garlic powder"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Masterfoods_Garlic_Powder.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Garlic>,
@@ -20128,7 +20296,8 @@ food:GarlicPowder a :Food ;
         <http://dbpedia.org/resource/Category:Spices> ;
     owl:sameAs <http://dbpedia.org/resource/Garlic_powder> .
 
-food:Green a :Food ;
+food:Green a :Food,
+        skos:Concept ;
     rdfs:label "Green"@en,
         "Vert"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Spanish_jewellery-Gold_and_emerald_pendant_at_VAM-01.jpg?width=300> ;
@@ -20140,7 +20309,8 @@ food:Green a :Food ;
         <http://dbpedia.org/resource/Category:Web_colors> ;
     owl:sameAs <http://dbpedia.org/resource/Green> .
 
-food:HeavyCream a :Food ;
+food:HeavyCream a :Food,
+        skos:Concept ;
     rdfs:label "Cream"@en,
         "Crème (produit laitier)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Milk-bottle.jpg?width=300> ;
@@ -20148,7 +20318,8 @@ food:HeavyCream a :Food ;
         <http://dbpedia.org/resource/Category:Dairy_products> ;
     owl:sameAs <http://dbpedia.org/resource/Cream> .
 
-food:Jello a :Food ;
+food:Jello a :Food,
+        skos:Concept ;
     rdfs:label "Jell-O"@en,
         "Jell-O"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Jello_brand_logo.png?width=300> ;
@@ -20165,7 +20336,8 @@ food:Jello a :Food ;
         <http://dbpedia.org/resource/Category:Utah_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Jell-O> .
 
-food:MandarinOranges a :Food ;
+food:MandarinOranges a :Food,
+        skos:Concept ;
     rdfs:label "Mandarin orange"@en,
         "Mandarinier"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Citrus_reticulata_April_2013_Nordbaden.jpg?width=300> ;
@@ -20179,7 +20351,8 @@ food:MandarinOranges a :Food ;
         <http://dbpedia.org/resource/Category:Sinterklaas_food> ;
     owl:sameAs <http://dbpedia.org/resource/Mandarin_orange> .
 
-food:Marshmallows a :Food ;
+food:Marshmallows a :Food,
+        skos:Concept ;
     rdfs:label "Marshmallow"@en,
         "Guimauve (confiserie)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/White_Marshmallows.jpg?width=300> ;
@@ -20190,7 +20363,8 @@ food:Marshmallows a :Food ;
         <http://dbpedia.org/resource/Category:Sugar_confectionery> ;
     owl:sameAs <http://dbpedia.org/resource/Marshmallow> .
 
-food:Prunes a :Food ;
+food:Prunes a :Food,
+        skos:Concept ;
     rdfs:label "Prune"@en,
         "Pruneau"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Rosales_-_Dried_Prunus_domestica_d.jpg?width=300> ;
@@ -20199,7 +20373,8 @@ food:Prunes a :Food ;
         <http://dbpedia.org/resource/Category:Plums> ;
     owl:sameAs <http://dbpedia.org/resource/Prune> .
 
-food:Sauce a :Food ;
+food:Sauce a :Food,
+        skos:Concept ;
     rdfs:label "Sauce"@en,
         "Sauce"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Lunch_sauces.jpg?width=300> ;
@@ -20207,7 +20382,8 @@ food:Sauce a :Food ;
         <http://dbpedia.org/resource/Category:Sauces> ;
     owl:sameAs <http://dbpedia.org/resource/Sauce> .
 
-food:SourMilk a :Food ;
+food:SourMilk a :Food,
+        skos:Concept ;
     rdfs:label "Soured milk"@en,
         "Lait fermenté"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Latte_025.jpg?width=300> ;
@@ -20216,7 +20392,8 @@ food:SourMilk a :Food ;
         <http://dbpedia.org/resource/Category:Russian_drinks> ;
     owl:sameAs <http://dbpedia.org/resource/Soured_milk> .
 
-food:Bean a :Food ;
+food:Bean a :Food,
+        skos:Concept ;
     rdfs:label "Bean"@en,
         "Haricot (homonymie)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/French_beans_J1.jpg?width=300> ;
@@ -20229,7 +20406,8 @@ food:Bean a :Food ;
         <http://dbpedia.org/resource/Category:Vegetarian_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Bean> .
 
-food:Coconut a :Food ;
+food:Coconut a :Food,
+        skos:Concept ;
     rdfs:label "Coconut"@en,
         "Cocotier"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cocos_nucifera_-_Köhler–s_Medizinal-Pflanzen-187.jpg?width=300> ;
@@ -20270,7 +20448,8 @@ food:Coconut a :Food ;
         <http://dbpedia.org/resource/Category:Tropical_fruit> ;
     owl:sameAs <http://dbpedia.org/resource/Coconut> .
 
-food:CornSyrup a :Food ;
+food:CornSyrup a :Food,
+        skos:Concept ;
     rdfs:label "Corn syrup"@en,
         "Sirop de maïs"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Corn_syrup.jpg?width=300> ;
@@ -20281,7 +20460,8 @@ food:CornSyrup a :Food ;
         <http://dbpedia.org/resource/Category:Syrup> ;
     owl:sameAs <http://dbpedia.org/resource/Corn_syrup> .
 
-food:Gelatin a :Food ;
+food:Gelatin a :Food,
+        skos:Concept ;
     rdfs:label "Gelatin"@en,
         "Gélatine"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Gelatine.png?width=300> ;
@@ -20296,7 +20476,8 @@ food:Gelatin a :Food ;
         <http://dbpedia.org/resource/Category:Structural_proteins> ;
     owl:sameAs <http://dbpedia.org/resource/Gelatin> .
 
-food:Grated a :Food ;
+food:Grated a :Food,
+        skos:Concept ;
     rdfs:label "Grater"@en,
         "Râpe (ustensile)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cheese_grater.jpg?width=300> ;
@@ -20304,7 +20485,8 @@ food:Grated a :Food ;
         <http://dbpedia.org/resource/Category:French_inventions> ;
     owl:sameAs <http://dbpedia.org/resource/Grater> .
 
-food:OliveOil a :Food ;
+food:OliveOil a :Food,
+        skos:Concept ;
     rdfs:label "Olive oil"@en,
         "Huile d'olive"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Oliven_V1.jpg?width=300> ;
@@ -20315,7 +20497,8 @@ food:OliveOil a :Food ;
         <http://dbpedia.org/resource/Category:Vegetable_oils> ;
     owl:sameAs <http://dbpedia.org/resource/Olive_oil> .
 
-food:Pie a :Food ;
+food:Pie a :Food,
+        skos:Concept ;
     rdfs:label "Pie"@en,
         "Tourte (plat)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Tarte_aux_poires_2a.jpg?width=300> ;
@@ -20323,7 +20506,8 @@ food:Pie a :Food ;
         <http://dbpedia.org/resource/Category:Types_of_food> ;
     owl:sameAs <http://dbpedia.org/resource/Pie> .
 
-food:Steak a :Food ;
+food:Steak a :Food,
+        skos:Concept ;
     rdfs:label "Steak"@en,
         "Steak"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Beef_fillet_steak_with_mushrooms.jpg?width=300> ;
@@ -20337,7 +20521,8 @@ food:Steak a :Food ;
         <http://dbpedia.org/resource/Category:Steak> ;
     owl:sameAs <http://dbpedia.org/resource/Steak> .
 
-food:SwissCheese a :Food ;
+food:SwissCheese a :Food,
+        skos:Concept ;
     rdfs:label "Swiss cheese (North America)"@en,
         "Fromage suisse (Amérique du Nord)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Swiss_cheese_cubes.jpg?width=300> ;
@@ -20346,7 +20531,8 @@ food:SwissCheese a :Food ;
         <http://dbpedia.org/resource/Category:Cow's-milk_cheeses> ;
     owl:sameAs <http://dbpedia.org/resource/Swiss_cheese_(North_America)> .
 
-food:Wine a :Food ;
+food:Wine a :Food,
+        skos:Concept ;
     rdfs:label "Wine"@en,
         "Vin"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Red_and_white_wine_12-2015.jpg?width=300> ;
@@ -20358,7 +20544,8 @@ food:Wine a :Food ;
         <http://dbpedia.org/resource/Category:Wine> ;
     owl:sameAs <http://dbpedia.org/resource/Wine> .
 
-food:Buttermilk a :Food ;
+food:Buttermilk a :Food,
+        skos:Concept ;
     rdfs:label "Buttermilk"@en,
         "Babeurre"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Buttermilk-(right)-and-Milk-(left).jpg?width=300> ;
@@ -20370,7 +20557,8 @@ food:Buttermilk a :Food ;
         <http://dbpedia.org/resource/Category:Ukrainian_drinks> ;
     owl:sameAs <http://dbpedia.org/resource/Buttermilk> .
 
-food:ChiliPowder a :Food ;
+food:ChiliPowder a :Food,
+        skos:Concept ;
     rdfs:label "Chili powder"@en,
         "Chili (mélange d'épices)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/BolivianChilePowder2.jpg?width=300> ;
@@ -20380,7 +20568,8 @@ food:ChiliPowder a :Food ;
         <http://dbpedia.org/resource/Category:Spices> ;
     owl:sameAs <http://dbpedia.org/resource/Chili_powder> .
 
-food:ChocolateChips a :Food ;
+food:ChocolateChips a :Food,
+        skos:Concept ;
     rdfs:label "Chocolate chip"@en,
         "Pépite de chocolat"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Semi-sweet_chocolate_chips.jpg?width=300> ;
@@ -20388,7 +20577,8 @@ food:ChocolateChips a :Food ;
         <http://dbpedia.org/resource/Category:Food_ingredients> ;
     owl:sameAs <http://dbpedia.org/resource/Chocolate_chip> .
 
-food:Cocoa a :Food ;
+food:Cocoa a :Food,
+        skos:Concept ;
     rdfs:label "Cocoa bean"@en,
         "Fève de cacao"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cocoa_Pods.jpg?width=300> ;
@@ -20409,7 +20599,8 @@ food:Cocoa a :Food ;
         <http://dbpedia.org/resource/Category:Tropical_fruit> ;
     owl:sameAs <http://dbpedia.org/resource/Cocoa_bean> .
 
-food:Cumin a :Food ;
+food:Cumin a :Food,
+        skos:Concept ;
     rdfs:label "Cumin"@en,
         "Cumin"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cuminum_cyminum_-_Köhler–s_Medizinal-Pflanzen-198.jpg?width=300> ;
@@ -20419,7 +20610,8 @@ food:Cumin a :Food ;
         <http://dbpedia.org/resource/Category:Spices> ;
     owl:sameAs <http://dbpedia.org/resource/Cumin> .
 
-food:TomatoSauce a :Food ;
+food:TomatoSauce a :Food,
+        skos:Concept ;
     rdfs:label "Tomato sauce"@en,
         "Sauce tomate"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Fresh_Tomato_Sauce_(Unsplash).jpg?width=300> ;
@@ -20429,7 +20621,8 @@ food:TomatoSauce a :Food ;
         <http://dbpedia.org/resource/Category:Tomato_sauces> ;
     owl:sameAs <http://dbpedia.org/resource/Tomato_sauce> .
 
-food:Cloves a :Food ;
+food:Cloves a :Food,
+        skos:Concept ;
     rdfs:label "Clove"@en,
         "Clou de girofle"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Syzygium_aromaticum_-_Köhler–s_Medizinal-Pflanzen-030.jpg?width=300> ;
@@ -20442,7 +20635,8 @@ food:Cloves a :Food ;
         <http://dbpedia.org/resource/Category:Syzygium> ;
     owl:sameAs <http://dbpedia.org/resource/Clove> .
 
-food:CreamCheese a :Food ;
+food:CreamCheese a :Food,
+        skos:Concept ;
     rdfs:label "Cream cheese"@en,
         "Fromage à la crème"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Philly_cream_cheese.jpg?width=300> ;
@@ -20450,7 +20644,8 @@ food:CreamCheese a :Food ;
         <http://dbpedia.org/resource/Category:Sour_foods> ;
     owl:sameAs <http://dbpedia.org/resource/Cream_cheese> .
 
-food:Hamburger a :Food ;
+food:Hamburger a :Food,
+        skos:Concept ;
     rdfs:label "Hamburger"@en,
         "Hamburger"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Hamburger_(black_bg).jpg?width=300> ;
@@ -20466,7 +20661,8 @@ food:Hamburger a :Food ;
         <http://dbpedia.org/resource/Category:National_dishes> ;
     owl:sameAs <http://dbpedia.org/resource/Hamburger> .
 
-food:Paprika a :Food ;
+food:Paprika a :Food,
+        skos:Concept ;
     rdfs:label "Paprika"@en,
         "Paprika"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pimentón_Tap_de_Cortí_(cropped).jpg?width=300> ;
@@ -20486,7 +20682,8 @@ food:Paprika a :Food ;
         <http://dbpedia.org/resource/Category:Turkish_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Paprika> .
 
-food:Sliced a :Food ;
+food:Sliced a :Food,
+        skos:Concept ;
     rdfs:label "Sliced bread"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Fresh_made_bread_05.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Breads>,
@@ -20495,7 +20692,8 @@ food:Sliced a :Food ;
         <http://dbpedia.org/resource/Category:Sliced_foods> ;
     owl:sameAs <http://dbpedia.org/resource/Sliced_bread> .
 
-food:ChickenBroth a :Food ;
+food:ChickenBroth a :Food,
+        skos:Concept ;
     rdfs:label "Broth"@en,
         "Bouillon (cuisine)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Broth_hg.jpg?width=300> ;
@@ -20504,7 +20702,8 @@ food:ChickenBroth a :Food ;
         <http://dbpedia.org/resource/Category:Stock_(food)> ;
     owl:sameAs <http://dbpedia.org/resource/Broth> .
 
-food:Raisins a :Food ;
+food:Raisins a :Food,
+        skos:Concept ;
     rdfs:label "Raisin"@en,
         "Raisin sec"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Raisins_01.jpg?width=300> ;
@@ -20512,7 +20711,8 @@ food:Raisins a :Food ;
         <http://dbpedia.org/resource/Category:Raisins> ;
     owl:sameAs <http://dbpedia.org/resource/Raisin> .
 
-food:Rice a :Food ;
+food:Rice a :Food,
+        skos:Concept ;
     rdfs:label "Rice"@en,
         "Riz"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/White,_Brown,_Red_&_Wild_rice.jpg?width=300> ;
@@ -20524,7 +20724,8 @@ food:Rice a :Food ;
         <http://dbpedia.org/resource/Category:Types_of_food> ;
     owl:sameAs <http://dbpedia.org/resource/Rice> .
 
-food:Bacon a :Food ;
+food:Bacon a :Food,
+        skos:Concept ;
     rdfs:label "Bacon"@en,
         "Lard fumé"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Made20bacon.png?width=300> ;
@@ -20532,7 +20733,8 @@ food:Bacon a :Food ;
         <http://dbpedia.org/resource/Category:Breakfast_dishes> ;
     owl:sameAs <http://dbpedia.org/resource/Bacon> .
 
-food:BreadCrumbs a :Food ;
+food:BreadCrumbs a :Food,
+        skos:Concept ;
     rdfs:label "Bread crumbs"@en,
         "Chapelure"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Breadcrumb.jpg?width=300> ;
@@ -20541,7 +20743,8 @@ food:BreadCrumbs a :Food ;
         <http://dbpedia.org/resource/Category:Food_ingredients> ;
     owl:sameAs <http://dbpedia.org/resource/Bread_crumbs> .
 
-food:Broccoli a :Food ;
+food:Broccoli a :Food,
+        skos:Concept ;
     rdfs:label "Broccoli"@en,
         "Brocoli"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Broccoli_and_cross_section_edit.jpg?width=300> ;
@@ -20553,7 +20756,8 @@ food:Broccoli a :Food ;
         <http://dbpedia.org/resource/Category:Italian_words_and_phrases> ;
     owl:sameAs <http://dbpedia.org/resource/Broccoli> .
 
-food:PowderedSugar a :Food ;
+food:PowderedSugar a :Food,
+        skos:Concept ;
     rdfs:label "Powdered sugar"@en,
         "Sucre glace"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Powdered_Sugar_-_Macro.jpg?width=300> ;
@@ -20562,7 +20766,8 @@ food:PowderedSugar a :Food ;
         <http://dbpedia.org/resource/Category:Sugar_substitutes> ;
     owl:sameAs <http://dbpedia.org/resource/Powdered_sugar> .
 
-food:Mayonnaise a :Food ;
+food:Mayonnaise a :Food,
+        skos:Concept ;
     rdfs:label "Mayonnaise"@en,
         "Mayonnaise"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mayonnaise_(1).jpg?width=300> ;
@@ -20575,7 +20780,8 @@ food:Mayonnaise a :Food ;
         <http://dbpedia.org/resource/Category:Spanish_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Mayonnaise> .
 
-food:Nuts a :Food ;
+food:Nuts a :Food,
+        skos:Concept ;
     rdfs:label "Pine nut"@en,
         "Pignon (pin)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pinoli.jpg?width=300> ;
@@ -20584,7 +20790,8 @@ food:Nuts a :Food ;
         <http://dbpedia.org/resource/Category:Plants_used_in_Native_American_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Pine_nut> .
 
-food:Sherry a :Food ;
+food:Sherry a :Food,
+        skos:Concept ;
     rdfs:label "Sherry"@en,
         "Xérès (DO)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/DO_Jerez_location.svg?width=300> ;
@@ -20598,7 +20805,8 @@ food:Sherry a :Food ;
         <http://dbpedia.org/resource/Category:Wine_regions_of_Spain> ;
     owl:sameAs <http://dbpedia.org/resource/Sherry> .
 
-food:Soda a :Food ;
+food:Soda a :Food,
+        skos:Concept ;
     rdfs:label "Soft drink"@en,
         "Soda"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Tumbler_of_cola_with_ice.jpg?width=300> ;
@@ -20606,7 +20814,8 @@ food:Soda a :Food ;
         <http://dbpedia.org/resource/Category:Soft_drinks> ;
     owl:sameAs <http://dbpedia.org/resource/Soft_drink> .
 
-food:GreenOnions a :Food ;
+food:GreenOnions a :Food,
+        skos:Concept ;
     rdfs:label "Scallion"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/CSA-Red-Spring-Onions.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Asian_vegetables>,
@@ -20615,7 +20824,8 @@ food:GreenOnions a :Food ;
         <http://dbpedia.org/resource/Category:Onions> ;
     owl:sameAs <http://dbpedia.org/resource/Scallion> .
 
-food:Oregano a :Food ;
+food:Oregano a :Food,
+        skos:Concept ;
     rdfs:label "Oregano"@en,
         "Origan"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Origanum_vulgare_-_harilik_pune.jpg?width=300> ;
@@ -20630,7 +20840,8 @@ food:Oregano a :Food ;
         <http://dbpedia.org/resource/Category:Plants_described_in_1753> ;
     owl:sameAs <http://dbpedia.org/resource/Oregano> .
 
-food:Celery a :Food ;
+food:Celery a :Food,
+        skos:Concept ;
     rdfs:label "Celery"@en,
         "Céleri"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Illustration_Apium_graveolens0.jpg?width=300> ;
@@ -20646,7 +20857,8 @@ food:Celery a :Food ;
         <http://dbpedia.org/resource/Category:Taxa_named_by_Carl_Linnaeus> ;
     owl:sameAs <http://dbpedia.org/resource/Celery> .
 
-food:Parsley a :Food ;
+food:Parsley a :Food,
+        skos:Concept ;
     rdfs:label "Parsley"@en,
         "Persil"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Petroselinum.jpg?width=300> ;
@@ -20659,14 +20871,16 @@ food:Parsley a :Food ;
         <http://dbpedia.org/resource/Category:Root_vegetables> ;
     owl:sameAs <http://dbpedia.org/resource/Parsley> .
 
-food:Shortening a :Food ;
+food:Shortening a :Food,
+        skos:Concept ;
     rdfs:label "Shortening"@en,
         "Graisse alimentaire"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Strutto.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Cooking_fats> ;
     owl:sameAs <http://dbpedia.org/resource/Shortening> .
 
-food:Zucchini a :Food ;
+food:Zucchini a :Food,
+        skos:Concept ;
     rdfs:label "Zucchini"@en,
         "Courgette"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/CSA-Striped-Zucchini.jpg?width=300> ;
@@ -20674,7 +20888,8 @@ food:Zucchini a :Food ;
         <http://dbpedia.org/resource/Category:Squashes_and_pumpkins> ;
     owl:sameAs <http://dbpedia.org/resource/Zucchini> .
 
-food:VegetableOil a :Food ;
+food:VegetableOil a :Food,
+        skos:Concept ;
     rdfs:label "Vegetable oil"@en,
         "Huile végétale"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Olive_oil_from_Oneglia.jpg?width=300> ;
@@ -20682,7 +20897,8 @@ food:VegetableOil a :Food ;
         <http://dbpedia.org/resource/Category:Vegetable_oils> ;
     owl:sameAs <http://dbpedia.org/resource/Vegetable_oil> .
 
-food:Pineapple a :Food ;
+food:Pineapple a :Food,
+        skos:Concept ;
     rdfs:label "Pineapple"@en,
         "Ananas"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/കൈതച്ചക്ക.jpg?width=300> ;
@@ -20700,7 +20916,8 @@ food:Pineapple a :Food ;
         <http://dbpedia.org/resource/Category:Tropical_fruit> ;
     owl:sameAs <http://dbpedia.org/resource/Pineapple> .
 
-food:Tomatoes a :Food ;
+food:Tomatoes a :Food,
+        skos:Concept ;
     rdfs:label "Tomato"@en,
         "Tomate"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Tomato_je.jpg?width=300> ;
@@ -20715,7 +20932,8 @@ food:Tomatoes a :Food ;
         <http://dbpedia.org/resource/Category:Tomatoes> ;
     owl:sameAs <http://dbpedia.org/resource/Tomato> .
 
-food:Walnuts a :Food ;
+food:Walnuts a :Food,
+        skos:Concept ;
     rdfs:label "Walnut"@en,
         "Noix"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Walnuts_-_whole_and_open_with_halved_kernel.jpg?width=300> ;
@@ -20726,7 +20944,8 @@ food:Walnuts a :Food ;
         <http://dbpedia.org/resource/Category:Symbols_of_California> ;
     owl:sameAs <http://dbpedia.org/resource/Walnut> .
 
-food:BakingSoda a :Food ;
+food:BakingSoda a :Food,
+        skos:Concept ;
     rdfs:label "Sodium bicarbonate"@en,
         "Bicarbonate de sodium"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Sodium_bicarbonate.jpg?width=300> ;
@@ -20744,7 +20963,8 @@ food:BakingSoda a :Food ;
         <http://dbpedia.org/resource/Category:Sodium_compounds> ;
     owl:sameAs <http://dbpedia.org/resource/Sodium_bicarbonate> .
 
-food:Mushrooms a :Food ;
+food:Mushrooms a :Food,
+        skos:Concept ;
     rdfs:label "Mushroom"@en,
         "Champignon"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Amanita_muscaria_(fly_agaric).jpg?width=300> ;
@@ -20755,7 +20975,8 @@ food:Mushrooms a :Food ;
         <http://dbpedia.org/resource/Category:Non-timber_forest_products> ;
     owl:sameAs <http://dbpedia.org/resource/Mushroom> .
 
-food:Nutmeg a :Food ;
+food:Nutmeg a :Food,
+        skos:Concept ;
     rdfs:label "Nutmeg"@en,
         "Noix de muscade"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Biji_Pala_Bubuk.jpg?width=300> ;
@@ -20768,7 +20989,8 @@ food:Nutmeg a :Food ;
         <http://dbpedia.org/resource/Category:Spices> ;
     owl:sameAs <http://dbpedia.org/resource/Nutmeg> .
 
-food:Vinegar a :Food ;
+food:Vinegar a :Food,
+        skos:Concept ;
     rdfs:label "Vinegar"@en,
         "Vinaigre"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Eguilles_20110828_14.jpg?width=300> ;
@@ -20778,7 +21000,8 @@ food:Vinegar a :Food ;
         <http://dbpedia.org/resource/Category:Vinegar> ;
     owl:sameAs <http://dbpedia.org/resource/Vinegar> .
 
-food:Carrot a :Food ;
+food:Carrot a :Food,
+        skos:Concept ;
     rdfs:label "Carrot"@en,
         "Carotte"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Vegetable-Carrot-Bundle-wStalks.jpg?width=300> ;
@@ -20792,7 +21015,8 @@ food:Carrot a :Food ;
         <http://dbpedia.org/resource/Category:Root_vegetables> ;
     owl:sameAs <http://dbpedia.org/resource/Carrot> .
 
-food:Ketchup a :Food ;
+food:Ketchup a :Food,
+        skos:Concept ;
     rdfs:label "Ketchup"@en,
         "Ketchup"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Ketchup_20160918_181342_(cropped).jpg?width=300> ;
@@ -20803,7 +21027,8 @@ food:Ketchup a :Food ;
         <http://dbpedia.org/resource/Category:Sauces> ;
     owl:sameAs <http://dbpedia.org/resource/Ketchup> .
 
-food:LemonJuice a :Food ;
+food:LemonJuice a :Food,
+        skos:Concept ;
     rdfs:label "Lemon"@en,
         "Citronnier"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/P1030323.jpg?width=300> ;
@@ -20815,7 +21040,8 @@ food:LemonJuice a :Food ;
         <http://dbpedia.org/resource/Category:Tropical_agriculture> ;
     owl:sameAs <http://dbpedia.org/resource/Lemon> .
 
-food:GreenPepper a :Food ;
+food:GreenPepper a :Food,
+        skos:Concept ;
     rdfs:label "Bell pepper"@en,
         "Poivron"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Green-Yellow-Red-Pepper-2009.jpg?width=300> ;
@@ -20826,7 +21052,8 @@ food:GreenPepper a :Food ;
         <http://dbpedia.org/resource/Category:Romani_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Bell_pepper> .
 
-food:BakingPowder a :Food ;
+food:BakingPowder a :Food,
+        skos:Concept ;
     rdfs:label "Baking powder"@en,
         "Levure chimique"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/BakingPowder.jpg?width=300> ;
@@ -20834,7 +21061,8 @@ food:BakingPowder a :Food ;
         <http://dbpedia.org/resource/Category:Leavening_agents> ;
     owl:sameAs <http://dbpedia.org/resource/Baking_powder> .
 
-food:Margarine a :Food ;
+food:Margarine a :Food,
+        skos:Concept ;
     rdfs:label "Margarine"@en,
         "Margarine"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Margarine.jpg?width=300> ;
@@ -20846,7 +21074,8 @@ food:Margarine a :Food ;
         <http://dbpedia.org/resource/Category:Spreads_(food)> ;
     owl:sameAs <http://dbpedia.org/resource/Margarine> .
 
-food:Pork a :Food ;
+food:Pork a :Food,
+        skos:Concept ;
     rdfs:label "Pork"@en,
         "Porc (viande)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Schweinebauch-2.jpg?width=300> ;
@@ -20856,7 +21085,8 @@ food:Pork a :Food ;
         <http://dbpedia.org/resource/Category:Pork_dishes> ;
     owl:sameAs <http://dbpedia.org/resource/Pork> .
 
-food:Ginger a :Food ;
+food:Ginger a :Food,
+        skos:Concept ;
     rdfs:label "Ginger"@en,
         "Gingembre"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Koeh-146-no_text.jpg?width=300> ;
@@ -20868,7 +21098,8 @@ food:Ginger a :Food ;
         <http://dbpedia.org/resource/Category:Zingiber> ;
     owl:sameAs <http://dbpedia.org/resource/Ginger> .
 
-food:Oil a :Food ;
+food:Oil a :Food,
+        skos:Concept ;
     rdfs:label "Oil"@en,
         "Huile"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Italian_olive_oil_2007.jpg?width=300> ;
@@ -20876,7 +21107,8 @@ food:Oil a :Food ;
         <http://dbpedia.org/resource/Category:Oils> ;
     owl:sameAs <http://dbpedia.org/resource/Oil> .
 
-food:Milk a :Food ;
+food:Milk a :Food,
+        skos:Concept ;
     rdfs:label "Milk"@en,
         "Lait"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Glass_of_Milk_(33657535532).jpg?width=300> ;
@@ -20885,7 +21117,8 @@ food:Milk a :Food ;
         <http://dbpedia.org/resource/Category:Non-alcoholic_drinks> ;
     owl:sameAs <http://dbpedia.org/resource/Milk> .
 
-food:BrownSugar a :Food ;
+food:BrownSugar a :Food,
+        skos:Concept ;
     rdfs:label "Brown sugar"@en,
         "Vergeoise"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Brown_sugar_crystals.jpg?width=300> ;
@@ -20893,7 +21126,8 @@ food:BrownSugar a :Food ;
         <http://dbpedia.org/resource/Category:Sugar> ;
     owl:sameAs <http://dbpedia.org/resource/Brown_sugar> .
 
-food:Garlic a :Food ;
+food:Garlic a :Food,
+        skos:Concept ;
     rdfs:label "Garlic"@en,
         "Ail cultivé"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Allium_sativum_Woodwill_1793.jpg?width=300> ;
@@ -20909,7 +21143,8 @@ food:Garlic a :Food ;
         <http://dbpedia.org/resource/Category:Spices> ;
     owl:sameAs <http://dbpedia.org/resource/Garlic> .
 
-food:Cinnamon a :Food ;
+food:Cinnamon a :Food,
+        skos:Concept ;
     rdfs:label "Cinnamon"@en,
         "Cannelle"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cinnamomum_verum_spices.jpg?width=300> ;
@@ -20924,7 +21159,8 @@ food:Cinnamon a :Food ;
         <http://dbpedia.org/resource/Category:Sri_Lankan_spices> ;
     owl:sameAs <http://dbpedia.org/resource/Cinnamon> .
 
-food:SoySauce a :Food ;
+food:SoySauce a :Food,
+        skos:Concept ;
     rdfs:label "Soy sauce"@en,
         "Sauce de soja"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Soy_sauce_2.jpg?width=300> ;
@@ -20943,7 +21179,8 @@ food:SoySauce a :Food ;
         <http://dbpedia.org/resource/Category:Umami_enhancers> ;
     owl:sameAs <http://dbpedia.org/resource/Soy_sauce> .
 
-food:Vanilla a :Food ;
+food:Vanilla a :Food,
+        skos:Concept ;
     rdfs:label "Vanilla"@en,
         "Vanille"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Vanilla_planifolia_(6998639597).jpg?width=300> ;
@@ -20958,7 +21195,8 @@ food:Vanilla a :Food ;
         <http://dbpedia.org/resource/Category:Vanilla> ;
     owl:sameAs <http://dbpedia.org/resource/Vanilla> .
 
-food:Cornstarch a :Food ;
+food:Cornstarch a :Food,
+        skos:Concept ;
     rdfs:label "Corn starch"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cornstarch_mixed_with_water.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:1840_introductions>,
@@ -20967,7 +21205,8 @@ food:Cornstarch a :Food ;
         <http://dbpedia.org/resource/Category:Starch> ;
     owl:sameAs <http://dbpedia.org/resource/Corn_starch> .
 
-food:Spinach a :Food ;
+food:Spinach a :Food,
+        skos:Concept ;
     rdfs:label "Spinach"@en,
         "Spinacia"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Spinacia_oleracea_Spinazie_bloeiend.jpg?width=300> ;
@@ -20978,7 +21217,8 @@ food:Spinach a :Food ;
         <http://dbpedia.org/resource/Category:Spinach> ;
     owl:sameAs <http://dbpedia.org/resource/Spinach> .
 
-food:Chicken a :Food ;
+food:Chicken a :Food,
+        skos:Concept ;
     rdfs:label "Chicken"@en,
         "Chicken as food"@en,
         "Poulet"@fr ;
@@ -21000,7 +21240,8 @@ food:Chicken a :Food ;
     owl:sameAs <http://dbpedia.org/resource/Chicken>,
         <http://dbpedia.org/resource/Chicken_as_food> .
 
-food:Cheese a :Food ;
+food:Cheese a :Food,
+        skos:Concept ;
     rdfs:label "Cheese"@en,
         "Fromage"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cheese_(1105942243).jpg?width=300> ;
@@ -21012,7 +21253,8 @@ food:Cheese a :Food ;
         <http://dbpedia.org/resource/Category:Types_of_food> ;
     owl:sameAs <http://dbpedia.org/resource/Cheese> .
 
-food:Eggs a :Food ;
+food:Eggs a :Food,
+        skos:Concept ;
     rdfs:label "Egg"@en,
         "Egg as food"@en,
         "Œuf (aliment)"@fr ;
@@ -21029,7 +21271,8 @@ food:Eggs a :Food ;
     owl:sameAs <http://dbpedia.org/resource/Egg>,
         <http://dbpedia.org/resource/Egg_as_food> .
 
-food:Hashbrowns a :Food ;
+food:Hashbrowns a :Food,
+        skos:Concept ;
     rdfs:label "Hash browns"@en ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mmm..._sliders_and_deep_fried_hash_browns_(7958927842).jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Deep_fried_foods>,
@@ -21037,7 +21280,8 @@ food:Hashbrowns a :Food ;
         <http://dbpedia.org/resource/Category:Potato_pancakes> ;
     owl:sameAs <http://dbpedia.org/resource/Hash_browns> .
 
-food:Teaspoon a :Food ;
+food:Teaspoon a :Food,
+        skos:Concept ;
     rdfs:label "Teaspoon"@en,
         "Cuillère à café"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Loeffel_03.jpg?width=300> ;
@@ -21051,7 +21295,8 @@ food:Teaspoon a :Food ;
         <http://dbpedia.org/resource/Category:Units_of_volume> ;
     owl:sameAs <http://dbpedia.org/resource/Teaspoon> .
 
-food:Flour a :Food ;
+food:Flour a :Food,
+        skos:Concept ;
     rdfs:label "Flour"@en,
         "Farine"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Flours.jpg?width=300> ;
@@ -21061,7 +21306,8 @@ food:Flour a :Food ;
         <http://dbpedia.org/resource/Category:Wheat> ;
     owl:sameAs <http://dbpedia.org/resource/Flour> .
 
-food:Sugar a :Food ;
+food:Sugar a :Food,
+        skos:Concept ;
     rdfs:label "Sugar"@en,
         "Sucre"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Sucre_blanc_cassonade_complet_rapadura.jpg?width=300> ;
@@ -21071,7 +21317,8 @@ food:Sugar a :Food ;
         <http://dbpedia.org/resource/Category:Sugar> ;
     owl:sameAs <http://dbpedia.org/resource/Sugar> .
 
-food:Water a :Food ;
+food:Water a :Food,
+        skos:Concept ;
     rdfs:label "Water"@en,
         "Eau"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Water_drop_001.jpg?width=300> ;
@@ -21086,7 +21333,8 @@ food:Water a :Food ;
         <http://dbpedia.org/resource/Category:Water> ;
     owl:sameAs <http://dbpedia.org/resource/Water> .
 
-food:Soup a :Food ;
+food:Soup a :Food,
+        skos:Concept ;
     rdfs:label "Soup"@en,
         "Soupe"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Hungarian_goulash_soup.jpg?width=300> ;
@@ -21096,7 +21344,8 @@ food:Soup a :Food ;
         <http://dbpedia.org/resource/Category:World_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Soup> .
 
-food:Cornflakes a :Food ;
+food:Cornflakes a :Food,
+        skos:Concept ;
     rdfs:label "Corn flakes"@en,
         "Flocon de maïs"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Kellogg's_Corn_Flakes,_with_milk.jpg?width=300> ;
@@ -21108,7 +21357,8 @@ food:Cornflakes a :Food ;
         <http://dbpedia.org/resource/Category:Products_introduced_in_1906> ;
     owl:sameAs <http://dbpedia.org/resource/Corn_flakes> .
 
-food:CheddarCheese a :Food ;
+food:CheddarCheese a :Food,
+        skos:Concept ;
     rdfs:label "Cheddar cheese"@en,
         "Cheddar (fromage)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/MidSomerset_Show_170803.jpg?width=300> ;
@@ -21120,7 +21370,8 @@ food:CheddarCheese a :Food ;
         <http://dbpedia.org/resource/Category:Somerset_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Cheddar_cheese> .
 
-food:Onion a :Food ;
+food:Onion a :Food,
+        skos:Concept ;
     rdfs:label "Onion"@en,
         "Oignon"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mixed_onions.jpg?width=300> ;
@@ -21143,7 +21394,8 @@ food:Onion a :Food ;
         <http://dbpedia.org/resource/Category:Root_vegetables> ;
     owl:sameAs <http://dbpedia.org/resource/Onion> .
 
-food:SourCream a :Food ;
+food:SourCream a :Food,
+        skos:Concept ;
     rdfs:label "Sour cream"@en,
         "Crème aigre"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Bowl_of_chili_with_sour_cream_and_cheese.jpg?width=300> ;
@@ -21164,7 +21416,8 @@ food:SourCream a :Food ;
         <http://dbpedia.org/resource/Category:Western_cuisine> ;
     owl:sameAs <http://dbpedia.org/resource/Sour_cream> .
 
-food:Pepper a :Food ;
+food:Pepper a :Food,
+        skos:Concept ;
     rdfs:label "Black pepper"@en,
         "Poivrier noir"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Piper_nigrum_-_Köhler–s_Medizinal-Pflanzen-107.jpg?width=300> ;
@@ -21180,7 +21433,8 @@ food:Pepper a :Food ;
         <http://dbpedia.org/resource/Category:Spices> ;
     owl:sameAs <http://dbpedia.org/resource/Black_pepper> .
 
-food:Salt a :Food ;
+food:Salt a :Food,
+        skos:Concept ;
     rdfs:label "Salt"@en,
         "Sel (chimie)"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/DeadSeaIsrael5.jpg?width=300> ;
@@ -21191,7 +21445,8 @@ food:Salt a :Food ;
         <http://dbpedia.org/resource/Category:Sodium_minerals> ;
     owl:sameAs <http://dbpedia.org/resource/Salt> .
 
-food:Butter a :Food ;
+food:Butter a :Food,
+        skos:Concept ;
     rdfs:label "Butter"@en,
         "Beurre"@fr ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Švédský_koláč_naruby_904_(cropped).jpg?width=300> ;
