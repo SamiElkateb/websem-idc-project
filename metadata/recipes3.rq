@@ -6,7 +6,7 @@ CONSTRUCT {
 }
 WHERE {
   ?rec ?p ?divers; :hasIngredient ?x.
-  VALUES ?p {:instructions :name :recipeCategory}
+  VALUES ?p {rdf:type :instructions :name :recipeCategory}
   ?x a :Ingredient; ?y ?z.
   FILTER EXISTS{?x :name ?name}
 }

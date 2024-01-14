@@ -5,9 +5,6 @@ from utils.get_annotations import get_food_item
 
 kw_model = KeyBERT()
 
-g = Graph()
-g.parse("../output/recipes.ttl")
-
 FOOD = Namespace("http://project-kitchenchef.fr/food/data#")
 SCHEMA = Namespace("http://project-kitchenchef.fr/schema#")
 
@@ -19,7 +16,7 @@ def to_pascal_case(text: str):
 added_food = {}
 
 
-def add_food_item(ingredient_name, food_id, dbpedia_uri):
+def add_food_item(g, ingredient_name, food_id, dbpedia_uri):
     q = """
         prefix : <http://project-kitchenchef.fr/schema#>
         prefix owl:  <http://www.w3.org/2002/07/owl#>
@@ -93,7 +90,7 @@ query = """
         """
 
 
-def populate():
+def populate_ingredients(g):
     qres = g.query(query)
 
     for row in qres:
@@ -112,5 +109,5 @@ def populate():
         #     print(result)
         surfaceForm = to_pascal_case(result[0]["surfaceForm"])
         dbpedia_uri = result[0]["URI"]
-        add_food_item(row.ingredientName, surfaceForm, dbpedia_uri)
+        add_food_item(g, row.ingredientName, surfaceForm, dbpedia_uri)
     g.serialize(destination="../vocab/recipes.ttl")

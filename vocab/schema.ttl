@@ -20,6 +20,12 @@
   rdfs:comment "Represents any substance consumed to provide nutritional support for the body."@en,
               "Représente toute substance consommée pour fournir un soutien nutritionnel au corps."@fr .
 
+:Recipe a owl:Class ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+              ""@fr .
+
+
 :Quantity a owl:Class ;
   rdfs:label ""@en, ""@fr ;
   rdfs:comment ""@en,

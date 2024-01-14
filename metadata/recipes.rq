@@ -3,6 +3,7 @@
 @prefix tmp:<http://project-kitchenchef.fr/tmp-schema#> .
 
 CONSTRUCT {
+?newSubj a :Recipe .
 ?newSubj :name ?name .
 ?newSubj :instructions ?instructions .
 ?newSubj :recipeCategory ?recipeCategory
