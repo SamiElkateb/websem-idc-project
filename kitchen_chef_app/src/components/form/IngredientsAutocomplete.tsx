@@ -29,6 +29,7 @@ const IngredientsAutocomplete: React.FC<IngredientsAutocompleteProps> = ({
         }}
         getOptionLabel={(option) => option.frLabel}
         options={availableIngredients}
+        getOptionKey={(option) => option.id}
         renderInput={(params) => (
           <TextField
             {...params}

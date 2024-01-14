@@ -33,8 +33,8 @@ async def get_ingredients():
     if results is None:
         raise HTTPException(status_code=404, detail="Item not found")
 
-    foods = []
+    foods = {}
     for row in results:
         food = Food(row.food, row.thumbnail, row.enLabel, row.frLabel)
-        foods.append(food)
-    return foods
+        foods[row.food] = food
+    return list(foods.values())
