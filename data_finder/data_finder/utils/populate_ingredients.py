@@ -1,6 +1,6 @@
 from keybert import KeyBERT
 from pke.unsupervised import MultipartiteRank
-from rdflib import OWL, RDF, RDFS, Graph, Literal, Namespace, URIRef
+from rdflib import OWL, RDF, RDFS, DCTERMS, Graph, Literal, Namespace, URIRef
 from utils.get_annotations import get_food_item
 
 kw_model = KeyBERT()
@@ -45,11 +45,12 @@ def add_food_item(g, ingredient_name, food_id, dbpedia_uri):
         """
         prefix owl:  <http://www.w3.org/2002/07/owl#>
         prefix dbo:  <http://dbpedia.org/ontology/>
-        SELECT ?thumbnail ?label
+        SELECT ?thumbnail ?label ?dcSubject
         WHERE {
           SERVICE <https://dbpedia.org/sparql> {
                 ?dbpediaURI rdfs:label ?label ;
-                            dbo:thumbnail ?thumbnail .
+                            dbo:thumbnail ?thumbnail ;
+                            dcterms:subject ?dcSubject .
           }
           FILTER (LANG(?label) = "fr" || LANG(?label) = "en")
         }
@@ -58,11 +59,12 @@ def add_food_item(g, ingredient_name, food_id, dbpedia_uri):
             "dbpediaURI": URIRef(dbpedia_uri),
         },
     )
-    food = {}
+    food = {"dcterms:subject": []}
 
     for row in qres:
         food["thumbnail"] = row.thumbnail
         food[row.label.language] = row.label
+        food["dcterms:subject"].append(row.dcSubject)
     frLabel = food.get("fr", None)
     if frLabel:
         g.add((FOOD[food_id], RDFS.label, Literal(frLabel, lang="fr")))
@@ -73,6 +75,10 @@ def add_food_item(g, ingredient_name, food_id, dbpedia_uri):
     thumbnail = food.get("thumbnail", None)
     if thumbnail:
         g.add((FOOD[food_id], SCHEMA["hasThumbnail"], URIRef(thumbnail)))
+
+    for dcSubject in food["dcterms:subject"]:
+        g.add((FOOD[food_id], DCTERMS.subject, URIRef(dcSubject)))
+
     g.add((FOOD[food_id], OWL.sameAs, URIRef(dbpedia_uri)))
     g.add((FOOD[food_id], RDF.type, SCHEMA["Food"]))
 
@@ -107,7 +113,7 @@ def populate_ingredients(g):
             continue
         # if len(result) > 1:
         #     print(result)
-        surfaceForm = to_pascal_case(result[0]["surfaceForm"])
-        dbpedia_uri = result[0]["URI"]
+        surfaceForm = to_pascal_case(result["surfaceForm"])
+        dbpedia_uri = result["URI"]
         add_food_item(g, row.ingredientName, surfaceForm, dbpedia_uri)
     g.serialize(destination="../vocab/recipes.ttl")

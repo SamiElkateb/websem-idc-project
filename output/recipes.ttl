@@ -1,9 +1,11 @@
 @prefix : <http://project-kitchenchef.fr/schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ns1: <http://project-kitchenchef.fr/recipes/data#> .
+@prefix measurements: <http://project-kitchenchef.fr/measurements/data#> .
+@prefix recipes: <http://project-kitchenchef.fr/recipes/data#> .
+@prefix food: <http://project-kitchenchef.fr/food/data#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-ns1:MarylandFriedChicken :hasIngredient _:b0 ;
+recipes:MarylandFriedChicken :hasIngredient _:b0 ;
   :hasIngredient _:b1 ;
   :hasIngredient _:b2 ;
   :hasIngredient _:b3 ;
@@ -14,7 +16,7 @@ ns1:MarylandFriedChicken :hasIngredient _:b0 ;
   :name "Maryland Fried Chicken" ;
   a :Recipe .
 
-ns1:LimaBeanSalad :hasIngredient _:b7 ;
+recipes:LimaBeanSalad :hasIngredient _:b7 ;
   :hasIngredient _:b8 ;
   :hasIngredient _:b9 ;
   :hasIngredient _:b10 ;
@@ -27,7 +29,7 @@ ns1:LimaBeanSalad :hasIngredient _:b7 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:Sitr-FryBeefandBroccoli :hasIngredient _:b15 ;
+recipes:Sitr-FryBeefandBroccoli :hasIngredient _:b15 ;
   :hasIngredient _:b16 ;
   :hasIngredient _:b17 ;
   :hasIngredient _:b18 ;
@@ -39,10 +41,10 @@ ns1:Sitr-FryBeefandBroccoli :hasIngredient _:b15 ;
   :hasIngredient _:b24 ;
   :hasIngredient _:b25 ;
   :instructions "Cut flank steak across the grain into thin slices. Mix the soy sauce, dry sherry, cornstarch, ginger and garlic ad pour over the beef, tossing to mix well. Cut the broccoli into florets about 2 inches long; slice the stalks into .5 inch pieces. Heat 1 tbsp of the oil in a large, non-stick skillet or wok until hot. Add the beef and stir-fry over high heat until seared, about 2 minutes. Remove beef to a plate. Heat remaining oil in the skillet and add the broccoli and onion. Cook, stirring constantly, for 2 minutes. Add the 2 tablespoons of water or stock, cover the pan, reduce the heat and simmer for 3 to 5 minutes, or until the broccoli is crisp-tender. Stir in the beef and bean sprouts. Toss and stir until heated through." ;
-  :name "Stir-Fry Beef and Broccoli" ;
+  :name "Sitr-Fry Beef and Broccoli" ;
   a :Recipe .
 
-ns1:AngelHash :hasIngredient _:b26 ;
+recipes:AngelHash :hasIngredient _:b26 ;
   :hasIngredient _:b27 ;
   :hasIngredient _:b28 ;
   :hasIngredient _:b29 ;
@@ -55,7 +57,7 @@ ns1:AngelHash :hasIngredient _:b26 ;
   :recipeCategory "Pies" ;
   a :Recipe .
 
-ns1:Minties :hasIngredient _:b34 ;
+recipes:Minties :hasIngredient _:b34 ;
   :hasIngredient _:b35 ;
   :hasIngredient _:b36 ;
   :hasIngredient _:b37 ;
@@ -67,7 +69,7 @@ ns1:Minties :hasIngredient _:b34 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:InaHurryChickenCurry :hasIngredient _:b41 ;
+recipes:InaHurryChickenCurry :hasIngredient _:b41 ;
   :hasIngredient _:b42 ;
   :hasIngredient _:b43 ;
   :hasIngredient _:b44 ;
@@ -84,7 +86,7 @@ ns1:InaHurryChickenCurry :hasIngredient _:b41 ;
   :name "In a Hurry Chicken Curry" ;
   a :Recipe .
 
-ns1:CucumbersinSourCream :hasIngredient _:b54 ;
+recipes:CucumbersinSourCream :hasIngredient _:b54 ;
   :hasIngredient _:b55 ;
   :hasIngredient _:b56 ;
   :hasIngredient _:b57 ;
@@ -95,7 +97,7 @@ ns1:CucumbersinSourCream :hasIngredient _:b54 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:BroccoliCheeseSoup :hasIngredient _:b60 ;
+recipes:BroccoliCheeseSoup :hasIngredient _:b60 ;
   :hasIngredient _:b61 ;
   :hasIngredient _:b62 ;
   :hasIngredient _:b63 ;
@@ -110,7 +112,7 @@ ns1:BroccoliCheeseSoup :hasIngredient _:b60 ;
   :recipeCategory "Soup" ;
   a :Recipe .
 
-ns1:TwoLayerChocolateMayonnaiseCake :hasIngredient _:b70 ;
+recipes:TwoLayerChocolateMayonnaiseCake :hasIngredient _:b70 ;
   :hasIngredient _:b71 ;
   :hasIngredient _:b72 ;
   :hasIngredient _:b73 ;
@@ -123,7 +125,7 @@ ns1:TwoLayerChocolateMayonnaiseCake :hasIngredient _:b70 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:BourbonBalls :hasIngredient _:b78 ;
+recipes:BourbonBalls :hasIngredient _:b78 ;
   :hasIngredient _:b79 ;
   :hasIngredient _:b80 ;
   :hasIngredient _:b81 ;
@@ -134,7 +136,7 @@ ns1:BourbonBalls :hasIngredient _:b78 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:LemonMeringuePie :hasIngredient _:b84 ;
+recipes:LemonMeringuePie :hasIngredient _:b84 ;
   :hasIngredient _:b85 ;
   :hasIngredient _:b86 ;
   :hasIngredient _:b87 ;
@@ -149,7 +151,7 @@ ns1:LemonMeringuePie :hasIngredient _:b84 ;
   :recipeCategory "Pies" ;
   a :Recipe .
 
-ns1:OatmealFudgeBars :hasIngredient _:b94 ;
+recipes:OatmealFudgeBars :hasIngredient _:b94 ;
   :hasIngredient _:b95 ;
   :hasIngredient _:b96 ;
   :hasIngredient _:b97 ;
@@ -169,7 +171,7 @@ ns1:OatmealFudgeBars :hasIngredient _:b94 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:ThreeLayerChocolateMayonnaiseCake :hasIngredient _:b109 ;
+recipes:ThreeLayerChocolateMayonnaiseCake :hasIngredient _:b109 ;
   :hasIngredient _:b110 ;
   :hasIngredient _:b111 ;
   :hasIngredient _:b112 ;
@@ -182,7 +184,7 @@ ns1:ThreeLayerChocolateMayonnaiseCake :hasIngredient _:b109 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:TheSpinach :hasIngredient _:b117 ;
+recipes:TheSpinach :hasIngredient _:b117 ;
   :hasIngredient _:b118 ;
   :hasIngredient _:b119 ;
   :hasIngredient _:b120 ;
@@ -194,7 +196,7 @@ ns1:TheSpinach :hasIngredient _:b117 ;
   :name "The Spinach" ;
   a :Recipe .
 
-ns1:SpinachFritatta :hasIngredient _:b125 ;
+recipes:SpinachFritatta :hasIngredient _:b125 ;
   :hasIngredient _:b126 ;
   :hasIngredient _:b127 ;
   :hasIngredient _:b128 ;
@@ -206,7 +208,7 @@ ns1:SpinachFritatta :hasIngredient _:b125 ;
   :name "Spinach Fritatta" ;
   a :Recipe .
 
-ns1:PineappleGrahamBars :hasIngredient _:b133 ;
+recipes:PineappleGrahamBars :hasIngredient _:b133 ;
   :hasIngredient _:b134 ;
   :hasIngredient _:b135 ;
   :hasIngredient _:b136 ;
@@ -218,7 +220,7 @@ ns1:PineappleGrahamBars :hasIngredient _:b133 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:PotatoeCake :hasIngredient _:b140 ;
+recipes:PotatoeCake :hasIngredient _:b140 ;
   :hasIngredient _:b141 ;
   :hasIngredient _:b142 ;
   :hasIngredient _:b143 ;
@@ -233,7 +235,7 @@ ns1:PotatoeCake :hasIngredient _:b140 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:SpicyFruitandNutCake :hasIngredient _:b150 ;
+recipes:SpicyFruitandNutCake :hasIngredient _:b150 ;
   :hasIngredient _:b151 ;
   :hasIngredient _:b152 ;
   :hasIngredient _:b153 ;
@@ -254,7 +256,7 @@ ns1:SpicyFruitandNutCake :hasIngredient _:b150 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:MexicanMeatballSoup :hasIngredient _:b166 ;
+recipes:MexicanMeatballSoup :hasIngredient _:b166 ;
   :hasIngredient _:b167 ;
   :hasIngredient _:b168 ;
   :hasIngredient _:b169 ;
@@ -278,7 +280,7 @@ ns1:MexicanMeatballSoup :hasIngredient _:b166 ;
   :recipeCategory "Soup" ;
   a :Recipe .
 
-ns1:SourCreamEnchiladas :hasIngredient _:b185 ;
+recipes:SourCreamEnchiladas :hasIngredient _:b185 ;
   :hasIngredient _:b186 ;
   :hasIngredient _:b187 ;
   :hasIngredient _:b188 ;
@@ -289,7 +291,7 @@ ns1:SourCreamEnchiladas :hasIngredient _:b185 ;
   :name "Sour Cream Enchiladas" ;
   a :Recipe .
 
-ns1:RefrigeratorCheesecake :hasIngredient _:b192 ;
+recipes:RefrigeratorCheesecake :hasIngredient _:b192 ;
   :hasIngredient _:b193 ;
   :hasIngredient _:b194 ;
   :hasIngredient _:b195 ;
@@ -306,7 +308,7 @@ ns1:RefrigeratorCheesecake :hasIngredient _:b192 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:FreshPearCake :hasIngredient _:b204 ;
+recipes:FreshPearCake :hasIngredient _:b204 ;
   :hasIngredient _:b205 ;
   :hasIngredient _:b206 ;
   :hasIngredient _:b207 ;
@@ -318,7 +320,7 @@ ns1:FreshPearCake :hasIngredient _:b204 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:AppleDumplings :hasIngredient _:b211 ;
+recipes:AppleDumplings :hasIngredient _:b211 ;
   :hasIngredient _:b212 ;
   :hasIngredient _:b213 ;
   :hasIngredient _:b214 ;
@@ -333,7 +335,7 @@ ns1:AppleDumplings :hasIngredient _:b211 ;
   :name "Apple Dumplings" ;
   a :Recipe .
 
-ns1:CrazyCrustPizza :hasIngredient _:b222 ;
+recipes:CrazyCrustPizza :hasIngredient _:b222 ;
   :hasIngredient _:b223 ;
   :hasIngredient _:b224 ;
   :hasIngredient _:b225 ;
@@ -343,7 +345,7 @@ ns1:CrazyCrustPizza :hasIngredient _:b222 ;
   :name "Crazy Crust Pizza" ;
   a :Recipe .
 
-ns1:BroccoliSalad :hasIngredient _:b228 ;
+recipes:BroccoliSalad :hasIngredient _:b228 ;
   :hasIngredient _:b229 ;
   :hasIngredient _:b230 ;
   :hasIngredient _:b231 ;
@@ -355,7 +357,7 @@ ns1:BroccoliSalad :hasIngredient _:b228 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:PeaSalad :hasIngredient _:b235 ;
+recipes:PeaSalad :hasIngredient _:b235 ;
   :hasIngredient _:b236 ;
   :hasIngredient _:b237 ;
   :hasIngredient _:b238 ;
@@ -366,7 +368,7 @@ ns1:PeaSalad :hasIngredient _:b235 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:SpinachSaladwithAvocado :hasIngredient _:b241 ;
+recipes:SpinachSaladwithAvocado :hasIngredient _:b241 ;
   :hasIngredient _:b242 ;
   :hasIngredient _:b243 ;
   :hasIngredient _:b244 ;
@@ -385,7 +387,7 @@ ns1:SpinachSaladwithAvocado :hasIngredient _:b241 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:ChickenPaprika :hasIngredient _:b255 ;
+recipes:ChickenPaprika :hasIngredient _:b255 ;
   :hasIngredient _:b256 ;
   :hasIngredient _:b257 ;
   :hasIngredient _:b258 ;
@@ -404,7 +406,7 @@ ns1:ChickenPaprika :hasIngredient _:b255 ;
   :name "Chicken Paprika" ;
   a :Recipe .
 
-ns1:ChocolateCrispBranCookies :hasIngredient _:b270 ;
+recipes:ChocolateCrispBranCookies :hasIngredient _:b270 ;
   :hasIngredient _:b271 ;
   :hasIngredient _:b272 ;
   :hasIngredient _:b273 ;
@@ -418,7 +420,7 @@ ns1:ChocolateCrispBranCookies :hasIngredient _:b270 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:PieCrust :hasIngredient _:b279 ;
+recipes:PieCrust :hasIngredient _:b279 ;
   :hasIngredient _:b280 ;
   :hasIngredient _:b281 ;
   :hasIngredient _:b282 ;
@@ -427,7 +429,7 @@ ns1:PieCrust :hasIngredient _:b279 ;
   :recipeCategory "Pies" ;
   a :Recipe .
 
-ns1:HungryBearVegetableSoup :hasIngredient _:b283 ;
+recipes:HungryBearVegetableSoup :hasIngredient _:b283 ;
   :hasIngredient _:b284 ;
   :hasIngredient _:b285 ;
   :hasIngredient _:b286 ;
@@ -440,7 +442,7 @@ ns1:HungryBearVegetableSoup :hasIngredient _:b283 ;
   :recipeCategory "Soup" ;
   a :Recipe .
 
-ns1:BitOZucchiniBites :hasIngredient _:b291 ;
+recipes:BitOZucchiniBites :hasIngredient _:b291 ;
   :hasIngredient _:b292 ;
   :hasIngredient _:b293 ;
   :hasIngredient _:b294 ;
@@ -453,7 +455,7 @@ ns1:BitOZucchiniBites :hasIngredient _:b291 ;
   :name "Bit O' Zucchini Bites" ;
   a :Recipe .
 
-ns1:EasyPastaBake :hasIngredient _:b300 ;
+recipes:EasyPastaBake :hasIngredient _:b300 ;
   :hasIngredient _:b301 ;
   :hasIngredient _:b302 ;
   :hasIngredient _:b303 ;
@@ -462,7 +464,7 @@ ns1:EasyPastaBake :hasIngredient _:b300 ;
   :name "Easy Pasta Bake" ;
   a :Recipe .
 
-ns1:ChickenNoodleSoup :hasIngredient _:b305 ;
+recipes:ChickenNoodleSoup :hasIngredient _:b305 ;
   :hasIngredient _:b306 ;
   :hasIngredient _:b307 ;
   :hasIngredient _:b308 ;
@@ -473,12 +475,12 @@ ns1:ChickenNoodleSoup :hasIngredient _:b305 ;
   :recipeCategory "Soup" ;
   a :Recipe .
 
-ns1:JackZucchiniChicken :hasIngredient _:b311 ;
+recipes:JackZucchiniChicken :hasIngredient _:b311 ;
   :instructions "Preheat oven to 350 degrees. Shred zucchini through the large holes of a grater, then squeeze it firmly, a handful at a time to extract much of the juice. Toss the zucchini with the green onion and set aside. Stir together the flour, chili powder and 1 teaspoon of salt and set aside." ;
   :name "Jack Zucchini Chicken" ;
   a :Recipe .
 
-ns1:FiveCupSalad :hasIngredient _:b312 ;
+recipes:FiveCupSalad :hasIngredient _:b312 ;
   :hasIngredient _:b313 ;
   :hasIngredient _:b314 ;
   :hasIngredient _:b315 ;
@@ -488,7 +490,7 @@ ns1:FiveCupSalad :hasIngredient _:b312 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:ChickenWithPineapple :hasIngredient _:b317 ;
+recipes:ChickenWithPineapple :hasIngredient _:b317 ;
   :hasIngredient _:b318 ;
   :hasIngredient _:b319 ;
   :hasIngredient _:b320 ;
@@ -500,7 +502,7 @@ ns1:ChickenWithPineapple :hasIngredient _:b317 ;
   :name "Chicken With Pineapple" ;
   a :Recipe .
 
-ns1:ChocolatePeanutBrunchBars :hasIngredient _:b325 ;
+recipes:ChocolatePeanutBrunchBars :hasIngredient _:b325 ;
   :hasIngredient _:b326 ;
   :hasIngredient _:b327 ;
   :hasIngredient _:b328 ;
@@ -515,7 +517,7 @@ ns1:ChocolatePeanutBrunchBars :hasIngredient _:b325 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:BroccoliandRiceCasserole :hasIngredient _:b335 ;
+recipes:BroccoliandRiceCasserole :hasIngredient _:b335 ;
   :hasIngredient _:b336 ;
   :hasIngredient _:b337 ;
   :hasIngredient _:b338 ;
@@ -526,7 +528,7 @@ ns1:BroccoliandRiceCasserole :hasIngredient _:b335 ;
   :name "Broccoli and Rice Casserole" ;
   a :Recipe .
 
-ns1:TortillaSoup :hasIngredient _:b342 ;
+recipes:TortillaSoup :hasIngredient _:b342 ;
   :hasIngredient _:b343 ;
   :hasIngredient _:b344 ;
   :hasIngredient _:b345 ;
@@ -542,7 +544,7 @@ ns1:TortillaSoup :hasIngredient _:b342 ;
   :recipeCategory "Soup" ;
   a :Recipe .
 
-ns1:SweetandSourMeatballs :hasIngredient _:b353 ;
+recipes:SweetandSourMeatballs :hasIngredient _:b353 ;
   :hasIngredient _:b354 ;
   :hasIngredient _:b355 ;
   :hasIngredient _:b356 ;
@@ -562,7 +564,7 @@ ns1:SweetandSourMeatballs :hasIngredient _:b353 ;
   :name "Sweet and Sour Meatballs" ;
   a :Recipe .
 
-ns1:EggRollWrappers :hasIngredient _:b369 ;
+recipes:EggRollWrappers :hasIngredient _:b369 ;
   :hasIngredient _:b370 ;
   :hasIngredient _:b371 ;
   :hasIngredient _:b372 ;
@@ -571,7 +573,7 @@ ns1:EggRollWrappers :hasIngredient _:b369 ;
   :name "Egg Roll Wrappers" ;
   a :Recipe .
 
-ns1:FreshStrawberryPie :hasIngredient _:b374 ;
+recipes:FreshStrawberryPie :hasIngredient _:b374 ;
   :hasIngredient _:b375 ;
   :hasIngredient _:b376 ;
   :hasIngredient _:b377 ;
@@ -584,7 +586,7 @@ ns1:FreshStrawberryPie :hasIngredient _:b374 ;
   :recipeCategory "Pies" ;
   a :Recipe .
 
-ns1:ChiliCheesePuff :hasIngredient _:b382 ;
+recipes:ChiliCheesePuff :hasIngredient _:b382 ;
   :hasIngredient _:b383 ;
   :hasIngredient _:b384 ;
   :hasIngredient _:b385 ;
@@ -595,7 +597,7 @@ ns1:ChiliCheesePuff :hasIngredient _:b382 ;
   :name "Chili Cheese Puff" ;
   a :Recipe .
 
-ns1:BananaCake :hasIngredient _:b389 ;
+recipes:BananaCake :hasIngredient _:b389 ;
   :hasIngredient _:b390 ;
   :hasIngredient _:b391 ;
   :hasIngredient _:b392 ;
@@ -607,7 +609,7 @@ ns1:BananaCake :hasIngredient _:b389 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:SummerFruitSalad :hasIngredient _:b396 ;
+recipes:SummerFruitSalad :hasIngredient _:b396 ;
   :hasIngredient _:b397 ;
   :hasIngredient _:b398 ;
   :hasIngredient _:b399 ;
@@ -619,7 +621,7 @@ ns1:SummerFruitSalad :hasIngredient _:b396 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:CatalinaChickenStirFry :hasIngredient _:b403 ;
+recipes:CatalinaChickenStirFry :hasIngredient _:b403 ;
   :hasIngredient _:b404 ;
   :hasIngredient _:b405 ;
   :hasIngredient _:b406 ;
@@ -628,7 +630,7 @@ ns1:CatalinaChickenStirFry :hasIngredient _:b403 ;
   :name "Catalina Chicken Stir Fry" ;
   a :Recipe .
 
-ns1:SpicySingaporeWings :hasIngredient _:b408 ;
+recipes:SpicySingaporeWings :hasIngredient _:b408 ;
   :hasIngredient _:b409 ;
   :hasIngredient _:b410 ;
   :hasIngredient _:b411 ;
@@ -637,7 +639,7 @@ ns1:SpicySingaporeWings :hasIngredient _:b408 ;
   :name "Spicy Singapore Wings" ;
   a :Recipe .
 
-ns1:DeepDishPizza :hasIngredient _:b413 ;
+recipes:DeepDishPizza :hasIngredient _:b413 ;
   :hasIngredient _:b414 ;
   :hasIngredient _:b415 ;
   :hasIngredient _:b416 ;
@@ -648,7 +650,7 @@ ns1:DeepDishPizza :hasIngredient _:b413 ;
   :name "Deep Dish Pizza" ;
   a :Recipe .
 
-ns1:EasyOvenBakedPotatoes :hasIngredient _:b420 ;
+recipes:EasyOvenBakedPotatoes :hasIngredient _:b420 ;
   :hasIngredient _:b421 ;
   :hasIngredient _:b422 ;
   :hasIngredient _:b423 ;
@@ -660,7 +662,7 @@ ns1:EasyOvenBakedPotatoes :hasIngredient _:b420 ;
   :name "Easy Oven Baked Potatoes" ;
   a :Recipe .
 
-ns1:ChickenTamalePie :hasIngredient _:b428 ;
+recipes:ChickenTamalePie :hasIngredient _:b428 ;
   :hasIngredient _:b429 ;
   :hasIngredient _:b430 ;
   :hasIngredient _:b431 ;
@@ -675,7 +677,7 @@ ns1:ChickenTamalePie :hasIngredient _:b428 ;
   :name "Chicken Tamale Pie" ;
   a :Recipe .
 
-ns1:SavoryChickenCasserole :hasIngredient _:b439 ;
+recipes:SavoryChickenCasserole :hasIngredient _:b439 ;
   :hasIngredient _:b440 ;
   :hasIngredient _:b441 ;
   :hasIngredient _:b442 ;
@@ -688,7 +690,7 @@ ns1:SavoryChickenCasserole :hasIngredient _:b439 ;
   :name "Savory Chicken Casserole" ;
   a :Recipe .
 
-ns1:DutchApplePie :hasIngredient _:b448 ;
+recipes:DutchApplePie :hasIngredient _:b448 ;
   :hasIngredient _:b449 ;
   :hasIngredient _:b450 ;
   :hasIngredient _:b451 ;
@@ -699,14 +701,14 @@ ns1:DutchApplePie :hasIngredient _:b448 ;
   :recipeCategory "Pies" ;
   a :Recipe .
 
-ns1:ElephantStew :hasIngredient _:b454 ;
+recipes:ElephantStew :hasIngredient _:b454 ;
   :hasIngredient _:b455 ;
   :instructions "Cut elephant into bite-size pieces.  (Allow approximately 12 months.)  Add enough gravy to cover.  Cook over kerosene fire for 4 weeks at 463 degrees.  Makes 3,300 servings.  To extend recipe add rabbits, but only if necessary, as some people do not like to find hare in their stew." ;
   :name "Elephant Stew" ;
   :recipeCategory "Soup" ;
   a :Recipe .
 
-ns1:SoftSugarCookies :hasIngredient _:b456 ;
+recipes:SoftSugarCookies :hasIngredient _:b456 ;
   :hasIngredient _:b457 ;
   :hasIngredient _:b458 ;
   :hasIngredient _:b459 ;
@@ -720,7 +722,7 @@ ns1:SoftSugarCookies :hasIngredient _:b456 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:PruneNutBars :hasIngredient _:b465 ;
+recipes:PruneNutBars :hasIngredient _:b465 ;
   :hasIngredient _:b466 ;
   :hasIngredient _:b467 ;
   :hasIngredient _:b468 ;
@@ -737,7 +739,7 @@ ns1:PruneNutBars :hasIngredient _:b465 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:AlbertsChicken :hasIngredient _:b477 ;
+recipes:AlbertsChicken :hasIngredient _:b477 ;
   :hasIngredient _:b478 ;
   :hasIngredient _:b479 ;
   :hasIngredient _:b480 ;
@@ -748,7 +750,7 @@ ns1:AlbertsChicken :hasIngredient _:b477 ;
   :name "Albert's Chicken" ;
   a :Recipe .
 
-ns1:ZucchiniAppleSlaw :hasIngredient _:b484 ;
+recipes:ZucchiniAppleSlaw :hasIngredient _:b484 ;
   :hasIngredient _:b485 ;
   :hasIngredient _:b486 ;
   :hasIngredient _:b487 ;
@@ -760,7 +762,7 @@ ns1:ZucchiniAppleSlaw :hasIngredient _:b484 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:LemonLusciousPie :hasIngredient _:b491 ;
+recipes:LemonLusciousPie :hasIngredient _:b491 ;
   :hasIngredient _:b492 ;
   :hasIngredient _:b493 ;
   :hasIngredient _:b494 ;
@@ -774,7 +776,7 @@ ns1:LemonLusciousPie :hasIngredient _:b491 ;
   :recipeCategory "Pies" ;
   a :Recipe .
 
-ns1:Walnut-Raisinpie :hasIngredient _:b500 ;
+recipes:Walnut-Raisinpie :hasIngredient _:b500 ;
   :hasIngredient _:b501 ;
   :hasIngredient _:b502 ;
   :hasIngredient _:b503 ;
@@ -785,7 +787,7 @@ ns1:Walnut-Raisinpie :hasIngredient _:b500 ;
   :recipeCategory "Pies" ;
   a :Recipe .
 
-ns1:VealParmigan :hasIngredient _:b506 ;
+recipes:VealParmigan :hasIngredient _:b506 ;
   :hasIngredient _:b507 ;
   :hasIngredient _:b508 ;
   :hasIngredient _:b509 ;
@@ -804,7 +806,7 @@ ns1:VealParmigan :hasIngredient _:b506 ;
   :name "Veal Parmigan" ;
   a :Recipe .
 
-ns1:AppleDessertforaCrowd :hasIngredient _:b521 ;
+recipes:AppleDessertforaCrowd :hasIngredient _:b521 ;
   :hasIngredient _:b522 ;
   :hasIngredient _:b523 ;
   :hasIngredient _:b524 ;
@@ -818,7 +820,7 @@ ns1:AppleDessertforaCrowd :hasIngredient _:b521 ;
   :name "Apple Dessert for a Crowd" ;
   a :Recipe .
 
-ns1:OldFashionedApplePie :hasIngredient _:b531 ;
+recipes:OldFashionedApplePie :hasIngredient _:b531 ;
   :hasIngredient _:b532 ;
   :hasIngredient _:b533 ;
   :hasIngredient _:b534 ;
@@ -828,7 +830,7 @@ ns1:OldFashionedApplePie :hasIngredient _:b531 ;
   :recipeCategory "Pies" ;
   a :Recipe .
 
-ns1:CrazyCake :hasIngredient _:b536 ;
+recipes:CrazyCake :hasIngredient _:b536 ;
   :hasIngredient _:b537 ;
   :hasIngredient _:b538 ;
   :hasIngredient _:b539 ;
@@ -840,7 +842,7 @@ ns1:CrazyCake :hasIngredient _:b536 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:PeanutButterCookies :hasIngredient _:b543 ;
+recipes:PeanutButterCookies :hasIngredient _:b543 ;
   :hasIngredient _:b544 ;
   :hasIngredient _:b545 ;
   :hasIngredient _:b546 ;
@@ -854,7 +856,7 @@ ns1:PeanutButterCookies :hasIngredient _:b543 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:FiveBeanSalad :hasIngredient _:b552 ;
+recipes:FiveBeanSalad :hasIngredient _:b552 ;
   :hasIngredient _:b553 ;
   :hasIngredient _:b554 ;
   :hasIngredient _:b555 ;
@@ -868,7 +870,7 @@ ns1:FiveBeanSalad :hasIngredient _:b552 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:CheesySpinachBake :hasIngredient _:b561 ;
+recipes:CheesySpinachBake :hasIngredient _:b561 ;
   :hasIngredient _:b562 ;
   :hasIngredient _:b563 ;
   :hasIngredient _:b564 ;
@@ -879,7 +881,7 @@ ns1:CheesySpinachBake :hasIngredient _:b561 ;
   :name "Cheesy Spinach Bake" ;
   a :Recipe .
 
-ns1:ChineseStirFriedChickenwithPeanuts :hasIngredient _:b568 ;
+recipes:ChineseStirFriedChickenwithPeanuts :hasIngredient _:b568 ;
   :hasIngredient _:b569 ;
   :hasIngredient _:b570 ;
   :hasIngredient _:b571 ;
@@ -895,7 +897,7 @@ ns1:ChineseStirFriedChickenwithPeanuts :hasIngredient _:b568 ;
   :name "Chinese Stir Fried Chicken with Peanuts" ;
   a :Recipe .
 
-ns1:CompanyCabbage :hasIngredient _:b580 ;
+recipes:CompanyCabbage :hasIngredient _:b580 ;
   :hasIngredient _:b581 ;
   :hasIngredient _:b582 ;
   :hasIngredient _:b583 ;
@@ -907,7 +909,7 @@ ns1:CompanyCabbage :hasIngredient _:b580 ;
   :name "Company Cabbage" ;
   a :Recipe .
 
-ns1:ChristmasLogs :hasIngredient _:b588 ;
+recipes:ChristmasLogs :hasIngredient _:b588 ;
   :hasIngredient _:b589 ;
   :hasIngredient _:b590 ;
   :hasIngredient _:b591 ;
@@ -917,7 +919,7 @@ ns1:ChristmasLogs :hasIngredient _:b588 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:ChineseBeef :hasIngredient _:b593 ;
+recipes:ChineseBeef :hasIngredient _:b593 ;
   :hasIngredient _:b594 ;
   :hasIngredient _:b595 ;
   :hasIngredient _:b596 ;
@@ -933,7 +935,7 @@ ns1:ChineseBeef :hasIngredient _:b593 ;
   :name "Chinese Beef" ;
   a :Recipe .
 
-ns1:ChocolateTrioSquares :hasIngredient _:b605 ;
+recipes:ChocolateTrioSquares :hasIngredient _:b605 ;
   :hasIngredient _:b606 ;
   :hasIngredient _:b607 ;
   :hasIngredient _:b608 ;
@@ -950,7 +952,7 @@ ns1:ChocolateTrioSquares :hasIngredient _:b605 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:Peas :hasIngredient _:b617 ;
+recipes:Peas :hasIngredient _:b617 ;
   :hasIngredient _:b618 ;
   :hasIngredient _:b619 ;
   :hasIngredient _:b620 ;
@@ -958,7 +960,7 @@ ns1:Peas :hasIngredient _:b617 ;
   :name "Peas" ;
   a :Recipe .
 
-ns1:TurkeyTenderloinSupreme :hasIngredient _:b621 ;
+recipes:TurkeyTenderloinSupreme :hasIngredient _:b621 ;
   :hasIngredient _:b622 ;
   :hasIngredient _:b623 ;
   :hasIngredient _:b624 ;
@@ -968,7 +970,7 @@ ns1:TurkeyTenderloinSupreme :hasIngredient _:b621 ;
   :name "Turkey Tenderloin Supreme" ;
   a :Recipe .
 
-ns1:PastaPrimavera :hasIngredient _:b627 ;
+recipes:PastaPrimavera :hasIngredient _:b627 ;
   :hasIngredient _:b628 ;
   :hasIngredient _:b629 ;
   :hasIngredient _:b630 ;
@@ -983,7 +985,7 @@ ns1:PastaPrimavera :hasIngredient _:b627 ;
   :name "Pasta Primavera" ;
   a :Recipe .
 
-ns1:OrangeSweetPotatoes :hasIngredient _:b638 ;
+recipes:OrangeSweetPotatoes :hasIngredient _:b638 ;
   :hasIngredient _:b639 ;
   :hasIngredient _:b640 ;
   :hasIngredient _:b641 ;
@@ -992,7 +994,7 @@ ns1:OrangeSweetPotatoes :hasIngredient _:b638 ;
   :name "Orange Sweet Potatoes" ;
   a :Recipe .
 
-ns1:SaucyShrimpOverChineseNoodleCakes :hasIngredient _:b643 ;
+recipes:SaucyShrimpOverChineseNoodleCakes :hasIngredient _:b643 ;
   :hasIngredient _:b644 ;
   :hasIngredient _:b645 ;
   :hasIngredient _:b646 ;
@@ -1008,12 +1010,12 @@ ns1:SaucyShrimpOverChineseNoodleCakes :hasIngredient _:b643 ;
   :name "Saucy Shrimp Over Chinese Noodle Cakes" ;
   a :Recipe .
 
-ns1:ItalianZucchini :hasIngredient _:b655 ;
+recipes:ItalianZucchini :hasIngredient _:b655 ;
   :instructions "Cut zucchini in thick slices. Saute onion and garlic in oil. Add squash, mushrooms, and seasonings. Simmer slowly until tender." ;
   :name "Italian Zucchini" ;
   a :Recipe .
 
-ns1:Orange-PoppySeedPoundCake :hasIngredient _:b656 ;
+recipes:Orange-PoppySeedPoundCake :hasIngredient _:b656 ;
   :hasIngredient _:b657 ;
   :hasIngredient _:b658 ;
   :hasIngredient _:b659 ;
@@ -1031,7 +1033,7 @@ ns1:Orange-PoppySeedPoundCake :hasIngredient _:b656 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:BlueCheeseDressing :hasIngredient _:b669 ;
+recipes:BlueCheeseDressing :hasIngredient _:b669 ;
   :hasIngredient _:b670 ;
   :hasIngredient _:b671 ;
   :hasIngredient _:b672 ;
@@ -1040,7 +1042,7 @@ ns1:BlueCheeseDressing :hasIngredient _:b669 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:StuffedZucchini :hasIngredient _:b673 ;
+recipes:StuffedZucchini :hasIngredient _:b673 ;
   :hasIngredient _:b674 ;
   :hasIngredient _:b675 ;
   :hasIngredient _:b676 ;
@@ -1049,7 +1051,7 @@ ns1:StuffedZucchini :hasIngredient _:b673 ;
   :name "Stuffed Zucchini" ;
   a :Recipe .
 
-ns1:GingerSnapBars :hasIngredient _:b678 ;
+recipes:GingerSnapBars :hasIngredient _:b678 ;
   :hasIngredient _:b679 ;
   :hasIngredient _:b680 ;
   :hasIngredient _:b681 ;
@@ -1067,7 +1069,7 @@ ns1:GingerSnapBars :hasIngredient _:b678 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:HotWaterChocolateCake :hasIngredient _:b691 ;
+recipes:HotWaterChocolateCake :hasIngredient _:b691 ;
   :hasIngredient _:b692 ;
   :hasIngredient _:b693 ;
   :hasIngredient _:b694 ;
@@ -1082,7 +1084,7 @@ ns1:HotWaterChocolateCake :hasIngredient _:b691 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:BeefScallopswithFreshTomatoSauce :hasIngredient _:b701 ;
+recipes:BeefScallopswithFreshTomatoSauce :hasIngredient _:b701 ;
   :hasIngredient _:b702 ;
   :hasIngredient _:b703 ;
   :hasIngredient _:b704 ;
@@ -1093,7 +1095,7 @@ ns1:BeefScallopswithFreshTomatoSauce :hasIngredient _:b701 ;
   :name "Beef Scallops with Fresh Tomato Sauce" ;
   a :Recipe .
 
-ns1:Snickerdoodles :hasIngredient _:b708 ;
+recipes:Snickerdoodles :hasIngredient _:b708 ;
   :hasIngredient _:b709 ;
   :hasIngredient _:b710 ;
   :hasIngredient _:b711 ;
@@ -1107,7 +1109,7 @@ ns1:Snickerdoodles :hasIngredient _:b708 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:GreenBeanSalad :hasIngredient _:b717 ;
+recipes:GreenBeanSalad :hasIngredient _:b717 ;
   :hasIngredient _:b718 ;
   :hasIngredient _:b719 ;
   :hasIngredient _:b720 ;
@@ -1117,7 +1119,7 @@ ns1:GreenBeanSalad :hasIngredient _:b717 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:PeachAlmondPie :hasIngredient _:b722 ;
+recipes:PeachAlmondPie :hasIngredient _:b722 ;
   :hasIngredient _:b723 ;
   :hasIngredient _:b724 ;
   :hasIngredient _:b725 ;
@@ -1129,7 +1131,7 @@ ns1:PeachAlmondPie :hasIngredient _:b722 ;
   :recipeCategory "Pies" ;
   a :Recipe .
 
-ns1:CarrotCarousel :hasIngredient _:b729 ;
+recipes:CarrotCarousel :hasIngredient _:b729 ;
   :hasIngredient _:b730 ;
   :hasIngredient _:b731 ;
   :hasIngredient _:b732 ;
@@ -1141,7 +1143,7 @@ ns1:CarrotCarousel :hasIngredient _:b729 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:Pineapple-CarrotCake :hasIngredient _:b736 ;
+recipes:Pineapple-CarrotCake :hasIngredient _:b736 ;
   :hasIngredient _:b737 ;
   :hasIngredient _:b738 ;
   :hasIngredient _:b739 ;
@@ -1162,7 +1164,7 @@ ns1:Pineapple-CarrotCake :hasIngredient _:b736 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:ChickenCashew :hasIngredient _:b752 ;
+recipes:ChickenCashew :hasIngredient _:b752 ;
   :hasIngredient _:b753 ;
   :hasIngredient _:b754 ;
   :hasIngredient _:b755 ;
@@ -1178,7 +1180,7 @@ ns1:ChickenCashew :hasIngredient _:b752 ;
   :name "Chicken Cashew" ;
   a :Recipe .
 
-ns1:AsparagusTomatoQuiche :hasIngredient _:b764 ;
+recipes:AsparagusTomatoQuiche :hasIngredient _:b764 ;
   :hasIngredient _:b765 ;
   :hasIngredient _:b766 ;
   :hasIngredient _:b767 ;
@@ -1192,13 +1194,13 @@ ns1:AsparagusTomatoQuiche :hasIngredient _:b764 ;
   :name "Asparagus Tomato Quiche" ;
   a :Recipe .
 
-ns1:CrispPotatoPancakes :hasIngredient _:b774 ;
+recipes:CrispPotatoPancakes :hasIngredient _:b774 ;
   :hasIngredient _:b775 ;
   :instructions "Grate potatoes coarsely. Grate onion. Season with slat and pepper. Add bea10 egg. Form in 2 inch patties. Fry in 1/4 inch of hot oil. Serve with poached egg and salsa or sour cream and chives." ;
   :name "Crisp Potato Pancakes" ;
   a :Recipe .
 
-ns1:LightOldFashionedFruitCake :hasIngredient _:b776 ;
+recipes:LightOldFashionedFruitCake :hasIngredient _:b776 ;
   :hasIngredient _:b777 ;
   :hasIngredient _:b778 ;
   :hasIngredient _:b779 ;
@@ -1216,7 +1218,7 @@ ns1:LightOldFashionedFruitCake :hasIngredient _:b776 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:ChickenBreastsFlorentine :hasIngredient _:b789 ;
+recipes:ChickenBreastsFlorentine :hasIngredient _:b789 ;
   :hasIngredient _:b790 ;
   :hasIngredient _:b791 ;
   :hasIngredient _:b792 ;
@@ -1227,7 +1229,7 @@ ns1:ChickenBreastsFlorentine :hasIngredient _:b789 ;
   :name "Chicken Breasts Florentine" ;
   a :Recipe .
 
-ns1:SautedChickenLivers :hasIngredient _:b796 ;
+recipes:SautedChickenLivers :hasIngredient _:b796 ;
   :hasIngredient _:b797 ;
   :hasIngredient _:b798 ;
   :hasIngredient _:b799 ;
@@ -1240,7 +1242,7 @@ ns1:SautedChickenLivers :hasIngredient _:b796 ;
   :name "Saute'd Chicken Livers" ;
   a :Recipe .
 
-ns1:ChineseRoastPork :hasIngredient _:b805 ;
+recipes:ChineseRoastPork :hasIngredient _:b805 ;
   :hasIngredient _:b806 ;
   :hasIngredient _:b807 ;
   :hasIngredient _:b808 ;
@@ -1250,7 +1252,7 @@ ns1:ChineseRoastPork :hasIngredient _:b805 ;
   :name "Chinese Roast Pork" ;
   a :Recipe .
 
-ns1:ShrimpSaute :hasIngredient _:b811 ;
+recipes:ShrimpSaute :hasIngredient _:b811 ;
   :hasIngredient _:b812 ;
   :hasIngredient _:b813 ;
   :hasIngredient _:b814 ;
@@ -1264,7 +1266,7 @@ ns1:ShrimpSaute :hasIngredient _:b811 ;
   :name "Shrimp Saute" ;
   a :Recipe .
 
-ns1:SavoryGoulash :hasIngredient _:b821 ;
+recipes:SavoryGoulash :hasIngredient _:b821 ;
   :hasIngredient _:b822 ;
   :hasIngredient _:b823 ;
   :hasIngredient _:b824 ;
@@ -1276,7 +1278,7 @@ ns1:SavoryGoulash :hasIngredient _:b821 ;
   :name "Savory Goulash" ;
   a :Recipe .
 
-ns1:SpecialPruneCake :hasIngredient _:b829 ;
+recipes:SpecialPruneCake :hasIngredient _:b829 ;
   :hasIngredient _:b830 ;
   :hasIngredient _:b831 ;
   :hasIngredient _:b832 ;
@@ -1299,7 +1301,7 @@ ns1:SpecialPruneCake :hasIngredient _:b829 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:Sandras%22TreeTrimmer%22Chicken :hasIngredient _:b847 ;
+recipes:Sandras%22TreeTrimmer%22Chicken :hasIngredient _:b847 ;
   :hasIngredient _:b848 ;
   :hasIngredient _:b849 ;
   :hasIngredient _:b850 ;
@@ -1314,7 +1316,7 @@ ns1:Sandras%22TreeTrimmer%22Chicken :hasIngredient _:b847 ;
   :name "Sandra's \"Tree Trimmer\" Chicken" ;
   a :Recipe .
 
-ns1:FumGum :hasIngredient _:b858 ;
+recipes:FumGum :hasIngredient _:b858 ;
   :hasIngredient _:b859 ;
   :hasIngredient _:b860 ;
   :hasIngredient _:b861 ;
@@ -1324,14 +1326,14 @@ ns1:FumGum :hasIngredient _:b858 ;
   :name "Fum Gum" ;
   a :Recipe .
 
-ns1:GlazedCarrots :hasIngredient _:b864 ;
+recipes:GlazedCarrots :hasIngredient _:b864 ;
   :hasIngredient _:b865 ;
   :hasIngredient _:b866 ;
   :instructions "Cut carrots in strips or rounds. Boil with butter, sugar and water to almost covered. Cook to fork tender. Stir in orange marmalade." ;
   :name "Glazed Carrots" ;
   a :Recipe .
 
-ns1:ZucchiniCasserole :hasIngredient _:b867 ;
+recipes:ZucchiniCasserole :hasIngredient _:b867 ;
   :hasIngredient _:b868 ;
   :hasIngredient _:b869 ;
   :hasIngredient _:b870 ;
@@ -1346,7 +1348,7 @@ ns1:ZucchiniCasserole :hasIngredient _:b867 ;
   :name "Zucchini Casserole" ;
   a :Recipe .
 
-ns1:PineappleCake :hasIngredient _:b878 ;
+recipes:PineappleCake :hasIngredient _:b878 ;
   :hasIngredient _:b879 ;
   :hasIngredient _:b880 ;
   :hasIngredient _:b881 ;
@@ -1355,7 +1357,7 @@ ns1:PineappleCake :hasIngredient _:b878 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:HotCrabDip :hasIngredient _:b882 ;
+recipes:HotCrabDip :hasIngredient _:b882 ;
   :hasIngredient _:b883 ;
   :hasIngredient _:b884 ;
   :hasIngredient _:b885 ;
@@ -1363,7 +1365,7 @@ ns1:HotCrabDip :hasIngredient _:b882 ;
   :name "Hot Crab Dip" ;
   a :Recipe .
 
-ns1:SauteedScallops :hasIngredient _:b886 ;
+recipes:SauteedScallops :hasIngredient _:b886 ;
   :hasIngredient _:b887 ;
   :hasIngredient _:b888 ;
   :hasIngredient _:b889 ;
@@ -1371,7 +1373,7 @@ ns1:SauteedScallops :hasIngredient _:b886 ;
   :name "Sauteed Scallops" ;
   a :Recipe .
 
-ns1:GoldenNuggetBeef :hasIngredient _:b890 ;
+recipes:GoldenNuggetBeef :hasIngredient _:b890 ;
   :hasIngredient _:b891 ;
   :hasIngredient _:b892 ;
   :hasIngredient _:b893 ;
@@ -1388,7 +1390,7 @@ ns1:GoldenNuggetBeef :hasIngredient _:b890 ;
   :name "Golden Nugget Beef" ;
   a :Recipe .
 
-ns1:SautedChickenBreats :hasIngredient _:b903 ;
+recipes:SautedChickenBreats :hasIngredient _:b903 ;
   :hasIngredient _:b904 ;
   :hasIngredient _:b905 ;
   :hasIngredient _:b906 ;
@@ -1398,7 +1400,7 @@ ns1:SautedChickenBreats :hasIngredient _:b903 ;
   :name "Saute'd Chicken Breats" ;
   a :Recipe .
 
-ns1:HorseradishDressing :hasIngredient _:b909 ;
+recipes:HorseradishDressing :hasIngredient _:b909 ;
   :hasIngredient _:b910 ;
   :hasIngredient _:b911 ;
   :hasIngredient _:b912 ;
@@ -1413,7 +1415,7 @@ ns1:HorseradishDressing :hasIngredient _:b909 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:ChickenandShrimpCantonese :hasIngredient _:b919 ;
+recipes:ChickenandShrimpCantonese :hasIngredient _:b919 ;
   :hasIngredient _:b920 ;
   :hasIngredient _:b921 ;
   :hasIngredient _:b922 ;
@@ -1426,7 +1428,7 @@ ns1:ChickenandShrimpCantonese :hasIngredient _:b919 ;
   :name "Chicken and Shrimp Cantonese" ;
   a :Recipe .
 
-ns1:BeefEnchiladas :hasIngredient _:b928 ;
+recipes:BeefEnchiladas :hasIngredient _:b928 ;
   :hasIngredient _:b929 ;
   :hasIngredient _:b930 ;
   :hasIngredient _:b931 ;
@@ -1448,7 +1450,7 @@ ns1:BeefEnchiladas :hasIngredient _:b928 ;
   :name "Beef Enchiladas" ;
   a :Recipe .
 
-ns1:ZucchiniPatties :hasIngredient _:b946 ;
+recipes:ZucchiniPatties :hasIngredient _:b946 ;
   :hasIngredient _:b947 ;
   :hasIngredient _:b948 ;
   :hasIngredient _:b949 ;
@@ -1462,7 +1464,7 @@ ns1:ZucchiniPatties :hasIngredient _:b946 ;
   :name "Zucchini Patties" ;
   a :Recipe .
 
-ns1:SweetandSourPork :hasIngredient _:b956 ;
+recipes:SweetandSourPork :hasIngredient _:b956 ;
   :hasIngredient _:b957 ;
   :hasIngredient _:b958 ;
   :hasIngredient _:b959 ;
@@ -1755,7 +1757,7 @@ ns1:SweetandSourPork :hasIngredient _:b956 ;
   :name "Sweet and Sour Pork" ;
   a :Recipe .
 
-ns1:LemonSquares :hasIngredient _:b1244 ;
+recipes:LemonSquares :hasIngredient _:b1244 ;
   :hasIngredient _:b1245 ;
   :hasIngredient _:b1246 ;
   :hasIngredient _:b1247 ;
@@ -1768,7 +1770,7 @@ ns1:LemonSquares :hasIngredient _:b1244 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:ChristmasSnowballs :hasIngredient _:b1252 ;
+recipes:ChristmasSnowballs :hasIngredient _:b1252 ;
   :hasIngredient _:b1253 ;
   :hasIngredient _:b1254 ;
   :hasIngredient _:b1255 ;
@@ -1781,7 +1783,7 @@ ns1:ChristmasSnowballs :hasIngredient _:b1252 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:Coleslaw :hasIngredient _:b1260 ;
+recipes:Coleslaw :hasIngredient _:b1260 ;
   :hasIngredient _:b1261 ;
   :hasIngredient _:b1262 ;
   :hasIngredient _:b1263 ;
@@ -1793,7 +1795,7 @@ ns1:Coleslaw :hasIngredient _:b1260 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:CreamyZucchiniMushroomSoup :hasIngredient _:b1267 ;
+recipes:CreamyZucchiniMushroomSoup :hasIngredient _:b1267 ;
   :hasIngredient _:b1268 ;
   :hasIngredient _:b1269 ;
   :hasIngredient _:b1270 ;
@@ -1809,7 +1811,7 @@ ns1:CreamyZucchiniMushroomSoup :hasIngredient _:b1267 ;
   :recipeCategory "Soup" ;
   a :Recipe .
 
-ns1:CleosClamChowder :hasIngredient _:b1278 ;
+recipes:CleosClamChowder :hasIngredient _:b1278 ;
   :hasIngredient _:b1279 ;
   :hasIngredient _:b1280 ;
   :hasIngredient _:b1281 ;
@@ -1821,7 +1823,7 @@ ns1:CleosClamChowder :hasIngredient _:b1278 ;
   :recipeCategory "Soup" ;
   a :Recipe .
 
-ns1:CheeseFondue :hasIngredient _:b1285 ;
+recipes:CheeseFondue :hasIngredient _:b1285 ;
   :hasIngredient _:b1286 ;
   :hasIngredient _:b1287 ;
   :hasIngredient _:b1288 ;
@@ -1954,7 +1956,7 @@ ns1:CheeseFondue :hasIngredient _:b1285 ;
   :name "Cheese Fondue" ;
   a :Recipe .
 
-ns1:MushroomsinSourCream :hasIngredient _:b1413 ;
+recipes:MushroomsinSourCream :hasIngredient _:b1413 ;
   :hasIngredient _:b1414 ;
   :hasIngredient _:b1415 ;
   :hasIngredient _:b1416 ;
@@ -1964,7 +1966,7 @@ ns1:MushroomsinSourCream :hasIngredient _:b1413 ;
   :name "Mushrooms in Sour Cream" ;
   a :Recipe .
 
-ns1:PumpkinOatmealCookies :hasIngredient _:b1419 ;
+recipes:PumpkinOatmealCookies :hasIngredient _:b1419 ;
   :hasIngredient _:b1420 ;
   :hasIngredient _:b1421 ;
   :hasIngredient _:b1422 ;
@@ -1985,7 +1987,7 @@ ns1:PumpkinOatmealCookies :hasIngredient _:b1419 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:HoneyGrahamCrackers :hasIngredient _:b1435 ;
+recipes:HoneyGrahamCrackers :hasIngredient _:b1435 ;
   :hasIngredient _:b1436 ;
   :hasIngredient _:b1437 ;
   :hasIngredient _:b1438 ;
@@ -2000,7 +2002,7 @@ ns1:HoneyGrahamCrackers :hasIngredient _:b1435 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:TulelakePotatoCasserole :hasIngredient _:b1445 ;
+recipes:TulelakePotatoCasserole :hasIngredient _:b1445 ;
   :hasIngredient _:b1446 ;
   :hasIngredient _:b1447 ;
   :hasIngredient _:b1448 ;
@@ -3284,7 +3286,7 @@ ns1:TulelakePotatoCasserole :hasIngredient _:b1445 ;
   :name "Tulelake Potato Casserole" ;
   a :Recipe .
 
-ns1:GreenBeansSalerno :hasIngredient _:b2725 ;
+recipes:GreenBeansSalerno :hasIngredient _:b2725 ;
   :hasIngredient _:b2726 ;
   :hasIngredient _:b2727 ;
   :hasIngredient _:b2728 ;
@@ -3294,7 +3296,7 @@ ns1:GreenBeansSalerno :hasIngredient _:b2725 ;
   :name "Green Beans Salerno" ;
   a :Recipe .
 
-ns1:CreamyChickenBroccoliwithRice :hasIngredient _:b2731 ;
+recipes:CreamyChickenBroccoliwithRice :hasIngredient _:b2731 ;
   :hasIngredient _:b2732 ;
   :hasIngredient _:b2733 ;
   :hasIngredient _:b2734 ;
@@ -3302,7 +3304,7 @@ ns1:CreamyChickenBroccoliwithRice :hasIngredient _:b2731 ;
   :name "Creamy Chicken Broccoli with Rice" ;
   a :Recipe .
 
-ns1:LemonCloudSalad :hasIngredient _:b2735 ;
+recipes:LemonCloudSalad :hasIngredient _:b2735 ;
   :hasIngredient _:b2736 ;
   :hasIngredient _:b2737 ;
   :hasIngredient _:b2738 ;
@@ -3312,7 +3314,7 @@ ns1:LemonCloudSalad :hasIngredient _:b2735 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:SherryWineCake :hasIngredient _:b2740 ;
+recipes:SherryWineCake :hasIngredient _:b2740 ;
   :hasIngredient _:b2741 ;
   :hasIngredient _:b2742 ;
   :hasIngredient _:b2743 ;
@@ -3323,7 +3325,7 @@ ns1:SherryWineCake :hasIngredient _:b2740 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:Ranch-styleBakedBeans :hasIngredient _:b2746 ;
+recipes:Ranch-styleBakedBeans :hasIngredient _:b2746 ;
   :hasIngredient _:b2747 ;
   :hasIngredient _:b2748 ;
   :hasIngredient _:b2749 ;
@@ -3336,7 +3338,7 @@ ns1:Ranch-styleBakedBeans :hasIngredient _:b2746 ;
   :name "Ranch-style Baked Beans" ;
   a :Recipe .
 
-ns1:WalnutSquares :hasIngredient _:b2755 ;
+recipes:WalnutSquares :hasIngredient _:b2755 ;
   :hasIngredient _:b2756 ;
   :hasIngredient _:b2757 ;
   :hasIngredient _:b2758 ;
@@ -3347,7 +3349,7 @@ ns1:WalnutSquares :hasIngredient _:b2755 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:OvenFriedChicken :hasIngredient _:b2761 ;
+recipes:OvenFriedChicken :hasIngredient _:b2761 ;
   :hasIngredient _:b2762 ;
   :hasIngredient _:b2763 ;
   :hasIngredient _:b2764 ;
@@ -3358,7 +3360,7 @@ ns1:OvenFriedChicken :hasIngredient _:b2761 ;
   :name "Oven Fried Chicken" ;
   a :Recipe .
 
-ns1:CrispOatmealFruitStrips :hasIngredient _:b2768 ;
+recipes:CrispOatmealFruitStrips :hasIngredient _:b2768 ;
   :hasIngredient _:b2769 ;
   :hasIngredient _:b2770 ;
   :hasIngredient _:b2771 ;
@@ -3370,7 +3372,7 @@ ns1:CrispOatmealFruitStrips :hasIngredient _:b2768 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:LemonCloudPie :hasIngredient _:b2775 ;
+recipes:LemonCloudPie :hasIngredient _:b2775 ;
   :hasIngredient _:b2776 ;
   :hasIngredient _:b2777 ;
   :hasIngredient _:b2778 ;
@@ -3382,7 +3384,7 @@ ns1:LemonCloudPie :hasIngredient _:b2775 ;
   :recipeCategory "Pies" ;
   a :Recipe .
 
-ns1:EggFooYoung :hasIngredient _:b2782 ;
+recipes:EggFooYoung :hasIngredient _:b2782 ;
   :hasIngredient _:b2783 ;
   :hasIngredient _:b2784 ;
   :hasIngredient _:b2785 ;
@@ -3397,7 +3399,7 @@ ns1:EggFooYoung :hasIngredient _:b2782 ;
   :name "Egg Foo Young" ;
   a :Recipe .
 
-ns1:BeefStroganoff :hasIngredient _:b2793 ;
+recipes:BeefStroganoff :hasIngredient _:b2793 ;
   :hasIngredient _:b2794 ;
   :hasIngredient _:b2795 ;
   :hasIngredient _:b2796 ;
@@ -3411,7 +3413,7 @@ ns1:BeefStroganoff :hasIngredient _:b2793 ;
   :name "Beef Stroganoff" ;
   a :Recipe .
 
-ns1:FrostedDelights :hasIngredient _:b2803 ;
+recipes:FrostedDelights :hasIngredient _:b2803 ;
   :hasIngredient _:b2804 ;
   :hasIngredient _:b2805 ;
   :hasIngredient _:b2806 ;
@@ -3426,7 +3428,7 @@ ns1:FrostedDelights :hasIngredient _:b2803 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:BeefSpinachQuiche :hasIngredient _:b2813 ;
+recipes:BeefSpinachQuiche :hasIngredient _:b2813 ;
   :hasIngredient _:b2814 ;
   :hasIngredient _:b2815 ;
   :hasIngredient _:b2816 ;
@@ -3441,7 +3443,7 @@ ns1:BeefSpinachQuiche :hasIngredient _:b2813 ;
   :name "Beef Spinach Quiche" ;
   a :Recipe .
 
-ns1:AvocadoChickenMelt :hasIngredient _:b2824 ;
+recipes:AvocadoChickenMelt :hasIngredient _:b2824 ;
   :hasIngredient _:b2825 ;
   :hasIngredient _:b2826 ;
   :hasIngredient _:b2827 ;
@@ -3458,7 +3460,7 @@ ns1:AvocadoChickenMelt :hasIngredient _:b2824 ;
   :name "Avocado Chicken Melt" ;
   a :Recipe .
 
-ns1:StuffedGreenPeppers :hasIngredient _:b2837 ;
+recipes:StuffedGreenPeppers :hasIngredient _:b2837 ;
   :hasIngredient _:b2838 ;
   :hasIngredient _:b2839 ;
   :hasIngredient _:b2840 ;
@@ -3470,7 +3472,7 @@ ns1:StuffedGreenPeppers :hasIngredient _:b2837 ;
   :name "Stuffed Green Peppers" ;
   a :Recipe .
 
-ns1:SourCreamRaisinPie :hasIngredient _:b2845 ;
+recipes:SourCreamRaisinPie :hasIngredient _:b2845 ;
   :hasIngredient _:b2846 ;
   :hasIngredient _:b2847 ;
   :hasIngredient _:b2848 ;
@@ -3483,13 +3485,13 @@ ns1:SourCreamRaisinPie :hasIngredient _:b2845 ;
   :recipeCategory "Pies" ;
   a :Recipe .
 
-ns1:SpinachSaladwithAlfalfaSprouts :hasIngredient _:b2853 ;
+recipes:SpinachSaladwithAlfalfaSprouts :hasIngredient _:b2853 ;
   :instructions "Mix dressing ingredients:  mayonnaise, catsup, lemon juice, and sugar.  Combine remaining ingredients.  Toss with dressing." ;
   :name "Spinach Salad with Alfalfa Sprouts" ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:BlueberryCoffeeCake :hasIngredient _:b2854 ;
+recipes:BlueberryCoffeeCake :hasIngredient _:b2854 ;
   :hasIngredient _:b2855 ;
   :hasIngredient _:b2856 ;
   :hasIngredient _:b2857 ;
@@ -3504,7 +3506,7 @@ ns1:BlueberryCoffeeCake :hasIngredient _:b2854 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:BroccoliCheesePie :hasIngredient _:b2864 ;
+recipes:BroccoliCheesePie :hasIngredient _:b2864 ;
   :hasIngredient _:b2865 ;
   :hasIngredient _:b2866 ;
   :hasIngredient _:b2867 ;
@@ -3518,7 +3520,7 @@ ns1:BroccoliCheesePie :hasIngredient _:b2864 ;
   :name "Broccoli Cheese Pie" ;
   a :Recipe .
 
-ns1:OrangeAngelFoodCake :hasIngredient _:b2874 ;
+recipes:OrangeAngelFoodCake :hasIngredient _:b2874 ;
   :hasIngredient _:b2875 ;
   :hasIngredient _:b2876 ;
   :hasIngredient _:b2877 ;
@@ -3527,7 +3529,7 @@ ns1:OrangeAngelFoodCake :hasIngredient _:b2874 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:SpanishCreamPudding :hasIngredient _:b2878 ;
+recipes:SpanishCreamPudding :hasIngredient _:b2878 ;
   :hasIngredient _:b2879 ;
   :hasIngredient _:b2880 ;
   :hasIngredient _:b2881 ;
@@ -3537,30 +3539,30 @@ ns1:SpanishCreamPudding :hasIngredient _:b2878 ;
   :name "Spanish Cream Pudding" ;
   a :Recipe .
 
-ns1:ChickenLoMein :hasIngredient _:b2890 ;
-  :hasIngredient _:b2891 ;
-  :hasIngredient _:b2892 ;
-  :hasIngredient _:b2893 ;
+recipes:ChineseNoodleCasserole :hasIngredient _:b2893 ;
   :hasIngredient _:b2894 ;
   :hasIngredient _:b2895 ;
   :hasIngredient _:b2896 ;
   :hasIngredient _:b2897 ;
   :hasIngredient _:b2898 ;
-  :instructions "Marinate chicken in mixture of soy sauce, sherry, and cornstarch.\nCook chicken in oil in a wok and remove when d1.\nCook green onions, mushrooms, pea pods, and pepper. Add the bouillon and stir in chicken.\nServe over linguini" ;
-  :name "Chicken Lo Mein" ;
+  :instructions "Rinse nuts and tuna to remove excess salt. Add 1/4 cup water to soup. Pour half of soup over celery and onions in a large bowl. Add tuna and nuts, and 1 cup of noodles. Pour remaining soup on top and mix. Pour into buttered casserole and smooth top with a spoon. Crush remaining noodles and sprinkle on top. Bake 325 degrees for 45 minutes." ;
+  :name "Chinese Noodle Casserole" ;
   a :Recipe .
 
-ns1:ChineseNoodleCasserole :hasIngredient _:b2884 ;
+recipes:ChickenLoMein :hasIngredient _:b2884 ;
   :hasIngredient _:b2885 ;
   :hasIngredient _:b2886 ;
   :hasIngredient _:b2887 ;
   :hasIngredient _:b2888 ;
   :hasIngredient _:b2889 ;
-  :instructions "Rinse nuts and tuna to remove excess salt. Add 1/4 cup water to soup. Pour half of soup over celery and onions in a large bowl. Add tuna and nuts, and 1 cup of noodles. Pour remaining soup on top and mix. Pour into buttered casserole and smooth top with a spoon. Crush remaining noodles and sprinkle on top. Bake 325 degrees for 45 minutes." ;
-  :name "Chinese Noodle Casserole" ;
+  :hasIngredient _:b2890 ;
+  :hasIngredient _:b2891 ;
+  :hasIngredient _:b2892 ;
+  :instructions "Marinate chicken in mixture of soy sauce, sherry, and cornstarch.\nCook chicken in oil in a wok and remove when d1.\nCook green onions, mushrooms, pea pods, and pepper. Add the bouillon and stir in chicken.\nServe over linguini" ;
+  :name "Chicken Lo Mein" ;
   a :Recipe .
 
-ns1:HeavenlyCheeseSalad :hasIngredient _:b2899 ;
+recipes:HeavenlyCheeseSalad :hasIngredient _:b2899 ;
   :hasIngredient _:b2900 ;
   :hasIngredient _:b2901 ;
   :hasIngredient _:b2902 ;
@@ -3571,7 +3573,7 @@ ns1:HeavenlyCheeseSalad :hasIngredient _:b2899 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:PumpkinSwirlCheesecake :hasIngredient _:b2905 ;
+recipes:PumpkinSwirlCheesecake :hasIngredient _:b2905 ;
   :hasIngredient _:b2906 ;
   :hasIngredient _:b2907 ;
   :hasIngredient _:b2908 ;
@@ -3585,47 +3587,47 @@ ns1:PumpkinSwirlCheesecake :hasIngredient _:b2905 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:PineappleSpareribs :hasIngredient _:b2917 ;
-  :hasIngredient _:b2918 ;
-  :hasIngredient _:b2919 ;
+recipes:SauteZucchini :hasIngredient _:b2919 ;
   :hasIngredient _:b2920 ;
   :hasIngredient _:b2921 ;
-  :instructions "Cook ribs at 375 degrees until brown. Combine sugar, vinegar, water, and cornstarch in saucepan. Bring to a boil. Pour over browned ribs. Cook for 1 hour or until ribs are 10der. Add pineapple chunks and green pepper slices. Cover and cook for an additional 20 to 30 minutes." ;
-  :name "Pineapple Spareribs" ;
-  a :Recipe .
-
-ns1:SauteZucchini :hasIngredient _:b2914 ;
-  :hasIngredient _:b2915 ;
-  :hasIngredient _:b2916 ;
   :instructions "Melt butter in skillet. Slice zucchini thin, Add garlic. Cover and simmer for 5 minutes. Sprinkle with parmesan cheese. Cover and cook 5 minutes longer." ;
   :name "Saute Zucchini" ;
   a :Recipe .
 
-ns1:VealScallopini :hasIngredient _:b2931 ;
+recipes:PineappleSpareribs :hasIngredient _:b2914 ;
+  :hasIngredient _:b2915 ;
+  :hasIngredient _:b2916 ;
+  :hasIngredient _:b2917 ;
+  :hasIngredient _:b2918 ;
+  :instructions "Cook ribs at 375 degrees until brown. Combine sugar, vinegar, water, and cornstarch in saucepan. Bring to a boil. Pour over browned ribs. Cook for 1 hour or until ribs are 10der. Add pineapple chunks and green pepper slices. Cover and cook for an additional 20 to 30 minutes." ;
+  :name "Pineapple Spareribs" ;
+  a :Recipe .
+
+recipes:GingerSnaps :hasIngredient _:b2928 ;
+  :hasIngredient _:b2929 ;
+  :hasIngredient _:b2930 ;
+  :hasIngredient _:b2931 ;
   :hasIngredient _:b2932 ;
   :hasIngredient _:b2933 ;
   :hasIngredient _:b2934 ;
   :hasIngredient _:b2935 ;
   :hasIngredient _:b2936 ;
-  :instructions "Cut meat into 2 inch pieces and coat in flour. Brown in oil. Add mushrooms, salt, pepper, and wine. Pour over meat in a casserole. Cook in covered casserole for 1 hour at 375 degrees or a heavy covered skillet at low heat for 45 minutes." ;
-  :name "Veal Scallopini" ;
-  a :Recipe .
-
-ns1:GingerSnaps :hasIngredient _:b2922 ;
-  :hasIngredient _:b2923 ;
-  :hasIngredient _:b2924 ;
-  :hasIngredient _:b2925 ;
-  :hasIngredient _:b2926 ;
-  :hasIngredient _:b2927 ;
-  :hasIngredient _:b2928 ;
-  :hasIngredient _:b2929 ;
-  :hasIngredient _:b2930 ;
   :instructions "Roll in little balls.  Dip in sugar and flatten with glass dipped in water.  Bake at 350 degrees about 7 minutes." ;
   :name "Ginger Snaps" ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:Artichoke-MozzarellaCasserole :hasIngredient _:b2937 ;
+recipes:VealScallopini :hasIngredient _:b2922 ;
+  :hasIngredient _:b2923 ;
+  :hasIngredient _:b2924 ;
+  :hasIngredient _:b2925 ;
+  :hasIngredient _:b2926 ;
+  :hasIngredient _:b2927 ;
+  :instructions "Cut meat into 2 inch pieces and coat in flour. Brown in oil. Add mushrooms, salt, pepper, and wine. Pour over meat in a casserole. Cook in covered casserole for 1 hour at 375 degrees or a heavy covered skillet at low heat for 45 minutes." ;
+  :name "Veal Scallopini" ;
+  a :Recipe .
+
+recipes:Artichoke-MozzarellaCasserole :hasIngredient _:b2937 ;
   :hasIngredient _:b2938 ;
   :hasIngredient _:b2939 ;
   :hasIngredient _:b2940 ;
@@ -3639,7 +3641,7 @@ ns1:Artichoke-MozzarellaCasserole :hasIngredient _:b2937 ;
   :name "Artichoke-Mozzarella Casserole" ;
   a :Recipe .
 
-ns1:BakedZucchiniwithMushrooms :hasIngredient _:b2947 ;
+recipes:BakedZucchiniwithMushrooms :hasIngredient _:b2947 ;
   :hasIngredient _:b2948 ;
   :hasIngredient _:b2949 ;
   :hasIngredient _:b2950 ;
@@ -3653,7 +3655,7 @@ ns1:BakedZucchiniwithMushrooms :hasIngredient _:b2947 ;
   :name "Baked Zucchini with Mushrooms" ;
   a :Recipe .
 
-ns1:FreshAppleCake :hasIngredient _:b2957 ;
+recipes:FreshAppleCake :hasIngredient _:b2957 ;
   :hasIngredient _:b2958 ;
   :hasIngredient _:b2959 ;
   :hasIngredient _:b2960 ;
@@ -3669,7 +3671,7 @@ ns1:FreshAppleCake :hasIngredient _:b2957 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:ChocolateCake :hasIngredient _:b2968 ;
+recipes:ChocolateCake :hasIngredient _:b2968 ;
   :hasIngredient _:b2969 ;
   :hasIngredient _:b2970 ;
   :hasIngredient _:b2971 ;
@@ -3684,7 +3686,7 @@ ns1:ChocolateCake :hasIngredient _:b2968 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:ChiliChicken :hasIngredient _:b2978 ;
+recipes:ChiliChicken :hasIngredient _:b2978 ;
   :hasIngredient _:b2979 ;
   :hasIngredient _:b2980 ;
   :hasIngredient _:b2981 ;
@@ -3696,7 +3698,7 @@ ns1:ChiliChicken :hasIngredient _:b2978 ;
   :name "Chili Chicken" ;
   a :Recipe .
 
-ns1:PeachParfaitPie :hasIngredient _:b2986 ;
+recipes:PeachParfaitPie :hasIngredient _:b2986 ;
   :hasIngredient _:b2987 ;
   :hasIngredient _:b2988 ;
   :hasIngredient _:b2989 ;
@@ -3708,14 +3710,14 @@ ns1:PeachParfaitPie :hasIngredient _:b2986 ;
   :recipeCategory "Pies" ;
   a :Recipe .
 
-ns1:SummerSquash :hasIngredient _:b2993 ;
+recipes:SummerSquash :hasIngredient _:b2993 ;
   :hasIngredient _:b2994 ;
   :hasIngredient _:b2995 ;
   :instructions "Boil squash until tender. Mash with butter, salt, pepper, worcestershire sauce, 2 eggs, cracker crumbs, onion and parmesan cheese. Put in casserole, top with paprika and bacon bits. Bake about 30 minutes." ;
   :name "Summer Squash" ;
   a :Recipe .
 
-ns1:BananaCreamPie :hasIngredient _:b2996 ;
+recipes:BananaCreamPie :hasIngredient _:b2996 ;
   :hasIngredient _:b2997 ;
   :hasIngredient _:b2998 ;
   :hasIngredient _:b2999 ;
@@ -3728,7 +3730,7 @@ ns1:BananaCreamPie :hasIngredient _:b2996 ;
   :recipeCategory "Pies" ;
   a :Recipe .
 
-ns1:CranberryMold :hasIngredient _:b3004 ;
+recipes:CranberryMold :hasIngredient _:b3004 ;
   :hasIngredient _:b3005 ;
   :hasIngredient _:b3006 ;
   :hasIngredient _:b3007 ;
@@ -3738,7 +3740,7 @@ ns1:CranberryMold :hasIngredient _:b3004 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:BlueChipCookies :hasIngredient _:b3009 ;
+recipes:BlueChipCookies :hasIngredient _:b3009 ;
   :hasIngredient _:b3010 ;
   :hasIngredient _:b3011 ;
   :hasIngredient _:b3012 ;
@@ -3753,7 +3755,7 @@ ns1:BlueChipCookies :hasIngredient _:b3009 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:PeanutButterPie :hasIngredient _:b3019 ;
+recipes:PeanutButterPie :hasIngredient _:b3019 ;
   :hasIngredient _:b3020 ;
   :hasIngredient _:b3021 ;
   :hasIngredient _:b3022 ;
@@ -3765,7 +3767,8 @@ ns1:PeanutButterPie :hasIngredient _:b3019 ;
   :recipeCategory "Pies" ;
   a :Recipe .
 
-ns1:UpsideDownCake :hasIngredient _:b3036 ;
+recipes:GardenQuiche :hasIngredient _:b3035 ;
+  :hasIngredient _:b3036 ;
   :hasIngredient _:b3037 ;
   :hasIngredient _:b3038 ;
   :hasIngredient _:b3039 ;
@@ -3774,12 +3777,11 @@ ns1:UpsideDownCake :hasIngredient _:b3036 ;
   :hasIngredient _:b3042 ;
   :hasIngredient _:b3043 ;
   :hasIngredient _:b3044 ;
-  :instructions "Melt butter in oven-proof skillet.  Add brown sugar.  Arrange fruit in pan.  To make cake batter, beat eggs about 5 minutes until thick and lemon colored.  Gradually add sugar.  Then add all at once fruit juice an vanilla.  Sift together and beat in flour, baking powder, and salt.  Pour batter over fruit an bake until done, about 45 minutes at 350 degrees." ;
-  :name "Upside Down Cake" ;
-  :recipeCategory "Cakes" ;
+  :instructions "Heat oven to 425 degrees. Mix baking mix and water until soft dough forms; beat vigorously 20 strokes. Gently smooth dough into ball on floured cloth-covered board. Knead 5 times. Roll dough 2 inches larger than inverted 9-inch pie plate. Ease into plate; flute edge if desired. Sprinkle broccoli, cheese and onions in cryst. Beat remaining ingredients with hand beater; pour over broccoli mixture. Bake 15 minutes.\nReduce oven temperature to 300 degrees. Bake until knife inserted 1 inch from edge comes out clean, about 35 minutes. Let stand 10 minutes before cutting. Serves 6." ;
+  :name "Garden Quiche" ;
   a :Recipe .
 
-ns1:GardenQuiche :hasIngredient _:b3026 ;
+recipes:UpsideDownCake :hasIngredient _:b3026 ;
   :hasIngredient _:b3027 ;
   :hasIngredient _:b3028 ;
   :hasIngredient _:b3029 ;
@@ -3788,12 +3790,12 @@ ns1:GardenQuiche :hasIngredient _:b3026 ;
   :hasIngredient _:b3032 ;
   :hasIngredient _:b3033 ;
   :hasIngredient _:b3034 ;
-  :hasIngredient _:b3035 ;
-  :instructions "Heat oven to 425 degrees. Mix baking mix and water until soft dough forms; beat vigorously 20 strokes. Gently smooth dough into ball on floured cloth-covered board. Knead 5 times. Roll dough 2 inches larger than inverted 9-inch pie plate. Ease into plate; flute edge if desired. Sprinkle broccoli, cheese and onions in cryst. Beat remaining ingredients with hand beater; pour over broccoli mixture. Bake 15 minutes.\nReduce oven temperature to 300 degrees. Bake until knife inserted 1 inch from edge comes out clean, about 35 minutes. Let stand 10 minutes before cutting. Serves 6." ;
-  :name "Garden Quiche" ;
+  :instructions "Melt butter in oven-proof skillet.  Add brown sugar.  Arrange fruit in pan.  To make cake batter, beat eggs about 5 minutes until thick and lemon colored.  Gradually add sugar.  Then add all at once fruit juice an vanilla.  Sift together and beat in flour, baking powder, and salt.  Pour batter over fruit an bake until done, about 45 minutes at 350 degrees." ;
+  :name "Upside Down Cake" ;
+  :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:SpinachSouffle :hasIngredient _:b3045 ;
+recipes:SpinachSouffle :hasIngredient _:b3045 ;
   :hasIngredient _:b3046 ;
   :hasIngredient _:b3047 ;
   :hasIngredient _:b3048 ;
@@ -3804,7 +3806,7 @@ ns1:SpinachSouffle :hasIngredient _:b3045 ;
   :name "Spinach Souffle" ;
   a :Recipe .
 
-ns1:AsparagusStir-Fried :hasIngredient _:b3052 ;
+recipes:AsparagusStir-Fried :hasIngredient _:b3052 ;
   :hasIngredient _:b3053 ;
   :hasIngredient _:b3054 ;
   :hasIngredient _:b3055 ;
@@ -3815,32 +3817,32 @@ ns1:AsparagusStir-Fried :hasIngredient _:b3052 ;
   :name "Asparagus Stir-Fried" ;
   a :Recipe .
 
-ns1:SoleThermidor :hasIngredient _:b3066 ;
-  :hasIngredient _:b3067 ;
-  :hasIngredient _:b3068 ;
-  :hasIngredient _:b3069 ;
+recipes:ThreeCheeseSpinach :hasIngredient _:b3069 ;
   :hasIngredient _:b3070 ;
   :hasIngredient _:b3071 ;
   :hasIngredient _:b3072 ;
   :hasIngredient _:b3073 ;
   :hasIngredient _:b3074 ;
   :hasIngredient _:b3075 ;
-  :instructions "Roll fish, cook in milk for 30 minutes at 375 degrees. Drain milk, make sauce with remaining ingredients, sprinkle with paprika. Pour over fish. Broil quickly. Serves 4-5.\nLine bottom of baking dish with half of the bacon. Cover with onion. Sprinkle on bay leaf. Place trout on top. Blend flour and margerine, spread on fish. Sprinkle with crumbs. Top with bacon. Bake uncovered at 375 degrees for 35-45 minutes until golden brown and flakey." ;
-  :name "Sole Thermidor" ;
+  :instructions "Combine onions and mushrooms in small microwave-safe bowl. Microwave 1 to 3 minutes or until onions are soft. Place spinach in 1 1/2 quart microwave-safe casserole. Cover and microwave 6 to 9 minutes, breaking up and rearranging every 3 minutes, until defrosted. Drain well.\nAdd onion mixture to spinach, along with cottage cheese, parmesan cheese, eggs, salt and pepper. Stir well to blend. Microwave, uncovered, 8 to 11 minutes, rotating dish if necessary every 3 minutes, until misture is headted through and set.\nSprinkle grated cheese over top and dust lightly with paprika. Microwave about 1 minute longer to melt cheese. Let stand 3 minutes before serving.\nYields 6 to 8 servings." ;
+  :name "Three Cheese Spinach" ;
   a :Recipe .
 
-ns1:ThreeCheeseSpinach :hasIngredient _:b3059 ;
+recipes:SoleThermidor :hasIngredient _:b3059 ;
   :hasIngredient _:b3060 ;
   :hasIngredient _:b3061 ;
   :hasIngredient _:b3062 ;
   :hasIngredient _:b3063 ;
   :hasIngredient _:b3064 ;
   :hasIngredient _:b3065 ;
-  :instructions "Combine onions and mushrooms in small microwave-safe bowl. Microwave 1 to 3 minutes or until onions are soft. Place spinach in 1 1/2 quart microwave-safe casserole. Cover and microwave 6 to 9 minutes, breaking up and rearranging every 3 minutes, until defrosted. Drain well.\nAdd onion mixture to spinach, along with cottage cheese, parmesan cheese, eggs, salt and pepper. Stir well to blend. Microwave, uncovered, 8 to 11 minutes, rotating dish if necessary every 3 minutes, until misture is headted through and set.\nSprinkle grated cheese over top and dust lightly with paprika. Microwave about 1 minute longer to melt cheese. Let stand 3 minutes before serving.\nYields 6 to 8 servings." ;
-  :name "Three Cheese Spinach" ;
+  :hasIngredient _:b3066 ;
+  :hasIngredient _:b3067 ;
+  :hasIngredient _:b3068 ;
+  :instructions "Roll fish, cook in milk for 30 minutes at 375 degrees. Drain milk, make sauce with remaining ingredients, sprinkle with paprika. Pour over fish. Broil quickly. Serves 4-5.\nLine bottom of baking dish with half of the bacon. Cover with onion. Sprinkle on bay leaf. Place trout on top. Blend flour and margerine, spread on fish. Sprinkle with crumbs. Top with bacon. Bake uncovered at 375 degrees for 35-45 minutes until golden brown and flakey." ;
+  :name "Sole Thermidor" ;
   a :Recipe .
 
-ns1:LemonPoppyCake :hasIngredient _:b3076 ;
+recipes:LemonPoppyCake :hasIngredient _:b3076 ;
   :hasIngredient _:b3077 ;
   :hasIngredient _:b3078 ;
   :hasIngredient _:b3079 ;
@@ -3851,7 +3853,7 @@ ns1:LemonPoppyCake :hasIngredient _:b3076 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:JelloPastelCookies :hasIngredient _:b3082 ;
+recipes:JelloPastelCookies :hasIngredient _:b3082 ;
   :hasIngredient _:b3083 ;
   :hasIngredient _:b3084 ;
   :hasIngredient _:b3085 ;
@@ -3863,7 +3865,10 @@ ns1:JelloPastelCookies :hasIngredient _:b3082 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:StrawberrySpiceLoaf :hasIngredient _:b3101 ;
+recipes:BarbecuedSpareribs :hasIngredient _:b3098 ;
+  :hasIngredient _:b3099 ;
+  :hasIngredient _:b3100 ;
+  :hasIngredient _:b3101 ;
   :hasIngredient _:b3102 ;
   :hasIngredient _:b3103 ;
   :hasIngredient _:b3104 ;
@@ -3872,12 +3877,11 @@ ns1:StrawberrySpiceLoaf :hasIngredient _:b3101 ;
   :hasIngredient _:b3107 ;
   :hasIngredient _:b3108 ;
   :hasIngredient _:b3109 ;
-  :instructions "Bake in two 9\" loaf pans, greased and floured, at 350 degrees for one hour." ;
-  :name "Strawberry Spice Loaf" ;
-  :recipeCategory "Cakes" ;
+  :instructions "Baste over ribs while browning until done. If sauce is too thin, thicken with 1 or 2 tablespoons of flour." ;
+  :name "Barbecued Spareribs" ;
   a :Recipe .
 
-ns1:BarbecuedSpareribs :hasIngredient _:b3089 ;
+recipes:StrawberrySpiceLoaf :hasIngredient _:b3089 ;
   :hasIngredient _:b3090 ;
   :hasIngredient _:b3091 ;
   :hasIngredient _:b3092 ;
@@ -3886,14 +3890,12 @@ ns1:BarbecuedSpareribs :hasIngredient _:b3089 ;
   :hasIngredient _:b3095 ;
   :hasIngredient _:b3096 ;
   :hasIngredient _:b3097 ;
-  :hasIngredient _:b3098 ;
-  :hasIngredient _:b3099 ;
-  :hasIngredient _:b3100 ;
-  :instructions "Baste over ribs while browning until done. If sauce is too thin, thicken with 1 or 2 tablespoons of flour." ;
-  :name "Barbecued Spareribs" ;
+  :instructions "Bake in two 9\" loaf pans, greased and floured, at 350 degrees for one hour." ;
+  :name "Strawberry Spice Loaf" ;
+  :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:SpinachStrudels :hasIngredient _:b3110 ;
+recipes:SpinachStrudels :hasIngredient _:b3110 ;
   :hasIngredient _:b3111 ;
   :hasIngredient _:b3112 ;
   :hasIngredient _:b3113 ;
@@ -3906,7 +3908,7 @@ ns1:SpinachStrudels :hasIngredient _:b3110 ;
   :name "Spinach Strudels" ;
   a :Recipe .
 
-ns1:MinestroneSoup :hasIngredient _:b3119 ;
+recipes:MinestroneSoup :hasIngredient _:b3119 ;
   :hasIngredient _:b3120 ;
   :hasIngredient _:b3121 ;
   :hasIngredient _:b3122 ;
@@ -3924,39 +3926,39 @@ ns1:MinestroneSoup :hasIngredient _:b3119 ;
   :recipeCategory "Soup" ;
   a :Recipe .
 
-ns1:ChineseBroccoli :hasIngredient _:b3150 ;
+recipes:SweetandSourRedCabbage :hasIngredient _:b3145 ;
+  :hasIngredient _:b3146 ;
+  :hasIngredient _:b3147 ;
+  :hasIngredient _:b3148 ;
+  :hasIngredient _:b3149 ;
+  :hasIngredient _:b3150 ;
   :hasIngredient _:b3151 ;
-  :instructions "Steam broccoli. Mix crab or shrimp in bea10 egg white. Saute crab or shrimp with fresh mushrooms, broth, and soy sauce. Spoon over broccoli." ;
-  :name "Chinese Broccoli" ;
+  :instructions "Heat oil in skillet. add cabbage and apple. Combine rest of ingredients, pour over cabbage, Cover tightly. Cook over low heat, sit occasionally for 15-20 minutes, until tender." ;
+  :name "Sweet and Sour Red Cabbage" ;
   a :Recipe .
 
-ns1:SpinachPie :hasIngredient _:b3139 ;
+recipes:SpinachPie :hasIngredient _:b3134 ;
+  :hasIngredient _:b3135 ;
+  :hasIngredient _:b3136 ;
+  :hasIngredient _:b3137 ;
+  :hasIngredient _:b3138 ;
+  :hasIngredient _:b3139 ;
   :hasIngredient _:b3140 ;
   :hasIngredient _:b3141 ;
   :hasIngredient _:b3142 ;
   :hasIngredient _:b3143 ;
   :hasIngredient _:b3144 ;
-  :hasIngredient _:b3145 ;
-  :hasIngredient _:b3146 ;
-  :hasIngredient _:b3147 ;
-  :hasIngredient _:b3148 ;
-  :hasIngredient _:b3149 ;
   :instructions "Preheat oven to 350 degrees. Let pastry sheets warm to room temperature, according to directions on package. In 1/4 cup hot butter in medium skillet, saute onion until golden, about 5 minutes. Add spinach; stir to combine onion. Remove from heat.\nIn a large bowl, beat eggs with rotary beater. With a wooden spoon, stir in cheese, parsely, dill, salt, pepper and spinach/onion mixture; mix well.\nBrush a 13x9x2 inch baking pan lightly with some of the melted butter. In bottom of baking pan, layer 8 phyllo pastry sheets 1 by 1, brushing top of each with some of melted butter. SPread evenly with spinach mixture. (Keep unused pastry sheets covered with damp paper towels to prevent drying out.)\nCover with 8 more leaves, brushing each with butter; pour any remaining melted butter over the top. Using scissors, trim off any uneven edges of pastry. Cut through top pastry layer to form 18 rectangles, about 3 by 2 inches.\nBake 30 to 35 minutes, or until top crust is puffy and golden. Serve warm.\nMakes 18 servings." ;
   :name "Spinach Pie" ;
   a :Recipe .
 
-ns1:SweetandSourRedCabbage :hasIngredient _:b3132 ;
+recipes:ChineseBroccoli :hasIngredient _:b3132 ;
   :hasIngredient _:b3133 ;
-  :hasIngredient _:b3134 ;
-  :hasIngredient _:b3135 ;
-  :hasIngredient _:b3136 ;
-  :hasIngredient _:b3137 ;
-  :hasIngredient _:b3138 ;
-  :instructions "Heat oil in skillet. add cabbage and apple. Combine rest of ingredients, pour over cabbage, Cover tightly. Cook over low heat, sit occasionally for 15-20 minutes, until tender." ;
-  :name "Sweet and Sour Red Cabbage" ;
+  :instructions "Steam broccoli. Mix crab or shrimp in bea10 egg white. Saute crab or shrimp with fresh mushrooms, broth, and soy sauce. Spoon over broccoli." ;
+  :name "Chinese Broccoli" ;
   a :Recipe .
 
-ns1:BroccoliSaladwithPineapple :hasIngredient _:b3152 ;
+recipes:BroccoliSaladwithPineapple :hasIngredient _:b3152 ;
   :hasIngredient _:b3153 ;
   :hasIngredient _:b3154 ;
   :hasIngredient _:b3155 ;
@@ -3969,7 +3971,9 @@ ns1:BroccoliSaladwithPineapple :hasIngredient _:b3152 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:ChocolateMayonaiseCake :hasIngredient _:b3170 ;
+recipes:SpinachSalad :hasIngredient _:b3168 ;
+  :hasIngredient _:b3169 ;
+  :hasIngredient _:b3170 ;
   :hasIngredient _:b3171 ;
   :hasIngredient _:b3172 ;
   :hasIngredient _:b3173 ;
@@ -3977,12 +3981,12 @@ ns1:ChocolateMayonaiseCake :hasIngredient _:b3170 ;
   :hasIngredient _:b3175 ;
   :hasIngredient _:b3176 ;
   :hasIngredient _:b3177 ;
-  :instructions "Makes  2 layer cake." ;
-  :name "Chocolate Mayonaise Cake" ;
-  :recipeCategory "Cakes" ;
+  :instructions "Mix spinach and thinly sliced onion.  Fry bacon until crisp, drain.  To drippings add vinegar, water, sugar, and salt.  Bring to a boil.  Beat egg until light.  Add sour cream.  Pour boiling liquid over egg then pour back in skillet.  Cook over low heat until thick.  Pour over spinach, add bacon and chopped egg.  Toss lightly." ;
+  :name "Spinach Salad" ;
+  :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:SpinachSalad :hasIngredient _:b3160 ;
+recipes:ChocolateMayonaiseCake :hasIngredient _:b3160 ;
   :hasIngredient _:b3161 ;
   :hasIngredient _:b3162 ;
   :hasIngredient _:b3163 ;
@@ -3990,14 +3994,12 @@ ns1:SpinachSalad :hasIngredient _:b3160 ;
   :hasIngredient _:b3165 ;
   :hasIngredient _:b3166 ;
   :hasIngredient _:b3167 ;
-  :hasIngredient _:b3168 ;
-  :hasIngredient _:b3169 ;
-  :instructions "Mix spinach and thinly sliced onion.  Fry bacon until crisp, drain.  To drippings add vinegar, water, sugar, and salt.  Bring to a boil.  Beat egg until light.  Add sour cream.  Pour boiling liquid over egg then pour back in skillet.  Cook over low heat until thick.  Pour over spinach, add bacon and chopped egg.  Toss lightly." ;
-  :name "Spinach Salad" ;
-  :recipeCategory "Salads and Dressings" ;
+  :instructions "Makes  2 layer cake." ;
+  :name "Chocolate Mayonaise Cake" ;
+  :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:FreshPeachDessert :hasIngredient _:b3178 ;
+recipes:FreshPeachDessert :hasIngredient _:b3178 ;
   :hasIngredient _:b3179 ;
   :hasIngredient _:b3180 ;
   :hasIngredient _:b3181 ;
@@ -4009,7 +4011,7 @@ ns1:FreshPeachDessert :hasIngredient _:b3178 ;
   :name "Fresh Peach Dessert" ;
   a :Recipe .
 
-ns1:ChickenwithArtichoke :hasIngredient _:b3186 ;
+recipes:ChickenwithArtichoke :hasIngredient _:b3186 ;
   :hasIngredient _:b3187 ;
   :hasIngredient _:b3188 ;
   :hasIngredient _:b3189 ;
@@ -4018,7 +4020,7 @@ ns1:ChickenwithArtichoke :hasIngredient _:b3186 ;
   :name "Chicken with Artichoke" ;
   a :Recipe .
 
-ns1:SouthCarolinaCobbler :hasIngredient _:b3191 ;
+recipes:SouthCarolinaCobbler :hasIngredient _:b3191 ;
   :hasIngredient _:b3192 ;
   :hasIngredient _:b3193 ;
   :hasIngredient _:b3194 ;
@@ -4029,7 +4031,7 @@ ns1:SouthCarolinaCobbler :hasIngredient _:b3191 ;
   :name "South Carolina Cobbler" ;
   a :Recipe .
 
-ns1:ChineseChickenSalad :hasIngredient _:b3198 ;
+recipes:ChineseChickenSalad :hasIngredient _:b3198 ;
   :hasIngredient _:b3199 ;
   :hasIngredient _:b3200 ;
   :hasIngredient _:b3201 ;
@@ -4041,7 +4043,7 @@ ns1:ChineseChickenSalad :hasIngredient _:b3198 ;
   :name "Chinese Chicken Salad" ;
   a :Recipe .
 
-ns1:WildMushroomandSpinachLasanga :hasIngredient _:b3206 ;
+recipes:WildMushroomandSpinachLasanga :hasIngredient _:b3206 ;
   :hasIngredient _:b3207 ;
   :hasIngredient _:b3208 ;
   :hasIngredient _:b3209 ;
@@ -4062,21 +4064,7 @@ ns1:WildMushroomandSpinachLasanga :hasIngredient _:b3206 ;
   :name "Wild Mushroom and Spinach Lasanga" ;
   a :Recipe .
 
-ns1:TeriyakiSteak :hasIngredient _:b3238 ;
-  :hasIngredient _:b3239 ;
-  :hasIngredient _:b3240 ;
-  :hasIngredient _:b3241 ;
-  :hasIngredient _:b3242 ;
-  :instructions "Marinate for at least 1 hour. Grill over hot coals for about 4 minutes on each side for a 1 inch, rare steak. 5 to 6 minutes for medium-rare." ;
-  :name "Teriyaki Steak" ;
-  a :Recipe .
-
-ns1:ChickenSchnitzel :hasIngredient _:b3223 ;
-  :hasIngredient _:b3224 ;
-  :hasIngredient _:b3225 ;
-  :hasIngredient _:b3226 ;
-  :hasIngredient _:b3227 ;
-  :hasIngredient _:b3228 ;
+recipes:ChickenSchnitzel :hasIngredient _:b3228 ;
   :hasIngredient _:b3229 ;
   :hasIngredient _:b3230 ;
   :hasIngredient _:b3231 ;
@@ -4086,11 +4074,25 @@ ns1:ChickenSchnitzel :hasIngredient _:b3223 ;
   :hasIngredient _:b3235 ;
   :hasIngredient _:b3236 ;
   :hasIngredient _:b3237 ;
+  :hasIngredient _:b3238 ;
+  :hasIngredient _:b3239 ;
+  :hasIngredient _:b3240 ;
+  :hasIngredient _:b3241 ;
+  :hasIngredient _:b3242 ;
   :instructions "On a plate combine 4 tablespoons of flour with salt and pepper. On a second plate, combine bread crumbs, paprika and garlic powder.\nIn a large skillet, heat the oil; dredge each cutlet in seas1d flour, dip in beaten egg, coat in bread crumbs, then place in a skillet. Quickly brown chicken for about 2 minutes on both sides. Remove chicken to plate and keep warm.\nIn the same skillet, combine onion and apple and saute over medium heat until sof10ed, about 5 minutes. Sprinkle remaining flour over mixture and stir to combine. Gradually stir in broth and bring to boil, stirring constantly.\nTo serve, spoon sauerkraut mixture on to center of serving plate and surround with chicken pieces; garnish chicken with lemon slices." ;
   :name "Chicken Schnitzel" ;
   a :Recipe .
 
-ns1:CreamyApplePie :hasIngredient _:b3243 ;
+recipes:TeriyakiSteak :hasIngredient _:b3223 ;
+  :hasIngredient _:b3224 ;
+  :hasIngredient _:b3225 ;
+  :hasIngredient _:b3226 ;
+  :hasIngredient _:b3227 ;
+  :instructions "Marinate for at least 1 hour. Grill over hot coals for about 4 minutes on each side for a 1 inch, rare steak. 5 to 6 minutes for medium-rare." ;
+  :name "Teriyaki Steak" ;
+  a :Recipe .
+
+recipes:CreamyApplePie :hasIngredient _:b3243 ;
   :hasIngredient _:b3244 ;
   :hasIngredient _:b3245 ;
   :hasIngredient _:b3246 ;
@@ -4101,7 +4103,7 @@ ns1:CreamyApplePie :hasIngredient _:b3243 ;
   :recipeCategory "Pies" ;
   a :Recipe .
 
-ns1:Zucchini-HamCheesePie :hasIngredient _:b3249 ;
+recipes:Zucchini-HamCheesePie :hasIngredient _:b3249 ;
   :hasIngredient _:b3250 ;
   :hasIngredient _:b3251 ;
   :hasIngredient _:b3252 ;
@@ -4116,7 +4118,7 @@ ns1:Zucchini-HamCheesePie :hasIngredient _:b3249 ;
   :name "Zucchini-Ham Cheese Pie" ;
   a :Recipe .
 
-ns1:EggplantRollatini :hasIngredient _:b3260 ;
+recipes:EggplantRollatini :hasIngredient _:b3260 ;
   :hasIngredient _:b3261 ;
   :hasIngredient _:b3262 ;
   :hasIngredient _:b3263 ;
@@ -4129,7 +4131,7 @@ ns1:EggplantRollatini :hasIngredient _:b3260 ;
   :name "Eggplant Rollatini" ;
   a :Recipe .
 
-ns1:PorkFuManChow :hasIngredient _:b3269 ;
+recipes:PorkFuManChow :hasIngredient _:b3269 ;
   :hasIngredient _:b3270 ;
   :hasIngredient _:b3271 ;
   :hasIngredient _:b3272 ;
@@ -4143,7 +4145,7 @@ ns1:PorkFuManChow :hasIngredient _:b3269 ;
   :name "Pork Fu Man Chow" ;
   a :Recipe .
 
-ns1:OatmealCookies :hasIngredient _:b3279 ;
+recipes:OatmealCookies :hasIngredient _:b3279 ;
   :hasIngredient _:b3280 ;
   :hasIngredient _:b3281 ;
   :hasIngredient _:b3282 ;
@@ -4160,7 +4162,7 @@ ns1:OatmealCookies :hasIngredient _:b3279 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:MyBestGingerbread :hasIngredient _:b3291 ;
+recipes:MyBestGingerbread :hasIngredient _:b3291 ;
   :hasIngredient _:b3292 ;
   :hasIngredient _:b3293 ;
   :hasIngredient _:b3294 ;
@@ -4176,7 +4178,7 @@ ns1:MyBestGingerbread :hasIngredient _:b3291 ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:ChineseFriedRice :hasIngredient _:b3302 ;
+recipes:ChineseFriedRice :hasIngredient _:b3302 ;
   :hasIngredient _:b3303 ;
   :hasIngredient _:b3304 ;
   :hasIngredient _:b3305 ;
@@ -4188,7 +4190,7 @@ ns1:ChineseFriedRice :hasIngredient _:b3302 ;
   :name "Chinese Fried Rice" ;
   a :Recipe .
 
-ns1:WalnutPie :hasIngredient _:b3310 ;
+recipes:WalnutPie :hasIngredient _:b3310 ;
   :hasIngredient _:b3311 ;
   :hasIngredient _:b3312 ;
   :hasIngredient _:b3313 ;
@@ -4200,7 +4202,7 @@ ns1:WalnutPie :hasIngredient _:b3310 ;
   :recipeCategory "Pies" ;
   a :Recipe .
 
-ns1:BatterFriedChicken :hasIngredient _:b3317 ;
+recipes:BatterFriedChicken :hasIngredient _:b3317 ;
   :hasIngredient _:b3318 ;
   :hasIngredient _:b3319 ;
   :hasIngredient _:b3320 ;
@@ -4212,7 +4214,7 @@ ns1:BatterFriedChicken :hasIngredient _:b3317 ;
   :name "Batter Fried Chicken" ;
   a :Recipe .
 
-ns1:ImpossibleTacoPie :hasIngredient _:b3325 ;
+recipes:ImpossibleTacoPie :hasIngredient _:b3325 ;
   :hasIngredient _:b3326 ;
   :hasIngredient _:b3327 ;
   :hasIngredient _:b3328 ;
@@ -4225,7 +4227,7 @@ ns1:ImpossibleTacoPie :hasIngredient _:b3325 ;
   :name "Impossible Taco Pie" ;
   a :Recipe .
 
-ns1:ChilledPruneWhip :hasIngredient _:b3334 ;
+recipes:ChilledPruneWhip :hasIngredient _:b3334 ;
   :hasIngredient _:b3335 ;
   :hasIngredient _:b3336 ;
   :hasIngredient _:b3337 ;
@@ -4236,7 +4238,7 @@ ns1:ChilledPruneWhip :hasIngredient _:b3334 ;
   :name "Chilled Prune Whip" ;
   a :Recipe .
 
-ns1:ParsleyandParmasenBakedChicken :hasIngredient _:b3341 ;
+recipes:ParsleyandParmasenBakedChicken :hasIngredient _:b3341 ;
   :hasIngredient _:b3342 ;
   :hasIngredient _:b3343 ;
   :hasIngredient _:b3344 ;
@@ -4250,7 +4252,7 @@ ns1:ParsleyandParmasenBakedChicken :hasIngredient _:b3341 ;
   :name "Parsley and Parmasen Baked Chicken" ;
   a :Recipe .
 
-ns1:ThumbprintCookies :hasIngredient _:b3351 ;
+recipes:ThumbprintCookies :hasIngredient _:b3351 ;
   :hasIngredient _:b3352 ;
   :hasIngredient _:b3353 ;
   :hasIngredient _:b3354 ;
@@ -4261,7 +4263,7 @@ ns1:ThumbprintCookies :hasIngredient _:b3351 ;
   :recipeCategory "Cookies" ;
   a :Recipe .
 
-ns1:SoleAlmondie :hasIngredient _:b3366 ;
+recipes:CoqauVin :hasIngredient _:b3366 ;
   :hasIngredient _:b3367 ;
   :hasIngredient _:b3368 ;
   :hasIngredient _:b3369 ;
@@ -4270,11 +4272,11 @@ ns1:SoleAlmondie :hasIngredient _:b3366 ;
   :hasIngredient _:b3372 ;
   :hasIngredient _:b3373 ;
   :hasIngredient _:b3374 ;
-  :instructions "Cut fillets into 4 serving pieces and pat dry. Mix flour, sald t and pepper. Dp fish into milk and then coat with 4 mixture. Heat oil and margarine in large skillet over medium heat until hot. Cook fillets, 6-8 minutes until golden brown, turn once during cooking. Remove fish, keep warm. Drain oil from skillet. Add lemon juice, wine and almonds. Boil for 30 seconds and pour over fish." ;
-  :name "Sole Almondie" ;
+  :instructions "Cook pork, stirring until crisp and well browned. Lift out, set aside. Brown chicken parts, set aside. Stir in wine, broth and mustard. Add meat and chicken. Cover and simmer 35 to 40 minutes. Add cornstarch." ;
+  :name "Coq au Vin" ;
   a :Recipe .
 
-ns1:CoqauVin :hasIngredient _:b3357 ;
+recipes:SoleAlmondie :hasIngredient _:b3357 ;
   :hasIngredient _:b3358 ;
   :hasIngredient _:b3359 ;
   :hasIngredient _:b3360 ;
@@ -4283,22 +4285,33 @@ ns1:CoqauVin :hasIngredient _:b3357 ;
   :hasIngredient _:b3363 ;
   :hasIngredient _:b3364 ;
   :hasIngredient _:b3365 ;
-  :instructions "Cook pork, stirring until crisp and well browned. Lift out, set aside. Brown chicken parts, set aside. Stir in wine, broth and mustard. Add meat and chicken. Cover and simmer 35 to 40 minutes. Add cornstarch." ;
-  :name "Coq au Vin" ;
+  :instructions "Cut fillets into 4 serving pieces and pat dry. Mix flour, sald t and pepper. Dp fish into milk and then coat with 4 mixture. Heat oil and margarine in large skillet over medium heat until hot. Cook fillets, 6-8 minutes until golden brown, turn once during cooking. Remove fish, keep warm. Drain oil from skillet. Add lemon juice, wine and almonds. Boil for 30 seconds and pour over fish." ;
+  :name "Sole Almondie" ;
   a :Recipe .
 
-ns1:GrahamCrackerCake :hasIngredient _:b3403 ;
+recipes:ChinesePepperSteak :hasIngredient _:b3397 ;
+  :hasIngredient _:b3398 ;
+  :hasIngredient _:b3399 ;
+  :hasIngredient _:b3400 ;
+  :hasIngredient _:b3401 ;
+  :hasIngredient _:b3402 ;
+  :hasIngredient _:b3403 ;
   :hasIngredient _:b3404 ;
   :hasIngredient _:b3405 ;
   :hasIngredient _:b3406 ;
   :hasIngredient _:b3407 ;
   :hasIngredient _:b3408 ;
-  :instructions "Cream butter and sugar.  Add crushed crackers, sour milk, and soda.  Stir in nuts.  Bake in 10 inch square baking pan.  Bake in 350 degree oven for 30-35 minutes.  Serve with whipped cream or thin powdered sugar icing." ;
-  :name "Graham Cracker Cake" ;
-  :recipeCategory "Cakes" ;
+  :instructions "Partially freeze steak and cut into thin strips. Combine cornstarch, sugar, ginger, and soy sauce. Pour over meat and stir. Cut into thin strips. Quickly brown meat in hot oil and remove. Add green pepper, onion, and garlic. Add water. Cook 5 to 6 minutes. Stir in meat, tomatoes and sherry. Serve over rice." ;
+  :name "Chinese Pepper Steak" ;
   a :Recipe .
 
-ns1:OatmealCake :hasIngredient _:b3387 ;
+recipes:OatmealCake :hasIngredient _:b3381 ;
+  :hasIngredient _:b3382 ;
+  :hasIngredient _:b3383 ;
+  :hasIngredient _:b3384 ;
+  :hasIngredient _:b3385 ;
+  :hasIngredient _:b3386 ;
+  :hasIngredient _:b3387 ;
   :hasIngredient _:b3388 ;
   :hasIngredient _:b3389 ;
   :hasIngredient _:b3390 ;
@@ -4308,34 +4321,23 @@ ns1:OatmealCake :hasIngredient _:b3387 ;
   :hasIngredient _:b3394 ;
   :hasIngredient _:b3395 ;
   :hasIngredient _:b3396 ;
-  :hasIngredient _:b3397 ;
-  :hasIngredient _:b3398 ;
-  :hasIngredient _:b3399 ;
-  :hasIngredient _:b3400 ;
-  :hasIngredient _:b3401 ;
-  :hasIngredient _:b3402 ;
   :instructions "Pour the water over the oatmeal.  Let stand for 20 minutes.  Add remaining cake ingredients.  Mix well and pour into a greased 9\"x12\" pan.  Let stand while mixing topping.  To prepare topping:  Mix all ingredients together over low heat, until butter melts.  Spoon over unbaked cake.  Bake 45 minutes at 350 degrees." ;
   :name "Oatmeal Cake" ;
   :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:ChinesePepperSteak :hasIngredient _:b3375 ;
+recipes:GrahamCrackerCake :hasIngredient _:b3375 ;
   :hasIngredient _:b3376 ;
   :hasIngredient _:b3377 ;
   :hasIngredient _:b3378 ;
   :hasIngredient _:b3379 ;
   :hasIngredient _:b3380 ;
-  :hasIngredient _:b3381 ;
-  :hasIngredient _:b3382 ;
-  :hasIngredient _:b3383 ;
-  :hasIngredient _:b3384 ;
-  :hasIngredient _:b3385 ;
-  :hasIngredient _:b3386 ;
-  :instructions "Partially freeze steak and cut into thin strips. Combine cornstarch, sugar, ginger, and soy sauce. Pour over meat and stir. Cut into thin strips. Quickly brown meat in hot oil and remove. Add green pepper, onion, and garlic. Add water. Cook 5 to 6 minutes. Stir in meat, tomatoes and sherry. Serve over rice." ;
-  :name "Chinese Pepper Steak" ;
+  :instructions "Cream butter and sugar.  Add crushed crackers, sour milk, and soda.  Stir in nuts.  Bake in 10 inch square baking pan.  Bake in 350 degree oven for 30-35 minutes.  Serve with whipped cream or thin powdered sugar icing." ;
+  :name "Graham Cracker Cake" ;
+  :recipeCategory "Cakes" ;
   a :Recipe .
 
-ns1:TopRamenSalad :hasIngredient _:b3409 ;
+recipes:TopRamenSalad :hasIngredient _:b3409 ;
   :hasIngredient _:b3410 ;
   :hasIngredient _:b3411 ;
   :hasIngredient _:b3412 ;
@@ -4345,7 +4347,7 @@ ns1:TopRamenSalad :hasIngredient _:b3409 ;
   :recipeCategory "Salads and Dressings" ;
   a :Recipe .
 
-ns1:CheesyFishFilletswithSpinach :hasIngredient _:b3414 ;
+recipes:CheesyFishFilletswithSpinach :hasIngredient _:b3414 ;
   :hasIngredient _:b3415 ;
   :hasIngredient _:b3416 ;
   :hasIngredient _:b3417 ;
@@ -4359,26 +4361,26 @@ ns1:CheesyFishFilletswithSpinach :hasIngredient _:b3414 ;
   :name "Cheesy Fish Fillets with Spinach" ;
   a :Recipe .
 
-ns1:PeanutButterIceCreamPie :hasIngredient _:b3431 ;
+recipes:CheeseStrata :hasIngredient _:b3430 ;
+  :hasIngredient _:b3431 ;
   :hasIngredient _:b3432 ;
   :hasIngredient _:b3433 ;
   :hasIngredient _:b3434 ;
   :hasIngredient _:b3435 ;
   :hasIngredient _:b3436 ;
-  :instructions "Mix graham cracker crumbs, sugar, and melted margarine.  Press into 9\" pie pan.  Chill.  To make filling whip 1/2 cup whipping cream.  Place ice cream in a bowl and stir to soften.  Fold in peanut butter; then fold in whipped cream.  Spoon mixture into crust.  Freeze about 5 hours.  Remove from freezer about 15 minutes before serving." ;
-  :name "Peanut Butter Ice Cream Pie" ;
-  :recipeCategory "Pies" ;
+  :instructions "Arrange bread and cheese in alternate layers in greased baking dish. Bread on top and bottom. Combine eggs, milk, and seasonings. Pour over bread and cheese. Chill 1 hour. Bake 1 hour at 350 degrees or until set." ;
+  :name "Cheese Strata" ;
   a :Recipe .
 
-ns1:CheeseStrata :hasIngredient _:b3424 ;
+recipes:PeanutButterIceCreamPie :hasIngredient _:b3424 ;
   :hasIngredient _:b3425 ;
   :hasIngredient _:b3426 ;
   :hasIngredient _:b3427 ;
   :hasIngredient _:b3428 ;
   :hasIngredient _:b3429 ;
-  :hasIngredient _:b3430 ;
-  :instructions "Arrange bread and cheese in alternate layers in greased baking dish. Bread on top and bottom. Combine eggs, milk, and seasonings. Pour over bread and cheese. Chill 1 hour. Bake 1 hour at 350 degrees or until set." ;
-  :name "Cheese Strata" ;
+  :instructions "Mix graham cracker crumbs, sugar, and melted margarine.  Press into 9\" pie pan.  Chill.  To make filling whip 1/2 cup whipping cream.  Place ice cream in a bowl and stir to soften.  Fold in peanut butter; then fold in whipped cream.  Spoon mixture into crust.  Freeze about 5 hours.  Remove from freezer about 15 minutes before serving." ;
+  :name "Peanut Butter Ice Cream Pie" ;
+  :recipeCategory "Pies" ;
   a :Recipe .
 
 _:b549 :name "soda" ;
@@ -4527,53 +4529,54 @@ _:b520 :name "parmesan" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b3399 :name "evaporated milk" ;
-  :quantity "1/2" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3398 :name "chopped nuts" ;
-  :quantity "1" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3397 :name "cinnamon" ;
-  :quantity "1" ;
-  :unit "tsp" ;
-  a :Ingredient .
-
-_:b3396 :name "nutmeg" ;
-  :quantity "1" ;
-  :unit "tsp" ;
-  a :Ingredient .
-
-_:b3395 :name "soda" ;
-  :quantity "1" ;
-  :unit "tsp" ;
-  a :Ingredient .
-
-_:b3394 :name "salt" ;
+_:b3399 :name "sugar" ;
   :quantity "1/2" ;
   :unit "tsp" ;
   a :Ingredient .
 
-_:b3393 :name "flour" ;
-  :quantity "1 1/3" ;
-  :unit "cups" ;
+_:b3398 :name "cornstarch" ;
+  :quantity "1" ;
+  :unit "tbsp" ;
   a :Ingredient .
 
-_:b3392 :name "eggs" ;
-  :quantity "2" ;
+_:b3397 :name "round steak, cut 1 inch thick" ;
+  :quantity "1" ;
+  :unit "pound" ;
   a :Ingredient .
 
-_:b3391 :name "margarine" ;
+_:b3396 :name "valencia peanuts" ;
+  :quantity "1" ;
+  :unit "tsp" ;
+  a :Ingredient .
+
+_:b3395 :name "coconut" ;
+  :quantity "1" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b3394 :name "butter" ;
+  :quantity "6" ;
+  :unit "tbsp" ;
+  a :Ingredient .
+
+_:b3393 :name "evaporated milk" ;
   :quantity "1/2" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b3390 :name "white sugar" ;
+_:b3392 :name "chopped nuts" ;
   :quantity "1" ;
   :unit "cup" ;
+  a :Ingredient .
+
+_:b3391 :name "cinnamon" ;
+  :quantity "1" ;
+  :unit "tsp" ;
+  a :Ingredient .
+
+_:b3390 :name "nutmeg" ;
+  :quantity "1" ;
+  :unit "tsp" ;
   a :Ingredient .
 
 _:b519 :name "mozzarella, sliced thinly" ;
@@ -4625,38 +4628,38 @@ _:b510 :name "salt" ;
   :unit "tsp" ;
   a :Ingredient .
 
-_:b3389 :name "brown sugar" ;
+_:b3389 :name "soda" ;
   :quantity "1" ;
-  :unit "cup" ;
+  :unit "tsp" ;
   a :Ingredient .
 
-_:b3388 :name "boiling water" ;
-  :quantity "1 1/4" ;
+_:b3388 :name "salt" ;
+  :quantity "1/2" ;
+  :unit "tsp" ;
+  a :Ingredient .
+
+_:b3387 :name "flour" ;
+  :quantity "1 1/3" ;
   :unit "cups" ;
   a :Ingredient .
 
-_:b3387 :name "oatmeal" ;
+_:b3386 :name "eggs" ;
+  :quantity "2" ;
+  a :Ingredient .
+
+_:b3385 :name "margarine" ;
+  :quantity "1/2" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b3384 :name "white sugar" ;
   :quantity "1" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b3386 :name "dry sherry" ;
-  :quantity "2" ;
-  :unit "tbsp" ;
-  a :Ingredient .
-
-_:b3385 :name "tomatoes, halved" ;
-  :quantity "8" ;
-  a :Ingredient .
-
-_:b3384 :name "water" ;
-  :quantity "1/4" ;
-  :unit "can" ;
-  a :Ingredient .
-
-_:b3383 :name "garlic" ;
+_:b3383 :name "brown sugar" ;
   :quantity "1" ;
-  :unit "clove" ;
+  :unit "cup" ;
   a :Ingredient .
 
 _:b2299 :name "dried onion or 1/2 cup fresh" ;
@@ -4664,9 +4667,9 @@ _:b2299 :name "dried onion or 1/2 cup fresh" ;
   :unit "tablespoons" ;
   a :Ingredient .
 
-_:b3382 :name "oil" ;
-  :quantity "3" ;
-  :unit "tbsp" ;
+_:b3382 :name "boiling water" ;
+  :quantity "1 1/4" ;
+  :unit "cups" ;
   a :Ingredient .
 
 _:b2298 :name "pepper" ;
@@ -4674,8 +4677,9 @@ _:b2298 :name "pepper" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3381 :name "onion" ;
-  :quantity "2" ;
+_:b3381 :name "oatmeal" ;
+  :quantity "1" ;
+  :unit "cup" ;
   a :Ingredient .
 
 _:b2297 :name "salt" ;
@@ -4683,8 +4687,9 @@ _:b2297 :name "salt" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3380 :name "peppers" ;
-  :quantity "2" ;
+_:b3380 :name "chopped nuts" ;
+  :quantity "1" ;
+  :unit "cup" ;
   a :Ingredient .
 
 _:b2296 :name "melted butter" ;
@@ -4770,39 +4775,38 @@ _:b500 :name "sugar" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b3379 :name "sauce" ;
-  :quantity "1/4" ;
+_:b3379 :name "baking soda" ;
+  :quantity "1" ;
+  :unit "tsp" ;
+  a :Ingredient .
+
+_:b3378 :name "graham crackers, crushed" ;
+  :quantity "32" ;
+  a :Ingredient .
+
+_:b3377 :name "sour milk" ;
+  :quantity "1" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b3378 :name "ginger" ;
-  :quantity "1/4" ;
-  :unit "tsp" ;
+_:b3376 :name "sugar" ;
+  :quantity "1" ;
+  :unit "cup" ;
   a :Ingredient .
 
-_:b3377 :name "sugar" ;
+_:b3375 :name "butter" ;
   :quantity "1/2" ;
-  :unit "tsp" ;
+  :unit "cup" ;
   a :Ingredient .
 
-_:b3376 :name "cornstarch" ;
-  :quantity "1" ;
-  :unit "tbsp" ;
-  a :Ingredient .
-
-_:b3375 :name "round steak, cut 1 inch thick" ;
-  :quantity "1" ;
-  :unit "pound" ;
-  a :Ingredient .
-
-_:b3374 :name "almonds, sliced thin" ;
-  :quantity "1" ;
-  :unit "tbsp" ;
-  a :Ingredient .
-
-_:b3373 :name "lemon juice" ;
+_:b3374 :name "parsely, chopped" ;
   :quantity "2" ;
   :unit "tbsp" ;
+  a :Ingredient .
+
+_:b3373 :name "cornstarch and water" ;
+  :quantity "1" ;
+  :unit "tsp" ;
   a :Ingredient .
 
 _:b2289 :name "dried onion or 1/2 cup fresh" ;
@@ -4810,8 +4814,8 @@ _:b2289 :name "dried onion or 1/2 cup fresh" ;
   :unit "tablespoons" ;
   a :Ingredient .
 
-_:b3372 :name "margarine" ;
-  :quantity "1" ;
+_:b3372 :name "dijon mustard" ;
+  :quantity "2" ;
   :unit "tbsp" ;
   a :Ingredient .
 
@@ -4820,9 +4824,9 @@ _:b2288 :name "pepper" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3371 :name "vegetable oil" ;
-  :quantity "4" ;
-  :unit "tbsp" ;
+_:b3371 :name "dry red wine" ;
+  :quantity "1" ;
+  :unit "cups" ;
   a :Ingredient .
 
 _:b2287 :name "salt" ;
@@ -4830,9 +4834,9 @@ _:b2287 :name "salt" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3370 :name "milk" ;
-  :quantity "1/4" ;
-  :unit "cup" ;
+_:b3370 :name "chicken broth" ;
+  :quantity "1 3/4" ;
+  :unit "cups" ;
   a :Ingredient .
 
 _:b2286 :name "melted butter" ;
@@ -4918,38 +4922,37 @@ _:b1190 :name "pork 10derloin, cut into chunks" ;
   :unit "pound" ;
   a :Ingredient .
 
-_:b3369 :name "white pepper" ;
-  :quantity "1/4" ;
-  :unit "tsp" ;
-  a :Ingredient .
-
-_:b3368 :name "salt" ;
+_:b3369 :name "mushrooms" ;
   :quantity "1/2" ;
-  :unit "tsp" ;
-  a :Ingredient .
-
-_:b3367 :name "flour" ;
-  :quantity "1/2" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3366 :name "sole filets" ;
-  :quantity "1" ;
   :unit "pound" ;
   a :Ingredient .
 
-_:b3365 :name "parsely, chopped" ;
+_:b3368 :name "boiling onions" ;
+  :quantity "8" ;
+  :unit "small" ;
+  a :Ingredient .
+
+_:b3367 :name "pork shoulder steak, cut into 1/2 inch cubes" ;
+  :quantity "1/3" ;
+  :unit "pound" ;
+  a :Ingredient .
+
+_:b3366 :name "chicken" ;
+  :quantity "1" ;
+  a :Ingredient .
+
+_:b3365 :name "almonds, sliced thin" ;
+  :quantity "1" ;
+  :unit "tbsp" ;
+  a :Ingredient .
+
+_:b3364 :name "lemon juice" ;
   :quantity "2" ;
   :unit "tbsp" ;
   a :Ingredient .
 
-_:b3364 :name "cornstarch and water" ;
+_:b3363 :name "margarine" ;
   :quantity "1" ;
-  :unit "tsp" ;
-  a :Ingredient .
-
-_:b3363 :name "dijon mustard" ;
-  :quantity "2" ;
   :unit "tbsp" ;
   a :Ingredient .
 
@@ -4958,9 +4961,9 @@ _:b2279 :name "dried onions or 1/2 cup fresh" ;
   :unit "tablespoons" ;
   a :Ingredient .
 
-_:b3362 :name "dry red wine" ;
-  :quantity "1" ;
-  :unit "cups" ;
+_:b3362 :name "vegetable oil" ;
+  :quantity "4" ;
+  :unit "tbsp" ;
   a :Ingredient .
 
 _:b2278 :name "pepper" ;
@@ -4968,9 +4971,9 @@ _:b2278 :name "pepper" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3361 :name "chicken broth" ;
-  :quantity "1 3/4" ;
-  :unit "cups" ;
+_:b3361 :name "milk" ;
+  :quantity "1/4" ;
+  :unit "cup" ;
   a :Ingredient .
 
 _:b2277 :name "salt" ;
@@ -4978,9 +4981,9 @@ _:b2277 :name "salt" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3360 :name "mushrooms" ;
-  :quantity "1/2" ;
-  :unit "pound" ;
+_:b3360 :name "white pepper" ;
+  :quantity "1/4" ;
+  :unit "tsp" ;
   a :Ingredient .
 
 _:b2276 :name "melted butter" ;
@@ -5066,18 +5069,19 @@ _:b1180 :name "green pepper, sliced" ;
   :quantity "1" ;
   a :Ingredient .
 
-_:b3359 :name "boiling onions" ;
-  :quantity "8" ;
-  :unit "small" ;
+_:b3359 :name "salt" ;
+  :quantity "1/2" ;
+  :unit "tsp" ;
   a :Ingredient .
 
-_:b3358 :name "pork shoulder steak, cut into 1/2 inch cubes" ;
-  :quantity "1/3" ;
-  :unit "pound" ;
+_:b3358 :name "flour" ;
+  :quantity "1/2" ;
+  :unit "cup" ;
   a :Ingredient .
 
-_:b3357 :name "chicken" ;
+_:b3357 :name "sole filets" ;
   :quantity "1" ;
+  :unit "pound" ;
   a :Ingredient .
 
 _:b3356 :name "flour" ;
@@ -6246,32 +6250,35 @@ _:b2899 :name "lemon jello" ;
   :unit "small package" ;
   a :Ingredient .
 
-_:b2898 :name "chicken boullion" ;
-  :quantity "1/2" ;
+_:b2898 :name "chow mein noodles" ;
+  :quantity "1" ;
+  :unit "can" ;
+  a :Ingredient .
+
+_:b2897 :name "onion, chopped" ;
+  :quantity "1/4" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b2897 :name "red pepper, chopped" ;
+_:b2896 :name "celery, chopped" ;
   :quantity "1" ;
-  :unit "large" ;
+  :unit "cup" ;
   a :Ingredient .
 
-_:b2896 :name "pea pods" ;
-  :quantity "14" ;
-  :unit "pounds" ;
+_:b2895 :name "tuna in oil" ;
+  :quantity "1" ;
+  :unit "can" ;
   a :Ingredient .
 
-_:b2895 :name "mushrooms" ;
-  :quantity "6" ;
+_:b2894 :name "mushroom soup" ;
+  :quantity "1" ;
+  :unit "can" ;
   a :Ingredient .
 
-_:b2894 :name "green onion, sliced" ;
-  :quantity "2" ;
-  a :Ingredient .
-
-_:b2893 :name "cornstarch" ;
-  :quantity "2" ;
-  :unit "tbsp" ;
+_:b2893 :name "cashew nuts" ;
+  :quantity "1" ;
+  :quantityFromUnit "3"^^xsd:decimal ;
+  :unit "3 oz package" ;
   a :Ingredient .
 
 _:b69 :name "dill" ;
@@ -6279,9 +6286,9 @@ _:b69 :name "dill" ;
   :unit "tsp" ;
   a :Ingredient .
 
-_:b2892 :name "sherry" ;
-  :quantity "1" ;
-  :unit "tbsp" ;
+_:b2892 :name "chicken boullion" ;
+  :quantity "1/2" ;
+  :unit "cup" ;
   a :Ingredient .
 
 _:b68 :name "low-fat milk" ;
@@ -6289,9 +6296,9 @@ _:b68 :name "low-fat milk" ;
   :unit "cups" ;
   a :Ingredient .
 
-_:b2891 :name "soy sauce" ;
-  :quantity "3" ;
-  :unit "tbsp" ;
+_:b2891 :name "red pepper, chopped" ;
+  :quantity "1" ;
+  :unit "large" ;
   a :Ingredient .
 
 _:b67 :name "cheddar cheese, grated" ;
@@ -6299,8 +6306,9 @@ _:b67 :name "cheddar cheese, grated" ;
   :unit "cups" ;
   a :Ingredient .
 
-_:b2890 :name "chicken breast, sliced and marinated" ;
-  :quantity "2" ;
+_:b2890 :name "pea pods" ;
+  :quantity "14" ;
+  :unit "pounds" ;
   a :Ingredient .
 
 _:b66 :name "water" ;
@@ -6338,35 +6346,31 @@ _:b60 :name "potato (2-3 cups), peeled and diced" ;
   :unit "large" ;
   a :Ingredient .
 
-_:b2889 :name "chow mein noodles" ;
-  :quantity "1" ;
-  :unit "can" ;
+_:b2889 :name "mushrooms" ;
+  :quantity "6" ;
   a :Ingredient .
 
-_:b2888 :name "onion, chopped" ;
-  :quantity "1/4" ;
-  :unit "cup" ;
+_:b2888 :name "green onion, sliced" ;
+  :quantity "2" ;
   a :Ingredient .
 
-_:b2887 :name "celery, chopped" ;
-  :quantity "1" ;
-  :unit "cup" ;
+_:b2887 :name "cornstarch" ;
+  :quantity "2" ;
+  :unit "tbsp" ;
   a :Ingredient .
 
-_:b2886 :name "tuna in oil" ;
+_:b2886 :name "sherry" ;
   :quantity "1" ;
-  :unit "can" ;
+  :unit "tbsp" ;
   a :Ingredient .
 
-_:b2885 :name "mushroom soup" ;
-  :quantity "1" ;
-  :unit "can" ;
+_:b2885 :name "soy sauce" ;
+  :quantity "3" ;
+  :unit "tbsp" ;
   a :Ingredient .
 
-_:b2884 :name "cashew nuts" ;
-  :quantity "1" ;
-  :quantityFromUnit "3"^^xsd:decimal ;
-  :unit "3 oz package" ;
+_:b2884 :name "chicken breast, sliced and marinated" ;
+  :quantity "2" ;
   a :Ingredient .
 
 _:b2883 :name "eggs" ;
@@ -8647,9 +8651,8 @@ _:b2159 :name "dried onion or 1/2 cup fresh" ;
   :unit "tablespoons" ;
   a :Ingredient .
 
-_:b3242 :name "garlic, chopped" ;
-  :quantity "1" ;
-  :unit "clove" ;
+_:b3242 :name "lemons, thinly sliced" ;
+  :quantity "2" ;
   a :Ingredient .
 
 _:b2158 :name "pepper" ;
@@ -8657,9 +8660,9 @@ _:b2158 :name "pepper" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3241 :name "ginger" ;
-  :quantity "1 1/2" ;
-  :unit "tsp" ;
+_:b3241 :name "raisins" ;
+  :quantity "4" ;
+  :unit "tbsp" ;
   a :Ingredient .
 
 _:b2157 :name "salt" ;
@@ -8667,9 +8670,9 @@ _:b2157 :name "salt" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3240 :name "sugar" ;
-  :quantity "2" ;
-  :unit "tbsp" ;
+_:b3240 :name "sauerkraut" ;
+  :quantity "4" ;
+  :unit "cups" ;
   a :Ingredient .
 
 _:b2156 :name "butter, melted" ;
@@ -8757,37 +8760,36 @@ _:b1060 :name "cinnamon" ;
   :unit "tsp" ;
   a :Ingredient .
 
-_:b3239 :name "white wine" ;
-  :quantity "1/2" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3238 :name "soy sauce" ;
-  :quantity "1/2" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3237 :name "lemons, thinly sliced" ;
-  :quantity "2" ;
-  a :Ingredient .
-
-_:b3236 :name "raisins" ;
-  :quantity "4" ;
-  :unit "tbsp" ;
-  a :Ingredient .
-
-_:b3235 :name "sauerkraut" ;
-  :quantity "4" ;
-  :unit "cups" ;
-  a :Ingredient .
-
-_:b3234 :name "chicken broth" ;
+_:b3239 :name "chicken broth" ;
   :quantity "1 1/2" ;
   :unit "cups" ;
   a :Ingredient .
 
-_:b3233 :name "apples, cored, pared, thinly sliced" ;
+_:b3238 :name "apples, cored, pared, thinly sliced" ;
   :quantity "2" ;
+  a :Ingredient .
+
+_:b3237 :name "onion" ;
+  :quantity "1" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b3236 :name "eggs, lightly bea10" ;
+  :quantity "2" ;
+  a :Ingredient .
+
+_:b3235 :name "chicken cutlets, pounded to 1/8 inch thick" ;
+  :quantity "4" ;
+  a :Ingredient .
+
+_:b3234 :name "vegetable oil" ;
+  :quantity "3" ;
+  :unit "tbsp" ;
+  a :Ingredient .
+
+_:b3233 :name "garlic powder" ;
+  :quantity "1/3" ;
+  :unit "tsp" ;
   a :Ingredient .
 
 _:b2149 :name "dried onion or 1/2 cup fresh" ;
@@ -8795,9 +8797,9 @@ _:b2149 :name "dried onion or 1/2 cup fresh" ;
   :unit "tablespoons" ;
   a :Ingredient .
 
-_:b3232 :name "onion" ;
-  :quantity "1" ;
-  :unit "cup" ;
+_:b3232 :name "paprika" ;
+  :quantity "1/8" ;
+  :unit "tsp" ;
   a :Ingredient .
 
 _:b2148 :name "pepper" ;
@@ -8805,8 +8807,9 @@ _:b2148 :name "pepper" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3231 :name "eggs, lightly bea10" ;
-  :quantity "2" ;
+_:b3231 :name "bread crumbs, dried" ;
+  :quantity "1/3" ;
+  :unit "cup" ;
   a :Ingredient .
 
 _:b2147 :name "salt" ;
@@ -8814,8 +8817,9 @@ _:b2147 :name "salt" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3230 :name "chicken cutlets, pounded to 1/8 inch thick" ;
-  :quantity "4" ;
+_:b3230 :name "pepper" ;
+  :quantity "1/8" ;
+  :unit "tsp" ;
   a :Ingredient .
 
 _:b2146 :name "butter, melted" ;
@@ -8900,38 +8904,38 @@ _:b1050 :name "cold water" ;
   :unit "tbsp" ;
   a :Ingredient .
 
-_:b3229 :name "vegetable oil" ;
-  :quantity "3" ;
-  :unit "tbsp" ;
-  a :Ingredient .
-
-_:b3228 :name "garlic powder" ;
-  :quantity "1/3" ;
-  :unit "tsp" ;
-  a :Ingredient .
-
-_:b3227 :name "paprika" ;
+_:b3229 :name "salt" ;
   :quantity "1/8" ;
   :unit "tsp" ;
   a :Ingredient .
 
-_:b3226 :name "bread crumbs, dried" ;
+_:b3228 :name "flour" ;
   :quantity "1/3" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b3225 :name "pepper" ;
-  :quantity "1/8" ;
+_:b3227 :name "garlic, chopped" ;
+  :quantity "1" ;
+  :unit "clove" ;
+  a :Ingredient .
+
+_:b3226 :name "ginger" ;
+  :quantity "1 1/2" ;
   :unit "tsp" ;
   a :Ingredient .
 
-_:b3224 :name "salt" ;
-  :quantity "1/8" ;
-  :unit "tsp" ;
+_:b3225 :name "sugar" ;
+  :quantity "2" ;
+  :unit "tbsp" ;
   a :Ingredient .
 
-_:b3223 :name "flour" ;
-  :quantity "1/3" ;
+_:b3224 :name "white wine" ;
+  :quantity "1/2" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b3223 :name "soy sauce" ;
+  :quantity "1/2" ;
   :unit "cup" ;
   a :Ingredient .
 
@@ -11136,29 +11140,27 @@ _:b3178 :name "peaches, sliced" ;
   :unit "cups" ;
   a :Ingredient .
 
-_:b3177 :name "vanilla" ;
-  :quantity "1 1/2" ;
+_:b3177 :name "sour cream" ;
+  :quantity "2" ;
+  :unit "Tbsp" ;
+  a :Ingredient .
+
+_:b3176 :name "egg, hard-boiled" ;
+  :quantity "1" ;
+  a :Ingredient .
+
+_:b3175 :name "egg, slightly beaten" ;
+  :quantity "1" ;
+  a :Ingredient .
+
+_:b3174 :name "salt" ;
+  :quantity "1" ;
   :unit "tsp" ;
   a :Ingredient .
 
-_:b3176 :name "water" ;
-  :quantity "1 1/2" ;
-  :unit "cups" ;
-  a :Ingredient .
-
-_:b3175 :name "Best Foods Mayonnaise" ;
-  :quantity "1 1/2" ;
-  :unit "cups" ;
-  a :Ingredient .
-
-_:b3174 :name "baking soda" ;
-  :quantity "1 1/2" ;
-  :unit "tsp" ;
-  a :Ingredient .
-
-_:b3173 :name "baking powder" ;
-  :quantity "2 1/4" ;
-  :unit "tsp" ;
+_:b3173 :name "sugar" ;
+  :quantity "1" ;
+  :unit "Tbsp" ;
   a :Ingredient .
 
 _:b2089 :name "dried onions or 1/2 cup fresh" ;
@@ -11166,8 +11168,8 @@ _:b2089 :name "dried onions or 1/2 cup fresh" ;
   :unit "tablespoons" ;
   a :Ingredient .
 
-_:b3172 :name "cocoa" ;
-  :quantity "1/3" ;
+_:b3172 :name "water" ;
+  :quantity "1/2" ;
   :unit "cup" ;
   a :Ingredient .
 
@@ -11176,9 +11178,9 @@ _:b2088 :name "pepper" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3171 :name "sugar" ;
-  :quantity "1 1/2" ;
-  :unit "cups" ;
+_:b3171 :name "vinegar" ;
+  :quantity "2/3" ;
+  :unit "cup" ;
   a :Ingredient .
 
 _:b2087 :name "salt" ;
@@ -11186,9 +11188,9 @@ _:b2087 :name "salt" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3170 :name "flour" ;
-  :quantity "3" ;
-  :unit "cups" ;
+_:b3170 :name "bacon" ;
+  :quantity "2" ;
+  :unit "slices" ;
   a :Ingredient .
 
 _:b2086 :name "butter, melted" ;
@@ -11226,37 +11228,39 @@ _:b2080 :name "cream of chcken soup" ;
   :unit "can" ;
   a :Ingredient .
 
-_:b3169 :name "sour cream" ;
-  :quantity "2" ;
-  :unit "Tbsp" ;
+_:b3169 :name "onion, red is best" ;
+  :quantity "1" ;
+  :unit "medium" ;
   a :Ingredient .
 
-_:b3168 :name "egg, hard-boiled" ;
-  :quantity "1" ;
+_:b3168 :name "spinach leaves" ;
+  :quantity "1/2" ;
+  :unit "pound" ;
   a :Ingredient .
 
-_:b3167 :name "egg, slightly beaten" ;
-  :quantity "1" ;
-  a :Ingredient .
-
-_:b3166 :name "salt" ;
-  :quantity "1" ;
+_:b3167 :name "vanilla" ;
+  :quantity "1 1/2" ;
   :unit "tsp" ;
   a :Ingredient .
 
-_:b3165 :name "sugar" ;
-  :quantity "1" ;
-  :unit "Tbsp" ;
+_:b3166 :name "water" ;
+  :quantity "1 1/2" ;
+  :unit "cups" ;
   a :Ingredient .
 
-_:b3164 :name "water" ;
-  :quantity "1/2" ;
-  :unit "cup" ;
+_:b3165 :name "Best Foods Mayonnaise" ;
+  :quantity "1 1/2" ;
+  :unit "cups" ;
   a :Ingredient .
 
-_:b3163 :name "vinegar" ;
-  :quantity "2/3" ;
-  :unit "cup" ;
+_:b3164 :name "baking soda" ;
+  :quantity "1 1/2" ;
+  :unit "tsp" ;
+  a :Ingredient .
+
+_:b3163 :name "baking powder" ;
+  :quantity "2 1/4" ;
+  :unit "tsp" ;
   a :Ingredient .
 
 _:b2079 :name "dried onion or 1/2 cup fresh" ;
@@ -11264,9 +11268,9 @@ _:b2079 :name "dried onion or 1/2 cup fresh" ;
   :unit "tablespoons" ;
   a :Ingredient .
 
-_:b3162 :name "bacon" ;
-  :quantity "2" ;
-  :unit "slices" ;
+_:b3162 :name "cocoa" ;
+  :quantity "1/3" ;
+  :unit "cup" ;
   a :Ingredient .
 
 _:b2078 :name "pepper" ;
@@ -11274,9 +11278,9 @@ _:b2078 :name "pepper" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3161 :name "onion, red is best" ;
-  :quantity "1" ;
-  :unit "medium" ;
+_:b3161 :name "sugar" ;
+  :quantity "1 1/2" ;
+  :unit "cups" ;
   a :Ingredient .
 
 _:b2077 :name "teaspoon salt" ;
@@ -11284,9 +11288,9 @@ _:b2077 :name "teaspoon salt" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3160 :name "spinach leaves" ;
-  :quantity "1/2" ;
-  :unit "pound" ;
+_:b3160 :name "flour" ;
+  :quantity "3" ;
+  :unit "cups" ;
   a :Ingredient .
 
 _:b2076 :name "melted butter" ;
@@ -11374,8 +11378,8 @@ _:b2068 :name "pepper" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3151 :name "soy sauce" ;
-  :quantity "1" ;
+_:b3151 :name "caraway seed" ;
+  :quantity "3/4" ;
   :unit "tsp" ;
   a :Ingredient .
 
@@ -11384,8 +11388,8 @@ _:b2067 :name "teaspoon salt" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3150 :name "chicken broth" ;
-  :quantity "1/4" ;
+_:b3150 :name "water" ;
+  :quantity "1/3" ;
   :unit "cup" ;
   a :Ingredient .
 
@@ -11473,38 +11477,39 @@ _:b990 :name "lemon" ;
   :unit "large" ;
   a :Ingredient .
 
-_:b3149 :name "butter or margarine, melted" ;
+_:b3149 :name "vinegar" ;
+  :quantity "1/2" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b3148 :name "brown sugar" ;
+  :quantity "1/3" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b3147 :name "unparred apple, cubed" ;
+  :quantity "3" ;
+  :unit "cups" ;
+  a :Ingredient .
+
+_:b3146 :name "red cabbage, shredded" ;
+  :quantity "6" ;
+  :unit "cups" ;
+  a :Ingredient .
+
+_:b3145 :name "oil" ;
+  :quantity "3" ;
+  :unit "tbsp" ;
+  a :Ingredient .
+
+_:b3144 :name "butter or margarine, melted" ;
   :quantity "3/4" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b3148 :name "pepper" ;
+_:b3143 :name "pepper" ;
   :quantity "1/8" ;
   :unit "tsp" ;
-  a :Ingredient .
-
-_:b3147 :name "salt" ;
-  :quantity "1" ;
-  :unit "tsp" ;
-  a :Ingredient .
-
-_:b3146 :name "fresh dill, chopped" ;
-  :quantity "2" ;
-  :unit "tbsps" ;
-  a :Ingredient .
-
-_:b3145 :name "parsley, chopped" ;
-  :quantity "1/4" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3144 :name "feta cheese, crumbled" ;
-  :quantity "1/2" ;
-  :unit "pound" ;
-  a :Ingredient .
-
-_:b3143 :name "eggs" ;
-  :quantity "3" ;
   a :Ingredient .
 
 _:b2059 :name "dried onion or 1/2 cup fresh" ;
@@ -11512,9 +11517,9 @@ _:b2059 :name "dried onion or 1/2 cup fresh" ;
   :unit "tablespoons" ;
   a :Ingredient .
 
-_:b3142 :name "frozen chopped spinach, thawed and drained" ;
-  :quantity "30" ;
-  :unit "ounces" ;
+_:b3142 :name "salt" ;
+  :quantity "1" ;
+  :unit "tsp" ;
   a :Ingredient .
 
 _:b2058 :name "pepper" ;
@@ -11522,9 +11527,9 @@ _:b2058 :name "pepper" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3141 :name "onion, finely chopped" ;
-  :quantity "1/2" ;
-  :unit "cup" ;
+_:b3141 :name "fresh dill, chopped" ;
+  :quantity "2" ;
+  :unit "tbsps" ;
   a :Ingredient .
 
 _:b2057 :name "teaspoon salt" ;
@@ -11532,7 +11537,7 @@ _:b2057 :name "teaspoon salt" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3140 :name "butter or margarine" ;
+_:b3140 :name "parsley, chopped" ;
   :quantity "1/4" ;
   :unit "cup" ;
   a :Ingredient .
@@ -11619,39 +11624,38 @@ _:b980 :name "ice water" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b3139 :name "phyllo pastry" ;
-  :quantity "16" ;
-  :unit "sheets" ;
+_:b3139 :name "feta cheese, crumbled" ;
+  :quantity "1/2" ;
+  :unit "pound" ;
   a :Ingredient .
 
-_:b3138 :name "caraway seed" ;
-  :quantity "3/4" ;
-  :unit "tsp" ;
+_:b3138 :name "eggs" ;
+  :quantity "3" ;
   a :Ingredient .
 
-_:b3137 :name "water" ;
-  :quantity "1/3" ;
-  :unit "cup" ;
+_:b3137 :name "frozen chopped spinach, thawed and drained" ;
+  :quantity "30" ;
+  :unit "ounces" ;
   a :Ingredient .
 
-_:b3136 :name "vinegar" ;
+_:b3136 :name "onion, finely chopped" ;
   :quantity "1/2" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b3135 :name "brown sugar" ;
-  :quantity "1/3" ;
+_:b3135 :name "butter or margarine" ;
+  :quantity "1/4" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b3134 :name "unparred apple, cubed" ;
-  :quantity "3" ;
-  :unit "cups" ;
+_:b3134 :name "phyllo pastry" ;
+  :quantity "16" ;
+  :unit "sheets" ;
   a :Ingredient .
 
-_:b3133 :name "red cabbage, shredded" ;
-  :quantity "6" ;
-  :unit "cups" ;
+_:b3133 :name "soy sauce" ;
+  :quantity "1" ;
+  :unit "tsp" ;
   a :Ingredient .
 
 _:b2049 :name "dried onion or 1/2 cup fresh" ;
@@ -11659,9 +11663,9 @@ _:b2049 :name "dried onion or 1/2 cup fresh" ;
   :unit "tablespoons" ;
   a :Ingredient .
 
-_:b3132 :name "oil" ;
-  :quantity "3" ;
-  :unit "tbsp" ;
+_:b3132 :name "chicken broth" ;
+  :quantity "1/4" ;
+  :unit "cup" ;
   a :Ingredient .
 
 _:b2048 :name "pepper" ;
@@ -12060,38 +12064,38 @@ _:b950 :name "flour" ;
   :unit "tablespoons" ;
   a :Ingredient .
 
-_:b3109 :name "eggs" ;
-  :quantity "4" ;
+_:b3109 :name "brown sugar" ;
+  :quantity "1/2" ;
+  :unit "cup" ;
   a :Ingredient .
 
-_:b3108 :name "oil" ;
-  :quantity "1 1/4" ;
-  :unit "cups" ;
-  a :Ingredient .
-
-_:b3107 :name "soda water" ;
+_:b3108 :name "hot water" ;
   :quantity "1" ;
-  :unit "tsp" ;
+  :unit "cup" ;
   a :Ingredient .
 
-_:b3106 :name "nutmeg" ;
+_:b3107 :name "catsup" ;
   :quantity "1" ;
-  :unit "tsp" ;
+  :unit "cup" ;
   a :Ingredient .
 
-_:b3105 :name "cinnamon" ;
+_:b3106 :name "onion, chopped" ;
+  :quantity "1/2" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b3105 :name "lemon, sliced thinly" ;
+  :quantity "1" ;
+  a :Ingredient .
+
+_:b3104 :name "garlic, chopped" ;
   :quantity "3" ;
-  :unit "tsps" ;
+  :unit "cloves" ;
   a :Ingredient .
 
-_:b3104 :name "salt" ;
-  :quantity "1" ;
-  :unit "tsp" ;
-  a :Ingredient .
-
-_:b3103 :name "sugar" ;
-  :quantity "2" ;
-  :unit "cups" ;
+_:b3103 :name "worchestershire sauce" ;
+  :quantity "1/4" ;
+  :unit "cup" ;
   a :Ingredient .
 
 _:b2019 :name "dried onions or 1/2 cup fresh" ;
@@ -12099,9 +12103,9 @@ _:b2019 :name "dried onions or 1/2 cup fresh" ;
   :unit "tablespoons" ;
   a :Ingredient .
 
-_:b3102 :name "flour" ;
-  :quantity "3" ;
-  :unit "cups" ;
+_:b3102 :name "vinegar" ;
+  :quantity "1/4" ;
+  :unit "cup" ;
   a :Ingredient .
 
 _:b2018 :name "pepper" ;
@@ -12109,9 +12113,9 @@ _:b2018 :name "pepper" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3101 :name "berries" ;
-  :quantity "3" ;
-  :unit "cups" ;
+_:b3101 :name "celery salt" ;
+  :quantity "1" ;
+  :unit "tsp" ;
   a :Ingredient .
 
 _:b2017 :name "teaspoon salt" ;
@@ -12119,9 +12123,9 @@ _:b2017 :name "teaspoon salt" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3100 :name "brown sugar" ;
-  :quantity "1/2" ;
-  :unit "cup" ;
+_:b3100 :name "chili powder" ;
+  :quantity "1" ;
+  :unit "tsp" ;
   a :Ingredient .
 
 _:b2016 :name "melted butter" ;
@@ -13850,53 +13854,53 @@ _:b220 :name "shortening" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b3099 :name "hot water" ;
-  :quantity "1" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3098 :name "catsup" ;
-  :quantity "1" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3097 :name "onion, chopped" ;
-  :quantity "1/2" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3096 :name "lemon, sliced thinly" ;
-  :quantity "1" ;
-  a :Ingredient .
-
-_:b3095 :name "garlic, chopped" ;
-  :quantity "3" ;
-  :unit "cloves" ;
-  a :Ingredient .
-
-_:b3094 :name "worchestershire sauce" ;
-  :quantity "1/4" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3093 :name "vinegar" ;
-  :quantity "1/4" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3092 :name "celery salt" ;
-  :quantity "1" ;
-  :unit "tsp" ;
-  a :Ingredient .
-
-_:b3091 :name "chili powder" ;
-  :quantity "1" ;
-  :unit "tsp" ;
-  a :Ingredient .
-
-_:b3090 :name "pepper" ;
+_:b3099 :name "pepper" ;
   :quantity "1/8" ;
   :unit "tsp" ;
+  a :Ingredient .
+
+_:b3098 :name "salt" ;
+  :quantity "1" ;
+  :unit "tsp" ;
+  a :Ingredient .
+
+_:b3097 :name "eggs" ;
+  :quantity "4" ;
+  a :Ingredient .
+
+_:b3096 :name "oil" ;
+  :quantity "1 1/4" ;
+  :unit "cups" ;
+  a :Ingredient .
+
+_:b3095 :name "soda water" ;
+  :quantity "1" ;
+  :unit "tsp" ;
+  a :Ingredient .
+
+_:b3094 :name "nutmeg" ;
+  :quantity "1" ;
+  :unit "tsp" ;
+  a :Ingredient .
+
+_:b3093 :name "cinnamon" ;
+  :quantity "3" ;
+  :unit "tsps" ;
+  a :Ingredient .
+
+_:b3092 :name "salt" ;
+  :quantity "1" ;
+  :unit "tsp" ;
+  a :Ingredient .
+
+_:b3091 :name "sugar" ;
+  :quantity "2" ;
+  :unit "cups" ;
+  a :Ingredient .
+
+_:b3090 :name "flour" ;
+  :quantity "3" ;
+  :unit "cups" ;
   a :Ingredient .
 
 _:b219 :name "baking powder" ;
@@ -13948,9 +13952,9 @@ _:b210 :name "salt" ;
   :unit "tsp" ;
   a :Ingredient .
 
-_:b3089 :name "salt" ;
-  :quantity "1" ;
-  :unit "tsp" ;
+_:b3089 :name "berries" ;
+  :quantity "3" ;
+  :unit "cups" ;
   a :Ingredient .
 
 _:b3088 :name "salt" ;
@@ -14065,88 +14069,88 @@ _:b3076 :name "lemon cake mix" ;
   :unit "pkg" ;
   a :Ingredient .
 
-_:b3075 :name "sliced mushrooms" ;
-  :quantity "8" ;
-  a :Ingredient .
-
-_:b3074 :name "chopped green onions" ;
-  :quantity "4" ;
-  a :Ingredient .
-
-_:b3073 :name "grated cheese" ;
-  :quantity "1/2" ;
-  :unit "lb" ;
-  a :Ingredient .
-
-_:b3072 :name "lemon juice or sherry" ;
-  :quantity "1/2" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3071 :name "flour" ;
-  :quantity "1/2" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3070 :name "margerine" ;
-  :quantity "1/2" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3069 :name "pepper" ;
-  :quantity "1/8" ;
-  :unit "tsp" ;
-  a :Ingredient .
-
-_:b3068 :name "salt" ;
-  :quantity "1 1/2" ;
-  :unit "tsp" ;
-  a :Ingredient .
-
-_:b3067 :name "milk" ;
-  :quantity "2 1/4" ;
-  :unit "cups" ;
-  a :Ingredient .
-
-_:b3066 :name "fish fillets" ;
-  :quantity "3" ;
-  :unit "lb" ;
-  a :Ingredient .
-
-_:b3065 :name "grated swiss cheese" ;
+_:b3075 :name "grated swiss cheese" ;
   :quantity "1/3" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b3064 :name "eggs, lightly beaten" ;
+_:b3074 :name "eggs, lightly beaten" ;
   :quantity "2" ;
   a :Ingredient .
 
-_:b3063 :name "grated parmesan cheese" ;
+_:b3073 :name "grated parmesan cheese" ;
   :quantity "1/3" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b3062 :name "low fat cottage cheese" ;
+_:b3072 :name "low fat cottage cheese" ;
   :quantity "2" ;
   :unit "cups" ;
   a :Ingredient .
 
-_:b3061 :name "onion, chopped" ;
+_:b3071 :name "onion, chopped" ;
   :quantity "1/2" ;
   :unit "medium" ;
   a :Ingredient .
 
-_:b3060 :name "frozen chopped spinach" ;
+_:b3070 :name "frozen chopped spinach" ;
   :quantity "2" ;
   :quantityFromUnit "10"^^xsd:decimal ;
   :unit "10 ounce package" ;
   a :Ingredient .
 
-_:b3059 :name "mushroom stems and pieces, drained" ;
+_:b3069 :name "mushroom stems and pieces, drained" ;
   :quantity "1" ;
   :quantityFromUnit "4"^^xsd:decimal ;
   :unit "4 ounce can" ;
+  a :Ingredient .
+
+_:b3068 :name "sliced mushrooms" ;
+  :quantity "8" ;
+  a :Ingredient .
+
+_:b3067 :name "chopped green onions" ;
+  :quantity "4" ;
+  a :Ingredient .
+
+_:b3066 :name "grated cheese" ;
+  :quantity "1/2" ;
+  :unit "lb" ;
+  a :Ingredient .
+
+_:b3065 :name "lemon juice or sherry" ;
+  :quantity "1/2" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b3064 :name "flour" ;
+  :quantity "1/2" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b3063 :name "margerine" ;
+  :quantity "1/2" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b3062 :name "pepper" ;
+  :quantity "1/8" ;
+  :unit "tsp" ;
+  a :Ingredient .
+
+_:b3061 :name "salt" ;
+  :quantity "1 1/2" ;
+  :unit "tsp" ;
+  a :Ingredient .
+
+_:b3060 :name "milk" ;
+  :quantity "2 1/4" ;
+  :unit "cups" ;
+  a :Ingredient .
+
+_:b3059 :name "fish fillets" ;
+  :quantity "3" ;
+  :unit "lb" ;
   a :Ingredient .
 
 _:b3058 :name "cornstarch" ;
@@ -14268,29 +14272,28 @@ _:b3045 :name "margarine, melted" ;
   :unit "tbsps" ;
   a :Ingredient .
 
-_:b3044 :name "salt" ;
+_:b3044 :name "cayenne pepper" ;
+  :quantity "1/8" ;
+  :unit "teaspoon" ;
+  a :Ingredient .
+
+_:b3043 :name "sugar" ;
   :quantity "1/4" ;
-  :unit "tsp" ;
+  :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3043 :name "baking powder" ;
-  :quantity "1/3" ;
-  :unit "tsp" ;
+_:b3042 :name "salt" ;
+  :quantity "3/4" ;
+  :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3042 :name "sifted flour" ;
-  :quantity "1" ;
-  :unit "cup" ;
+_:b3041 :name "whipping cream" ;
+  :quantity "2" ;
+  :unit "cups" ;
   a :Ingredient .
 
-_:b3041 :name "vanilla" ;
-  :quantity "1" ;
-  :unit "tsp" ;
-  a :Ingredient .
-
-_:b3040 :name "fruit juice" ;
-  :quantity "6" ;
-  :unit "tbsp" ;
+_:b3040 :name "eggs" ;
+  :quantity "4" ;
   a :Ingredient .
 
 _:b889 :name "lemon juice or white wine" ;
@@ -14343,52 +14346,54 @@ _:b880 :name "butter" ;
   :unit "cube" ;
   a :Ingredient .
 
-_:b3039 :name "sugar" ;
-  :quantity "2/3" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3038 :name "eggs" ;
-  :quantity "2" ;
-  a :Ingredient .
-
-_:b3037 :name "brown sugar" ;
-  :quantity "1/2" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3036 :name "butter" ;
-  :quantity "1/3" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3035 :name "cayenne pepper" ;
-  :quantity "1/8" ;
-  :unit "teaspoon" ;
-  a :Ingredient .
-
-_:b3034 :name "sugar" ;
-  :quantity "1/4" ;
-  :unit "teaspoon" ;
-  a :Ingredient .
-
-_:b3033 :name "salt" ;
-  :quantity "3/4" ;
-  :unit "teaspoon" ;
-  a :Ingredient .
-
-_:b3032 :name "whipping cream" ;
-  :quantity "2" ;
-  :unit "cups" ;
-  a :Ingredient .
-
-_:b3031 :name "eggs" ;
-  :quantity "4" ;
-  a :Ingredient .
-
-_:b3030 :name "french fried onions," ;
+_:b3039 :name "french fried onions," ;
   :quantity "1" ;
   :unit "cup" ;
+  a :Ingredient .
+
+_:b3038 :name "swiss cheese, shredded" ;
+  :quantity "1" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b3037 :name "fresh or frozen broccoli, chopped" ;
+  :quantity "1" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b3036 :name "cold water" ;
+  :quantity "1/4" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b3035 :name "Bisquick baking mix" ;
+  :quantity "1" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b3034 :name "salt" ;
+  :quantity "1/4" ;
+  :unit "tsp" ;
+  a :Ingredient .
+
+_:b3033 :name "baking powder" ;
+  :quantity "1/3" ;
+  :unit "tsp" ;
+  a :Ingredient .
+
+_:b3032 :name "sifted flour" ;
+  :quantity "1" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b3031 :name "vanilla" ;
+  :quantity "1" ;
+  :unit "tsp" ;
+  a :Ingredient .
+
+_:b3030 :name "fruit juice" ;
+  :quantity "6" ;
+  :unit "tbsp" ;
   a :Ingredient .
 
 _:b879 :name "yellow cake mix" ;
@@ -14441,23 +14446,22 @@ _:b870 :name "butter, divided" ;
   :unit "tablespoons" ;
   a :Ingredient .
 
-_:b3029 :name "swiss cheese, shredded" ;
-  :quantity "1" ;
+_:b3029 :name "sugar" ;
+  :quantity "2/3" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b3028 :name "fresh or frozen broccoli, chopped" ;
-  :quantity "1" ;
+_:b3028 :name "eggs" ;
+  :quantity "2" ;
+  a :Ingredient .
+
+_:b3027 :name "brown sugar" ;
+  :quantity "1/2" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b3027 :name "cold water" ;
-  :quantity "1/4" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3026 :name "Bisquick baking mix" ;
-  :quantity "1" ;
+_:b3026 :name "butter" ;
+  :quantity "1/3" ;
   :unit "cup" ;
   a :Ingredient .
 
@@ -16233,33 +16237,34 @@ _:b139 :name "walnuts, chopped" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b138 :name "crushed pineapple, drained." ;
-  :quantity "1" ;
-  :unit "8 1/2 oz. can" ;
-  a :Ingredient .
-
-_:b137 :name "graham cracker crumbs" ;
+_:b138 :name "graham cracker crumbs" ;
   :quantity "1/2" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b136 :name "sifted flour" ;
+_:b137 :name "sifted flour" ;
   :quantity "1/2" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b135 :name "egg" ;
+_:b136 :name "egg" ;
   :quantity "1" ;
   a :Ingredient .
 
-_:b134 :name "light brown sugar, firmly packed" ;
+_:b135 :name "light brown sugar, firmly packed" ;
   :quantity "1/2" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b133 :name "butter or margarine" ;
+_:b134 :name "butter or margarine" ;
   :quantity "1/4" ;
   :unit "cup" ;
+  a :Ingredient .
+
+_:b133 :name "crushed pineapple, drained." ;
+  :quantity "1" ;
+  :quantityFromUnit "8.5"^^xsd:decimal ;
+  :unit "8 1/2 oz. can" ;
   a :Ingredient .
 
 _:b132 :name "swiss cheese, grated" ;
@@ -19410,24 +19415,24 @@ _:b1260 :name "cabbage" ;
   :unit "head" ;
   a :Ingredient .
 
-_:b3436 :name "chunk style peanut buter" ;
+_:b3436 :name "dry mustard" ;
   :quantity "1/2" ;
-  :unit "cup" ;
+  :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3435 :name "vanilla ice cream" ;
-  :quantity "1" ;
-  :unit "quart" ;
+_:b3435 :name "pepper" ;
+  :quantity "1/8" ;
+  :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3434 :name "whipped cream or cool whip" ;
-  :quantity "1/2" ;
-  :unit "cup" ;
+_:b3434 :name "salt" ;
+  :quantity "3/4" ;
+  :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3433 :name "margarine, melted" ;
-  :quantity "1/2" ;
-  :unit "cup" ;
+_:b3433 :name "milk" ;
+  :quantity "2 1/2" ;
+  :unit "cups" ;
   a :Ingredient .
 
 _:b2349 :name "dried onions or 1/2 cup fresh" ;
@@ -19435,9 +19440,8 @@ _:b2349 :name "dried onions or 1/2 cup fresh" ;
   :unit "tablespoons" ;
   a :Ingredient .
 
-_:b3432 :name "sugar" ;
-  :quantity "1/4" ;
-  :unit "cup" ;
+_:b3432 :name "eggs, beaten" ;
+  :quantity "4" ;
   a :Ingredient .
 
 _:b2348 :name "pepper" ;
@@ -19445,8 +19449,8 @@ _:b2348 :name "pepper" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3431 :name "graham cracker crumbs, 18 squares" ;
-  :quantity "1 1/2" ;
+_:b3431 :name "grated cheese" ;
+  :quantity "2" ;
   :unit "cups" ;
   a :Ingredient .
 
@@ -19455,9 +19459,9 @@ _:b2347 :name "teaspoon salt" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3430 :name "dry mustard" ;
-  :quantity "1/2" ;
-  :unit "teaspoon" ;
+_:b3430 :name "bread" ;
+  :quantity "12" ;
+  :unit "slices" ;
   a :Ingredient .
 
 _:b2346 :name "melted butter" ;
@@ -19545,33 +19549,34 @@ _:b1250 :name "lemon peel" ;
   :unit "Tbsp" ;
   a :Ingredient .
 
-_:b3429 :name "pepper" ;
-  :quantity "1/8" ;
-  :unit "teaspoon" ;
+_:b3429 :name "chunk style peanut buter" ;
+  :quantity "1/2" ;
+  :unit "cup" ;
   a :Ingredient .
 
-_:b3428 :name "salt" ;
-  :quantity "3/4" ;
-  :unit "teaspoon" ;
+_:b3428 :name "vanilla ice cream" ;
+  :quantity "1" ;
+  :unit "quart" ;
   a :Ingredient .
 
-_:b3427 :name "milk" ;
-  :quantity "2 1/2" ;
+_:b3427 :name "whipped cream or cool whip" ;
+  :quantity "1/2" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b3426 :name "margarine, melted" ;
+  :quantity "1/2" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b3425 :name "sugar" ;
+  :quantity "1/4" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b3424 :name "graham cracker crumbs, 18 squares" ;
+  :quantity "1 1/2" ;
   :unit "cups" ;
-  a :Ingredient .
-
-_:b3426 :name "eggs, beaten" ;
-  :quantity "4" ;
-  a :Ingredient .
-
-_:b3425 :name "grated cheese" ;
-  :quantity "2" ;
-  :unit "cups" ;
-  a :Ingredient .
-
-_:b3424 :name "bread" ;
-  :quantity "12" ;
-  :unit "slices" ;
   a :Ingredient .
 
 _:b3423 :name "grated parmesan cheese" ;
@@ -19846,33 +19851,32 @@ _:b3409 :name "chicken Ramen" ;
   :unit "pkg." ;
   a :Ingredient .
 
-_:b3408 :name "chopped nuts" ;
+_:b3408 :name "dry sherry" ;
+  :quantity "2" ;
+  :unit "tbsp" ;
+  a :Ingredient .
+
+_:b3407 :name "tomatoes, halved" ;
+  :quantity "8" ;
+  a :Ingredient .
+
+_:b3406 :name "water" ;
+  :quantity "1/4" ;
+  :unit "can" ;
+  a :Ingredient .
+
+_:b3405 :name "garlic" ;
   :quantity "1" ;
-  :unit "cup" ;
+  :unit "clove" ;
   a :Ingredient .
 
-_:b3407 :name "baking soda" ;
-  :quantity "1" ;
-  :unit "tsp" ;
+_:b3404 :name "oil" ;
+  :quantity "3" ;
+  :unit "tbsp" ;
   a :Ingredient .
 
-_:b3406 :name "graham crackers, crushed" ;
-  :quantity "32" ;
-  a :Ingredient .
-
-_:b3405 :name "sour milk" ;
-  :quantity "1" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3404 :name "sugar" ;
-  :quantity "1" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b3403 :name "butter" ;
-  :quantity "1/2" ;
-  :unit "cup" ;
+_:b3403 :name "onion" ;
+  :quantity "2" ;
   a :Ingredient .
 
 _:b2319 :name "dried onion or 1/2 cup fresh" ;
@@ -19880,9 +19884,8 @@ _:b2319 :name "dried onion or 1/2 cup fresh" ;
   :unit "tablespoons" ;
   a :Ingredient .
 
-_:b3402 :name "valencia peanuts" ;
-  :quantity "1" ;
-  :unit "tsp" ;
+_:b3402 :name "peppers" ;
+  :quantity "2" ;
   a :Ingredient .
 
 _:b2318 :name "pepper" ;
@@ -19890,8 +19893,8 @@ _:b2318 :name "pepper" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3401 :name "coconut" ;
-  :quantity "1" ;
+_:b3401 :name "sauce" ;
+  :quantity "1/4" ;
   :unit "cup" ;
   a :Ingredient .
 
@@ -19900,9 +19903,9 @@ _:b2317 :name "salt" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b3400 :name "butter" ;
-  :quantity "6" ;
-  :unit "tbsp" ;
+_:b3400 :name "ginger" ;
+  :quantity "1/4" ;
+  :unit "tsp" ;
   a :Ingredient .
 
 _:b2316 :name "melted butter" ;
@@ -20030,13 +20033,13 @@ _:b1219 :name "ketchup" ;
   :unit "cups" ;
   a :Ingredient .
 
+_:b1218 :name "carrot, diagonally sliced" ;
+  :quantity "1" ;
+  a :Ingredient .
+
 _:b2302 :name "sour cream" ;
   :quantity "1 1/2" ;
   :unit "cups" ;
-  a :Ingredient .
-
-_:b1218 :name "carrot, diagonally sliced" ;
-  :quantity "1" ;
   a :Ingredient .
 
 _:b1217 :name "onion, chopped" ;
@@ -20699,24 +20702,24 @@ _:b2937 :name "olive oil" ;
   :unit "tablespoons" ;
   a :Ingredient .
 
-_:b2936 :name "onion" ;
-  :quantity "1/4" ;
-  :unit "cup" ;
-  a :Ingredient .
-
-_:b2935 :name "sauterne wine" ;
+_:b2936 :name "flour" ;
   :quantity "2" ;
   :unit "cups" ;
   a :Ingredient .
 
-_:b2934 :name "sliced mushrooms" ;
-  :quantity "1" ;
-  :unit "can" ;
+_:b2935 :name "soda" ;
+  :quantity "2" ;
+  :unit "tsp" ;
   a :Ingredient .
 
-_:b2933 :name "oil" ;
-  :quantity "4" ;
-  :unit "tbsp" ;
+_:b2934 :name "cloves" ;
+  :quantity "1/2" ;
+  :unit "tsp" ;
+  a :Ingredient .
+
+_:b2933 :name "cinnamon" ;
+  :quantity "1" ;
+  :unit "tsp" ;
   a :Ingredient .
 
 _:b1849 :name "dried onions or 1/2 cup fresh" ;
@@ -20724,9 +20727,9 @@ _:b1849 :name "dried onions or 1/2 cup fresh" ;
   :unit "tablespoons" ;
   a :Ingredient .
 
-_:b2932 :name "flour" ;
-  :quantity "1/2" ;
-  :unit "cup" ;
+_:b2932 :name "ginger" ;
+  :quantity "1" ;
+  :unit "tsp" ;
   a :Ingredient .
 
 _:b1848 :name "pepper" ;
@@ -20734,9 +20737,9 @@ _:b1848 :name "pepper" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b2931 :name "veal steak, sliced thinly" ;
-  :quantity "2" ;
-  :unit "pounds" ;
+_:b2931 :name "molasses" ;
+  :quantity "1/4" ;
+  :unit "cup" ;
   a :Ingredient .
 
 _:b1847 :name "teaspoon salt" ;
@@ -20744,9 +20747,8 @@ _:b1847 :name "teaspoon salt" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b2930 :name "flour" ;
-  :quantity "2" ;
-  :unit "cups" ;
+_:b2930 :name "egg" ;
+  :quantity "1" ;
   a :Ingredient .
 
 _:b1846 :name "butter, melted" ;
@@ -20784,37 +20786,38 @@ _:b1840 :name "cream of chcken soup" ;
   :unit "can" ;
   a :Ingredient .
 
-_:b2929 :name "soda" ;
-  :quantity "2" ;
-  :unit "tsp" ;
-  a :Ingredient .
-
-_:b2928 :name "cloves" ;
-  :quantity "1/2" ;
-  :unit "tsp" ;
-  a :Ingredient .
-
-_:b2927 :name "cinnamon" ;
+_:b2929 :name "brown sugar" ;
   :quantity "1" ;
-  :unit "tsp" ;
+  :unit "cup" ;
   a :Ingredient .
 
-_:b2926 :name "ginger" ;
-  :quantity "1" ;
-  :unit "tsp" ;
+_:b2928 :name "shortening" ;
+  :quantity "3/4" ;
+  :unit "cup" ;
   a :Ingredient .
 
-_:b2925 :name "molasses" ;
+_:b2927 :name "onion" ;
   :quantity "1/4" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b2924 :name "egg" ;
-  :quantity "1" ;
+_:b2926 :name "sauterne wine" ;
+  :quantity "2" ;
+  :unit "cups" ;
   a :Ingredient .
 
-_:b2923 :name "brown sugar" ;
+_:b2925 :name "sliced mushrooms" ;
   :quantity "1" ;
+  :unit "can" ;
+  a :Ingredient .
+
+_:b2924 :name "oil" ;
+  :quantity "4" ;
+  :unit "tbsp" ;
+  a :Ingredient .
+
+_:b2923 :name "flour" ;
+  :quantity "1/2" ;
   :unit "cup" ;
   a :Ingredient .
 
@@ -20823,9 +20826,9 @@ _:b1839 :name "dried onion or 1/2 cup fresh" ;
   :unit "tablespoons" ;
   a :Ingredient .
 
-_:b2922 :name "shortening" ;
-  :quantity "3/4" ;
-  :unit "cup" ;
+_:b2922 :name "veal steak, sliced thinly" ;
+  :quantity "2" ;
+  :unit "pounds" ;
   a :Ingredient .
 
 _:b1838 :name "pepper" ;
@@ -20833,9 +20836,9 @@ _:b1838 :name "pepper" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b2921 :name "cornstarch" ;
+_:b2921 :name "butter" ;
   :quantity "2" ;
-  :unit "tsp" ;
+  :unit "tbsps" ;
   a :Ingredient .
 
 _:b1837 :name "salt" ;
@@ -20843,9 +20846,9 @@ _:b1837 :name "salt" ;
   :unit "teaspoon" ;
   a :Ingredient .
 
-_:b2920 :name "pineapple chunks, injuice" ;
-  :quantity "3/4" ;
-  :unit "cup" ;
+_:b2920 :name "garlic, minced" ;
+  :quantity "1" ;
+  :unit "clove" ;
   a :Ingredient .
 
 _:b1836 :name "butter, melted" ;
@@ -20883,34 +20886,34 @@ _:b1830 :name "cream of chcken soup" ;
   :unit "can" ;
   a :Ingredient .
 
-_:b2919 :name "water" ;
+_:b2919 :name "zucchini" ;
+  :quantity "2" ;
+  :unit "small" ;
+  a :Ingredient .
+
+_:b2918 :name "cornstarch" ;
+  :quantity "2" ;
+  :unit "tsp" ;
+  a :Ingredient .
+
+_:b2917 :name "pineapple chunks, injuice" ;
   :quantity "3/4" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b2918 :name "vinegar" ;
+_:b2916 :name "water" ;
+  :quantity "3/4" ;
+  :unit "cup" ;
+  a :Ingredient .
+
+_:b2915 :name "vinegar" ;
   :quantity "1/2" ;
   :unit "cup" ;
   a :Ingredient .
 
-_:b2917 :name "sugar" ;
+_:b2914 :name "sugar" ;
   :quantity "3/4" ;
   :unit "cup" ;
-  a :Ingredient .
-
-_:b2916 :name "butter" ;
-  :quantity "2" ;
-  :unit "tbsps" ;
-  a :Ingredient .
-
-_:b2915 :name "garlic, minced" ;
-  :quantity "1" ;
-  :unit "clove" ;
-  a :Ingredient .
-
-_:b2914 :name "zucchini" ;
-  :quantity "2" ;
-  :unit "small" ;
   a :Ingredient .
 
 _:b2913 :name "nutmeg" ;

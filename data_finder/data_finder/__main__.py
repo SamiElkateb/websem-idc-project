@@ -3,7 +3,7 @@ from utils.populate_ingredients import populate_ingredients
 from utils.populate_recipes import populate_recipes
 
 g = Graph()
-g.parse("../vocab/recipes.ttl")
+g.parse("../output/recipes.ttl")
 
 populate_ingredients(g)
-# populate_recipes(g)
+populate_recipes(g)
