@@ -1,0 +1,39 @@
+@prefix : <http://project-kitchenchef.fr/schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix food: <http://project-kitchenchef.fr/food/data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix recipes: <http://project-kitchenchef.fr/recipes/data#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+food:FoodThesaurus a skos:ConceptScheme;
+  skos:prefLabel "Food Thesaurus"@en, "Thésaurus alimentaire"@fr;
+  skos:definition "A classification scheme for different types of food"@en,
+                  "Un schéma de classification pour différents types d'aliments"@fr;
+  skos:hasTopConcept food:Meat;
+  skos:hasTopConcept food:DairyProduct;
+  skos:hasTopConcept food:Fruit;
+  skos:hasTopConcept food:Vegetable.
+
+food:Meat a skos:Concept;
+  skos:prefLabel "Meat"@en, "Viande"@fr;
+  skos:definition "Animal flesh used as food"@en,
+                  "Chair d'animal utilisée comme nourriture"@fr.
+
+food:DairyProduct a skos:Concept;
+  skos:prefLabel "Dairy Product"@en, "Produit laitier"@fr;
+  skos:definition "Food produced from the milk of mammals"@en,
+                  "Aliment produit à partir du lait des mammifères"@fr.
+
+food:Fruit a skos:Concept;
+  skos:prefLabel "Fruit"@en, "Fruit"@fr;
+  skos:definition "The sweet and fleshy product of a tree or other plant that contains seed and can be eaten as food"@en,
+                  "Produit sucré et charnu d'un arbre ou d'une autre plante contenant des graines et pouvant être consommé comme aliment"@fr.
+
+food:Vegetable a skos:Concept;
+  skos:prefLabel "Vegetable"@en, "Légume"@fr;
+  skos:definition "A plant or part of a plant used as food, typically as accompaniment to meat or fish"@en,
+                  "Plante ou partie d'une plante utilisée comme nourriture, typiquement en accompagnement de viande ou de poisson"@fr.
