@@ -2743,8 +2743,7 @@ recipes:ChickenwithArtichoke a :Recipe ;
     :name "Chicken with Artichoke" .
 
 recipes:ChiliCheesePuff a :Recipe ;
-    rdfs:label "Enchilada"@en,
-        "Enchilada"@fr ;
+    rdfs:label "Curry puff"@en ;
     :hasIngredient [ a :Ingredient ;
             :food food:Green ;
             :name "diced green chiles" ;
@@ -2780,12 +2779,12 @@ recipes:ChiliCheesePuff a :Recipe ;
             :name "jack cheese, shredded" ;
             :quantity "4" ;
             :unit "cups" ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Enchilada_Rice_Beans.jpg?width=300> ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Karipap_Daging.jpg?width=300> ;
     :instructions """Preheat oven to 350 degrees.
 In medium size bowl beat eggs until light and lemon colored. Add flour, baking powder, salt, cottage cheese, and jack cheese. Blend until smooth. Stir in chiles.
 Pour into buttered 9" x 13" baking dish. Bake 35 minutes or until top is brown and firm.""" ;
     :name "Chili Cheese Puff" ;
-    owl:sameAs <http://dbpedia.org/resource/Enchilada> .
+    owl:sameAs <http://dbpedia.org/resource/Curry_puff> .
 
 recipes:ChiliChicken a :Recipe ;
     rdfs:label "Kung Pao chicken"@en,
@@ -3874,7 +3873,6 @@ recipes:CrazyCrustPizza a :Recipe ;
     owl:sameAs <http://dbpedia.org/resource/Stuffed_crust_pizza> .
 
 recipes:CreamyApplePie a :Recipe ;
-    rdfs:label "Buko pie"@en ;
     :hasIngredient [ a :Ingredient ;
             :food food:Pie ;
             :name "pie shell, unbaked" ;
@@ -3905,11 +3903,9 @@ recipes:CreamyApplePie a :Recipe ;
             :name "heavy cream" ;
             :quantity "1" ;
             :unit "cup" ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Buko-pie.jpg?width=300> ;
     :instructions "Place apples in the pie shell.  Mix together sugar, flour, and salt.  Sprinkle over apples.  in a sauce pan bring cream to boiling point.  Pour over apples.  Sprinkle generously with cinnamon.  Bake at 375 degrees for 45 minutes, until firm." ;
     :name "Creamy Apple Pie" ;
-    :recipeCategory "Pies" ;
-    owl:sameAs <http://dbpedia.org/resource/Buko_pie> .
+    :recipeCategory "Pies" .
 
 recipes:CreamyChickenBroccoliwithRice a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -6894,6 +6890,8 @@ Drain pasta and vegetables; return to saucepan. Stir in pesto; add chicken to tu
     owl:sameAs <http://dbpedia.org/resource/Pasta_primavera> .
 
 recipes:PeaSalad a :Recipe ;
+    rdfs:label "Ham salad"@en,
+        "Salade de jambon"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Peas ;
             :name "frozen peas, uncooked" ;
@@ -6924,9 +6922,11 @@ recipes:PeaSalad a :Recipe ;
             :name "sour cream" ;
             :quantity "1" ;
             :unit "small carton" ] ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Ham_Salad_Sandwich_(39117585832).jpg?width=300> ;
     :instructions "Stir together and enjoy." ;
     :name "Pea Salad" ;
-    :recipeCategory "Salads and Dressings" .
+    :recipeCategory "Salads and Dressings" ;
+    owl:sameAs <http://dbpedia.org/resource/Ham_salad> .
 
 recipes:PeachAlmondPie a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -8098,8 +8098,8 @@ Cover, cook 20 minutes. Pour over chicken. Bake covered at 375 degrees for 1 hou
     :name "Savory Chicken Casserole" .
 
 recipes:SavoryGoulash a :Recipe ;
-    rdfs:label "Potato pancake"@en,
-        "Galette de pommes de terre"@fr ;
+    rdfs:label "Paprika"@en,
+        "Paprika"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Onions ;
             :name "sliced onions" ;
@@ -8139,10 +8139,10 @@ recipes:SavoryGoulash a :Recipe ;
             :name "sour cream" ;
             :quantity "4" ;
             :unit "tbsp" ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Latkas.jpg?width=300> ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pimentón_Tap_de_Cortí_(cropped).jpg?width=300> ;
     :instructions "Brown onion and meat. Add tomato sauce and water. Cook for 2 hours and serve over hot noodles." ;
     :name "Savory Goulash" ;
-    owl:sameAs <http://dbpedia.org/resource/Potato_pancake> .
+    owl:sameAs <http://dbpedia.org/resource/Paprika> .
 
 recipes:SherryWineCake a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -8535,6 +8535,8 @@ recipes:SourCreamEnchiladas a :Recipe ;
     owl:sameAs <http://dbpedia.org/resource/Enchilada> .
 
 recipes:SourCreamRaisinPie a :Recipe ;
+    rdfs:label "Cheesecake"@en,
+        "Cheesecake"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Raisins ;
             :name "raisins" ;
@@ -8574,9 +8576,11 @@ recipes:SourCreamRaisinPie a :Recipe ;
             :name "nutmeg" ;
             :quantity "1/2" ;
             :unit "tsp" ] ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/My_first_cheesecake_cropped.jpg?width=300> ;
     :instructions "Boil raisins in water until plump.  Add flour and sugar.  Cook to thicken slightly then add egg yolks, sour cream, vanilla and nutmeg.  Pour into 9\" bottom crust.  Add top crust.  Sprinkle with sugar.  Bake 50 minutes at 350 degrees." ;
     :name "Sour Cream Raisin Pie" ;
-    :recipeCategory "Pies" .
+    :recipeCategory "Pies" ;
+    owl:sameAs <http://dbpedia.org/resource/Cheesecake> .
 
 recipes:SouthCarolinaCobbler a :Recipe ;
     rdfs:label "Cobbler (food)"@en,

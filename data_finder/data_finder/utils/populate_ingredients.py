@@ -1,12 +1,16 @@
 from keybert import KeyBERT
 from pke.unsupervised import MultipartiteRank
-from rdflib import OWL, RDF, RDFS, DCTERMS, Graph, Literal, Namespace, URIRef
+from rdflib import (DCTERMS, OWL, RDF, RDFS, SKOS, Graph, Literal, Namespace,
+                    URIRef)
 from utils.get_annotations import get_food_item
+
+from utils.use_cache import load_cache, save_cache
 
 kw_model = KeyBERT()
 
 FOOD = Namespace("http://project-kitchenchef.fr/food/data#")
 SCHEMA = Namespace("http://project-kitchenchef.fr/schema#")
+DBP = Namespace("http://dbpedia.org/property/")
 
 
 def to_pascal_case(text: str):
@@ -14,6 +18,38 @@ def to_pascal_case(text: str):
 
 
 added_food = {}
+foods = load_cache("foods_cache")
+
+
+def add_food_to_graph(g, food_id, dbpedia_uri, food):
+    frLabel = food.get("fr", None)
+    if frLabel:
+        g.add((FOOD[food_id], RDFS.label, Literal(frLabel, lang="fr")))
+
+    enLabel = food.get("en", None)
+    if enLabel:
+        g.add((FOOD[food_id], RDFS.label, Literal(enLabel, lang="en")))
+    thumbnail = food.get("thumbnail", None)
+    if thumbnail:
+        g.add((FOOD[food_id], SCHEMA["hasThumbnail"], URIRef(thumbnail)))
+
+    for dcSubject in food["dcterms:subject"]:
+        if dcSubject is None:
+            continue
+        g.add((FOOD[food_id], DCTERMS.subject, URIRef(dcSubject)))
+
+    g.add((FOOD[food_id], OWL.sameAs, URIRef(dbpedia_uri)))
+    g.add((FOOD[food_id], RDF.type, SCHEMA["Food"]))
+
+    # Maybe:
+    for dbpType in food["dbp:type"]:
+        if dbpType is None:
+            continue
+        g.add((FOOD[food_id], SKOS.broader, URIRef(dbpType)))
+
+    g.add((FOOD[food_id], RDF.type, SKOS.Concept))
+
+    pass
 
 
 def add_food_item(g, ingredient_name, food_id, dbpedia_uri):
@@ -39,18 +75,31 @@ def add_food_item(g, ingredient_name, food_id, dbpedia_uri):
 
     if dbpedia_uri in added_food:
         return
+    if dbpedia_uri in foods.keys():
+        add_food_to_graph(g=g, food_id=food_id, food=foods[dbpedia_uri], dbpedia_uri=dbpedia_uri)
+        added_food[dbpedia_uri] = True
+        return
+
     print("dbpedia_uri", dbpedia_uri)
 
     qres = g.query(
         """
         prefix owl:  <http://www.w3.org/2002/07/owl#>
         prefix dbo:  <http://dbpedia.org/ontology/>
-        SELECT ?thumbnail ?label ?dcSubject
+        prefix dbp:  <http://dbpedia.org/property/type>
+        SELECT ?thumbnail ?label ?dcSubject ?dbpType
         WHERE {
           SERVICE <https://dbpedia.org/sparql> {
-                ?dbpediaURI rdfs:label ?label ;
-                            dbo:thumbnail ?thumbnail ;
-                            dcterms:subject ?dcSubject .
+                ?dbpediaURI rdfs:label ?label .
+                OPTIONAL {
+                    ?dbpediaURI dbo:thumbnail ?thumbnail .
+                }
+                OPTIONAL {
+                    ?dbpediaURI dcterms:subject ?dcSubject .
+                }
+                OPTIONAL {
+                    ?dbpediaURI dbp:type ?dbpType .
+                }
           }
           FILTER (LANG(?label) = "fr" || LANG(?label) = "en")
         }
@@ -59,29 +108,17 @@ def add_food_item(g, ingredient_name, food_id, dbpedia_uri):
             "dbpediaURI": URIRef(dbpedia_uri),
         },
     )
-    food = {"dcterms:subject": []}
+    food = {"dcterms:subject": [], "dbp:type": []}
 
     for row in qres:
         food["thumbnail"] = row.thumbnail
         food[row.label.language] = row.label
         food["dcterms:subject"].append(row.dcSubject)
-    frLabel = food.get("fr", None)
-    if frLabel:
-        g.add((FOOD[food_id], RDFS.label, Literal(frLabel, lang="fr")))
+        food["dbp:type"].append(row.dbpType)
+    add_food_to_graph(g=g, food_id=food_id, food=food, dbpedia_uri=dbpedia_uri)
 
-    enLabel = food.get("en", None)
-    if enLabel:
-        g.add((FOOD[food_id], RDFS.label, Literal(enLabel, lang="en")))
-    thumbnail = food.get("thumbnail", None)
-    if thumbnail:
-        g.add((FOOD[food_id], SCHEMA["hasThumbnail"], URIRef(thumbnail)))
-
-    for dcSubject in food["dcterms:subject"]:
-        g.add((FOOD[food_id], DCTERMS.subject, URIRef(dcSubject)))
-
-    g.add((FOOD[food_id], OWL.sameAs, URIRef(dbpedia_uri)))
-    g.add((FOOD[food_id], RDF.type, SCHEMA["Food"]))
-
+    foods[dbpedia_uri] = food
+    save_cache("foods_cache", foods)
     added_food[dbpedia_uri] = True
 
 

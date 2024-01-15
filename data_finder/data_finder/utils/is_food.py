@@ -1,6 +1,8 @@
 from rdflib import Graph, URIRef
 
-cache = {}
+from utils.use_cache import load_cache, save_cache
+
+cache = load_cache("is_food_cache")
 
 
 def check_is_food(dbpedia_uri):
@@ -37,6 +39,8 @@ def check_is_food(dbpedia_uri):
     )
     for _ in qres:
         cache[dbpedia_uri] = True
+        save_cache("is_food_cache", cache)
         return True
     cache[dbpedia_uri] = False
+    save_cache("is_food_cache", cache)
     return False
