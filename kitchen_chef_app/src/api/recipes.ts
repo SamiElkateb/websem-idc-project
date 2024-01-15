@@ -5,7 +5,8 @@ import { TIngredient } from '../models/ingredients';
 
 const getRecipes = async ({ filteringIngredients }: { filteringIngredients:TIngredient[] }): Promise<AxiosResponse<TRecipe[]>> => {
   const url = new URL(`${serverConf.URL}/recipes`);
-  filteringIngredients.forEach((ingredient) => url.searchParams.append('q_ingredients', ((new URL(ingredient.id)).hash.substr(1)).toString()));
+  // filteringIngredients.forEach((ingredient) => url.searchParams.append('q_ingredients', ((new URL(ingredient.id)).hash.substr(1)).toString()));
+  filteringIngredients.forEach((ingredient) => url.searchParams.append('q_ingredients', ingredient.id));
   return axios.get(url.toString());
 };
 
