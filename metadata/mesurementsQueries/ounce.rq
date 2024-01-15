@@ -6,9 +6,10 @@ CONSTRUCT {
     ?subj ?pred ?obj .
     ?ingredient :unit measurements:WeightOunce .
 } WHERE {
-    ?subj ?pred ?obj .
-    FILTER (!REGEX(?obj, "(z\\.?|oz\\.?|ounces?)", "i")|| ?pred != :unit || ?obj = measurements:FluidOunce)
-    OPTIONAL {
+    {
+      ?subj ?pred ?obj .
+      FILTER (!REGEX(?obj, "(z\\.?|oz\\.?|ounces?)", "i")|| ?pred != :unit || ?obj = measurements:FluidOunce)
+    } UNION {
         ?ingredient :unit ?unit .
         FILTER (REGEX(?unit, "(z\\.?|oz\\.?|ounces?)", "i") && ?unit != measurements:FluidOunce)
     }

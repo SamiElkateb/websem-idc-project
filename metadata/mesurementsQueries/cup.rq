@@ -6,9 +6,10 @@ CONSTRUCT {
     ?subj ?pred ?obj .
     ?ingredient :unit measurements:Cup .
 } WHERE {
-    ?subj ?pred ?obj .
-    FILTER (!REGEX(?obj, "(cups?)", "i") || ?pred != :unit)
-    OPTIONAL {
+    {
+      ?subj ?pred ?obj .
+      FILTER (!REGEX(?obj, "(cups?)", "i") || ?pred != :unit)
+    } UNION {
         ?ingredient :unit ?unit .
         FILTER REGEX(?unit, "(cups?)", "i")
     }

@@ -6,9 +6,10 @@ CONSTRUCT {
     ?subj ?pred ?obj .
     ?ingredient :unit measurements:Tablespoon .
 } WHERE {
-    ?subj ?pred ?obj .
-    FILTER (!REGEX(?obj, "(tbs?ps?|tables?poons?)", "i")|| ?pred != :unit)
-    OPTIONAL {
+    {
+      ?subj ?pred ?obj .
+      FILTER (!REGEX(?obj, "(tbs?ps?|tables?poons?)", "i")|| ?pred != :unit)
+    } UNION {
         ?ingredient :unit ?unit .
         FILTER REGEX(?unit, "(tbs?ps?|tables?poons?)", "i")
     }

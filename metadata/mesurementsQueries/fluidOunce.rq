@@ -6,9 +6,10 @@ CONSTRUCT {
     ?subj ?pred ?obj .
     ?ingredient :unit measurements:VolumicOunce .
 } WHERE {
-    ?subj ?pred ?obj .
-    FILTER (!REGEX(?obj, "(z\\.?|oz\\.?|ounces?).*(cans?|jars?)", "i")|| ?pred != :unit)
-    OPTIONAL {
+    {
+      ?subj ?pred ?obj .
+      FILTER (!REGEX(?obj, "(z\\.?|oz\\.?|ounces?).*(cans?|jars?)", "i")|| ?pred != :unit)
+    } UNION {
         ?ingredient :unit ?unit .
         FILTER REGEX(?unit, "(z\\.?|oz\\.?|ounces?).*(cans?|jars?)", "i")
     }

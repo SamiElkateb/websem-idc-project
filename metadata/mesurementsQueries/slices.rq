@@ -6,9 +6,10 @@ CONSTRUCT {
     ?subj ?pred ?obj .
     ?ingredient :unit measurements:Slice .
 } WHERE {
-    ?subj ?pred ?obj .
-    FILTER (!REGEX(?obj, "^(slices?)$", "i")|| ?pred != :unit)
-    OPTIONAL {
+    {
+      ?subj ?pred ?obj .
+      FILTER (!REGEX(?obj, "^(slices?)$", "i")|| ?pred != :unit)
+    } UNION {
         ?ingredient :unit ?unit .
         FILTER REGEX(?unit, "^(slices?)$", "i")
     }

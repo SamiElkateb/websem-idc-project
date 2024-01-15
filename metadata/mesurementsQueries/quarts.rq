@@ -6,9 +6,10 @@ CONSTRUCT {
     ?subj ?pred ?obj .
     ?ingredient :unit measurements:Quart.
 } WHERE {
-    ?subj ?pred ?obj .
-    FILTER (!REGEX(?obj, "(quarts?|qt)", "i")|| ?pred != :unit)
-    OPTIONAL {
+    {?subj ?pred ?obj .
+      FILTER (!REGEX(?obj, "(quarts?|qt)", "i")|| ?pred != :unit)
+    }
+    UNION {
         ?ingredient :unit ?unit .
         FILTER REGEX(?unit, "(quarts?|qt)", "i")
     }
