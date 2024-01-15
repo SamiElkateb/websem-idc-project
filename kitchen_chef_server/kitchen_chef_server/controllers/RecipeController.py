@@ -41,7 +41,7 @@ async def get_recipes(
             row.ingredientQuantities,
             row.ingredientUnits,
         )
-        recipe = Recipe(row.recipe, row.name, ingredients, row.instructions, row.category)
+        recipe = Recipe(row.recipe, row.name, ingredients, row.instructions, row.category, row.thumbnail)
         recipes.append(recipe)
 
     return recipes
@@ -51,7 +51,7 @@ async def get_recipes(
 async def get_recipe(recipe_identifier: str):
     query = """
     prefix :<http://project-kitchenchef.fr/schema#>
-    SELECT ?recipe ?name ?category ?instructions
+    SELECT ?recipe ?name ?category ?instructions ?thumbnail
             (group_concat(?ingredient; separator="|-|") AS ?ingredientIds)
             (group_concat(?ingredientFood; separator="|-|") AS ?ingredientFoods)
             (group_concat(?ingredientName; separator="|-|") AS ?ingredientNames)
@@ -62,6 +62,7 @@ async def get_recipe(recipe_identifier: str):
                 :hasIngredient ?ingredient .
         OPTIONAL { ?recipe :recipeCategory ?category . }
         OPTIONAL { ?recipe :instructions ?instructions . }
+        OPTIONAL { ?recipe :hasThumbnail ?thumbnail . }
         ?ingredient :food ?ingredientFood ;
                     :name ?ingredientName ;
                     :quantity ?ingredientQuantity ;
@@ -88,4 +89,4 @@ async def get_recipe(recipe_identifier: str):
             row.ingredientQuantities,
             row.ingredientUnits,
         )
-        return Recipe(row.recipe, row.name, ingredients, row.instructions, row.category)
+        return Recipe(row.recipe, row.name, ingredients, row.instructions, row.category, row.thumbnail)
