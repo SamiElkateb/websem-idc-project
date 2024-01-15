@@ -4,7 +4,7 @@
 
 CONSTRUCT {
     ?subj ?pred ?obj .
-    ?ingredient :unit measurements:FluidOunce .
+    ?ingredient :unit measurements:VolumicOunce .
 } WHERE {
     ?subj ?pred ?obj .
     FILTER (!REGEX(?obj, "(z\\.?|oz\\.?|ounces?).*(cans?|jars?)", "i")|| ?pred != :unit)

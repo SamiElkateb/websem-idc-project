@@ -4,7 +4,7 @@
 CONSTRUCT {
     ?rec ?p ?divers.
     ?ing :quantity ?not_few.
-    ?x :quantity :few.
+    ?x :quantity :Few.
 } WHERE {
     ?rec ?p ?divers.
     ?ing :quantity ?not_few.

@@ -36,17 +36,17 @@
   rdfs:comment ""@en,
               ""@fr .
 
-:MesurementUnit a owl:Class ;
+:MeasurementUnit a owl:Class ;
   rdfs:label ""@en, ""@fr ;
   rdfs:comment ""@en, ""@fr .
 
-:VolumeMesurementUnit a owl:Class ;
-  rdfs:subClassOf :MesurementUnit ;
+:VolumeMeasurementUnit a owl:Class ;
+  rdfs:subClassOf :MeasurementUnit ;
   rdfs:label ""@en, ""@fr ;
   rdfs:comment ""@en, ""@fr .
 
-:WeightMesurementUnit a owl:Class ;
-  rdfs:subClassOf :MesurementUnit ;
+:WeightMeasurementUnit a owl:Class ;
+  rdfs:subClassOf :MeasurementUnit ;
   rdfs:label ""@en, ""@fr ;
   rdfs:comment ""@en, ""@fr .
 
@@ -59,6 +59,22 @@
   rdfs:comment ""@en,
               ""@fr .
 
+# Individuals
+
+:Few a :Quantity ;
+  rdfs:label "Few"@en, "Peu"@fr ;
+  rdfs:comment "undefined little quantity"@en,
+              "Faible quantitée indéfinie"@fr .
+
+:Some a :Quantity ;
+    rdfs:label "Some"@en, "Quelques"@fr ;
+    rdfs:comment "undefined medium quantity"@en,
+                "Quantitée moyenne indéfinie"@fr .
+
+:Many a :Quantity ;
+    rdfs:label "Many"@en, "Beaucoup"@fr ;
+    rdfs:comment "undefined large quantity"@en,
+                "Grande quantitée indéfinie"@fr .
 # Properties
 
 :hasCalories a owl:ObjectProperty ;
@@ -139,15 +155,23 @@
   rdfs:range xsd:float .
 
 :hasUnitConversion a owl:ObjectProperty ;
-  rdfs:domain :MesurementUnit ;
-  rdfs:range xsd:UnitConversion .
+  rdfs:domain :MeasurementUnit ;
+  rdfs:range :UnitConversion .
 
 :hasUnitConversionTransitive a owl:ObjectProperty ;
-  rdfs:domain :MesurementUnit ;
-  rdfs:range xsd:UnitConversion .
+  rdfs:domain :MeasurementUnit ;
+  rdfs:range :UnitConversion .
 
 :conversionRatio a owl:ObjectProperty ;
   rdfs:domain xsd:float .
+
+:quantity a owl:DatatypeProperty  ;
+  rdfs:domain :Ingredient ;
+  rdfs:range xsd:decimal .
+
+:unit a owl:ObjectProperty ;
+  rdfs:domain :Ingredient ;
+  rdfs:range :MeasurementUnit .
 
 # Display properties
 :hasThumbnail a owl:ObjectProperty ;

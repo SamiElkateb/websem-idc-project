@@ -1,0 +1,24 @@
+@prefix rdf:          <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:          <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh:           <http://www.w3.org/ns/shacl#> .
+@prefix measurements: <http://project-kitchenchef.fr/measurements/data#> .
+@prefix :             <http://project-kitchenchef.fr/schema#> .
+@prefix owl:          <http://www.w3.org/2002/07/owl#> .
+
+:VeganRecipe a owl:Class ;
+    owl:intersectionOf ( :Recipe [ a owl:Restriction ;
+            owl:onProperty :hasIngredient ;
+            owl:someValuesFrom :PlantBasedIngredient ] ) .
+
+:VegetarianRecipe a owl:Class ;
+    owl:intersectionOf ( :Recipe [ a owl:Restriction ;
+            owl:onProperty :hasIngredient ;
+            owl:someValuesFrom :VegetarianIngredient ] ) .
+
+:PeanutFreeRecipe a owl:Class .
+:GlutenFreeRecipe a owl:Class .
+:EggFreeRecipe a owl:Class .
+:ShellfishFreeRecipe a owl:Class .
+:NutsFreeRecipe a owl:Class .
+:LactoseFreeRecipe a owl:Class .

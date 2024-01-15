@@ -83,23 +83,14 @@ Extraction avec dbpédia
 Alignement avec dbpédia pour etre aligné sur les ingrédients
 Unités aligné apres le csvw
 
-## Instructions 
-
-make all
-
-
 ### Quantitées
 
-Few -> Unités pour un peu
+Few, Some, Many -> Unités pour un peu
 Sinon entiers
 
 Contraintes
 
 Si a skos:Concept, pas le droit de a owl:Class. a skos:Concept, :Quantity c'est bon
-
-ounces vs fl ounces a modifier 
-
-
 
 ## Tests
 ### Requêtes serveur

@@ -8,14 +8,14 @@ CONSTRUCT {
 } WHERE {
     ?rec ?p ?divers.
     FILTER(
-        (?p != :quantityFromUnit && ?p != :quantity) || ?divers IN (:few, :some, :large)
+        (?p != :quantityFromUnit && ?p != :quantity) || ?divers IN (:Few, :Some, :Many)
     )
     OPTIONAL{
         ?x :quantity ?int.
         OPTIONAL {
             ?x :quantityFromUnit ?intUnit.
         }
-        FILTER(?int NOT IN (:few, :some, :large))
+        FILTER(?int NOT IN (:Few, :Some, :Many))
         BIND( IF((BOUND(?intUnit) && DATATYPE(?int) = xsd:decimal),?intUnit*?int,?int) AS ?adjustedValue )
     }
 }
