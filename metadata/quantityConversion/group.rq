@@ -6,11 +6,12 @@ CONSTRUCT {
     ?rec ?p ?divers.
     ?x :quantity ?adjustedValue.
 } WHERE {
-    ?rec ?p ?divers.
-    FILTER(
-        (?p != :quantityFromUnit && ?p != :quantity) || ?divers IN (:Few, :Some, :Many)
-    )
-    OPTIONAL{
+{
+?rec ?p ?divers.
+FILTER(
+(?p != :quantityFromUnit && ?p != :quantity) || ?divers IN (:Few, :Some, :Many)
+)
+}UNION{
         ?x :quantity ?int.
         OPTIONAL {
             ?x :quantityFromUnit ?intUnit.

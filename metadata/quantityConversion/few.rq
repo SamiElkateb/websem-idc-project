@@ -2,18 +2,19 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 CONSTRUCT {
-    ?rec ?p ?divers.
-    ?ing :quantity ?not_few.
-    ?x :quantity :Few.
+?rec ?p ?divers.
+?ing :quantity ?not_few.
+?x :quantity :Few.
 } WHERE {
-    ?rec ?p ?divers.
-    ?ing :quantity ?not_few.
-    FILTER(?p != :quantity)
-    FILTER (!REGEX(?not_few, "few", "i"))
-    OPTIONAL {
-        ?x :quantity ?few.
-        FILTER REGEX(?few, "few", "i")
-    }
+{
+?rec ?p ?divers.
+?ing :quantity ?not_few.
+FILTER(?p != :quantity)
+FILTER (!REGEX(?not_few, "few", "i"))
+}  UNION {
+?x :quantity ?few.
+FILTER REGEX(?few, "few", "i")
+}
 }
 
 

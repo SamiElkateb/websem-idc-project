@@ -11,9 +11,19 @@
 
 recipes:BananaCake a :Recipe ;
     :hasIngredient [ a :Ingredient ;
-            :food food:SodaWater ;
-            :name "soda water" ;
-            :quantity 1.0 ;
+            :food food:Sugar ;
+            :name "sugar" ;
+            :quantity 1.5 ;
+            :unit measurements:Cup ],
+        [ a :Ingredient ;
+            :food food:Flour ;
+            :name "flour" ;
+            :quantity 1.75 ;
+            :unit measurements:Cup ],
+        [ a :Ingredient ;
+            :food food:BakingPowder ;
+            :name "baking powder" ;
+            :quantity 1.5 ;
             :unit measurements:Teaspoon ],
         [ a :Ingredient ;
             :food food:Shortening ;
@@ -31,19 +41,9 @@ recipes:BananaCake a :Recipe ;
             :quantity 0.5 ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Sugar ;
-            :name "sugar" ;
-            :quantity 1.5 ;
-            :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:Flour ;
-            :name "flour" ;
-            :quantity 1.75 ;
-            :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:BakingPowder ;
-            :name "baking powder" ;
-            :quantity 1.5 ;
+            :food food:SodaWater ;
+            :name "soda water" ;
+            :quantity 1.0 ;
             :unit measurements:Teaspoon ] ;
     :instructions "Bake in three layer pans at 350 degrees." ;
     :name "Banana Cake" ;
@@ -51,10 +51,15 @@ recipes:BananaCake a :Recipe ;
 
 recipes:BlueberryCoffeeCake a :Recipe ;
     :hasIngredient [ a :Ingredient ;
-            :food food:CreamCheese ;
-            :name "cream cheese" ;
-            :quantity "12" ;
-            :unit measurements:WeightOunce ],
+            :food food:Sugar ;
+            :name "sugar" ;
+            :quantity 1.5 ;
+            :unit measurements:Cup ],
+        [ a :Ingredient ;
+            :food food:Butter ;
+            :name "butter" ;
+            :quantity 0.25 ;
+            :unit measurements:Cup ],
         [ a :Ingredient ;
             :food food:Eggs ;
             :name "eggs" ;
@@ -90,15 +95,10 @@ recipes:BlueberryCoffeeCake a :Recipe ;
             :quantity 3.0 ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Butter ;
-            :name "butter" ;
-            :quantity 0.25 ;
-            :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:Sugar ;
-            :name "sugar" ;
-            :quantity 1.5 ;
-            :unit measurements:Cup ] ;
+            :food food:CreamCheese ;
+            :name "cream cheese" ;
+            :quantity "12" ;
+            :unit measurements:WeightOunce ] ;
     :instructions """Mix butter, 1 cup sugar, flour, 2 eggs, 2 tsp vanilla, baking powder, and milk to make cake batter. Blend easily.  Add 3 cups of blueberries.  Put 2 1/2 cups of batter in pan.
 Mix cream cheese, 1/2 cup sugar, 1 egg, lemon juice and 1 tsp vanilla to make filling.  Put filling on top of batter.  Top with remaining batter.
 Make streusel topping from flour, butter, brown sugar, ad cinnamon.  Sprinkle on top of cake.
@@ -110,6 +110,26 @@ recipes:ChocolateCake a :Recipe ;
     rdfs:label "Chocolate cake"@en,
         "Gâteau au chocolat"@fr ;
     :hasIngredient [ a :Ingredient ;
+            :food food:Margarine ;
+            :name "margarine" ;
+            :quantity 0.5 ;
+            :unit measurements:Cup ],
+        [ a :Ingredient ;
+            :food food:Salt ;
+            :name "salt" ;
+            :quantity 0.5 ;
+            :unit measurements:Teaspoon ],
+        [ a :Ingredient ;
+            :food food:SourMilk ;
+            :name "sour milk" ;
+            :quantity 0.5 ;
+            :unit measurements:Cup ],
+        [ a :Ingredient ;
+            :food food:Cloves ;
+            :name "cloves" ;
+            :quantity 0.5 ;
+            :unit measurements:Teaspoon ],
+        [ a :Ingredient ;
             :food food:Sugar ;
             :name "sugar" ;
             :quantity 2.0 ;
@@ -137,26 +157,6 @@ recipes:ChocolateCake a :Recipe ;
             :food food:Vanilla ;
             :name "vanilla" ;
             :quantity 1.0 ;
-            :unit measurements:Teaspoon ],
-        [ a :Ingredient ;
-            :food food:Margarine ;
-            :name "margarine" ;
-            :quantity 0.5 ;
-            :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:Salt ;
-            :name "salt" ;
-            :quantity 0.5 ;
-            :unit measurements:Teaspoon ],
-        [ a :Ingredient ;
-            :food food:SourMilk ;
-            :name "sour milk" ;
-            :quantity 0.5 ;
-            :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:Cloves ;
-            :name "cloves" ;
-            :quantity 0.5 ;
             :unit measurements:Teaspoon ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chocolate_fudge_cake.jpg?width=300> ;
     :instructions "Mix all ingredients together.  Pour in 1 cup boiling water.  Mix well.  Bake about 35 minutes at 375 degrees." ;
@@ -166,16 +166,6 @@ recipes:ChocolateCake a :Recipe ;
 
 recipes:ChocolateMayonaiseCake a :Recipe ;
     :hasIngredient [ a :Ingredient ;
-            :food food:Flour ;
-            :name "flour" ;
-            :quantity 3.0 ;
-            :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:Cocoa ;
-            :name "cocoa" ;
-            :quantity 0.3333333333333333 ;
-            :unit measurements:Cup ],
-        [ a :Ingredient ;
             :food food:Sugar ;
             :name "sugar" ;
             :quantity 1.5 ;
@@ -204,7 +194,17 @@ recipes:ChocolateMayonaiseCake a :Recipe ;
             :food food:Vanilla ;
             :name "vanilla" ;
             :quantity 1.5 ;
-            :unit measurements:Teaspoon ] ;
+            :unit measurements:Teaspoon ],
+        [ a :Ingredient ;
+            :food food:Cocoa ;
+            :name "cocoa" ;
+            :quantity 0.3333333333333333 ;
+            :unit measurements:Cup ],
+        [ a :Ingredient ;
+            :food food:Flour ;
+            :name "flour" ;
+            :quantity 3.0 ;
+            :unit measurements:Cup ] ;
     :instructions "Makes  2 layer cake." ;
     :name "Chocolate Mayonaise Cake" ;
     :recipeCategory "Cakes" .
@@ -212,6 +212,21 @@ recipes:ChocolateMayonaiseCake a :Recipe ;
 recipes:CrazyCake a :Recipe ;
     rdfs:label "Wacky cake"@en ;
     :hasIngredient [ a :Ingredient ;
+            :food food:Water ;
+            :name "water" ;
+            :quantity 0.75 ;
+            :unit measurements:Cup ],
+        [ a :Ingredient ;
+            :food food:VegetableOil ;
+            :name "vegetable oil" ;
+            :quantity 0.75 ;
+            :unit measurements:Cup ],
+        [ a :Ingredient ;
+            :food food:LemonJuice ;
+            :name "lemon juice" ;
+            :quantity 0.5 ;
+            :unit measurements:Cup ],
+        [ a :Ingredient ;
             :food food:Lemon ;
             :name "lemon cake mix" ;
             :quantity 1.0 ;
@@ -229,21 +244,6 @@ recipes:CrazyCake a :Recipe ;
             :food food:PowderedSugar ;
             :name "powdered sugar" ;
             :quantity 2.0 ;
-            :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:Water ;
-            :name "water" ;
-            :quantity 0.75 ;
-            :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:VegetableOil ;
-            :name "vegetable oil" ;
-            :quantity 0.75 ;
-            :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:LemonJuice ;
-            :name "lemon juice" ;
-            :quantity 0.5 ;
             :unit measurements:Cup ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Wacky_Cake.jpg?width=300> ;
     :instructions "Mix first 5 ingredients well, about 4 minutes.  Bake at 350 degrees in a 9x13 pan for 35 minutes. Poke holes in warm cake and pour on mixture of powdered sugar and lemon juice." ;
@@ -255,6 +255,11 @@ recipes:FreshAppleCake a :Recipe ;
     rdfs:label "Apple pie"@en,
         "Tarte aux pommes"@fr ;
     :hasIngredient [ a :Ingredient ;
+            :food food:VegetableOil ;
+            :name "vegetable oil" ;
+            :quantity 0.5 ;
+            :unit measurements:Cup ],
+        [ a :Ingredient ;
             :food food:Apples ;
             :name "diced apples" ;
             :quantity 4.0 ;
@@ -302,12 +307,7 @@ recipes:FreshAppleCake a :Recipe ;
             :food food:Salt ;
             :name "salt" ;
             :quantity 1.0 ;
-            :unit measurements:Teaspoon ],
-        [ a :Ingredient ;
-            :food food:VegetableOil ;
-            :name "vegetable oil" ;
-            :quantity 0.5 ;
-            :unit measurements:Cup ] ;
+            :unit measurements:Teaspoon ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Small_apple_pie_8.jpg?width=300> ;
     :instructions "Mix apples and sugar well.  Add oil, nuts, and eggs.  Add vanilla and dry ingredients.  Bake at 350 degrees for 40-45 minutes.  Serve with whipped cream or top with cream cheese frosting." ;
     :name "Fresh Apple Cake" ;
@@ -316,6 +316,21 @@ recipes:FreshAppleCake a :Recipe ;
 
 recipes:FreshPearCake a :Recipe ;
     :hasIngredient [ a :Ingredient ;
+            :food food:Flour ;
+            :name "flour" ;
+            :quantity 1.5 ;
+            :unit measurements:Cup ],
+        [ a :Ingredient ;
+            :food food:Milk ;
+            :name "milk" ;
+            :quantity 0.5 ;
+            :unit measurements:Cup ],
+        [ a :Ingredient ;
+            :food food:Salt ;
+            :name "salt" ;
+            :quantity 0.125 ;
+            :unit measurements:Teaspoon ],
+        [ a :Ingredient ;
             :food food:Butter ;
             :name "butter" ;
             :quantity 2.0 ;
@@ -332,21 +347,6 @@ recipes:FreshPearCake a :Recipe ;
             :food food:Sugar ;
             :name "sugar" ;
             :quantity 1.0 ;
-            :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:Milk ;
-            :name "milk" ;
-            :quantity 0.5 ;
-            :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:Salt ;
-            :name "salt" ;
-            :quantity 0.125 ;
-            :unit measurements:Teaspoon ],
-        [ a :Ingredient ;
-            :food food:Flour ;
-            :name "flour" ;
-            :quantity 1.5 ;
             :unit measurements:Cup ] ;
     :instructions "Butter and flour a 9 inch round pan.  Peel and slice pears.  Blend eggs, sugar, milk, and salt.  Add flour, mix well.  Fold 1/2 of pears into batter.  Pour into pan, fan remaining pears on top.  Dot with butter.  Bake at 350 degrees about 55 minutes.  Sprinkle with powdered sugar." ;
     :name "Fresh Pear Cake" ;
@@ -356,9 +356,10 @@ recipes:GrahamCrackerCake a :Recipe ;
     rdfs:label "Graham cracker"@en,
         "Biscuit Graham"@fr ;
     :hasIngredient [ a :Ingredient ;
-            :food food:GrahamCrackers ;
-            :name "graham crackers, crushed" ;
-            :quantity "32" ],
+            :food food:Butter ;
+            :name "butter" ;
+            :quantity 0.5 ;
+            :unit measurements:Cup ],
         [ a :Ingredient ;
             :food food:Sugar ;
             :name "sugar" ;
@@ -380,10 +381,9 @@ recipes:GrahamCrackerCake a :Recipe ;
             :quantity 1.0 ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Butter ;
-            :name "butter" ;
-            :quantity 0.5 ;
-            :unit measurements:Cup ] ;
+            :food food:GrahamCrackers ;
+            :name "graham crackers, crushed" ;
+            :quantity "32" ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Graham-Cracker-Stack.jpg?width=300> ;
     :instructions "Cream butter and sugar.  Add crushed crackers, sour milk, and soda.  Stir in nuts.  Bake in 10 inch square baking pan.  Bake in 350 degree oven for 30-35 minutes.  Serve with whipped cream or thin powdered sugar icing." ;
     :name "Graham Cracker Cake" ;
@@ -397,15 +397,30 @@ recipes:HotWaterChocolateCake a :Recipe ;
             :quantity 0.5 ;
             :unit measurements:Cup ],
         [ a :Ingredient ;
-            :food food:Cloves ;
-            :name "cloves" ;
-            :quantity 0.5 ;
+            :food food:Vanilla ;
+            :name "vanilla" ;
+            :quantity 1.0 ;
             :unit measurements:Teaspoon ],
         [ a :Ingredient ;
             :food food:Sugar ;
             :name "sugar" ;
             :quantity 2.0 ;
             :unit measurements:Cup ],
+        [ a :Ingredient ;
+            :food food:Salt ;
+            :name "salt" ;
+            :quantity 0.5 ;
+            :unit measurements:Teaspoon ],
+        [ a :Ingredient ;
+            :food food:SourMilk ;
+            :name "sour milk" ;
+            :quantity 0.5 ;
+            :unit measurements:Cup ],
+        [ a :Ingredient ;
+            :food food:Cloves ;
+            :name "cloves" ;
+            :quantity 0.5 ;
+            :unit measurements:Teaspoon ],
         [ a :Ingredient ;
             :food food:Eggs ;
             :name "eggs" ;
@@ -424,21 +439,6 @@ recipes:HotWaterChocolateCake a :Recipe ;
             :food food:Flour ;
             :name "flour" ;
             :quantity 2.0 ;
-            :unit measurements:Cup ],
-        [ a :Ingredient ;
-            :food food:Vanilla ;
-            :name "vanilla" ;
-            :quantity 1.0 ;
-            :unit measurements:Teaspoon ],
-        [ a :Ingredient ;
-            :food food:Salt ;
-            :name "salt" ;
-            :quantity 0.5 ;
-            :unit measurements:Teaspoon ],
-        [ a :Ingredient ;
-            :food food:SourMilk ;
-            :name "sour milk" ;
-            :quantity 0.5 ;
             :unit measurements:Cup ] ;
     :instructions "Mix all ingredients together.  Pour in 1 cup boiling water. Mix well.  Bake about 35 minutes at 375 degrees." ;
     :name "Hot Water Chocolate Cake" ;
@@ -524,6 +524,19 @@ food:Jello a :Food,
         <http://dbpedia.org/resource/Category:Utah_cuisine> ;
     owl:sameAs dbpedia:Jell-O .
 
+food:Lemon a :Food,
+        skos:Concept ;
+    rdfs:label "Lemon"@en,
+        "Citronnier"@fr ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/P1030323.jpg?width=300> ;
+    dcterms:subject <http://dbpedia.org/resource/Category:Citrus_hybrids>,
+        <http://dbpedia.org/resource/Category:Cocktail_garnishes>,
+        <http://dbpedia.org/resource/Category:Fruit_trees>,
+        <http://dbpedia.org/resource/Category:Lemons>,
+        <http://dbpedia.org/resource/Category:Sour_fruits>,
+        <http://dbpedia.org/resource/Category:Tropical_agriculture> ;
+    owl:sameAs dbpedia:Lemon .
+
 food:Mayonnaise a :Food,
         skos:Concept ;
     rdfs:label "Mayonnaise"@en,
@@ -599,19 +612,6 @@ food:Cloves a :Food,
         <http://dbpedia.org/resource/Category:Spices>,
         <http://dbpedia.org/resource/Category:Syzygium> ;
     owl:sameAs dbpedia:Clove .
-
-food:LemonJuice a :Food,
-        skos:Concept ;
-    rdfs:label "Lemon"@en,
-        "Citronnier"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/P1030323.jpg?width=300> ;
-    dcterms:subject <http://dbpedia.org/resource/Category:Citrus_hybrids>,
-        <http://dbpedia.org/resource/Category:Cocktail_garnishes>,
-        <http://dbpedia.org/resource/Category:Fruit_trees>,
-        <http://dbpedia.org/resource/Category:Lemons>,
-        <http://dbpedia.org/resource/Category:Sour_fruits>,
-        <http://dbpedia.org/resource/Category:Tropical_agriculture> ;
-    owl:sameAs dbpedia:Lemon .
 
 food:Margarine a :Food,
         skos:Concept ;

@@ -2,6 +2,7 @@
 @prefix food:<http://project-kitchenchef.fr/food/data#> .
 @prefix measurements: <http://project-kitchenchef.fr/measurements/data#> .
 @prefix recipes: <http://project-kitchenchef.fr/recipes/data#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
 
 CONSTRUCT {
   ?subj ?pred ?obj .
