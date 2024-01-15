@@ -5,13 +5,13 @@ CONSTRUCT {
 ?rec ?p ?divers.
 ?x :quantity :Few.
 } WHERE {
-{
-?rec ?p ?divers.
-FILTER(?p != :quantity || !REGEX(?not_few, "few", "i"))
-}  UNION {
-?x :quantity ?few.
-FILTER REGEX(?few, "few", "i")
-}
+    {
+    ?rec ?p ?divers.
+    FILTER(?p != :quantity || !REGEX(?divers, "few", "i"))
+    }  UNION {
+    ?x :quantity ?few.
+    FILTER REGEX(?few, "few", "i")
+    }
 }
 
 

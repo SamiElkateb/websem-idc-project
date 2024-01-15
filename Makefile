@@ -1,4 +1,3 @@
-fast: recipes2rdf extract_quantity_from_units foodweights2rdf format populate update-server-data
 all: recipes2rdf extract_quantity_from_units units quantityConversion foodweights2rdf format populate update-server-data
 recipesHandling : recipes2rdf extract_quantity_from_units units quantityConversion
 recipes2rdf:

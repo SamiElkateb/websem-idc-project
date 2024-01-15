@@ -40,7 +40,7 @@ s:UnitConversionShapeTargets
     a                  sh:NodeShape ;
     sh:targetObjectsOf :hasUnitConversion ;
     sh:nodeKind        sh:BlankNode ;
-    sh:property        [ sh:path     ( :unit rdf:type [ sh:zeroOrMorePath rdfs:subClassOf ] ) ;
+    sh:property        [ sh:path     ( :unit rdf:type [ sh:zeroOrMorePath rdfs:subClassOf ] ) ; # TODO: check if this is correct
                          sh:hasValue :MeasurementUnit ;
                          sh:minCount 1 ;
                          sh:maxCount 1 ;

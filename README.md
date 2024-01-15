@@ -27,27 +27,35 @@ Informations sur les ingrédients :
 - unitées de mesure (conversion)
 - recette végétarienne / vegan / allergies
 
-## Déja fait
-- Récupérer les recettes avec les ingrédients et les étapes de préparation
-- CSVW en entier
-- Disambiguation des ingrédients
+## TODO List
 
-- API pour les recettes
-- 
-## À faire
-[x] Extraire le nom des ingrédients, convertir les unités\
-[x] corriger l'erreur de blank node inutiles de csv to rdf\  
-[x] corriger les erreurs de food (cold, fry, etc) éventuellement Keyword Extraction ou un LLM\
-[ ] ajouter une façon de trouver les calories et informations nutritionnelles à partir des recettes et ingrédients\ 
-[ ] utiliser https://fr.openfoodfacts.org pour avoir des informations plus juste sur les ingrédients à partir du code bar scanné sur application mobile\
-[ ] SHACL a etoffer \
-[ ] OWL : faire les inferences sur les recettes vegetariennes / vegan \
+[x] Extraire le nom des ingrédients, convertir les unités \
+[x] corriger l'erreur de blank node inutiles de csv to rdf \
+[x] corriger les erreurs de food (cold, fry, etc) éventuellement Keyword Extraction ou un LLM \
+[x] Recuperer recettes & ingredients
+[ ] Desambiguation des ingrédients et des recettes : extraction depuis textes\
+[ ] SKOS : thesaurus aliments \
+[ ] SKOS : thesaurus units (add top concepts) \
+[ ] SKOS : thesaurus nutriments \
+[ ] SHACL : à étoffer \
+[ ] OWL : faire les inferences sur les recettes végétariennes / vegan \
+[ ] OWL : étoffer vocabulaire\
 [ ] OWL : recette allergies \
-[ ] µServices nutriments \
-[ ] OWL : Recettes transitives ( ajouter des transformations d'ingrédients à partir de recettes ) \
+[ ] µServices nutriments : ajouter une façon de trouver les calories et informations nutritionnelles à partir des recettes et ingrédients\
+[ ] µServices : Query fédérée (utiliser endpoint web de données) \
+[ ] OWL : Recettes transitives (ajouter des transformations d'ingrédients à partir de recettes)\
+[ ] OWL : Aligner vocabulaires\
+[ ] SPARQL : 
+[ ] Server : faire le front\
+[ ] Server : faire l'API\
+[ ] Rapport\
+[ ] Présentation
 
+## Optionel 
 
-
+[ ] utiliser https://fr.openfoodfacts.org pour avoir des informations plus juste sur les ingrédients à partir du code bar scanné sur application mobile\
+[ ] Algo ML
+## Pour les thesaurus
 
 ## CSV
 https://github.com/cweber/cookbook/blob/master/recipes.csv
