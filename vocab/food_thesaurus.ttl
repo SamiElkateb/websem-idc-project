@@ -13,10 +13,12 @@ food:FoodThesaurus a skos:ConceptScheme;
   skos:prefLabel "Food Thesaurus"@en, "Thésaurus alimentaire"@fr;
   skos:definition "A classification scheme for different types of food"@en,
                   "Un schéma de classification pour différents types d'aliments"@fr;
-  skos:hasTopConcept food:Meat;
-  skos:hasTopConcept food:DairyProduct;
-  skos:hasTopConcept food:Fruit;
-  skos:hasTopConcept food:Vegetable.
+  skos:hasTopConcept food:Meat ;
+  skos:hasTopConcept food:DairyProduct ;
+  skos:hasTopConcept food:Fruit ;
+  skos:hasTopConcept food:Vegetable ;
+  skos:hasTopConcept food:Nuts ;
+  skos:hasTopConcept food:Eggs .
 
 food:Meat a skos:Concept;
   skos:prefLabel "Meat"@en, "Viande"@fr;
@@ -37,3 +39,13 @@ food:Vegetable a skos:Concept;
   skos:prefLabel "Vegetable"@en, "Légume"@fr;
   skos:definition "A plant or part of a plant used as food, typically as accompaniment to meat or fish"@en,
                   "Plante ou partie d'une plante utilisée comme nourriture, typiquement en accompagnement de viande ou de poisson"@fr.
+
+food:Nuts a skos:Concept;
+  skos:prefLabel "Nuts"@en, "Fruits à coque"@fr;
+  skos:definition "Hard-shelled dry fruits or seeds with a significant amount of fat and protein"@en,
+                  "Fruits ou graines à coque dure contenant une quantité significative de matières grasses et de protéines"@fr.
+
+food:Eggs a skos:Concept;
+  skos:prefLabel "Eggs"@en, "Oeufs"@fr;
+  skos:definition "Edible reproductive bodies produced by birds, particularly chickens, often used in cooking and baking"@en,
+                  "Corps reproducteurs comestibles produits par des oiseaux, en particulier des poules, souvent utilisés dans la cuisine et la pâtisserie"@fr.
