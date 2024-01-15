@@ -63,10 +63,12 @@ async def get_recipe(recipe_identifier: str):
         OPTIONAL { ?recipe :recipeCategory ?category . }
         OPTIONAL { ?recipe :instructions ?instructions . }
         OPTIONAL { ?recipe :hasThumbnail ?thumbnail . }
-        ?ingredient :food ?ingredientFood ;
-                    :name ?ingredientName ;
-                    :quantity ?ingredientQuantity ;
-                    :unit ?ingredientUnit .
+
+        ?ingredient :name ?ingredientName .
+        OPTIONAL {{ ?ingredient :food ?ingredientFood . }}
+        OPTIONAL {{ ?ingredient :quantity ?ingredientQuantity . }}
+        OPTIONAL {{ ?ingredient :unit ?ingredientUnit . }}
+
         FILTER(?recipe = ?uri)
     } GROUP BY ?recipe
     """

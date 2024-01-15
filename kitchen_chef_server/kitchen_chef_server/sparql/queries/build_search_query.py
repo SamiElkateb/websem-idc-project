@@ -20,10 +20,10 @@ def build_search_query(q_ingredients, q_filters):
         OPTIONAL {{ ?recipe :recipeCategory ?category . }}
         OPTIONAL {{ ?recipe :instructions ?instructions . }}
 
-        ?ingredient :food ?ingredientFood ;
-                    :name ?ingredientName ;
-                    :quantity ?ingredientQuantity ;
-                    :unit ?ingredientUnit .
+        ?ingredient :name ?ingredientName .
+        OPTIONAL {{ ?ingredient :food ?ingredientFood . }}
+        OPTIONAL {{ ?ingredient :quantity ?ingredientQuantity . }}
+        OPTIONAL {{ ?ingredient :unit ?ingredientUnit . }}
 
         {ingredients_query}
     }} GROUP BY ?recipe
