@@ -1,10 +1,17 @@
+from urllib.parse import urlparse
+
 from keybert import KeyBERT
 from pke.unsupervised import MultipartiteRank
 from rdflib import (DCTERMS, OWL, RDF, RDFS, SKOS, Graph, Literal, Namespace,
                     URIRef)
 from utils.get_annotations import get_food_item
-
 from utils.use_cache import load_cache, save_cache
+
+
+def is_valid_url(url):
+    parsed_url = urlparse(url)
+    return bool(parsed_url.scheme and parsed_url.netloc)
+
 
 kw_model = KeyBERT()
 
@@ -34,7 +41,7 @@ def add_food_to_graph(g, food_id, dbpedia_uri, food):
         g.add((FOOD[food_id], SCHEMA["hasThumbnail"], URIRef(thumbnail)))
 
     for dcSubject in food["dcterms:subject"]:
-        if dcSubject is None:
+        if dcSubject is None or not is_valid_url(dcSubject):
             continue
         g.add((FOOD[food_id], DCTERMS.subject, URIRef(dcSubject)))
 
@@ -43,7 +50,7 @@ def add_food_to_graph(g, food_id, dbpedia_uri, food):
 
     # Maybe:
     for dbpType in food["dbp:type"]:
-        if dbpType is None:
+        if dbpType is None or not is_valid_url(dbpType):
             continue
         g.add((FOOD[food_id], SKOS.broader, URIRef(dbpType)))
 
@@ -76,7 +83,9 @@ def add_food_item(g, ingredient_name, food_id, dbpedia_uri):
     if dbpedia_uri in added_food:
         return
     if dbpedia_uri in foods.keys():
-        add_food_to_graph(g=g, food_id=food_id, food=foods[dbpedia_uri], dbpedia_uri=dbpedia_uri)
+        add_food_to_graph(
+            g=g, food_id=food_id, food=foods[dbpedia_uri], dbpedia_uri=dbpedia_uri
+        )
         added_food[dbpedia_uri] = True
         return
 
@@ -86,7 +95,7 @@ def add_food_item(g, ingredient_name, food_id, dbpedia_uri):
         """
         prefix owl:  <http://www.w3.org/2002/07/owl#>
         prefix dbo:  <http://dbpedia.org/ontology/>
-        prefix dbp:  <http://dbpedia.org/property/type>
+        prefix dbp:  <http://dbpedia.org/property/>
         SELECT ?thumbnail ?label ?dcSubject ?dbpType
         WHERE {
           SERVICE <https://dbpedia.org/sparql> {
