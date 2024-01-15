@@ -59,9 +59,9 @@ async def get_recipe(recipe_identifier: str):
             (group_concat(?ingredientUnit; separator="|-|") AS ?ingredientUnits)
     WHERE {
         ?recipe :name ?name ;
-                :hasIngredient ?ingredient ;
-                :instructions ?instructions ;
-                :recipeCategory ?category .
+                :hasIngredient ?ingredient .
+        OPTIONAL { ?recipe :recipeCategory ?category . }
+        OPTIONAL { ?recipe :instructions ?instructions . }
         ?ingredient :food ?ingredientFood ;
                     :name ?ingredientName ;
                     :quantity ?ingredientQuantity ;

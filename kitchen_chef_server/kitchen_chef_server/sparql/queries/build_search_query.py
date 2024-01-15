@@ -14,8 +14,10 @@ def build_search_query(q_ingredients, q_filters):
     WHERE {{
         ?recipe :name ?name ;
                 :hasIngredient ?ingredient ;
-                :instructions ?instructions ;
-                :recipeCategory ?category .
+                :instructions ?instructions .
+        OPTIONAL {{ ?recipe :recipeCategory ?category . }}
+        OPTIONAL {{ ?recipe :instructions ?instructions . }}
+
         ?ingredient :food ?ingredientFood ;
                     :name ?ingredientName ;
                     :quantity ?ingredientQuantity ;
