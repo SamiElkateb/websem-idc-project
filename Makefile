@@ -33,9 +33,13 @@ extract_quantity_from_units:
 quantityConversion :
 	@echo "quantityConversion"
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/few.rq -i output/recipes.ttl -o output/recipes.ttl
+	@echo "quantityConversion1"
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/integers.rq -i output/recipes.ttl -o output/recipes.ttl
+	@echo "quantityConversion2"
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/fractions.rq -i output/recipes.ttl -o output/recipes.ttl
+	@echo "quantityConversion3"
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/entier_fractions.rq -i output/recipes.ttl -o output/recipes.ttl
+	@echo "quantityConversion4"
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/group.rq -i output/recipes.ttl -o output/recipes.ttl
 
 foodweights2rdf:

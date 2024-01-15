@@ -29,13 +29,24 @@ Informations sur les ingrédients :
 
 ## Déja fait
 - Récupérer les recettes avec les ingrédients et les étapes de préparation
+- CSVW en entier
+- Disambiguation des ingrédients
+
+- API pour les recettes
+- 
 ## À faire
 [x] Extraire le nom des ingrédients, convertir les unités\
 [x] corriger l'erreur de blank node inutiles de csv to rdf\  
-[ ] corriger les erreurs de food (cold, fry, etc) éventuellement Keyword Extraction ou un LLM\
-[ ] ajouter des transformations d'ingrédients à partir de recettes (example: pates bolo)\
+[x] corriger les erreurs de food (cold, fry, etc) éventuellement Keyword Extraction ou un LLM\
 [ ] ajouter une façon de trouver les calories et informations nutritionnelles à partir des recettes et ingrédients\ 
 [ ] utiliser https://fr.openfoodfacts.org pour avoir des informations plus juste sur les ingrédients à partir du code bar scanné sur application mobile\
+[ ] SHACL a etoffer \
+[ ] OWL : faire les inferences sur les recettes vegetariennes / vegan \
+[ ] OWL : recette allergies \
+[ ] µServices nutriments \
+[ ] OWL : Recettes transitives ( ajouter des transformations d'ingrédients à partir de recettes ) \
+
+
 
 
 ## CSV

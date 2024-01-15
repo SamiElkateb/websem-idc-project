@@ -59,6 +59,11 @@
   rdfs:comment ""@en,
               ""@fr .
 
+:Macronutrient a owl:Class ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+              ""@fr .
+
 # Individuals
 
 :Few a :Quantity ;
