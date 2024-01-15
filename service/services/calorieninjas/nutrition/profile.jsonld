@@ -2,7 +2,7 @@
   "@context": {
     "@vocab": "http://project-kitchenchef.fr/schema#",
     "@base": "http://project-kitchenchef.fr/food/",
-    "name":"@id",
+    "name":"name",
     "calories": "hasCalories",
     "serving_size_g": "hasServingSize",
     "fat_total_g": "hasTotalFat",

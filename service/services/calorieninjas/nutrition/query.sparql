@@ -1,3 +1,39 @@
+PREFIX :        <http://project-kitchenchef.fr/schema#>
+PREFIX recipes: <http://project-kitchenchef.fr/recipes/data#>
+PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
 SELECT * WHERE {
-  ?x ?y ?z
+    {
+        SELECT ?recipe ?name ?category ?instructions
+        (group_concat(?ingredient; separator="|-|") AS ?ingredientIds)
+        (group_concat(?ingredientFood; separator="|-|") AS ?ingredientFoods)
+        (group_concat(?query; separator=" and ") AS ?queryList)
+        (group_concat(?ingredientName; separator="|-|") AS ?ingredientNames)
+        (group_concat(?ingredientQuantity; separator="|-|") AS ?ingredientQuantities)
+        (group_concat(?ingredientUnit; separator="|-|") AS ?ingredientUnits)
+        WHERE {
+            ?recipe :name ?name ;
+            :hasIngredient ?ingredient .
+            OPTIONAL { ?recipe :recipeCategory ?category . }
+            OPTIONAL { ?recipe :instructions ?instructions . }
+            ?ingredient :food ?ingredientFood ;
+            :name ?ingredientName ;
+            :quantity ?ingredientQuantity ;
+            :unit/skos:prefLabel ?labelUnit;
+            :unit ?ingredientUnit .
+            FILTER(?recipe = recipes:AlbertsChicken)
+            BIND(LCASE(CONCAT(?ingredientQuantity," ",?labelUnit," of ",?ingredientName)) AS ?query)
+        }GROUP BY ?recipe
+    }
+    BIND(CONCAT("http://localhost/service/calorieninjas/nutrition?food=",?queryList) AS ?url)
+    {
+        SELECT * WHERE {
+            SERVICE ?url {
+                SELECT (SUM(?z) as ?s) ?y WHERE{
+                    ?x ?y ?z
+                    FILTER(?y NOT IN (:name, :items))
+                }GROUP BY ?y
+            }
+        }
+    }
+
 }

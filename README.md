@@ -32,7 +32,8 @@ Informations sur les ingrédients :
 [x] Extraire le nom des ingrédients, convertir les unités \
 [x] corriger l'erreur de blank node inutiles de csv to rdf \
 [x] corriger les erreurs de food (cold, fry, etc) éventuellement Keyword Extraction ou un LLM \
-[x] Recuperer recettes & ingredients
+[x] Recuperer recettes & ingredients\
+[ ] Ajouter some pour toute les quantitées invalides ?\
 [ ] Desambiguation des ingrédients et des recettes : extraction depuis textes\
 [ ] SKOS : thesaurus aliments \
 [ ] SKOS : thesaurus units (add top concepts) \
@@ -45,7 +46,6 @@ Informations sur les ingrédients :
 [ ] µServices : Query fédérée (utiliser endpoint web de données) \
 [ ] OWL : Recettes transitives (ajouter des transformations d'ingrédients à partir de recettes)\
 [ ] OWL : Aligner vocabulaires\
-[ ] SPARQL : 
 [ ] Server : faire le front\
 [ ] Server : faire l'API\
 [ ] Rapport\

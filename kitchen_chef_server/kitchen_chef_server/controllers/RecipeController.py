@@ -47,7 +47,7 @@ async def get_recipes(
     return recipes
 
 
-@app.get("/recipe")  # TODO: JSON-LD
+@app.get("/recipe")
 async def get_recipe(recipe_identifier: str):
     query = """
     prefix :<http://project-kitchenchef.fr/schema#>
