@@ -1,8 +1,7 @@
 from typing import Annotated
-from urllib.parse import urlparse
 
-from fastapi import FastAPI, HTTPException, Query
-from rdflib import Graph, Namespace, URIRef
+from fastapi import HTTPException, Query
+from rdflib import Namespace, URIRef
 
 from kitchen_chef_server.app import app, g
 from kitchen_chef_server.factories.IngredientFactory import IngredientFactory
@@ -25,7 +24,7 @@ async def get_recipes(
     initBindings = {}
     if q_ingredients:
         for i, food_ingredient in enumerate(q_ingredients):
-            initBindings[f"ingredientFood{i}"] = FOODS[food_ingredient]
+            initBindings[f"ingredientFood{i}"] = URIRef(food_ingredient)
             pass
 
     results = g.query(query, initBindings=initBindings)
@@ -42,8 +41,7 @@ async def get_recipes(
             row.ingredientQuantities,
             row.ingredientUnits,
         )
-        recipe_identifier = urlparse(row.recipe).fragment
-        recipe = Recipe(recipe_identifier, row.name, ingredients, row.instructions, row.category)
+        recipe = Recipe(row.recipe, row.name, ingredients, row.instructions, row.category)
         recipes.append(recipe)
 
     return recipes
@@ -75,7 +73,7 @@ async def get_recipe(recipe_identifier: str):
     results = g.query(
         query,
         initBindings={
-            "uri": RECIPES[recipe_identifier],
+            "uri": URIRef(recipe_identifier),
         },
     )
 
@@ -90,5 +88,4 @@ async def get_recipe(recipe_identifier: str):
             row.ingredientQuantities,
             row.ingredientUnits,
         )
-        recipe_identifier = urlparse(row.recipe).fragment
-        return Recipe(recipe_identifier, row.name, ingredients, row.instructions, row.category)
+        return Recipe(row.recipe, row.name, ingredients, row.instructions, row.category)
