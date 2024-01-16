@@ -1301,7 +1301,8 @@ recipes:BroccoliSalad a :Recipe ;
             :unit measurements:Tablespoon ] ;
     :instructions "Pour dressing over salad two hours before serving." ;
     :name "Broccoli Salad" ;
-    :recipeCategory "Salads and Dressings" .
+    :recipeCategory "Salads and Dressings" ;
+    owl:sameAs dbpedia:Broccoli_slaw .
 
 recipes:BroccoliSaladwithPineapple a :Recipe ;
     rdfs:label "Watergate salad"@en ;
@@ -5128,8 +5129,6 @@ Before serving, toss beans with shredded lettuce and crumbled bacon.""" ;
     :name "Green Beans Salerno" .
 
 recipes:HeavenlyCheeseSalad a :Recipe ;
-    rdfs:label "Deviled egg"@en,
-        "Œuf mimosa"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Jello ;
             :name "lemon jello" ;
@@ -5160,11 +5159,9 @@ recipes:HeavenlyCheeseSalad a :Recipe ;
             :name "whipped cream" ;
             :quantity 1.0 ;
             :unit "pint" ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/0.2014_Ostereier_zum_Frühstück,_Beskiden,_Nowotaniec.jpg?width=300> ;
     :instructions "Bring juice to a boil, pour over jello.  Cool.  Mix pineapple, nuts, and cheese.  Add to jello.  Fold in whipped cream.  Pour into mold.  Chill." ;
     :name "Heavenly Cheese Salad" ;
-    :recipeCategory "Salads and Dressings" ;
-    owl:sameAs dbpedia:Deviled_egg .
+    :recipeCategory "Salads and Dressings" .
 
 recipes:HoneyGrahamCrackers a :Recipe ;
     rdfs:label "Graham cracker"@en,
@@ -6869,6 +6866,8 @@ Drain pasta and vegetables; return to saucepan. Stir in pesto; add chicken to tu
     owl:sameAs dbpedia:Pasta_primavera .
 
 recipes:PeaSalad a :Recipe ;
+    rdfs:label "Ham salad"@en,
+        "Salade de jambon"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Peas ;
             :name "frozen peas, uncooked" ;
@@ -6899,9 +6898,11 @@ recipes:PeaSalad a :Recipe ;
             :name "sour cream" ;
             :quantity 1.0 ;
             :unit "small carton" ] ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Ham_Salad_Sandwich_(39117585832).jpg?width=300> ;
     :instructions "Stir together and enjoy." ;
     :name "Pea Salad" ;
-    :recipeCategory "Salads and Dressings" .
+    :recipeCategory "Salads and Dressings" ;
+    owl:sameAs dbpedia:Ham_salad .
 
 recipes:PeachAlmondPie a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -7163,8 +7164,6 @@ recipes:PieCrust a :Recipe ;
     owl:sameAs dbpedia:Shortcrust_pastry .
 
 recipes:Pineapple-CarrotCake a :Recipe ;
-    rdfs:label "Carrot cake"@en,
-        "Gâteau aux carottes"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Oil ;
             :name "oil" ;
@@ -7244,11 +7243,9 @@ recipes:Pineapple-CarrotCake a :Recipe ;
             :name "water" ;
             :quantity 2.0 ;
             :unit measurements:Tablespoon ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Carrot_cake_at_America_Graffiti_(cropped).jpg?width=300> ;
     :instructions "Mix all cake ingredients.  Bake in greased and floured 9\"x13\" pan at 350 degrees for 35 minutes.  Frost when cool." ;
     :name "Pineapple-Carrot Cake*" ;
-    :recipeCategory "Cakes" ;
-    owl:sameAs dbpedia:Carrot_cake .
+    :recipeCategory "Cakes" .
 
 recipes:PineappleCake a :Recipe ;
     rdfs:label "Pineapple cake"@en ;
@@ -8066,8 +8063,8 @@ Cover, cook 20 minutes. Pour over chicken. Bake covered at 375 degrees for 1 hou
     :name "Savory Chicken Casserole" .
 
 recipes:SavoryGoulash a :Recipe ;
-    rdfs:label "Paprika"@en,
-        "Paprika"@fr ;
+    rdfs:label "Comfort food"@en,
+        "Aliment-réconfort"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Onions ;
             :name "sliced onions" ;
@@ -8107,10 +8104,10 @@ recipes:SavoryGoulash a :Recipe ;
             :name "sour cream" ;
             :quantity 4.0 ;
             :unit measurements:Tablespoon ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pimentón_Tap_de_Cortí_(cropped).jpg?width=300> ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chicken_noodle_soup_(cropped).jpg?width=300> ;
     :instructions "Brown onion and meat. Add tomato sauce and water. Cook for 2 hours and serve over hot noodles." ;
     :name "Savory Goulash" ;
-    owl:sameAs dbpedia:Paprika .
+    owl:sameAs dbpedia:Comfort_food .
 
 recipes:SherryWineCake a :Recipe ;
     :hasIngredient [ a :Ingredient ;

@@ -1,0 +1,17 @@
+@prefix :<http://project-kitchenchef.fr/schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+CONSTRUCT {
+?rec ?p ?divers.
+?x :quantity :Many.
+} WHERE {
+    {
+    ?rec ?p ?divers.
+    FILTER(?p != :quantity || !REGEX(?divers, "many", "i"))
+    }  UNION {
+    ?x :quantity ?many.
+    FILTER REGEX(?many, "many", "i")
+    }
+}
+
+

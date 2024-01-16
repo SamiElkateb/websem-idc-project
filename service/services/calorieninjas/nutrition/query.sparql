@@ -28,12 +28,10 @@ SELECT * WHERE {
     {
         SELECT * WHERE {
             SERVICE ?url {
-                SELECT (SUM(?z) as ?s) ?y WHERE{
-                    ?x ?y ?z
-                    FILTER(?y NOT IN (:name, :items))
-                }GROUP BY ?y
+                SELECT (xsd:decimal(SUM(?z)) as ?totalCalories) (xsd:decimal(SUM(?fat)) as ?totalFat) (xsd:decimal(SUM(?carbs)) as ?totalCarbohydrate) (xsd:decimal(SUM(?sugar)) as ?totalSugar) (xsd:decimal(SUM(?fiber)) as ?totalFiber) WHERE{
+                    ?x :hasCalories ?z; :hasTotalFat ?fat; :hasCarbohydratesTotal ?carbs; :hasSugar ?sugar; :hasFiber ?fiber.
+                }
             }
         }
     }
-
 }
