@@ -17,8 +17,8 @@ FOODS = Namespace("http://project-kitchenchef.fr/food/data#")
 # TODO: query parameters: filter ingredients
 @app.get("/recipes")
 async def get_recipes(
-    q_ingredients: Annotated[list[str] | None, Query()] = None,
-    q_filters: Annotated[list[str] | None, Query()] = None,
+        q_ingredients: Annotated[list[str] | None, Query()] = None,
+        q_filters: Annotated[list[str] | None, Query()] = None,
 ):
     query = build_search_query(q_ingredients, q_filters)
     initBindings = {}
@@ -54,63 +54,94 @@ async def get_recipe(recipe_identifier: str):
     prefix recipes: <http://project-kitchenchef.fr/recipes/data#>
     prefix skos:    <http://www.w3.org/2004/02/skos/core#>
     
-    SELECT * WHERE {
+     SELECT ?url WHERE{
         {
-            SELECT ?recipe ?name ?category ?instructions
-            (group_concat(?ingredient; separator="|-|") AS ?ingredientIds)
-            (group_concat(?ingredientFood; separator="|-|") AS ?ingredientFoods)
-            (group_concat(?query; separator=" and ") AS ?queryList)
-            (group_concat(?ingredientName; separator="|-|") AS ?ingredientNames)
-            (group_concat(?ingredientQuantity; separator="|-|") AS ?ingredientQuantities)
-            (group_concat(?labelUnit; separator="|-|") AS ?ingredientUnits)
-            WHERE {
-                ?recipe :name ?name ;
-                :hasIngredient ?ingredient .
-                OPTIONAL { ?recipe :recipeCategory ?category . }
-                OPTIONAL { ?recipe :instructions ?instructions . }
-    
-                OPTIONAL { ?recipe :hasThumbnail ?thumbnail . }
-                ?ingredient :food ?ingredientFood ;
-                :name ?ingredientName ;
-                OPTIONAL { ?ingredient :food ?ingredientFood . }
-                OPTIONAL { ?ingredient :quantity ?ingredientQuantityTmp . }
-                OPTIONAL { ?ingredient :unit ?ingredientUnitTmp; :unit/skos:prefLabel ?labelUnitTmp}
-                FILTER(?recipe = ?uri)
-                BIND(IF(BOUND(?ingredientUnitTmp),?ingredientUnitTmp,"") AS ?ingredientUnit)
-                BIND(IF(BOUND(?ingredientQuantityTmp),?ingredientQuantityTmp,"") AS ?ingredientQuantity)
-                BIND(IF(BOUND(?labelUnitTmp),CONCAT(?labelUnitTmp," of "),"") AS ?labelUnit)
-                BIND(LCASE(CONCAT(?ingredientQuantity," ",?labelUnit,?ingredientName)) AS ?query)
-            }GROUP BY ?recipe
+            SELECT (group_concat(?query; separator=" and ") AS ?queryList)
+                WHERE {
+                    ?recipe :hasIngredient ?ingredient.
+                    ?ingredient :name ?ingredientName ;
+                    OPTIONAL { ?ingredient :quantity ?ingredientQuantityTmp . }
+                    OPTIONAL { ?ingredient :unit ?ingredientUnitTmp; :unit/skos:prefLabel ?labelUnitTmp}
+                    FILTER(?recipe = recipes:AngelHash)
+                    BIND(IF(BOUND(?ingredientUnitTmp),?ingredientUnitTmp,"") AS ?ingredientUnit)
+                    BIND(IF(BOUND(?ingredientQuantityTmp),?ingredientQuantityTmp,"") AS ?ingredientQuantity)
+                    BIND(IF(BOUND(?labelUnitTmp),CONCAT(?labelUnitTmp," of "),"") AS ?labelUnit)
+                    BIND(LCASE(CONCAT(STR(?ingredientQuantity)," ",?labelUnit,?ingredientName)) AS ?query)
+                }GROUP BY ?recipe
         }
-        BIND(CONCAT("http://localhost/service/calorieninjas/nutrition?food=",?queryList) AS ?url)
-        {
-            SELECT * WHERE {
-                SERVICE ?url {
-                    SELECT (xsd:decimal(SUM(?z)) as ?totalCalories) (xsd:decimal(SUM(?fat)) as ?totalFat) (xsd:decimal(SUM(?carbs)) as ?totalCarbohydrate) (xsd:decimal(SUM(?sugar)) as ?totalSugar) (xsd:decimal(SUM(?fiber)) as ?totalFiber) WHERE{
-                        ?x :hasCalories ?z; :hasTotalFat ?fat; :hasCarbohydratesTotal ?carbs; :hasSugar ?sugar; :hasFiber ?fiber.
-                    }
-                }
-            }
-        }
+        BIND(CONCAT("http://localhost/service/calorieninjas/nutrition?food=",REPLACE(?queryList," ","%20")) AS ?url)
     }
     """
-
     results = g.query(
         query,
         initBindings={
             "uri": URIRef(recipe_identifier),
         },
     )
+    row = get_row(results)
+    print("URL", row.url)
+    query = f"""
+    prefix :        <http://project-kitchenchef.fr/schema#>
+    prefix recipes: <http://project-kitchenchef.fr/recipes/data#>
+    prefix skos:    <http://www.w3.org/2004/02/skos/core#>
+    
+    SELECT * WHERE {{
+        {{
+            SELECT ?recipe ?name ?category ?instructions ?thumbnail
+                (group_concat(?ingredient; separator="|-|") AS ?ingredientIds)
+                (group_concat(?ingredientFood; separator="|-|") AS ?ingredientFoods)
+                (group_concat(?query; separator=" and ") AS ?queryList)
+                (group_concat(?ingredientName; separator="|-|") AS ?ingredientNames)
+                (group_concat(?ingredientQuantity; separator="|-|") AS ?ingredientQuantities)
+                (group_concat(?ingredientUnit; separator="|-|") AS ?ingredientUnits)
+            WHERE {{
+                ?recipe :name ?name ;
+                :hasIngredient ?ingredient .
+                OPTIONAL {{ ?recipe :recipeCategory ?category . }}
+                OPTIONAL {{ ?recipe :instructions ?instructions . }}
+                OPTIONAL {{ ?recipe :hasThumbnail ?thumbnail . }}
+                ?ingredient :food ?ingredientFood ;
+                :name ?ingredientName ;
+                OPTIONAL {{ ?ingredient :food ?ingredientFood . }}
+                OPTIONAL {{ ?ingredient :quantity ?ingredientQuantityTmp . }}
+                OPTIONAL {{ ?ingredient :unit ?ingredientUnitTmp; :unit/skos:prefLabel ?labelUnitTmp}}
+                FILTER(?recipe = ?uri)
+                BIND(IF(BOUND(?ingredientUnitTmp),?ingredientUnitTmp,"") AS ?ingredientUnit)
+                BIND(IF(BOUND(?ingredientQuantityTmp),?ingredientQuantityTmp,"") AS ?ingredientQuantity)
+                BIND(IF(BOUND(?labelUnitTmp),CONCAT(?labelUnitTmp," of "),"") AS ?labelUnit)
+                BIND(LCASE(CONCAT(?ingredientQuantity," ",?labelUnit,?ingredientName)) AS ?query)
+            }}GROUP BY ?recipe
+        }}
+        {{
+            SELECT * WHERE {{
+               SERVICE <{row.url}> {{
+                    ?x :hasCalories ?kcal; :hasTotalFat ?fat; :hasCarbohydratesTotal ?carbs; :hasSugar ?sugar; :hasFiber ?fiber
+                 }}
+            }} 
+        }}
+    }}
+    """
+    results = g.query(
+        query,
+        initBindings={
+            "uri": URIRef(recipe_identifier),
+        },
+    )
+    row = get_row(results)
+    print("Kcal", row.kcal,"Fat", row.fat,"Carbs", row.carbs,"Sugar", row.sugar,"Fiber", row.fiber)
+    ingredients = IngredientFactory.from_strings(
+        row.ingredientIds,
+        row.ingredientNames,
+        row.ingredientFoods,
+        row.ingredientQuantities,
+        row.ingredientUnits,
+    )
+    return Recipe(row.recipe, row.name, ingredients, row.instructions, row.category, row.thumbnail)
 
-    if results is None:
+
+def get_row(results):
+    results = list(results)
+    if len(results) == 0:
         raise HTTPException(status_code=404, detail="Item not found")
-
-    for row in results:
-        ingredients = IngredientFactory.from_strings(
-            row.ingredientIds,
-            row.ingredientNames,
-            row.ingredientFoods,
-            row.ingredientQuantities,
-            row.ingredientUnits,
-        )
-        return Recipe(row.recipe, row.name, ingredients, row.instructions, row.category, row.thumbnail)
+    row = results[0]
+    return row

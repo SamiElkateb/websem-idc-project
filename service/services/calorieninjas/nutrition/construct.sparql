@@ -1,5 +1,13 @@
+PREFIX : <http://project-kitchenchef.fr/schema#>
+
 CONSTRUCT {
-    ?x ?y ?z.
+    ?sub ?pred ?sum
 } WHERE {
-    ?x ?y ?z
+    {
+        SELECT ?pred (SUM(?obj) AS ?sum) WHERE {
+        ?sub ?pred ?obj .
+        FILTER(?pred NOT IN (:items, :name))
+    }GROUP BY ?pred
+    }
+    BIND( IRI(CONCAT("http://project-kitchenchef.fr/schema#","blank")) AS ?sub)
 }

@@ -3,7 +3,7 @@
 
 CONSTRUCT {
 ?rec ?p ?divers.
-?x :quantity :Some.
+?x :quantity measurements:Some.
 } WHERE {
     {
     ?rec ?p ?divers.
