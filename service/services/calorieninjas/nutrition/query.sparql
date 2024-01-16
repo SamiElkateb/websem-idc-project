@@ -15,13 +15,18 @@ SELECT * WHERE {
             :hasIngredient ?ingredient .
             OPTIONAL { ?recipe :recipeCategory ?category . }
             OPTIONAL { ?recipe :instructions ?instructions . }
+
+            OPTIONAL { ?recipe :hasThumbnail ?thumbnail . }
             ?ingredient :food ?ingredientFood ;
             :name ?ingredientName ;
-            :quantity ?ingredientQuantity ;
-            :unit/skos:prefLabel ?labelUnit;
-            :unit ?ingredientUnit .
-            FILTER(?recipe = recipes:AlbertsChicken)
-            BIND(LCASE(CONCAT(?ingredientQuantity," ",?labelUnit," of ",?ingredientName)) AS ?query)
+            OPTIONAL { ?ingredient :food ?ingredientFood . }
+            OPTIONAL { ?ingredient :quantity ?ingredientQuantityTmp . }
+            OPTIONAL { ?ingredient :unit ?ingredientUnitTmp; :unit/skos:prefLabel ?labelUnitTmp}
+            FILTER(?recipe = recipes:AppleDumplings)
+            BIND(IF(BOUND(?ingredientUnitTmp),?ingredientUnitTmp,"") AS ?ingredientUnit)
+            BIND(IF(BOUND(?ingredientQuantityTmp),?ingredientQuantityTmp,"") AS ?ingredientQuantity)
+            BIND(IF(BOUND(?labelUnitTmp),CONCAT(?labelUnitTmp," of "),"") AS ?labelUnit)
+            BIND(LCASE(CONCAT(?ingredientQuantity," ",?labelUnit,?ingredientName)) AS ?query)
         }GROUP BY ?recipe
     }
     BIND(CONCAT("http://localhost/service/calorieninjas/nutrition?food=",?queryList) AS ?url)

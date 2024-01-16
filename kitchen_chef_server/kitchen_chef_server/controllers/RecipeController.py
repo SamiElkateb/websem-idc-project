@@ -50,27 +50,49 @@ async def get_recipes(
 @app.get("/recipe")
 async def get_recipe(recipe_identifier: str):
     query = """
-    prefix :<http://project-kitchenchef.fr/schema#>
-    SELECT ?recipe ?name ?category ?instructions ?thumbnail
+    prefix :        <http://project-kitchenchef.fr/schema#>
+    prefix recipes: <http://project-kitchenchef.fr/recipes/data#>
+    prefix skos:    <http://www.w3.org/2004/02/skos/core#>
+    
+    SELECT * WHERE {
+        {
+            SELECT ?recipe ?name ?category ?instructions
             (group_concat(?ingredient; separator="|-|") AS ?ingredientIds)
             (group_concat(?ingredientFood; separator="|-|") AS ?ingredientFoods)
+            (group_concat(?query; separator=" and ") AS ?queryList)
             (group_concat(?ingredientName; separator="|-|") AS ?ingredientNames)
             (group_concat(?ingredientQuantity; separator="|-|") AS ?ingredientQuantities)
-            (group_concat(?ingredientUnit; separator="|-|") AS ?ingredientUnits)
-    WHERE {
-        ?recipe :name ?name ;
+            (group_concat(?labelUnit; separator="|-|") AS ?ingredientUnits)
+            WHERE {
+                ?recipe :name ?name ;
                 :hasIngredient ?ingredient .
-        OPTIONAL { ?recipe :recipeCategory ?category . }
-        OPTIONAL { ?recipe :instructions ?instructions . }
-        OPTIONAL { ?recipe :hasThumbnail ?thumbnail . }
-
-        ?ingredient :name ?ingredientName .
-        OPTIONAL {{ ?ingredient :food ?ingredientFood . }}
-        OPTIONAL {{ ?ingredient :quantity ?ingredientQuantity . }}
-        OPTIONAL {{ ?ingredient :unit ?ingredientUnit . }}
-
-        FILTER(?recipe = ?uri)
-    } GROUP BY ?recipe
+                OPTIONAL { ?recipe :recipeCategory ?category . }
+                OPTIONAL { ?recipe :instructions ?instructions . }
+    
+                OPTIONAL { ?recipe :hasThumbnail ?thumbnail . }
+                ?ingredient :food ?ingredientFood ;
+                :name ?ingredientName ;
+                OPTIONAL { ?ingredient :food ?ingredientFood . }
+                OPTIONAL { ?ingredient :quantity ?ingredientQuantityTmp . }
+                OPTIONAL { ?ingredient :unit ?ingredientUnitTmp; :unit/skos:prefLabel ?labelUnitTmp}
+                FILTER(?recipe = ?uri)
+                BIND(IF(BOUND(?ingredientUnitTmp),?ingredientUnitTmp,"") AS ?ingredientUnit)
+                BIND(IF(BOUND(?ingredientQuantityTmp),?ingredientQuantityTmp,"") AS ?ingredientQuantity)
+                BIND(IF(BOUND(?labelUnitTmp),CONCAT(?labelUnitTmp," of "),"") AS ?labelUnit)
+                BIND(LCASE(CONCAT(?ingredientQuantity," ",?labelUnit,?ingredientName)) AS ?query)
+            }GROUP BY ?recipe
+        }
+        BIND(CONCAT("http://localhost/service/calorieninjas/nutrition?food=",?queryList) AS ?url)
+        {
+            SELECT * WHERE {
+                SERVICE ?url {
+                    SELECT (xsd:decimal(SUM(?z)) as ?totalCalories) (xsd:decimal(SUM(?fat)) as ?totalFat) (xsd:decimal(SUM(?carbs)) as ?totalCarbohydrate) (xsd:decimal(SUM(?sugar)) as ?totalSugar) (xsd:decimal(SUM(?fiber)) as ?totalFiber) WHERE{
+                        ?x :hasCalories ?z; :hasTotalFat ?fat; :hasCarbohydratesTotal ?carbs; :hasSugar ?sugar; :hasFiber ?fiber.
+                    }
+                }
+            }
+        }
+    }
     """
 
     results = g.query(
