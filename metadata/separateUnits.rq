@@ -1,0 +1,46 @@
+@prefix :<http://project-kitchenchef.fr/schema#> .
+@prefix food:<http://project-kitchenchef.fr/food/data#> .
+@prefix measurements: <http://project-kitchenchef.fr/measurements/data#> .
+@prefix recipes: <http://project-kitchenchef.fr/recipes/data#> .
+
+CONSTRUCT {
+  ?x ?y ?z
+
+  ?imperialIngredient :hasImperialMeasurementUnit [
+    :unit ?imperialUnit ;
+    :quantity ?imperialQuantity
+  ]
+
+  ?standardIngredient :hasStandardMeasurementUnit [
+    :unit ?standardUnit ;
+    :quantity ?standardQuantity
+  ]
+
+} WHERE {
+  {
+    SELECT DISTINCT * {
+      ?imperialIngredient :unit ?imperialUnit .
+      OPTIONAL {
+        ?imperialIngredient :quantity ?imperialQuantity .
+      }
+
+      ?imperialUnit a :ImperialMeasurementUnit .
+    }
+  } UNION {
+    SELECT DISTINCT * {
+      ?standardIngredient :unit ?standardUnit .
+      OPTIONAL {
+        ?standardIngredient :quantity ?standardQuantity .
+      }
+      FILTER NOT EXISTS { ?standardUnit a :ImperialMeasurementUnit }
+      FILTER NOT EXISTS { ?standardUnit a :MetricMeasurementUnit }
+    }
+  } UNION {
+    ?x ?y ?z
+
+    FILTER(?y != :unit)
+    FILTER(?y != :quantity)
+    FILTER(!STRSTARTS(STR(?x), "http://project-kitchenchef.fr/schema#"))
+    FILTER(!STRSTARTS(STR(?x), "http://project-kitchenchef.fr/measurements/data#"))
+  }
+}
