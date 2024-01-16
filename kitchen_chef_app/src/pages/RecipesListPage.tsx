@@ -16,7 +16,7 @@ const RecipeListPage = () => {
       <Grid container spacing={2} paddingY={10}>
         {recipes.map((recipe) => (
           <Grid item xs={12} sm={6} md={4} lg={3} key={recipe.id}>
-            <RecipeCard title={recipe?.name} description={recipe?.instructions} />
+            <RecipeCard title={recipe?.name} description={recipe?.instructions} thumbnail={recipe?.thumbnail} uri={recipe?.id} />
           </Grid>
         ))}
       </Grid>
