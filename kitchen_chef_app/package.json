@@ -15,9 +15,13 @@
     "@mui/icons-material": "^5.15.4",
     "@mui/material": "^5.15.4",
     "axios": "^1.6.5",
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-query": "^3.39.3"
+    "react-query": "^3.39.3",
+    "react-router-dom": "^6.21.2",
+    "sort-by": "^1.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

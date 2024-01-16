@@ -2,6 +2,7 @@ import axios, { AxiosResponse } from 'axios';
 import serverConf from '../conf/server.conf';
 import { TRecipe } from '../models/recipes';
 import { TIngredient } from '../models/ingredients';
+import recipe from '../mock-data/recipe';
 
 const getRecipes = async ({ filteringIngredients }: { filteringIngredients:TIngredient[] }): Promise<AxiosResponse<TRecipe[]>> => {
   const url = new URL(`${serverConf.URL}/recipes`);
@@ -10,6 +11,6 @@ const getRecipes = async ({ filteringIngredients }: { filteringIngredients:TIngr
   return axios.get(url.toString());
 };
 
-const getRecipe = async ({ id }: { id:string }) => axios.get(`${serverConf.URL}/recipe#${id}`);
+const getRecipe = async (id: string) => axios.get(`${serverConf.URL}/recipe?recipe_identifier=${encodeURIComponent(id)}`);
 
 export { getRecipe, getRecipes };

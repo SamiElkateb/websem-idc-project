@@ -24,6 +24,7 @@ module.exports = {
         unnamedComponents: "arrow-function",
       },
     ],
+    "import/no-absolute-path": 0
   },
   parserOptions: {
     project: "./tsconfig.json",
