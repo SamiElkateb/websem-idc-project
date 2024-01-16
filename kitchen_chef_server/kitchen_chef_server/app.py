@@ -2,6 +2,7 @@ from fastapi import FastAPI
 
 from fastapi.middleware.cors import CORSMiddleware
 from kitchen_chef_server.utils.load_graph import load_graph
+from kitchen_chef_server.utils.read_query import read_query
 
 app = FastAPI()
 origins = [
@@ -20,3 +21,6 @@ app.add_middleware(
 )
 
 g = load_graph("./data")
+
+g.update(read_query("./kitchen_chef_server/sparql/constructs/conversion_ratios.rq"))
+g.update(read_query("./kitchen_chef_server/sparql/constructs/conversion.rq"))

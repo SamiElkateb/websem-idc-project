@@ -1,5 +1,10 @@
 {
-  "@context": "http://www.w3.org/ns/csvw",
+  "@context": [
+    "http://www.w3.org/ns/csvw",
+    {
+      "@language": "en"
+    }
+  ],
   "url": "../data/recipes.csv",
   "tableSchema": {
     "primaryKey": "name",
@@ -8,12 +13,16 @@
       {
         "titles": "Title",
         "name": "name",
-        "propertyUrl": "http://project-kitchenchef.fr/schema#name"
+        "propertyUrl": "http://project-kitchenchef.fr/schema#name",
+        "lang": "en"
       },
       {
         "titles": "Directions",
         "name": "instructions",
-        "propertyUrl": "http://project-kitchenchef.fr/schema#instructions"
+        "propertyUrl": "http://project-kitchenchef.fr/schema#instructions",
+        "lang": "en"
+
+
       },
       {
         "titles": "Quantity01",
@@ -28,7 +37,9 @@
       {
         "titles": "Ingredient01",
         "name": "ingredient01",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient01"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient01",
+        "lang": "en"
+
       },
       {
         "titles": "Quantity02",
@@ -43,7 +54,9 @@
       {
         "titles": "Ingredient02",
         "name": "ingredient02",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient02"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient02",
+        "lang": "en"
+
       },
       {
         "titles": "Quantity03",
@@ -58,7 +71,9 @@
       {
         "titles": "Ingredient03",
         "name": "ingredient03",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient03"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient03",
+        "lang": "en"
+
       },
       {
         "titles": "Quantity04",
@@ -73,7 +88,9 @@
       {
         "titles": "Ingredient04",
         "name": "ingredient04",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient04"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient04",
+        "lang": "en"
+
       },
       {
         "titles": "Quantity05",
@@ -88,7 +105,9 @@
       {
         "titles": "Ingredient05",
         "name": "ingredient05",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient05"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient05",
+        "lang": "en"
+
       },
       {
         "titles": "Quantity06",
@@ -103,7 +122,9 @@
       {
         "titles": "Ingredient06",
         "name": "ingredient06",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient06"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient06",
+        "lang": "en"
+
       },
       {
         "titles": "Quantity07",
@@ -118,7 +139,9 @@
       {
         "titles": "Ingredient07",
         "name": "ingredient07",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient07"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient07",
+        "lang": "en"
+
       },
       {
         "titles": "Quantity08",
@@ -133,7 +156,9 @@
       {
         "titles": "Ingredient08",
         "name": "ingredient08",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient08"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient08",
+        "lang": "en"
+
       },
       {
         "titles": "Quantity09",
@@ -148,7 +173,9 @@
       {
         "titles": "Ingredient09",
         "name": "ingredient09",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient09"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient09",
+        "lang": "en"
+
       },
       {
         "titles": "Quantity10",
@@ -163,7 +190,9 @@
       {
         "titles": "Ingredient10",
         "name": "ingredient10",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient10"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient10",
+        "lang": "en"
+
       },
       {
         "titles": "Quantity11",
@@ -178,7 +207,9 @@
       {
         "titles": "Ingredient11",
         "name": "ingredient11",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient11"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient11",
+        "lang": "en"
+
       },
       {
         "titles": "Quantity12",
@@ -193,7 +224,9 @@
       {
         "titles": "Ingredient12",
         "name": "ingredient12",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient12"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient12",
+        "lang": "en"
+
       },
       {
         "titles": "Quantity13",
@@ -208,7 +241,9 @@
       {
         "titles": "Ingredient13",
         "name": "ingredient13",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient13"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient13",
+        "lang": "en"
+
       },
       {
         "titles": "Quantity14",
@@ -223,7 +258,9 @@
       {
         "titles": "Ingredient14",
         "name": "ingredient14",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient14"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient14",
+        "lang": "en"
+
       },
       {
         "titles": "Quantity15",
@@ -238,7 +275,9 @@
       {
         "titles": "Ingredient15",
         "name": "ingredient15",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient15"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient15",
+        "lang": "en"
+
       },
       {
         "titles": "Quantity16",
@@ -253,7 +292,9 @@
       {
         "titles": "Ingredient16",
         "name": "ingredient16",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient16"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient16",
+        "lang": "en"
+
       },
       {
         "titles": "Quantity17",
@@ -268,7 +309,9 @@
       {
         "titles": "Ingredient17",
         "name": "ingredient17",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient17"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient17",
+        "lang": "en"
+
       },
       {
         "titles": "Quantity18",
@@ -283,7 +326,9 @@
       {
         "titles": "Ingredient18",
         "name": "ingredient18",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient18"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient18",
+        "lang": "en"
+
       },
       {
         "titles": "Quantity19",
@@ -298,12 +343,16 @@
       {
         "titles": "Ingredient19",
         "name": "ingredient19",
-        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient19"
+        "propertyUrl": "http://project-kitchenchef.fr/tmp-schema#ingredient19",
+        "lang": "en"
+
       },
       {
         "titles": "Category",
         "name": "category",
-        "propertyUrl": "http://project-kitchenchef.fr/schema#recipeCategory"
+        "propertyUrl": "http://project-kitchenchef.fr/schema#recipeCategory",
+        "lang": "en"
+
       },
       {
         "name": "type",

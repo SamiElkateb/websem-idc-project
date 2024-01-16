@@ -42,5 +42,7 @@ CONSTRUCT {
     FILTER(?y != :quantity)
     FILTER(!STRSTARTS(STR(?x), "http://project-kitchenchef.fr/schema#"))
     FILTER(!STRSTARTS(STR(?x), "http://project-kitchenchef.fr/measurements/data#"))
+    FILTER(!STRSTARTS(STR(?y), "http://project-kitchenchef.fr/measurements/data#"))
+    FILTER NOT EXISTS { ?x a :UnitConversion }
   }
 }

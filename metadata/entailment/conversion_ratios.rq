@@ -15,5 +15,3 @@ INSERT {
 
   BIND((1 / ?conversionRatio) AS ?inverseConversionRatio)
 } 
-
- ?sourceUnit :hasUnitConversion/(:unit/:hasUnitConversion)* ?hasUnitConversion

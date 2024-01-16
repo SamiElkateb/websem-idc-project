@@ -1,0 +1,33 @@
+prefix :<http://project-kitchenchef.fr/schema#>
+prefix food:<http://project-kitchenchef.fr/food/data#>
+prefix measurements: <http://project-kitchenchef.fr/measurements/data#>
+prefix recipes: <http://project-kitchenchef.fr/recipes/data#>
+
+INSERT {
+  ?imperialIngredient :hasMetricMeasurementUnit [
+    :unit ?metricUnit ;
+    :quantity ?metricQuantity
+  ]
+
+} WHERE {
+    SELECT DISTINCT * {
+      ?imperialIngredient :hasImperialMeasurementUnit ?imperialMeasure .
+      ?imperialMeasure :unit ?imperialUnit .
+      OPTIONAL {
+        ?imperialMeasure :quantity ?imperialQuantity .
+      }
+
+      ?imperialUnit :hasUnitConversion ?metricUnitConversion .
+
+      ?metricUnitConversion :unit ?metricUnit ;
+                            :conversionRatio ?conversionRatio .
+
+      OPTIONAL {
+        ?imperialQuantity :hasQuantityValue ?quantityValue .
+      }
+
+      BIND(IF(BOUND(?quantityValue), ?quantityValue, ?imperialQuantity) AS ?evaluatedQuantity)
+
+      BIND (xsd:float(?evaluatedQuantity) * xsd:float(?conversionRatio) AS ?metricQuantity)
+    }
+}
