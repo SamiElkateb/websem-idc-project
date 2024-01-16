@@ -1,5 +1,5 @@
-all: recipes2rdf extract_quantity_from_units units quantityConversion foodweights2rdf format populate update-server-data
-recipesHandling : recipes2rdf extract_quantity_from_units units quantityConversion
+all: recipes2rdf extract_quantity_from_units units quantityConversion unitSeparation foodweights2rdf format populate update-server-data
+recipesHandling : recipes2rdf extract_quantity_from_units units quantityConversion unitSeparation
 recipes2rdf:
 	@echo "recipes2rdf"
 	@./tools/csv2rdf \
@@ -39,6 +39,12 @@ quantityConversion :
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/fractions.rq -i output/recipes.ttl -o output/recipes.ttl
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/entier_fractions.rq -i output/recipes.ttl -o output/recipes.ttl
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/group.rq -i output/recipes.ttl -o output/recipes.ttl
+
+unitSeparation:
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/separateUnits.rq -i ./vocab/measurements.ttl -i output/recipes.ttl -i ./vocab/schema.ttl -o output/recipes.ttl
+	# @java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/entailment/conversion_ratios.rq -i ./vocab/measurements.ttl -o ./vocab/measurements.ttl
+	# @java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/entailment/conversion.rq -i ./vocab/measurements.ttl -i output/recipes.ttl -i ./vocab/schema.ttl -o output/recipes.ttl
+
 
 foodweights2rdf:
 	@echo "foodweights2rdf"
