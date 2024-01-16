@@ -24,25 +24,25 @@ measurements:Teaspoon
     skos:prefLabel     "Teaspoon"@en .
 
 measurements:Liter
-    a :VolumeMeasurementUnit, skos:Concept ;
+    a :MetricMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
     skos:prefLabel     "Liter"@en .
 
 measurements:centiLiter
-    a                  :VolumeMeasurementUnit, skos:Concept ;
+    a                  :MetricMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
     skos:prefLabel    "centiLiter"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Liter ;
                          :conversionRatio 0.01 ] .
 
 measurements:milliLiter
-    a                  :VolumeMeasurementUnit, skos:Concept ;
+    a                  :MetricMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
     skos:prefLabel   "milliLiter"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Liter ;
                          :conversionRatio 0.001 ] .
 
 measurements:Cup
-    a                  :VolumeMeasurementUnit, skos:Concept ;
+    a                  :ImperialMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
     skos:prefLabel     "Cup"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Liter ;
@@ -60,46 +60,61 @@ measurements:Pinch
     a :MeasurementUnit, skos:Concept ;
     skos:prefLabel     "Pinch"@en .
 
-measurements:Slice
-    a :MeasurementUnit, skos:Concept ;
-    skos:prefLabel     "Slice"@en .
-
 measurements:VolumicOunce
-    a                  :VolumeMeasurementUnit, skos:Concept ;
+    a                  :ImperialMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
     skos:prefLabel    "Fluid ounce"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Liter ;
                          :conversionRatio 0.0296 ] .
 
 measurements:Quart
-    a                  :VolumeMeasurementUnit, skos:Concept ;
+    a                  :ImperialMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
     skos:prefLabel     "Quart"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Liter ;
                          :conversionRatio 0.8798789 ] .
 
 measurements:Pound
-    a                  :WeightMeasurementUnit, skos:Concept ;
+    a                  :ImperialMeasurementUnit, :WeightMeasurementUnit, skos:Concept ;
     skos:prefLabel     "Pound"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Kilogram ;
                          :conversionRatio 0.4536 ] .
 
 measurements:WeightOunce
-    a                  :WeightMeasurementUnit, skos:Concept ;
+    a                  :ImperialMeasurementUnit, :WeightMeasurementUnit, skos:Concept ;
     skos:prefLabel     "Ounce"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Kilogram ;
                          :conversionRatio 0.02835 ] .
 
 measurements:Gram
-    a                  :WeightMeasurementUnit, skos:Concept ;
+    a                  :MetricMeasurementUnit, :WeightMeasurementUnit, skos:Concept ;
     skos:prefLabel     "Gram"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Kilogram ;
                          :conversionRatio 1000.0 ] .
 
 measurements:Kilogram
-    a :WeightMeasurementUnit, skos:Concept ;
+    a :MetricMeasurementUnit, :WeightMeasurementUnit, skos:Concept ;
     skos:prefLabel     "Kilogram"@en .
+
+
+measurements:Few a :Quantity ;
+    rdfs:label "Few"@en, "Peu"@fr ;
+    rdfs:comment "Undefined little quantity"@en,
+                "Faible quantitée indéfinie"@fr ;
+    :hasQuantityValue 1 .
+
+measurements:Some a :Quantity ;
+    rdfs:label "Some"@en, "Quelques"@fr ;
+    rdfs:comment "Undefined medium quantity"@en,
+                "Quantitée moyenne indéfinie"@fr ;
+    :hasQuantityValue 3 .
+
+measurements:Many a :Quantity ;
+    rdfs:label "Many"@en, "Beaucoup"@fr ;
+    rdfs:comment "Undefined large quantity"@en,
+                "Grande quantitée indéfinie"@fr ;
+    :hasQuantityValue 5 .
 

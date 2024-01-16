@@ -36,6 +36,14 @@
   rdfs:comment ""@en,
               ""@fr .
 
+:ImperialMeasurementUnit a owl:Class ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en, ""@fr .
+
+:MetricMeasurementUnit a owl:Class ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en, ""@fr .
+
 :MeasurementUnit a owl:Class ;
   rdfs:label ""@en, ""@fr ;
   rdfs:comment ""@en, ""@fr .
@@ -64,22 +72,7 @@
   rdfs:comment ""@en,
               ""@fr .
 
-# Individuals
 
-:Few a :Quantity ;
-  rdfs:label "Few"@en, "Peu"@fr ;
-  rdfs:comment "undefined little quantity"@en,
-              "Faible quantitée indéfinie"@fr .
-
-:Some a :Quantity ;
-    rdfs:label "Some"@en, "Quelques"@fr ;
-    rdfs:comment "undefined medium quantity"@en,
-                "Quantitée moyenne indéfinie"@fr .
-
-:Many a :Quantity ;
-    rdfs:label "Many"@en, "Beaucoup"@fr ;
-    rdfs:comment "undefined large quantity"@en,
-                "Grande quantitée indéfinie"@fr .
 # Properties
 
 :hasCalories a owl:ObjectProperty ;
@@ -163,10 +156,6 @@
   rdfs:domain :MeasurementUnit ;
   rdfs:range :UnitConversion .
 
-:hasUnitConversionTransitive a owl:ObjectProperty ;
-  rdfs:domain :MeasurementUnit ;
-  rdfs:range :UnitConversion .
-
 :conversionRatio a owl:ObjectProperty ;
   rdfs:domain xsd:float .
 
@@ -178,10 +167,34 @@
   rdfs:domain :Ingredient ;
   rdfs:range :MeasurementUnit .
 
+:hasQuantityValue a owl:ObjectProperty ;
+  rdfs:label "has quantity value"@en, "a pour valeur de quantité"@fr ;
+  rdfs:comment ""@en,
+               ""@fr ;
+  rdfs:range xsd:decimal .
+
+:hasImperialUnit  a owl:ObjectProperty ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+               ""@fr ;
+  rdfs:range :ImperialMeasurementUnit .
+
+:hasMetricMeasurementUnit  a owl:ObjectProperty ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+               ""@fr ;
+  rdfs:range :MetricMeasurementUnit .
+
+:hasStandardUnit  a owl:ObjectProperty ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+               ""@fr .
+
 # Display properties
 :hasThumbnail a owl:ObjectProperty ;
   rdfs:label "has thumbnail"@en, "a pour vignette"@fr ;
   rdfs:comment ""@en,
                ""@fr ;
   rdfs:range :Image .
+
 
