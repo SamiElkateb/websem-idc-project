@@ -21,7 +21,6 @@ units:
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/mesurementsQueries/slices.rq -i output/recipes.ttl -o output/recipes.ttl
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/mesurementsQueries/package.rq -i output/recipes.ttl -o output/recipes.ttl
 
-
 extract_quantity_from_units:
 	@echo "extract_quantity_from_units"
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityFromUnits/integers.rq -i ./output/recipes.ttl -o ./output/recipes.ttl

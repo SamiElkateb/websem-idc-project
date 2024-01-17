@@ -42,7 +42,7 @@ measurements:milliLiter
                          :conversionRatio 0.001 ] .
 
 measurements:Cup
-    a                  :ImperialMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
+    a                  :VolumeMeasurementUnit, skos:Concept ;
     skos:prefLabel     "Cup"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Liter ;

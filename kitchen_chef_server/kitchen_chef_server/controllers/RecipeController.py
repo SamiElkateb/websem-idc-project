@@ -47,6 +47,9 @@ async def get_recipes(
     return recipes
 
 
+"""
+Une fois en cache, la requête prend ~3 secondes à s'exécuter
+"""
 @app.get("/recipe")
 async def get_recipe(recipe_identifier: str):
     query = """
@@ -54,22 +57,49 @@ async def get_recipe(recipe_identifier: str):
     prefix recipes: <http://project-kitchenchef.fr/recipes/data#>
     prefix skos:    <http://www.w3.org/2004/02/skos/core#>
     
-     SELECT ?url WHERE{
-        {
-            SELECT (group_concat(?query; separator=" and ") AS ?queryList)
-                WHERE {
-                    ?recipe :hasIngredient ?ingredient.
-                    ?ingredient :name ?ingredientName ;
-                    OPTIONAL { ?ingredient :quantity ?ingredientQuantityTmp . }
-                    OPTIONAL { ?ingredient :unit ?ingredientUnitTmp; :unit/skos:prefLabel ?labelUnitTmp}
-                    FILTER(?recipe = recipes:AngelHash)
-                    BIND(IF(BOUND(?ingredientUnitTmp),?ingredientUnitTmp,"") AS ?ingredientUnit)
-                    BIND(IF(BOUND(?ingredientQuantityTmp),?ingredientQuantityTmp,"") AS ?ingredientQuantity)
-                    BIND(IF(BOUND(?labelUnitTmp),CONCAT(?labelUnitTmp," of "),"") AS ?labelUnit)
-                    BIND(LCASE(CONCAT(STR(?ingredientQuantity)," ",?labelUnit,?ingredientName)) AS ?query)
-                }GROUP BY ?recipe
-        }
-        BIND(CONCAT("http://localhost/service/calorieninjas/nutrition?food=",REPLACE(?queryList," ","%20")) AS ?url)
+    SELECT * WHERE{
+    {
+        SELECT (group_concat(?query; separator=" and ") AS ?queryList)
+        (group_concat(str(?ingredientName); separator="|-|") AS ?ingredientNames)
+        (group_concat(str(?ingredientQuantityImperialName); separator="|-|") AS ?ingredientImperialQuantities)
+        (group_concat(str(?ingredientQuantityMetricName); separator="|-|") AS ?ingredientMetricQuantities)
+        (group_concat(str(?labelUnitImperialName); separator="|-|") AS ?labelUnitImperialNames)
+        (group_concat(str(?labelUnitMetricName); separator="|-|") AS ?labelUnitMetricNames)
+        WHERE {
+            ?recipe :hasIngredient ?ingredient.
+            ?ingredient :name ?ingredientName ;
+            OPTIONAL { ?ingredient :hasStandardMeasurementUnit/:quantity ?ingredientQuantityStandard . }
+            OPTIONAL { ?ingredient :hasStandardMeasurementUnit/:unit ?ingredientUnitTmp.
+            OPTIONAL { ?ingredientUnitTmp skos:prefLabel ?prefLabelStandard }
+            BIND(IF(BOUND(?prefLabelStandard),?prefLabelStandard,?ingredientUnitTmp) AS ?labelUnitStandard)
+            }
+            OPTIONAL { ?ingredient :hasImperialMeasurementUnit/:quantity ?ingredientQuantityImperial . }
+            OPTIONAL { ?ingredient :hasImperialMeasurementUnit/:unit ?ingredientUnitTmp.
+            ?ingredientUnitTmp skos:prefLabel ?labelUnitImperial}
+            OPTIONAL { ?ingredient :hasMetricMeasurementUnit/:quantity ?ingredientQuantityMetric . }
+            OPTIONAL { ?ingredient :hasMetricMeasurementUnit/:unit ?ingredientUnitTmp.
+            ?ingredientUnitTmp skos:prefLabel ?labelUnitMetric}
+            FILTER(?recipe = ?uri)
+            BIND(IF(BOUND(?ingredientQuantityStandard),?ingredientQuantityStandard,
+            IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityImperial,
+            IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityMetric, ""))) AS ?ingredientQuantity)
+            BIND(IF(BOUND(?labelUnitStandard),?labelUnitStandard,
+            IF(BOUND(?labelUnitImperial),?labelUnitImperial,
+            IF(BOUND(?labelUnitMetric),?labelUnitMetric, ""))) AS ?labelUnit)
+            BIND(IF(?labelUnit!="",CONCAT(?labelUnit," of "),?labelUnit) AS ?unit)
+            BIND(LCASE(CONCAT(STR(?ingredientQuantity)," ",?unit,?ingredientName)) AS ?query)
+
+            BIND(IF(BOUND(?ingredientQuantityStandard),?ingredientQuantityStandard,"") AS ?ingredientQuantityStandardName)
+            BIND(IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityImperial,?ingredientQuantityStandardName) AS ?ingredientQuantityImperialName)
+            BIND(IF(BOUND(?ingredientQuantityMetric),?ingredientQuantityMetric,?ingredientQuantityStandardName) AS ?ingredientQuantityMetricName)
+
+            BIND(IF(BOUND(?labelUnitStandard),?labelUnitStandard,"") AS ?labelUnitStandardName)
+            BIND(IF(BOUND(?labelUnitImperial),?labelUnitImperial,?labelUnitStandardName) AS ?labelUnitImperialName)
+            BIND(IF(BOUND(?labelUnitMetric),?labelUnitMetric,?labelUnitStandardName) AS ?labelUnitMetricName)
+        } GROUP BY ?recipe
+    }
+    BIND(CONCAT("http://localhost/service/dbpedia/food?food=",REPLACE(?queryList," ","%20")) AS ?urlDbpedia)
+    BIND(CONCAT("http://localhost/service/calorieninjas/nutrition?food=",REPLACE(?queryList," ","%20")) AS ?urlMicroServ)
     }
     """
     results = g.query(
@@ -78,8 +108,13 @@ async def get_recipe(recipe_identifier: str):
             "uri": URIRef(recipe_identifier),
         },
     )
-    row = get_row(results)
-    print("URL", row.url)
+    row_url = get_row(results)
+    # print("URL", row_url.urlMicroServ)
+    # print("URL dbpedia", row_url.urlDbpedia)
+    # print("Metrics : \n", row_url.ingredientMetricQuantities, "\n", row_url.ingredientImperialQuantities)
+    # print("Units : \n", row_url.labelUnitMetricNames, "\n", row_url.labelUnitImperialNames)
+    # print("Names : \n", row_url.ingredientNames)
+
     query = f"""
     prefix :        <http://project-kitchenchef.fr/schema#>
     prefix recipes: <http://project-kitchenchef.fr/recipes/data#>
@@ -90,10 +125,6 @@ async def get_recipe(recipe_identifier: str):
             SELECT ?recipe ?name ?category ?instructions ?thumbnail
                 (group_concat(?ingredient; separator="|-|") AS ?ingredientIds)
                 (group_concat(?ingredientFood; separator="|-|") AS ?ingredientFoods)
-                (group_concat(?query; separator=" and ") AS ?queryList)
-                (group_concat(?ingredientName; separator="|-|") AS ?ingredientNames)
-                (group_concat(?ingredientQuantity; separator="|-|") AS ?ingredientQuantities)
-                (group_concat(?ingredientUnit; separator="|-|") AS ?ingredientUnits)
             WHERE {{
                 ?recipe :name ?name ;
                 :hasIngredient ?ingredient .
@@ -103,22 +134,22 @@ async def get_recipe(recipe_identifier: str):
                 ?ingredient :food ?ingredientFood ;
                 :name ?ingredientName ;
                 OPTIONAL {{ ?ingredient :food ?ingredientFood . }}
-                OPTIONAL {{ ?ingredient :quantity ?ingredientQuantityTmp . }}
-                OPTIONAL {{ ?ingredient :unit ?ingredientUnitTmp; :unit/skos:prefLabel ?labelUnitTmp}}
                 FILTER(?recipe = ?uri)
-                BIND(IF(BOUND(?ingredientUnitTmp),?ingredientUnitTmp,"") AS ?ingredientUnit)
-                BIND(IF(BOUND(?ingredientQuantityTmp),?ingredientQuantityTmp,"") AS ?ingredientQuantity)
-                BIND(IF(BOUND(?labelUnitTmp),CONCAT(?labelUnitTmp," of "),"") AS ?labelUnit)
-                BIND(LCASE(CONCAT(?ingredientQuantity," ",?labelUnit,?ingredientName)) AS ?query)
             }}GROUP BY ?recipe
         }}
         {{
             SELECT * WHERE {{
-               SERVICE <{row.url}> {{
+               SERVICE <{row_url.urlMicroServ}> {{
                     ?x :hasCalories ?kcal; :hasTotalFat ?fat; :hasCarbohydratesTotal ?carbs; :hasSugar ?sugar; :hasFiber ?fiber
                  }}
             }} 
         }}
+        # {{
+        #     SELECT * WHERE {{
+        #         SERVICE <{row_url.urlDbpedia}> {{
+        #             ?x :hasCalories ?kcal; :hasTotalFat ?fat; :hasCarbohydratesTotal ?carbs; :hasSugar ?sugar; :hasFiber ?fiber
+        #     }}
+        # }}
     }}
     """
     results = g.query(
@@ -128,13 +159,13 @@ async def get_recipe(recipe_identifier: str):
         },
     )
     row = get_row(results)
-    print("Kcal", row.kcal,"Fat", row.fat,"Carbs", row.carbs,"Sugar", row.sugar,"Fiber", row.fiber)
+    # print("Kcal", row.kcal, "Fat", row.fat, "Carbs", row.carbs, "Sugar", row.sugar, "Fiber", row.fiber)
     ingredients = IngredientFactory.from_strings(
         row.ingredientIds,
-        row.ingredientNames,
+        row_url.ingredientNames,
         row.ingredientFoods,
-        row.ingredientQuantities,
-        row.ingredientUnits,
+        row_url.ingredientImperialQuantities,
+        row_url.labelUnitImperialNames,
     )
     return Recipe(row.recipe, row.name, ingredients, row.instructions, row.category, row.thumbnail)
 
