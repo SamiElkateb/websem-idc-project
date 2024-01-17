@@ -1,6 +1,7 @@
 from typing import Annotated
 
 from fastapi import HTTPException, Query
+from kitchen_chef_server.models.NutritionalData import NutritionalData
 from rdflib import Namespace, URIRef
 
 from kitchen_chef_server.app import app, g
@@ -77,8 +78,8 @@ async def get_recipe(recipe_identifier: str):
             OPTIONAL { ?ingredient :hasImperialMeasurementUnit/:unit ?ingredientUnitTmp.
             ?ingredientUnitTmp skos:prefLabel ?labelUnitImperial}
             OPTIONAL { ?ingredient :hasMetricMeasurementUnit/:quantity ?ingredientQuantityMetric . }
-            OPTIONAL { ?ingredient :hasMetricMeasurementUnit/:unit ?ingredientUnitTmp.
-            ?ingredientUnitTmp skos:prefLabel ?labelUnitMetric}
+            OPTIONAL { ?ingredient :hasMetricMeasurementUnit/:unit ?ingredientUnitTmp2 .
+            ?ingredientUnitTmp2 skos:prefLabel ?labelUnitMetric}
             FILTER(?recipe = ?uri)
             BIND(IF(BOUND(?ingredientQuantityStandard),?ingredientQuantityStandard,
             IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityImperial,
@@ -166,8 +167,11 @@ async def get_recipe(recipe_identifier: str):
         row.ingredientFoods,
         row_url.ingredientImperialQuantities,
         row_url.labelUnitImperialNames,
+        row_url.ingredientMetricQuantities,
+        row_url.labelUnitMetricNames,
     )
-    return Recipe(row.recipe, row.name, ingredients, row.instructions, row.category, row.thumbnail)
+    nutritional_data = NutritionalData(row.kcal, row.fat, row.carbs, row.sugar, row.fiber)
+    return Recipe(row.recipe, row.name, ingredients, nutritional_data, row.instructions, row.category, row.thumbnail)
 
 
 def get_row(results):

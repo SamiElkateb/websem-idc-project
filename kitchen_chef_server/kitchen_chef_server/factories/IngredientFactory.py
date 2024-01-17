@@ -7,18 +7,40 @@ class IngredientFactory:
         ingredient_ids,
         ingredient_names,
         ingredient_foods,
-        ingredient_quantities,
-        ingredient_units,
+        imperial_quantities,
+        imperial_units,
+        metric_quantities,
+        metric_units,
     ):
         ingredients = []
-        for id, name, food, quantity, unit in zip(
+        for (
+            id,
+            name,
+            food,
+            imperial_quantity,
+            imperial_unit,
+            metric_quantity,
+            metric_unit,
+        ) in zip(
             ingredient_ids,
             ingredient_names,
             ingredient_foods,
-            ingredient_quantities,
-            ingredient_units,
+            imperial_quantities,
+            imperial_units,
+            metric_quantities,
+            metric_units,
         ):
-            ingredients.append(Ingredient(id, food, name, quantity, unit))
+            ingredients.append(
+                Ingredient(
+                    id,
+                    food,
+                    name,
+                    imperial_quantity,
+                    imperial_unit,
+                    metric_quantity,
+                    metric_unit,
+                )
+            )
 
         return ingredients
 
@@ -27,13 +49,17 @@ class IngredientFactory:
         ingredient_ids,
         ingredient_names,
         ingredient_foods,
-        ingredient_quantities,
-        ingredient_units,
+        imperial_quantities,
+        imperial_units,
+        metric_quantities,
+        metric_units,
     ):
         return IngredientFactory.from_lists(
             ingredient_ids.split("|-|"),
             ingredient_names.split("|-|"),
             ingredient_foods.split("|-|"),
-            ingredient_quantities.split("|-|"),
-            ingredient_units.split("|-|"),
+            imperial_quantities.split("|-|"),
+            imperial_units.split("|-|"),
+            metric_quantities.split("|-|"),
+            metric_units.split("|-|"),
         )

@@ -1,7 +1,7 @@
 class Ingredient:
-    def __init__(self, id, foodIdentifier, name, quantity, unit):
+    def __init__(self, id, foodIdentifier, name, imperialQuantity, imperialUnit, metricQuantity, metricUnit):
         self.id = id
         self.foodIdentifier = foodIdentifier
         self.name = name
-        self.quantity = quantity
-        self.unit = unit
+        self.imperialMeasure = {"quantity": imperialQuantity, "unit": imperialUnit}
+        self.metricMeasure = {"quantity": metricQuantity, "unit": metricUnit}
