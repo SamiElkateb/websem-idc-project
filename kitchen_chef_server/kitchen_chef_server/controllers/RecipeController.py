@@ -35,14 +35,7 @@ async def get_recipes(
 
     recipes = []
     for row in results:
-        ingredients = IngredientFactory.from_strings(
-            row.ingredientIds,
-            row.ingredientNames,
-            row.ingredientFoods,
-            row.ingredientQuantities,
-            row.ingredientUnits,
-        )
-        recipe = Recipe(row.recipe, row.name, ingredients, row.instructions, row.category, row.thumbnail)
+        recipe = Recipe(row.recipe, row.name, ingredients=[], instructions=row.instructions, category=row.category, thumbnail=row.thumbnail)
         recipes.append(recipe)
 
     return recipes
@@ -171,7 +164,7 @@ async def get_recipe(recipe_identifier: str):
         row_url.labelUnitMetricNames,
     )
     nutritional_data = NutritionalData(row.kcal, row.fat, row.carbs, row.sugar, row.fiber)
-    return Recipe(row.recipe, row.name, ingredients, nutritional_data, row.instructions, row.category, row.thumbnail)
+    return Recipe(row.recipe, row.name, ingredients,  row.instructions, row.category, row.thumbnail, nutritional_data=nutritional_data)
 
 
 def get_row(results):
