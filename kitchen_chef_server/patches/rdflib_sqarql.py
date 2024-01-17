@@ -334,10 +334,11 @@ def evalPart(ctx: QueryContext, part: CompValue) -> Any:
 
 def evalServiceQuery(ctx: QueryContext, part: CompValue):
     res = {}
+    term = part.term
     match = re.match(
         "^service (.*)[ \n]*{(.*)}[ \n]*$",
         # type error: Argument 2 to "get" of "CompValue" has incompatible type "str"; expected "bool"  [arg-type]
-        part.get("service_string", ""),  # type: ignore[arg-type]
+        part.get(str(term)),  # type: ignore[arg-type]
         re.DOTALL | re.I,
     )
 
