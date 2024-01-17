@@ -66,10 +66,10 @@ const IngredientsCard = ({ ingredients, thumbnail }) => {
         {ingredients.map((item) => (
           <Typography gutterBottom component="div" align="left" display="flex" alignItems="center">
             <Box component="span" fontSize="1.5rem" marginRight="0.5rem">
-              {displayQuantity(item.quantity)}
+              {displayQuantity(item[`${unitSystem}Measure`].quantity)}
             </Box>
             <Box component="span" sx={{ verticalAlign: 'top' }}>
-              {` ${item.unit} ${item.name}`}
+              {` ${item[`${unitSystem}Measure`].unit} ${item.name}`}
             </Box>
           </Typography>
 
