@@ -134,7 +134,7 @@ async def get_recipe(recipe_identifier: str):
         {{
             SELECT * WHERE {{
                SERVICE <{row_url.urlMicroServ}> {{
-                    ?x :hasCalories ?kcal; :hasTotalFat ?fat; :hasCarbohydratesTotal ?carbs; :hasSugar ?sugar; :hasFiber ?fiber
+                   ?x :hasCalories ?kcal; :hasProtein ?proteins; :hasTotalFat ?fat; :hasCarbohydratesTotal ?carbs; :hasSugar ?sugar; :hasFiber ?fiber
                  }}
             }} 
         }}
@@ -163,7 +163,7 @@ async def get_recipe(recipe_identifier: str):
         row_url.ingredientMetricQuantities,
         row_url.labelUnitMetricNames,
     )
-    nutritional_data = NutritionalData(row.kcal, row.fat, row.carbs, row.sugar, row.fiber)
+    nutritional_data = NutritionalData(row.kcal, row.proteins, row.fat, row.carbs, row.sugar, row.fiber)
     return Recipe(row.recipe, row.name, ingredients,  row.instructions, row.category, row.thumbnail, nutritional_data=nutritional_data)
 
 
