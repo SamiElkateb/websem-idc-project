@@ -42,7 +42,7 @@ Informations sur les ingrédients :
 [ ] OWL : faire les inferences sur les recettes végétariennes / vegan \
 [ ] OWL : étoffer vocabulaire\
 [ ] OWL : recette allergies \
-[ ] µServices nutriments : ajouter une façon de trouver les calories et informations nutritionnelles à partir des recettes et ingrédients\
+[x] µServices nutriments : ajouter une façon de trouver les calories et informations nutritionnelles à partir des recettes et ingrédients\
 [ ] µServices : Query fédérée (utiliser endpoint web de données) \
 [ ] OWL : Recettes transitives (ajouter des transformations d'ingrédients à partir de recettes)\
 [ ] OWL : Aligner vocabulaires\

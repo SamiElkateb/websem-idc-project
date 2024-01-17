@@ -42,6 +42,7 @@ recipes:AlbertsChicken a :Recipe ;
             :name "parsley"@en ],
         [ a :Ingredient ;
             :food food:Chickens ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "chickens, cut in pieces"@en ] ;
     :instructions "Place chicken in casserole. Heat together remaining ingredients to make sauce. Pour sauce over chicken. Cook in electric skillet or 350 degree oven for about 1 hour."@en ;
     :name "Albert's Chicken"@en .
@@ -84,6 +85,7 @@ recipes:AngelHash a :Recipe ;
             :name "walnuts, chopped"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Cook cornstarch, sugar, pineapple juice, and egg yolks until thick.  Cool and fold in remaining ingredients."@en ;
     :name "Angel Hash"@en ;
@@ -132,9 +134,11 @@ recipes:AppleDessertforaCrowd a :Recipe ;
             :name "cinnamon"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Yolk ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg yolk, plus enough milk to make 1/2 cup"@en ] ;
     :instructions """Combine flour, sugar, salt and shortening. Add egg/milk mixture to flour mixture using beater. Put 1/2 of mixture into a jelly roll pan. Reserve other 1/2 for the op. Sprinkle onto dough in pan; cornflakes, apples, sugar, and cinnamon. Cover with the other 1/2 of dough. Beat egg white until stiff, spread over crust.
 Bake at 400 degrees for about 40 minutes.
@@ -196,6 +200,7 @@ recipes:AppleDumplings a :Recipe ;
             :name "milk"@en ],
         [ a :Ingredient ;
             :food food:Apples ;
+            :hasStandardMeasurementUnit [ :quantity 6.0 ] ;
             :name "apples, peeled, cut in 1/4"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/AppleDumpling.jpg?width=300> ;
     :instructions "Make syrup from first 5 ingredients. Make crust - roll 1/4 inch thick. CUt in 5 inch squares. Put 4 pieces of apple on each. Sprinkle with additional sugar, cinnamon, and nutmeg. Dot with butter. Fold corners to center; pinch together. Place 1 inch apart in greased baking dish. Pour syrup on top. Bake 375 degrees for 35 minutes. Serve warm with cream. Makes 6."@en ;
@@ -250,6 +255,7 @@ recipes:Artichoke-MozzarellaCasserole a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "eggs"@en ] ;
     :instructions """Heat the olive oil in a small frying pand and saute the onion, garlic, parsley and oregano in it until the onions are soften well.
 Beat the eggs and stir in the sauteed mixture, the artichoke hearts, bread crumbs, cheese, and salt.
@@ -336,8 +342,10 @@ recipes:AsparagusTomatoQuiche a :Recipe ;
                     :unit "medium" ] ;
             :name "tomato, sliced into four 1/4\" slices"@en ],
         [ a :Ingredient ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "10 inch pie shell, partially baked"@en ],
         [ a :Ingredient ;
+            :hasStandardMeasurementUnit [ :quantity "10" ] ;
             :name "fresh aparagus spears, washed and trimmed"@en ] ;
     :instructions """Preheat oven to 375 degrees.
 Beat eggs with next 4 ingredients; stir in cheese. Saving 6 asparagus spears for the top, chop the rest into 1" lengths; lay on bottom of pie shell, pour in liquid. Bake 20 minutes. Remove and quickly arrange tomato and asparagus on top in a wagon wheel pattern. Bake another 20-30 minutes. Serves 4 to 6."""@en ;
@@ -396,12 +404,15 @@ recipes:AvocadoChickenMelt a :Recipe ;
             :name "red pepper, chopped"@en ],
         [ a :Ingredient ;
             :food food:Chicken ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "chicken breast halves, b1d and skinned"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg, slightly bea10"@en ],
         [ a :Ingredient ;
             :food food:Avocado ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "avocado, peeled and sliced"@en ] ;
     :instructions "Using a meat mallet and a hard surface, pound the chicken to 1/4 inch thickness. Mix together the cornstarch, cumin and garlic salt. Add the chicken 1 piece at a time, dredging to coat. Mix the egg and water in a small bowl. Put the cornmeal in another small bowl. Dip the chicken first in the egg wash and then in the cornmeal, turning to coat. Heat the oil in a large frying pan until hot. Add the chicken and cook for 2 minutes on each side. Remove the chicken to a shallow baking pan. Place avocado slices over the chicken and sprinkle cheese. Bake in a preheated 350 degree oven about 15 minutes, or until a fork can be inserted with ease and the cheese is melted. Top the cheese layer with the sour cream. Sprinkle with green onion and red pepper. Garnish with cherry tomatoes and parsley."@en ;
     :name "Avocado Chicken Melt"@en .
@@ -538,9 +549,11 @@ recipes:BananaCreamPie a :Recipe ;
             :name "bananas"@en ],
         [ a :Ingredient ;
             :food food:Pastry ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "baked pastry shell"@en ],
         [ a :Ingredient ;
             :food food:EggYolks ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "egg yolks, beaten"@en ] ;
     :instructions "In a heavy saucepan dissolve cornstarch inwater; stir in sweetened condensed milk and egg yolks.  Cook and stir until thickened and bubbly.  Remove from heat; add margarine and vanilla.  Cool slightly.  Slice 2 bananas; dip in lemon juice and drain.  Arrange on bottom of prepare crust.  Pour filling over bananas; cover.  Chill 4 hours or until set.  Spread top with whipped cream.  Slice remaining bananas; dip in lemon juice, drain and garnish top of pie.  Refrigerate leftovers."@en ;
     :name "Banana Cream Pie"@en ;
@@ -606,6 +619,7 @@ recipes:BarbecuedSpareribs a :Recipe ;
             :name "brown sugar"@en ],
         [ a :Ingredient ;
             :food food:Sliced ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "lemon, sliced thinly"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Crab_rangoons_on_a_plate.jpeg?width=300> ;
     :instructions "Baste over ribs while browning until done. If sauce is too thin, thicken with 1 or 2 tablespoons of flour."@en ;
@@ -652,6 +666,7 @@ recipes:BatterFriedChicken a :Recipe ;
             :name "chicken, cut up"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg, slightly bea10"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Fried-Chicken-Set.jpg?width=300> ;
     :instructions "Make better. Dip chicken, drain 5 to 10 minutes on rack. Fill dutch oven 1/3 full of oil, heat to 375 degrees. Cook chicken about 12 minutes. Drain on paper towels."@en ;
@@ -748,6 +763,7 @@ recipes:BeefEnchiladas a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Tortillas ;
+            :hasStandardMeasurementUnit [ :quantity "10" ] ;
             :name "tortillas"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Enchilada_Rice_Beans.jpg?width=300> ;
     :instructions """Saute beef with garlic, salt, vinegar, water, and chili powder. Stir in beans. Set aside.
@@ -791,6 +807,7 @@ recipes:BeefScallopswithFreshTomatoSauce a :Recipe ;
             :name "cornstarch"@en ],
         [ a :Ingredient ;
             :food food:Tomatoes ;
+            :hasStandardMeasurementUnit [ :quantity 5.0 ] ;
             :name "tomatoes, blanched"@en ] ;
     :instructions "Pound steak to 1/8 inch thick. remove skins from blanched tomatoes. Chop 3 of them and slice the other 2. Set aside. Cook steak in oil on medium high until browned. Remove and keep warm. Add chopped tomatoes to skillet, with green onions. Add sugar, salt, and basil. Stir in cornstarch. Add sliced tomatoes and heat. Gently spoon over meat."@en ;
     :name "Beef Scallops with Fresh Tomato Sauce"@en .
@@ -847,6 +864,7 @@ recipes:BeefSpinachQuiche a :Recipe ;
                     :unit measurements:Cup ] ;
             :name "cheese"@en ],
         [ a :Ingredient ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "10 inch  baked pie shell"@en ] ;
     :instructions "Melt butter, add onion. Cook until soft. Add meat, cook and drain. Squeeze spinach to remove liquid. In a bowl, mix beef, onion, spinach, and seasonings. Beat eggs with cream. Stir into meat. Pour into shell. Top with cheese. Bake for 30 minutes at 375 degrees. Let set 10 minutes before eating."@en ;
     :name "Beef Spinach Quiche"@en .
@@ -901,6 +919,7 @@ recipes:BeefStroganoff a :Recipe ;
             :name "sour cream"@en ],
         [ a :Ingredient ;
             :food food:Steak ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "round steak"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Beef_Stroganoff-02_cropped.jpg?width=300> ;
     :instructions "Pound salt and flour into the steak. Cut into think strips. Brown onion in oil. Remove brown meat. Add onion and garlic. Simmer covered for 15 minutes. Add soup and mushrooms. Simmer for 1.5 hours, uncovered. Stor in sour cream. Serve over rice or noodles."@en ;
@@ -950,6 +969,7 @@ recipes:BitOZucchiniBites a :Recipe ;
             :name "dried oregano, crushed"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "eggs, slightly bea10"@en ] ;
     :instructions """In a large skillet cook onion and garlic in butter or margarine until onion is tender but not brown. Add zucchini and stir about 2 minutes or till crisp-tender. Remove from heat.
 In a bowl mix eggs, cheese, cornmeal, cumin, oregano, and zucchini mixture. Spoon a scant 2 tablespoons of the egg mixture into individual greased 1 and 3 quarter inch muffin pans. Bake at 325 degrees for 15 to eighteen minutes or until set. Remove from pans. Or, pour all the batter into a greased 8 by 8 by 2 inch baking pan. Bake for 20 to 25 minutes or until set. Cut in bite size squares. Serve hot. Makes about 24 appetizers."""@en ;
@@ -1031,6 +1051,7 @@ recipes:BlueChipCookies a :Recipe ;
             :name "walnuts"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :instructions "Mix at low speed.  Add chocolate chips and nuts by hand.  Press into balls in cookie scoop.  Bake at 300 degrees for 15 minutes on middle rack."@en ;
     :name "Blue Chip Cookies"@en ;
@@ -1084,6 +1105,7 @@ recipes:BlueberryCoffeeCake a :Recipe ;
             :name "blueberries"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "eggs"@en ] ;
     :instructions """Mix butter, 1 cup sugar, flour, 2 eggs, 2 tsp vanilla, baking powder, and milk to make cake batter. Blend easily.  Add 3 cups of blueberries.  Put 2 1/2 cups of batter in pan.
 Mix cream cheese, 1/2 cup sugar, 1 egg, lemon juice and 1 tsp vanilla to make filling.  Put filling on top of batter.  Top with remaining batter.
@@ -1178,6 +1200,7 @@ recipes:BroccoliCheesePie a :Recipe ;
             :name "swiss cheese"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "eggs, slightly beaten"@en ] ;
     :instructions "Cut florets from broccoli in thin slices; peel tender stems and cut coarsely. Cook 5 minutes to tender. Combine eggs, milk, salt, pepper, pepper sauce, nutmeg, parsley and swiss cheese. Stir in broccoli. Turn into buttered 10 inch pie pan. Sprinkle with parmesan. Bake in 350 degree oven for 30-35 minutes. Cool 10 minutes. Serve with sliced tomatoes and hot biscuits."@en ;
     :name "Broccoli Cheese Pie"@en .
@@ -1319,6 +1342,7 @@ recipes:BroccoliSaladwithPineapple a :Recipe ;
             :name "vinegar"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "red onion, chopped fine"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Watergate_salad_new.jpg?width=300> ;
     :instructions "Cut broccoli flowers.  Chop the top 2 inches of the stems into small pieces.  Mix together broccoli, crisp bacon, drained pineapple, onion, and sunflower seeds.  Blend mayonnaise, sugar, and vinegar to make dressing.  Pour over top of broccoli mixture.  Toss and serve.  Note:  This salad is also great with sliced raw carrots and cauliflower."@en ;
@@ -2080,6 +2104,7 @@ recipes:CheeseStrata a :Recipe ;
             :name "dry mustard"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "eggs, beaten"@en ] ;
     :instructions "Arrange bread and cheese in alternate layers in greased baking dish. Bread on top and bottom. Combine eggs, milk, and seasonings. Pour over bread and cheese. Chill 1 hour. Bake 1 hour at 350 degrees or until set."@en ;
     :name "Cheese Strata"@en .
@@ -2172,6 +2197,7 @@ recipes:CheesySpinachBake a :Recipe ;
             :name "parmesan cheese"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "eggs, bea10"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Spinach_&_artichoke_dip.jpg?width=300> ;
     :instructions "Combine. Pour into 1 quart dish. Bake at 375 degrees for 25 minutes."@en ;
@@ -2276,6 +2302,7 @@ recipes:ChickenCashew a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Chicken ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "chicken breasts"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cashewchickenphoto.jpg?width=300> ;
     :instructions """Skin, bone and cut chicken into bit-size pieces. Put chicken in a casserole and cook, covered, until opaque and tender. Stir several times during cooking. Add pea pods (break off ends and remove strings), onions and mushrooms; stir. Cook, covered for 2 minutes. Add bamboo shoots and water chestnuts.
@@ -2316,12 +2343,15 @@ recipes:ChickenLoMein a :Recipe ;
             :name "chicken boullion"@en ],
         [ a :Ingredient ;
             :food food:Chicken ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "chicken breast, sliced and marinated"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "green onion, sliced"@en ],
         [ a :Ingredient ;
             :food food:Mushrooms ;
+            :hasStandardMeasurementUnit [ :quantity 6.0 ] ;
             :name "mushrooms"@en ] ;
     :instructions """Marinate chicken in mixture of soy sauce, sherry, and cornstarch.
 Cook chicken in oil in a wok and remove when d1.
@@ -2509,15 +2539,19 @@ recipes:ChickenSchnitzel a :Recipe ;
             :name "raisins"@en ],
         [ a :Ingredient ;
             :food food:Chicken ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "chicken cutlets, pounded to 1/8 inch thick"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs, lightly bea10"@en ],
         [ a :Ingredient ;
             :food food:Apples ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "apples, cored, pared, thinly sliced"@en ],
         [ a :Ingredient ;
             :food food:Lemons ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "lemons, thinly sliced"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Breitenlesau_Krug_Bräu_Schnitzel.jpg?width=300> ;
     :instructions """On a plate combine 4 tablespoons of flour with salt and pepper. On a second plate, combine bread crumbs, paprika and garlic powder.
@@ -2575,9 +2609,11 @@ recipes:ChickenTamalePie a :Recipe ;
             :name "chili powder"@en ],
         [ a :Ingredient ;
             :food food:Chicken ;
+            :hasStandardMeasurementUnit [ :quantity 6.0 ] ;
             :name "boned chicken breasts, cooked, cut into bite-size"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "eggs, beaten"@en ] ;
     :instructions """Brown onion and bacon.
 Cook cornmeal, broth, eggs, salt, cayenne, and cumin until stiff.
@@ -2620,9 +2656,11 @@ recipes:ChickenWithPineapple a :Recipe ;
             :name "pineapple tidbits"@en ],
         [ a :Ingredient ;
             :food food:Chicken ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "b1d chicken breast cut into 1-inch cubes"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "onion"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pineapple_chicken_(Pininyahang_Manok).jpg?width=300> ;
     :instructions "Marinate chicken in mixture of sherry, soy sauce, and cornstarch. Drain, but"@en ;
@@ -2672,6 +2710,7 @@ recipes:ChickenandShrimpCantonese a :Recipe ;
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Chicken ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "b1d and skinned chicken breasts, cut into 1 inch pieces"@en ] ;
     :instructions "Cut chicken into 1-inch cubes. Heat all over medium-high heat in wok or large skillet. Add chicekn and garlic ; saute 1 1/2 minutes, stirring. Add shrimp, green onions, pepper, celery, and zucchini. Cook and stir until shrimp turns pink, about 2 minutes, then add chicken broth. Mix cornstarch, sherry, soy sauce, and sugar in small bowl. Add to chicken-shrimp mixture and cook, stirring constantly, until it boils. Continue to boil for 1 minute. Remove from heat and serve immediately over cooked rice or Chinese noodles. Makes 4 servings."@en ;
     :name "Chicken and Shrimp Cantonese"@en .
@@ -2694,9 +2733,11 @@ recipes:ChickenwithArtichoke a :Recipe ;
             :name "white sauterne wine"@en ],
         [ a :Ingredient ;
             :food food:Chicken ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "chicken breast, split"@en ],
         [ a :Ingredient ;
             :food food:Chicken ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "chicken thighs"@en ] ;
     :instructions "Dip chicken in flour, brown in oil. Place in baking dish. Put mushrooms and artichokes over chicken. Make sauce in skillet drippings with wine and onion. Pour over chicken. Cover with foil. Bake for 45 minutes at 350 degrees. Serve with rice."@en ;
     :name "Chicken with Artichoke"@en .
@@ -2735,6 +2776,7 @@ recipes:ChiliCheesePuff a :Recipe ;
             :name "jack cheese, shredded"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity "10" ] ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Karipap_Daging.jpg?width=300> ;
     :instructions """Preheat oven to 350 degrees.
@@ -2825,6 +2867,7 @@ recipes:ChilledPruneWhip a :Recipe ;
             :name "pecans, chopped"@en ],
         [ a :Ingredient ;
             :food food:EggWhites ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "egg whites"@en ] ;
     :instructions "Bring prunes and water to boil, simmer 10 minutes. Cool. Beat egg whites with salt to stiff peaks, In small mixer bowl combine prunes and lemon juice beat until well blended. Fold into egg whites. FOld in nuts. Spoon into dishes. Serves 6 to 8."@en ;
     :name "Chilled Prune Whip"@en .
@@ -2883,9 +2926,11 @@ recipes:ChineseBeef a :Recipe ;
             :name "water"@en ],
         [ a :Ingredient ;
             :food food:Tomatoes ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "tomatoes"@en ],
         [ a :Ingredient ;
             :food food:GreenPeppers ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "green peppers"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mongolian_Beef.jpg?width=300> ;
     :instructions "Cut steak into thin strips. Quarter tomatoes, cut pepper in bug chunks. Heat oil in skillet. Add beef, crushed garlic, slat, pepper, and ginger. Fry over high heat until brown. Add soy sauce and sugar. Cover tightly. Cook slowly 5 minutes. Add tomatoes, peppers, and sprouts. Bring to a boil, cover, cook briskly 5 minutes. Make a smooth paste of cornstarch and water. Add to beef. Cook until sauce thickens slightly. Stir occasionally."@en ;
@@ -2935,12 +2980,15 @@ recipes:ChineseChickenSalad a :Recipe ;
             :name "slivered lettuce"@en ],
         [ a :Ingredient ;
             :food food:OrangePeel ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "orange peel"@en ],
         [ a :Ingredient ;
             :food food:Chicken ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "chicken breast, poached 15 minutes"@en ],
         [ a :Ingredient ;
             :food food:GreenOnions ;
+            :hasStandardMeasurementUnit [ :quantity "4" ] ;
             :name "slivered green onions"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chinesechickensalad.jpg?width=300> ;
     :instructions "Mix soy sauce, sherry, water, orange peel, and anise. Simmer 10 minutes to make marinade. Poach chicken breasts 10 to 15 minutes over low flame. Cool in liquid. Shred. Mix together shredded chicken, onions, and lettuce. Serve over rice noodles that have been cooked in hot oil in wok."@en ;
@@ -2980,9 +3028,11 @@ recipes:ChineseFriedRice a :Recipe ;
             :name "tbsp"@en ],
         [ a :Ingredient ;
             :food food:SoySauce ;
+            :hasStandardMeasurementUnit [ :quantity "2" ] ;
             :name "soy sauce"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chinese_fried_rice.jpg?width=300> ;
     :instructions "Saute onion and meat in oil. Add other ingredients except egg. Cook on low heat about 15 to 20 minutes. Beat egg with a tablespoon of milk. Melt butter in skillet, pour in egg and cook until solid. Slice in thin strips to put over the rice as garnish on the platter."@en ;
@@ -3076,12 +3126,15 @@ recipes:ChinesePepperSteak a :Recipe ;
             :name "dry sherry"@en ],
         [ a :Ingredient ;
             :food food:Peppers ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "peppers"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "onion"@en ],
         [ a :Ingredient ;
             :food food:Tomatoes ;
+            :hasStandardMeasurementUnit [ :quantity 8.0 ] ;
             :name "tomatoes, halved"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pepper_steak.jpg?width=300> ;
     :instructions "Partially freeze steak and cut into thin strips. Combine cornstarch, sugar, ginger, and soy sauce. Pour over meat and stir. Cut into thin strips. Quickly brown meat in hot oil and remove. Add green pepper, onion, and garlic. Add water. Cook 5 to 6 minutes. Stir in meat, tomatoes and sherry. Serve over rice."@en ;
@@ -3176,9 +3229,11 @@ recipes:ChineseStirFriedChickenwithPeanuts a :Recipe ;
             :name "cornstarch"@en ],
         [ a :Ingredient ;
             :food food:GreenPeppers ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "green peppers"@en ],
         [ a :Ingredient ;
             :food food:GreenOnions ;
+            :hasStandardMeasurementUnit [ :quantity "12" ] ;
             :name "green onions"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Kung-pao-shanghai.jpg?width=300> ;
     :instructions "Mix sherry and cornstarch. Stir chicken to coat. Refirgerate 2 to 4 hours. Heat 2 tablespoons oil over high heat. Add ginger. Cook 15 seconds, stirring constantly. Add pepper. Stir fry 2 minutes. Add onion. Stir fry 1 minute. Tranfer to bowl. Add rest of oil. Add chicken and red pepper. Stir fry 2 minutes until chicken looses pink color and turns white. Add peanuts, cooked vegetables and soy sauce mixture (soy sauce, water, and cornstarch). Bring to rolling boil, stirring constantly until thick. Serve immediately, discard ginger. Serve with rice."@en ;
@@ -3235,6 +3290,7 @@ recipes:ChocolateCake a :Recipe ;
             :name "vanilla"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chocolate_fudge_cake.jpg?width=300> ;
     :instructions "Mix all ingredients together.  Pour in 1 cup boiling water.  Mix well.  Bake about 35 minutes at 375 degrees."@en ;
@@ -3285,6 +3341,7 @@ recipes:ChocolateCrispBranCookies a :Recipe ;
             :name "chocolate chips"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Sift flour, soda, and salt.  Blend butter and sugar.  Add eggs and vanilla; beat well.  Add All-Bran cereal and chocolate chips.  Add dry ingredients, mix well.  Drop by spoonful onto cookie sheet.  Bake at 375 degrees about 12 minutes."@en ;
     :name "Chocolate Crisp Bran Cookies"@en ;
@@ -3383,6 +3440,7 @@ recipes:ChocolatePeanutBrunchBars a :Recipe ;
             :name "Special K cereal"@en ],
         [ a :Ingredient ;
             :food food:EggYolk ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg yolk, beaten"@en ] ;
     :instructions "Blend first 5 ingredients until it resembles corn meal.  Add egg and vanilla.  Mix well.  Press firmly into ungreased jelly roll pan.  Bake at 350 degrees for 25 minutes.  Cool slightly.  Melt chocolate over hot water.  Stir in peanut butter and cereal.  Spread on cookie dough.  Let stand until chocolate sets.  Cut into 35 bars."@en ;
     :name "Chocolate Peanut Brunch Bars"@en ;
@@ -3446,6 +3504,7 @@ recipes:ChocolateTrioSquares a :Recipe ;
             :name "water"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs, well beaten"@en ] ;
     :instructions """Cream butter, mis in four, and salt.  Spread in greased and floured 9" pan.  Bake 15 minutes at 350 degrees.  Beat eggs and sugar until smooth. Stir in all other ingredients and blend well.  Spread over first layer.  Bake 350 degrees for 15 minutes.  Cool in pan.
 Melt chocolate.  Blend in syrup and water,  Spread over cookies.  Sprinkle on nuts.  Leave in pan overnight.  Cut into 36 squares."""@en ;
@@ -3475,6 +3534,7 @@ recipes:ChristmasLogs a :Recipe ;
             :name "brown sugar"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Preheat oven to 350 degrees.  Put walnuts and dates through coarse blade of grinder.  Combine with 1 1/2 cup coconut, sugar, and eggs.  Mix well.  Shape by spoonfuls into 3\" logs, 3/4\" wide.  Roll in rest of coconut, coating well.  Bake 10-12 minutes until golden.  Cool.  Makes 30 logs."@en ;
     :name "Christmas Logs"@en ;
@@ -3692,6 +3752,7 @@ recipes:CoqauVin a :Recipe ;
             :name "parsely, chopped"@en ],
         [ a :Ingredient ;
             :food food:Chicken ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "chicken"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Gourmet_coq_au_vin.jpg?width=300> ;
     :instructions "Cook pork, stirring until crisp and well browned. Lift out, set aside. Brown chicken parts, set aside. Stir in wine, broth and mustard. Add meat and chicken. Cover and simmer 35 to 40 minutes. Add cornstarch."@en ;
@@ -3762,6 +3823,7 @@ recipes:CrazyCake a :Recipe ;
             :name "lemon juice"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Wacky_Cake.jpg?width=300> ;
     :instructions "Mix first 5 ingredients well, about 4 minutes.  Bake at 350 degrees in a 9x13 pan for 35 minutes. Poke holes in warm cake and pour on mixture of powdered sugar and lemon juice."@en ;
@@ -3798,6 +3860,7 @@ recipes:CrazyCrustPizza a :Recipe ;
             :name "milk"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cheese_stuffed_crust.jpg?width=300> ;
     :instructions "Mix well. Pour into greased and floured pan. Top with 1 1/2 pounds browned ground beef or sausage, and pepperoni. Add 1 can drained slice mushrooms over top. Bake at 375 degrees for 10 minutes. Add pizza sauce, cheese, etc. Bake 20 minutes more."@en ;
@@ -3832,6 +3895,7 @@ recipes:CreamyApplePie a :Recipe ;
             :name "heavy cream"@en ],
         [ a :Ingredient ;
             :food food:Apples ;
+            :hasStandardMeasurementUnit [ :quantity "4" ] ;
             :name "tart apples, peeled and sliced"@en ] ;
     :instructions "Place apples in the pie shell.  Mix together sugar, flour, and salt.  Sprinkle over apples.  in a sauce pan bring cream to boiling point.  Pour over apples.  Sprinkle generously with cinnamon.  Bake at 375 degrees for 45 minutes, until firm."@en ;
     :name "Creamy Apple Pie"@en ;
@@ -3956,6 +4020,7 @@ recipes:CrispOatmealFruitStrips a :Recipe ;
             :name "rolled oats"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :instructions "Beat butter and sugar together until fluffy; beat in egg.  Stir flour with soda, then stir into creamed mixture with raisins and rolled oats.  Mix well.  Divide dough into 15 equal portions.  Place 3 or 4 portions each on ungreased 12\" by 15\" baking sheet.  Pinch dough to shape 8\" ropes and place at least 2 inches apart.  Flatten each rope into a 2\" wide strip.  Bake in a 30 degree oven until golden brown, about 10 minutes.  Let cool on pan about 2 minutes, then cut each strip diagonally into 1 inch wide bars.  Let cookies cool on pan then transfer from pan with a wide spatula.  Store in an airtight container at room temperature up to 2 weeks.  Makes about 12 dozen."@en ;
     :name "Crisp Oatmeal Fruit Strips"@en ;
@@ -4087,6 +4152,7 @@ recipes:DutchApplePie a :Recipe ;
             :name "cinnamon"@en ],
         [ a :Ingredient ;
             :food food:Apples ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "large apples, sliced"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Small_apple_pie_8.jpg?width=300> ;
     :instructions "Combine apples, 1/2 cup sugar, and cinnamon.  Put into the unbaked pie shell.  Top with 1/2 cup sugar, flour, butter, and cinnamon.  Bake 45-50 minutes at 350 degrees."@en ;
@@ -4223,6 +4289,7 @@ recipes:EggFooYoung a :Recipe ;
             :name "soy sauce"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 6.0 ] ;
             :name "bea10 eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Efy.jpg?width=300> ;
     :instructions "Combine first 6 ingredients. Fry in oil to form 3 inch omelettes. To make brown gravy, melt butter, add flour combined with sugar and salt. Add hot water and soy sauce. Cook over low heat until thick. Serve gravy over omelettes."@en ;
@@ -4252,6 +4319,7 @@ recipes:EggRollWrappers a :Recipe ;
             :name "water"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Beat egg slightly. Add flour, cornstarch, salt and water. Blend until smooth. Heat buttered 7 inch skillet or crepe pad. Add 2 tablespoons pf batter to cover bottom of pan. Brown lightly on bottom side only. Place filling on uncooked side. Roll, seal and fry as directed. 5-7 minutes in deep fat at 375 degrees."@en ;
     :name "Egg Roll Wrappers"@en .
@@ -4319,6 +4387,7 @@ recipes:ElephantStew a :Recipe ;
             :name "elephant"@en ],
         [ a :Ingredient ;
             :food food:Rabbits ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "rabbits"@en ] ;
     :instructions "Cut elephant into bite-size pieces.  (Allow approximately 12 months.)  Add enough gravy to cover.  Cook over kerosene fire for 4 weeks at 463 degrees.  Makes 3,300 servings.  To extend recipe add rabbits, but only if necessary, as some people do not like to find hare in their stew."@en ;
     :name "Elephant Stew"@en ;
@@ -4368,6 +4437,7 @@ recipes:FiveBeanSalad a :Recipe ;
             :name "oil"@en ],
         [ a :Ingredient ;
             :food food:RedOnion ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "red onion, sliced"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Colourful_bean_salad.jpg?width=300> ;
     :instructions "Drain beans and stir together.  Mix ingredients for dressing.  Combine dressing and beans."@en ;
@@ -4464,6 +4534,7 @@ recipes:FreshAppleCake a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs, well beaten"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Small_apple_pie_8.jpg?width=300> ;
     :instructions "Mix apples and sugar well.  Add oil, nuts, and eggs.  Add vanilla and dry ingredients.  Bake at 350 degrees for 40-45 minutes.  Serve with whipped cream or top with cream cheese frosting."@en ;
@@ -4511,6 +4582,7 @@ recipes:FreshPeachDessert a :Recipe ;
             :name "margarine"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Peach_Melba.jpg?width=300> ;
     :instructions "Soak gelatin in cold water. Combine margarine, sugar, and egg yolks. Cook until thick. Add gelatin - pour hot mixture over marshmallows. Blend. Fold in stiff-beaten egg whites and peaches. Alternate in layers with cookie crumbs in dish. Chill to serve."@en ;
@@ -4545,9 +4617,11 @@ recipes:FreshPearCake a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Pears ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "pears"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Butter and flour a 9 inch round pan.  Peel and slice pears.  Blend eggs, sugar, milk, and salt.  Add flour, mix well.  Fold 1/2 of pears into batter.  Pour into pan, fan remaining pears on top.  Dot with butter.  Bake at 350 degrees about 55 minutes.  Sprinkle with powdered sugar."@en ;
     :name "Fresh Pear Cake"@en ;
@@ -4592,6 +4666,7 @@ recipes:FreshStrawberryPie a :Recipe ;
             :name "strawberries"@en ],
         [ a :Ingredient ;
             :food food:Pie ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "pie shell, baked"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Fresh_strawberry_pie.jpg?width=300> ;
     :instructions "Slice 1 basket of strawberries.  Put half the berries in the bottom of a baked pie shell. Prepare glaze by combining remaining ingredients and cooking in a double-boiler until thickened.   Stir the other half of the berries into the glaze.  Pour into the shell.  Cool.  Top with whipped cream and halved berries."@en ;
@@ -4642,9 +4717,11 @@ recipes:FrostedDelights a :Recipe ;
             :name "chopped nuts"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ],
         [ a :Ingredient ;
             :food food:EggWhite ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg white, stiffly beaten"@en ] ;
     :instructions "Sift flour, salt and baking powder together.  Cream shortening with sugar until fluffy.  Add eggs, vanilla and sifted ingredients and mix well.  Spread batter very thin on baking sheets.  Fold brown sugar into egg whites, add nuts.  Spread over cookie batter.  Bake at 325 degrees for 30 minutes.  Cut into squares.  Makes 30."@en ;
     :name "Frosted Delights"@en ;
@@ -4732,6 +4809,7 @@ recipes:GardenQuiche a :Recipe ;
             :name "cayenne pepper"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "eggs"@en ] ;
     :instructions """Heat oven to 425 degrees. Mix baking mix and water until soft dough forms; beat vigorously 20 strokes. Gently smooth dough into ball on floured cloth-covered board. Knead 5 times. Roll dough 2 inches larger than inverted 9-inch pie plate. Ease into plate; flute edge if desired. Sprinkle broccoli, cheese and onions in cryst. Beat remaining ingredients with hand beater; pour over broccoli mixture. Bake 15 minutes.
 Reduce oven temperature to 300 degrees. Bake until knife inserted 1 inch from edge comes out clean, about 35 minutes. Let stand 10 minutes before cutting. Serves 6."""@en ;
@@ -4800,6 +4878,7 @@ recipes:GingerSnapBars a :Recipe ;
             :name "chopped nuts"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :instructions "Mix first four ingredients.  Add dry ingredients with milk.  Mix well.  Add nuts.  Pour into greased 9\" square pan.  Bake at 350 degrees for 35 to 40 minutes.  Cool in pan.  Cut into 24 bars, roll in powdered sugar."@en ;
     :name "Ginger Snap Bars"@en ;
@@ -4848,6 +4927,7 @@ recipes:GingerSnaps a :Recipe ;
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :instructions "Roll in little balls.  Dip in sugar and flatten with glass dipped in water.  Bake at 350 degrees about 7 minutes."@en ;
     :name "Ginger Snaps"@en ;
@@ -4971,6 +5051,7 @@ recipes:GrahamCrackerCake a :Recipe ;
             :name "chopped nuts"@en ],
         [ a :Ingredient ;
             :food food:GrahamCrackers ;
+            :hasStandardMeasurementUnit [ :quantity "32" ] ;
             :name "graham crackers, crushed"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Graham-Cracker-Stack.jpg?width=300> ;
     :instructions "Cream butter and sugar.  Add crushed crackers, sour milk, and soda.  Stir in nuts.  Bake in 10 inch square baking pan.  Bake in 350 degree oven for 30-35 minutes.  Serve with whipped cream or thin powdered sugar icing."@en ;
@@ -5047,6 +5128,8 @@ Before serving, toss beans with shredded lettuce and crumbled bacon."""@en ;
     :name "Green Beans Salerno"@en .
 
 recipes:HeavenlyCheeseSalad a :Recipe ;
+    rdfs:label "Deviled egg"@en,
+        "Œuf mimosa"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:CreamCheese ;
             :hasImperialMeasurementUnit [ :quantity 8.0 ;
@@ -5077,9 +5160,11 @@ recipes:HeavenlyCheeseSalad a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
                     :unit "pint" ] ;
             :name "whipped cream"@en ] ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/0.2014_Ostereier_zum_Frühstück,_Beskiden,_Nowotaniec.jpg?width=300> ;
     :instructions "Bring juice to a boil, pour over jello.  Cool.  Mix pineapple, nuts, and cheese.  Add to jello.  Fold in whipped cream.  Pour into mold.  Chill."@en ;
     :name "Heavenly Cheese Salad"@en ;
-    :recipeCategory "Salads and Dressings"@en .
+    :recipeCategory "Salads and Dressings"@en ;
+    owl:sameAs dbpedia:Deviled_egg .
 
 recipes:HoneyGrahamCrackers a :Recipe ;
     rdfs:label "Graham cracker"@en,
@@ -5268,6 +5353,7 @@ recipes:HotWaterChocolateCake a :Recipe ;
             :name "vanilla"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Mix all ingredients together.  Pour in 1 cup boiling water. Mix well.  Bake about 35 minutes at 375 degrees."@en ;
     :name "Hot Water Chocolate Cake"@en ;
@@ -5359,9 +5445,11 @@ recipes:ImpossibleTacoPie a :Recipe ;
             :name "monterey jack or cheddar cheese, shredded"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "eggs"@en ],
         [ a :Ingredient ;
             :food food:Tomatoes ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "tomatoes"@en ] ;
     :instructions """Heat oven to 400 degrees. Grease pie plate, 10 x 1 1/2".
 Cook and stir beef and onion until brown; drain. Stir in seasoning mix. Spread in plate; top with chilies.
@@ -5441,6 +5529,7 @@ recipes:InaHurryChickenCurry a :Recipe ;
 recipes:ItalianZucchini a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Zucchini ;
+            :hasStandardMeasurementUnit [ :quantity "5" ] ;
             :name "zucchini"@en ] ;
     :instructions "Cut zucchini in thick slices. Saute onion and garlic in oil. Add squash, mushrooms, and seasonings. Simmer slowly until tender."@en ;
     :name "Italian Zucchini"@en .
@@ -5530,6 +5619,7 @@ recipes:LemonCloudPie a :Recipe ;
             :name "lemon juice"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Combine in sauce pan 3/4 cup sugar, cornstarch, water, lemon rind, and juice, and slightly beaten egg yolk.  Cook over medium heat stirring constantly until thick.  Remove from heat.  Add softened cheese, blend well.  Cool.  Beat egg whites until stiff.  Add 1/4 sugar.  Fold into lemon mixture.  Spoon into crust.  Chill 2 hours.  Serve with whipped cream."@en ;
     :name "Lemon Cloud Pie"@en ;
@@ -5557,6 +5647,7 @@ recipes:LemonCloudSalad a :Recipe ;
             :name "Dream Whip"@en ],
         [ a :Ingredient ;
             :food food:Bananas ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "bananas, sliced"@en ] ;
     :instructions "Set jello with 1/2 c. less water than package instructions.  When partially set stir in Dream Whip.  Add fruits.  Set several hours to chill."@en ;
     :name "Lemon Cloud Salad"@en ;
@@ -5605,6 +5696,7 @@ recipes:LemonLusciousPie a :Recipe ;
             :name "pie shell"@en ],
         [ a :Ingredient ;
             :food food:Yolks ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "egg yolks, slightly beaten"@en ] ;
     :instructions "Combine sugar, cornstarch, butter, lemon rind, and egg yolk in saucepan.  Stir in milk.  Cook over medium heat, stirring until mixture thickens.  Cool.  Fold in sour cream.  Spoon into pie shell.  Col 12 hours or longer.  Top with whipped cream.  Garnish with chopped walnuts if desired."@en ;
     :name "Lemon Luscious Pie"@en ;
@@ -5655,9 +5747,11 @@ recipes:LemonMeringuePie a :Recipe ;
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:EggYolks ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "egg yolks"@en ],
         [ a :Ingredient ;
             :food food:EggWhites ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "egg whites"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Theres_always_room_for_pie_(7859650026).jpg?width=300> ;
     :instructions "Mix sugar, cornstarch, and salt in top of double boiler.  Place over boiling water and add remaining ingredients.  Cook until thick, stirring with whip.  Put into baked pie shell.  Top with meringue.  To make meringue whip 3 egg whites until stiff.  Add 1/4 cup sugar.  Brown 5 to 10 minutes in 400 degree oven.  Chill."@en ;
@@ -5693,6 +5787,7 @@ recipes:LemonPoppyCake a :Recipe ;
             :name "poppy seeds"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Mix all for 4 minutes.  Bake at 350 degrees for 40 minutes."@en ;
     :name "Lemon Poppy Cake"@en ;
@@ -5810,6 +5905,7 @@ recipes:LightOldFashionedFruitCake a :Recipe ;
             :name "brandy flavoring"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 6.0 ] ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Christmas_cake_(6954064737).jpg?width=300> ;
     :instructions "Sift dry ingredients into a 4 quart bowl.  Add fruit and nuts.  Mix until well coated.  Set aside.  Cream butter, gradually add sugar and cream until fluffy.  Add eggs one at a time, beating well after each.  Add brandy.  Combine with fruit mixture.  Mix well.  Turn into a 10 inch tube pan or four 1# coffee cans lined with foil, filling pans 2/3 full. Bake in slow oven, 275 degrees for 2 3/4 to 3 hours.  About 1/2 hour before done brush lightly with honey or light corn syrup.  Cool completely then wrap tightly in foil to store for several weeks.  Brush with brandy about once a week."@en ;
@@ -5841,9 +5937,11 @@ recipes:LimaBeanSalad a :Recipe ;
             :name "garlic, crushed or 1/8 tsp. garlic pwder."@en ],
         [ a :Ingredient ;
             :food food:Mushrooms ;
+            :hasStandardMeasurementUnit [ :quantity 8.0 ] ;
             :name "fresh mushrooms, sliced"@en ],
         [ a :Ingredient ;
             :food food:GreenOnions ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "green onions, sliced"@en ],
         [ a :Ingredient ;
             :food food:LimaBeans ;
@@ -5994,9 +6092,11 @@ recipes:MexicanMeatballSoup a :Recipe ;
             :name "instant rice"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "onion, chopped"@en ] ;
     :instructions "Mix first 8 ingredients.  Shape into 1' balls.  Brown in small amount of oil.  Put remaining ingredients in a large pot.  Heat to boiling.  Add meatballs.  Cover and simmer 15 minutes.  Salt and pepper to taste.  Add rice and simmer 15 minutes.  Salt and pepper to taste.  Add rice and simmer 15 minutes."@en ;
     :name "Mexican Meatball Soup"@en ;
@@ -6057,12 +6157,15 @@ recipes:MinestroneSoup a :Recipe ;
             :name "broken spaghetti"@en ],
         [ a :Ingredient ;
             :food food:Potatoes ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "potatoes, cubed"@en ],
         [ a :Ingredient ;
             :food food:Carrots ;
+            :hasStandardMeasurementUnit [ :quantity 6.0 ] ;
             :name "carrots, diced"@en ],
         [ a :Ingredient ;
             :food food:Celery ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "stalks of celery, chopped"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Homemade_minestrone.jpg?width=300> ;
     :instructions "Brown hamburger and onions.  Add all other ingredients with enough water to cover.  Simmer two to three hours then add spaghetti and cook until tender."@en ;
@@ -6103,6 +6206,7 @@ recipes:Minties a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :instructions "Beat eggs until thick and foamy.  Gradually add sugar and continue to beat.  Soften mint jelly with a fork and add oil.  Mix well.  Add the flour, baking powder, and salt.  Spread mixture in a 9\"x13\" pan that is oiled.  Bake at 350 degrees for 25 minutes.  Frost with mint frosting:  Cream 1/4 cup margarine.  Add 1/2 cup mint jelly.  Blend.  Add 2 cups sifted powdered sugar.  Mix Well.  Cut into 32 bars."@en ;
     :name "Minties"@en ;
@@ -6200,6 +6304,7 @@ recipes:MyBestGingerbread a :Recipe ;
             :name "hot water"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mjuk_pepparkaka_med_lingon.jpg?width=300> ;
     :instructions "Bake in greased pan for 35 minutes at 325-350 degrees."@en ;
@@ -6286,6 +6391,7 @@ recipes:OatmealCake a :Recipe ;
             :name "valencia peanuts"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/YorkShireParkin.jpg?width=300> ;
     :instructions "Pour the water over the oatmeal.  Let stand for 20 minutes.  Add remaining cake ingredients.  Mix well and pour into a greased 9\"x12\" pan.  Let stand while mixing topping.  To prepare topping:  Mix all ingredients together over low heat, until butter melts.  Spoon over unbaked cake.  Bake 45 minutes at 350 degrees."@en ;
@@ -6352,6 +6458,7 @@ recipes:OatmealCookies a :Recipe ;
             :name "walnuts"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Archway_Oatmeal_Raisin_cookies.jpg?width=300> ;
     :instructions "Mix ingredients in the order given.  Drop by teaspoonful onto a cookie sheet.  Bake 8-10 minutes at 350 degrees."@en ;
@@ -6407,6 +6514,7 @@ recipes:OatmealFudgeBars a :Recipe ;
             :name "vanilla"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ],
         [ a :Ingredient ;
             :food food:SweetChocolate ;
@@ -6594,6 +6702,7 @@ recipes:OrangeSweetPotatoes a :Recipe ;
             :name "powdered sugar"@en ],
         [ a :Ingredient ;
             :food food:Oranges ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "oranges, sliced thin"@en ] ;
     :instructions """Peel and cut potatoes into 1/2 inch slices. Put potatoes in a large pot of water, butter and sugar. Boil to fork tender. Do not overcook. Save liquid.
 Gently remove potatoes and layer in a 9x13 inch baking dish. Top with orange slices. Cook liquid down until syrupy. Pour over potatoes. Sprinkle with cinnamon.
@@ -6686,9 +6795,11 @@ recipes:ParsleyandParmasenBakedChicken a :Recipe ;
             :name "pepper"@en ],
         [ a :Ingredient ;
             :food food:Chicken ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "chicken, cut up"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :instructions "Marinate chicken for 4 hours in the dressing. Spoon over and turn occasionally. Drain. Reserve dressing. Combine eggs and water. Mix the rest of the ingredients in a plastic bag. Dip chicken in egg, then in crumbs and return to baking dish. Spoon dressing on top. Bake at 350 degrees for 40 to 50 minutes."@en ;
     :name "Parsley and Parmasen Baked Chicken"@en .
@@ -6864,8 +6975,10 @@ recipes:PeachParfaitPie a :Recipe ;
             :name "heavy cream"@en ],
         [ a :Ingredient ;
             :food food:Fresh ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "fresh peaches, peeled and diced"@en ],
         [ a :Ingredient ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "baked pie shell, chilled"@en ] ;
     :instructions "Dissolve gelatin in hot water.  At once add 1/4 of ice cream and stir until blended.  Repeat until all of ice cream is added.  Chill until almost firm.  Mix peaches with sugar and fold into mixture.  Pour into baked shell and chill unit firm.  Whip cream and spread on pie."@en ;
     :name "Peach Parfait Pie"@en ;
@@ -6915,6 +7028,7 @@ recipes:PeanutButterCookies a :Recipe ;
             :name "vanilla"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Peanut_butter_cookies,_September_2009.jpg?width=300> ;
     :instructions "Form into balls.  Flatten with fork dipped in flour or sugar. Bake for 8 minutes at 375 degrees."@en ;
@@ -6989,9 +7103,11 @@ recipes:PeanutButterPie a :Recipe ;
             :name "whipped cream"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "eggs, slightly beaten"@en ],
         [ a :Ingredient ;
             :food food:Pie ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "pie shell, unbaked"@en ] ;
     :instructions "Combine first 5 ingredients.  Mix thoroughly.  Pour into pie shell.  Bake at 350 degrees for 15 minutes.  Reduce heat to 350 degrees and bake for 30 to 35 minutes.  It should appear less set in the center.  Chill.  Top with whipped cream."@en ;
     :name "Peanut Butter Pie"@en ;
@@ -7130,6 +7246,7 @@ recipes:Pineapple-CarrotCake a :Recipe ;
             :name "water"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Carrot_cake_at_America_Graffiti_(cropped).jpg?width=300> ;
     :instructions "Mix all cake ingredients.  Bake in greased and floured 9\"x13\" pan at 350 degrees for 35 minutes.  Frost when cool."@en ;
@@ -7198,6 +7315,7 @@ recipes:PineappleGrahamBars a :Recipe ;
             :name "walnuts, chopped"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :instructions "Preheat oven to 350 degrees.  Lightly grease 8\"x8\"x2\" pan.  Mix butter with sugar until light.  Beat in egg.  Stir in flour, graham cracker crumbs, pineapple, and walnuts.  Bake 30-35 minutes or until browned and surface is firm to the touch.  Let cool completely in plan. Cut into 20 bars."@en ;
     :name "Pineapple Graham Bars"@en ;
@@ -7334,6 +7452,7 @@ recipes:PotatoeCake a :Recipe ;
             :name "vanilla"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "eggs, beaten separately"@en ] ;
     :instructions "Mix in order given.   Bake at 350 degrees for 25 minutes in two, 9\" pans."@en ;
     :name "Potatoe Cake"@en ;
@@ -7397,6 +7516,7 @@ recipes:PruneNutBars a :Recipe ;
             :name "coconut"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Cook Prunes - drain and chop.  Mix margarine, sugar and 1 cup of four.  Press into 9\" square pan.  Bake at 350 degrees for 25 minutes.   Sift remaining 1/3 cup flour with baking powder and salt.  Beat brown sugar into eggs, lemon and vanilla.  Add flour, mix well.  Add prunes, nuts, and coconut.  Spread over baked bars.  Bake at 350 degrees for 30-35 minutes.  Cool.  Cut into 24 bars.  Roll in confectioner's sugar."@en ;
     :name "Prune Nut Bars"@en ;
@@ -7480,6 +7600,7 @@ recipes:PumpkinOatmealCookies a :Recipe ;
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Mix eggs, sugar, oil, spices, and pumpkin.  Add oats, soda, salt nuts, and raisins.  Mix well.  Add flour, 1/2 at a time.  Drop by teaspoons on ungreased cookie sheet.  (These will not spread.)  Bake 10 minutes at 325 degrees.  Remove from pan.  Store in tightly sealed container."@en ;
     :name "Pumpkin Oatmeal Cookies"@en ;
@@ -7528,6 +7649,7 @@ recipes:PumpkinSwirlCheesecake a :Recipe ;
             :name "nutmeg"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "eggs"@en ] ;
     :instructions """CRUST:  Combine crumbs and melted margarine, press into bottom and sides of 9 inch form pan.
 FILLING:  Combine cheese, 1/2 cup sugar and vanilla.  Mix at medium speed until well blended.  Add eggs, one at a time.  Reserve 1 cup of this mixture, then add pumpkin, remaining sugar and spices to remaining cheese mixture.  Mix well.  Layer half of pumpkin mixture an half of cheese mixture over crust.  Repeat layers.  Cut through bater with knife several times to marble.  Bake at 350 degrees for 55 minutes.  Loosen from rim of pan.  Cool before removing.  Chill."""@en ;
@@ -7586,7 +7708,6 @@ Stir in remaining ingredients. Pour into 2 1/2 quart casserole. Bake 30-45 minut
     :name "Ranch-style Baked Beans"@en .
 
 recipes:RefrigeratorCheesecake a :Recipe ;
-    rdfs:label "Mango float"@en ;
     :hasIngredient [ a :Ingredient ;
             :food food:CottageCheese ;
             :hasImperialMeasurementUnit [ :quantity 1.0 ;
@@ -7644,12 +7765,11 @@ recipes:RefrigeratorCheesecake a :Recipe ;
             :name "heavy cream"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs, separated"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mango_float_(Crema_de_Mangga)_-_Philippines.jpg?width=300> ;
     :instructions "Crush flakes, mix with butter and sugar.  Press 3/4 of mixture into spring for pan.  Chill.  Soften gelatin in water.  Beat egg yolks slightly; stir in salt, sugar and milk.  Cook over hot water or very low heat.  Stir constantly until it thickens.  Remove from heat.  Stir in softened gelatin.  Cool.  Beat cheese until creamy.  Combine with lemon rind and juice.  Add to gelatin mixture, mixing well.  Whip cream until stiff.  Beat egg whites until stiff but not dry.  Fold cheese mixture to whipped cream.  Spread in pan over crumb mixture.  Sprinkle remaining crumbs on top.  Chill until firm."@en ;
     :name "Refrigerator Cheesecake"@en ;
-    :recipeCategory "Cakes"@en ;
-    owl:sameAs dbpedia:Mango_float .
+    :recipeCategory "Cakes"@en .
 
 recipes:Sandras%22TreeTrimmer%22Chicken a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -7758,12 +7878,15 @@ recipes:SaucyShrimpOverChineseNoodleCakes a :Recipe ;
             :name "celery, thinly sliced diagonally"@en ],
         [ a :Ingredient ;
             :food food:BellPepper ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "green bell pepper, chunked"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "medum onion, chunked"@en ],
         [ a :Ingredient ;
             :food food:Tomatoes ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "tomatoes"@en ] ;
     :instructions "Prepare Chinese noodle cakes. Combine water, 1 tablespoon cornstarch and 3 tablespoons soy sauce with ketchup; set aside. Blend remaining 1 tablespoon each cornstarch and soy sauce in small bowl; stir in shrimp until coated. Heat 1 tablespoon oil in hot wok or large skillet over high heat. Add shrimp and stir-fry 1 minute; remove. Heat reamining 1 tablespoon oil in same pan. Add garlic and ginger; stir-fry until fragrant. Add green pepper, onion and celery; stir-fry 4 minutes. Stir in soy sauce mixture, shrimp and tomatoes. Cook and stir until sauce boils and thickens. Cut Chinese noodle cakes into squares and serve with shrimp mixture."@en ;
     :name "Saucy Shrimp Over Chinese Noodle Cakes"@en .
@@ -7815,6 +7938,7 @@ recipes:SautedChickenBreats a :Recipe ;
             :name "cooked rice"@en ],
         [ a :Ingredient ;
             :food food:Chicken ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "chicken breasts, skinned and b1d"@en ] ;
     :instructions "Brown chicken with paprika. Cook 15 minutes. Remove to warm platter. Cook mushrooms in wine. Add bouillon, 4, and seasonings. Put rice on platter with chicken. Pour mushroom sauce over all."@en ;
     :name "Saute'd Chicken Breats"@en .
@@ -7935,6 +8059,7 @@ recipes:SavoryChickenCasserole a :Recipe ;
             :name "onions"@en ],
         [ a :Ingredient ;
             :food food:Carrots ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "carrots, cut into chunks"@en ] ;
     :instructions """Brown chicken in shortening.
 In skillet blend: cream of chicken soup, milk, poultry seasoning, salt and pepper. Add carrots, onions, and lima beans.
@@ -7942,8 +8067,8 @@ Cover, cook 20 minutes. Pour over chicken. Bake covered at 375 degrees for 1 hou
     :name "Savory Chicken Casserole"@en .
 
 recipes:SavoryGoulash a :Recipe ;
-    rdfs:label "Comfort food"@en,
-        "Aliment-réconfort"@fr ;
+    rdfs:label "Paprika"@en,
+        "Paprika"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Steak ;
             :hasImperialMeasurementUnit [ :quantity 1.5 ;
@@ -7981,11 +8106,12 @@ recipes:SavoryGoulash a :Recipe ;
             :name "sour cream"@en ],
         [ a :Ingredient ;
             :food food:Onions ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "sliced onions"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chicken_noodle_soup_(cropped).jpg?width=300> ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pimentón_Tap_de_Cortí_(cropped).jpg?width=300> ;
     :instructions "Brown onion and meat. Add tomato sauce and water. Cook for 2 hours and serve over hot noodles."@en ;
     :name "Savory Goulash"@en ;
-    owl:sameAs dbpedia:Comfort_food .
+    owl:sameAs dbpedia:Paprika .
 
 recipes:SherryWineCake a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -8015,6 +8141,7 @@ recipes:SherryWineCake a :Recipe ;
             :name "nutmeg"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Beat for 5 minutes.  Bake for 45 minutes at 350 degrees in angel food pan that has been greased and floured.  Turn to 300 degrees after 20 minutes."@en ;
     :name "Sherry Wine Cake"@en ;
@@ -8067,6 +8194,7 @@ recipes:ShrimpSaute a :Recipe ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ] ;
             :name "fresh parsely, chopped"@en ] ;
     :instructions "In a skillet, melt butter over medium heat. Add shrimp, mushrooms, green pepper and garlic. Saute until shrimp turn pink, about 3-5 minutes. Meanwhile, cook pasta according to package directions; drain and place on a large serving platter. Top with shrimp mixture. Sprinkle with cheese, salt, pepper and parsley. Toss well; garnish with lemon. Serve immediately."@en ;
     :name "Shrimp Saute"@en .
@@ -8175,6 +8303,7 @@ recipes:Snickerdoodles a :Recipe ;
             :name "cinnamon"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pile_of_snickerdoodles.jpg?width=300> ;
     :instructions "Mix first 7 ingredients.  Roll in balls.  Dip in mixture of cinnamon and sugar.  Bake for 8-10 minutes at 375 degrees.  Makes 4 dozen."@en ;
@@ -8225,6 +8354,7 @@ recipes:SoftSugarCookies a :Recipe ;
             :name "sour cream"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Cream butter.  Add sugar gradually while continuing to cream.  Ad eggs one at a time, beating well after each.  Add vanilla.  Beat until light and fluffy.  Add mixed dry ingredients, alternately with sour cream; begin and end with dry ingredients.  For 3 inch cookies drop by heaping teaspoons.  With spatula flatten into circles about 2 inch wide.  Sprinkle with sugar and cinnamon.  Bake in hot oven - 400 degrees for 10-20 minutes.  Makes about thirty - 3 inch cookies."@en ;
     :name "Soft Sugar Cookies"@en ;
@@ -8321,9 +8451,11 @@ recipes:SoleThermidor a :Recipe ;
             :name "lemon juice or sherry"@en ],
         [ a :Ingredient ;
             :food food:GreenOnions ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "chopped green onions"@en ],
         [ a :Ingredient ;
             :food food:Mushrooms ;
+            :hasStandardMeasurementUnit [ :quantity 8.0 ] ;
             :name "sliced mushrooms"@en ] ;
     :instructions """Roll fish, cook in milk for 30 minutes at 375 degrees. Drain milk, make sauce with remaining ingredients, sprinkle with paprika. Pour over fish. Broil quickly. Serves 4-5.
 Line bottom of baking dish with half of the bacon. Cover with onion. Sprinkle on bay leaf. Place trout on top. Blend flour and margerine, spread on fish. Sprinkle with crumbs. Top with bacon. Bake uncovered at 375 degrees for 35-45 minutes until golden brown and flakey."""@en ;
@@ -8364,6 +8496,7 @@ recipes:SourCreamEnchiladas a :Recipe ;
             :name "enchilada sauce"@en ],
         [ a :Ingredient ;
             :food food:Corn ;
+            :hasStandardMeasurementUnit [ :quantity "12" ] ;
             :name "corn tortillas"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Enchilada_Rice_Beans.jpg?width=300> ;
     :instructions "Blend sour cream, onions, cumin, and cheese. Heat tortillas in oil to make them flexible. Put small amount of sauce in bottom of baking dish. Roll filling in tortillas. Place in pan. Put remained of sauce over top. Top with cheese. Bake at 375 degrees for 20 minutes. Make 6 servings. This recipe also works well for chicken enchiladas. Just add two cooked chicken breasts, cut into bite-size pieces."@en ;
@@ -8408,6 +8541,7 @@ recipes:SourCreamRaisinPie a :Recipe ;
             :name "nutmeg"@en ],
         [ a :Ingredient ;
             :food food:Yolks ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "egg yolks, slightly beaten"@en ] ;
     :instructions "Boil raisins in water until plump.  Add flour and sugar.  Cook to thicken slightly then add egg yolks, sour cream, vanilla and nutmeg.  Pour into 9\" bottom crust.  Add top crust.  Sprinkle with sugar.  Bake 50 minutes at 350 degrees."@en ;
     :name "Sour Cream Raisin Pie"@en ;
@@ -8489,6 +8623,7 @@ recipes:SpanishCreamPudding a :Recipe ;
             :name "vanilla"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Rew13c05-745a_Bread_Pudding.jpg?width=300> ;
     :instructions "Separate eggs. Put whites in large bowl. Mix sugar, gelatin and salt in double boiler, add milk. Place over medium heat. Stir well until gelatin dissolves, 3-6 minutes. Beat egg yolks with fork, gradually add milk. Cook in double boiler, but do not let water boil. Cook 10-15 minutes. Add flavoring. Drip at side of egg whites. Fold in gradually."@en ;
@@ -8584,6 +8719,7 @@ recipes:SpecialPruneCake a :Recipe ;
             :name "vanilla"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Plum_cake_08_ies.jpg?width=300> ;
     :instructions """Blend sugar and oil.  Add beaten eggs.  Add dry ingredients with buttermilk.  Add vanilla, prunes, and nuts.  Pour into buttered pan about 12"x8" in size.  Bake at 300 degrees for 45 minutes.  When cake is done and brown remove from oven and while still hot cover with icing.  
@@ -8671,6 +8807,7 @@ recipes:SpicyFruitandNutCake a :Recipe ;
             :name "unsalted butter"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cherry_madeira_cake.jpg?width=300> ;
     :instructions "Bake in greased and floured 9\" bundt pan at 350 degrees for 45-50 minutes.  Cool 15 minutes.  Loosen around edges with thin spatula.  Pierce with a wooden pick.  Glaze directions:  Cook glaze ingredients over medium heat until full boil and butter melts.  Ladle glaze over cake."@en ;
@@ -8744,6 +8881,7 @@ recipes:SpinachFritatta a :Recipe ;
             :name "swiss cheese, grated"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 5.0 ] ;
             :name "eggs"@en ] ;
     :instructions """Wash spinach. Cover and steam 3 to 4 minutes, just until wilted. refresh under cold water, drain and squeeze out all moisture. Chop to 3/4 cup. Set aside.
 Fry bacon and crumble, set aside.
@@ -8806,6 +8944,7 @@ recipes:SpinachPie a :Recipe ;
             :name "butter or margarine, melted"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Spanakopita.jpg?width=300> ;
     :instructions """Preheat oven to 350 degrees. Let pastry sheets warm to room temperature, according to directions on package. In 1/4 cup hot butter in medium skillet, saute onion until golden, about 5 minutes. Add spinach; stir to combine onion. Remove from heat.
@@ -8861,9 +9000,11 @@ recipes:SpinachSalad a :Recipe ;
             :name "sour cream"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg, slightly beaten"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg, hard-boiled"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Flickr_-_cyclonebill_-_Salat_af_spinat,_blommetomater,_gedeost_og_valnøddeolie.jpg?width=300> ;
     :instructions "Mix spinach and thinly sliced onion.  Fry bacon until crisp, drain.  To drippings add vinegar, water, sugar, and salt.  Bring to a boil.  Beat egg until light.  Add sour cream.  Pour boiling liquid over egg then pour back in skillet.  Cook over low heat until thick.  Pour over spinach, add bacon and chopped egg.  Toss lightly."@en ;
@@ -8945,9 +9086,11 @@ recipes:SpinachSaladwithAvocado a :Recipe ;
             :name "bacon, crisp and crumbled"@en ],
         [ a :Ingredient ;
             :food food:Avocado ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "avocado"@en ],
         [ a :Ingredient ;
             :food food:RedOnion ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "red onion"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Flickr_-_cyclonebill_-_Salat_af_spinat,_blommetomater,_gedeost_og_valnøddeolie.jpg?width=300> ;
     :instructions "Clean spinach.  Tear for salad.  Cut avocado in small pieces.  Sprinkle with lemon.  Slice onion as thin as possible.  Combine spinach, avocado, onion, and oranges.  Mix remaining ingredients to make dressing.  Pour dressing over salad.  Sprinkle on bacon bits."@en ;
@@ -8988,6 +9131,7 @@ recipes:SpinachSouffle a :Recipe ;
             :name "spinach, cooked"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "eggs, seperated"@en ] ;
     :instructions "Make white sauce using first 5 ingredients. Remove from heat. Stir in 3 beaten egg yolks. Add spinach. Fold in 3 stiffly beaten egg whites. Pore into a buttered dish. Bake at 400 degrees for 25 minutes. Serve at once."@en ;
     :name "Spinach Souffle"@en .
@@ -9027,12 +9171,15 @@ recipes:SpinachStrudels a :Recipe ;
             :name "dry bread crumbs"@en ],
         [ a :Ingredient ;
             :food food:Shallots ;
+            :hasStandardMeasurementUnit [ :quantity "24" ] ;
             :name "shallots, chopped"@en ],
         [ a :Ingredient ;
             :food food:PhylloPastry ;
+            :hasStandardMeasurementUnit [ :quantity "24" ] ;
             :name "phyllo pastry sheets"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs, bea10"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Strudel.jpg?width=300> ;
     :instructions """Butter baking sheets. Steam spinach for 5 minutes. Squeeze out moisture. Melt 6 tablespoons of butter in a heavy skillet over medium heat. Add shallots, cook for 3 minutes. Add spinach and cook until dry, about 8 minutes. Transfer to large bowl. Mix in all cheeses. Arrange 1 phyllo sheet on kitchen towel. Brush with melted butter. Sprinkle with 1 tablespoon of crumbs, top with second sheet, butter and crumbs. Repeat with third, butter and crumbs, spread 1/6 of spinach mix down 1 long side of pastry, 2 inches from edge. Fold 2 inches over filling, then fold in sides. Roll up. Put seam side down on baking sheet. Repeat with remaining filling and phyllo. Cut each strudel into 4 slices,cutting only 1/3 through. Brush with butter.
@@ -9083,6 +9230,7 @@ recipes:StrawberrySpiceLoaf a :Recipe ;
             :name "oil"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Bake in two 9\" loaf pans, greased and floured, at 350 degrees for one hour."@en ;
     :name "Strawberry Spice Loaf"@en ;
@@ -9122,9 +9270,11 @@ recipes:StuffedGreenPeppers a :Recipe ;
             :name "tomatoes"@en ],
         [ a :Ingredient ;
             :food food:Tomato ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "fresh ripe tomato"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Quinoa_stuffed_peppers.jpg?width=300> ;
     :instructions "Parboil peppers. Mix all the above. Fill peppers. Place in casserole. Pour tomato sauce over top. Bake 1 hour at 350 degrees."@en ;
@@ -9149,9 +9299,11 @@ recipes:StuffedZucchini a :Recipe ;
                     :unit measurements:Cup ] ;
             :name "croutons"@en ],
         [ a :Ingredient ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "boullion cube"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Punjene_tikvice.jpg?width=300> ;
     :instructions """Cook zucchini to fork tender. Slice lengthwise. Remove center pulp to bowl. Brown hambugrer or sausage with chopped onion. Mix with pulp. Add croutons that have been sof10ed in water boullion cube. Add spices to taste. Stir in 2 eggs. Mixture will be quite soft. Spoon into zucchini shells. Sprinkle with parmesan and melted butter or olive oil.
@@ -9192,6 +9344,7 @@ recipes:SummerFruitSalad a :Recipe ;
             :name "sour cream"@en ],
         [ a :Ingredient ;
             :food food:Cantaloupe ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ] ;
             :name "cantaloupe, cut into chunks"@en ] ;
     :instructions "Combine all ingredients.  Cover and chill several hours or overnight."@en ;
     :name "Summer Fruit Salad"@en ;
@@ -9210,6 +9363,7 @@ recipes:SummerSquash a :Recipe ;
             :name "parmesan cheese"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Boil squash until tender. Mash with butter, salt, pepper, worcestershire sauce, 2 eggs, cracker crumbs, onion and parmesan cheese. Put in casserole, top with paprika and bacon bits. Bake about 30 minutes."@en ;
     :name "Summer Squash"@en .
@@ -10273,147 +10427,195 @@ recipes:SweetandSourPork a :Recipe ;
             :name "pinapple chunks"@en ],
         [ a :Ingredient ;
             :food food:EggYolk ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg yolk"@en ],
         [ a :Ingredient ;
             :food food:GreenPepper ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "green pepper, sliced"@en ],
         [ a :Ingredient ;
             :food food:Carrot ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "carrot, diagonally sliced"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg, bea10"@en ],
         [ a :Ingredient ;
             :food food:GreenPepper ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "green pepper, sliced"@en ],
         [ a :Ingredient ;
             :food food:Carrot ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "carrot, diagonally sliced"@en ],
         [ a :Ingredient ;
             :food food:EggYolk ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg yolk"@en ],
         [ a :Ingredient ;
             :food food:GreenPepper ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "green pepper, sliced"@en ],
         [ a :Ingredient ;
             :food food:Carrot ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "carrot, diagonally sliced"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg, bea10"@en ],
         [ a :Ingredient ;
             :food food:GreenPepper ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "green pepper, sliced"@en ],
         [ a :Ingredient ;
             :food food:Carrot ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "carrot, diagonally sliced"@en ],
         [ a :Ingredient ;
             :food food:EggYolk ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg yolk"@en ],
         [ a :Ingredient ;
             :food food:GreenPepper ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "green pepper, sliced"@en ],
         [ a :Ingredient ;
             :food food:Carrot ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "carrot, diagonally sliced"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg, bea10"@en ],
         [ a :Ingredient ;
             :food food:GreenPepper ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "green pepper, sliced"@en ],
         [ a :Ingredient ;
             :food food:Carrot ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "carrot, diagonally sliced"@en ],
         [ a :Ingredient ;
             :food food:EggYolk ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg yolk"@en ],
         [ a :Ingredient ;
             :food food:GreenPepper ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "green pepper, sliced"@en ],
         [ a :Ingredient ;
             :food food:Carrot ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "carrot, diagonally sliced"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg, bea10"@en ],
         [ a :Ingredient ;
             :food food:GreenPepper ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "green pepper, sliced"@en ],
         [ a :Ingredient ;
             :food food:Carrot ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "carrot, diagonally sliced"@en ],
         [ a :Ingredient ;
             :food food:EggYolk ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg yolk"@en ],
         [ a :Ingredient ;
             :food food:GreenPepper ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "green pepper, sliced"@en ],
         [ a :Ingredient ;
             :food food:Carrot ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "carrot, diagonally sliced"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg, bea10"@en ],
         [ a :Ingredient ;
             :food food:GreenPepper ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "green pepper, sliced"@en ],
         [ a :Ingredient ;
             :food food:Carrot ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "carrot, diagonally sliced"@en ],
         [ a :Ingredient ;
             :food food:EggYolk ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg yolk"@en ],
         [ a :Ingredient ;
             :food food:GreenPepper ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "green pepper, sliced"@en ],
         [ a :Ingredient ;
             :food food:Carrot ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "carrot, diagonally sliced"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg, bea10"@en ],
         [ a :Ingredient ;
             :food food:GreenPepper ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "green pepper, sliced"@en ],
         [ a :Ingredient ;
             :food food:Carrot ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "carrot, diagonally sliced"@en ],
         [ a :Ingredient ;
             :food food:EggYolk ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg yolk"@en ],
         [ a :Ingredient ;
             :food food:GreenPepper ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "green pepper, sliced"@en ],
         [ a :Ingredient ;
             :food food:Carrot ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "carrot, diagonally sliced"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg, bea10"@en ],
         [ a :Ingredient ;
             :food food:GreenPepper ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "green pepper, sliced"@en ],
         [ a :Ingredient ;
             :food food:Carrot ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "carrot, diagonally sliced"@en ],
         [ a :Ingredient ;
             :food food:EggYolk ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg yolk"@en ],
         [ a :Ingredient ;
             :food food:GreenPepper ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "green pepper, sliced"@en ],
         [ a :Ingredient ;
             :food food:Carrot ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "carrot, diagonally sliced"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg, bea10"@en ],
         [ a :Ingredient ;
             :food food:GreenPepper ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "green pepper, sliced"@en ],
         [ a :Ingredient ;
             :food food:Carrot ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "carrot, diagonally sliced"@en ],
         [ a :Ingredient ;
             :food food:Pork ;
@@ -10779,6 +10981,7 @@ recipes:ThreeCheeseSpinach a :Recipe ;
             :name "grated swiss cheese"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs, lightly beaten"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Queijo_Minas_Frescal.jpg?width=300> ;
     :instructions """Combine onions and mushrooms in small microwave-safe bowl. Microwave 1 to 3 minutes or until onions are soft. Place spinach in 1 1/2 quart microwave-safe casserole. Cover and microwave 6 to 9 minutes, breaking up and rearranging every 3 minutes, until defrosted. Drain well.
@@ -10861,6 +11064,7 @@ recipes:ThumbprintCookies a :Recipe ;
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :instructions "Mix first 5 ingredients.  Add flour.  Roll into ball.   Make a thumbprint in each ball.  Cook 8-10 minutes at 350 degrees.  Fill with jelly or chopped nuts."@en ;
     :name "Thumbprint Cookies"@en ;
@@ -10945,9 +11149,11 @@ recipes:TortillaSoup a :Recipe ;
             :name "lettuce, shredded"@en ],
         [ a :Ingredient ;
             :food food:Lime ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "lime"@en ],
         [ a :Ingredient ;
             :food food:Corn ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "corn tortillas"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Tortilla_soup_(49461127193).jpg?width=300> ;
     :instructions "Cut 3 thin slices from the lime; set aside.  Squeeze 1 tsp juice from remaining lime; set aside.  In 2-qt. saucepan over medium heat, in 1 tbsp hot oil, cook onion, cumin, oregano, and garlic until onion is tender.  Add broth, water, tomato, chiles, and reserved lime juice.  Heat to boiling.  Reduce heat to low and cook for 10 minutes.  Meanwhile, cut tortillas into thin strips.  In a 10-inch skillet heat 1/2 inch oil to 375 degree.  Fry tortilla strips, a few at a time until crisp.  Remove to paper towel to drain.  Place several tortilla strips in 3 bowls.  Ladle soup into bowls; sprinkle with cheese.  Top with reserved lime slices and lettuce.  Serve immediately."@en ;
@@ -17482,6 +17688,7 @@ recipes:UpsideDownCake a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pineapple-upside-down-cake.jpg?width=300> ;
     :instructions "Melt butter in oven-proof skillet.  Add brown sugar.  Arrange fruit in pan.  To make cake batter, beat eggs about 5 minutes until thick and lemon colored.  Gradually add sugar.  Then add all at once fruit juice an vanilla.  Sift together and beat in flour, baking powder, and salt.  Pour batter over fruit an bake until done, about 45 minutes at 350 degrees."@en ;
@@ -17557,9 +17764,11 @@ recipes:VealParmigan a :Recipe ;
             :name "parmesan"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg, bea10"@en ] ;
     :instructions "Combine first 8 ingredients and simmer for 1 hour over medium-low heat. Dip Veal in egg and then in crumbs, mixed with half cup of parmesan. Brown lightly in hot oil. Place in single layer in large baking dish. Pour 2/3 cup of sauce over meat and bake at 350 degrees for 30 minutes. Place a slice of mozzarella on each meat slice. SPrinkle with remaining parmesan. return to oven for about 15 minutes."@en ;
     :name "Veal Parmigan"@en .
@@ -17630,6 +17839,7 @@ recipes:Walnut-Raisinpie a :Recipe ;
             :name "raisins"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Mix sugar and butter.  Add eggs one at a time, beating after each is added.  Add raisins nuts, and vanilla. Pour into unbaked pie shell.  Bake at 400 degrees for 10 minutes.  Reduce heat to 375 degrees for 30 minutes."@en ;
     :name "Walnut-Raisin pie"@en ;
@@ -17668,6 +17878,7 @@ recipes:WalnutPie a :Recipe ;
             :name "nutmeg"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Mix well.  Pour into unbaked pie shell.  Top with 1 cup walnuts or pecans.  Bake at 350 degrees for 1 hour."@en ;
     :name "Walnut Pie"@en ;
@@ -17701,6 +17912,7 @@ recipes:WalnutSquares a :Recipe ;
             :name "nuts, chopped"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :instructions "Cream butter and sugar.  Beat in egg yolk.  Sift four and spice, add to creamed mixture.  Spread dough in 15\"x10\"x1\" jelly roll pan.  Press flat with hands.  Beat egg white slightly, brush on dough.  Sprinkle nuts on top and press into dough.  Bake in 250 degree oven for 1 hour.  While hot cut into 1 1/2\" squares.  Cool.  Makes about 70."@en ;
     :name "Walnut Squares"@en ;
@@ -17791,6 +18003,7 @@ recipes:WildMushroomandSpinachLasanga a :Recipe ;
             :name "grated nutmeg"@en ],
         [ a :Ingredient ;
             :food food:Shallots ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "shallots, finely chopped"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Lasagne_-_stonesoup.jpg?width=300> ;
     :instructions """Cook lasagna noodles according to package intsructions; set aside. Place oil in large, heavy skillet over medium heat. Add garlic and shallots; cook about 5 minutes, until soft. Add mushrooms; cook until liquid is evaporated, about 10 minutes. With slotted spoon, transfer to a large bowl and reserve.
@@ -17852,9 +18065,11 @@ recipes:Zucchini-HamCheesePie a :Recipe ;
             :name "pepper"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
+            :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "onion, sliced thinly"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "eggs, beaten"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Quesadilla_2.jpg?width=300> ;
     :instructions """Saute onion, garlic, and zucchini in oil about 5 minutes, until tender. Removed from heat. Add ham, cheese, sour cream, eggs, and seasoning. Spoon into baked pie shell.
@@ -17896,6 +18111,7 @@ recipes:ZucchiniAppleSlaw a :Recipe ;
             :name "green onions, sliced"@en ],
         [ a :Ingredient ;
             :food food:Apples ;
+            :hasStandardMeasurementUnit [ :quantity "2" ] ;
             :name "tart apples, cut in chunks"@en ] ;
     :instructions "Mix together.  Put on crisp lettuce.  Top with dressing."@en ;
     :name "Zucchini Apple Slaw"@en ;
@@ -17954,6 +18170,7 @@ recipes:ZucchiniCasserole a :Recipe ;
             :name "pepper"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs, beaten"@en ] ;
     :instructions """Cook zucchini whole in small amount of water until crisp and tender. Cool. Saute onion and garlic in 4 tablespoons butter. Cube squash, add to onion. Stir in cheese and seasonings. Cool. Then mix with beaten eggs. Spoon in buttered baking dish, melt remaining butter, toss with bread crumbs. Sprinkle on top of zucchini mixture.
 Bake 35 to 45 minutes at 350 degrees until set. Serves 4-6"""@en ;
@@ -18007,27 +18224,10 @@ recipes:ZucchiniPatties a :Recipe ;
             :name "olive oil"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Courslet shred zucchini into a bowl. Press out water. Add rest of ingredients, except oil. Heat oil in skillet. Drop mixture by spoonfuls. Brown on both sides. May also be topped with spaghetti sauce."@en ;
     :name "Zucchini Patties"@en .
-
-food:AlmondExtract a :Food,
-        skos:Concept ;
-    rdfs:label "Almond"@en,
-        "Amandier"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Prunus_dulcis_-_Köhler–s_Medizinal-Pflanzen-250.jpg?width=300> ;
-    dcterms:subject <http://dbpedia.org/resource/Category:Almonds>,
-        <http://dbpedia.org/resource/Category:Crops>,
-        <http://dbpedia.org/resource/Category:Edible_nuts_and_seeds>,
-        <http://dbpedia.org/resource/Category:Flora_of_Asia>,
-        <http://dbpedia.org/resource/Category:Flora_of_Lebanon_and_Syria>,
-        <http://dbpedia.org/resource/Category:Fruit_trees>,
-        <http://dbpedia.org/resource/Category:Nut_oils>,
-        <http://dbpedia.org/resource/Category:Pollination_management>,
-        <http://dbpedia.org/resource/Category:Prunus>,
-        <http://dbpedia.org/resource/Category:Snack_foods>,
-        <http://dbpedia.org/resource/Category:Symbols_of_California> ;
-    owl:sameAs dbpedia:Almond .
 
 food:AngelFoodCake a :Food,
         skos:Concept ;
@@ -18075,6 +18275,23 @@ food:Bamboo a :Food,
         <http://dbpedia.org/resource/Category:Stem_vegetables> ;
     owl:sameAs dbpedia:Bamboo .
 
+food:BasilLeaves a :Food,
+        skos:Concept ;
+    rdfs:label "Basil"@en,
+        "Basilic (plante)"@fr ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Basil-Basilico-Ocimum_basilicum-albahaca.jpg?width=300> ;
+    dcterms:subject <http://dbpedia.org/resource/Category:Articles_containing_video_clips>,
+        <http://dbpedia.org/resource/Category:Flora_of_Asia>,
+        <http://dbpedia.org/resource/Category:Flora_of_New_Guinea>,
+        <http://dbpedia.org/resource/Category:Herbs>,
+        <http://dbpedia.org/resource/Category:Indian_spices>,
+        <http://dbpedia.org/resource/Category:Insect_repellents>,
+        <http://dbpedia.org/resource/Category:Medicinal_plants_of_Asia>,
+        <http://dbpedia.org/resource/Category:Mediterranean_cuisine>,
+        <http://dbpedia.org/resource/Category:Ocimum>,
+        <http://dbpedia.org/resource/Category:Taxa_named_by_Carl_Linnaeus> ;
+    owl:sameAs dbpedia:Basil .
+
 food:BeefBouillon a :Food,
         skos:Concept ;
     rdfs:label "Bouillon cube"@en,
@@ -18085,6 +18302,13 @@ food:BeefBouillon a :Food,
         <http://dbpedia.org/resource/Category:Food_ingredients>,
         <http://dbpedia.org/resource/Category:Umami_enhancers> ;
     owl:sameAs dbpedia:Bouillon_cube .
+
+food:BeefStock a :Food,
+        skos:Concept ;
+    rdfs:label "Stock (food)"@en ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Making_stock_for_pho_bo.jpg?width=300> ;
+    dcterms:subject <http://dbpedia.org/resource/Category:Stock_(food)> ;
+    owl:sameAs dbpedia:Stock_\(food\) .
 
 food:Berries a :Food,
         skos:Concept ;
@@ -18198,7 +18422,7 @@ food:Cashews a :Food,
         <http://dbpedia.org/resource/Category:Tropical_agriculture> ;
     owl:sameAs dbpedia:Cashew .
 
-food:CayennePepper a :Food,
+food:Cayenne a :Food,
         skos:Concept ;
     rdfs:label "Cayenne pepper"@en,
         "Piment de Cayenne"@fr ;
@@ -18550,6 +18774,14 @@ food:Honey a :Food,
         <http://dbpedia.org/resource/Category:Sugar_substitutes> ;
     owl:sameAs dbpedia:Honey .
 
+food:HotSauce a :Food,
+        skos:Concept ;
+    rdfs:label "Hot sauce"@en,
+        "Sauce piquante"@fr ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Fermented_hot_sauce.jpg?width=300> ;
+    dcterms:subject <http://dbpedia.org/resource/Category:Hot_sauces> ;
+    owl:sameAs dbpedia:Hot_sauce .
+
 food:Kelp a :Food,
         skos:Concept ;
     rdfs:label "Kelp"@en,
@@ -18578,7 +18810,7 @@ food:Lime a :Food,
         <http://dbpedia.org/resource/Category:Rock_salt_crystal_structure> ;
     owl:sameAs dbpedia:Calcium_oxide .
 
-food:Linguine a :Food,
+food:Linguini a :Food,
         skos:Concept ;
     rdfs:label "Linguine"@en,
         "Linguine"@fr ;
@@ -18703,21 +18935,6 @@ food:Olives a :Food,
         <http://dbpedia.org/resource/Category:Trees_of_Turkey> ;
     owl:sameAs dbpedia:Olive .
 
-food:Orange a :Food,
-        skos:Concept ;
-    rdfs:label "Orange (fruit)"@en,
-        "Orange (fruit)"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Oranges_-_whole-halved-segment.jpg?width=300> ;
-    dcterms:subject <http://dbpedia.org/resource/Category:Articles_containing_video_clips>,
-        <http://dbpedia.org/resource/Category:Cocktail_garnishes>,
-        <http://dbpedia.org/resource/Category:Crops_originating_from_China>,
-        <http://dbpedia.org/resource/Category:Fruits_originating_in_Asia>,
-        <http://dbpedia.org/resource/Category:Oranges_(fruit)>,
-        <http://dbpedia.org/resource/Category:Symbols_of_California>,
-        <http://dbpedia.org/resource/Category:Symbols_of_Florida>,
-        <http://dbpedia.org/resource/Category:Tropical_agriculture> ;
-    owl:sameAs dbpedia:Orange_\(fruit\) .
-
 food:OrangeJuice a :Food,
         skos:Concept ;
     rdfs:label "Orange juice"@en,
@@ -18782,14 +18999,6 @@ food:Pears a :Food,
         <http://dbpedia.org/resource/Category:Pears>,
         <http://dbpedia.org/resource/Category:Pyrus> ;
     owl:sameAs dbpedia:Pear .
-
-food:PepperSauce a :Food,
-        skos:Concept ;
-    rdfs:label "Hot sauce"@en,
-        "Sauce piquante"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Fermented_hot_sauce.jpg?width=300> ;
-    dcterms:subject <http://dbpedia.org/resource/Category:Hot_sauces> ;
-    owl:sameAs dbpedia:Hot_sauce .
 
 food:Pizza a :Food,
         skos:Concept ;
@@ -18931,17 +19140,6 @@ food:SeasoningMix a :Food,
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Garam_Masala.jpg?width=300> ;
     dcterms:subject <http://dbpedia.org/resource/Category:Herb_and_spice_mixtures> ;
     owl:sameAs dbpedia:Spice_mix .
-
-food:Seed a :Food,
-        skos:Concept ;
-    rdfs:label "Seed"@en,
-        "Graine"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Разнообразие_семян.jpg?width=300> ;
-    dcterms:subject <http://dbpedia.org/resource/Category:Botany>,
-        <http://dbpedia.org/resource/Category:Plant_reproduction>,
-        <http://dbpedia.org/resource/Category:Plant_sexuality>,
-        <http://dbpedia.org/resource/Category:Seeds> ;
-    owl:sameAs dbpedia:Seed .
 
 food:Spaghetti a :Food,
         skos:Concept ;
@@ -19165,6 +19363,14 @@ food:WhiteVinegar a :Food,
         <http://dbpedia.org/resource/Category:Vinegar> ;
     owl:sameAs dbpedia:Vinegar .
 
+food:Yolk a :Food,
+        skos:Concept ;
+    rdfs:label "Yolk"@en,
+        "Jaune d'œuf"@fr ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Raw_egg.jpg?width=300> ;
+    dcterms:subject <http://dbpedia.org/resource/Category:Eggs> ;
+    owl:sameAs dbpedia:Yolk .
+
 food:Allspice a :Food,
         skos:Concept ;
     rdfs:label "Allspice"@en,
@@ -19184,6 +19390,24 @@ food:Allspice a :Food,
         <http://dbpedia.org/resource/Category:Spices>,
         <http://dbpedia.org/resource/Category:Trees_of_Belize> ;
     owl:sameAs dbpedia:Allspice .
+
+food:Almonds a :Food,
+        skos:Concept ;
+    rdfs:label "Almond"@en,
+        "Amandier"@fr ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Prunus_dulcis_-_Köhler–s_Medizinal-Pflanzen-250.jpg?width=300> ;
+    dcterms:subject <http://dbpedia.org/resource/Category:Almonds>,
+        <http://dbpedia.org/resource/Category:Crops>,
+        <http://dbpedia.org/resource/Category:Edible_nuts_and_seeds>,
+        <http://dbpedia.org/resource/Category:Flora_of_Asia>,
+        <http://dbpedia.org/resource/Category:Flora_of_Lebanon_and_Syria>,
+        <http://dbpedia.org/resource/Category:Fruit_trees>,
+        <http://dbpedia.org/resource/Category:Nut_oils>,
+        <http://dbpedia.org/resource/Category:Pollination_management>,
+        <http://dbpedia.org/resource/Category:Prunus>,
+        <http://dbpedia.org/resource/Category:Snack_foods>,
+        <http://dbpedia.org/resource/Category:Symbols_of_California> ;
+    owl:sameAs dbpedia:Almond .
 
 food:Avocado a :Food,
         skos:Concept ;
@@ -19256,13 +19480,6 @@ food:Cereal a :Food,
         <http://dbpedia.org/resource/Category:Crops> ;
     owl:sameAs dbpedia:Cereal .
 
-food:ChickenStock a :Food,
-        skos:Concept ;
-    rdfs:label "Stock (food)"@en ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Making_stock_for_pho_bo.jpg?width=300> ;
-    dcterms:subject <http://dbpedia.org/resource/Category:Stock_(food)> ;
-    owl:sameAs dbpedia:Stock_\(food\) .
-
 food:Corn a :Food,
         skos:Concept ;
     rdfs:label "Maize"@en,
@@ -19310,16 +19527,6 @@ food:Cream a :Food,
     dcterms:subject <http://dbpedia.org/resource/Category:Condiments>,
         <http://dbpedia.org/resource/Category:Dairy_products> ;
     owl:sameAs dbpedia:Cream .
-
-food:Crumbs a :Food,
-        skos:Concept ;
-    rdfs:label "Bread crumbs"@en,
-        "Chapelure"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Breadcrumb.jpg?width=300> ;
-    dcterms:subject <http://dbpedia.org/resource/Category:Breads>,
-        <http://dbpedia.org/resource/Category:Food_industry>,
-        <http://dbpedia.org/resource/Category:Food_ingredients> ;
-    owl:sameAs dbpedia:Bread_crumbs .
 
 food:Dill a :Food,
         skos:Concept ;
@@ -19523,7 +19730,22 @@ food:Oats a :Food,
         <http://dbpedia.org/resource/Category:Staple_foods> ;
     owl:sameAs dbpedia:Oat .
 
-food:Peanut a :Food,
+food:Oranges a :Food,
+        skos:Concept ;
+    rdfs:label "Orange (fruit)"@en,
+        "Orange (fruit)"@fr ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Oranges_-_whole-halved-segment.jpg?width=300> ;
+    dcterms:subject <http://dbpedia.org/resource/Category:Articles_containing_video_clips>,
+        <http://dbpedia.org/resource/Category:Cocktail_garnishes>,
+        <http://dbpedia.org/resource/Category:Crops_originating_from_China>,
+        <http://dbpedia.org/resource/Category:Fruits_originating_in_Asia>,
+        <http://dbpedia.org/resource/Category:Oranges_(fruit)>,
+        <http://dbpedia.org/resource/Category:Symbols_of_California>,
+        <http://dbpedia.org/resource/Category:Symbols_of_Florida>,
+        <http://dbpedia.org/resource/Category:Tropical_agriculture> ;
+    owl:sameAs dbpedia:Orange_\(fruit\) .
+
+food:Peanuts a :Food,
         skos:Concept ;
     rdfs:label "Peanut"@en,
         "Arachide"@fr ;
@@ -19907,14 +20129,16 @@ food:RedWine a :Food,
     owl:sameAs dbpedia:Red_wine ;
     skos:broader dbpedia:Wine .
 
-food:SaladOil a :Food,
+food:Seeds a :Food,
         skos:Concept ;
-    rdfs:label "Vegetable oil"@en,
-        "Huile végétale"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Olive_oil_from_Oneglia.jpg?width=300> ;
-    dcterms:subject <http://dbpedia.org/resource/Category:Plant_products>,
-        <http://dbpedia.org/resource/Category:Vegetable_oils> ;
-    owl:sameAs dbpedia:Vegetable_oil .
+    rdfs:label "Seed"@en,
+        "Graine"@fr ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Разнообразие_семян.jpg?width=300> ;
+    dcterms:subject <http://dbpedia.org/resource/Category:Botany>,
+        <http://dbpedia.org/resource/Category:Plant_reproduction>,
+        <http://dbpedia.org/resource/Category:Plant_sexuality>,
+        <http://dbpedia.org/resource/Category:Seeds> ;
+    owl:sameAs dbpedia:Seed .
 
 food:Shrimp a :Food,
         skos:Concept ;
@@ -19951,23 +20175,6 @@ food:Spice a :Food,
     dcterms:subject <http://dbpedia.org/resource/Category:Plant_products>,
         <http://dbpedia.org/resource/Category:Spices> ;
     owl:sameAs dbpedia:Spice .
-
-food:Basil a :Food,
-        skos:Concept ;
-    rdfs:label "Basil"@en,
-        "Basilic (plante)"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Basil-Basilico-Ocimum_basilicum-albahaca.jpg?width=300> ;
-    dcterms:subject <http://dbpedia.org/resource/Category:Articles_containing_video_clips>,
-        <http://dbpedia.org/resource/Category:Flora_of_Asia>,
-        <http://dbpedia.org/resource/Category:Flora_of_New_Guinea>,
-        <http://dbpedia.org/resource/Category:Herbs>,
-        <http://dbpedia.org/resource/Category:Indian_spices>,
-        <http://dbpedia.org/resource/Category:Insect_repellents>,
-        <http://dbpedia.org/resource/Category:Medicinal_plants_of_Asia>,
-        <http://dbpedia.org/resource/Category:Mediterranean_cuisine>,
-        <http://dbpedia.org/resource/Category:Ocimum>,
-        <http://dbpedia.org/resource/Category:Taxa_named_by_Carl_Linnaeus> ;
-    owl:sameAs dbpedia:Basil .
 
 food:Beans a :Food,
         skos:Concept ;
@@ -20101,19 +20308,6 @@ food:Prunes a :Food,
         <http://dbpedia.org/resource/Category:Laxatives>,
         <http://dbpedia.org/resource/Category:Plums> ;
     owl:sameAs dbpedia:Prune .
-
-food:Rind a :Food,
-        skos:Concept ;
-    rdfs:label "Cheese"@en,
-        "Fromage"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cheese_(1105942243).jpg?width=300> ;
-    dcterms:subject <http://dbpedia.org/resource/Category:Ancient_dishes>,
-        <http://dbpedia.org/resource/Category:Articles_containing_video_clips>,
-        <http://dbpedia.org/resource/Category:Cheese>,
-        <http://dbpedia.org/resource/Category:Condiments>,
-        <http://dbpedia.org/resource/Category:Dairy_products>,
-        <http://dbpedia.org/resource/Category:Types_of_food> ;
-    owl:sameAs dbpedia:Cheese .
 
 food:Sauce a :Food,
         skos:Concept ;
@@ -20503,6 +20697,16 @@ food:Bacon a :Food,
     skos:broader dbpedia:Curing_\(food_preservation\),
         dbpedia:Pork .
 
+food:BreadCrumbs a :Food,
+        skos:Concept ;
+    rdfs:label "Bread crumbs"@en,
+        "Chapelure"@fr ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Breadcrumb.jpg?width=300> ;
+    dcterms:subject <http://dbpedia.org/resource/Category:Breads>,
+        <http://dbpedia.org/resource/Category:Food_industry>,
+        <http://dbpedia.org/resource/Category:Food_ingredients> ;
+    owl:sameAs dbpedia:Bread_crumbs .
+
 food:Broccoli a :Food,
         skos:Concept ;
     rdfs:label "Broccoli"@en,
@@ -20515,14 +20719,6 @@ food:Broccoli a :Food,
         <http://dbpedia.org/resource/Category:Inflorescence_vegetables>,
         <http://dbpedia.org/resource/Category:Italian_words_and_phrases> ;
     owl:sameAs dbpedia:Broccoli .
-
-food:EggYolk a :Food,
-        skos:Concept ;
-    rdfs:label "Yolk"@en,
-        "Jaune d'œuf"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Raw_egg.jpg?width=300> ;
-    dcterms:subject <http://dbpedia.org/resource/Category:Eggs> ;
-    owl:sameAs dbpedia:Yolk .
 
 food:PowderedSugar a :Food,
         skos:Concept ;
@@ -20674,6 +20870,15 @@ food:Zucchini a :Food,
     dcterms:subject <http://dbpedia.org/resource/Category:Fruit_vegetables>,
         <http://dbpedia.org/resource/Category:Squashes_and_pumpkins> ;
     owl:sameAs dbpedia:Zucchini .
+
+food:VegetableOil a :Food,
+        skos:Concept ;
+    rdfs:label "Vegetable oil"@en,
+        "Huile végétale"@fr ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Olive_oil_from_Oneglia.jpg?width=300> ;
+    dcterms:subject <http://dbpedia.org/resource/Category:Plant_products>,
+        <http://dbpedia.org/resource/Category:Vegetable_oils> ;
+    owl:sameAs dbpedia:Vegetable_oil .
 
 food:Pineapple a :Food,
         skos:Concept ;
@@ -21010,6 +21215,19 @@ food:Chicken a :Food,
     owl:sameAs dbpedia:Chicken,
         dbpedia:Chicken_as_food .
 
+food:Cheese a :Food,
+        skos:Concept ;
+    rdfs:label "Cheese"@en,
+        "Fromage"@fr ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cheese_(1105942243).jpg?width=300> ;
+    dcterms:subject <http://dbpedia.org/resource/Category:Ancient_dishes>,
+        <http://dbpedia.org/resource/Category:Articles_containing_video_clips>,
+        <http://dbpedia.org/resource/Category:Cheese>,
+        <http://dbpedia.org/resource/Category:Condiments>,
+        <http://dbpedia.org/resource/Category:Dairy_products>,
+        <http://dbpedia.org/resource/Category:Types_of_food> ;
+    owl:sameAs dbpedia:Cheese .
+
 food:Eggs a :Food,
         skos:Concept ;
     rdfs:label "Egg"@en,
@@ -21237,5 +21455,6455 @@ food:Butter a :Food,
         <http://dbpedia.org/resource/Category:Spreads_(food)> ;
     owl:sameAs dbpedia:Butter .
 
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.125 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 4.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.25 .
+
+[] :quantity 2.25 .
+
+[] :quantity 2.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 4.0 .
+
+[] :quantity 0.125 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 8.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 4.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.75 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 2.25 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.75 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.125 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity "10" .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 9.0 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.75 .
+
+[] :quantity 3.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.75 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 6.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.125 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 8.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 6.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.125 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.125 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity "1.25" .
+
+[] :quantity 2.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 5.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 1.25 .
+
+[] :quantity 0.125 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity measurements:Few .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.125 .
+
+[] :quantity 2.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.75 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.25 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.125 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 6.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 6.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.5 .
+
+[] :quantity 4.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 18.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 6.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.125 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity "3" .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.75 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 5.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.75 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.25 .
+
+[] :quantity 4.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity measurements:Few .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.6666666666666666 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.3333333333333333 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.25 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.125 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.75 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.75 .
+
+[] :quantity 0.75 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.75 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.125 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 6.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.5 .
+
+[] :quantity "18" .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity "16" .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.125 .
+
+[] :quantity 0.75 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 6.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.125 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 0.125 .
+
+[] :quantity 0.125 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.125 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.5 .
+
+[] :quantity 6.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity "2" .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity "4" .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 1.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 4.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.125 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 5.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity "12" .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity "5" .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 2.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 0.125 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 4.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 9.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.75 .
+
+[] :quantity 0.125 .
+
+[] :quantity 0.5 .
+
+[] :quantity 8.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 5.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity "12" .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 6.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.25 .
+
+[] :quantity 0.75 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
 [] :hasStandardMeasurementUnit [ :unit measurements:Teaspoon ] .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity "3" .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.125 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 5.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity "10" .
+
+[] :quantity 6.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 5.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity "10" .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity "10" .
+
+[] :quantity 0.5 .
+
+[] :quantity 6.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity "2" .
+
+[] :quantity 3.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity "12" .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 8.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.6666666666666666 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity "5" .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 8.0 .
+
+[] :quantity 1.75 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.3333333333333333 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 6.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 4.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 8.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity "24" .
+
+[] :quantity "24" .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 6.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity "4" .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity "4" .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 6.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.5 .
+
+[] :quantity 6.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity "10" .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 6.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.3333333333333333 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity "2" .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity "32" .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 8.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity "4" .
+
+[] :quantity 2.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 5.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 4.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity "0.25" .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.125 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 5.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 5.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.75 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
 
