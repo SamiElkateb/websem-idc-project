@@ -87,7 +87,7 @@ async def get_recipe(recipe_identifier: str):
             IF(BOUND(?labelUnitImperial),?labelUnitImperial,
             IF(BOUND(?labelUnitMetric),?labelUnitMetric, ""))) AS ?labelUnit)
             BIND(IF(?labelUnit!="",CONCAT(?labelUnit," of "),?labelUnit) AS ?unit)
-            BIND(LCASE(CONCAT(STR(?ingredientQuantity)," ",?unit,?ingredientName)) AS ?query)
+            BIND(LCASE(CONCAT(REPLACE(STR(?ingredientQuantity),".",",")," ",?unit,?ingredientName)) AS ?query)
 
             BIND(IF(BOUND(?ingredientQuantityStandard),?ingredientQuantityStandard,"") AS ?ingredientQuantityStandardName)
             BIND(IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityImperial,?ingredientQuantityStandardName) AS ?ingredientQuantityImperialName)
@@ -108,62 +108,64 @@ async def get_recipe(recipe_identifier: str):
         },
     )
     row_url = get_row(results)
-    print("Label",row_url.recipeLabel)
-    print("URL", row_url.urlMicroServ)
-    print("Metrics : \n", row_url.ingredientMetricQuantities, "\n", row_url.ingredientImperialQuantities)
-    print("Units : \n", row_url.labelUnitMetricNames, "\n", row_url.labelUnitImperialNames)
-    print("Names : \n", row_url.ingredientNames)
-    query = """
+    # print("Label",row_url.recipeLabel)
+    # print("URL", row_url.urlMicroServ)
+    # print("Metrics : \n", row_url.ingredientMetricQuantities, "\n", row_url.ingredientImperialQuantities)
+    # print("Units : \n", row_url.labelUnitMetricNames, "\n", row_url.labelUnitImperialNames)
+    # print("Names : \n", row_url.ingredientNames)
+
+    query = f"""
     prefix :        <http://project-kitchenchef.fr/schema#>
     prefix recipes: <http://project-kitchenchef.fr/recipes/data#>
     prefix skos:    <http://www.w3.org/2004/02/skos/core#>
     prefix dbo:    <http://dbpedia.org/ontology/>
     prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
     
-    SELECT * WHERE {
-    {
+    SELECT * WHERE {{
+    {{
         SELECT ?recipe ?name ?category ?instructions ?thumbnail
         (group_concat(?ingredient; separator="|-|") AS ?ingredientIds)
         (group_concat(?ingredientFood; separator="|-|") AS ?ingredientFoods)
-        WHERE {
+        WHERE {{
             ?recipe :hasIngredient ?ingredient .
-            OPTIONAL { ?recipe :recipeCategory ?category . }
-            OPTIONAL { ?recipe :instructions ?instructions . }
-            OPTIONAL { ?recipe :hasThumbnail ?thumbnail . }
+            OPTIONAL {{ ?recipe :recipeCategory ?category . }}
+            OPTIONAL {{ ?recipe :instructions ?instructions . }}
+            OPTIONAL {{ ?recipe :hasThumbnail ?thumbnail . }}
             ?ingredient :food ?ingredientFood ;
             :name ?ingredientName ;
-            OPTIONAL { ?ingredient :food ?ingredientFood . }
-            FILTER(?recipe = <"""+URIRef(recipe_identifier)+""">)
-        }GROUP BY ?recipe
-    }
-    {
-        SELECT * WHERE {
-            SERVICE <"""+row_url.urlMicroServ+"""> {
+            OPTIONAL {{ ?ingredient :food ?ingredientFood . }}
+            FILTER(?recipe = <{URIRef(recipe_identifier)}>)
+        }}GROUP BY ?recipe
+    }}
+    {{
+        SELECT * WHERE {{
+            SERVICE <{row_url.urlMicroServ}> {{
                 ?x :hasCalories ?kcal; :hasTotalFat ?fat; :hasCarbohydratesTotal ?carbs; :hasSugar ?sugar; :hasFiber ?fiber; :hasProtein ?proteins .
-            }
-        }
-    }
-    {
-        SELECT ?comment WHERE {
-            OPTIONAL {
-            SERVICE <https://dbpedia.org/sparql> {
-                ?ing rdfs:label ?nameRecipe ; dbo:abstract ?abstract .
-                FILTER(?nameRecipe = \""""+row_url.recipeLabel+"""\"@en && LANG(?abstract)="en")
             }}
-            BIND(IF(BOUND(?abstract),?abstract,"") AS ?comment)
-        }
-    }
-}
+        }}
+    }}
+    {{
+        SELECT ?comment WHERE {{
+            OPTIONAL {{
+                SERVICE <https://dbpedia.org/sparql> {{
+                    ?ing rdfs:label ?nameRecipe ; dbo:abstract ?abstract .
+                    FILTER(?nameRecipe = "{row_url.recipeLabel}"@en && LANG(?abstract)="en")
+                }}
+            }}
+            BIND(IF(BOUND(?abstract), ?abstract, "") AS ?comment)
+        }}
+    }}
+    }}
     """
     results = g.query(
         query
     )
     row = get_row(results)
-    print("Kcal", row.kcal, "Fat", row.fat, "Carbs", row.carbs, "Sugar", row.sugar, "Fiber", row.fiber, "Proteins", row.proteins)
-    try:
-        print("Abstract", row.comment)
-    except Exception:
-        print("No abstract found")
+    # print("Kcal", row.kcal, "Fat", row.fat, "Carbs", row.carbs, "Sugar", row.sugar, "Fiber", row.fiber, "Proteins", row.proteins)
+    # try:
+    #     print("Abstract", row.comment)
+    # except Exception:
+    #     print("No abstract found")
     ingredients = IngredientFactory.from_strings(
         row.ingredientIds,
         row_url.ingredientNames,
