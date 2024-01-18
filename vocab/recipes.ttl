@@ -4675,6 +4675,7 @@ recipes:FreshStrawberryPie a :Recipe ;
     owl:sameAs dbpedia:Strawberry_pie .
 
 recipes:FrostedDelights a :Recipe ;
+    rdfs:label "Frosted Mini-Wheats"@en ;
     :hasIngredient [ a :Ingredient ;
             :food food:Flour ;
             :hasStandardMeasurementUnit [ :quantity 1.5 ;
@@ -4723,9 +4724,11 @@ recipes:FrostedDelights a :Recipe ;
             :food food:EggWhite ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg white, stiffly beaten"@en ] ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Frosted_Mini-Wheats_logo.svg?width=300> ;
     :instructions "Sift flour, salt and baking powder together.  Cream shortening with sugar until fluffy.  Add eggs, vanilla and sifted ingredients and mix well.  Spread batter very thin on baking sheets.  Fold brown sugar into egg whites, add nuts.  Spread over cookie batter.  Bake at 325 degrees for 30 minutes.  Cut into squares.  Makes 30."@en ;
     :name "Frosted Delights"@en ;
-    :recipeCategory "Cookies"@en .
+    :recipeCategory "Cookies"@en ;
+    owl:sameAs dbpedia:Frosted_Mini-Wheats .
 
 recipes:FumGum a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -8067,8 +8070,8 @@ Cover, cook 20 minutes. Pour over chicken. Bake covered at 375 degrees for 1 hou
     :name "Savory Chicken Casserole"@en .
 
 recipes:SavoryGoulash a :Recipe ;
-    rdfs:label "Paprika"@en,
-        "Paprika"@fr ;
+    rdfs:label "Comfort food"@en,
+        "Aliment-réconfort"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Steak ;
             :hasImperialMeasurementUnit [ :quantity 1.5 ;
@@ -8108,10 +8111,10 @@ recipes:SavoryGoulash a :Recipe ;
             :food food:Onions ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "sliced onions"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pimentón_Tap_de_Cortí_(cropped).jpg?width=300> ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chicken_noodle_soup_(cropped).jpg?width=300> ;
     :instructions "Brown onion and meat. Add tomato sauce and water. Cook for 2 hours and serve over hot noodles."@en ;
     :name "Savory Goulash"@en ;
-    owl:sameAs dbpedia:Paprika .
+    owl:sameAs dbpedia:Comfort_food .
 
 recipes:SherryWineCake a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -8504,6 +8507,8 @@ recipes:SourCreamEnchiladas a :Recipe ;
     owl:sameAs dbpedia:Enchilada .
 
 recipes:SourCreamRaisinPie a :Recipe ;
+    rdfs:label "Cheesecake"@en,
+        "Cheesecake"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Raisins ;
             :hasStandardMeasurementUnit [ :quantity 1.5 ;
@@ -8543,9 +8548,11 @@ recipes:SourCreamRaisinPie a :Recipe ;
             :food food:Yolks ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "egg yolks, slightly beaten"@en ] ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/My_first_cheesecake_cropped.jpg?width=300> ;
     :instructions "Boil raisins in water until plump.  Add flour and sugar.  Cook to thicken slightly then add egg yolks, sour cream, vanilla and nutmeg.  Pour into 9\" bottom crust.  Add top crust.  Sprinkle with sugar.  Bake 50 minutes at 350 degrees."@en ;
     :name "Sour Cream Raisin Pie"@en ;
-    :recipeCategory "Pies"@en .
+    :recipeCategory "Pies"@en ;
+    owl:sameAs dbpedia:Cheesecake .
 
 recipes:SouthCarolinaCobbler a :Recipe ;
     rdfs:label "Cobbler (food)"@en,
@@ -21455,6 +21462,10 @@ food:Butter a :Food,
         <http://dbpedia.org/resource/Category:Spreads_(food)> ;
     owl:sameAs dbpedia:Butter .
 
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
 [] :quantity 2.0 .
 
 [] :quantity 1.5 .
@@ -21479,24 +21490,6 @@ food:Butter a :Food,
 
 [] :quantity 1.5 .
 
-[] :quantity 0.25 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
 [] :quantity 1.0 .
 
 [] :quantity 0.5 .
@@ -21510,8 +21503,6 @@ food:Butter a :Food,
 [] :quantity 1.5 .
 
 [] :quantity 0.25 .
-
-[] :quantity 3.0 .
 
 [] :quantity 2.0 .
 
@@ -21549,16 +21540,6 @@ food:Butter a :Food,
 
 [] :quantity 0.25 .
 
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.0 .
-
 [] :quantity 2.0 .
 
 [] :quantity 0.25 .
@@ -21575,45 +21556,13 @@ food:Butter a :Food,
 
 [] :quantity 1.5 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
+[] :quantity 1.5 .
 
 [] :quantity 0.25 .
 
 [] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
@@ -21623,9 +21572,73 @@ food:Butter a :Food,
 
 [] :quantity 0.25 .
 
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
 [] :quantity 0.5 .
 
 [] :quantity 0.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
 
 [] :quantity 0.125 .
 
@@ -21645,69 +21658,69 @@ food:Butter a :Food,
 
 [] :quantity 1.5 .
 
-[] :quantity 1.5 .
+[] :quantity 0.5 .
 
-[] :quantity 3.0 .
+[] :quantity 2.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
 
 [] :quantity 0.3333333333333333 .
 
 [] :quantity 0.25 .
 
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
 [] :quantity 0.5 .
 
 [] :quantity 0.25 .
+
+[] :quantity 1.0 .
 
 [] :quantity 3.0 .
 
-[] :quantity 0.25 .
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
-[] :quantity 1.0 .
+[] :quantity 3.0 .
 
 [] :quantity 4.5 .
 
-[] :quantity 1.0 .
+[] :quantity 2.25 .
 
 [] :quantity 0.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity 3.0 .
 
 [] :quantity 1.5 .
 
-[] :quantity 1.0 .
-
-[] :quantity 2.25 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.5 .
-
 [] :quantity 0.25 .
 
 [] :quantity 2.0 .
 
+[] :quantity 3.5 .
+
+[] :quantity 2.25 .
+
+[] :quantity 2.25 .
+
 [] :quantity 0.25 .
-
-[] :quantity 2.25 .
-
-[] :quantity 2.25 .
-
-[] :quantity 2.25 .
 
 [] :quantity 1.0 .
 
@@ -21715,13 +21728,9 @@ food:Butter a :Food,
 
 [] :quantity 3.0 .
 
-[] :quantity 1.0 .
-
 [] :quantity 2.25 .
 
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
+[] :quantity 0.25 .
 
 [] :quantity 2.0 .
 
@@ -21729,7 +21738,7 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
+[] :quantity 1.0 .
 
 [] :quantity 4.0 .
 
@@ -21737,6 +21746,8 @@ food:Butter a :Food,
 
 [] :quantity 0.25 .
 
+[] :quantity 0.5 .
+
 [] :quantity 2.0 .
 
 [] :quantity 3.0 .
@@ -21747,13 +21758,13 @@ food:Butter a :Food,
 
 [] :quantity 0.25 .
 
-[] :quantity 2.0 .
-
 [] :quantity 0.5 .
 
 [] :quantity 0.3333333333333333 .
 
-[] :quantity 0.5 .
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
 
 [] :quantity 1.0 .
 
@@ -21765,9 +21776,7 @@ food:Butter a :Food,
 
 [] :quantity 3.0 .
 
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 1.0 .
 
@@ -21775,6 +21784,8 @@ food:Butter a :Food,
 
 [] :quantity 8.0 .
 
+[] :quantity 2.0 .
+
 [] :quantity 1.0 .
 
 [] :quantity 0.25 .
@@ -21787,27 +21798,25 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
-[] :quantity 0.25 .
-
-[] :quantity 3.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
 [] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
@@ -21821,7 +21830,7 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
@@ -21843,49 +21852,87 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
 [] :quantity 4.0 .
 
 [] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 4.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
 
 [] :quantity 0.75 .
 
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
 [] :quantity 0.5 .
 
 [] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.25 .
 
 [] :quantity 4.0 .
 
 [] :quantity 3.0 .
 
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
 [] :quantity 2.0 .
 
@@ -21893,29 +21940,9 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 2.0 .
+[] :quantity 0.25 .
 
 [] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 4.0 .
 
 [] :quantity 1.5 .
 
@@ -21927,27 +21954,13 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.5 .
-
 [] :quantity 1.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
 
 [] :quantity 1.75 .
+
+[] :quantity 1.75 .
+
+[] :quantity 1.5 .
 
 [] :quantity 0.3333333333333333 .
 
@@ -21955,44 +21968,42 @@ food:Butter a :Food,
 
 [] :quantity 1.5 .
 
-[] :quantity 1.5 .
+[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
 [] :quantity 2.0 .
 
-[] :quantity 1.5 .
-
-[] :quantity 1.5 .
-
 [] :quantity 1.0 .
 
 [] :quantity 1.5 .
 
-[] :quantity 1.0 .
+[] :quantity 1.5 .
 
 [] :quantity 0.25 .
 
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
 [] :quantity 0.5 .
 
 [] :quantity 0.5 .
-
-[] :quantity 3.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 1.0 .
-
-[] :quantity 0.5 .
 
 [] :quantity 4.0 .
 
+[] :quantity 3.0 .
+
 [] :quantity 1.0 .
 
 [] :quantity 0.75 .
@@ -22009,7 +22020,7 @@ food:Butter a :Food,
 
 [] :quantity 0.25 .
 
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
@@ -22029,13 +22040,13 @@ food:Butter a :Food,
 
 [] :quantity 0.75 .
 
-[] :quantity 0.25 .
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 2.0 .
 
-[] :quantity 2.0 .
+[] :quantity 0.25 .
 
 [] :quantity 0.125 .
 
@@ -22047,215 +22058,217 @@ food:Butter a :Food,
 
 [] :quantity 0.25 .
 
-[] :quantity 3.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity "10" .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 9.0 .
-
-[] :quantity 0.3333333333333333 .
-
-[] :quantity 2.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
 [] :quantity 2.0 .
 
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.75 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.75 .
-
-[] :quantity 3.25 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.5 .
 
 [] :quantity 2.25 .
 
 [] :quantity 3.0 .
 
+[] :quantity 2.0 .
+
+[] :quantity "10" .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 9.0 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
 [] :quantity 0.25 .
 
 [] :quantity 2.0 .
 
-[] :quantity 3.0 .
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
 
 [] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.25 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
 
 [] :quantity 2.0 .
 
@@ -22267,45 +22280,25 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
-[] :quantity 3.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.5 .
-
 [] :quantity 0.25 .
 
 [] :quantity 2.0 .
 
 [] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
-
 [] :quantity 2.0 .
 
+[] :quantity 0.25 .
+
 [] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
 
 [] :quantity 0.25 .
 
@@ -22319,13 +22312,9 @@ food:Butter a :Food,
 
 [] :quantity 3.0 .
 
-[] :quantity 1.0 .
+[] :quantity 3.0 .
 
 [] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
 
 [] :quantity 2.0 .
 
@@ -22333,28 +22322,90 @@ food:Butter a :Food,
 
 [] :quantity 0.25 .
 
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
 [] :quantity 2.0 .
 
 [] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
 [] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
 [] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 0.75 .
 
 [] :quantity 0.5 .
 
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
@@ -22365,47 +22416,9 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.25 .
+[] :quantity 1.0 .
 
 [] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 0.25 .
 
@@ -22431,9 +22444,7 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.3333333333333333 .
-
-[] :quantity 1.0 .
+[] :quantity 0.25 .
 
 [] :quantity 0.3333333333333333 .
 
@@ -22441,29 +22452,29 @@ food:Butter a :Food,
 
 [] :quantity 0.6666666666666666 .
 
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
 [] :quantity 6.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
 
 [] :quantity 2.0 .
 
 [] :quantity 1.0 .
-
-[] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
 [] :quantity 0.3333333333333333 .
 
-[] :quantity 0.25 .
+[] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
-[] :quantity 1.0 .
+[] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
@@ -22481,7 +22492,9 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
@@ -22491,19 +22504,17 @@ food:Butter a :Food,
 
 [] :quantity 1.5 .
 
-[] :quantity 0.25 .
+[] :quantity 2.0 .
 
 [] :quantity 3.0 .
 
 [] :quantity 0.75 .
-
-[] :quantity 1.0 .
 
 [] :quantity 0.25 .
 
 [] :quantity 0.125 .
 
-[] :quantity 2.0 .
+[] :quantity 0.25 .
 
 [] :quantity 2.0 .
 
@@ -22511,9 +22522,11 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
+[] :quantity 1.0 .
 
 [] :quantity 0.25 .
+
+[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
@@ -22525,10 +22538,20 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
-[] :quantity 2.0 .
-
 [] :quantity 0.5 .
 
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
 [] :quantity 1.0 .
 
 [] :quantity 1.5 .
@@ -22537,19 +22560,7 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
-[] :quantity 1.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.25 .
-
 [] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
@@ -22557,11 +22568,13 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 0.5 .
+
+[] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
@@ -22569,27 +22582,27 @@ food:Butter a :Food,
 
 [] :quantity 3.0 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 0.25 .
+[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 1.5 .
 
-[] :quantity 0.25 .
+[] :quantity 0.3333333333333333 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.5 .
 
 [] :quantity 1.0 .
 
@@ -22603,29 +22616,31 @@ food:Butter a :Food,
 
 [] :quantity 3.0 .
 
-[] :quantity 3.0 .
+[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 1.5 .
 
+[] :quantity 3.0 .
+
 [] :quantity 0.5 .
 
 [] :quantity 0.25 .
 
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
-[] :quantity 4.0 .
-
-[] :quantity 0.5 .
+[] :quantity 0.25 .
 
 [] :quantity 1.0 .
-
-[] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
@@ -22635,113 +22650,37 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
 [] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
-[] :quantity 3.0 .
-
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 3.0 .
 
 [] :quantity 3.0 .
 
 [] :quantity 1.5 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
 [] :quantity 1.5 .
 
 [] :quantity 0.25 .
+
+[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 4.0 .
 
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
+[] :quantity 4.0 .
 
 [] :quantity 1.0 .
 
@@ -22753,13 +22692,65 @@ food:Butter a :Food,
 
 [] :quantity 1.5 .
 
-[] :quantity 0.25 .
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 0.25 .
 
 [] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
 
 [] :quantity 0.5 .
 
@@ -22769,37 +22760,53 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
 
 [] :quantity 2.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 6.0 .
 
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
 [] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
 [] :quantity 0.125 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
 
 [] :quantity 0.125 .
 
@@ -22807,43 +22814,53 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
-[] :quantity 1.0 .
+[] :quantity 1.5 .
 
 [] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
 
 [] :quantity 3.0 .
 
 [] :quantity 4.0 .
 
+[] :quantity 1.0 .
+
 [] :quantity 0.5 .
+
+[] :quantity 0.75 .
 
 [] :quantity 0.75 .
 
 [] :quantity 1.0 .
 
-[] :quantity 0.75 .
-
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.5 .
 
 [] :quantity "1.25" .
 
+[] :quantity 1.0 .
+
 [] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 4.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
 [] :quantity 5.0 .
 
@@ -22851,11 +22868,9 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
-
 [] :quantity 0.25 .
 
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
@@ -22923,6 +22938,10 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
+[] :quantity 0.25 .
+
+[] :quantity 0.125 .
+
 [] :quantity 1.0 .
 
 [] :quantity 3.0 .
@@ -22930,10 +22949,6 @@ food:Butter a :Food,
 [] :quantity 0.25 .
 
 [] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.125 .
 
 [] :quantity 2.5 .
 
@@ -22951,7 +22966,7 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
 [] :quantity 0.25 .
 
@@ -22964,10 +22979,6 @@ food:Butter a :Food,
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
 
 [] :quantity 1.75 .
 
@@ -22983,17 +22994,19 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
 [] :quantity 0.5 .
+
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.5 .
 
 [] :quantity 1.0 .
 
@@ -23001,8 +23014,6 @@ food:Butter a :Food,
 
 [] :quantity 0.75 .
 
-[] :quantity 1.5 .
-
 [] :quantity 0.25 .
 
 [] :quantity 0.5 .
@@ -23015,15 +23026,17 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
+[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
+[] :quantity 0.5 .
+
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
 
 [] :quantity 1.0 .
 
@@ -23033,22 +23046,6 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
 [] :quantity 2.0 .
 
 [] :quantity 1.5 .
@@ -23056,68 +23053,48 @@ food:Butter a :Food,
 [] :quantity 0.25 .
 
 [] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
 
 [] :quantity 6.0 .
 
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
+[] :quantity 6.0 .
 
 [] :quantity 0.5 .
+
+[] :quantity 1.0 .
 
 [] :quantity 3.0 .
 
-[] :quantity 6.0 .
-
-[] :quantity 0.5 .
-
 [] :quantity 1.0 .
+
+[] :quantity 2.0 .
 
 [] :quantity 0.75 .
 
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
 [] :quantity 0.25 .
 
 [] :quantity 0.25 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
 
 [] :quantity 1.5 .
 
@@ -23125,17 +23102,21 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
+[] :quantity 0.25 .
+
 [] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
-[] :quantity 2.0 .
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
 
 [] :quantity 0.25 .
-
-[] :quantity 1.5 .
-
-[] :quantity 2.0 .
 
 [] :quantity 0.25 .
 
@@ -23155,6 +23136,36 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
+[] :quantity 2.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
 [] :quantity 1.5 .
 
 [] :quantity 0.25 .
@@ -23171,7 +23182,7 @@ food:Butter a :Food,
 
 [] :quantity 3.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 1.0 .
 
@@ -23183,51 +23194,51 @@ food:Butter a :Food,
 
 [] :quantity 1.5 .
 
-[] :quantity 0.25 .
-
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
 [] :quantity 0.25 .
 
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
 [] :quantity 1.0 .
+
+[] :quantity 0.25 .
 
 [] :quantity 0.25 .
 
 [] :quantity 0.5 .
 
 [] :quantity 1.0 .
-
-[] :quantity 0.5 .
 
 [] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
-[] :quantity 1.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 0.25 .
 
 [] :quantity 2.0 .
 
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
 [] :quantity 2.0 .
 
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
+[] :quantity 0.25 .
 
 [] :quantity 2.0 .
 
@@ -23245,13 +23256,13 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.25 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
 [] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
 
 [] :quantity 0.3333333333333333 .
 
@@ -23261,13 +23272,13 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
-[] :quantity 2.25 .
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
 [] :quantity 0.75 .
 
-[] :quantity 1.0 .
+[] :quantity 2.25 .
 
 [] :quantity 0.5 .
 
@@ -23275,15 +23286,15 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
 [] :quantity 0.75 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
 
 [] :quantity 0.25 .
 
@@ -23295,25 +23306,25 @@ food:Butter a :Food,
 
 [] :quantity 2.5 .
 
-[] :quantity 4.0 .
-
-[] :quantity 4.0 .
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
+
+[] :quantity 4.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 18.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
 
 [] :quantity 1.0 .
 
 [] :quantity 3.0 .
 
-[] :quantity 18.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
+[] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
@@ -23349,19 +23360,19 @@ food:Butter a :Food,
 
 [] :quantity 4.0 .
 
-[] :quantity 0.3333333333333333 .
+[] :quantity 1.0 .
+
+[] :quantity 4.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
 
 [] :quantity 1.0 .
 
 [] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
@@ -23375,49 +23386,49 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.25 .
-
-[] :quantity 0.25 .
+[] :quantity 0.5 .
 
 [] :quantity 1.5 .
 
-[] :quantity 0.5 .
+[] :quantity 0.3333333333333333 .
 
-[] :quantity 0.5 .
+[] :quantity 0.25 .
 
 [] :quantity 0.5 .
 
 [] :quantity 0.125 .
 
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity "3" .
-
-[] :quantity 1.0 .
-
 [] :quantity 1.5 .
+
+[] :quantity 1.0 .
 
 [] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
 [] :quantity 0.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 2.0 .
 
 [] :quantity 1.25 .
 
@@ -23427,11 +23438,15 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
 [] :quantity 0.25 .
 
 [] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
@@ -23439,29 +23454,29 @@ food:Butter a :Food,
 
 [] :quantity 1.5 .
 
-[] :quantity 0.25 .
-
 [] :quantity 1.0 .
 
 [] :quantity 0.3333333333333333 .
 
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
 [] :quantity 2.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
 
 [] :quantity 0.25 .
 
@@ -23469,35 +23484,43 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
-[] :quantity 3.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 3.0 .
+[] :quantity 0.5 .
 
 [] :quantity 0.25 .
 
-[] :quantity 0.75 .
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
-
 [] :quantity 0.5 .
+
+[] :quantity 2.0 .
 
 [] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
-[] :quantity 2.0 .
-
 [] :quantity 0.5 .
 
 [] :quantity 0.5 .
 
 [] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.3333333333333333 .
 
 [] :quantity 0.3333333333333333 .
 
@@ -23505,15 +23528,27 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
 [] :quantity 0.5 .
 
-[] :quantity 0.3333333333333333 .
+[] :quantity 2.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
 
 [] :quantity 1.0 .
+
+[] :quantity 0.6666666666666666 .
 
 [] :quantity 1.5 .
 
@@ -23521,22 +23556,6 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.6666666666666666 .
-
 [] :quantity 0.25 .
 
 [] :quantity 0.5 .
@@ -23545,39 +23564,51 @@ food:Butter a :Food,
 
 [] :quantity 3.0 .
 
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
 [] :quantity 0.5 .
+
+[] :quantity 0.25 .
 
 [] :quantity 0.5 .
 
 [] :quantity 0.75 .
 
-[] :quantity 1.0 .
-
 [] :quantity 0.5 .
 
 [] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
 
 [] :quantity 2.5 .
 
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
 [] :quantity 2.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
@@ -23585,63 +23616,51 @@ food:Butter a :Food,
 
 [] :quantity 3.0 .
 
-[] :quantity 0.5 .
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
 
 [] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
 
 [] :quantity 3.0 .
 
-[] :quantity 0.25 .
+[] :quantity 0.75 .
 
 [] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
 
 [] :quantity 5.0 .
 
-[] :quantity 0.5 .
+[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
-[] :quantity 1.5 .
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
 
 [] :quantity 0.5 .
 
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 2.0 .
 
@@ -23649,57 +23668,51 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
 [] :quantity 2.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
+[] :quantity 1.0 .
 
 [] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
-
 [] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 1.5 .
 
 [] :quantity 1.5 .
 
 [] :quantity 1.0 .
-
-[] :quantity 1.5 .
 
 [] :quantity 1.0 .
 
 [] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
@@ -23715,86 +23728,94 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
 [] :quantity 1.0 .
 
 [] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.75 .
 
 [] :quantity 0.5 .
 
 [] :quantity 2.0 .
 
-[] :quantity 0.75 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.75 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
 [] :quantity 2.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
 
 [] :quantity 0.25 .
 
-[] :quantity 2.0 .
+[] :quantity 0.5 .
 
 [] :quantity 2.0 .
 
 [] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 3.0 .
 
-[] :quantity 1.25 .
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
-[] :quantity 1.25 .
+[] :quantity "3" .
 
 [] :quantity 4.0 .
 
 [] :quantity 2.0 .
 
-[] :quantity 1.0 .
+[] :quantity 1.25 .
 
 [] :quantity 1.0 .
 
 [] :quantity 0.25 .
 
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
+[] :quantity 2.0 .
 
 [] :quantity 0.25 .
 
-[] :quantity measurements:Few .
-
-[] :quantity 0.5 .
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
+
+[] :quantity 1.25 .
 
 [] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
+[] :quantity measurements:Few .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
@@ -23807,7 +23828,7 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 3.0 .
+[] :quantity 2.0 .
 
 [] :quantity 1.0 .
 
@@ -23815,7 +23836,11 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
-[] :quantity 2.0 .
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
@@ -23823,95 +23848,85 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
-[] :quantity 1.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
 [] :quantity 0.5 .
-
-[] :quantity 1.0 .
 
 [] :quantity 1.5 .
 
 [] :quantity 0.5 .
 
-[] :quantity 0.25 .
+[] :quantity 3.0 .
 
-[] :quantity 0.5 .
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
 
 [] :quantity 0.25 .
 
 [] :quantity 2.0 .
+
+[] :quantity 0.25 .
 
 [] :quantity 2.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
 [] :quantity 0.5 .
 
 [] :quantity 2.0 .
 
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
 [] :quantity 4.0 .
 
 [] :quantity 1.0 .
 
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
 [] :quantity 0.5 .
 
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 1.3333333333333333 .
 
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
 [] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
+[] :quantity 0.5 .
+
 [] :quantity 1.0 .
 
 [] :quantity 1.5 .
 
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
+[] :quantity 0.25 .
 
 [] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
 
 [] :quantity 3.0 .
 
 [] :quantity 2.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 0.5 .
+
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
@@ -23919,25 +23934,23 @@ food:Butter a :Food,
 
 [] :quantity 3.0 .
 
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
 [] :quantity 0.6666666666666666 .
 
-[] :quantity 1.0 .
+[] :quantity 0.6666666666666666 .
 
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 1.25 .
 
-[] :quantity 0.6666666666666666 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
 [] :quantity 1.0 .
 
 [] :quantity 0.125 .
 
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 1.0 .
 
@@ -23949,7 +23962,49 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
 [] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
@@ -23961,254 +24016,212 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.5 .
-
 [] :quantity 1.0 .
 
 [] :quantity 0.25 .
+
+[] :quantity 1.5 .
 
 [] :quantity 1.0 .
 
 [] :quantity 0.6666666666666666 .
 
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
 [] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.75 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.75 .
+
+[] :quantity 1.5 .
 
 [] :quantity 0.6666666666666666 .
 
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.75 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.75 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.75 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.6666666666666666 .
-
 [] :quantity 0.6666666666666666 .
 
 [] :quantity 0.5 .
@@ -24217,27 +24230,27 @@ food:Butter a :Food,
 
 [] :quantity 0.75 .
 
-[] :quantity 2.0 .
+[] :quantity 0.5 .
 
 [] :quantity 0.5 .
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
-[] :quantity 0.5 .
+[] :quantity 2.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 1.5 .
 
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 4.0 .
 
@@ -24245,21 +24258,21 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
+[] :quantity 3.0 .
 
 [] :quantity 0.25 .
 
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
 [] :quantity 0.5 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
 [] :quantity 0.25 .
 
@@ -24273,9 +24286,9 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.25 .
 
-[] :quantity 0.5 .
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
@@ -24283,23 +24296,23 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
+[] :quantity 1.0 .
+
 [] :quantity 2.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 1.5 .
 
 [] :quantity 0.25 .
 
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
 [] :quantity 1.0 .
 
 [] :quantity 0.25 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
@@ -24307,37 +24320,37 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.25 .
 
 [] :quantity 2.0 .
 
 [] :quantity 2.0 .
 
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
 [] :quantity 0.25 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
 
 [] :quantity 0.25 .
 
 [] :quantity 1.0 .
-
-[] :quantity 0.25 .
 
 [] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.25 .
 
 [] :quantity 0.25 .
 
 [] :quantity 0.5 .
 
-[] :quantity 0.5 .
+[] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
@@ -24359,85 +24372,85 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
-[] :quantity 0.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.5 .
-
 [] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
 
 [] :quantity 0.6666666666666666 .
 
+[] :quantity 1.5 .
+
 [] :quantity 1.0 .
 
 [] :quantity 0.5 .
+
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
 
 [] :quantity 0.125 .
 
-[] :quantity 0.6666666666666666 .
+[] :quantity 2.0 .
 
-[] :quantity 0.5 .
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
 
 [] :quantity 3.0 .
 
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
 [] :quantity 0.5 .
 
-[] :quantity 1.0 .
-
 [] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
 [] :quantity 0.5 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
@@ -24449,13 +24462,13 @@ food:Butter a :Food,
 
 [] :quantity 1.5 .
 
-[] :quantity 0.25 .
+[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 0.75 .
 
-[] :quantity 0.5 .
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
@@ -24467,13 +24480,13 @@ food:Butter a :Food,
 
 [] :quantity 0.6666666666666666 .
 
-[] :quantity 0.5 .
+[] :quantity 1.5 .
 
 [] :quantity "18" .
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 0.5 .
 
@@ -24483,13 +24496,13 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
+[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 0.5 .
 
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 1.5 .
 
@@ -24512,14 +24525,20 @@ food:Butter a :Food,
 [] :quantity 0.25 .
 
 [] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.6666666666666666 .
 
 [] :quantity "16" .
 
-[] :quantity 1.5 .
-
 [] :quantity 0.6666666666666666 .
 
-[] :quantity 0.6666666666666666 .
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
 
 [] :quantity 0.25 .
 
@@ -24527,33 +24546,27 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
-[] :quantity 0.25 .
+[] :quantity 1.0 .
 
 [] :quantity 2.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
 [] :quantity 0.125 .
 
-[] :quantity 0.75 .
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 1.5 .
 
-[] :quantity 1.0 .
+[] :quantity 0.75 .
 
 [] :quantity 3.0 .
 
 [] :quantity 6.0 .
 
-[] :quantity 3.0 .
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
@@ -24577,43 +24590,47 @@ food:Butter a :Food,
 
 [] :quantity 1.5 .
 
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 0.5 .
+
 [] :quantity 1.5 .
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 1.5 .
 
 [] :quantity 2.0 .
 
 [] :quantity 1.5 .
 
-[] :quantity 3.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
 [] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
 
 [] :quantity 1.5 .
 
 [] :quantity 0.125 .
 
-[] :quantity 0.5 .
+[] :quantity 1.0 .
 
 [] :quantity 1.5 .
 
 [] :quantity 0.6666666666666666 .
 
-[] :quantity 0.6666666666666666 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
+[] :quantity 0.5 .
 
 [] :quantity 0.25 .
 
-[] :quantity 0.5 .
+[] :quantity 0.6666666666666666 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
 
 [] :quantity 0.5 .
 
@@ -24621,7 +24638,7 @@ food:Butter a :Food,
 
 [] :quantity 1.5 .
 
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 0.5 .
 
@@ -24629,7 +24646,7 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 1.0 .
 
@@ -24637,19 +24654,21 @@ food:Butter a :Food,
 
 [] :quantity 0.125 .
 
-[] :quantity 0.125 .
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 1.5 .
 
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
 [] :quantity 0.5 .
 
 [] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.125 .
 
 [] :quantity 0.5 .
 
@@ -24657,8 +24676,6 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
-
 [] :quantity 0.5 .
 
 [] :quantity 0.5 .
@@ -24669,7 +24686,7 @@ food:Butter a :Food,
 
 [] :quantity 0.6666666666666666 .
 
-[] :quantity 0.6666666666666666 .
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
@@ -24683,17 +24700,21 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
+[] :quantity 0.25 .
+
+[] :quantity 0.125 .
+
 [] :quantity 0.6666666666666666 .
 
 [] :quantity "2" .
 
-[] :quantity 1.0 .
-
-[] :quantity 0.25 .
-
 [] :quantity 0.25 .
 
 [] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
@@ -24707,77 +24728,73 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.3333333333333333 .
-
-[] :quantity 0.6666666666666666 .
-
 [] :quantity 0.6666666666666666 .
 
 [] :quantity 0.5 .
 
 [] :quantity 0.5 .
 
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
+
 [] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
-[] :quantity 2.0 .
-
 [] :quantity 1.0 .
-
-[] :quantity 2.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 1.5 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
 [] :quantity 0.25 .
 
 [] :quantity 0.5 .
 
+[] :quantity 0.5 .
+
 [] :quantity 1.0 .
+
+[] :quantity 1.5 .
 
 [] :quantity 1.0 .
 
 [] :quantity 1.5 .
 
 [] :quantity 0.6666666666666666 .
-
-[] :quantity 1.5 .
 
 [] :quantity 3.0 .
 
 [] :quantity 0.6666666666666666 .
 
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
 [] :quantity 4.0 .
 
 [] :quantity 0.5 .
 
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
 [] :quantity 0.25 .
 
-[] :quantity 0.5 .
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
@@ -24788,22 +24805,28 @@ food:Butter a :Food,
 [] :quantity 0.5 .
 
 [] :quantity 2.0 .
+
+[] :quantity 0.5 .
 
 [] :quantity 4.0 .
 
 [] :quantity 0.25 .
 
+[] :quantity 1.0 .
+
 [] :quantity 2.0 .
 
 [] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
-[] :quantity 1.0 .
-
 [] :quantity 2.0 .
 
 [] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
 
 [] :quantity 2.0 .
 
@@ -24813,17 +24836,11 @@ food:Butter a :Food,
 
 [] :quantity 0.75 .
 
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.125 .
 
 [] :quantity 1.0 .
 
@@ -24837,7 +24854,7 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
-[] :quantity 0.5 .
+[] :quantity 3.0 .
 
 [] :quantity 0.3333333333333333 .
 
@@ -24847,6 +24864,8 @@ food:Butter a :Food,
 
 [] :quantity 0.75 .
 
+[] :quantity "5" .
+
 [] :quantity 1.0 .
 
 [] :quantity 0.25 .
@@ -24855,13 +24874,13 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
 [] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 0.25 .
 
@@ -24907,27 +24926,27 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
 [] :quantity 1.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 0.25 .
 
 [] :quantity 0.5 .
 
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
 [] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
@@ -24935,8 +24954,6 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
-[] :quantity 2.5 .
-
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
@@ -24954,10 +24971,6 @@ food:Butter a :Food,
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity "5" .
 
 [] :quantity 1.0 .
 
@@ -24966,59 +24979,59 @@ food:Butter a :Food,
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
 
 [] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
 
 [] :quantity 1.5 .
 
 [] :quantity 3.0 .
 
-[] :quantity 1.0 .
-
 [] :quantity 1.5 .
 
 [] :quantity 0.3333333333333333 .
 
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
 [] :quantity 2.25 .
 
-[] :quantity 1.0 .
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
 
 [] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.5 .
 
 [] :quantity 1.0 .
 
 [] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
 
 [] :quantity 0.6666666666666666 .
 
-[] :quantity 1.5 .
+[] :quantity 0.6666666666666666 .
 
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 2.0 .
 
-[] :quantity 0.6666666666666666 .
-
-[] :quantity 0.5 .
-
 [] :quantity 0.5 .
 
 [] :quantity 0.6666666666666666 .
 
-[] :quantity 1.0 .
-
 [] :quantity 0.5 .
 
 [] :quantity 1.0 .
@@ -25029,13 +25042,13 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
-[] :quantity 1.5 .
+[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 4.0 .
 
-[] :quantity 0.5 .
+[] :quantity 1.5 .
 
 [] :quantity 1.0 .
 
@@ -25047,11 +25060,13 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 0.5 .
 
 [] :quantity 0.5 .
 
 [] :quantity 1.0 .
+
+[] :quantity 0.125 .
 
 [] :quantity 0.3333333333333333 .
 
@@ -25071,7 +25086,7 @@ food:Butter a :Food,
 
 [] :quantity 9.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.6666666666666666 .
 
 [] :quantity 0.5 .
 
@@ -25089,23 +25104,23 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
+[] :quantity 1.0 .
+
 [] :quantity 1.5 .
 
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
-
 [] :quantity 0.3333333333333333 .
 
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
-[] :quantity 0.5 .
+[] :quantity 2.0 .
 
 [] :quantity 1.0 .
 
@@ -25115,17 +25130,17 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
+[] :quantity 2.0 .
+
 [] :quantity 1.5 .
 
 [] :quantity 1.0 .
-
-[] :quantity 0.6666666666666666 .
 
 [] :quantity 0.3333333333333333 .
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.6666666666666666 .
 
 [] :quantity 0.6666666666666666 .
 
@@ -25145,7 +25160,7 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
+[] :quantity 0.125 .
 
 [] :quantity 0.3333333333333333 .
 
@@ -25211,57 +25226,55 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
-
 [] :quantity 1.5 .
 
-[] :quantity 0.6666666666666666 .
+[] :quantity 0.5 .
 
 [] :quantity 1.0 .
 
 [] :quantity 0.25 .
 
-[] :quantity 1.0 .
+[] :quantity 0.6666666666666666 .
 
 [] :quantity 0.6666666666666666 .
 
 [] :quantity 0.5 .
+
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 0.75 .
 
-[] :quantity 1.0 .
-
 [] :quantity 0.5 .
 
 [] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
 
 [] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
+[] :quantity 0.25 .
 
 [] :quantity 1.5 .
 
 [] :quantity 1.0 .
 
-[] :quantity 0.25 .
-
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
 
 [] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 0.5 .
 
@@ -25281,7 +25294,7 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
+[] :quantity 2.5 .
 
 [] :quantity 0.75 .
 
@@ -25313,15 +25326,23 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
 [] :quantity 4.0 .
 
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
 [] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
@@ -25329,25 +25350,17 @@ food:Butter a :Food,
 
 [] :quantity "12" .
 
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
 [] :quantity 2.0 .
 
 [] :quantity 3.0 .
 
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
 [] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 6.0 .
 
@@ -25355,29 +25368,31 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 0.25 .
 
-[] :quantity 0.6666666666666666 .
+[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 0.6666666666666666 .
 
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 1.5 .
-
-[] :quantity 1.5 .
-
 [] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.5 .
 
 [] :quantity 0.25 .
 
@@ -25385,11 +25400,11 @@ food:Butter a :Food,
 
 [] :quantity 0.25 .
 
+[] :quantity 2.0 .
+
 [] :quantity 1.0 .
 
 [] :quantity 2.0 .
-
-[] :quantity 0.5 .
 
 [] :quantity 0.25 .
 
@@ -25401,28 +25416,26 @@ food:Butter a :Food,
 
 [] :quantity 1.25 .
 
-[] :quantity 0.75 .
+[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 0.75 .
 
 [] :quantity 1.0 .
 
 [] :quantity 1.5 .
 
-[] :quantity 1.5 .
+[] :quantity 2.0 .
 
 [] :quantity 1.5 .
 
-[] :quantity 0.5 .
+[] :quantity 1.5 .
 
 [] :quantity 0.25 .
 
-[] :quantity 2.0 .
-
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
@@ -25460,8 +25473,6 @@ food:Butter a :Food,
 [] :quantity 3.0 .
 
 [] :quantity 2.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
@@ -25470,6 +25481,10 @@ food:Butter a :Food,
 [] :quantity 1.0 .
 
 [] :hasStandardMeasurementUnit [ :unit measurements:Teaspoon ] .
+
+[] :hasImperialMeasurementUnit [ :unit measurements:VolumicOunce ] .
+
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
@@ -25497,7 +25512,7 @@ food:Butter a :Food,
 
 [] :quantity 4.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 0.5 .
 
@@ -25505,7 +25520,7 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
-[] :quantity 0.5 .
+[] :quantity 2.0 .
 
 [] :quantity 0.25 .
 
@@ -25523,7 +25538,7 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 0.5 .
 
 [] :quantity 0.3333333333333333 .
 
@@ -25557,13 +25572,15 @@ food:Butter a :Food,
 
 [] :quantity 6.0 .
 
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
 [] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
@@ -25619,14 +25636,12 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.75 .
+[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 3.0 .
 
-[] :quantity 2.0 .
-
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
@@ -25636,14 +25651,16 @@ food:Butter a :Food,
 [] :quantity 2.0 .
 
 [] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity "10" .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 3.0 .
 
@@ -25697,13 +25714,13 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
 [] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity "2" .
 
@@ -25751,8 +25768,6 @@ food:Butter a :Food,
 
 [] :quantity "12" .
 
-[] :quantity 2.0 .
-
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
@@ -25799,7 +25814,7 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
-[] :quantity 0.75 .
+[] :quantity 2.0 .
 
 [] :quantity 1.5 .
 
@@ -25813,28 +25828,28 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
+[] :quantity 2.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 1.0 .
 
-[] :quantity 1.6666666666666666 .
+[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
+[] :quantity 1.6666666666666666 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
 [] :quantity 2.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
 
 [] :quantity 0.25 .
 
-[] :quantity 1.5 .
-
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
@@ -25854,6 +25869,8 @@ food:Butter a :Food,
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
+
+[] :quantity 2.0 .
 
 [] :quantity 2.0 .
 
@@ -25873,8 +25890,6 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
-
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
@@ -25894,6 +25909,8 @@ food:Butter a :Food,
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
+
+[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
@@ -25905,31 +25922,29 @@ food:Butter a :Food,
 
 [] :quantity 0.25 .
 
-[] :quantity 2.0 .
+[] :quantity 0.75 .
 
 [] :quantity 0.75 .
 
-[] :quantity 1.0 .
-
 [] :quantity 2.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.25 .
-
 [] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
 
 [] :quantity 4.0 .
 
-[] :quantity 1.0 .
-
 [] :quantity 2.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
@@ -25937,21 +25952,23 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
+[] :quantity 2.0 .
 
 [] :quantity 1.0 .
 
 [] :quantity 8.0 .
 
-[] :quantity 1.75 .
+[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 1.75 .
 
 [] :quantity 1.0 .
+
+[] :quantity 2.0 .
 
 [] :quantity 2.0 .
 
@@ -25959,51 +25976,49 @@ food:Butter a :Food,
 
 [] :quantity 1.5 .
 
-[] :quantity 2.0 .
-
 [] :quantity 0.25 .
 
 [] :quantity 2.0 .
 
 [] :quantity 0.5 .
 
-[] :quantity 1.0 .
-
 [] :quantity 2.0 .
 
 [] :quantity 1.0 .
+
+[] :quantity 2.0 .
 
 [] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
 [] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
 [] :quantity 1.25 .
 
 [] :quantity 1.0 .
 
+[] :quantity 2.0 .
+
 [] :quantity 1.0 .
 
 [] :quantity 1.5 .
 
-[] :quantity 0.5 .
-
 [] :quantity 0.25 .
 
-[] :quantity 2.0 .
+[] :quantity 0.5 .
 
 [] :quantity 1.3333333333333333 .
 
@@ -26035,7 +26050,7 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.75 .
 
 [] :quantity 1.0 .
 
@@ -26047,93 +26062,17 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
 [] :quantity 6.0 .
 
 [] :quantity 3.0 .
 
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 4.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
 [] :quantity 2.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
 
 [] :quantity 1.0 .
 
@@ -26141,6 +26080,80 @@ food:Butter a :Food,
 
 [] :quantity 4.0 .
 
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
@@ -26148,6 +26161,10 @@ food:Butter a :Food,
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 4.0 .
 
 [] :quantity 2.0 .
 
@@ -26155,8 +26172,6 @@ food:Butter a :Food,
 
 [] :quantity 0.3333333333333333 .
 
-[] :quantity 0.5 .
-
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
@@ -26165,7 +26180,7 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
-[] :quantity 0.25 .
+[] :quantity 0.5 .
 
 [] :quantity 0.25 .
 
@@ -26174,6 +26189,8 @@ food:Butter a :Food,
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
+
+[] :quantity 0.25 .
 
 [] :quantity 3.0 .
 
@@ -26195,29 +26212,9 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
-
 [] :quantity 1.0 .
 
-[] :quantity 3.0 .
-
 [] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
@@ -26244,6 +26241,26 @@ food:Butter a :Food,
 [] :quantity 1.0 .
 
 [] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
@@ -26263,7 +26280,7 @@ food:Butter a :Food,
 
 [] :quantity 4.0 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
 [] :quantity 2.0 .
 
@@ -26271,13 +26288,13 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
+[] :quantity 1.0 .
 
 [] :quantity "24" .
 
 [] :quantity "24" .
 
-[] :quantity 2.0 .
+[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
@@ -26289,7 +26306,29 @@ food:Butter a :Food,
 
 [] :quantity 6.0 .
 
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
 [] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
 
 [] :quantity 1.5 .
 
@@ -26297,11 +26336,13 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
-[] :quantity 3.0 .
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
@@ -26309,43 +26350,67 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
 [] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
 [] :quantity 4.0 .
 
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
 [] :quantity 1.0 .
 
 [] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
@@ -26353,163 +26418,113 @@ food:Butter a :Food,
 
 [] :quantity 0.25 .
 
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
+[] :quantity "4" .
 
 [] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
 
 [] :quantity 4.0 .
 
-[] :quantity 3.0 .
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
 [] :quantity 2.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity "4" .
 
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
 [] :quantity 1.5 .
 
 [] :quantity 0.25 .
 
 [] :quantity 2.0 .
 
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
 [] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
 
 [] :quantity 4.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity "4" .
-
-[] :quantity 1.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.5 .
 
 [] :quantity 2.0 .
 
@@ -26529,13 +26544,13 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
 [] :quantity 1.5 .
 
 [] :quantity 0.25 .
 
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
 [] :quantity 4.0 .
 
@@ -26543,7 +26558,7 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
 [] :quantity 2.0 .
 
@@ -26551,63 +26566,59 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
 [] :quantity 0.5 .
 
-[] :quantity 1.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 3.0 .
-
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 3.0 .
 
 [] :quantity 4.0 .
 
 [] :quantity 3.0 .
 
+[] :quantity 1.0 .
+
 [] :quantity 2.0 .
+
+[] :quantity 1.5 .
 
 [] :quantity 0.5 .
 
 [] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.5 .
 
 [] :quantity 6.0 .
 
 [] :quantity 1.0 .
 
+[] :quantity 1.5 .
+
 [] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
 
 [] :quantity 2.5 .
 
 [] :quantity 2.0 .
 
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
 [] :quantity 0.5 .
 
 [] :quantity 0.25 .
 
 [] :quantity 0.25 .
 
-[] :quantity 1.0 .
+[] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
@@ -26620,15 +26631,15 @@ food:Butter a :Food,
 [] :quantity 0.5 .
 
 [] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
 
 [] :quantity "10" .
 
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
 [] :quantity 4.0 .
 
 [] :quantity 1.0 .
@@ -26647,7 +26658,7 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
-[] :quantity 1.0 .
+[] :quantity 3.0 .
 
 [] :quantity 2.0 .
 
@@ -26679,22 +26690,8 @@ food:Butter a :Food,
 
 [] :quantity 0.75 .
 
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
 [] :quantity 0.3333333333333333 .
 
-[] :quantity 0.5 .
-
-[] :quantity 2.0 .
-
 [] :quantity 2.0 .
 
 [] :quantity 0.25 .
@@ -26702,16 +26699,40 @@ food:Butter a :Food,
 [] :quantity 1.0 .
 
 [] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 1.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
@@ -26719,77 +26740,67 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.25 .
 
 [] :quantity 1.3333333333333333 .
 
-[] :quantity 1.0 .
-
 [] :quantity 0.5 .
 
 [] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
 [] :quantity 1.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
 
 [] :quantity 2.0 .
 
@@ -26801,15 +26812,15 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
+[] :quantity 2.0 .
+
 [] :quantity 1.5 .
 
 [] :quantity 0.25 .
 
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
 [] :quantity 3.0 .
-
-[] :quantity 2.0 .
 
 [] :quantity 0.25 .
 
@@ -26826,6 +26837,8 @@ food:Butter a :Food,
 [] :quantity 1.5 .
 
 [] :quantity 0.25 .
+
+[] :quantity 2.0 .
 
 [] :quantity 2.0 .
 
@@ -26867,8 +26880,6 @@ food:Butter a :Food,
 
 [] :quantity 4.0 .
 
-[] :quantity 2.0 .
-
 [] :quantity 0.25 .
 
 [] :quantity 2.0 .
@@ -26889,13 +26900,13 @@ food:Butter a :Food,
 
 [] :quantity 1.5 .
 
-[] :quantity 0.25 .
+[] :quantity 1.0 .
 
 [] :quantity 1.5 .
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.25 .
 
 [] :quantity 2.0 .
 
@@ -26907,43 +26918,45 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
+[] :quantity 1.0 .
+
 [] :quantity 0.5 .
 
 [] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 0.6666666666666666 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
 
 [] :quantity "4" .
 
 [] :quantity 2.0 .
 
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
 [] :quantity 4.0 .
 
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
 [] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
 [] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
 [] :quantity 0.5 .
-
-[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
@@ -26953,11 +26966,9 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
-
 [] :quantity 2.0 .
 
-[] :quantity 1.5 .
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
@@ -26969,7 +26980,7 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
-[] :quantity 0.25 .
+[] :quantity 1.5 .
 
 [] :quantity 3.0 .
 
@@ -26981,7 +26992,7 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
-[] :quantity 3.0 .
+[] :quantity 0.25 .
 
 [] :quantity 5.0 .
 
@@ -27001,19 +27012,19 @@ food:Butter a :Food,
 
 [] :quantity 3.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
 [] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 1.5 .
 
@@ -27027,31 +27038,35 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 0.5 .
 
 [] :quantity 1.5 .
 
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
 [] :quantity 0.25 .
 
 [] :quantity 2.0 .
 
-[] :quantity 0.25 .
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
 
 [] :quantity 1.0 .
 
@@ -27059,51 +27074,51 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
 [] :quantity 0.25 .
 
-[] :quantity 2.5 .
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 2.0 .
 
 [] :quantity 2.0 .
 
@@ -27136,24 +27151,6 @@ food:Butter a :Food,
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
@@ -27183,19 +27180,35 @@ food:Butter a :Food,
 
 [] :quantity 0.25 .
 
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
 [] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
 [] :quantity 1.5 .
 
-[] :quantity 0.25 .
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
 
 [] :quantity 4.0 .
 
 [] :quantity 0.5 .
 
-[] :quantity 1.0 .
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
@@ -27209,15 +27222,15 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
-
 [] :quantity 3.0 .
 
 [] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
-[] :quantity 0.25 .
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
@@ -27231,13 +27244,13 @@ food:Butter a :Food,
 
 [] :quantity 0.25 .
 
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
 [] :quantity 2.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
@@ -27247,15 +27260,13 @@ food:Butter a :Food,
 
 [] :quantity 0.25 .
 
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
 [] :quantity 0.75 .
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
+[] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
@@ -27263,43 +27274,11 @@ food:Butter a :Food,
 
 [] :quantity 3.0 .
 
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 3.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.5 .
-
 [] :quantity 0.5 .
 
 [] :quantity 1.0 .
 
-[] :quantity 0.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity "0.25" .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
 [] :quantity 1.0 .
-
-[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
@@ -27309,47 +27288,79 @@ food:Butter a :Food,
 
 [] :quantity 1.5 .
 
+[] :quantity 3.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 3.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
 
 [] :quantity 2.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 2.0 .
 
 [] :quantity 0.25 .
 
 [] :quantity 0.6666666666666666 .
 
-[] :quantity 0.5 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.5 .
+[] :quantity 2.0 .
 
 [] :quantity 0.25 .
 
@@ -27369,9 +27380,13 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
+
 [] :quantity 0.25 .
 
-[] :quantity 2.0 .
+[] :quantity 0.5 .
 
 [] :quantity 0.75 .
 
@@ -27379,14 +27394,26 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
-
 [] :quantity 2.0 .
 
 [] :quantity 1.5 .
 
 [] :quantity 0.25 .
 
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
 [] :quantity 2.0 .
 
 [] :quantity 0.25 .
@@ -27395,45 +27422,33 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 0.25 .
-
-[] :quantity 1.5 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
 [] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
 
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
 [] :quantity 3.0 .
 
 [] :quantity 1.25 .
 
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
+
 [] :quantity 1.0 .
 
 [] :quantity 3.0 .
 
 [] :quantity 0.5 .
 
-[] :quantity 2.0 .
+[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
@@ -27445,7 +27460,7 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
 [] :quantity 1.5 .
 
@@ -27475,6 +27490,8 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
+[] :quantity 0.25 .
+
 [] :quantity 2.0 .
 
 [] :quantity 0.25 .
@@ -27497,7 +27514,7 @@ food:Butter a :Food,
 
 [] :quantity 0.25 .
 
-[] :quantity 1.0 .
+[] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
@@ -27517,59 +27534,55 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
-[] :quantity 0.25 .
+[] :quantity 2.5 .
 
 [] :quantity 0.5 .
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
-[] :quantity 4.0 .
+[] :quantity 1.0 .
 
 [] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
-[] :quantity 0.5 .
+[] :quantity 1.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
 
 [] :quantity 0.3333333333333333 .
 
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
 [] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
 [] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.5 .
 
 [] :quantity 3.0 .
 
-[] :quantity 0.5 .
-
-[] :quantity 1.5 .
-
-[] :quantity 2.0 .
-
 [] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
-[] :quantity 1.5 .
+[] :quantity 2.0 .
 
 [] :quantity 1.0 .
 
@@ -27577,7 +27590,7 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
-[] :quantity 1.0 .
+[] :quantity 1.5 .
 
 [] :quantity 0.25 .
 
@@ -27605,7 +27618,7 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 2.0 .
 
 [] :quantity 0.25 .
 
@@ -27625,27 +27638,27 @@ food:Butter a :Food,
 
 [] :quantity 2.0 .
 
-[] :quantity 0.25 .
+[] :quantity "0.25" .
 
 [] :quantity 1.5 .
 
 [] :quantity 0.5 .
 
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
-
 [] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
 [] :quantity 0.5 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 1.5 .
 
 [] :quantity 0.25 .
 
 [] :quantity 2.0 .
-
-[] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
@@ -27655,7 +27668,7 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
+[] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
@@ -27663,9 +27676,29 @@ food:Butter a :Food,
 
 [] :quantity 1.5 .
 
-[] :quantity 0.25 .
+[] :quantity 1.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 0.25 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 5.0 .
+
+[] :quantity 1.5 .
+
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
@@ -27673,36 +27706,14 @@ food:Butter a :Food,
 
 [] :quantity 3.0 .
 
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 5.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 5.0 .
-
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
+[] :quantity 2.0 .
+
+[] :quantity 5.0 .
+
 [] :quantity 1.0 .
 
 [] :quantity 0.25 .
@@ -27711,6 +27722,8 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
+[] :quantity 1.0 .
+
 [] :quantity 2.0 .
 
 [] :quantity 2.0 .
@@ -27719,23 +27732,25 @@ food:Butter a :Food,
 
 [] :quantity 1.5 .
 
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.25 .
+[] :quantity 1.5 .
 
 [] :quantity 0.25 .
 
 [] :quantity 2.0 .
+
+[] :quantity 0.25 .
+
+[] :quantity 0.25 .
+
+[] :quantity 1.0 .
 
 [] :quantity 1.0 .
 
 [] :quantity 0.75 .
 
-[] :quantity 1.0 .
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
 
 [] :quantity 2.0 .
 
@@ -27752,26 +27767,26 @@ food:Butter a :Food,
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 0.5 .
 
 [] :quantity 0.75 .
 
 [] :quantity 2.0 .
 
-[] :quantity 0.5 .
-
-[] :quantity 1.0 .
-
-[] :quantity 3.0 .
+[] :quantity 0.25 .
 
 [] :quantity 0.5 .
 
 [] :quantity 1.0 .
 
 [] :quantity 3.0 .
+
+[] :quantity 0.5 .
+
+[] :quantity 1.0 .
+
+[] :quantity 3.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 2.0 .
 
@@ -27805,18 +27820,20 @@ food:Butter a :Food,
 
 [] :quantity 0.5 .
 
+[] :quantity 4.0 .
+
 [] :quantity 0.5 .
 
 [] :quantity 2.0 .
+
+[] :quantity 1.0 .
+
+[] :quantity 2.0 .
+
+[] :quantity 1.5 .
 
 [] :quantity 0.3333333333333333 .
 
-[] :quantity 2.0 .
-
-[] :quantity 1.5 .
-
-[] :quantity 0.25 .
-
 [] :quantity 1.0 .
 
 [] :quantity 1.0 .
@@ -27833,23 +27850,25 @@ food:Butter a :Food,
 
 [] :quantity 1.0 .
 
+[] :quantity 0.25 .
+
 [] :quantity 0.5 .
 
 [] :quantity 1.0 .
-
-[] :quantity 0.75 .
 
 [] :quantity 0.5 .
 
 [] :quantity 3.0 .
 
-[] :quantity 1.0 .
+[] :quantity 0.75 .
 
 [] :quantity 0.5 .
 
 [] :quantity 0.5 .
 
 [] :quantity 2.0 .
+
+[] :quantity 1.0 .
 
 [] :quantity 1.5 .
 
@@ -27859,13 +27878,7 @@ food:Butter a :Food,
 
 [] :quantity 1.5 .
 
-[] :quantity 2.0 .
-
-[] :quantity 0.25 .
-
-[] :quantity 2.0 .
-
-[] :quantity 1.0 .
+[] :quantity 0.5 .
 
 [] :quantity 1.25 .
 
@@ -27879,31 +27892,27 @@ food:Butter a :Food,
 
 [] :quantity 1.5 .
 
-[] :quantity 0.25 .
+[] :quantity 1.0 .
 
 [] :quantity 3.0 .
 
 [] :quantity 1.0 .
 
+[] :quantity 0.25 .
+
+[] :quantity 2.0 .
+
+[] :quantity 2.0 .
+
 [] :quantity 0.5 .
 
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
-[] :quantity 2.0 .
+[] :quantity 1.0 .
 
 [] :quantity 0.25 .
 
 [] :quantity 1.0 .
 
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
-[] :quantity 1.0 .
-
 [] :quantity 0.5 .
-
-[] :quantity 3.0 .
-
-[] :quantity 1.0 .
 

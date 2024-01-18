@@ -34,7 +34,9 @@ Informations sur les ingrédients :
 [x] corriger les erreurs de food (cold, fry, etc) éventuellement Keyword Extraction ou un LLM \
 [x] Recuperer recettes & ingredients\
 [ ] Ajouter some pour toute les quantitées invalides ?\
-[ ] Desambiguation des ingrédients et des recettes : extraction depuis textes\
+[ ] Regex bea10 & seas1d \
+[ ] Conversion standard units 
+[x] Desambiguation des ingrédients et des recettes : extraction depuis textes\
 [ ] SKOS : thesaurus aliments \
 [ ] SKOS : thesaurus units (add top concepts) \
 [ ] SKOS : thesaurus nutriments \
@@ -43,7 +45,7 @@ Informations sur les ingrédients :
 [ ] OWL : étoffer vocabulaire\
 [ ] OWL : recette allergies \
 [x] µServices nutriments : ajouter une façon de trouver les calories et informations nutritionnelles à partir des recettes et ingrédients\
-[ ] µServices : Query fédérée (utiliser endpoint web de données) \
+[x] µServices : Query fédérée (utiliser endpoint web de données) \
 [ ] OWL : Recettes transitives (ajouter des transformations d'ingrédients à partir de recettes)\
 [ ] OWL : Aligner vocabulaires\
 [ ] Server : faire le front\

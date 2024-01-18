@@ -10,7 +10,7 @@ class Recipe:
         instructions,
         category,
         thumbnail,
-        abstract,
+        abstract="",
         nutritional_data=None,
     ):
         self.id = id

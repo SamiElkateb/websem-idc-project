@@ -45,8 +45,8 @@ measurements:Cup
     a                  :VolumeMeasurementUnit, skos:Concept ;
     skos:prefLabel     "Cup"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
-                         :unit            measurements:Liter ;
-                         :conversionRatio 0.2366 ] .
+                         :unit            measurements:VolumicOunce ;
+                         :conversionRatio 0.125 ] .
 
 measurements:Package
     a :MeasurementUnit, skos:Concept ;

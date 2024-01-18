@@ -13,7 +13,7 @@ from kitchen_chef_server.sparql.queries.build_search_query import \
 
 RECIPES = Namespace("http://project-kitchenchef.fr/recipes/data#")
 FOODS = Namespace("http://project-kitchenchef.fr/food/data#")
-
+debug = True
 
 # TODO: query parameters: filter ingredients
 @app.get("/recipes")
@@ -69,8 +69,8 @@ async def get_recipe(recipe_identifier: str):
             ?ingredient :name ?ingredientName ;
             OPTIONAL { ?ingredient :hasStandardMeasurementUnit/:quantity ?ingredientQuantityStandard . }
             OPTIONAL { ?ingredient :hasStandardMeasurementUnit/:unit ?ingredientUnitTmp.
-            OPTIONAL { ?ingredientUnitTmp skos:prefLabel ?prefLabelStandard }
-            BIND(IF(BOUND(?prefLabelStandard),?prefLabelStandard,?ingredientUnitTmp) AS ?labelUnitStandard)
+                OPTIONAL { ?ingredientUnitTmp skos:prefLabel ?prefLabelStandard }
+                BIND(IF(BOUND(?prefLabelStandard),IF(?prefLabelStandard = "Cup"@en,"fluid ounces",?prefLabelStandard),?ingredientUnitTmp) AS ?labelUnitStandard)
             }
             OPTIONAL { ?ingredient :hasImperialMeasurementUnit/:quantity ?ingredientQuantityImperial . }
             OPTIONAL { ?ingredient :hasImperialMeasurementUnit/:unit ?ingredientUnitTmp.
@@ -80,14 +80,14 @@ async def get_recipe(recipe_identifier: str):
             ?ingredientUnitTmp2 skos:prefLabel ?labelUnitMetric}
             FILTER(?recipe = ?uri)
             BIND(IF(BOUND(?recipeLabelTmp),?recipeLabelTmp,"") AS ?recipeLabel)
-            BIND(IF(BOUND(?ingredientQuantityStandard),?ingredientQuantityStandard,
+            BIND(IF(BOUND(?ingredientQuantityStandard),IF(?labelUnitStandard = "fluid ounces",8,1)*?ingredientQuantityStandard,
             IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityImperial,
             IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityMetric, ""))) AS ?ingredientQuantity)
             BIND(IF(BOUND(?labelUnitStandard),?labelUnitStandard,
             IF(BOUND(?labelUnitImperial),?labelUnitImperial,
             IF(BOUND(?labelUnitMetric),?labelUnitMetric, ""))) AS ?labelUnit)
             BIND(IF(?labelUnit!="",CONCAT(?labelUnit," of "),?labelUnit) AS ?unit)
-            BIND(LCASE(CONCAT(REPLACE(STR(?ingredientQuantity),".",",")," ",?unit,?ingredientName)) AS ?query)
+            BIND(LCASE(CONCAT(STR(ROUND(?ingredientQuantity))," ",?unit,?ingredientName)) AS ?query)
 
             BIND(IF(BOUND(?ingredientQuantityStandard),?ingredientQuantityStandard,"") AS ?ingredientQuantityStandardName)
             BIND(IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityImperial,?ingredientQuantityStandardName) AS ?ingredientQuantityImperialName)
@@ -108,11 +108,12 @@ async def get_recipe(recipe_identifier: str):
         },
     )
     row_url = get_row(results)
-    # print("Label",row_url.recipeLabel)
-    # print("URL", row_url.urlMicroServ)
-    # print("Metrics : \n", row_url.ingredientMetricQuantities, "\n", row_url.ingredientImperialQuantities)
-    # print("Units : \n", row_url.labelUnitMetricNames, "\n", row_url.labelUnitImperialNames)
-    # print("Names : \n", row_url.ingredientNames)
+    if debug:
+        print("Label",row_url.recipeLabel)
+        print("URL", row_url.urlMicroServ)
+        print("Metrics : \n", row_url.ingredientMetricQuantities, "\n", row_url.ingredientImperialQuantities)
+        print("Units : \n", row_url.labelUnitMetricNames, "\n", row_url.labelUnitImperialNames)
+        print("Names : \n", row_url.ingredientNames)
 
     query = f"""
     prefix :        <http://project-kitchenchef.fr/schema#>
@@ -148,7 +149,7 @@ async def get_recipe(recipe_identifier: str):
         SELECT ?comment WHERE {{
             OPTIONAL {{
                 SERVICE <https://dbpedia.org/sparql> {{
-                    ?ing rdfs:label ?nameRecipe ; dbo:abstract ?abstract .
+                    ?nameRecipe ^rdfs:label/dbo:abstract ?abstract .
                     FILTER(?nameRecipe = "{row_url.recipeLabel}"@en && LANG(?abstract)="en")
                 }}
             }}
@@ -161,11 +162,12 @@ async def get_recipe(recipe_identifier: str):
         query
     )
     row = get_row(results)
-    # print("Kcal", row.kcal, "Fat", row.fat, "Carbs", row.carbs, "Sugar", row.sugar, "Fiber", row.fiber, "Proteins", row.proteins)
-    # try:
-    #     print("Abstract", row.comment)
-    # except Exception:
-    #     print("No abstract found")
+    if debug:
+        print("Kcal", row.kcal, "Fat", row.fat, "Carbs", row.carbs, "Sugar", row.sugar, "Fiber", row.fiber, "Proteins", row.proteins)
+        try:
+            print("Abstract", row.comment)
+        except Exception:
+            print("No abstract found")
     ingredients = IngredientFactory.from_strings(
         row.ingredientIds,
         row_url.ingredientNames,
