@@ -14,21 +14,46 @@ food:FoodThesaurus a skos:ConceptScheme;
   skos:definition "A classification scheme for different types of food"@en,
                   "Un schéma de classification pour différents types d'aliments"@fr;
   skos:hasTopConcept food:Meat ;
+  skos:hasTopConcept food:Fish ;
   skos:hasTopConcept food:DairyProduct ;
   skos:hasTopConcept food:Fruit ;
   skos:hasTopConcept food:Vegetable ;
-  skos:hasTopConcept food:Nuts ;
   skos:hasTopConcept food:Eggs .
 
 food:Meat a skos:Concept;
   skos:prefLabel "Meat"@en, "Viande"@fr;
+  skos:broaderTransitive food:animalProduct ;
   skos:definition "Animal flesh used as food"@en,
                   "Chair d'animal utilisée comme nourriture"@fr.
 
+food:Fish a skos:Concept;
+  skos:prefLabel ""@en, ""@fr;
+  skos:broaderTransitive food:animalProduct ;
+  skos:definition ""@en,
+                  ""@fr.
+
+food:SeaFood a skos:Concept;
+  skos:prefLabel ""@en, ""@fr;
+  skos:broaderTransitive food:animalProduct ;
+  skos:definition ""@en,
+                  ""@fr.
+
 food:DairyProduct a skos:Concept;
   skos:prefLabel "Dairy Product"@en, "Produit laitier"@fr;
+  skos:broaderTransitive food:animalProduct ;
   skos:definition "Food produced from the milk of mammals"@en,
                   "Aliment produit à partir du lait des mammifères"@fr.
+
+food:Cheese a skos:Concept;
+  skos:prefLabel ""@en, ""@fr ;
+  skos:broaderTransitive food:DairyProduct ;
+  skos:definition ""@en,
+                  ""@fr.
+
+food:animalProduct a skos:Concept;
+  skos:prefLabel ""@en, ""@fr;
+  skos:definition ""@en,
+                  ""@fr.
 
 food:Fruit a skos:Concept;
   skos:prefLabel "Fruit"@en, "Fruit"@fr;
@@ -45,7 +70,37 @@ food:Nuts a skos:Concept;
   skos:definition "Hard-shelled dry fruits or seeds with a significant amount of fat and protein"@en,
                   "Fruits ou graines à coque dure contenant une quantité significative de matières grasses et de protéines"@fr.
 
+food:Arachis a skos:Concept;
+  skos:prefLabel ""@en, ""@fr;
+  skos:definition ""@en,
+                  ""@fr.
+
+food:Cereals a skos:Concept;
+  skos:prefLabel ""@en, ""@fr;
+  skos:definition ""@en .
+
+food:Bread a skos:Concept;
+  skos:prefLabel ""@en, ""@fr;
+  skos:definition ""@en,
+                  ""@fr.
+
+food:Pasta a skos:Concept;
+  skos:prefLabel ""@en, ""@fr;
+  skos:definition ""@en,
+                  ""@fr.
+
+food:Spice a skos:Concept;
+  skos:prefLabel ""@en, ""@fr;
+  skos:definition ""@en,
+                  ""@fr.
+
+food:Condiment a skos:Concept;
+  skos:prefLabel ""@en, ""@fr;
+  skos:definition ""@en,
+                  ""@fr.
+
 food:Eggs a skos:Concept;
   skos:prefLabel "Eggs"@en, "Oeufs"@fr;
+  skos:broaderTransitive food:animalProduct ;
   skos:definition "Edible reproductive bodies produced by birds, particularly chickens, often used in cooking and baking"@en,
                   "Corps reproducteurs comestibles produits par des oiseaux, en particulier des poules, souvent utilisés dans la cuisine et la pâtisserie"@fr.
