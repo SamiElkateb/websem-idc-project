@@ -10,6 +10,7 @@ class Recipe:
         instructions,
         category,
         thumbnail,
+        abstract,
         nutritional_data=None,
     ):
         self.id = id
@@ -19,3 +20,4 @@ class Recipe:
         self.category = category
         self.ingredients = ingredients
         self.thumbnail = thumbnail
+        self.abstract = abstract

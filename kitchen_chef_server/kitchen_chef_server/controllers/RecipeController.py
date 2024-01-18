@@ -44,16 +44,19 @@ async def get_recipes(
 """
 Une fois en cache, la requête prend ~3 secondes à s'exécuter
 """
+
 @app.get("/recipe")
 async def get_recipe(recipe_identifier: str):
     query = """
     prefix :        <http://project-kitchenchef.fr/schema#>
     prefix recipes: <http://project-kitchenchef.fr/recipes/data#>
     prefix skos:    <http://www.w3.org/2004/02/skos/core#>
-    
+    prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+
     SELECT * WHERE{
     {
-        SELECT (group_concat(?query; separator=" and ") AS ?queryList)
+        SELECT ?recipeLabel
+        (group_concat(?query; separator=" and ") AS ?queryList)
         (group_concat(str(?ingredientName); separator="|-|") AS ?ingredientNames)
         (group_concat(str(?ingredientQuantityImperialName); separator="|-|") AS ?ingredientImperialQuantities)
         (group_concat(str(?ingredientQuantityMetricName); separator="|-|") AS ?ingredientMetricQuantities)
@@ -61,6 +64,8 @@ async def get_recipe(recipe_identifier: str):
         (group_concat(str(?labelUnitMetricName); separator="|-|") AS ?labelUnitMetricNames)
         WHERE {
             ?recipe :hasIngredient ?ingredient.
+            OPTIONAL { ?recipe rdfs:label ?recipeLabelTmp.
+             FILTER(LANG(?recipeLabelTmp) = "en")}
             ?ingredient :name ?ingredientName ;
             OPTIONAL { ?ingredient :hasStandardMeasurementUnit/:quantity ?ingredientQuantityStandard . }
             OPTIONAL { ?ingredient :hasStandardMeasurementUnit/:unit ?ingredientUnitTmp.
@@ -74,6 +79,7 @@ async def get_recipe(recipe_identifier: str):
             OPTIONAL { ?ingredient :hasMetricMeasurementUnit/:unit ?ingredientUnitTmp2 .
             ?ingredientUnitTmp2 skos:prefLabel ?labelUnitMetric}
             FILTER(?recipe = ?uri)
+            BIND(IF(BOUND(?recipeLabelTmp),?recipeLabelTmp,"") AS ?recipeLabel)
             BIND(IF(BOUND(?ingredientQuantityStandard),?ingredientQuantityStandard,
             IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityImperial,
             IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityMetric, ""))) AS ?ingredientQuantity)
@@ -92,8 +98,7 @@ async def get_recipe(recipe_identifier: str):
             BIND(IF(BOUND(?labelUnitMetric),?labelUnitMetric,?labelUnitStandardName) AS ?labelUnitMetricName)
         } GROUP BY ?recipe
     }
-    BIND(CONCAT("http://localhost/service/dbpedia/food?food=",REPLACE(?queryList," ","%20")) AS ?urlDbpedia)
-    BIND(CONCAT("http://localhost/service/calorieninjas/nutrition?food=",REPLACE(?queryList," ","%20")) AS ?urlMicroServ)
+    BIND(CONCAT("http://localhost/service/calorieninjas/nutrition?food=",ENCODE_FOR_URI(?queryList)) AS ?urlMicroServ)
     }
     """
     results = g.query(
@@ -103,57 +108,62 @@ async def get_recipe(recipe_identifier: str):
         },
     )
     row_url = get_row(results)
-    # print("URL", row_url.urlMicroServ)
-    # print("URL dbpedia", row_url.urlDbpedia)
-    # print("Metrics : \n", row_url.ingredientMetricQuantities, "\n", row_url.ingredientImperialQuantities)
-    # print("Units : \n", row_url.labelUnitMetricNames, "\n", row_url.labelUnitImperialNames)
-    # print("Names : \n", row_url.ingredientNames)
-
-    query = f"""
+    print("Label",row_url.recipeLabel)
+    print("URL", row_url.urlMicroServ)
+    print("Metrics : \n", row_url.ingredientMetricQuantities, "\n", row_url.ingredientImperialQuantities)
+    print("Units : \n", row_url.labelUnitMetricNames, "\n", row_url.labelUnitImperialNames)
+    print("Names : \n", row_url.ingredientNames)
+    query = """
     prefix :        <http://project-kitchenchef.fr/schema#>
     prefix recipes: <http://project-kitchenchef.fr/recipes/data#>
     prefix skos:    <http://www.w3.org/2004/02/skos/core#>
+    prefix dbo:    <http://dbpedia.org/ontology/>
+    prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
     
-    SELECT * WHERE {{
-        {{
-            SELECT ?recipe ?name ?category ?instructions ?thumbnail
-                (group_concat(?ingredient; separator="|-|") AS ?ingredientIds)
-                (group_concat(?ingredientFood; separator="|-|") AS ?ingredientFoods)
-            WHERE {{
-                ?recipe :name ?name ;
-                :hasIngredient ?ingredient .
-                OPTIONAL {{ ?recipe :recipeCategory ?category . }}
-                OPTIONAL {{ ?recipe :instructions ?instructions . }}
-                OPTIONAL {{ ?recipe :hasThumbnail ?thumbnail . }}
-                ?ingredient :food ?ingredientFood ;
-                :name ?ingredientName ;
-                OPTIONAL {{ ?ingredient :food ?ingredientFood . }}
-                FILTER(?recipe = ?uri)
-            }}GROUP BY ?recipe
-        }}
-        {{
-            SELECT * WHERE {{
-               SERVICE <{row_url.urlMicroServ}> {{
-                   ?x :hasCalories ?kcal; :hasProtein ?proteins; :hasTotalFat ?fat; :hasCarbohydratesTotal ?carbs; :hasSugar ?sugar; :hasFiber ?fiber
-                 }}
-            }} 
-        }}
-        # {{
-        #     SELECT * WHERE {{
-        #         SERVICE <{row_url.urlDbpedia}> {{
-        #             ?x :hasCalories ?kcal; :hasTotalFat ?fat; :hasCarbohydratesTotal ?carbs; :hasSugar ?sugar; :hasFiber ?fiber
-        #     }}
-        # }}
-    }}
+    SELECT * WHERE {
+    {
+        SELECT ?recipe ?name ?category ?instructions ?thumbnail
+        (group_concat(?ingredient; separator="|-|") AS ?ingredientIds)
+        (group_concat(?ingredientFood; separator="|-|") AS ?ingredientFoods)
+        WHERE {
+            ?recipe :hasIngredient ?ingredient .
+            OPTIONAL { ?recipe :recipeCategory ?category . }
+            OPTIONAL { ?recipe :instructions ?instructions . }
+            OPTIONAL { ?recipe :hasThumbnail ?thumbnail . }
+            ?ingredient :food ?ingredientFood ;
+            :name ?ingredientName ;
+            OPTIONAL { ?ingredient :food ?ingredientFood . }
+            FILTER(?recipe = <"""+URIRef(recipe_identifier)+""">)
+        }GROUP BY ?recipe
+    }
+    {
+        SELECT * WHERE {
+            SERVICE <"""+row_url.urlMicroServ+"""> {
+                ?x :hasCalories ?kcal; :hasTotalFat ?fat; :hasCarbohydratesTotal ?carbs; :hasSugar ?sugar; :hasFiber ?fiber; :hasProtein ?proteins .
+            }
+        }
+    }
+    {
+        SELECT ?comment WHERE {
+            OPTIONAL {
+            SERVICE <https://dbpedia.org/sparql> {
+                ?ing rdfs:label ?nameRecipe ; dbo:abstract ?abstract .
+                FILTER(?nameRecipe = \""""+row_url.recipeLabel+"""\"@en && LANG(?abstract)="en")
+            }}
+            BIND(IF(BOUND(?abstract),?abstract,"") AS ?comment)
+        }
+    }
+}
     """
     results = g.query(
-        query,
-        initBindings={
-            "uri": URIRef(recipe_identifier),
-        },
+        query
     )
     row = get_row(results)
-    # print("Kcal", row.kcal, "Fat", row.fat, "Carbs", row.carbs, "Sugar", row.sugar, "Fiber", row.fiber)
+    print("Kcal", row.kcal, "Fat", row.fat, "Carbs", row.carbs, "Sugar", row.sugar, "Fiber", row.fiber, "Proteins", row.proteins)
+    try:
+        print("Abstract", row.comment)
+    except Exception:
+        print("No abstract found")
     ingredients = IngredientFactory.from_strings(
         row.ingredientIds,
         row_url.ingredientNames,
@@ -164,12 +174,10 @@ async def get_recipe(recipe_identifier: str):
         row_url.labelUnitMetricNames,
     )
     nutritional_data = NutritionalData(row.kcal, row.proteins, row.fat, row.carbs, row.sugar, row.fiber)
-    return Recipe(row.recipe, row.name, ingredients,  row.instructions, row.category, row.thumbnail, nutritional_data=nutritional_data)
-
+    return Recipe(row.recipe, row.name, ingredients, row.instructions, row.category, row.thumbnail,row.comment, nutritional_data=nutritional_data)
 
 def get_row(results):
     results = list(results)
     if len(results) == 0:
         raise HTTPException(status_code=404, detail="Item not found")
-    row = results[0]
-    return row
+    return results[0]
