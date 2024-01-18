@@ -6,6 +6,7 @@ from rdflib import (DCTERMS, OWL, RDF, RDFS, SKOS, Graph, Literal, Namespace,
                     URIRef)
 from utils.get_annotations import get_food_item
 from utils.use_cache import load_cache, save_cache
+from queries.food_thesaurus import food_thesaurus_query
 
 
 def is_valid_url(url):
@@ -162,4 +163,5 @@ def populate_ingredients(g):
         surfaceForm = to_pascal_case(result["surfaceForm"])
         dbpedia_uri = result["URI"]
         add_food_item(g, row.ingredientName, surfaceForm, dbpedia_uri)
+    qres = g.update(food_thesaurus_query)
     g.serialize(destination="../vocab/recipes.ttl")
