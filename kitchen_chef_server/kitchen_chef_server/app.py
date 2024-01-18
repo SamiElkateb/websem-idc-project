@@ -22,5 +22,5 @@ app.add_middleware(
 
 g = load_graph("./data")
 
-g.update(read_query("./kitchen_chef_server/sparql/constructs/conversion_ratios.rq"))
-g.update(read_query("./kitchen_chef_server/sparql/constructs/conversion.rq"))
+g.update(read_query("./kitchen_chef_server/sparql/inserts/conversion_ratios.rq"))
+g.update(read_query("./kitchen_chef_server/sparql/inserts/conversion.rq"))
