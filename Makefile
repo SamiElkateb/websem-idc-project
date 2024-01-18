@@ -41,8 +41,6 @@ quantityConversion :
 
 unitSeparation:
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/separateUnits.rq -i ./vocab/measurements.ttl -i output/recipes.ttl -i ./vocab/schema.ttl -o output/recipes.ttl
-	# @java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/entailment/conversion_ratios.rq -i ./vocab/measurements.ttl -o ./vocab/measurements.ttl
-	# @java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/entailment/conversion.rq -i ./vocab/measurements.ttl -i output/recipes.ttl -i ./vocab/schema.ttl -o output/recipes.ttl
 
 
 foodweights2rdf:

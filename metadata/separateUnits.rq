@@ -16,10 +16,6 @@ CONSTRUCT {
     :quantity ?standardQuantity
   ]
 
-    ?ingredient :hasStandardMeasurementUnit [
-        :quantity ?standardQuantity
-    ]
-
 } WHERE {
   {
     SELECT DISTINCT * {
@@ -39,11 +35,6 @@ CONSTRUCT {
       FILTER NOT EXISTS { ?standardUnit a :ImperialMeasurementUnit }
       FILTER NOT EXISTS { ?standardUnit a :MetricMeasurementUnit }
     }
-  } UNION {
-      SELECT DISTINCT * {
-        ?ingredient :quantity ?standardQuantity .
-          FILTER NOT EXISTS { ?ingredient :unit ?unit }
-      }
   } UNION {
     ?x ?y ?z
 
