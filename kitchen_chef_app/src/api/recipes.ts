@@ -13,4 +13,6 @@ const getRecipes = async ({ filteringIngredients }: { filteringIngredients:TIngr
 
 const getRecipe = async (id: string) => axios.get(`${serverConf.URL}/recipe?recipe_identifier=${encodeURIComponent(id)}`);
 
+// const getRecipe = async ({ id }: { id:string }) => ({ data: recipe });
+
 export { getRecipe, getRecipes };

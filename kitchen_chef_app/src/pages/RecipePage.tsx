@@ -11,6 +11,7 @@ import RecipeSearchForm from '../form/RecipeSearchForm';
 import RecipeCard from '../components/RecipeCard';
 import { getRecipe } from '../api/recipes';
 import IngredientsCard from '../components/recipe/IngredientsCard';
+import NutritionalDataCard from '../components/recipe/NutritionalDataCard';
 
 const RecipePage = () => {
   const params = useParams();
@@ -21,7 +22,7 @@ const RecipePage = () => {
 
   console.log('recipe', recipe);
   if (isLoading || !recipe?.data) return <CircularProgress />;
-  const { nutritionalInformations } = recipe.data;
+  const { nutritionalData } = recipe.data;
 
   return (
     <Box maxWidth="860px" margin="auto">
@@ -40,24 +41,9 @@ const RecipePage = () => {
         >
           <IngredientsCard ingredients={recipe?.data.ingredients} thumbnail={recipe?.data.thumbnail} />
         </Grid>
-        {/* <Grid item xs={6}> */}
-        {/*   <Card sx={{ padding: '1rem' }}> */}
-        {/*     <Typography gutterBottom variant="h5" component="h2" noWrap> */}
-        {/*       Nutritional Informations */}
-        {/*     </Typography> */}
-        {/*     <CardContent> */}
-        {/*       <Typography gutterBottom component="div" align="left" display="flex" justifyContent="space-between"> */}
-        {/*         <span>Calories </span> */}
-        {/*         <span>{`${nutritionalInformations.calories} kCal`}</span> */}
-        {/*       </Typography> */}
-
-        {/*       <Typography gutterBottom component="div" align="left" display="flex" justifyContent="space-between"> */}
-        {/*         <span>Sugar </span> */}
-        {/*         <span>{`${nutritionalInformations.sugar} g`}</span> */}
-        {/*       </Typography> */}
-        {/*     </CardContent> */}
-        {/*   </Card> */}
-        {/* </Grid> */}
+        <Grid item xs={6}>
+          <NutritionalDataCard nutritionalData={nutritionalData} />
+        </Grid>
       </Grid>
     </Box>
   );
