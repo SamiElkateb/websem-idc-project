@@ -43,11 +43,12 @@ async def get_ingredients():
 @app.get("/test")
 async def get_test():
     query = """
-    prefix : <http://project-kitchenchef.fr/schema#>
-
-    select * where {
-      ?x a :ArachisRecipe
-    }
+    prefix :<http://project-kitchenchef.fr/schema#>
+    SELECT DISTINCT ?recipe ?name
+    WHERE {{
+        ?recipe a :VeganRecipe ;
+                :name ?name .
+    }} GROUP BY ?recipe
     """
 
     results = g.query(
@@ -56,6 +57,8 @@ async def get_test():
 
     if results is None:
         raise HTTPException(status_code=404, detail="Item not found")
-
+    recipes = []
     for row in results:
-        print("result row", row.x)
+        print("result row", row.name)
+        recipes.append(row.name)
+    return recipes

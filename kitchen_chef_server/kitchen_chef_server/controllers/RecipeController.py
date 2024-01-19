@@ -2,6 +2,7 @@ from typing import Annotated
 
 from fastapi import HTTPException, Query
 from kitchen_chef_server.models.NutritionalData import NutritionalData
+from kitchen_chef_server.models.RecipeFilter import RecipeFilter
 from rdflib import Namespace, URIRef
 
 from kitchen_chef_server.app import app, g
@@ -15,18 +16,24 @@ RECIPES = Namespace("http://project-kitchenchef.fr/recipes/data#")
 FOODS = Namespace("http://project-kitchenchef.fr/food/data#")
 debug = True
 
+
 # TODO: query parameters: filter ingredients
 @app.get("/recipes")
 async def get_recipes(
         q_ingredients: Annotated[list[str] | None, Query()] = None,
         q_filters: Annotated[list[str] | None, Query()] = None,
 ):
+    q_ingredients = q_ingredients if q_ingredients else []
+    q_filters = q_filters if q_filters else []
     query = build_search_query(q_ingredients, q_filters)
     initBindings = {}
     if q_ingredients:
-        for i, food_ingredient in enumerate(q_ingredients):
-            initBindings[f"ingredientFood{i}"] = URIRef(food_ingredient)
-            pass
+        for i, q_ingredient in enumerate(q_ingredients):
+            initBindings[f"ingredientFood{i}"] = URIRef(q_ingredient)
+
+    if q_filters:
+        for i, q_filter in enumerate(q_filters):
+            initBindings[f"recipeFilter{i}"] = URIRef(q_filter)
 
     results = g.query(query, initBindings=initBindings)
 
@@ -41,12 +48,11 @@ async def get_recipes(
     return recipes
 
 
-"""
-Une fois en cache, la requête prend ~3 secondes à s'exécuter
-"""
-
 @app.get("/recipe")
 async def get_recipe(recipe_identifier: str):
+    """
+    Une fois en cache, la requête prend ~3 secondes à s'exécuter
+    """
     query = """
     prefix :        <http://project-kitchenchef.fr/schema#>
     prefix recipes: <http://project-kitchenchef.fr/recipes/data#>
@@ -188,3 +194,29 @@ def get_row(results):
     if len(results) == 0:
         raise HTTPException(status_code=404, detail="Item not found")
     return results[0]
+
+@app.get("/recipe_filters")
+async def get_recipe_filters():
+    query = """
+    prefix :<http://project-kitchenchef.fr/schema#>
+    SELECT DISTINCT ?userRecipeFilter ?frUILabel ?enUILabel WHERE {
+           ?userRecipeFilter a :UserRecipeFilter ;
+           :uiLabel ?frUILabel ;
+           :uiLabel ?enUILabel .
+           FILTER (LANG(?frUILabel) = "fr")
+           FILTER (LANG(?enUILabel) = "en")
+    }
+    """
+
+    results = g.query(
+        query,
+    )
+
+    if results is None:
+        raise HTTPException(status_code=404, detail="Item not found")
+
+    recipes_filters = {}
+    for row in results:
+        recipe_filters = RecipeFilter(row.userRecipeFilter, row.enUILabel, row.frUILabel)
+        recipes_filters[row.userRecipeFilter] = recipe_filters
+    return list(recipes_filters.values())

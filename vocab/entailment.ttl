@@ -28,7 +28,8 @@
                                                                     owl:hasValue   food:Arachis ] ] ] .
 
 :ArachisFreeRecipe
-    a                    owl:Class ;
+    a                    owl:Class, :UserRecipeFilter ;
+  :uiLabel "Arachis-Free"@en, "Sans Arachides"@fr ;
     :complementaryRecipe :RecipeWithArachis .
 
 :RecipeWithAnimalProduct
@@ -45,8 +46,9 @@
     rdfs:seeAlso        [ owl:unionOf ( fowl:MeatCourse fowl:FishCourse fowl:RedMeatCourse ) ] .
 
 :VeganRecipe
-    a                    owl:Class ;
-    :complementaryRecipe :RecipeWithAnimalProduct .
+    a                    owl:Class, :UserRecipeFilter ;
+    :uiLabel "Vegan"@en, "Vegan"@fr ;
+  :complementaryRecipe :RecipeWithAnimalProduct .
 
 :RecipeWithDairyProduct
     a                   owl:Class ;
@@ -61,7 +63,8 @@
                                                                     owl:hasValue   food:DairyProduct ] ] ] .
 
 :DairyFreeRecipe
-    a                    owl:Class ;
+    a                    owl:Class, :UserRecipeFilter ;
+  :uiLabel "Dairy-Free"@en, "Sans produits laitiers"@fr ;
     :complementaryRecipe :DairyFreeRecipe .
 
 
@@ -78,8 +81,12 @@
                                                                     owl:hasValue   food:Nuts ] ] ] .
 
 :NutFreeRecipe
-    a                    owl:Class ;
-    :complementaryRecipe :RecipeWithNuts .
+    a                    owl:Class, :UserRecipeFilter ;
+    :complementaryRecipe :RecipeWithNuts ;
+  rdfs:label ""@en, ""@fr ;
+  :uiLabel "Nut-free"@en, "Sans-noix"@fr ;
+  rdfs:comment ""@en,
+              ""@fr .
 
 :RecipeWithMeatOrFish
     a            owl:Class ;
@@ -105,5 +112,6 @@
                                                                                                                            food:Fish ] ] ] ) .
 
 :VegetarianRecipe
-    a                    owl:Class ;
+    a                    owl:Class, :UserRecipeFilter ;
+  :uiLabel "Vegetarian"@en, "Vegetarien"@fr ;
     :complementaryRecipe :RecipeWithMeatOrFish .

@@ -27,7 +27,7 @@ measurements:Liter
     a :MetricMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
     skos:prefLabel     "Liter"@en .
 
-measurements:centiLiter
+measurements:CentiLiter
     a                  :MetricMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
     skos:prefLabel    "centiLiter"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
@@ -42,11 +42,11 @@ measurements:milliLiter
                          :conversionRatio 0.001 ] .
 
 measurements:Cup
-    a                  :VolumeMeasurementUnit, skos:Concept ;
+    a                  :ImperialMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
     skos:prefLabel     "Cup"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
-                         :unit            measurements:VolumicOunce ;
-                         :conversionRatio 0.125 ] .
+                         :unit            measurements:CentiLiter ;
+                         :conversionRatio 24 ] .
 
 measurements:Package
     a :MeasurementUnit, skos:Concept ;

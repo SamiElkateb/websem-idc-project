@@ -23,16 +23,16 @@ const Filters:React.FC<FiltersProps> = ({
       item.active
         ? (
           <Chip
-            key={item.name}
-            label={item.name}
+            key={item.enLabel}
+            label={item.enLabel}
             onDelete={() => onDeactiveFilter(item)}
             style={{ margin: '5px' }}
             color="primary"
           />
         ) : (
           <Chip
-            key={item.name}
-            label={item.name}
+            key={item.enLabel}
+            label={item.enLabel}
             onClick={() => onActivateFilter(item)}
             style={{ margin: '5px' }}
           />
@@ -41,7 +41,7 @@ const Filters:React.FC<FiltersProps> = ({
     {ingredients!.map((item) => (
       <Chip
         key={item.id}
-        label={item.frLabel}
+        label={item.enLabel}
         onDelete={() => onRemoveIngredient(item.id)}
         style={{ margin: '5px' }}
         color="primary"

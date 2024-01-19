@@ -1,1 +1,1 @@
-export type TFilter = { name: string, active: boolean };
+export type TFilter = { id: string, frLabel: string, enLabel: string, active: boolean };

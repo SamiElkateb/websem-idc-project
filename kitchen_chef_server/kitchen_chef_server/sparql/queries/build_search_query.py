@@ -1,8 +1,12 @@
 def build_search_query(q_ingredients, q_filters):
     ingredients_query = ""
+    recipe_filter_query = ""
     if q_ingredients:
         for i, _ in enumerate(q_ingredients):
             ingredients_query += f"?recipe :hasIngredient ?ingredient{i} . ?ingredient{i} :food ?ingredientFood{i} ."
+    if q_filters:
+        for i, _ in enumerate(q_filters):
+            recipe_filter_query += f"?recipeFilter{i}, "
     query = f"""
     prefix :<http://project-kitchenchef.fr/schema#>
     SELECT DISTINCT ?recipe ?name ?category ?instructions ?thumbnail
@@ -12,7 +16,7 @@ def build_search_query(q_ingredients, q_filters):
             (group_concat(?ingredientQuantity; separator="|-|") AS ?ingredientQuantities)
             (group_concat(?ingredientUnit; separator="|-|") AS ?ingredientUnits)
     WHERE {{
-        ?recipe a :Recipe ;
+        ?recipe a {recipe_filter_query} :Recipe ;
                 :name ?name ;
                 :hasIngredient ?ingredient ;
                 :instructions ?instructions .

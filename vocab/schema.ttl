@@ -81,6 +81,10 @@
     a            owl:Class ;
     rdfs:label   ""@en, ""@fr ;
     rdfs:comment ""@en, ""@fr .
+:UserRecipeFilter a owl:Class ;
+  rdfs:label "Used to filter recipes"@en, "Utilisée pour filtrer les recettes"@fr ;
+  rdfs:comment ""@en,
+               ""@fr .
 
 # Properties
 
@@ -348,7 +352,12 @@
     rdfs:label      "has sugar"@en, "a comme sucre"@fr ;
     rdfs:comment    "Indicates the sugar content in a food item."@en, "Indique la teneur en sucre d'un aliment."@fr .
 
-# Display properties
+:uiLabel  a owl:ObjectProperty ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+               ""@fr .
+
+# UI Display properties
 :hasThumbnail
     a            owl:ObjectProperty ;
     rdfs:label   "has thumbnail"@en, "a pour vignette"@fr ;

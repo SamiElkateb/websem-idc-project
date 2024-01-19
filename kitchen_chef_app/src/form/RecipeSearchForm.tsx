@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import { Button } from '@mui/material';
@@ -9,7 +9,7 @@ import IngredientsAutocomplete from '../components/form/IngredientsAutocomplete'
 import Filters from '../components/form/Filters';
 import { getIngredients } from '../api/ingredients';
 import { TIngredient } from '../models/ingredients';
-import { getRecipes } from '../api/recipes';
+import { getRecipeFilters, getRecipes } from '../api/recipes';
 import { TRecipe } from '../models/recipes';
 import { TFilter } from '../models/others';
 
@@ -18,9 +18,13 @@ type TRecipeSearchFormProps = {
 };
 
 const RecipeSearchForm:React.FC<TRecipeSearchFormProps> = ({ onUpdateRecipes }) => {
-  const [filters, setFilters] = useState([{ name: 'Gluten-Free', active: false },
-    { name: 'Vegan', active: false },
-    { name: 'Dairy-Free', active: false }].sort());
+  const [recipeFilters, setRecipeFilters] = useState<TFilter[]>([]);
+
+  useEffect(() => {
+    getRecipeFilters().then((resfilters) => {
+      setRecipeFilters(resfilters.data.map(((item) => ({ ...item, active: false }))).sort());
+    });
+  }, []);
 
   const { data: availableIngredients } = useQuery('ingredients', getIngredients);
 
@@ -33,20 +37,23 @@ const RecipeSearchForm:React.FC<TRecipeSearchFormProps> = ({ onUpdateRecipes }) 
     setFilteringIngredients((prevState) => prevState.filter((item) => item.id !== ingredient));
   };
   const handleActivateFilter = (filterName: TFilter) => {
-    setFilters(
+    setRecipeFilters(
       (prevState) => prevState.map((item) => (item === filterName
         ? { ...item, active: true }
         : item)),
     );
   };
   const handleDeactivateFilter = (filterName: TFilter) => {
-    setFilters((prevState) => prevState.map((item) => (item === filterName
+    setRecipeFilters((prevState) => prevState.map((item) => (item === filterName
       ? { ...item, active: false }
       : item)));
   };
 
   const handleFormSubmit = async () => {
-    const recipes = await getRecipes({ filteringIngredients });
+    console.log('before request');
+    const recipes = await getRecipes({ filteringIngredients, recipeFilters });
+    console.log('after request');
+    console.log("RESULT", recipes.data)
     onUpdateRecipes(recipes.data);
   };
 
@@ -72,7 +79,7 @@ const RecipeSearchForm:React.FC<TRecipeSearchFormProps> = ({ onUpdateRecipes }) 
         </Grid>
         <Grid item xs={12}>
           <Filters
-            filters={filters}
+            filters={recipeFilters}
             ingredients={filteringIngredients}
             onActivateFilter={handleActivateFilter}
             onDeactiveFilter={handleDeactivateFilter}
