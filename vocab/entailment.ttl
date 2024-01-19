@@ -11,8 +11,7 @@
 @prefix dbc: <http://dbpedia.org/resource/Category:> .
 @prefix food: <http://project-kitchenchef.fr/food/data#> .
 
-
-:ArachisRecipe a owl:Class ;
+:RecipeWithArachis a owl:Class ;
   rdfs:label ""@en, ""@fr ;
   rdfs:comment ""@en,
               ""@fr ;
@@ -30,3 +29,107 @@
     ]
   ] .
 
+:RecipeWithAnimalProduct a owl:Class ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+              ""@fr ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty :hasIngredient ;
+    owl:someValuesFrom [
+        a owl:Restriction ;
+        owl:onProperty :food ;
+        owl:someValuesFrom [
+          a owl:Restriction ;
+          owl:onProperty skos:broaderTransitive ;
+          owl:hasValue food:animalProduct 
+      ] 
+    ]
+  ] .
+
+:RecipeWithDairyProduct a owl:Class ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+              ""@fr ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty :hasIngredient ;
+    owl:someValuesFrom [
+        a owl:Restriction ;
+        owl:onProperty :food ;
+        owl:someValuesFrom [
+          a owl:Restriction ;
+          owl:onProperty skos:broaderTransitive ;
+          owl:hasValue food:DairyProduct 
+      ] 
+    ]
+  ] .
+
+:RecipeWithNuts a owl:Class ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+              ""@fr ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty :hasIngredient ;
+    owl:someValuesFrom [
+        a owl:Restriction ;
+        owl:onProperty :food ;
+        owl:someValuesFrom [
+          a owl:Restriction ;
+          owl:onProperty skos:broaderTransitive ;
+          owl:hasValue food:Nuts 
+      ] 
+    ]
+  ] .
+
+:RecipeWithGluten a owl:Class ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+              ""@fr ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty :hasIngredient ;
+    owl:someValuesFrom [
+        a owl:Restriction ;
+        owl:onProperty :food ;
+        owl:someValuesFrom [
+          a owl:Restriction ;
+          owl:onProperty skos:broaderTransitive ;
+          owl:hasValue food:Nuts 
+      ] 
+    ]
+  ] .
+
+:RecipeWithMeatOrFish a owl:Class ;
+  rdfs:label "Recipe with meat or fish"@en, "Recette avec viande ou poisson"@fr ;
+  rdfs:comment "A recipe that includes meat or fish as an ingredient"@en,
+              "Une recette qui comprend de la viande ou du poisson comme ingrédient"@fr ;
+  owl:unionOf (
+    [
+      a owl:Restriction ;
+      owl:onProperty :hasIngredient ;
+      owl:someValuesFrom [
+          a owl:Restriction ;
+          owl:onProperty :food ;
+          owl:someValuesFrom [
+            a owl:Restriction ;
+            owl:onProperty skos:broaderTransitive ;
+            owl:hasValue food:Meat 
+        ] 
+      ]
+    ]
+    [
+      a owl:Restriction ;
+      owl:onProperty :hasIngredient ;
+      owl:someValuesFrom [
+          a owl:Restriction ;
+          owl:onProperty :food ;
+          owl:someValuesFrom [
+            a owl:Restriction ;
+            owl:onProperty skos:broaderTransitive ;
+            owl:hasValue food:Fish 
+        ] 
+      ]
+    ]
+  ) .
