@@ -38,3 +38,24 @@ async def get_ingredients():
         food = Food(row.food, row.thumbnail, row.enLabel, row.frLabel)
         foods[row.food] = food
     return list(foods.values())
+
+
+@app.get("/test")
+async def get_test():
+    query = """
+    prefix : <http://project-kitchenchef.fr/schema#>
+
+    select * where {
+      ?x a :ArachisRecipe
+    }
+    """
+
+    results = g.query(
+        query,
+    )
+
+    if results is None:
+        raise HTTPException(status_code=404, detail="Item not found")
+
+    for row in results:
+        print("result row", row.x)

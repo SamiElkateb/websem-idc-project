@@ -12,6 +12,7 @@ fastapi = "^0.108.0"
 rdflib = "^7.0.0"
 uvicorn = {extras = ["standard"], version = "^0.25.0"}
 pyshacl = "^0.25.0"
+owlrl = "^6.0.2"
 
 
 [build-system]
