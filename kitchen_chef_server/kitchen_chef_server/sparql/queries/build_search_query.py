@@ -12,7 +12,8 @@ def build_search_query(q_ingredients, q_filters):
             (group_concat(?ingredientQuantity; separator="|-|") AS ?ingredientQuantities)
             (group_concat(?ingredientUnit; separator="|-|") AS ?ingredientUnits)
     WHERE {{
-        ?recipe :name ?name ;
+        ?recipe a :Recipe ;
+                :name ?name ;
                 :hasIngredient ?ingredient ;
                 :instructions ?instructions .
 
