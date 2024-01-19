@@ -65,7 +65,7 @@
 :DairyFreeRecipe
     a                    owl:Class, :UserRecipeFilter ;
   :uiLabel "Dairy-Free"@en, "Sans produits laitiers"@fr ;
-    :complementaryRecipe :DairyFreeRecipe .
+    :complementaryRecipe :RecipeWithDairyProduct .
 
 
 :RecipeWithNuts
