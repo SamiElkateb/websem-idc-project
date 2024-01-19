@@ -11,6 +11,8 @@
 @prefix dbc: <http://dbpedia.org/resource/Category:> .
 @prefix food: <http://project-kitchenchef.fr/food/data#> .
 
+:complementaryRecipe a owl:ObjectProperty .
+
 :RecipeWithArachis a owl:Class ;
   rdfs:label ""@en, ""@fr ;
   rdfs:comment ""@en,
@@ -47,6 +49,9 @@
     ]
   ] .
 
+:VeganRecipe a owl:Class; 
+  :complementaryRecipe :RecipeWithAnimalProduct .
+
 :RecipeWithDairyProduct a owl:Class ;
   rdfs:label ""@en, ""@fr ;
   rdfs:comment ""@en,
@@ -64,6 +69,10 @@
       ] 
     ]
   ] .
+
+:DairyFreeRecipe a owl:Class; 
+  :complementaryRecipe :DairyFreeRecipe .
+
 
 :RecipeWithNuts a owl:Class ;
   rdfs:label ""@en, ""@fr ;
@@ -133,3 +142,8 @@
       ]
     ]
   ) .
+
+:DairyFreeRecipe a owl:Class ;
+  rdfs:label "Dairy Free Recipe"@en ;
+  owl:complementOf :RecipeWithDairyProduct .
+
