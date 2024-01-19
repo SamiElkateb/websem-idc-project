@@ -1,13 +1,13 @@
-@prefix :        <http://project-kitchenchef.fr/schema#> .
-@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
-@prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xml:     <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-@prefix owl:     <http://www.w3.org/2002/07/owl#> .
-@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
-
+@prefix :         <http://project-kitchenchef.fr/schema#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix dbpedia:  <http://dbpedia.org/resource/> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml:      <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix foodExte: <http://data.lirmm.fr/ontologies/food#> .
 
 
 :
@@ -40,10 +40,10 @@
     rdfs:comment ""@en, ""@fr .
 
 :ImperialMeasurementUnit
-    a            owl:Class ;
+    a                        owl:Class ;
     owl:propertyDisjointWith :MetricMeasurementUnit ;
-    rdfs:label   ""@en, ""@fr ;
-    rdfs:comment ""@en, ""@fr .
+    rdfs:label               ""@en, ""@fr ;
+    rdfs:comment             ""@en, ""@fr .
 
 :MetricMeasurementUnit
     a            owl:Class ;
@@ -225,33 +225,36 @@
     rdfs:comment ""@en, ""@fr .
 
 :hasIngredient
-    a            owl:ObjectProperty, owl:IrreflexiveProperty  ;
-    rdfs:label "Ingredient for a recipe"@en, "Ingrédient pour une recette"@fr ;
+    a           owl:ObjectProperty, owl:IrreflexiveProperty ;
+    rdfs:label  "Ingredient for a recipe"@en, "Ingrédient pour une recette"@fr ;
     rdfs:domain :Recipe ;
-    rdfs:range :Ingredient .
+    rdfs:range  :Ingredient .
 
 :food
     a            owl:ObjectProperty ;
-    rdfs:domain :Ingredient ;
-    rdfs:range :Food ;
-    rdfs:label "Food for an ingredient"@en, "Aliment pour un ingrédient"@fr ;
-    rdfs:comment "The food item that is an ingredient of a recipe."@en, "L'aliment qui est un ingrédient d'une recette."@fr .
+    rdfs:domain  :Ingredient ;
+    rdfs:range   :Food ;
+    rdfs:label   "Food for an ingredient"@en, "Aliment pour un ingrédient"@fr ;
+    rdfs:comment "The food item that is an ingredient of a recipe."@en,
+                 "L'aliment qui est un ingrédient d'une recette."@fr .
 
 :useFood
-    a            owl:ObjectProperty ;
+    a                      owl:ObjectProperty ;
     owl:propertyChainAxiom ( :hasIngredient :food ) ;
-    rdfs:domain :Recipe ;
-    rdfs:range :Food ;
-    rdfs:label "Food used in a recipe"@en, "Aliment utilisé dans une recette"@fr ;
-    rdfs:comment "The food item that is used in a recipe."@en, "L'aliment qui est utilisé dans une recette."@fr .
+    rdfs:domain            :Recipe ;
+    rdfs:range             :Food ;
+    rdfs:label             "Food used in a recipe"@en, "Aliment utilisé dans une recette"@fr ;
+    rdfs:comment           "The food item that is used in a recipe."@en,
+                           "L'aliment qui est utilisé dans une recette."@fr ;
+    owl:sameAs             foodExte:containsIngredient .
 
 :usedInRecipe
-    a            owl:ObjectProperty ;
+    a             owl:ObjectProperty ;
     owl:inverseOf :useFood ;
-    rdfs:domain :Food ;
-    rdfs:range :Recipe ;
-    rdfs:label "Recipe in which a food is used"@en, "Recette dans laquelle un aliment est utilisé"@fr ;
-    rdfs:comment "The recipe in which a food item is used."@en, "La recette dans laquelle un aliment est utilisé."@fr .
+    rdfs:domain   :Food ;
+    rdfs:range    :Recipe ;
+    rdfs:label    "Recipe in which a food is used"@en, "Recette dans laquelle un aliment est utilisé"@fr ;
+    rdfs:comment  "The recipe in which a food item is used."@en, "La recette dans laquelle un aliment est utilisé."@fr .
 
 :hasNutrient
     a            owl:DatatypeProperty ;

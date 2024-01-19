@@ -8,6 +8,7 @@
 @prefix owl:            <http://www.w3.org/2002/07/owl#> .
 @prefix skos:           <http://www.w3.org/2004/02/skos/core#> .
 @prefix recipeCategory: <http://project-kitchenchef.fr/recipeCategory#> .
+@prefix fowl:  <http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#> .
 
 recipeCategory:
     a            owl:Ontology ;
@@ -19,7 +20,7 @@ recipeCategory:Dish
     rdfs:label      "Dish"@en ;
     rdfs:comment    "General category for recipes."@en ;
     rdfs:subClassOf owl:Thing ;
-    owl:sameAs     dbpedia:Dish .
+    owl:sameAs     dbpedia:Dish, fowl:Dish .
 
 recipeCategory:Appetizer
     a               owl:Class ;
@@ -41,7 +42,7 @@ recipeCategory:Dessert
     rdfs:label      "Dessert"@en ;
     rdfs:comment    "Dessert is a course that concludes a meal."@en ;
     rdfs:subClassOf recipeCategory:Category ;
-    owl:sameAs     dbpedia:Dessert .
+    owl:sameAs     dbpedia:Dessert, fowl:DessertCourse .
 
 recipeCategory:SideDish
     a               owl:Class ;

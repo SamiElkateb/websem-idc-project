@@ -42,12 +42,12 @@ Informations sur les ingrédients :
 [x] SKOS : thesaurus nutriments \
 [ ] SHACL : à étoffer \
 [ ] OWL : faire les inferences sur les recettes végétariennes / vegan \
-[ ] OWL : étoffer vocabulaire\
-[ ] Vocabulaire Categories
+[x] OWL : étoffer vocabulaire\
+[x] Vocabulaire Categories\
 [x] OWL : recette allergies \
 [x] µServices nutriments : ajouter une façon de trouver les calories et informations nutritionnelles à partir des recettes et ingrédients\
 [x] µServices : Query fédérée (utiliser endpoint web de données) \
-[ ] OWL : Aligner vocabulaires\
+[x] OWL : Aligner vocabulaires\
 [ ] Server : faire le front\
 [ ] Server : faire l'API\
 [ ] Rapport\

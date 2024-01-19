@@ -1,135 +1,109 @@
-@prefix : <http://project-kitchenchef.fr/schema#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix :        <http://project-kitchenchef.fr/schema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix owl:  <http://www.w3.org/2002/07/owl#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml:     <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix dbc: <http://dbpedia.org/resource/Category:> .
-@prefix food: <http://project-kitchenchef.fr/food/data#> .
+@prefix dbc:     <http://dbpedia.org/resource/Category:> .
+@prefix food:    <http://project-kitchenchef.fr/food/data#> .
+@prefix fowl:    <http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#> .
 
-:complementaryRecipe a owl:ObjectProperty .
+:complementaryRecipe
+    a owl:ObjectProperty .
 
-:RecipeWithArachis a owl:Class ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en,
-              ""@fr ;
-  owl:equivalentClass [
-    a owl:Restriction ;
-    owl:onProperty :hasIngredient ;
-    owl:someValuesFrom [
-        a owl:Restriction ;
-        owl:onProperty :food ;
-        owl:someValuesFrom [
-          a owl:Restriction ;
-          owl:onProperty skos:broaderTransitive ;
-          owl:hasValue food:Arachis 
-      ] 
-    ]
-  ] .
+:RecipeWithArachis
+    a                   owl:Class ;
+    rdfs:label          ""@en, ""@fr ;
+    rdfs:comment        ""@en, ""@fr ;
+    owl:equivalentClass [ a                  owl:Restriction ;
+                          owl:onProperty     :hasIngredient ;
+                          owl:someValuesFrom [ a                  owl:Restriction ;
+                                               owl:onProperty     :food ;
+                                               owl:someValuesFrom [ a              owl:Restriction ;
+                                                                    owl:onProperty skos:broaderTransitive ;
+                                                                    owl:hasValue   food:Arachis ] ] ] .
 
-:ArachisFreeRecipe a owl:Class; 
-  :complementaryRecipe :RecipeWithArachis .
+:ArachisFreeRecipe
+    a                    owl:Class ;
+    :complementaryRecipe :RecipeWithArachis .
 
-:RecipeWithAnimalProduct a owl:Class ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en,
-              ""@fr ;
-  owl:equivalentClass [
-    a owl:Restriction ;
-    owl:onProperty :hasIngredient ;
-    owl:someValuesFrom [
-        a owl:Restriction ;
-        owl:onProperty :food ;
-        owl:someValuesFrom [
-          a owl:Restriction ;
-          owl:onProperty skos:broaderTransitive ;
-          owl:hasValue food:animalProduct 
-      ] 
-    ]
-  ] .
+:RecipeWithAnimalProduct
+    a                   owl:Class ;
+    rdfs:label          ""@en, ""@fr ;
+    rdfs:comment        ""@en, ""@fr ;
+    owl:equivalentClass [ a                  owl:Restriction ;
+                          owl:onProperty     :hasIngredient ;
+                          owl:someValuesFrom [ a                  owl:Restriction ;
+                                               owl:onProperty     :food ;
+                                               owl:someValuesFrom [ a              owl:Restriction ;
+                                                                    owl:onProperty skos:broaderTransitive ;
+                                                                    owl:hasValue   food:animalProduct ] ] ] ;
+    rdfs:seeAlso        [ owl:unionOf ( fowl:MeatCourse fowl:FishCourse fowl:RedMeatCourse ) ] .
 
-:VeganRecipe a owl:Class; 
-  :complementaryRecipe :RecipeWithAnimalProduct .
+:VeganRecipe
+    a                    owl:Class ;
+    :complementaryRecipe :RecipeWithAnimalProduct .
 
-:RecipeWithDairyProduct a owl:Class ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en,
-              ""@fr ;
-  owl:equivalentClass [
-    a owl:Restriction ;
-    owl:onProperty :hasIngredient ;
-    owl:someValuesFrom [
-        a owl:Restriction ;
-        owl:onProperty :food ;
-        owl:someValuesFrom [
-          a owl:Restriction ;
-          owl:onProperty skos:broaderTransitive ;
-          owl:hasValue food:DairyProduct 
-      ] 
-    ]
-  ] .
+:RecipeWithDairyProduct
+    a                   owl:Class ;
+    rdfs:label          ""@en, ""@fr ;
+    rdfs:comment        ""@en, ""@fr ;
+    owl:equivalentClass [ a                  owl:Restriction ;
+                          owl:onProperty     :hasIngredient ;
+                          owl:someValuesFrom [ a                  owl:Restriction ;
+                                               owl:onProperty     :food ;
+                                               owl:someValuesFrom [ a              owl:Restriction ;
+                                                                    owl:onProperty skos:broaderTransitive ;
+                                                                    owl:hasValue   food:DairyProduct ] ] ] .
 
-:DairyFreeRecipe a owl:Class; 
-  :complementaryRecipe :DairyFreeRecipe .
+:DairyFreeRecipe
+    a                    owl:Class ;
+    :complementaryRecipe :DairyFreeRecipe .
 
 
-:RecipeWithNuts a owl:Class ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en,
-              ""@fr ;
-  owl:equivalentClass [
-    a owl:Restriction ;
-    owl:onProperty :hasIngredient ;
-    owl:someValuesFrom [
-        a owl:Restriction ;
-        owl:onProperty :food ;
-        owl:someValuesFrom [
-          a owl:Restriction ;
-          owl:onProperty skos:broaderTransitive ;
-          owl:hasValue food:Nuts 
-      ] 
-    ]
-  ] .
+:RecipeWithNuts
+    a                   owl:Class ;
+    rdfs:label          ""@en, ""@fr ;
+    rdfs:comment        ""@en, ""@fr ;
+    owl:equivalentClass [ a                  owl:Restriction ;
+                          owl:onProperty     :hasIngredient ;
+                          owl:someValuesFrom [ a                  owl:Restriction ;
+                                               owl:onProperty     :food ;
+                                               owl:someValuesFrom [ a              owl:Restriction ;
+                                                                    owl:onProperty skos:broaderTransitive ;
+                                                                    owl:hasValue   food:Nuts ] ] ] .
 
-:NutFreeRecipe a owl:Class; 
-  :complementaryRecipe :RecipeWithNuts .
+:NutFreeRecipe
+    a                    owl:Class ;
+    :complementaryRecipe :RecipeWithNuts .
 
-:RecipeWithMeatOrFish a owl:Class ;
-  rdfs:label "Recipe with meat or fish"@en, "Recette avec viande ou poisson"@fr ;
-  rdfs:comment "A recipe that includes meat or fish as an ingredient"@en,
-              "Une recette qui comprend de la viande ou du poisson comme ingrédient"@fr ;
-  owl:unionOf (
-    [
-      a owl:Restriction ;
-      owl:onProperty :hasIngredient ;
-      owl:someValuesFrom [
-          a owl:Restriction ;
-          owl:onProperty :food ;
-          owl:someValuesFrom [
-            a owl:Restriction ;
-            owl:onProperty skos:broaderTransitive ;
-            owl:hasValue food:Meat 
-        ] 
-      ]
-    ]
-    [
-      a owl:Restriction ;
-      owl:onProperty :hasIngredient ;
-      owl:someValuesFrom [
-          a owl:Restriction ;
-          owl:onProperty :food ;
-          owl:someValuesFrom [
-            a owl:Restriction ;
-            owl:onProperty skos:broaderTransitive ;
-            owl:hasValue food:Fish 
-        ] 
-      ]
-    ]
-  ) .
+:RecipeWithMeatOrFish
+    a            owl:Class ;
+    rdfs:label   "Recipe with meat or fish"@en, "Recette avec viande ou poisson"@fr ;
+    rdfs:comment "A recipe that includes meat or fish as an ingredient"@en,
+                 "Une recette qui comprend de la viande ou du poisson comme ingrédient"@fr ;
+    owl:unionOf  ( [ a                  owl:Restriction ;
+                     owl:onProperty     :hasIngredient ;
+                     owl:someValuesFrom [ a                  owl:Restriction ;
+                                          owl:onProperty     :food ;
+                                          owl:someValuesFrom [ a              owl:Restriction ;
+                                                               owl:onProperty skos:broaderTransitive ;
+                                                               owl:hasValue   food:Meat ] ] ] [ a                  owl:Restriction ;
+                                                                                                owl:onProperty     :hasIngredient ;
+                                                                                                owl:someValuesFrom [ a owl:Restriction ;
+                                                                                                                     owl:onProperty
+                                                                                                                       :food ;
+                                                                                                                     owl:someValuesFrom
+                                                                                                                       [ a owl:Restriction ;
+                                                                                                                         owl:onProperty
+                                                                                                                           skos:broaderTransitive ;
+                                                                                                                         owl:hasValue
+                                                                                                                           food:Fish ] ] ] ) .
 
-:VegetarianRecipe a owl:Class; 
-  :complementaryRecipe :RecipeWithMeatOrFish .
+:VegetarianRecipe
+    a                    owl:Class ;
+    :complementaryRecipe :RecipeWithMeatOrFish .
