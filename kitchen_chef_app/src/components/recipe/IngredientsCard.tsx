@@ -18,6 +18,23 @@ const displayQuantity = (quantity) => {
   return quantity;
 };
 
+function decimalToFraction(decimalStr: string) {
+  const decimal = parseFloat(decimalStr);
+  const integer = parseInt(decimalStr, 10);
+  const epsilon = Math.abs(integer - decimal);
+  if (epsilon < Number.EPSILON) return integer;
+  const fractions = [2, 3, 4, 5, 6, 8];
+  for (let i = 0; i < fractions.length; i += 1) {
+    const fraction = fractions[i];
+    const multiplied = decimal * fraction;
+
+    if (Math.abs(multiplied - Math.round(multiplied)) < Number.EPSILON) {
+      return `${Math.round(multiplied)}/${fraction}`;
+    }
+  }
+  return decimalStr;
+}
+
 const IngredientsCard = ({ ingredients, thumbnail }) => {
   const [unitSystem, setUnitSystem] = useState('imperial');
   const handleUnitSystemChange = (
@@ -67,7 +84,7 @@ const IngredientsCard = ({ ingredients, thumbnail }) => {
         {ingredients.map((item) => (
           <Typography gutterBottom component="div" align="left" display="flex" alignItems="center">
             <Box component="span" fontSize="1.5rem" marginRight="0.5rem">
-              {displayQuantity(item[`${unitSystem}Measure`].quantity)}
+              {displayQuantity(decimalToFraction(item[`${unitSystem}Measure`].quantity))}
             </Box>
             <Box component="span" sx={{ verticalAlign: 'top' }}>
               {` ${item[`${unitSystem}Measure`].unit} ${item.name}`}
