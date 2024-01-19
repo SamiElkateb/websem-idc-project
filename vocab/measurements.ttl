@@ -1,7 +1,5 @@
 @prefix :             <http://project-kitchenchef.fr/schema#> .
-
 @prefix measurements: <http://project-kitchenchef.fr/measurements/data#> .
-
 @prefix dbpedia:      <http://dbpedia.org/resource/> .
 @prefix rdf:          <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
@@ -10,111 +8,142 @@
 @prefix owl:          <http://www.w3.org/2002/07/owl#> .
 @prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
 
+measurements:MeasurementThesaurus
+    a                  skos:ConceptScheme ;
+    skos:prefLabel     "Measurement Thesaurus"@en ;
+    skos:hasTopConcept measurements:MeasurementUnit .
 
+measurements:MeasurementUnit
+    a              skos:Concept ;
+    skos:prefLabel "Measurement Unit"@en ;
+    skos:narrowerTransitive measurements:VolumeMeasurementUnit , measurements:WeightMeasurementUnit .
+
+measurements:VolumeMeasurementUnit
+    a              skos:Concept ;
+    skos:prefLabel "Volume Measurement Unit"@en .
+
+measurements:WeightMeasurementUnit
+    a              skos:Concept ;
+    skos:prefLabel "Weight Measurement Unit"@en .
 
 measurements:Tablespoon
     a                  :VolumeMeasurementUnit, skos:Concept ;
     skos:prefLabel     "Tablespoon"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Teaspoon ;
-                         :conversionRatio 3.0 ] .
+                         :conversionRatio 3.0 ] ;
+    skos:broaderTransitive measurements:VolumeMeasurementUnit .
 
 measurements:Teaspoon
-    a :VolumeMeasurementUnit, skos:Concept ;
-    skos:prefLabel     "Teaspoon"@en .
+    a              :VolumeMeasurementUnit, skos:Concept ;
+    skos:prefLabel "Teaspoon"@en ;
+    skos:broaderTransitive   measurements:VolumeMeasurementUnit .
 
 measurements:Liter
-    a :MetricMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
-    skos:prefLabel     "Liter"@en .
+    a              :MetricMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
+    skos:prefLabel "Liter"@en ;
+    skos:broaderTransitive measurements:VolumeMeasurementUnit .
 
 measurements:CentiLiter
     a                  :MetricMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
-    skos:prefLabel    "centiLiter"@en ;
+    skos:prefLabel     "centiLiter"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Liter ;
-                         :conversionRatio 0.01 ] .
+                         :conversionRatio 0.01 ] ;
+    skos:broaderTransitive measurements:VolumeMeasurementUnit .
 
 measurements:milliLiter
     a                  :MetricMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
-    skos:prefLabel   "milliLiter"@en ;
+    skos:prefLabel     "milliLiter"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Liter ;
-                         :conversionRatio 0.001 ] .
+                         :conversionRatio 0.001 ] ;
+    skos:broaderTransitive measurements:VolumeMeasurementUnit .
 
 measurements:Cup
     a                  :ImperialMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
     skos:prefLabel     "Cup"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:CentiLiter ;
-                         :conversionRatio 24 ] .
+                         :conversionRatio 24 ] ;
+    skos:broaderTransitive measurements:VolumeMeasurementUnit .
 
 measurements:Package
-    a :MeasurementUnit, skos:Concept ;
-    skos:prefLabel     "Package"@en .
+    a              :MeasurementUnit, skos:Concept ;
+    skos:prefLabel "Package"@en ;
+    skos:broaderTransitive measurements:MeasurementUnit .
 
 measurements:Slice
-    a :MeasurementUnit, skos:Concept ;
-    skos:prefLabel     "Slice"@en .
+    a              :MeasurementUnit, skos:Concept ;
+    skos:prefLabel "Slice"@en ;
+    skos:broaderTransitive measurements:MeasurementUnit .
 
 measurements:Pinch
-    a :MeasurementUnit, skos:Concept ;
-    skos:prefLabel     "Pinch"@en .
+    a              :MeasurementUnit, skos:Concept ;
+    skos:prefLabel "Pinch"@en ;
+    skos:broaderTransitive measurements:MeasurementUnit .
 
 measurements:VolumicOunce
     a                  :ImperialMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
-    skos:prefLabel    "Fluid ounce"@en ;
+    skos:prefLabel     "Fluid ounce"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Liter ;
-                         :conversionRatio 0.0296 ] .
+                         :conversionRatio 0.0296 ] ;
+    skos:broaderTransitive measurements:VolumeMeasurementUnit .
 
 measurements:Quart
     a                  :ImperialMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
     skos:prefLabel     "Quart"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Liter ;
-                         :conversionRatio 0.8798789 ] .
+                         :conversionRatio 0.8798789 ] ;
+    skos:broaderTransitive measurements:VolumeMeasurementUnit .
 
 measurements:Pound
     a                  :ImperialMeasurementUnit, :WeightMeasurementUnit, skos:Concept ;
     skos:prefLabel     "Pound"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Kilogram ;
-                         :conversionRatio 0.4536 ] .
+                         :conversionRatio 0.4536 ] ;
+    skos:broaderTransitive measurements:WeightMeasurementUnit .
 
 measurements:WeightOunce
     a                  :ImperialMeasurementUnit, :WeightMeasurementUnit, skos:Concept ;
     skos:prefLabel     "Ounce"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Kilogram ;
-                         :conversionRatio 0.02835 ] .
+                         :conversionRatio 0.02835 ] ;
+    skos:broaderTransitive measurements:WeightMeasurementUnit .
 
 measurements:Gram
     a                  :MetricMeasurementUnit, :WeightMeasurementUnit, skos:Concept ;
     skos:prefLabel     "Gram"@en ;
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Kilogram ;
-                         :conversionRatio 1000.0 ] .
+                         :conversionRatio 1000.0 ] ;
+    skos:broaderTransitive measurements:WeightMeasurementUnit .
 
 measurements:Kilogram
-    a :MetricMeasurementUnit, :WeightMeasurementUnit, skos:Concept ;
-    skos:prefLabel     "Kilogram"@en .
+    a              :MetricMeasurementUnit, :WeightMeasurementUnit, skos:Concept ;
+    skos:prefLabel "Kilogram"@en ;
+    skos:broaderTransitive measurements:WeightMeasurementUnit .
 
 
-measurements:Few a :Quantity ;
-    rdfs:label "Few"@en, "Peu"@fr ;
-    rdfs:comment "Undefined little quantity"@en,
-                "Faible quantitée indéfinie"@fr ;
+measurements:Few
+    a                 :Quantity ;
+    rdfs:label        "Few"@en, "Peu"@fr ;
+    rdfs:comment      "Undefined little quantity"@en, "Faible quantitée indéfinie"@fr ;
     :hasQuantityValue 1 .
 
-measurements:Some a :Quantity ;
-    rdfs:label "Some"@en, "Quelques"@fr ;
-    rdfs:comment "Undefined medium quantity"@en,
-                "Quantitée moyenne indéfinie"@fr ;
+measurements:Some
+    a                 :Quantity ;
+    rdfs:label        "Some"@en, "Quelques"@fr ;
+    rdfs:comment      "Undefined medium quantity"@en, "Quantitée moyenne indéfinie"@fr ;
     :hasQuantityValue 3 .
 
-measurements:Many a :Quantity ;
-    rdfs:label "Many"@en, "Beaucoup"@fr ;
-    rdfs:comment "Undefined large quantity"@en,
-                "Grande quantitée indéfinie"@fr ;
+measurements:Many
+    a                 :Quantity ;
+    rdfs:label        "Many"@en, "Beaucoup"@fr ;
+    rdfs:comment      "Undefined large quantity"@en, "Grande quantitée indéfinie"@fr ;
     :hasQuantityValue 5 .
 

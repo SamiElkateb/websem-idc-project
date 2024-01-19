@@ -37,8 +37,8 @@ Informations sur les ingrédients :
 [ ] Regex bea10 & seas1d \
 [ ] Conversion standard units 
 [x] Desambiguation des ingrédients et des recettes : extraction depuis textes\
-[ ] SKOS : thesaurus aliments \
-[ ] SKOS : thesaurus units (add top concepts) \
+[x] SKOS : thesaurus aliments \
+[x] SKOS : thesaurus units (add top concepts) \
 [x] SKOS : thesaurus nutriments \
 [ ] SHACL : à étoffer \
 [ ] OWL : faire les inferences sur les recettes végétariennes / vegan \
@@ -56,7 +56,7 @@ Informations sur les ingrédients :
 ## Optionel 
 
 [ ] utiliser https://fr.openfoodfacts.org pour avoir des informations plus juste sur les ingrédients à partir du code bar scanné sur application mobile\
-[ ] Algo ML
+[ ] Algo ML\
 [ ] OWL : Recettes transitives (ajouter des transformations d'ingrédients à partir de recettes)\
 
 ## Pour les thesaurus
