@@ -1,0 +1,32 @@
+@prefix : <http://project-kitchenchef.fr/schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dbc: <http://dbpedia.org/resource/Category:> .
+@prefix food: <http://project-kitchenchef.fr/food/data#> .
+
+
+:ArachisRecipe a owl:Class ;
+  rdfs:label ""@en, ""@fr ;
+  rdfs:comment ""@en,
+              ""@fr ;
+  owl:equivalentClass [
+    a owl:Restriction ;
+    owl:onProperty :hasIngredient ;
+    owl:someValuesFrom [
+        a owl:Restriction ;
+        owl:onProperty :food ;
+        owl:someValuesFrom [
+          a owl:Restriction ;
+          owl:onProperty skos:broaderTransitive ;
+          owl:hasValue food:Arachis 
+      ] 
+    ]
+  ] .
+
