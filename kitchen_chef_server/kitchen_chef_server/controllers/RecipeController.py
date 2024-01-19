@@ -128,7 +128,7 @@ async def get_recipe(recipe_identifier: str):
         (group_concat(?ingredient; separator="|-|") AS ?ingredientIds)
         (group_concat(?ingredientFood; separator="|-|") AS ?ingredientFoods)
         WHERE {{
-            ?recipe :hasIngredient ?ingredient .
+            ?recipe :hasIngredient ?ingredient ; :name ?name .
             OPTIONAL {{ ?recipe :recipeCategory ?category . }}
             OPTIONAL {{ ?recipe :instructions ?instructions . }}
             OPTIONAL {{ ?recipe :hasThumbnail ?thumbnail . }}
