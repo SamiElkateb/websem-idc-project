@@ -31,6 +31,9 @@ def build_search_query(q_ingredients, q_filters):
         OPTIONAL {{ ?ingredient :unit ?ingredientUnit . }}
 
         {ingredients_query}
-    }} GROUP BY ?recipe
+        FILTER(!STRSTARTS(STR(?recipe), "http://dbpedia.org/resource"))
+    }}
+    GROUP BY ?recipe
+    ORDER BY desc(?thumbnail)
     """
     return query

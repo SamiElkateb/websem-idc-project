@@ -24,7 +24,6 @@
 
 :Recipe
     a            owl:Class ;
-    owl:hasKey   ( :name ) ;
     rdfs:label   ""@en, ""@fr ;
     rdfs:comment ""@en, ""@fr .
 
