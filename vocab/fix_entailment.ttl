@@ -3,3 +3,4 @@
 
 skos:broaderTransitive a owl:TransitiveProperty .
 skos:narrowerTransitive a owl:TransitiveProperty .
+owl:propertyDisjointWith a owl:SymmetricProperty , owl:IrreflexiveProperty .

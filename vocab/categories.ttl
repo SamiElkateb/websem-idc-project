@@ -1,0 +1,96 @@
+@prefix :               <http://project-kitchenchef.fr/schema#> .
+@prefix foaf:           <http://xmlns.com/foaf/0.1/> .
+@prefix dbpedia:        <http://dbpedia.org/resource/> .
+@prefix rdf:            <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:           <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml:            <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:            <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:            <http://www.w3.org/2002/07/owl#> .
+@prefix skos:           <http://www.w3.org/2004/02/skos/core#> .
+@prefix recipeCategory: <http://project-kitchenchef.fr/recipeCategory#> .
+
+recipeCategory:
+    a            owl:Ontology ;
+    rdfs:label   "Ontology of recipes categories"@en ;
+    rdfs:comment "This ontology defines categories for recipes."@en .
+
+recipeCategory:Dish
+    a               owl:Class ;
+    rdfs:label      "Dish"@en ;
+    rdfs:comment    "General category for recipes."@en ;
+    rdfs:subClassOf owl:Thing ;
+    owl:sameAs     dbpedia:Dish .
+
+recipeCategory:Appetizer
+    a               owl:Class ;
+    rdfs:label      "Appetizer"@en , "Entrée"@fr , "Starter"@en ;
+    rdfs:comment    "An appetizer is a small first course of an overall meal."@en ;
+    owl:disjointWith recipeCategory:SideDish ;
+    rdfs:subClassOf recipeCategory:Category ;
+    owl:sameAs     dbpedia:Appetizer .
+
+recipeCategory:MainCourse
+    a               owl:Class ;
+    rdfs:label      "Main course"@en ;
+    rdfs:comment    "A main course is the featured or primary dish in a meal consisting of several courses."@en ;
+    rdfs:subClassOf recipeCategory:Category ;
+    owl:sameAs     dbpedia:Main_course .
+
+recipeCategory:Dessert
+    a               owl:Class ;
+    rdfs:label      "Dessert"@en ;
+    rdfs:comment    "Dessert is a course that concludes a meal."@en ;
+    rdfs:subClassOf recipeCategory:Category ;
+    owl:sameAs     dbpedia:Dessert .
+
+recipeCategory:SideDish
+    a               owl:Class ;
+    rdfs:label      "Side dish"@en ;
+    rdfs:comment    "A side dish, sometimes referred to as a side order or simply a side, is a food item that accompanies the entrée or main course at a meal."@en ;
+    rdfs:subClassOf recipeCategory:Category;
+    owl:sameAs     dbpedia:Side_dish .
+
+recipeCategory:SaladAndDressings
+    a               owl:Class ;
+    rdfs:label      "Salad and dressings"@en ;
+    rdfs:comment    "Salad and dressings"@en ;
+    rdfs:subClassOf recipeCategory:Appetizer ;
+    owl:disjointUnionOf (recipeCategory:Salad recipeCategory:Dressing) .
+
+recipeCategory:Dressing
+    a               owl:Class ;
+    rdfs:label      "Dressing"@en ;
+    rdfs:comment    "Dressing is a sauce that is used to add flavor to a salad."@en ;
+    rdfs:subClassOf recipeCategory:SaladAndDressings;
+    owl:sameAs     dbpedia:Salad_dressing .
+
+recipeCategory:Salad
+    a               owl:Class ;
+    rdfs:label      "Salad"@en ;
+    rdfs:comment    "Salad is a dish consisting of a mixture of small pieces of food, usually vegetables or fruit."@en ;
+    rdfs:subClassOf recipeCategory:SaladAndDressings .
+
+recipeCategory:Cake
+    a               owl:Class ;
+    rdfs:label      "Cake"@en ;
+    rdfs:comment    "Cake is a form of sweet dessert that is typically baked."@en ;
+    rdfs:subClassOf recipeCategory:Dessert .
+
+recipeCategory:Pie
+    a               owl:Class ;
+    rdfs:label      "Pie"@en ;
+    rdfs:comment    "Pie is a baked dish which is usually made of a pastry dough casing that covers or completely contains a filling of various sweet or savoury ingredients."@en ;
+    rdfs:subClassOf recipeCategory:Dessert ;
+    rdfs:seeAlso    recipeCategory:Cookie .
+
+recipeCategory:Cookie
+    a               owl:Class ;
+    rdfs:label      "Cookie"@en ;
+    rdfs:comment    "A cookie is a baked or cooked food that is small, flat and sweet."@en ;
+    rdfs:subClassOf recipeCategory:Dessert .
+
+recipeCategory:Soup
+    a               owl:Class ;
+    rdfs:label      "Soup"@en ;
+    rdfs:comment    "Soup is a primarily liquid food, generally served warm or hot (but may be cool or cold), that is made by combining ingredients such as meat and vegetables with stock, juice, water, or another liquid."@en ;
+    rdfs:subClassOf recipeCategory:Appetizer, recipeCategory:MainCourse .

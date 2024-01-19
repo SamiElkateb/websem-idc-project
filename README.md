@@ -39,14 +39,14 @@ Informations sur les ingrédients :
 [x] Desambiguation des ingrédients et des recettes : extraction depuis textes\
 [ ] SKOS : thesaurus aliments \
 [ ] SKOS : thesaurus units (add top concepts) \
-[ ] SKOS : thesaurus nutriments \
+[x] SKOS : thesaurus nutriments \
 [ ] SHACL : à étoffer \
 [ ] OWL : faire les inferences sur les recettes végétariennes / vegan \
 [ ] OWL : étoffer vocabulaire\
-[ ] OWL : recette allergies \
+[ ] Vocabulaire Categories
+[x] OWL : recette allergies \
 [x] µServices nutriments : ajouter une façon de trouver les calories et informations nutritionnelles à partir des recettes et ingrédients\
 [x] µServices : Query fédérée (utiliser endpoint web de données) \
-[ ] OWL : Recettes transitives (ajouter des transformations d'ingrédients à partir de recettes)\
 [ ] OWL : Aligner vocabulaires\
 [ ] Server : faire le front\
 [ ] Server : faire l'API\
@@ -57,6 +57,8 @@ Informations sur les ingrédients :
 
 [ ] utiliser https://fr.openfoodfacts.org pour avoir des informations plus juste sur les ingrédients à partir du code bar scanné sur application mobile\
 [ ] Algo ML
+[ ] OWL : Recettes transitives (ajouter des transformations d'ingrédients à partir de recettes)\
+
 ## Pour les thesaurus
 
 ## CSV
@@ -104,13 +106,6 @@ Extraction avec dbpédia
 Alignement avec dbpédia pour etre aligné sur les ingrédients
 Unités aligné apres le csvw
 
-### Quantitées
-
-Few, Some, Many -> Unités pour un peu
-Sinon entiers
-
-Contraintes
-
 Si a skos:Concept, pas le droit de a owl:Class. a skos:Concept, :Quantity c'est bon
 
 ## Tests
@@ -125,3 +120,20 @@ http://localhost:8000/recipe?recipe_identifier=AngelHash
 
 Récupérer tous les ingrédients:
 http://localhost:8000/ingredients
+
+
+### OWL
+
+[x] recipe :hasKey name\
+[x] HasCalories & co : functional property\
+[x] union\
+[x] chainAxiom : usesFood  = hasIngredient && food \
+[x] inverseOf : hasIngredient / isInRecipe\
+[x] someValues\
+[x] negation\
+[x] HasValues\
+[x] Asymetric : conversionRatio\
+[x] equivalentClass : Categories\
+[x] Disjoin union : Categories\
+[x] irreflexive :hasIngredient\
+[x] disjoint property : hasMetricMeasurementUnit & hasImperialMeasurementUnit\

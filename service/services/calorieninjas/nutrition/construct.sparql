@@ -1,10 +1,11 @@
 PREFIX : <http://project-kitchenchef.fr/schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 
 CONSTRUCT {
     ?sub ?pred ?sum
 } WHERE {
     {
-        SELECT ?pred (SUM(?obj) AS ?sum) WHERE {
+        SELECT ?pred (xsd:decimal(SUM(?obj)) AS ?sum) WHERE {
         ?sub ?pred ?obj .
         FILTER(?pred NOT IN (:items, :name))
     }GROUP BY ?pred

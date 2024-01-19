@@ -1,5 +1,5 @@
-all: recipes2rdf extract_quantity_from_units units quantityConversion unitSeparation foodweights2rdf format populate update-server-data
-recipesHandling : recipes2rdf extract_quantity_from_units units quantityConversion unitSeparation
+all: recipesHandling foodweights2rdf format populate update-server-data
+recipesHandling : recipes2rdf extract_quantity_from_units units quantityConversion unitSeparation categories
 recipes2rdf:
 	@echo "recipes2rdf"
 	@./tools/csv2rdf \
@@ -42,6 +42,9 @@ quantityConversion :
 unitSeparation:
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/separateUnits.rq -i ./vocab/measurements.ttl -i output/recipes.ttl -i ./vocab/schema.ttl -o output/recipes.ttl
 
+categories:
+	@echo "categories"
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/categories.rq -i output/recipes.ttl -o output/recipes.ttl
 
 foodweights2rdf:
 	@echo "foodweights2rdf"

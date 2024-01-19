@@ -1,0 +1,33 @@
+@prefix :<http://project-kitchenchef.fr/schema#> .
+@prefix recipes:<http://project-kitchenchef.fr/recipes/data#> .
+@prefix measurements:<http://project-kitchenchef.fr/measurements/data#> .
+@prefix recipeCategory:<http://project-kitchenchef.fr/recipes/categories#> .
+
+CONSTRUCT {
+    ?subj ?pred ?obj .
+    ?salads :recipeCategory recipeCategory:SaladAndDressings
+    ?cakes :recipeCategory recipeCategory:Cake
+    ?soup :recipeCategory recipeCategory:Soup
+    ?cookies :recipeCategory recipeCategory:Cookie
+    ?pies :recipeCategory recipeCategory:Pie
+} WHERE {
+    {
+      ?subj ?pred ?obj .
+      FILTER (!REGEX(?obj, "(salads and dressings|cakes|soup|cookies|pies)", "i") || ?pred != :recipeCategory)
+    } UNION {
+        ?salads :recipeCategory ?categories .
+        FILTER REGEX(?categories, "salads and dressings", "i")
+    } UNION {
+        ?cakes :recipeCategory ?categories .
+        FILTER REGEX(?categories, "cakes", "i")
+    } UNION {
+        ?soup :recipeCategory ?categories .
+        FILTER REGEX(?categories, "soup", "i")
+    } UNION {
+        ?cookies :recipeCategory ?categories .
+        FILTER REGEX(?categories, "cookies", "i")
+    } UNION {
+        ?pies :recipeCategory ?categories .
+        FILTER REGEX(?categories, "pies", "i")
+    }
+}

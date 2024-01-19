@@ -1,200 +1,355 @@
-@prefix : <http://project-kitchenchef.fr/schema#> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix :        <http://project-kitchenchef.fr/schema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix dbpedia: <http://dbpedia.org/resource/> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix owl:  <http://www.w3.org/2002/07/owl#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml:     <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 
 
 
-: a owl:Ontology ;
-  rdfs:label "Ontology of Food and Nutrition"@en ;
-  rdfs:comment "This ontology defines classes and properties related to food and nutrition."@en .
+:
+    a            owl:Ontology ;
+    rdfs:label   "Ontology of Food and Nutrition"@en ;
+    rdfs:comment "This ontology defines classes and properties related to food and nutrition."@en .
 
 # Classes
-:Food a owl:Class ;
-  rdfs:label "Food"@en, "Aliment"@fr ;
-  rdfs:comment "Represents any substance consumed to provide nutritional support for the body."@en,
-              "Représente toute substance consommée pour fournir un soutien nutritionnel au corps."@fr .
+:Food
+    a            owl:Class ;
+    rdfs:label   "Food"@en, "Aliment"@fr ;
+    rdfs:comment "Represents any substance consumed to provide nutritional support for the body."@en,
+                 "Représente toute substance consommée pour fournir un soutien nutritionnel au corps."@fr .
 
-:Recipe a owl:Class ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en,
-              ""@fr .
+:Recipe
+    a            owl:Class ;
+    owl:hasKey   ( :name ) ;
+    rdfs:label   ""@en, ""@fr ;
+    rdfs:comment ""@en, ""@fr .
 
 
-:Quantity a owl:Class ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en,
-              ""@fr .
+:Quantity
+    a            owl:Class ;
+    rdfs:label   ""@en, ""@fr ;
+    rdfs:comment ""@en, ""@fr .
 
-:Ingredient a owl:Class ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en,
-              ""@fr .
+:Ingredient
+    a            owl:Class ;
+    rdfs:label   ""@en, ""@fr ;
+    rdfs:comment ""@en, ""@fr .
 
-:ImperialMeasurementUnit a owl:Class ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en, ""@fr .
+:ImperialMeasurementUnit
+    a            owl:Class ;
+    owl:propertyDisjointWith :MetricMeasurementUnit ;
+    rdfs:label   ""@en, ""@fr ;
+    rdfs:comment ""@en, ""@fr .
 
-:MetricMeasurementUnit a owl:Class ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en, ""@fr .
+:MetricMeasurementUnit
+    a            owl:Class ;
+    rdfs:label   ""@en, ""@fr ;
+    rdfs:comment ""@en, ""@fr .
 
-:MeasurementUnit a owl:Class ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en, ""@fr .
+:MeasurementUnit
+    a            owl:Class ;
+    rdfs:label   ""@en, ""@fr ;
+    rdfs:comment ""@en, ""@fr .
 
-:VolumeMeasurementUnit a owl:Class ;
-  rdfs:subClassOf :MeasurementUnit ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en, ""@fr .
+:VolumeMeasurementUnit
+    a               owl:Class ;
+    rdfs:subClassOf :MeasurementUnit ;
+    rdfs:label      ""@en, ""@fr ;
+    rdfs:comment    ""@en, ""@fr .
 
-:WeightMeasurementUnit a owl:Class ;
-  rdfs:subClassOf :MeasurementUnit ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en, ""@fr .
+:WeightMeasurementUnit
+    a               owl:Class ;
+    rdfs:subClassOf :MeasurementUnit ;
+    rdfs:label      ""@en, ""@fr ;
+    rdfs:comment    ""@en, ""@fr .
 
-:UnitConversion a owl:Class ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en,
-              ""@fr .
-:Image a owl:Class ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en,
-              ""@fr .
+:UnitConversion
+    a            owl:Class ;
+    rdfs:label   ""@en, ""@fr ;
+    rdfs:comment ""@en, ""@fr .
 
-:Macronutrient a owl:Class ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en,
-              ""@fr .
+:Image
+    a            owl:Class ;
+    rdfs:label   ""@en, ""@fr ;
+    rdfs:comment ""@en, ""@fr .
 
+:Macronutrient
+    a            owl:Class ;
+    rdfs:label   ""@en, ""@fr ;
+    rdfs:comment ""@en, ""@fr .
 
 # Properties
 
-:hasCalories a owl:ObjectProperty ;
-  rdfs:label "has calories"@en, "a comme calories"@fr ;
-  rdfs:comment "Indicates the number of calories contained in a food item or nutrient."@en,
-               "Indique le nombre de calories contenues dans un aliment ou un nutriment."@fr ;
-  rdfs:domain :Food ;
-  rdfs:range xsd:integer .
+:hasCalories
+    a            owl:DatatypeProperty ;
+    rdfs:label   "has calories"@en, "a comme calories"@fr ;
+    rdfs:comment "Indicates the number of calories contained in a food item or nutrient."@en,
+                 "Indique le nombre de calories contenues dans un aliment ou un nutriment."@fr ;
+    rdfs:domain  :Food ;
+    rdfs:range   xsd:integer .
 
-:hasServingSize a owl:ObjectProperty ;
-  rdfs:label "has serving size"@en, "a comme portion"@fr ;
-  rdfs:comment "Specifies the standard serving size of the food item."@en,
-               "Spécifie la taille standard de la portion de l'aliment."@fr ;
-  rdfs:domain :Food ;
-  rdfs:range xsd:string .
+:hasServingSize
+    a            owl:DatatypeProperty ;
+    rdfs:label   "has serving size"@en, "a comme portion"@fr ;
+    rdfs:comment "Specifies the standard serving size of the food item."@en,
+                 "Spécifie la taille standard de la portion de l'aliment."@fr ;
+    rdfs:domain  :Food ;
+    rdfs:range   xsd:string .
 
-:hasProtein a owl:ObjectProperty ;
-  rdfs:label "has protein"@en, "a comme protéine"@fr ;
-  rdfs:comment "Indicates the amount of protein in a food item."@en,
-               "Indique la quantité de protéine dans un aliment."@fr ;
-  rdfs:domain :Food ;
-  rdfs:range xsd:float .
+:hasProtein
+    a            owl:DatatypeProperty ;
+    rdfs:label   "has protein"@en, "a comme protéine"@fr ;
+    rdfs:comment "Indicates the amount of protein in a food item."@en,
+                 "Indique la quantité de protéine dans un aliment."@fr ;
+    rdfs:domain  :Food ;
+    rdfs:range   xsd:float .
 
-:hasTotalFat a owl:ObjectProperty ;
-  rdfs:label "has total fat"@en, "a comme graisses totales"@fr ;
-  rdfs:comment "Indicates the total fat content in a food item."@en,
-               "Indique la teneur totale en graisses d'un aliment."@fr ;
-  rdfs:domain :Food ;
-  rdfs:range xsd:float .
+:hasTotalFat
+    a            owl:DatatypeProperty ;
+    rdfs:label   "has total fat"@en, "a comme graisses totales"@fr ;
+    rdfs:comment "Indicates the total fat content in a food item."@en,
+                 "Indique la teneur totale en graisses d'un aliment."@fr ;
+    rdfs:domain  :Food ;
+    rdfs:range   xsd:float .
 
-:hasSaturatedFat a owl:ObjectProperty ;
-  rdfs:label "has saturated fat"@en, "a comme graisses saturées"@fr ;
-  rdfs:comment "Indicates the amount of saturated fat in a food item."@en,
-               "Indique la quantité de graisses saturées dans un aliment."@fr ;
-  rdfs:domain :Food ;
-  rdfs:range xsd:float .
+:hasSaturatedFat
+    a            owl:DatatypeProperty ;
+    rdfs:label   "has saturated fat"@en, "a comme graisses saturées"@fr ;
+    rdfs:comment "Indicates the amount of saturated fat in a food item."@en,
+                 "Indique la quantité de graisses saturées dans un aliment."@fr ;
+    rdfs:domain  :Food ;
+    rdfs:range   xsd:float .
 
-:hasCarbohydratesTotal a owl:ObjectProperty ;
-  rdfs:label "has total carbohydrates"@en, "a comme glucides totaux"@fr ;
-  rdfs:comment "Indicates the total carbohydrates content in a food item."@en,
-               "Indique la teneur totale en glucides d'un aliment."@fr ;
-  rdfs:domain :Food ;
-  rdfs:range xsd:float .
+:hasCarbohydratesTotal
+    a            owl:DatatypeProperty ;
+    rdfs:label   "has total carbohydrates"@en, "a comme glucides totaux"@fr ;
+    rdfs:comment "Indicates the total carbohydrates content in a food item."@en,
+                 "Indique la teneur totale en glucides d'un aliment."@fr ;
+    rdfs:domain  :Food ;
+    rdfs:range   xsd:float .
 
-:hasSugar a owl:ObjectProperty ;
-  rdfs:label "has sugar"@en, "a comme sucre"@fr ;
-  rdfs:comment "Indicates the sugar content in a food item."@en,
-               "Indique la teneur en sucre d'un aliment."@fr ;
-  rdfs:domain :Food ;
-  rdfs:range xsd:float .
+:hasSugar
+    a            owl:DatatypeProperty ;
+    rdfs:label   "has sugar"@en, "a comme sucre"@fr ;
+    rdfs:comment "Indicates the sugar content in a food item."@en, "Indique la teneur en sucre d'un aliment."@fr ;
+    rdfs:domain  :Food ;
+    rdfs:range   xsd:float .
 
-:hasFiber a owl:ObjectProperty ;
-  rdfs:label "has dietary fiber"@en, "a comme fibres alimentaires"@fr ;
-  rdfs:comment "Indicates the dietary fiber content in a food item."@en,
-               "Indique la teneur en fibres alimentaires d'un aliment."@fr ;
-  rdfs:domain :Food ;
-  rdfs:range xsd:float .
+:hasFiber
+    a            owl:DatatypeProperty ;
+    rdfs:label   "has dietary fiber"@en, "a comme fibres alimentaires"@fr ;
+    rdfs:comment "Indicates the dietary fiber content in a food item."@en,
+                 "Indique la teneur en fibres alimentaires d'un aliment."@fr ;
+    rdfs:domain  :Food ;
+    rdfs:range   xsd:float .
 
-:hasSodium a owl:ObjectProperty ;
-  rdfs:label "has sodium"@en, "a comme sodium"@fr ;
-  rdfs:comment "Indicates the sodium content in a food item."@en,
-               "Indique la teneur en sodium d'un aliment."@fr ;
-  rdfs:domain :Food ;
-  rdfs:range xsd:float .
+:hasSodium
+    a            owl:DatatypeProperty ;
+    rdfs:label   "has sodium"@en, "a comme sodium"@fr ;
+    rdfs:comment "Indicates the sodium content in a food item."@en, "Indique la teneur en sodium d'un aliment."@fr ;
+    rdfs:domain  :Food ;
+    rdfs:range   xsd:float .
 
-:hasPotassium a owl:ObjectProperty ;
-  rdfs:label "has potassium"@en, "a comme potassium"@fr ;
-  rdfs:comment "Indicates the potassium content in a food item."@en,
-               "Indique la teneur en potassium d'un aliment."@fr ;
-  rdfs:domain :Food ;
-  rdfs:range xsd:float .
+:hasPotassium
+    a            owl:DatatypeProperty ;
+    rdfs:label   "has potassium"@en, "a comme potassium"@fr ;
+    rdfs:comment "Indicates the potassium content in a food item."@en,
+                 "Indique la teneur en potassium d'un aliment."@fr ;
+    rdfs:domain  :Food ;
+    rdfs:range   xsd:float .
 
-:hasCholesterol a owl:ObjectProperty ;
-  rdfs:label "has cholesterol"@en, "a comme cholestérol"@fr ;
-  rdfs:comment "Indicates the cholesterol content in a food item."@en,
-               "Indique la teneur en cholestérol d'un aliment."@fr ;
-  rdfs:domain :Food ;
-  rdfs:range xsd:float .
+:hasCholesterol
+    a            owl:DatatypeProperty ;
+    rdfs:label   "has cholesterol"@en, "a comme cholestérol"@fr ;
+    rdfs:comment "Indicates the cholesterol content in a food item."@en,
+                 "Indique la teneur en cholestérol d'un aliment."@fr ;
+    rdfs:domain  :Food ;
+    rdfs:range   xsd:float .
 
-:hasUnitConversion a owl:ObjectProperty ;
-  rdfs:domain :MeasurementUnit ;
-  rdfs:range :UnitConversion .
+:hasUnitConversion
+    a           owl:ObjectProperty ;
+    rdfs:domain :MeasurementUnit ;
+    rdfs:range  :UnitConversion .
 
-:conversionRatio a owl:ObjectProperty ;
-  rdfs:domain xsd:float .
+:conversionRatio
+    a           owl:ObjectProperty, owl:AsymmetricProperty ;
+    rdfs:domain xsd:float .
 
-:quantity a owl:DatatypeProperty  ;
-  rdfs:domain :Ingredient ;
-  rdfs:range xsd:decimal .
+:quantity
+    a           owl:DatatypeProperty ;
+    rdfs:domain :Ingredient ;
+    rdfs:range  xsd:decimal .
 
-:unit a owl:ObjectProperty ;
-  rdfs:domain :Ingredient ;
-  rdfs:range :MeasurementUnit .
+:unit
+    a           owl:ObjectProperty ;
+    rdfs:domain :Ingredient ;
+    rdfs:range  :MeasurementUnit .
 
-:hasQuantityValue a owl:ObjectProperty ;
-  rdfs:label "has quantity value"@en, "a pour valeur de quantité"@fr ;
-  rdfs:comment ""@en,
-               ""@fr ;
-  rdfs:range xsd:decimal .
+:name
+    a            owl:DatatypeProperty ;
+    rdfs:domain  owl:Class ;
+    rdfs:range   xsd:string ;
+    rdfs:label   "name"@en, "nom"@fr ;
+    rdfs:comment "The name of the recipe."@en, "Le nom de la recette."@fr .
 
-:hasImperialUnit  a owl:ObjectProperty ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en,
-               ""@fr ;
-  rdfs:range :ImperialMeasurementUnit .
+:hasQuantityValue
+    a            owl:ObjectProperty ;
+    rdfs:label   "has quantity value"@en, "a pour valeur de quantité"@fr ;
+    rdfs:comment ""@en, ""@fr ;
+    rdfs:range   xsd:decimal .
 
-:hasMetricMeasurementUnit  a owl:ObjectProperty ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en,
-               ""@fr ;
-  rdfs:range :MetricMeasurementUnit .
+:hasImperialUnit
+    a            owl:ObjectProperty ;
+    rdfs:label   ""@en, ""@fr ;
+    rdfs:comment ""@en, ""@fr ;
+    rdfs:range   :ImperialMeasurementUnit .
 
-:hasStandardUnit  a owl:ObjectProperty ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en,
-               ""@fr .
+:hasMetricMeasurementUnit
+    a            owl:ObjectProperty ;
+    rdfs:label   ""@en, ""@fr ;
+    rdfs:comment ""@en, ""@fr ;
+    rdfs:range   :MetricMeasurementUnit .
+
+:hasStandardUnit
+    a            owl:ObjectProperty ;
+    rdfs:label   ""@en, ""@fr ;
+    rdfs:comment ""@en, ""@fr .
+
+:recipeCategory
+    a            owl:ObjectProperty ;
+    rdfs:label   ""@en, ""@fr ;
+    rdfs:comment ""@en, ""@fr .
+
+:hasIngredient
+    a            owl:ObjectProperty, owl:IrreflexiveProperty  ;
+    rdfs:label "Ingredient for a recipe"@en, "Ingrédient pour une recette"@fr ;
+    rdfs:domain :Recipe ;
+    rdfs:range :Ingredient .
+
+:food
+    a            owl:ObjectProperty ;
+    rdfs:domain :Ingredient ;
+    rdfs:range :Food ;
+    rdfs:label "Food for an ingredient"@en, "Aliment pour un ingrédient"@fr ;
+    rdfs:comment "The food item that is an ingredient of a recipe."@en, "L'aliment qui est un ingrédient d'une recette."@fr .
+
+:useFood
+    a            owl:ObjectProperty ;
+    owl:propertyChainAxiom ( :hasIngredient :food ) ;
+    rdfs:domain :Recipe ;
+    rdfs:range :Food ;
+    rdfs:label "Food used in a recipe"@en, "Aliment utilisé dans une recette"@fr ;
+    rdfs:comment "The food item that is used in a recipe."@en, "L'aliment qui est utilisé dans une recette."@fr .
+
+:usedInRecipe
+    a            owl:ObjectProperty ;
+    owl:inverseOf :useFood ;
+    rdfs:domain :Food ;
+    rdfs:range :Recipe ;
+    rdfs:label "Recipe in which a food is used"@en, "Recette dans laquelle un aliment est utilisé"@fr ;
+    rdfs:comment "The recipe in which a food item is used."@en, "La recette dans laquelle un aliment est utilisé."@fr .
+
+:hasNutrient
+    a            owl:DatatypeProperty ;
+    rdfs:label   ""@en, ""@fr ;
+    rdfs:comment ""@en, ""@fr ;
+    rdfs:range   xsd:decimal .
+
+:hasCalories
+    a               owl:DatatypeProperty ;
+    rdfs:subClassOf :hasNutrient ;
+    rdfs:range      xsd:decimal ;
+    rdfs:label      "has calories"@en, "a comme calories"@fr ;
+    rdfs:comment    "Indicates the number of calories contained in a food item or nutrient."@en,
+                    "Indique le nombre de calories contenues dans un aliment ou un nutriment."@fr .
+
+:hasServingSize
+    a               owl:DatatypeProperty ;
+    rdfs:subClassOf :hasNutrient ;
+    rdfs:range      xsd:decimal ;
+    rdfs:label      "has serving size"@en, "a comme portion"@fr ;
+    rdfs:comment    "Specifies the standard serving size of the food item."@en,
+                    "Spécifie la taille standard de la portion de l'aliment."@fr .
+
+:hasProtein
+    a               owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:subClassOf :hasNutrient ;
+    rdfs:range      xsd:decimal ;
+    rdfs:label      "has protein"@en, "a comme protéine"@fr ;
+    rdfs:comment    "Indicates the amount of protein in a food item."@en,
+                    "Indique la quantité de protéine dans un aliment."@fr .
+
+:hasTotalFat
+    a               owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:subClassOf :hasNutrient ;
+    rdfs:range      xsd:decimal ;
+    rdfs:label      "has total fat"@en, "a comme graisses totales"@fr ;
+    rdfs:comment    "Indicates the total fat content in a food item."@en,
+                    "Indique la teneur totale en graisses d'un aliment."@fr .
+
+:hasSaturatedFat
+    a               owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:subClassOf :hasNutrient ;
+    rdfs:range      xsd:decimal ;
+    rdfs:label      "has saturated fat"@en, "a comme graisses saturées"@fr ;
+    rdfs:comment    "Indicates the amount of saturated fat in a food item."@en,
+                    "Indique la quantité de graisses saturées dans un aliment."@fr .
+
+:hasSodium
+    a               owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:subClassOf :hasNutrient ;
+    rdfs:range      xsd:decimal ;
+    rdfs:label      "has sodium"@en, "a comme sodium"@fr ;
+    rdfs:comment    "Indicates the sodium content in a food item."@en, "Indique la teneur en sodium d'un aliment."@fr .
+
+:hasPotassium
+    a               owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:subClassOf :hasNutrient ;
+    rdfs:range      xsd:decimal ;
+    rdfs:label      "has potassium"@en, "a comme potassium"@fr ;
+    rdfs:comment    "Indicates the potassium content in a food item."@en,
+                    "Indique la teneur en potassium d'un aliment."@fr .
+
+:hasCholesterol
+    a               owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:subClassOf :hasNutrient ;
+    rdfs:range      xsd:decimal ;
+    rdfs:label      "has cholesterol"@en, "a comme cholestérol"@fr ;
+    rdfs:comment    "Indicates the cholesterol content in a food item."@en,
+                    "Indique la teneur en cholestérol d'un aliment."@fr .
+
+:hasCarbohydratesTotal
+    a               owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:subClassOf :hasNutrient ;
+    rdfs:range      xsd:decimal ;
+    rdfs:label      "has total carbohydrates"@en, "a comme glucides totaux"@fr ;
+    rdfs:comment    "Indicates the total carbohydrates content in a food item."@en,
+                    "Indique la teneur totale en glucides d'un aliment."@fr .
+
+:hasFiber
+    a               owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:subClassOf :hasNutrient ;
+    rdfs:range      xsd:decimal ;
+    rdfs:label      "has dietary fiber"@en, "a comme fibres alimentaires"@fr ;
+    rdfs:comment    "Indicates the dietary fiber content in a food item."@en,
+                    "Indique la teneur en fibres alimentaires d'un aliment."@fr .
+
+:hasSugar
+    a               owl:DatatypeProperty, owl:FunctionalProperty ;
+    rdfs:subClassOf :hasNutrient ;
+    rdfs:range      xsd:decimal ;
+    rdfs:label      "has sugar"@en, "a comme sucre"@fr ;
+    rdfs:comment    "Indicates the sugar content in a food item."@en, "Indique la teneur en sucre d'un aliment."@fr .
 
 # Display properties
-:hasThumbnail a owl:ObjectProperty ;
-  rdfs:label "has thumbnail"@en, "a pour vignette"@fr ;
-  rdfs:comment ""@en,
-               ""@fr ;
-  rdfs:range :Image .
+:hasThumbnail
+    a            owl:ObjectProperty ;
+    rdfs:label   "has thumbnail"@en, "a pour vignette"@fr ;
+    rdfs:comment ""@en, ""@fr ;
+    rdfs:range   :Image .
 
 
