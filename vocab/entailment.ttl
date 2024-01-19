@@ -31,6 +31,9 @@
     ]
   ] .
 
+:ArachisFreeRecipe a owl:Class; 
+  :complementaryRecipe :RecipeWithArachis .
+
 :RecipeWithAnimalProduct a owl:Class ;
   rdfs:label ""@en, ""@fr ;
   rdfs:comment ""@en,
@@ -92,23 +95,8 @@
     ]
   ] .
 
-:RecipeWithGluten a owl:Class ;
-  rdfs:label ""@en, ""@fr ;
-  rdfs:comment ""@en,
-              ""@fr ;
-  owl:equivalentClass [
-    a owl:Restriction ;
-    owl:onProperty :hasIngredient ;
-    owl:someValuesFrom [
-        a owl:Restriction ;
-        owl:onProperty :food ;
-        owl:someValuesFrom [
-          a owl:Restriction ;
-          owl:onProperty skos:broaderTransitive ;
-          owl:hasValue food:Nuts 
-      ] 
-    ]
-  ] .
+:NutFreeRecipe a owl:Class; 
+  :complementaryRecipe :RecipeWithNuts .
 
 :RecipeWithMeatOrFish a owl:Class ;
   rdfs:label "Recipe with meat or fish"@en, "Recette avec viande ou poisson"@fr ;
@@ -143,7 +131,5 @@
     ]
   ) .
 
-:DairyFreeRecipe a owl:Class ;
-  rdfs:label "Dairy Free Recipe"@en ;
-  owl:complementOf :RecipeWithDairyProduct .
-
+:VegetarianRecipe a owl:Class; 
+  :complementaryRecipe :RecipeWithMeatOrFish .
