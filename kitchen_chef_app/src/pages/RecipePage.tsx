@@ -12,11 +12,13 @@ import RecipeCard from '../components/RecipeCard';
 import { getRecipe } from '../api/recipes';
 import IngredientsCard from '../components/recipe/IngredientsCard';
 import NutritionalDataCard from '../components/recipe/NutritionalDataCard';
+import Abstract from '../components/recipe/Asbtract';
+import Instructions from '../components/recipe/Instructions';
 
 const RecipePage = () => {
   const params = useParams();
   const { recipeId } = params;
-  console.log("params", params);
+  console.log('params', params);
 
   const { data: recipe, isLoading } = useQuery(`recipe/${recipeId}`, () => getRecipe(recipeId));
 
@@ -30,11 +32,12 @@ const RecipePage = () => {
         component="h1"
         variant="h4"
         sx={{ color: '#181e21' }}
+        marginY={7}
       >
         {recipe?.data?.name}
-
       </Typography>
-      <Grid container spacing={2} paddingY={10}>
+      {recipe?.data.abstract ? <Abstract abstract={recipe?.data.abstract} /> : null}
+      <Grid container spacing={2} paddingY={5}>
         <Grid
           item
           xs={6}
@@ -43,6 +46,8 @@ const RecipePage = () => {
         </Grid>
         <Grid item xs={6}>
           <NutritionalDataCard nutritionalData={nutritionalData} />
+          <Box marginY={1} />
+          {recipe?.data.instructions ? <Instructions instructions={recipe?.data.instructions} /> : null}
         </Grid>
       </Grid>
     </Box>

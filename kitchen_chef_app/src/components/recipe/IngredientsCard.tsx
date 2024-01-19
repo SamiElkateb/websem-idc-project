@@ -24,6 +24,7 @@ const IngredientsCard = ({ ingredients, thumbnail }) => {
     _: React.MouseEvent<HTMLElement>,
     newUnitSystem: string,
   ) => {
+    if (newUnitSystem !== 'imperial' && newUnitSystem !== 'metric') return;
     setUnitSystem(newUnitSystem);
   };
   return (
