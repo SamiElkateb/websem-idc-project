@@ -69,8 +69,7 @@ async def get_recipe(recipe_identifier: str):
             ?ingredient :name ?ingredientName ;
             OPTIONAL { ?ingredient :hasStandardMeasurementUnit/:quantity ?ingredientQuantityStandard . }
             OPTIONAL { ?ingredient :hasStandardMeasurementUnit/:unit ?ingredientUnitTmp.
-                OPTIONAL { ?ingredientUnitTmp skos:prefLabel ?prefLabelStandard }
-                BIND(IF(BOUND(?prefLabelStandard),IF(?prefLabelStandard = "Cup"@en,"fluid ounces",?prefLabelStandard),?ingredientUnitTmp) AS ?labelUnitStandard)
+                OPTIONAL { ?ingredientUnitTmp skos:prefLabel ?labelUnitStandard }
             }
             OPTIONAL { ?ingredient :hasImperialMeasurementUnit/:quantity ?ingredientQuantityImperial . }
             OPTIONAL { ?ingredient :hasImperialMeasurementUnit/:unit ?ingredientUnitTmp.
@@ -80,14 +79,18 @@ async def get_recipe(recipe_identifier: str):
             ?ingredientUnitTmp2 skos:prefLabel ?labelUnitMetric}
             FILTER(?recipe = ?uri)
             BIND(IF(BOUND(?recipeLabelTmp),?recipeLabelTmp,"") AS ?recipeLabel)
-            BIND(IF(BOUND(?ingredientQuantityStandard),IF(?labelUnitStandard = "fluid ounces",8,1)*?ingredientQuantityStandard,
+            
+            BIND(IF(BOUND(?ingredientQuantityStandard),?ingredientQuantityStandard,
             IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityImperial,
             IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityMetric, ""))) AS ?ingredientQuantity)
+            
             BIND(IF(BOUND(?labelUnitStandard),?labelUnitStandard,
             IF(BOUND(?labelUnitImperial),?labelUnitImperial,
             IF(BOUND(?labelUnitMetric),?labelUnitMetric, ""))) AS ?labelUnit)
             BIND(IF(?labelUnit!="",CONCAT(?labelUnit," of "),?labelUnit) AS ?unit)
-            BIND(LCASE(CONCAT(STR(ROUND(?ingredientQuantity))," ",?unit,?ingredientName)) AS ?query)
+            
+            BIND(LCASE(CONCAT(STR(IF(?labelUnitStandard = "Cup",8,1)*ROUND(?ingredientQuantity))," ",
+            IF(?unit = "Cup of ","fluid ounces of ",?unit),?ingredientName)) AS ?query)
 
             BIND(IF(BOUND(?ingredientQuantityStandard),?ingredientQuantityStandard,"") AS ?ingredientQuantityStandardName)
             BIND(IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityImperial,?ingredientQuantityStandardName) AS ?ingredientQuantityImperialName)
