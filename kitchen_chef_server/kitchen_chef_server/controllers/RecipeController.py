@@ -95,16 +95,16 @@ async def get_recipe(recipe_identifier: str):
             IF(BOUND(?labelUnitMetric),?labelUnitMetric, ""))) AS ?labelUnit)
             BIND(IF(?labelUnit!="",CONCAT(?labelUnit," of "),?labelUnit) AS ?unit)
             
-            BIND(LCASE(CONCAT(STR(IF(?labelUnitStandard = "Cup",8,1)*ROUND(?ingredientQuantity))," ",
+            BIND(LCASE(CONCAT(STR(IF(BOUND(?labelUnitStandard) && ?labelUnitStandard = "Cup",8,1)*ROUND(?ingredientQuantity))," ",
             IF(?unit = "Cup of ","fluid ounces of ",?unit),?ingredientName)) AS ?query)
 
             BIND(IF(BOUND(?ingredientQuantityStandard),?ingredientQuantityStandard,"") AS ?ingredientQuantityStandardName)
             BIND(IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityImperial,?ingredientQuantityStandardName) AS ?ingredientQuantityImperialName)
             BIND(IF(BOUND(?ingredientQuantityMetric),?ingredientQuantityMetric,?ingredientQuantityStandardName) AS ?ingredientQuantityMetricName)
 
-            BIND(IF(BOUND(?labelUnitStandard),?labelUnitStandard,"") AS ?labelUnitStandardName)
-            BIND(IF(BOUND(?labelUnitImperial),?labelUnitImperial,?labelUnitStandardName) AS ?labelUnitImperialName)
-            BIND(IF(BOUND(?labelUnitMetric),?labelUnitMetric,?labelUnitStandardName) AS ?labelUnitMetricName)
+            BIND(IF(BOUND(?labelUnitStandard),CONCAT(?labelUnitStandard," of "),"") AS ?labelUnitStandardName)
+            BIND(IF(BOUND(?labelUnitImperial),CONCAT(?labelUnitImperial, " of "),?labelUnitStandardName) AS ?labelUnitImperialName)
+            BIND(IF(BOUND(?labelUnitMetric),CONCAT(?labelUnitMetric," of "),?labelUnitStandardName) AS ?labelUnitMetricName)
         } GROUP BY ?recipe
     }
     BIND(CONCAT("http://localhost/service/calorieninjas/nutrition?food=",ENCODE_FOR_URI(?queryList)) AS ?urlMicroServ)
