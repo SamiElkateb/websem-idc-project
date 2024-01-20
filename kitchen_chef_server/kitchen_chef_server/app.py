@@ -31,4 +31,3 @@ if len(list(results)) == 0:
     sparql_service_update(CORESE_URL, read_query("./kitchen_chef_server/sparql/inserts/conversion.rq"))
     sparql_service_update(CORESE_URL, read_query("./kitchen_chef_server/sparql/entailment/complementary_recipe.rq"))
     print("ALL entailment done")
-

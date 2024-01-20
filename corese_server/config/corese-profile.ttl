@@ -18,7 +18,6 @@ st:loadcontent a sw:Workflow; sw:body (
   [ a sw:Load; sw:path </usr/local/corese/data/fix_entailment.ttl> ]
   [ a sw:Load; sw:path </usr/local/corese/data/food_thesaurus.ttl> ]
   [ a sw:Load; sw:path </usr/local/corese/data/measurements.ttl> ]
-  [ a sw:Load; sw:path </usr/local/corese/data/nutrients.ttl> ]
   [ a sw:Load; sw:path </usr/local/corese/data/recipes.ttl> ]
   [ a sw:Load; sw:path </usr/local/corese/data/schema.ttl> ]
 ).
