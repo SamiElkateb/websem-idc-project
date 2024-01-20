@@ -71,4 +71,13 @@ conversionentailment:
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/conversionEntailement.rq -i ./vocab/measurements.ttl -o ./vocab/measurements.ttl
 
 server:
-	 @cd ./kitchen_chef_server/ && poetry run uvicorn kitchen_chef_server.__main__:app --reload
+	 @cd ./kitchen_chef_server/ && export MICROSERVICE_HOSTNAME=localhost && poetry run uvicorn kitchen_chef_server.__main__:app --reload
+
+client:
+	 @cd ./kitchen_chef_app/ && npm run dev
+
+docker-microservice:
+	docker-compose up -d sparql-micro-service mongo corese
+
+docker-all:
+	docker-compose up -d --build sparql-micro-service-in-docker mongo corese backend frontend

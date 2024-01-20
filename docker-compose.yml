@@ -5,7 +5,6 @@ services:
     networks:
       - sms-net
     volumes:
-      - "./service/logs:/usr/local/corese/log"
       - "./service/services:/services"
 
   mongo:
@@ -20,7 +19,6 @@ services:
     ports:
       - "80:80"
     volumes:
-      - "./service/logs:/var/www/sparql-ms/logs"
       - "./service/services:/services"
       - "./service/html:/var/www/html"
       - type: bind
@@ -39,6 +37,46 @@ services:
     volumes:
       - dbpedia-models:/opt/spotlight
     command: spotlight.sh en
+  
+  backend:
+    image: kitchen_chef_backend
+    build:
+      context: ./kitchen_chef_server
+      dockerfile: Dockerfile
+      target: debug
+    environment:
+      MICROSERVICE_HOSTNAME: sparql-micro-service-in-docker
+    networks:
+      - sms-net
+    ports:
+      - "8000:8000"
+    volumes:
+      - "./kitchen_chef_server/kitchen_chef_server/:/app/kitchen_chef_server"
+
+  frontend:
+    image: kitchen_chef_frontend
+    build:
+      context: ./kitchen_chef_app
+      dockerfile: Dockerfile
+      target: debug
+    ports:
+      - "5173:5173"
+    volumes:
+      - "./kitchen_chef_app/src/:/app/src"
+
+  sparql-micro-service-in-docker:
+    image: frmichel/sparql-micro-service:v0.5.6
+    networks:
+      - sms-net
+    volumes:
+      - "./service/services:/services"
+      - "./service/html:/var/www/html"
+      - type: bind
+        source: ./service/config/sparql-micro-service.ini
+        target: /var/www/sparql-ms/src/sparqlms/config.ini
+      - type: bind
+        source: ./service/config/apache.conf
+        target: /etc/apache2/sites-enabled/apache-sparql-micro-services.conf
 
 volumes:
   dbpedia-models:

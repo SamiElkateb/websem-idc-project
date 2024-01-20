@@ -1,6 +1,7 @@
 from typing import Annotated
 
 from fastapi import HTTPException, Query
+from kitchen_chef_server.conf import MICROSERVICE_HOSTNAME
 from kitchen_chef_server.models.NutritionalData import NutritionalData
 from kitchen_chef_server.models.RecipeFilter import RecipeFilter
 from rdflib import Namespace, URIRef
@@ -11,6 +12,7 @@ from kitchen_chef_server.models.Ingredient import Ingredient
 from kitchen_chef_server.models.Recipe import Recipe
 from kitchen_chef_server.sparql.queries.build_search_query import \
     build_search_query
+
 
 RECIPES = Namespace("http://project-kitchenchef.fr/recipes/data#")
 FOODS = Namespace("http://project-kitchenchef.fr/food/data#")
@@ -57,14 +59,14 @@ async def get_recipe(recipe_identifier: str):
     """
     Une fois en cache, la requête prend ~3 secondes à s'exécuter
     """
-    query = """
+    query = f"""
     prefix :        <http://project-kitchenchef.fr/schema#>
     prefix recipes: <http://project-kitchenchef.fr/recipes/data#>
     prefix skos:    <http://www.w3.org/2004/02/skos/core#>
     prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
 
-    SELECT * WHERE{
-    {
+    SELECT * WHERE{{
+    {{
         SELECT ?recipeLabel
         (group_concat(?query; separator=" and ") AS ?queryList)
         (group_concat(str(?ingredientName); separator="|-|") AS ?ingredientNames)
@@ -72,21 +74,21 @@ async def get_recipe(recipe_identifier: str):
         (group_concat(str(?ingredientQuantityMetricName); separator="|-|") AS ?ingredientMetricQuantities)
         (group_concat(str(?labelUnitImperialName); separator="|-|") AS ?labelUnitImperialNames)
         (group_concat(str(?labelUnitMetricName); separator="|-|") AS ?labelUnitMetricNames)
-        WHERE {
+        WHERE {{
             ?recipe :hasIngredient ?ingredient.
-            OPTIONAL { ?recipe rdfs:label ?recipeLabelTmp.
-             FILTER(LANG(?recipeLabelTmp) = "en")}
+            OPTIONAL {{ ?recipe rdfs:label ?recipeLabelTmp.
+             FILTER(LANG(?recipeLabelTmp) = "en")}}
             ?ingredient :name ?ingredientName ;
-            OPTIONAL { ?ingredient :hasStandardMeasurementUnit/:quantity ?ingredientQuantityStandard . }
-            OPTIONAL { ?ingredient :hasStandardMeasurementUnit/:unit ?ingredientUnitTmp.
-                OPTIONAL { ?ingredientUnitTmp skos:prefLabel ?labelUnitStandard }
-            }
-            OPTIONAL { ?ingredient :hasImperialMeasurementUnit/:quantity ?ingredientQuantityImperial . }
-            OPTIONAL { ?ingredient :hasImperialMeasurementUnit/:unit ?ingredientUnitTmp.
-            ?ingredientUnitTmp skos:prefLabel ?labelUnitImperial}
-            OPTIONAL { ?ingredient :hasMetricMeasurementUnit/:quantity ?ingredientQuantityMetric . }
-            OPTIONAL { ?ingredient :hasMetricMeasurementUnit/:unit ?ingredientUnitTmp2 .
-            ?ingredientUnitTmp2 skos:prefLabel ?labelUnitMetric}
+            OPTIONAL {{ ?ingredient :hasStandardMeasurementUnit/:quantity ?ingredientQuantityStandard . }}
+            OPTIONAL {{ ?ingredient :hasStandardMeasurementUnit/:unit ?ingredientUnitTmp.
+                OPTIONAL {{ ?ingredientUnitTmp skos:prefLabel ?labelUnitStandard }}
+            }}
+            OPTIONAL {{ ?ingredient :hasImperialMeasurementUnit/:quantity ?ingredientQuantityImperial . }}
+            OPTIONAL {{ ?ingredient :hasImperialMeasurementUnit/:unit ?ingredientUnitTmp.
+            ?ingredientUnitTmp skos:prefLabel ?labelUnitImperial}}
+            OPTIONAL {{ ?ingredient :hasMetricMeasurementUnit/:quantity ?ingredientQuantityMetric . }}
+            OPTIONAL {{ ?ingredient :hasMetricMeasurementUnit/:unit ?ingredientUnitTmp2 .
+            ?ingredientUnitTmp2 skos:prefLabel ?labelUnitMetric}}
             FILTER(?recipe = ?uri)
             BIND(IF(BOUND(?recipeLabelTmp),?recipeLabelTmp,"") AS ?recipeLabel)
             
@@ -109,10 +111,10 @@ async def get_recipe(recipe_identifier: str):
             BIND(IF(BOUND(?labelUnitStandard),CONCAT(?labelUnitStandard," of "),"") AS ?labelUnitStandardName)
             BIND(IF(BOUND(?labelUnitImperial),CONCAT(?labelUnitImperial, " of "),?labelUnitStandardName) AS ?labelUnitImperialName)
             BIND(IF(BOUND(?labelUnitMetric),CONCAT(?labelUnitMetric," of "),?labelUnitStandardName) AS ?labelUnitMetricName)
-        } GROUP BY ?recipe
-    }
-    BIND(CONCAT("http://localhost/service/calorieninjas/nutrition?food=",ENCODE_FOR_URI(?queryList)) AS ?urlMicroServ)
-    }
+        }} GROUP BY ?recipe
+    }}
+    BIND(CONCAT("http://{MICROSERVICE_HOSTNAME}/service/calorieninjas/nutrition?food=",ENCODE_FOR_URI(?queryList)) AS ?urlMicroServ)
+    }}
     """
     results = g.query(
         query,
