@@ -17,8 +17,9 @@
 
 :RecipeWithArachis
     a                   owl:Class ;
-    rdfs:label          ""@en, ""@fr ;
-    rdfs:comment        ""@en, ""@fr ;
+    rdfs:label          "Contains arachis"@en, "Contient des arachides"@fr ;
+    rdfs:comment        "A recipe that includes arachis as an ingredient"@en,
+                        "Une recette qui comprend des arachides comme ingrédient"@fr ;
     owl:equivalentClass [ a                  owl:Restriction ;
                           owl:onProperty     :hasIngredient ;
                           owl:someValuesFrom [ a                  owl:Restriction ;
@@ -34,8 +35,9 @@
 
 :RecipeWithAnimalProduct
     a                   owl:Class ;
-    rdfs:label          ""@en, ""@fr ;
-    rdfs:comment        ""@en, ""@fr ;
+    rdfs:label          "Contains animal product"@en, "Contient des produits animaux"@fr ;
+    rdfs:comment        "A recipe that includes animal product as an ingredient"@en,
+                        "Une recette qui comprend des produits animaux comme ingrédient"@fr ;
     owl:equivalentClass [ a                  owl:Restriction ;
                           owl:onProperty     :hasIngredient ;
                           owl:someValuesFrom [ a                  owl:Restriction ;
@@ -43,7 +45,7 @@
                                                owl:someValuesFrom [ a              owl:Restriction ;
                                                                     owl:onProperty skos:broaderTransitive ;
                                                                     owl:hasValue   food:animalProduct ] ] ] ;
-    rdfs:seeAlso        [ owl:unionOf ( fowl:MeatCourse fowl:FishCourse fowl:RedMeatCourse ) ] .
+    rdfs:seeAlso         fowl:MeatCourse,fowl:FishCourse,fowl:RedMeatCourse .
 
 :VeganRecipe
     a                    owl:Class, :UserRecipeFilter ;
@@ -52,8 +54,9 @@
 
 :RecipeWithDairyProduct
     a                   owl:Class ;
-    rdfs:label          ""@en, ""@fr ;
-    rdfs:comment        ""@en, ""@fr ;
+    rdfs:label          "Contains dairy product"@en, "Contient des produits laitiers"@fr ;
+    rdfs:comment        "A recipe that includes dairy product as an ingredient"@en,
+                        "Une recette qui comprend des produits laitiers comme ingrédient"@fr ;
     owl:equivalentClass [ a                  owl:Restriction ;
                           owl:onProperty     :hasIngredient ;
                           owl:someValuesFrom [ a                  owl:Restriction ;
@@ -70,8 +73,9 @@
 
 :RecipeWithNuts
     a                   owl:Class ;
-    rdfs:label          ""@en, ""@fr ;
-    rdfs:comment        ""@en, ""@fr ;
+    rdfs:label          "Contains nuts"@en, "Contient des noix"@fr ;
+    rdfs:comment        "A recipe that includes nuts as an ingredient"@en,
+                        "Une recette qui comprend des noix comme ingrédient"@fr ;
     owl:equivalentClass [ a                  owl:Restriction ;
                           owl:onProperty     :hasIngredient ;
                           owl:someValuesFrom [ a                  owl:Restriction ;
@@ -84,7 +88,7 @@
     a                    owl:Class, :UserRecipeFilter ;
     :complementaryRecipe :RecipeWithNuts ;
   rdfs:label ""@en, ""@fr ;
-  :uiLabel "Nut-free"@en, "Sans-noix"@fr ;
+  :uiLabel "Nut-free"@en, "Sans noix"@fr ;
   rdfs:comment ""@en,
               ""@fr .
 

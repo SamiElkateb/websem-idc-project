@@ -1,106 +1,124 @@
-@prefix : <http://project-kitchenchef.fr/schema#> .
+@prefix :        <http://project-kitchenchef.fr/schema#> .
 @prefix dbpedia: <http://dbpedia.org/resource/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix food: <http://project-kitchenchef.fr/food/data#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix food:    <http://project-kitchenchef.fr/food/data#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix recipes: <http://project-kitchenchef.fr/recipes/data#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 
-food:FoodThesaurus a skos:ConceptScheme;
-  skos:prefLabel "Food Thesaurus"@en, "Thésaurus alimentaire"@fr;
-  skos:definition "A classification scheme for different types of food"@en,
-                  "Un schéma de classification pour différents types d'aliments"@fr;
-  skos:hasTopConcept food:Meat ;
-  skos:hasTopConcept food:Fish ;
-  skos:hasTopConcept food:DairyProduct ;
-  skos:hasTopConcept food:Fruit ;
-  skos:hasTopConcept food:Vegetable ;
-  skos:hasTopConcept food:Eggs .
+food:FoodThesaurus
+    a                  skos:ConceptScheme ;
+    skos:prefLabel     "Food Thesaurus"@en, "Thésaurus alimentaire"@fr ;
+    skos:definition    "A classification scheme for different types of food"@en,
+                       "Un schéma de classification pour différents types d'aliments"@fr ;
+    skos:hasTopConcept food:Meat ;
+    skos:hasTopConcept food:Fish ;
+    skos:hasTopConcept food:DairyProduct ;
+    skos:hasTopConcept food:Fruit ;
+    skos:hasTopConcept food:Vegetable ;
+    skos:hasTopConcept food:Eggs .
 
-food:Meat a skos:Concept;
-  skos:prefLabel "Meat"@en, "Viande"@fr;
-  skos:broaderTransitive food:animalProduct ;
-  skos:definition "Animal flesh used as food"@en,
-                  "Chair d'animal utilisée comme nourriture"@fr.
+food:Meat
+    a                      skos:Concept ;
+    skos:prefLabel         "Meat"@en, "Viande"@fr ;
+    skos:broaderTransitive food:animalProduct ;
+    skos:definition        "Animal flesh used as food"@en, "Chair d'animal utilisée comme nourriture"@fr .
 
-food:Fish a skos:Concept;
-  skos:prefLabel ""@en, ""@fr;
-  skos:broaderTransitive food:animalProduct ;
-  skos:definition ""@en,
-                  ""@fr.
+food:Fish
+    a                      skos:Concept ;
+    skos:prefLabel         "Fish"@en, "Poisson"@fr ;
+    skos:broaderTransitive food:animalProduct ;
+    skos:definition        "Aquatic animal used as food"@en, "Animal aquatique utilisé comme nourriture"@fr .
 
-food:SeaFood a skos:Concept;
-  skos:prefLabel ""@en, ""@fr;
-  skos:broaderTransitive food:animalProduct ;
-  skos:definition ""@en,
-                  ""@fr.
+food:SeaFood
+    a                      skos:Concept ;
+    skos:prefLabel         "Sea Food"@en, "Fruit de mer"@fr ;
+    skos:broaderTransitive food:animalProduct ;
+    skos:definition        "Seafood is any form of sea life regarded as food by humans. Seafood prominently includes fish and shellfish"@en,
+                           "Les fruits de mer sont toutes les formes de vie marine considérées comme nourriture par les humains. Les fruits de mer comprennent principalement les poissons et les crustacés"@fr .
 
-food:DairyProduct a skos:Concept;
-  skos:prefLabel "Dairy Product"@en, "Produit laitier"@fr;
-  skos:broaderTransitive food:animalProduct ;
-  skos:definition "Food produced from the milk of mammals"@en,
-                  "Aliment produit à partir du lait des mammifères"@fr.
+food:DairyProduct
+    a                      skos:Concept ;
+    skos:prefLabel         "Dairy Product"@en, "Produit laitier"@fr ;
+    skos:broaderTransitive food:animalProduct ;
+    skos:definition        "Food produced from the milk of mammals"@en,
+                           "Aliment produit à partir du lait des mammifères"@fr .
 
-food:Cheese a skos:Concept;
-  skos:prefLabel ""@en, ""@fr ;
-  skos:broaderTransitive food:DairyProduct ;
-  skos:definition ""@en,
-                  ""@fr.
+food:Cheese
+    a                      skos:Concept ;
+    skos:prefLabel         "Cheese"@en, "Fromage"@fr ;
+    skos:broaderTransitive food:DairyProduct ;
+    skos:definition        "A food made from the pressed curds of milk"@en,
+                           "Aliment fabriqué à partir du caillé pressé du lait"@fr .
 
-food:animalProduct a skos:Concept;
-  skos:prefLabel ""@en, ""@fr;
-  skos:definition ""@en,
-                  ""@fr.
+food:animalProduct
+    a               skos:Concept ;
+    skos:prefLabel  "Animal Product"@en, "Produit animal"@fr ;
+    skos:definition "A product made from animals or theirs production"@en,
+                    "Produit fabriqué à partir d'animaux ou de leurs produits"@fr .
 
-food:Fruit a skos:Concept;
-  skos:prefLabel "Fruit"@en, "Fruit"@fr;
-  skos:definition "The sweet and fleshy product of a tree or other plant that contains seed and can be eaten as food"@en,
-                  "Produit sucré et charnu d'un arbre ou d'une autre plante contenant des graines et pouvant être consommé comme aliment"@fr.
+food:Fruit
+    a              skos:Concept ;
+    skos:prefLabel "Fruit"@en, "Fruit"@fr ;
+    skos:definition
+                   "The sweet and fleshy product of a tree or other plant that contains seed and can be eaten as food"@en,
+                   "Produit sucré et charnu d'un arbre ou d'une autre plante contenant des graines et pouvant être consommé comme aliment"@fr .
 
-food:Vegetable a skos:Concept;
-  skos:prefLabel "Vegetable"@en, "Légume"@fr;
-  skos:definition "A plant or part of a plant used as food, typically as accompaniment to meat or fish"@en,
-                  "Plante ou partie d'une plante utilisée comme nourriture, typiquement en accompagnement de viande ou de poisson"@fr.
+food:Vegetable
+    a               skos:Concept ;
+    skos:prefLabel  "Vegetable"@en, "Légume"@fr ;
+    skos:definition "A plant or part of a plant used as food, typically as accompaniment to meat or fish"@en,
+                    "Plante ou partie d'une plante utilisée comme nourriture, typiquement en accompagnement de viande ou de poisson"@fr .
 
-food:Nuts a skos:Concept;
-  skos:prefLabel "Nuts"@en, "Fruits à coque"@fr;
-  skos:definition "Hard-shelled dry fruits or seeds with a significant amount of fat and protein"@en,
-                  "Fruits ou graines à coque dure contenant une quantité significative de matières grasses et de protéines"@fr.
+food:Nuts
+    a               skos:Concept ;
+    skos:prefLabel  "Nuts"@en, "Fruits à coque"@fr ;
+    skos:definition "Hard-shelled dry fruits or seeds with a significant amount of fat and protein"@en,
+                    "Fruits ou graines à coque dure contenant une quantité significative de matières grasses et de protéines"@fr .
 
-food:Arachis a skos:Concept;
-  skos:prefLabel ""@en, ""@fr;
-  skos:definition ""@en,
-                  ""@fr.
+food:Arachis
+    a               skos:Concept ;
+    skos:prefLabel  "Arachis"@en, "Arachide"@fr ;
+    skos:definition "A legume cultivated for its edible seeds"@en,
+                    "Légumineuse cultivée pour ses graines comestibles"@fr .
 
-food:Cereals a skos:Concept;
-  skos:prefLabel ""@en, ""@fr;
-  skos:definition ""@en .
+food:Cereals
+    a               skos:Concept ;
+    skos:prefLabel  "Cereals"@en, "Céréales"@fr ;
+    skos:definition "Grasses cultivated for their edible grains"@en,
+                    "Graminées cultivées pour leurs grains comestibles"@fr .
 
-food:Bread a skos:Concept;
-  skos:prefLabel ""@en, ""@fr;
-  skos:definition ""@en,
-                  ""@fr.
+food:Bread
+    a               skos:Concept ;
+    skos:prefLabel  "Bread"@en, "Pain"@fr ;
+    skos:definition "A food made of flour, water, and yeast or another leavening agent, mixed together and baked"@en,
+                    "Aliment fait de farine, d'eau et de levure ou d'un autre agent levant, mélangés et cuits au four"@fr .
 
-food:Pasta a skos:Concept;
-  skos:prefLabel ""@en, ""@fr;
-  skos:definition ""@en,
-                  ""@fr.
+food:Pasta
+    a              skos:Concept ;
+    skos:prefLabel "Pasta"@en, "Pâtes"@fr ;
+    skos:definition
+                   "A dish originally from Italy consisting of dough made from durum wheat and water, extruded or stamped into various shapes and typically cooked in boiling water"@en,
+                   "Un plat originaire d'Italie composé de pâte à base de blé dur et d'eau, extrudé ou estampé dans différentes formes et généralement cuit dans de l'eau bouillante"@fr .
 
-food:Spice a skos:Concept;
-  skos:prefLabel ""@en, ""@fr;
-  skos:definition ""@en,
-                  ""@fr.
+food:Spice
+    a               skos:Concept ;
+    skos:prefLabel  "Spice"@en, "Épice"@fr ;
+    skos:definition "A pungent or aromatic vegetable substance used to flavor food, e.g., cloves, pepper, or mace"@en,
+                    "Substance végétale piquante ou aromatique utilisée pour aromatiser les aliments, par exemple les clous de girofle, le poivre ou la macis"@fr .
 
-food:Condiment a skos:Concept;
-  skos:prefLabel ""@en, ""@fr;
-  skos:definition ""@en,
-                  ""@fr.
+food:Condiment
+    a               skos:Concept ;
+    skos:prefLabel  "Condiment"@en, "Condiment"@fr ;
+    skos:definition "A substance such as salt, mustard, or pickle that is used to add flavor to food"@en,
+                    "Une substance telle que le sel, la moutarde ou le cornichon qui est utilisée pour ajouter de la saveur aux aliments"@fr .
 
-food:Eggs a skos:Concept;
-  skos:prefLabel "Eggs"@en, "Oeufs"@fr;
-  skos:broaderTransitive food:animalProduct ;
-  skos:definition "Edible reproductive bodies produced by birds, particularly chickens, often used in cooking and baking"@en,
-                  "Corps reproducteurs comestibles produits par des oiseaux, en particulier des poules, souvent utilisés dans la cuisine et la pâtisserie"@fr.
+food:Eggs
+    a                      skos:Concept ;
+    skos:prefLabel         "Eggs"@en, "Oeufs"@fr ;
+    skos:broaderTransitive food:animalProduct ;
+    skos:definition        "Edible reproductive bodies produced by birds, particularly chickens, often used in cooking and baking"@en,
+                           "Corps reproducteurs comestibles produits par des oiseaux, en particulier des poules, souvent utilisés dans la cuisine et la pâtisserie"@fr .

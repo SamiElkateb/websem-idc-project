@@ -1,4 +1,4 @@
-all: recipesHandling foodweights2rdf format populate update-server-data
+all: recipesHandling format populate update-server-data
 recipesHandling : recipes2rdf extract_quantity_from_units units quantityConversion unitSeparation categories
 recipes2rdf:
 	@echo "recipes2rdf"
@@ -33,26 +33,22 @@ quantityConversion :
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/few.rq -i output/recipes.ttl -o output/recipes.ttl
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/some.rq -i output/recipes.ttl -o output/recipes.ttl
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/many.rq -i output/recipes.ttl -o output/recipes.ttl
-	@echo "quantityConversion1"
+	@echo "quantityConversion: integers & fractions"
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/integers.rq -i output/recipes.ttl -o output/recipes.ttl
+	@echo "quantityConversion: integers & fractions"
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/fractions.rq -i output/recipes.ttl -o output/recipes.ttl
+	@echo "quantityConversion: integers & fractions"
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/entier_fractions.rq -i output/recipes.ttl -o output/recipes.ttl
+	@echo "quantityConversion: integers & fractions"
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/group.rq -i output/recipes.ttl -o output/recipes.ttl
 
 unitSeparation:
+	@echo "Unit Separation"
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/separateUnits.rq -i ./vocab/measurements.ttl -i output/recipes.ttl -i ./vocab/schema.ttl -o output/recipes.ttl
 
 categories:
 	@echo "categories"
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/categories.rq -i output/recipes.ttl -o output/recipes.ttl
-
-foodweights2rdf:
-	@echo "foodweights2rdf"
-	@./tools/csv2rdf \
-		--mode annotated \
-		--user-metadata ./metadata/food_weights.json \
-		--output-file output/food_weights.ttl
-	@java -jar ./tools/corese-command-4.5.0.jar sparql -q metadata/food_weights.rq -i output/food_weights.ttl -o output/food_weights.ttl
 
 populate:
 	@echo "populate"
@@ -77,7 +73,7 @@ client:
 	 @cd ./kitchen_chef_app/ && npm run dev
 
 docker-microservice:
-	docker-compose up -d sparql-micro-service mongo corese
+	docker compose up -d sparql-micro-service mongo corese
 
 docker-all:
-	docker-compose up -d --build sparql-micro-service-in-docker mongo corese backend frontend
+	docker compose up -d --build sparql-micro-service-in-docker mongo corese backend frontend
