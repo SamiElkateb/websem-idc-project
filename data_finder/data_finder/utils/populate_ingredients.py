@@ -46,7 +46,7 @@ def add_food_to_graph(g, food_id, dbpedia_uri, food):
             continue
         g.add((FOOD[food_id], DCTERMS.subject, URIRef(dcSubject)))
 
-    g.add((FOOD[food_id], OWL.sameAs, URIRef(dbpedia_uri)))
+    g.add((FOOD[food_id], SCHEMA["hasDbpediaLink"], URIRef(dbpedia_uri)))
     g.add((FOOD[food_id], RDF.type, SCHEMA["Food"]))
 
     # Maybe:
