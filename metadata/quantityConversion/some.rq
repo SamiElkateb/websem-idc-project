@@ -9,10 +9,10 @@ CONSTRUCT {
 } WHERE {
     {
     ?rec ?p ?divers.
-    FILTER(?p != :quantity || !REGEX(?divers, "some", "i"))
+    FILTER(?p != :quantity || !REGEX(?divers, "some|medium", "i"))
     }  UNION {
     ?x :quantity ?some.
-    FILTER REGEX(?some, "some", "i")
+    FILTER REGEX(?some, "some|medium", "i")
     }
 }
 

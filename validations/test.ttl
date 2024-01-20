@@ -1,17 +1,104 @@
+@prefix :             <http://project-kitchenchef.fr/schema#> .
+@prefix dbpedia:      <http://dbpedia.org/resource/> .
+@prefix food:         <http://project-kitchenchef.fr/food/data#> .
+@prefix measurements: <http://project-kitchenchef.fr/measurements/data#> .
+@prefix ns1:          <http://project-kitchenchef.fr/recipes/categories#> .
+@prefix owl:          <http://www.w3.org/2002/07/owl#> .
 @prefix rdf:          <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix recipes:      <http://project-kitchenchef.fr/recipes/data#> .
+@prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd:          <http://www.w3.org/2001/XMLSchema#> .
-@prefix sh:           <http://www.w3.org/ns/shacl#> .
-@prefix measurements: <http://project-kitchenchef.fr/measurements/data#> .
-@prefix :             <http://project-kitchenchef.fr/schema#> .
-@prefix s:            <http://project-kitchenchef.fr/contraints/schema#> .
 
-_:b141 :name "chopped nuts"@en ;
-       :quantity "0.5"^^xsd:decimal ;
-       :unit measurements:Pinch ;
-       a :Ingredient .
+recipes:AsparagusTomatoQuiche
+    a :Recipe ;
+    :hasIngredient   [ a :Ingredient ;
+                :food
+                  food:Eggs ;
+                :hasStandardMeasurementUnit
+                  [ :quantity
+                            4.0 ;
+                    :unit   "large" ] ;
+                :name
+                  "eggs, beaten"@en ],
+              [ a :Ingredient ;
+                :food
+                  food:Flour ;
+                :hasStandardMeasurementUnit
+                  [ :quantity
+                            3.0 ;
+                    :unit   measurements:Tablespoon ] ;
+                :name
+                  "flour"@en ],
+              [ a :Ingredient ;
+                :food
+                  food:Paprika ;
+                :hasStandardMeasurementUnit
+                  [ :quantity
+                            measurements:Some;
+                    :unit   measurements:Teaspoon ] ;
+                :name
+                  "paprika"@ru ],
+              [ a :Ingredient ;
+                :food
+                  food:Grated ;
+                :hasStandardMeasurementUnit
+                  [ :quantity
+                            2.0 ;
+                    :unit   measurements:Cup ] ;
+                :name
+                  "grated swiss cheese"@en ],
+              [ a :Ingredient ;
+                :food
+                  food:Sliced ;
+                :hasStandardMeasurementUnit
+                  [ :quantity
+                            1.0 ;
+                    :unit   "medium" ] ;
+                :name
+                  "tomato, sliced into four 1/4\" slices"@en ],
+              [ a :Ingredient ;
+                :hasStandardMeasurementUnit
+                  [ :quantity
+                            1.0 ] ;
+                :name
+                  "10 inch pie shell, partially baked"@en ],
+              [ a :Ingredient ;
+                :hasStandardMeasurementUnit
+                  [ :quantity
+                            "10" ] ;
+                :name "fresh aparagus spears, washed and trimmed"@en ] ;
+                :instructions                                                                                                 """Preheat oven to 375 degrees.
+Beat eggs with next 4 ingredients; stir in cheese. Saving 6 asparagus spears for the top, chop the rest into 1" lengths; lay on bottom of pie shell, pour in liquid. Bake 20 minutes. Remove and quickly arrange tomato and asparagus on top in a wagon wheel pattern. Bake another 20-30 minutes. Serves 4 to 6."""@en ;
+    :name "Asparagus Tomato Quiche"@en .
 
-_:b140 :name "lait aigre"@fr ;
-       :quantity "0.5"^^xsd:decimal ;
-       :unit measurements:Cup ;
-       a :Ingredient .
+recipes:NoIngredients
+    a             :Recipe ;
+    :name         "No ingredients"@en ;
+    :instructions "instructions"@en, "instruction2"@en .
+
+recipes:NotAValidName
+    a              :Recipe ;
+    :name          "255"@en ;
+    :instructions  "Not a valid name"@en ;
+    :hasIngredient :NotAVAlidIngredient .
+
+:NotAVAlidIngredient
+    a                           :Ingredient ;
+    :name                       "Not a valid ingredient"@en ;
+    :hasStandardMeasurementUnit [ :unit "NotAValidUnit"] .
+
+measurements:TestUnit
+    a :MeasurementUnit ;
+    skos:prefLabel  "TestUnit"@en ;
+    :hasUnitConversion [ a                :UnitConversion ;
+                         :unit            measurements:Teaspoon ;
+                         :conversionRatio 2.0, 1] ;
+    skos:broaderTransitive measurements:MeasurementUni t .
+
+measurements:TestUnit2
+    a :MeasurementUnit, skos:Concept ;
+    skos:prefLabel  "TestUnit2"@en ;
+    :hasUnitConversion [ a                :UnitConversion ;
+                         :unit            measurements:Liter ;
+                         :conversionRatio 2.0] .

@@ -2787,8 +2787,7 @@ Pour into buttered 9" x 13" baking dish. Bake 35 minutes or until top is brown a
     owl:sameAs dbpedia:Curry_puff .
 
 recipes:ChiliChicken a :Recipe ;
-    rdfs:label "Kung Pao chicken"@en,
-        "Poulet impérial"@fr ;
+    rdfs:label "Chilli chicken"@en ;
     :hasIngredient [ a :Ingredient ;
             :food food:Noodles ;
             :hasImperialMeasurementUnit [ :quantity 12.0 ;
@@ -2828,12 +2827,12 @@ recipes:ChiliChicken a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
                     :unit measurements:Cup ] ;
             :name "cheddar cheese, grated"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Kung-pao-shanghai.jpg?width=300> ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chicken_Chili_HR2.jpg?width=300> ;
     :instructions """saute onion in butter, add soups, pimento, chiles, chicken and 1/2 the cheese.
 Cook noodles until tender. Drain. Stir sauce into noodles. Pour into large baking dish. Add rest of cheese or buttered crumbs.
 Chill over night. Bake at 350 degrees for 1 hour."""@en ;
     :name "Chili Chicken"@en ;
-    owl:sameAs dbpedia:Kung_Pao_chicken .
+    owl:sameAs dbpedia:Chilli_chicken .
 
 recipes:ChilledPruneWhip a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -3869,7 +3868,6 @@ recipes:CrazyCrustPizza a :Recipe ;
     owl:sameAs dbpedia:Stuffed_crust_pizza .
 
 recipes:CreamyApplePie a :Recipe ;
-    rdfs:label "Buko pie"@en ;
     :hasIngredient [ a :Ingredient ;
             :food food:Pie ;
             :hasStandardMeasurementUnit [ :quantity 9.0 ;
@@ -3899,11 +3897,9 @@ recipes:CreamyApplePie a :Recipe ;
             :food food:Apples ;
             :hasStandardMeasurementUnit [ :quantity "4" ] ;
             :name "tart apples, peeled and sliced"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Buko-pie.jpg?width=300> ;
     :instructions "Place apples in the pie shell.  Mix together sugar, flour, and salt.  Sprinkle over apples.  in a sauce pan bring cream to boiling point.  Pour over apples.  Sprinkle generously with cinnamon.  Bake at 375 degrees for 45 minutes, until firm."@en ;
     :name "Creamy Apple Pie"@en ;
-    :recipeCategory ns1:Pie ;
-    owl:sameAs dbpedia:Buko_pie .
+    :recipeCategory ns1:Pie .
 
 recipes:CreamyChickenBroccoliwithRice a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -4889,6 +4885,8 @@ recipes:GingerSnapBars a :Recipe ;
     :recipeCategory ns1:Cookie .
 
 recipes:GingerSnaps a :Recipe ;
+    rdfs:label "Ginger snap"@en,
+        "Piparkūkas"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Shortening ;
             :hasStandardMeasurementUnit [ :quantity 0.75 ;
@@ -4933,9 +4931,11 @@ recipes:GingerSnaps a :Recipe ;
             :food food:Egg ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Arnott's_Ginger_Nut_04.jpg?width=300> ;
     :instructions "Roll in little balls.  Dip in sugar and flatten with glass dipped in water.  Bake at 350 degrees about 7 minutes."@en ;
     :name "Ginger Snaps"@en ;
-    :recipeCategory ns1:Cookie .
+    :recipeCategory ns1:Cookie ;
+    owl:sameAs dbpedia:Ginger_snap .
 
 recipes:GlazedCarrots a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -5630,6 +5630,8 @@ recipes:LemonCloudPie a :Recipe ;
     :recipeCategory ns1:Pie .
 
 recipes:LemonCloudSalad a :Recipe ;
+    rdfs:label "Souvlaki"@en,
+        "Souvláki"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Jello ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -5653,9 +5655,11 @@ recipes:LemonCloudSalad a :Recipe ;
             :food food:Bananas ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "bananas, sliced"@en ] ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Souvlaki_in_Athens.jpg?width=300> ;
     :instructions "Set jello with 1/2 c. less water than package instructions.  When partially set stir in Dream Whip.  Add fruits.  Set several hours to chill."@en ;
     :name "Lemon Cloud Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :recipeCategory ns1:SaladAndDressings ;
+    owl:sameAs dbpedia:Souvlaki .
 
 recipes:LemonLusciousPie a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -5764,8 +5768,6 @@ recipes:LemonMeringuePie a :Recipe ;
     owl:sameAs dbpedia:Lemon_meringue_pie .
 
 recipes:LemonPoppyCake a :Recipe ;
-    rdfs:label "Poppy seed"@en,
-        "Graine de pavot"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -5795,11 +5797,9 @@ recipes:LemonPoppyCake a :Recipe ;
             :food food:Eggs ;
             :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "eggs"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Poppy_seeds.jpg?width=300> ;
     :instructions "Mix all for 4 minutes.  Bake at 350 degrees for 40 minutes."@en ;
     :name "Lemon Poppy Cake"@en ;
-    :recipeCategory ns1:Cake ;
-    owl:sameAs dbpedia:Poppy_seed .
+    :recipeCategory ns1:Cake .
 
 recipes:LemonSquares a :Recipe ;
     rdfs:label "Lemon bar"@en ;
@@ -6877,6 +6877,8 @@ Drain pasta and vegetables; return to saucepan. Stir in pesto; add chicken to tu
     owl:sameAs dbpedia:Pasta_primavera .
 
 recipes:PeaSalad a :Recipe ;
+    rdfs:label "Ham salad"@en,
+        "Salade de jambon"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Peas ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -6907,9 +6909,11 @@ recipes:PeaSalad a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
                     :unit "small carton" ] ;
             :name "sour cream"@en ] ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Ham_Salad_Sandwich_(39117585832).jpg?width=300> ;
     :instructions "Stir together and enjoy."@en ;
     :name "Pea Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :recipeCategory ns1:SaladAndDressings ;
+    owl:sameAs dbpedia:Ham_salad .
 
 recipes:PeachAlmondPie a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -8508,8 +8512,6 @@ recipes:SourCreamEnchiladas a :Recipe ;
     owl:sameAs dbpedia:Enchilada .
 
 recipes:SourCreamRaisinPie a :Recipe ;
-    rdfs:label "Cheesecake"@en,
-        "Cheesecake"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Raisins ;
             :hasStandardMeasurementUnit [ :quantity 1.5 ;
@@ -8549,11 +8551,9 @@ recipes:SourCreamRaisinPie a :Recipe ;
             :food food:Yolks ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "egg yolks, slightly beaten"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/My_first_cheesecake_cropped.jpg?width=300> ;
     :instructions "Boil raisins in water until plump.  Add flour and sugar.  Cook to thicken slightly then add egg yolks, sour cream, vanilla and nutmeg.  Pour into 9\" bottom crust.  Add top crust.  Sprinkle with sugar.  Bake 50 minutes at 350 degrees."@en ;
     :name "Sour Cream Raisin Pie"@en ;
-    :recipeCategory ns1:Pie ;
-    owl:sameAs dbpedia:Cheesecake .
+    :recipeCategory ns1:Pie .
 
 recipes:SouthCarolinaCobbler a :Recipe ;
     rdfs:label "Cobbler (food)"@en,

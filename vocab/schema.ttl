@@ -29,7 +29,6 @@
                "A set of instructions for preparing a particular dish, including a list of the ingredients required."@en,
                "Un ensemble d'instructions pour préparer un plat particulier, y compris une liste des ingrédients requis."@fr .
 
-
 :Quantity
     a            owl:Class ;
     rdfs:label   "Quantity"@en, "Quantité"@fr ;
@@ -74,7 +73,7 @@
 :UserRecipeFilter
     a            owl:Class ;
     rdfs:label   "User recipe filter"@en, "Filtre de recette utilisateur"@fr ;
-    rdfs:comment    "Used to filter recipes"@en, "Utilisée pour filtrer les recettes"@fr .
+    rdfs:comment "Used to filter recipes"@en, "Utilisée pour filtrer les recettes"@fr .
 
 # Properties
 
@@ -147,33 +146,33 @@
     rdfs:range   xsd:decimal .
 
 :hasUnitConversion
-    a           owl:ObjectProperty ;
-    rdfs:domain :MeasurementUnit ;
-    rdfs:range  :UnitConversion ;
-    rdfs:label  "has unit conversion"@en, "a comme conversion d'unité"@fr ;
+    a            owl:ObjectProperty ;
+    rdfs:domain  :MeasurementUnit ;
+    rdfs:range   :UnitConversion ;
+    rdfs:label   "has unit conversion"@en, "a comme conversion d'unité"@fr ;
     rdfs:comment "Indicates the unit conversion for a measurement unit."@en,
                  "Indique la conversion d'unité pour une unité de mesure."@fr .
 
 :conversionRatio
-    a           owl:ObjectProperty, owl:AsymmetricProperty ;
-    rdfs:domain :UnitConversion ;
-    rdfs:range xsd:decimal ;
-    rdfs:label  "conversion ratio"@en, "ratio de conversion"@fr ;
+    a            owl:ObjectProperty, owl:AsymmetricProperty ;
+    rdfs:domain  :UnitConversion ;
+    rdfs:range   xsd:decimal ;
+    rdfs:label   "conversion ratio"@en, "ratio de conversion"@fr ;
     rdfs:comment "Indicates the conversion ratio for a unit conversion."@en,
                  "Indique le ratio de conversion pour une conversion d'unité."@fr .
 
 :quantity
-    a           owl:DatatypeProperty ;
-    rdfs:domain :Ingredient ;
-    rdfs:range  xsd:decimal ;
-    rdfs:label  "quantity"@en, "quantité"@fr ;
+    a            owl:DatatypeProperty ;
+    rdfs:domain  :Ingredient ;
+    rdfs:range   xsd:decimal ;
+    rdfs:label   "quantity"@en, "quantité"@fr ;
     rdfs:comment "Indicates the quantity of an ingredient."@en, "Indique la quantité d'un ingrédient."@fr .
 
 :unit
-    a           owl:ObjectProperty ;
-    rdfs:domain :Ingredient ;
-    rdfs:range  :MeasurementUnit ;
-    rdfs:label  "unit"@en, "unité"@fr ;
+    a            owl:ObjectProperty ;
+    rdfs:domain  :Ingredient ;
+    rdfs:range   :MeasurementUnit ;
+    rdfs:label   "unit"@en, "unité"@fr ;
     rdfs:comment "Indicates the measurement unit of an ingredient."@en,
                  "Indique l'unité de mesure d'un ingrédient."@fr .
 
@@ -192,23 +191,23 @@
     rdfs:range   xsd:decimal .
 
 :hasImperialMeasurementUnit
-    a            owl:ObjectProperty ;
-    rdfs:label   "has imperial measurement unit"@en, "a comme unité de mesure impériale"@fr ;
-    rdfs:range   :ImperialMeasurementUnit .
+    a          owl:ObjectProperty ;
+    rdfs:label "has imperial measurement unit"@en, "a comme unité de mesure impériale"@fr ;
+    rdfs:range :ImperialMeasurementUnit .
 
 :hasMetricMeasurementUnit
-    a            owl:ObjectProperty ;
-    rdfs:label   "has metric measurement unit"@en, "a comme unité de mesure métrique"@fr ;
-    rdfs:range   :MetricMeasurementUnit .
+    a          owl:ObjectProperty ;
+    rdfs:label "has metric measurement unit"@en, "a comme unité de mesure métrique"@fr ;
+    rdfs:range :MetricMeasurementUnit .
 
 :hasStandardMeasurementUnit
-    a            owl:ObjectProperty ;
-    rdfs:label   "has standard measurement unit"@en, "a comme unité de mesure standard"@fr ;
-    rdfs:range   :MeasurementUnit .
+    a          owl:ObjectProperty ;
+    rdfs:label "has standard measurement unit"@en, "a comme unité de mesure standard"@fr ;
+    rdfs:range :MeasurementUnit .
 
 :recipeCategory
-    a            owl:ObjectProperty ;
-    rdfs:label   "recipe category"@en, "catégorie de recette"@fr .
+    a          owl:ObjectProperty ;
+    rdfs:label "recipe category"@en, "catégorie de recette"@fr .
 
 :hasIngredient
     a           owl:ObjectProperty, owl:IrreflexiveProperty ;
@@ -343,17 +342,18 @@
 
 # UI Display properties
 :hasThumbnail
-    a            owl:DatatypeProperty  ;
+    a            owl:DatatypeProperty ;
     rdfs:label   "has thumbnail"@en, "a pour vignette"@fr ;
     rdfs:comment "Indicates the thumbnail of a food item."@en, "Indique la vignette d'un aliment."@fr ;
-    rdfs:range   rdf:langString  .
+    rdfs:range   rdf:langString .
 
 :quantityFromUnit
     a            owl:DatatypeProperty ;
     rdfs:label   "quantity from unit"@en, "quantité à partir de l'unité"@fr ;
-    rdfs:comment ""@en, ""@fr .
+    rdfs:comment "Quantity extracted from the unit field. Shouldn't be found in data after cleansing"@en,
+                 "Quantité extraite du champ unité. Ne devrait pas être trouvé dans les données après nettoyage"@fr .
 
 :instructions
     a            owl:DatatypeProperty ;
     rdfs:label   "instructions"@en, "instructions"@fr ;
-    rdfs:comment ""@en, ""@fr .
+    rdfs:comment "Instructions for a recipe"@en, "Instructions pour une recette"@fr .

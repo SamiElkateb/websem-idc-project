@@ -7,7 +7,7 @@ recipes2rdf:
 		--user-metadata metadata/recipes.json \
 		--output-file output/recipes.ttl
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q metadata/recipes.rq -i output/recipes.ttl -o output/recipes.ttl
-	@java -jar ./tools/corese-command-4.5.0.jar sparql -q metadata/recipes3.rq -i output/recipes.ttl -o output/recipes.ttl
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q metadata/ingredientDisplay.rq -i output/recipes.ttl -o output/recipes.ttl
 
 units:
 	@echo "units"

@@ -1,0 +1,109 @@
+@prefix rdf:          <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:          <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh:           <http://www.w3.org/ns/shacl#> .
+@prefix measurements: <http://project-kitchenchef.fr/measurements/data#> .
+@prefix :             <http://project-kitchenchef.fr/schema#> .
+@prefix s:            <http://project-kitchenchef.fr/contraints/schema#> .
+@prefix skos:         <http://www.w3.org/2004/02/skos/core#> .
+
+s:IngredientShape
+    a              sh:NodeShape ;
+    sh:targetClass :Ingredient ;
+    sh:nodeKind    sh:BlankNode ;
+    sh:message     "L'ingrédient doit être un noeud anonyme" ;
+    sh:property    [ sh:path     ( [ sh:alternativePath ( :hasStandardMeasurementUnit :hasImperialMeasurementUnit
+                                                          :hasMetricMeasurementUnit ) ] :quantity ) ;
+                     sh:minCount 1 ;
+                     sh:maxCount 1 ;
+                     sh:xone     ( [ sh:datatype     xsd:decimal ;
+                                     sh:minExclusive 0 ] [ sh:in ( measurements:Few measurements:Some
+                                                                   measurements:Many ) ] ) ;
+                     sh:message  "La quantité doit être un décimal supérieur à 0, ou une quantitée indéfinie parmi Few Some et Many" ] ;
+    sh:property    [ sh:path     [ sh:alternativePath ( :hasStandardMeasurementUnit :hasImperialMeasurementUnit
+                                                        :hasMetricMeasurementUnit ) ] ;
+                     sh:minCount 1 ;
+                     sh:maxCount 1 ;
+                     sh:nodeKind sh:BlankNodeOrIRI ;
+                     sh:message  "L'ingrédient doit avoir une unité de mesure" ] ;
+    sh:property    [ sh:path     ( [ sh:alternativePath ( :hasStandardMeasurementUnit :hasImperialMeasurementUnit
+                                                          :hasMetricMeasurementUnit ) ] :unit ) ;
+                     sh:minCount 0 ;
+                     sh:maxCount 1 ;
+                     sh:nodeKind sh:IRI ;
+                     sh:pattern  "http://project-kitchenchef.fr/measurements/data#.*" ;
+                     sh:message  "L'unité doit avoir au moins une quantité" ] ;
+    sh:property    [ sh:path     :quantityFromUnit ;
+                     sh:maxCount 0 ;
+                     sh:message  "Cette relation ne devrait pas exister après les prétraitements" ;
+                     sh:severity sh:Warning ] .
+
+s:UnitConversionShapeTargets
+    a                  sh:NodeShape ;
+    sh:targetObjectsOf :hasUnitConversion ;
+    sh:nodeKind        sh:BlankNode ;
+    sh:property        [ sh:path     (:unit [sh:oneOrMorePath skos:broaderTransitive ]   ) ;
+                         sh:in ( skos:Concept measurements:VolumeMeasurementUnit measurements:WeightMeasurementUnit ) ;
+                         sh:minCount 1 ;
+                         sh:maxCount 1 ;
+                         sh:message  "La conversion doit désigner une unité de mesure" ] ;
+    sh:property        [ sh:path         :conversionRatio ;
+                         sh:datatype     xsd:decimal ;
+                         sh:minCount     1 ;
+                         sh:maxCount     1 ;
+                         sh:minExclusive 0 ;
+                         sh:message      "La quantité doit être un décimal supérieur à 0" ] ;
+    sh:message         "La conversion doit être un noeud anonyme" .
+
+s:UnitConversionShapeSubjects
+    a                   sh:NodeShape ;
+    sh:targetSubjectsOf :hasUnitConversion ;
+    sh:nodeKind         sh:IRI ;
+    sh:pattern          "http://project-kitchenchef.fr/measurements/data#.*" ;
+    sh:property         [ sh:path     rdf:type ;
+                          sh:minCount 2 ;
+                          sh:hasValue skos:Concept ] ;
+    sh:property         [ sh:path       skos:prefLabel ;
+                          sh:minCount   1 ;
+                          sh:maxCount   1 ;
+                          sh:datatype   rdf:langString ;
+                          sh:languageIn ( "en" ) ;
+                          sh:message    "Le label doit être une chaîne de caractères en anglais" ] .
+
+s:RecipeShape
+    a              sh:NodeShape ;
+    sh:targetClass :Recipe ;
+    sh:property    [ sh:path     :hasIngredient ;
+                     sh:minCount 1 ;
+                     sh:nodeKind sh:BlankNode ;
+                     sh:message  "La recette doit avoir au moins un ingrédient" ] ;
+    sh:property    [ sh:path                :name ;
+                     sh:nodeKind            sh:Literal ;
+                     sh:datatype            rdf:langString ;
+                     sh:pattern             "^[a-zA-ZéèàùôîûêâëüöÉÈÀÙÔÎÛÊÂËÜÖ\\-',()! *]+$" ;
+                     sh:minLength           3 ;
+                     sh:uniqueLang          true ;
+                     sh:qualifiedValueShape [ sh:nodeKind   sh:Literal ;
+                                              sh:languageIn ( "en" ) ; ] ;
+                     sh:qualifiedMinCount   1 ;
+                     sh:qualifiedMaxCount   1 ;
+                     sh:message             "Le nom doit être une chaîne de caractères de plus de 3 caractères, composée de lettres, d'espaces, d'apostrophes, de virgules, de parenthèses, de points d'exclamation et de tirets" ;
+                     sh:languageIn          ( "fr" "de" "es" "it" "en" ) ;
+                     sh:minCount            1 ] ;
+    sh:property    [ sh:path       :instructions ;
+                     sh:nodeKind   sh:Literal ;
+                     sh:datatype   rdf:langString ;
+                     sh:minCount   1 ;
+                     sh:maxCount   1 ;
+                     sh:languageIn ( "en" "fr" "de" "es" "it" ) ;
+                     sh:maxLength  10000 ;
+                     sh:message    "Les instructions doivent être une chaîne de caractères" ] .
+
+s:MeasurementShape a sh:NodeShape ;
+    sh:targetClass :VolumeMeasurementUnit, :WeightMeasurementUnit, :MeasurementUnit ;
+    sh:property      [ sh:path     skos:broaderTransitive  ;
+                       sh:nodeKind sh:IRI ;
+                       sh:in      (measurements:MeasurementUnit measurements:VolumeMeasurementUnit measurements:WeightMeasurementUnit) ;
+                       sh:minCount 1 ;
+                       sh:maxCount 1 ;
+                       sh:message  "L'unité doit être une unité de mesure" ] .
