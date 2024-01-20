@@ -24,7 +24,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-results = corese_query(read_query("./kitchen_chef_server/sparql/inserts/conversion_ratios.rq"))
+results = corese_query(read_query("./kitchen_chef_server/sparql/queries/prepared_verification.rq"))
 
 if len(list(results)) == 0:
     sparql_service_update(CORESE_URL, read_query("./kitchen_chef_server/sparql/inserts/conversion_ratios.rq"))

@@ -91,8 +91,6 @@ services:
     image: frmichel/sparql-micro-service:v0.5.6
     networks:
       - sms-net
-    ports:
-      - "80:80"
     volumes:
       - "./service/services:/services"
       - "./service/html:/var/www/html"
