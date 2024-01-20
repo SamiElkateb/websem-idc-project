@@ -1,0 +1,7 @@
+PREFIX :<http://project-kitchenchef.fr/schema#>
+
+SELECT ?recipe
+
+WHERE {
+ ?recipe a :VeganRecipe
+}

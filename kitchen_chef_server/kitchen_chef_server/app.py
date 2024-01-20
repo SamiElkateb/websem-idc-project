@@ -2,6 +2,7 @@ from fastapi import FastAPI
 
 from fastapi.middleware.cors import CORSMiddleware
 from kitchen_chef_server.conf import CORESE_URL
+from kitchen_chef_server.utils.corese_query import corese_query
 from kitchen_chef_server.utils.load_graph import load_graph
 from kitchen_chef_server.utils.read_query import read_query
 from kitchen_chef_server.utils.sparql_service_update import sparql_service_update
@@ -23,8 +24,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# sparql_service_update(CORESE_URL, read_query("./kitchen_chef_server/sparql/inserts/conversion_ratios.rq"))
-# sparql_service_update(CORESE_URL, read_query("./kitchen_chef_server/sparql/inserts/conversion.rq"))
-# sparql_service_update(CORESE_URL, read_query("./kitchen_chef_server/sparql/entailment/complementary_recipe.rq"))
+results = corese_query(read_query("./kitchen_chef_server/sparql/inserts/conversion_ratios.rq"))
 
-print("ALL entailment done")
+if len(list(results)) == 0:
+    sparql_service_update(CORESE_URL, read_query("./kitchen_chef_server/sparql/inserts/conversion_ratios.rq"))
+    sparql_service_update(CORESE_URL, read_query("./kitchen_chef_server/sparql/inserts/conversion.rq"))
+    sparql_service_update(CORESE_URL, read_query("./kitchen_chef_server/sparql/entailment/complementary_recipe.rq"))
+    print("ALL entailment done")
+

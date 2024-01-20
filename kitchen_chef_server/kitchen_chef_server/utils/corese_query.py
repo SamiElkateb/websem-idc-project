@@ -17,7 +17,6 @@ def corese_query(query, initBindings={}):
     result = sparql.query()
 
     processed_results = json.load(result.response)
-    print("PROCESSED_RESULTS", processed_results)
     cols = processed_results["head"]["vars"]
 
     out = []
