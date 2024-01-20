@@ -33,11 +33,11 @@ async def get_recipes(
     initBindings = {}
     if q_ingredients:
         for i, q_ingredient in enumerate(q_ingredients):
-            initBindings[f"ingredientFood{i}"] = URIRef(q_ingredient)
+            initBindings[f"ingredientFood{i}"] = f"<{q_ingredient}>"
 
     if q_filters:
         for i, q_filter in enumerate(q_filters):
-            initBindings[f"recipeFilter{i}"] = URIRef(q_filter)
+            initBindings[f"recipeFilter{i}"] = f"<{q_filter}>"
 
     if q_search_title:
         initBindings["recipeTitle"] = q_search_title
