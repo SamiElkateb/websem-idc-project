@@ -2787,7 +2787,8 @@ Pour into buttered 9" x 13" baking dish. Bake 35 minutes or until top is brown a
     owl:sameAs dbpedia:Curry_puff .
 
 recipes:ChiliChicken a :Recipe ;
-    rdfs:label "Chilli chicken"@en ;
+    rdfs:label "Kung Pao chicken"@en,
+        "Poulet impérial"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Noodles ;
             :hasImperialMeasurementUnit [ :quantity 12.0 ;
@@ -2827,12 +2828,12 @@ recipes:ChiliChicken a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
                     :unit measurements:Cup ] ;
             :name "cheddar cheese, grated"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chicken_Chili_HR2.jpg?width=300> ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Kung-pao-shanghai.jpg?width=300> ;
     :instructions """saute onion in butter, add soups, pimento, chiles, chicken and 1/2 the cheese.
 Cook noodles until tender. Drain. Stir sauce into noodles. Pour into large baking dish. Add rest of cheese or buttered crumbs.
 Chill over night. Bake at 350 degrees for 1 hour."""@en ;
     :name "Chili Chicken"@en ;
-    owl:sameAs dbpedia:Chilli_chicken .
+    owl:sameAs dbpedia:Kung_Pao_chicken .
 
 recipes:ChilledPruneWhip a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -6877,8 +6878,6 @@ Drain pasta and vegetables; return to saucepan. Stir in pesto; add chicken to tu
     owl:sameAs dbpedia:Pasta_primavera .
 
 recipes:PeaSalad a :Recipe ;
-    rdfs:label "Ham salad"@en,
-        "Salade de jambon"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Peas ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -6909,11 +6908,9 @@ recipes:PeaSalad a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
                     :unit "small carton" ] ;
             :name "sour cream"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Ham_Salad_Sandwich_(39117585832).jpg?width=300> ;
     :instructions "Stir together and enjoy."@en ;
     :name "Pea Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings ;
-    owl:sameAs dbpedia:Ham_salad .
+    :recipeCategory ns1:SaladAndDressings .
 
 recipes:PeachAlmondPie a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -7900,6 +7897,8 @@ recipes:SaucyShrimpOverChineseNoodleCakes a :Recipe ;
     :name "Saucy Shrimp Over Chinese Noodle Cakes"@en .
 
 recipes:SauteZucchini a :Recipe ;
+    rdfs:label "Sundubu-jjigae"@en,
+        "Sundubu jjigae"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Zucchini ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
@@ -7915,8 +7914,10 @@ recipes:SauteZucchini a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
                     :unit measurements:Tablespoon ] ;
             :name "butter"@en ] ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Sundubu-jjigae.jpg?width=300> ;
     :instructions "Melt butter in skillet. Slice zucchini thin, Add garlic. Cover and simmer for 5 minutes. Sprinkle with parmesan cheese. Cover and cook 5 minutes longer."@en ;
-    :name "Saute Zucchini"@en .
+    :name "Saute Zucchini"@en ;
+    owl:sameAs dbpedia:Sundubu-jjigae .
 
 recipes:SautedChickenBreats a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -8512,6 +8513,8 @@ recipes:SourCreamEnchiladas a :Recipe ;
     owl:sameAs dbpedia:Enchilada .
 
 recipes:SourCreamRaisinPie a :Recipe ;
+    rdfs:label "Cheesecake"@en,
+        "Cheesecake"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Raisins ;
             :hasStandardMeasurementUnit [ :quantity 1.5 ;
@@ -8551,9 +8554,11 @@ recipes:SourCreamRaisinPie a :Recipe ;
             :food food:Yolks ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "egg yolks, slightly beaten"@en ] ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/My_first_cheesecake_cropped.jpg?width=300> ;
     :instructions "Boil raisins in water until plump.  Add flour and sugar.  Cook to thicken slightly then add egg yolks, sour cream, vanilla and nutmeg.  Pour into 9\" bottom crust.  Add top crust.  Sprinkle with sugar.  Bake 50 minutes at 350 degrees."@en ;
     :name "Sour Cream Raisin Pie"@en ;
-    :recipeCategory ns1:Pie .
+    :recipeCategory ns1:Pie ;
+    owl:sameAs dbpedia:Cheesecake .
 
 recipes:SouthCarolinaCobbler a :Recipe ;
     rdfs:label "Cobbler (food)"@en,

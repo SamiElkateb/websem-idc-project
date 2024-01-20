@@ -79,5 +79,6 @@ docker-microservice:
 docker-all:
 	docker compose up -d --build kitchen_chef_corese sparql-micro-service-in-docker mongo corese backend frontend
 
-docker-test:
-	docker compose up -d --build kitchen_chef_corese backend
+docker-dbspotlight:
+	docker compose up -d dbpedia-spotlight
+
