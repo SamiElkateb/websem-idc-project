@@ -2,7 +2,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import React from 'react';
 
-function DietaryCheckboxes() {
+const DietaryCheckboxes:React.FC = () => {
   const options = ['Vegan', 'Gluten-Free', 'Nut-Free', 'Dairy-Free'];
   return (
     <div>
@@ -11,6 +11,6 @@ function DietaryCheckboxes() {
       ))}
     </div>
   );
-}
+};
 
 export default DietaryCheckboxes;

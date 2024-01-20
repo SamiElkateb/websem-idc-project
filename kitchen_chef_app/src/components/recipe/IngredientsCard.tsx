@@ -3,9 +3,9 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { CardMedia, ToggleButton, ToggleButtonGroup } from '@mui/material';
+import { CardMedia, ToggleButton, ToggleButtonGroup } from '@mui/material'; import { TIngredient } from '../../models/ingredients';
 
-const displayQuantity = (quantity) => {
+const displayQuantity = (quantity: string | number) => {
   if (typeof quantity === 'string' && quantity.match('/')) {
     return (
       <>
@@ -35,8 +35,10 @@ function decimalToFraction(decimalStr: string) {
   return decimalStr;
 }
 
-const IngredientsCard = ({ ingredients, thumbnail }) => {
-  const [unitSystem, setUnitSystem] = useState('imperial');
+type TIngredientsCardProps = { ingredients: TIngredient[];
+  thumbnail: string };
+const IngredientsCard:React.FC<TIngredientsCardProps> = ({ ingredients, thumbnail }) => {
+  const [unitSystem, setUnitSystem] = useState<'imperial' | 'metric'>('imperial');
   const handleUnitSystemChange = (
     _: React.MouseEvent<HTMLElement>,
     newUnitSystem: string,

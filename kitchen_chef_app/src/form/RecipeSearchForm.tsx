@@ -7,7 +7,7 @@ import RecipeSearchBar from '../components/form/RecipeSearchBar';
 import IngredientsAutocomplete from '../components/form/IngredientsAutocomplete';
 import Filters from '../components/form/Filters';
 import { getIngredients } from '../api/ingredients';
-import { TIngredient } from '../models/ingredients';
+import { TAutocompleteIngredient } from '../models/ingredients';
 import { getRecipeFilters, getRecipes } from '../api/recipes';
 import { TRecipe } from '../models/recipes';
 import { TFilter } from '../models/others';
@@ -28,12 +28,12 @@ const RecipeSearchForm:React.FC<TRecipeSearchFormProps> = ({ onUpdateRecipes }) 
 
   const { data: availableIngredients } = useQuery('ingredients', getIngredients);
 
-  const [filteringIngredients, setFilteringIngredients] = useState<TIngredient[]>([]);
+  const [filteringIngredients, setFilteringIngredients] = useState<TAutocompleteIngredient[]>([]);
 
   const handleChangeRecipeSearchTitle = (searchTitle:string) => {
     setRecipeSearchTitle(searchTitle);
   };
-  const handleAddIngredient = (ingredient: TIngredient) => {
+  const handleAddIngredient = (ingredient: TAutocompleteIngredient) => {
     setFilteringIngredients((prevState) => [...prevState, ingredient]);
   };
   const handleRemoveIngredient = (ingredient: string) => {

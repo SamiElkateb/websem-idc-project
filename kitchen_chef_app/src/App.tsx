@@ -21,7 +21,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-const App = () => {
+const App:React.FC = () => {
   const queryClient = new QueryClient();
 
   return (
@@ -30,8 +30,6 @@ const App = () => {
       <Container maxWidth="md">
         <RouterProvider router={router} />
       </Container>
-
-      {/* <RecipeListPage /> */}
     </QueryClientProvider>
   );
 };

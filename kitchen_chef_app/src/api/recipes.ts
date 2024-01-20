@@ -1,10 +1,10 @@
 import axios, { AxiosResponse } from 'axios';
 import serverConf from '../conf/server.conf';
 import { TRecipe } from '../models/recipes';
-import { TIngredient } from '../models/ingredients';
+import { TAutocompleteIngredient } from '../models/ingredients';
 import { TFilter } from '../models/others';
 
-type TGetRecipe = { filteringIngredients: TIngredient[], recipeFilters: TFilter[],
+type TGetRecipe = { filteringIngredients: TAutocompleteIngredient[], recipeFilters: TFilter[],
   recipeSearchTitle: string };
 const getRecipes = async ({ filteringIngredients, recipeFilters, recipeSearchTitle }:
 TGetRecipe): Promise<AxiosResponse<TRecipe[]>> => {

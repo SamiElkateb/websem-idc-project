@@ -2,24 +2,24 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import {
   Box,
-  Card,
-  CardContent, CardMedia, CircularProgress, Typography,
+  CircularProgress, Typography,
 } from '@mui/material';
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
-import RecipeSearchForm from '../form/RecipeSearchForm';
-import RecipeCard from '../components/RecipeCard';
 import { getRecipe } from '../api/recipes';
 import IngredientsCard from '../components/recipe/IngredientsCard';
 import NutritionalDataCard from '../components/recipe/NutritionalDataCard';
 import Abstract from '../components/recipe/Asbtract';
 import Instructions from '../components/recipe/Instructions';
 
-const RecipePage = () => {
+const RecipePage:React.FC = () => {
   const params = useParams();
   const { recipeId } = params;
 
-  const { data: recipe, isLoading } = useQuery(`recipe/${recipeId}`, () => getRecipe(recipeId));
+  const { data: recipe, isLoading } = useQuery(`recipe/${recipeId}`, () => {
+    if (typeof recipeId === 'undefined') return undefined;
+    return getRecipe(recipeId);
+  });
 
   if (isLoading || !recipe?.data) return <CircularProgress />;
   const { nutritionalData } = recipe.data;
@@ -49,12 +49,19 @@ const RecipePage = () => {
           item
           display="flex"
         >
-          <IngredientsCard ingredients={recipe?.data.ingredients} thumbnail={recipe?.data.thumbnail} />
+          <IngredientsCard
+            ingredients={recipe?.data.ingredients}
+            thumbnail={recipe?.data.thumbnail}
+          />
         </Grid>
         <Grid item>
           <NutritionalDataCard nutritionalData={nutritionalData} />
           <Box marginY={1} />
-          {recipe?.data.instructions ? <Instructions instructions={recipe?.data.instructions} /> : null}
+          {recipe?.data.instructions ? (
+            <Instructions
+              instructions={recipe?.data.instructions}
+            />
+          ) : null}
         </Grid>
       </Grid>
     </Box>

@@ -1,11 +1,11 @@
 import React from 'react';
 import Chip from '@mui/material/Chip';
-import { TIngredient } from '../../models/ingredients';
+import { TAutocompleteIngredient } from '../../models/ingredients';
 import { TFilter } from '../../models/others';
 
 type FiltersProps = {
   filters: TFilter[]
-  ingredients?: TIngredient[]
+  ingredients?: TAutocompleteIngredient[]
   onDeactiveFilter: (item: TFilter) => void
   onActivateFilter: (item: TFilter) => void
   onRemoveIngredient : (item: string) => void

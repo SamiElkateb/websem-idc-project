@@ -1,24 +1,23 @@
 import React, { useState } from 'react';
 import Autocomplete from '@mui/material/Autocomplete';
 import TextField from '@mui/material/TextField';
-import { Button, Container, Grid } from '@mui/material';
-import { TIngredient } from '../../models/ingredients';
+import { Button, Grid } from '@mui/material';
+import { TAutocompleteIngredient } from '../../models/ingredients';
 
 type IngredientsAutocompleteProps = {
-  onAddIngredient: (item: TIngredient) => void
-  availableIngredients: TIngredient[]
+  onAddIngredient: (item: TAutocompleteIngredient) => void
+  availableIngredients: TAutocompleteIngredient[]
 };
 
 const IngredientsAutocomplete: React.FC<IngredientsAutocompleteProps> = ({
   onAddIngredient,
   availableIngredients,
 }) => {
-  const [ingredient, setIngredient] = useState<TIngredient>();
+  const [ingredient, setIngredient] = useState<TAutocompleteIngredient>();
 
   const handleAddClick = () => {
     if (ingredient) {
       onAddIngredient(ingredient);
-      setIngredient(undefined);
     }
   };
 
@@ -27,6 +26,7 @@ const IngredientsAutocomplete: React.FC<IngredientsAutocompleteProps> = ({
       <Grid item xs={9}>
         <Autocomplete
           onChange={(_, newValue) => {
+            if (typeof newValue === 'undefined' || newValue === null) return;
             setIngredient(newValue);
           }}
           getOptionLabel={(option) => option.enLabel}
@@ -37,7 +37,7 @@ const IngredientsAutocomplete: React.FC<IngredientsAutocompleteProps> = ({
               {...params}
               label="Ingredient"
               onKeyDown={(e) => {
-                if ((e.code === 'Enter' || e.code === 'enter') && e.target.value) {
+                if ((e.code === 'Enter' || e.code === 'enter')) {
                   handleAddClick();
                 }
               }}

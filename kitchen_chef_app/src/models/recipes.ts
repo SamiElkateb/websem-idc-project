@@ -6,4 +6,5 @@ export type TRecipe = {
   instructions :string
   category :string
   ingredients : TIngredient[]
+  thumbnail: string
 };

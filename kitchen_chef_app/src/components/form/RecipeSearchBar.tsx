@@ -1,7 +1,11 @@
 import TextField from '@mui/material/TextField';
 import React from 'react';
 
-const RecipeSearchBar = ({ searchTitle, onSearchTitleChange }) => {
+type TRecipeSearchBar = {
+  searchTitle: string;
+  onSearchTitleChange: (value: string) => void;
+};
+const RecipeSearchBar:React.FC<TRecipeSearchBar> = ({ searchTitle, onSearchTitleChange }) => {
   const handleSearchTitleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     onSearchTitleChange(event.target.value);
   };

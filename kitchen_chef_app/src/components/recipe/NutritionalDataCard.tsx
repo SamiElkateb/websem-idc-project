@@ -1,11 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import { CardMedia, ToggleButton, ToggleButtonGroup } from '@mui/material';
 
-const NutritionalDataCard = ({ nutritionalData, thumbnail }) => (
+type TNutritionalDataCardProps = {
+  nutritionalData: {
+    kcal: string;
+    proteins: string;
+    fat: string;
+    carbs: string;
+    sugar: string;
+    fibers: string;
+  }
+};
+const NutritionalDataCard:React.FC<TNutritionalDataCardProps> = ({ nutritionalData }) => (
   <Card sx={{ padding: '1rem' }}>
     <Typography gutterBottom variant="h5" component="h2" noWrap>
       Nutritional Informations

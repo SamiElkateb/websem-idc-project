@@ -1,16 +1,20 @@
-import * as React from 'react';
+import React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 import { Link } from 'react-router-dom';
 
-export default function RecipeCard({
+type TRecipeCardProps = {
+  title: string;
+  description: string;
+  thumbnail: string;
+  uri: string;
+};
+const RecipeCard:React.FC<TRecipeCardProps> = ({
   title, description, thumbnail, uri,
-}) {
+}) => {
   const image = thumbnail || 'https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg';
   return (
     <Link
@@ -42,11 +46,8 @@ export default function RecipeCard({
             {description}
           </Typography>
         </CardContent>
-        <CardActions>
-
-          {/* <Button size="small">Learn More</Button> */}
-        </CardActions>
       </Card>
     </Link>
   );
-}
+};
+export default RecipeCard;

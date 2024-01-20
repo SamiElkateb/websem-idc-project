@@ -24,7 +24,9 @@ module.exports = {
         unnamedComponents: "arrow-function",
       },
     ],
-    "import/no-absolute-path": 0
+    "import/no-absolute-path": 0,
+    "import/prefer-default-export": 0,
+    "react/jsx-props-no-spreading": 0
   },
   parserOptions: {
     project: "./tsconfig.json",

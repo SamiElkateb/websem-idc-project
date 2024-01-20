@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Typography from '@mui/material/Typography';
 
-const Abstract = ({ abstract }) => (
+type TAbstractProps = { abstract: string };
+const Abstract:React.FC<TAbstractProps> = ({ abstract }) => (
   <Typography textAlign="justify">
     {abstract}
   </Typography>
