@@ -1,8 +1,10 @@
 from fastapi import FastAPI
 
 from fastapi.middleware.cors import CORSMiddleware
+from kitchen_chef_server.conf import CORESE_URL
 from kitchen_chef_server.utils.load_graph import load_graph
 from kitchen_chef_server.utils.read_query import read_query
+from kitchen_chef_server.utils.sparql_service_update import sparql_service_update
 from owlrl import DeductiveClosure, OWLRL_Semantics
 
 app = FastAPI()
@@ -21,9 +23,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-g = load_graph("./data")
+# sparql_service_update(CORESE_URL, read_query("./kitchen_chef_server/sparql/inserts/conversion_ratios.rq"))
+# sparql_service_update(CORESE_URL, read_query("./kitchen_chef_server/sparql/inserts/conversion.rq"))
+# sparql_service_update(CORESE_URL, read_query("./kitchen_chef_server/sparql/entailment/complementary_recipe.rq"))
 
-g.update(read_query("./kitchen_chef_server/sparql/inserts/conversion_ratios.rq"))
-g.update(read_query("./kitchen_chef_server/sparql/inserts/conversion.rq"))
-DeductiveClosure(OWLRL_Semantics).expand(g)
-g.update(read_query("./kitchen_chef_server/sparql/entailment/complementary_recipe.rq"))
+print("ALL entailment done")

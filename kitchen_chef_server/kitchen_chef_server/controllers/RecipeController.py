@@ -4,9 +4,10 @@ from fastapi import HTTPException, Query
 from kitchen_chef_server.conf import MICROSERVICE_HOSTNAME
 from kitchen_chef_server.models.NutritionalData import NutritionalData
 from kitchen_chef_server.models.RecipeFilter import RecipeFilter
+from kitchen_chef_server.utils.corese_query import corese_query
 from rdflib import Namespace, URIRef
 
-from kitchen_chef_server.app import app, g
+from kitchen_chef_server.app import app
 from kitchen_chef_server.factories.IngredientFactory import IngredientFactory
 from kitchen_chef_server.models.Ingredient import Ingredient
 from kitchen_chef_server.models.Recipe import Recipe
@@ -41,14 +42,14 @@ async def get_recipes(
     if q_search_title:
         initBindings["recipeTitle"] = q_search_title
 
-    results = g.query(query, initBindings=initBindings)
+    results = corese_query(query, initBindings=initBindings)
 
     if results is None:
         raise HTTPException(status_code=404, detail="Item not found")
 
     recipes = []
-    for row in results:
-        recipe = Recipe(row.recipe, row.name, ingredients=[], instructions=row.instructions, category=row.category, thumbnail=row.thumbnail)
+    for index, row in results:
+        recipe = Recipe(row.get("recipe"), row.get("name"), ingredients=[], instructions=row.get("instructions"), category=row.get("category"), thumbnail=row.get("thumbnail"))
         recipes.append(recipe)
 
     return recipes
@@ -64,6 +65,7 @@ async def get_recipe(recipe_identifier: str):
     prefix recipes: <http://project-kitchenchef.fr/recipes/data#>
     prefix skos:    <http://www.w3.org/2004/02/skos/core#>
     prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+    prefix dbo:    <http://dbpedia.org/ontology/>
 
     SELECT * WHERE{{
     {{
@@ -111,24 +113,48 @@ async def get_recipe(recipe_identifier: str):
             BIND(IF(BOUND(?labelUnitStandard),CONCAT(?labelUnitStandard," of "),"") AS ?labelUnitStandardName)
             BIND(IF(BOUND(?labelUnitImperial),CONCAT(?labelUnitImperial, " of "),?labelUnitStandardName) AS ?labelUnitImperialName)
             BIND(IF(BOUND(?labelUnitMetric),CONCAT(?labelUnitMetric," of "),?labelUnitStandardName) AS ?labelUnitMetricName)
+
+
         }} GROUP BY ?recipe
     }}
-    BIND(CONCAT("http://{MICROSERVICE_HOSTNAME}/service/calorieninjas/nutrition?food=",ENCODE_FOR_URI(?queryList)) AS ?urlMicroServ)
+    BIND(CONCAT("http://{MICROSERVICE_HOSTNAME}/service/calorieninjas/nutrition?food=", ?queryList) AS ?urlMicroServ)
+
+    {{
+        SELECT * WHERE {{
+            SERVICE ?urlMicroServ {{
+                ?x :hasCalories ?kcal; :hasTotalFat ?fat; :hasCarbohydratesTotal ?carbs; :hasSugar ?sugar; :hasFiber ?fiber; :hasProtein ?proteins .
+            }}
+        }}
+    }}
+
+    # {{
+    #     SELECT ?comment WHERE {{
+    #         OPTIONAL {{
+    #             SERVICE <https://dbpedia.org/sparql> {{
+    #                 ?nameRecipe ^rdfs:label/dbo:abstract ?abstract .
+    #                 FILTER(?nameRecipe = ?recipeLabel && LANG(?abstract)="en")
+    #             }}
+    #         }}
+    #         BIND(IF(BOUND(?abstract), ?abstract, "") AS ?comment)
+    #     }}
+    # }}
     }}
     """
-    results = g.query(
+    results = corese_query(
         query,
         initBindings={
-            "uri": URIRef(recipe_identifier),
+            "uri": f"<{recipe_identifier}>",
         },
     )
-    row_url = get_row(results)
+    row_quantities = get_row(results)
+    print("row_url", row_quantities)
     if debug:
-        print("Label",row_url.recipeLabel)
-        print("URL", row_url.urlMicroServ)
-        print("Metrics : \n", row_url.ingredientMetricQuantities, "\n", row_url.ingredientImperialQuantities)
-        print("Units : \n", row_url.labelUnitMetricNames, "\n", row_url.labelUnitImperialNames)
-        print("Names : \n", row_url.ingredientNames)
+        print("Label", row_quantities.get("recipeLabel"))
+        print("URL", row_quantities.get("urlMicroServ"))
+        print("Metrics : \n", row_quantities.get("ingredientMetricQuantities"), "\n", row_quantities.get("ingredientImperialQuantities"))
+        print("Units : \n", row_quantities.get("labelUnitMetricNames"), "\n", row_quantities.get("labelUnitImperialNames"))
+        print("Names : \n", row_quantities.get("ingredientNames"))
+        print("X : \n", row_quantities.get("x"))
 
     query = f"""
     prefix :        <http://project-kitchenchef.fr/schema#>
@@ -136,7 +162,7 @@ async def get_recipe(recipe_identifier: str):
     prefix skos:    <http://www.w3.org/2004/02/skos/core#>
     prefix dbo:    <http://dbpedia.org/ontology/>
     prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
-    
+
     SELECT * WHERE {{
     {{
         SELECT ?recipe ?name ?category ?instructions ?thumbnail
@@ -150,22 +176,15 @@ async def get_recipe(recipe_identifier: str):
             ?ingredient :food ?ingredientFood ;
             :name ?ingredientName ;
             OPTIONAL {{ ?ingredient :food ?ingredientFood . }}
-            FILTER(?recipe = <{URIRef(recipe_identifier)}>)
+            FILTER(?recipe = <{recipe_identifier}>)
         }}GROUP BY ?recipe
-    }}
-    {{
-        SELECT * WHERE {{
-            SERVICE <{row_url.urlMicroServ}> {{
-                ?x :hasCalories ?kcal; :hasTotalFat ?fat; :hasCarbohydratesTotal ?carbs; :hasSugar ?sugar; :hasFiber ?fiber; :hasProtein ?proteins .
-            }}
-        }}
     }}
     {{
         SELECT ?comment WHERE {{
             OPTIONAL {{
                 SERVICE <https://dbpedia.org/sparql> {{
                     ?nameRecipe ^rdfs:label/dbo:abstract ?abstract .
-                    FILTER(?nameRecipe = "{row_url.recipeLabel}"@en && LANG(?abstract)="en")
+                    FILTER(?nameRecipe = "{row_quantities.get("recipeLabel")}"@en && LANG(?abstract)="en")
                 }}
             }}
             BIND(IF(BOUND(?abstract), ?abstract, "") AS ?comment)
@@ -173,33 +192,31 @@ async def get_recipe(recipe_identifier: str):
     }}
     }}
     """
-    results = g.query(
-        query
-    )
-    row = get_row(results)
+    results = corese_query(query)
+    row_recipe = get_row(results)
     if debug:
-        print("Kcal", row.kcal, "Fat", row.fat, "Carbs", row.carbs, "Sugar", row.sugar, "Fiber", row.fiber, "Proteins", row.proteins)
+        print("Kcal", row_quantities.get("kcal"), "Fat", row_quantities.get("fat"), "Carbs", row_quantities.get("carbs"), "Sugar", row_quantities.get("sugar"), "Fiber", row_quantities.get("fiber"), "Proteins", row_quantities.get("proteins"))
         try:
-            print("Abstract", row.comment)
+            print("Abstract", row_quantities.get("comment"))
         except Exception:
             print("No abstract found")
     ingredients = IngredientFactory.from_strings(
-        row.ingredientIds,
-        row_url.ingredientNames,
-        row.ingredientFoods,
-        row_url.ingredientImperialQuantities,
-        row_url.labelUnitImperialNames,
-        row_url.ingredientMetricQuantities,
-        row_url.labelUnitMetricNames,
+        row_recipe.get("ingredientIds"),
+        row_quantities.get("ingredientNames"),
+        row_recipe.get("ingredientFoods"),
+        row_quantities.get("ingredientImperialQuantities"),
+        row_quantities.get("labelUnitImperialNames"),
+        row_quantities.get("ingredientMetricQuantities"),
+        row_quantities.get("labelUnitMetricNames"),
     )
-    nutritional_data = NutritionalData(row.kcal, row.proteins, row.fat, row.carbs, row.sugar, row.fiber)
-    return Recipe(row.recipe, row.name, ingredients, row.instructions, row.category, row.thumbnail,row.comment, nutritional_data=nutritional_data)
+    nutritional_data = NutritionalData(row_quantities.get("kcal"), row_quantities.get("proteins"), row_quantities.get("fat"), row_quantities.get("carbs"), row_quantities.get("sugar"), row_quantities.get("fiber"))
+    return Recipe(row_recipe.get("recipe"), row_recipe.get("name"), ingredients, row_recipe.get("instructions"), row_recipe.get("category"), row_recipe.get("thumbnail"), row_recipe.get("comment"), nutritional_data=nutritional_data)
 
 def get_row(results):
     results = list(results)
     if len(results) == 0:
         raise HTTPException(status_code=404, detail="Item not found")
-    return results[0]
+    return results[0][1]
 
 @app.get("/recipe_filters")
 async def get_recipe_filters():
@@ -214,15 +231,13 @@ async def get_recipe_filters():
     }
     """
 
-    results = g.query(
-        query,
-    )
+    results = corese_query(query)
 
     if results is None:
         raise HTTPException(status_code=404, detail="Item not found")
 
     recipes_filters = {}
-    for row in results:
-        recipe_filters = RecipeFilter(row.userRecipeFilter, row.enUILabel, row.frUILabel)
-        recipes_filters[row.userRecipeFilter] = recipe_filters
+    for index, row in results:
+        recipe_filters = RecipeFilter(row.get("userRecipeFilter"), row.get("enUILabel"), row.get("frUILabel"))
+        recipes_filters[row.get("userRecipeFilter")] = recipe_filters
     return list(recipes_filters.values())

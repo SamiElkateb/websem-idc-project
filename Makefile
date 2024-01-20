@@ -61,6 +61,7 @@ format:
 update-server-data:
 	@echo "update-server-data"
 	@cp ./vocab/*.ttl ./kitchen_chef_server/data
+	@cp ./vocab/*.ttl ./corese_server/data
 
 # TEST (not in pipeline)
 conversionentailment:
@@ -76,4 +77,7 @@ docker-microservice:
 	docker compose up -d sparql-micro-service mongo corese
 
 docker-all:
-	docker compose up -d --build sparql-micro-service-in-docker mongo corese backend frontend
+	docker compose up -d --build kitchen_chef_corese sparql-micro-service-in-docker mongo corese backend frontend
+
+docker-test:
+	docker compose up -d --build kitchen_chef_corese backend

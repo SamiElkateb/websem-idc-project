@@ -24,6 +24,7 @@ COPY ./patches/rdflib_parser.py  /usr/local/lib/python3.11/site-packages/rdflib/
 
 COPY ./patches/rdflib_sqarql.py  ./.venv/lib/python3.11/site-packages/rdflib/plugins/sparql/evaluate.py
 COPY ./patches/rdflib_parser.py  ./.venv/lib/python3.11/site-packages/rdflib/plugins/sparql/parserutils.py
+COPY ./wait-for-service.sh /wait-for-service.sh
 
 EXPOSE 8000
 
@@ -36,6 +37,7 @@ FROM base as debug
 RUN poetry add debugpy
 
 WORKDIR /app
+
 
 ENTRYPOINT ["poetry", "run", "uvicorn",  "kitchen_chef_server.__main__:app", "--host", "0.0.0.0", "--reload"]
 

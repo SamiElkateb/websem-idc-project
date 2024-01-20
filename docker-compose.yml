@@ -37,6 +37,22 @@ services:
     volumes:
       - dbpedia-models:/opt/spotlight
     command: spotlight.sh en
+
+  kitchen_chef_corese:
+    # image: wimmics/corese:4.5.0
+    image: kitchen_chef_corese
+    build:
+      context: corese_server
+      dockerfile: Dockerfile
+    networks:
+      - sms-net
+    volumes:
+      - "./corese_server/data:/usr/local/corese/data"
+      - "./corese_server/config:/usr/local/corese/config"
+    environment:
+      JVM_XMX: "1024m"
+    ports:
+      - "8001:8080"
   
   backend:
     image: kitchen_chef_backend
@@ -46,12 +62,19 @@ services:
       target: debug
     environment:
       MICROSERVICE_HOSTNAME: sparql-micro-service-in-docker
+      SERVICE_CHECK_COMMAND: 'curl --silent --fail --header "Accept: application/sparql-results+json" "http://kitchen_chef_corese:8080/sparql?query=select%20*%20where%20%7B%3Fs%20%3Fp%20%3Fo%7D%20limit%20100"'
+      POST_STARTUP_COMMAND: poetry run uvicorn kitchen_chef_server.__main__:app --host 0.0.0.0 --reload
+      CORESE_URL: http://kitchen_chef_corese:8080/sparql
+
     networks:
       - sms-net
     ports:
       - "8000:8000"
+    entrypoint: /wait-for-service.sh
     volumes:
       - "./kitchen_chef_server/kitchen_chef_server/:/app/kitchen_chef_server"
+    depends_on:
+      - kitchen_chef_corese
 
   frontend:
     image: kitchen_chef_frontend
@@ -68,6 +91,8 @@ services:
     image: frmichel/sparql-micro-service:v0.5.6
     networks:
       - sms-net
+    ports:
+      - "80:80"
     volumes:
       - "./service/services:/services"
       - "./service/html:/var/www/html"

@@ -13,6 +13,8 @@ rdflib = "^7.0.0"
 uvicorn = {extras = ["standard"], version = "^0.25.0"}
 pyshacl = "^0.25.0"
 owlrl = "^6.0.2"
+sparqlwrapper = "^2.0.0"
+pandas = "^2.2.0"
 
 
 [build-system]
