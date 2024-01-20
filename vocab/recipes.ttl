@@ -3,7 +3,6 @@
 @prefix food: <http://project-kitchenchef.fr/food/data#> .
 @prefix measurements: <http://project-kitchenchef.fr/measurements/data#> .
 @prefix ns1: <http://project-kitchenchef.fr/recipes/categories#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix recipes: <http://project-kitchenchef.fr/recipes/data#> .
@@ -149,6 +148,7 @@ Glaze with powdered sugar and hot water glaze while still warm. Would also be go
 recipes:AppleDumplings a :Recipe ;
     rdfs:label "Apple dumpling"@en,
         "Douillon"@fr ;
+    :hasDbpediaLink dbpedia:Apple_dumpling ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sugar ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
@@ -205,8 +205,7 @@ recipes:AppleDumplings a :Recipe ;
             :name "apples, peeled, cut in 1/4"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/AppleDumpling.jpg?width=300> ;
     :instructions "Make syrup from first 5 ingredients. Make crust - roll 1/4 inch thick. CUt in 5 inch squares. Put 4 pieces of apple on each. Sprinkle with additional sugar, cinnamon, and nutmeg. Dot with butter. Fold corners to center; pinch together. Place 1 inch apart in greased baking dish. Pour syrup on top. Bake 375 degrees for 35 minutes. Serve warm with cream. Makes 6."@en ;
-    :name "Apple Dumplings"@en ;
-    owl:sameAs dbpedia:Apple_dumpling .
+    :name "Apple Dumplings"@en .
 
 recipes:Artichoke-MozzarellaCasserole a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -421,6 +420,7 @@ recipes:AvocadoChickenMelt a :Recipe ;
 recipes:BakedZucchiniwithMushrooms a :Recipe ;
     rdfs:label "Moussaka"@en,
         "Moussaka"@fr ;
+    :hasDbpediaLink dbpedia:Moussaka ;
     :hasIngredient [ a :Ingredient ;
             :food food:Mushrooms ;
             :hasImperialMeasurementUnit [ :quantity 1.0 ;
@@ -474,8 +474,7 @@ recipes:BakedZucchiniwithMushrooms a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/MussakasMeMelitsanesKePatates01.jpg?width=300> ;
     :instructions """Thinly sliced mushrooms and chop onion; combine in a 10 to 12 inch frying pan with half a cup of water. Stir often on high heat until liquid evaporates and browned bits stick to pan. To deglaze pan, add 1 third cup of broth and stir browned bits free. Repeat deglazing step until onion is golden brown, 2 or 3 more times, using 1 third cup broth each time.
 Beat eggs to blend; stir in zucchini crumbs, cheese, oregano, pepper, and mushroom mixture. Pour into a buttered 10 by 12 inch shallow oval casserole (or a 9 by 13 inch rectangle). Bake in a 325 degree oven until set in center when shaken, about 45 minutes top with green onions."""@en ;
-    :name "Baked Zucchini with Mushrooms"@en ;
-    owl:sameAs dbpedia:Moussaka .
+    :name "Baked Zucchini with Mushrooms"@en .
 
 recipes:BananaCake a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -563,6 +562,7 @@ recipes:BananaCreamPie a :Recipe ;
 recipes:BarbecuedSpareribs a :Recipe ;
     rdfs:label "Crab Rangoon"@en,
         "Crabe rangoon"@fr ;
+    :hasDbpediaLink dbpedia:Crab_Rangoon ;
     :hasIngredient [ a :Ingredient ;
             :food food:Salt ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -624,12 +624,12 @@ recipes:BarbecuedSpareribs a :Recipe ;
             :name "lemon, sliced thinly"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Crab_rangoons_on_a_plate.jpeg?width=300> ;
     :instructions "Baste over ribs while browning until done. If sauce is too thin, thicken with 1 or 2 tablespoons of flour."@en ;
-    :name "Barbecued Spareribs"@en ;
-    owl:sameAs dbpedia:Crab_Rangoon .
+    :name "Barbecued Spareribs"@en .
 
 recipes:BatterFriedChicken a :Recipe ;
     rdfs:label "Fried chicken"@en,
         "Poulet frit"@fr ;
+    :hasDbpediaLink dbpedia:Fried_chicken ;
     :hasIngredient [ a :Ingredient ;
             :food food:Milk ;
             :hasStandardMeasurementUnit [ :quantity 0.6666666666666666 ;
@@ -671,12 +671,12 @@ recipes:BatterFriedChicken a :Recipe ;
             :name "egg, slightly bea10"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Fried-Chicken-Set.jpg?width=300> ;
     :instructions "Make better. Dip chicken, drain 5 to 10 minutes on rack. Fill dutch oven 1/3 full of oil, heat to 375 degrees. Cook chicken about 12 minutes. Drain on paper towels."@en ;
-    :name "Batter Fried Chicken"@en ;
-    owl:sameAs dbpedia:Fried_chicken .
+    :name "Batter Fried Chicken"@en .
 
 recipes:BeefEnchiladas a :Recipe ;
     rdfs:label "Enchilada"@en,
         "Enchilada"@fr ;
+    :hasDbpediaLink dbpedia:Enchilada ;
     :hasIngredient [ a :Ingredient ;
             :food food:Beef ;
             :hasImperialMeasurementUnit [ :quantity 1.0 ;
@@ -772,8 +772,7 @@ In hot oil in skillet saute garlic and onion until golden.
 Remove from heat, stir in flour, tomato sauce, vinegar, and hot bouillon. Bring to boil. Add chili powder, salt and pepper. Simmer 5 min.
 Preheat oven to 350 degrees. Place 1/3 cup filling in center of each tortilla which has been dipped in hot oil or sauce. Roll up, arrange seam down in baking dish. Pour sauce over all. Sprinkle with cheese.
 Bake about 25 minutes."""@en ;
-    :name "Beef Enchiladas"@en ;
-    owl:sameAs dbpedia:Enchilada .
+    :name "Beef Enchiladas"@en .
 
 recipes:BeefScallopswithFreshTomatoSauce a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -873,6 +872,7 @@ recipes:BeefSpinachQuiche a :Recipe ;
 recipes:BeefStroganoff a :Recipe ;
     rdfs:label "Beef Stroganoff"@en,
         "Bœuf Stroganov"@fr ;
+    :hasDbpediaLink dbpedia:Beef_Stroganoff ;
     :hasIngredient [ a :Ingredient ;
             :food food:Mushrooms ;
             :hasImperialMeasurementUnit [ :quantity 0.5 ;
@@ -924,8 +924,7 @@ recipes:BeefStroganoff a :Recipe ;
             :name "round steak"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Beef_Stroganoff-02_cropped.jpg?width=300> ;
     :instructions "Pound salt and flour into the steak. Cut into think strips. Brown onion in oil. Remove brown meat. Add onion and garlic. Simmer covered for 15 minutes. Add soup and mushrooms. Simmer for 1.5 hours, uncovered. Stor in sour cream. Serve over rice or noodles."@en ;
-    :name "Beef Stroganoff"@en ;
-    owl:sameAs dbpedia:Beef_Stroganoff .
+    :name "Beef Stroganoff"@en .
 
 recipes:BitOZucchiniBites a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -978,6 +977,7 @@ In a bowl mix eggs, cheese, cornmeal, cumin, oregano, and zucchini mixture. Spoo
 
 recipes:BlueCheeseDressing a :Recipe ;
     rdfs:label "Blue cheese dressing"@en ;
+    :hasDbpediaLink dbpedia:Blue_cheese_dressing ;
     :hasIngredient [ a :Ingredient ;
             :food food:BlueCheese ;
             :hasImperialMeasurementUnit [ :quantity 6.0 ;
@@ -1001,8 +1001,7 @@ recipes:BlueCheeseDressing a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Blue_cheese_dressing.jpg?width=300> ;
     :instructions "Mix or shake well."@en ;
     :name "Blue Cheese Dressing"@en ;
-    :recipeCategory ns1:SaladAndDressings ;
-    owl:sameAs dbpedia:Blue_cheese_dressing .
+    :recipeCategory ns1:SaladAndDressings .
 
 recipes:BlueChipCookies a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -1117,6 +1116,7 @@ Bake at 375 degrees for 1 hour and 5 minutes.  Check after 50 minutes."""@en ;
 
 recipes:BourbonBalls a :Recipe ;
     rdfs:label "Bourbon ball"@en ;
+    :hasDbpediaLink dbpedia:Bourbon_ball ;
     :hasIngredient [ a :Ingredient ;
             :food food:ChocolateChips ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -1150,8 +1150,7 @@ recipes:BourbonBalls a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Bourbon_Balls.jpg?width=300> ;
     :instructions "Melt chocolate in double boiler over hot water.  Combine syrup and liquid.  Combine crumbs, sugar, and nuts.  Add chocolate mixture.  Let stand 30 minutes.  Shape in 1\" balls.  Roll in granulated or powdered sugar.  Let ripen i covered container at lest 3 days."@en ;
     :name "Bourbon Balls"@en ;
-    :recipeCategory ns1:Cookie ;
-    owl:sameAs dbpedia:Bourbon_ball .
+    :recipeCategory ns1:Cookie .
 
 recipes:BroccoliCheesePie a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -1208,6 +1207,7 @@ recipes:BroccoliCheesePie a :Recipe ;
 
 recipes:BroccoliCheeseSoup a :Recipe ;
     rdfs:label "Cream of broccoli soup"@en ;
+    :hasDbpediaLink dbpedia:Cream_of_broccoli_soup ;
     :hasIngredient [ a :Ingredient ;
             :food food:Potato ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -1261,8 +1261,7 @@ recipes:BroccoliCheeseSoup a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cream_of_broccoli_soup.jpg?width=300> ;
     :instructions "Place potato, broccoli (reserve 2 cups), carrots, garlic, onion, salt, and water in large saucepan.  Bring to boil, then simmer until all vegetables are very tender.  Puree in blender or food processor, and transfer to kettle or dutch oven.  Steam reserved broccoli pieces until just tender.  Add to puree along with all remaining ingredients.  Heat gently.  Serve topped with additional grated cheddar cheese."@en ;
     :name "Broccoli Cheese Soup"@en ;
-    :recipeCategory ns1:Soup ;
-    owl:sameAs dbpedia:Cream_of_broccoli_soup .
+    :recipeCategory ns1:Soup .
 
 recipes:BroccoliSalad a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -1306,6 +1305,7 @@ recipes:BroccoliSalad a :Recipe ;
 
 recipes:BroccoliSaladwithPineapple a :Recipe ;
     rdfs:label "Watergate salad"@en ;
+    :hasDbpediaLink dbpedia:Watergate_salad ;
     :hasIngredient [ a :Ingredient ;
             :food food:Pineapple ;
             :hasImperialMeasurementUnit [ :quantity 16.0 ;
@@ -1348,8 +1348,7 @@ recipes:BroccoliSaladwithPineapple a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Watergate_salad_new.jpg?width=300> ;
     :instructions "Cut broccoli flowers.  Chop the top 2 inches of the stems into small pieces.  Mix together broccoli, crisp bacon, drained pineapple, onion, and sunflower seeds.  Blend mayonnaise, sugar, and vinegar to make dressing.  Pour over top of broccoli mixture.  Toss and serve.  Note:  This salad is also great with sliced raw carrots and cauliflower."@en ;
     :name "Broccoli Salad with Pineapple"@en ;
-    :recipeCategory ns1:SaladAndDressings ;
-    owl:sameAs dbpedia:Watergate_salad .
+    :recipeCategory ns1:SaladAndDressings .
 
 recipes:BroccoliandRiceCasserole a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -2166,6 +2165,7 @@ recipes:CheesyFishFilletswithSpinach a :Recipe ;
 
 recipes:CheesySpinachBake a :Recipe ;
     rdfs:label "Spinach dip"@en ;
+    :hasDbpediaLink dbpedia:Spinach_dip ;
     :hasIngredient [ a :Ingredient ;
             :food food:Spinach ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -2202,8 +2202,7 @@ recipes:CheesySpinachBake a :Recipe ;
             :name "eggs, bea10"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Spinach_&_artichoke_dip.jpg?width=300> ;
     :instructions "Combine. Pour into 1 quart dish. Bake at 375 degrees for 25 minutes."@en ;
-    :name "Cheesy Spinach Bake"@en ;
-    owl:sameAs dbpedia:Spinach_dip .
+    :name "Cheesy Spinach Bake"@en .
 
 recipes:ChickenBreastsFlorentine a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -2246,6 +2245,7 @@ recipes:ChickenBreastsFlorentine a :Recipe ;
 
 recipes:ChickenCashew a :Recipe ;
     rdfs:label "Cashew chicken"@en ;
+    :hasDbpediaLink dbpedia:Cashew_chicken ;
     :hasIngredient [ a :Ingredient ;
             :food food:Pods ;
             :hasImperialMeasurementUnit [ :quantity 0.5 ;
@@ -2308,8 +2308,7 @@ recipes:ChickenCashew a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cashewchickenphoto.jpg?width=300> ;
     :instructions """Skin, bone and cut chicken into bit-size pieces. Put chicken in a casserole and cook, covered, until opaque and tender. Stir several times during cooking. Add pea pods (break off ends and remove strings), onions and mushrooms; stir. Cook, covered for 2 minutes. Add bamboo shoots and water chestnuts.
 Mix chicken bouillon, soy sauce, cornstarch, sugar, pepper, salt. Add to chicken mixture. Stir. Cook covered until the sauce has thickened and the food is well heated. Stir in cashews. Serve with rice. Makes 6 servings."""@en ;
-    :name "Chicken Cashew"@en ;
-    owl:sameAs dbpedia:Cashew_chicken .
+    :name "Chicken Cashew"@en .
 
 recipes:ChickenLoMein a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -2362,6 +2361,7 @@ Serve over linguini"""@en ;
 
 recipes:ChickenNoodleSoup a :Recipe ;
     rdfs:label "Chicken soup"@en ;
+    :hasDbpediaLink dbpedia:Chicken_soup ;
     :hasIngredient [ a :Ingredient ;
             :food food:Chicken ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
@@ -2395,11 +2395,11 @@ recipes:ChickenNoodleSoup a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chicken_Noodle_Soup.jpg?width=300> ;
     :instructions "Boil chicken, remove from bones and chop.  Set aside.  Cook potato, carrots, celery, and onion in water to cover.  When tender add the chicken, bouillon cubes, poultry seasoning, and salt.  Add a large handful of narrow egg noodles.  Add more liquid if necessary and cook until noodles are tender."@en ;
     :name "Chicken Noodle Soup"@en ;
-    :recipeCategory ns1:Soup ;
-    owl:sameAs dbpedia:Chicken_soup .
+    :recipeCategory ns1:Soup .
 
 recipes:ChickenPaprika a :Recipe ;
     rdfs:label "Chicken paprikash"@en ;
+    :hasDbpediaLink dbpedia:Chicken_paprikash ;
     :hasIngredient [ a :Ingredient ;
             :food food:Flour ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -2477,12 +2477,12 @@ recipes:ChickenPaprika a :Recipe ;
             :name "worchestershire sauce"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Paprikahuhn.jpg?width=300> ;
     :instructions "Mix first 8 ingredients in a bag and shake the chicken to coat. Brown the chicken in hot oil. Place in large baking dish. Saute the garlic in oil for 1 minute. Blend in remaining ingredients. Stir and heat. Pour over chicken. Bake uncovered for 1 hour at 325 degrees."@en ;
-    :name "Chicken Paprika"@en ;
-    owl:sameAs dbpedia:Chicken_paprikash .
+    :name "Chicken Paprika"@en .
 
 recipes:ChickenSchnitzel a :Recipe ;
     rdfs:label "Schnitzel"@en,
         "Escalope panée"@fr ;
+    :hasDbpediaLink dbpedia:Schnitzel ;
     :hasIngredient [ a :Ingredient ;
             :food food:Flour ;
             :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
@@ -2559,8 +2559,7 @@ recipes:ChickenSchnitzel a :Recipe ;
 In a large skillet, heat the oil; dredge each cutlet in seas1d flour, dip in beaten egg, coat in bread crumbs, then place in a skillet. Quickly brown chicken for about 2 minutes on both sides. Remove chicken to plate and keep warm.
 In the same skillet, combine onion and apple and saute over medium heat until sof10ed, about 5 minutes. Sprinkle remaining flour over mixture and stir to combine. Gradually stir in broth and bring to boil, stirring constantly.
 To serve, spoon sauerkraut mixture on to center of serving plate and surround with chicken pieces; garnish chicken with lemon slices."""@en ;
-    :name "Chicken Schnitzel"@en ;
-    owl:sameAs dbpedia:Schnitzel .
+    :name "Chicken Schnitzel"@en .
 
 recipes:ChickenTamalePie a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -2625,6 +2624,7 @@ Cook and stir the following to make sauce: 1/4 pound melted butter, 2 tablespoon
 
 recipes:ChickenWithPineapple a :Recipe ;
     rdfs:label "Pininyahang manok"@en ;
+    :hasDbpediaLink dbpedia:Pininyahang_manok ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sherry ;
             :hasStandardMeasurementUnit [ :quantity 0.25 ;
@@ -2665,8 +2665,7 @@ recipes:ChickenWithPineapple a :Recipe ;
             :name "onion"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pineapple_chicken_(Pininyahang_Manok).jpg?width=300> ;
     :instructions "Marinate chicken in mixture of sherry, soy sauce, and cornstarch. Drain, but"@en ;
-    :name "Chicken With Pineapple"@en ;
-    owl:sameAs dbpedia:Pininyahang_manok .
+    :name "Chicken With Pineapple"@en .
 
 recipes:ChickenandShrimpCantonese a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -2745,6 +2744,7 @@ recipes:ChickenwithArtichoke a :Recipe ;
 
 recipes:ChiliCheesePuff a :Recipe ;
     rdfs:label "Curry puff"@en ;
+    :hasDbpediaLink dbpedia:Curry_puff ;
     :hasIngredient [ a :Ingredient ;
             :food food:Green ;
             :hasImperialMeasurementUnit [ :quantity 8.0 ;
@@ -2783,12 +2783,12 @@ recipes:ChiliCheesePuff a :Recipe ;
     :instructions """Preheat oven to 350 degrees.
 In medium size bowl beat eggs until light and lemon colored. Add flour, baking powder, salt, cottage cheese, and jack cheese. Blend until smooth. Stir in chiles.
 Pour into buttered 9" x 13" baking dish. Bake 35 minutes or until top is brown and firm."""@en ;
-    :name "Chili Cheese Puff"@en ;
-    owl:sameAs dbpedia:Curry_puff .
+    :name "Chili Cheese Puff"@en .
 
 recipes:ChiliChicken a :Recipe ;
     rdfs:label "Kung Pao chicken"@en,
         "Poulet impérial"@fr ;
+    :hasDbpediaLink dbpedia:Kung_Pao_chicken ;
     :hasIngredient [ a :Ingredient ;
             :food food:Noodles ;
             :hasImperialMeasurementUnit [ :quantity 12.0 ;
@@ -2832,8 +2832,7 @@ recipes:ChiliChicken a :Recipe ;
     :instructions """saute onion in butter, add soups, pimento, chiles, chicken and 1/2 the cheese.
 Cook noodles until tender. Drain. Stir sauce into noodles. Pour into large baking dish. Add rest of cheese or buttered crumbs.
 Chill over night. Bake at 350 degrees for 1 hour."""@en ;
-    :name "Chili Chicken"@en ;
-    owl:sameAs dbpedia:Kung_Pao_chicken .
+    :name "Chili Chicken"@en .
 
 recipes:ChilledPruneWhip a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -2875,6 +2874,7 @@ recipes:ChilledPruneWhip a :Recipe ;
 
 recipes:ChineseBeef a :Recipe ;
     rdfs:label "Mongolian beef"@en ;
+    :hasDbpediaLink dbpedia:Mongolian_beef ;
     :hasIngredient [ a :Ingredient ;
             :food food:FlankSteak ;
             :hasImperialMeasurementUnit [ :quantity 2.0 ;
@@ -2935,8 +2935,7 @@ recipes:ChineseBeef a :Recipe ;
             :name "green peppers"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mongolian_Beef.jpg?width=300> ;
     :instructions "Cut steak into thin strips. Quarter tomatoes, cut pepper in bug chunks. Heat oil in skillet. Add beef, crushed garlic, slat, pepper, and ginger. Fry over high heat until brown. Add soy sauce and sugar. Cover tightly. Cook slowly 5 minutes. Add tomatoes, peppers, and sprouts. Bring to a boil, cover, cook briskly 5 minutes. Make a smooth paste of cornstarch and water. Add to beef. Cook until sauce thickens slightly. Stir occasionally."@en ;
-    :name "Chinese Beef"@en ;
-    owl:sameAs dbpedia:Mongolian_beef .
+    :name "Chinese Beef"@en .
 
 recipes:ChineseBroccoli a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -2954,6 +2953,7 @@ recipes:ChineseBroccoli a :Recipe ;
 
 recipes:ChineseChickenSalad a :Recipe ;
     rdfs:label "Chinese chicken salad"@en ;
+    :hasDbpediaLink dbpedia:Chinese_chicken_salad ;
     :hasIngredient [ a :Ingredient ;
             :food food:SoySauce ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -2993,11 +2993,11 @@ recipes:ChineseChickenSalad a :Recipe ;
             :name "slivered green onions"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chinesechickensalad.jpg?width=300> ;
     :instructions "Mix soy sauce, sherry, water, orange peel, and anise. Simmer 10 minutes to make marinade. Poach chicken breasts 10 to 15 minutes over low flame. Cool in liquid. Shred. Mix together shredded chicken, onions, and lettuce. Serve over rice noodles that have been cooked in hot oil in wok."@en ;
-    :name "Chinese Chicken Salad"@en ;
-    owl:sameAs dbpedia:Chinese_chicken_salad .
+    :name "Chinese Chicken Salad"@en .
 
 recipes:ChineseFriedRice a :Recipe ;
     rdfs:label "Chinese fried rice"@en ;
+    :hasDbpediaLink dbpedia:Chinese_fried_rice ;
     :hasIngredient [ a :Ingredient ;
             :food food:Mushrooms ;
             :hasImperialMeasurementUnit [ :quantity 3.0 ;
@@ -3037,12 +3037,12 @@ recipes:ChineseFriedRice a :Recipe ;
             :name "egg"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chinese_fried_rice.jpg?width=300> ;
     :instructions "Saute onion and meat in oil. Add other ingredients except egg. Cook on low heat about 15 to 20 minutes. Beat egg with a tablespoon of milk. Melt butter in skillet, pour in egg and cook until solid. Slice in thin strips to put over the rice as garnish on the platter."@en ;
-    :name "Chinese Fried Rice"@en ;
-    owl:sameAs dbpedia:Chinese_fried_rice .
+    :name "Chinese Fried Rice"@en .
 
 recipes:ChineseNoodleCasserole a :Recipe ;
     rdfs:label "Noodle"@en,
         "Nouille"@fr ;
+    :hasDbpediaLink dbpedia:Noodle ;
     :hasIngredient [ a :Ingredient ;
             :food food:CashewNuts ;
             :hasImperialMeasurementUnit [ :quantity 3.0 ;
@@ -3075,11 +3075,11 @@ recipes:ChineseNoodleCasserole a :Recipe ;
             :name "chow mein noodles"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Dalian_Liaoning_China_Noodlemaker-01.jpg?width=300> ;
     :instructions "Rinse nuts and tuna to remove excess salt. Add 1/4 cup water to soup. Pour half of soup over celery and onions in a large bowl. Add tuna and nuts, and 1 cup of noodles. Pour remaining soup on top and mix. Pour into buttered casserole and smooth top with a spoon. Crush remaining noodles and sprinkle on top. Bake 325 degrees for 45 minutes."@en ;
-    :name "Chinese Noodle Casserole"@en ;
-    owl:sameAs dbpedia:Noodle .
+    :name "Chinese Noodle Casserole"@en .
 
 recipes:ChinesePepperSteak a :Recipe ;
     rdfs:label "Pepper steak"@en ;
+    :hasDbpediaLink dbpedia:Pepper_steak ;
     :hasIngredient [ a :Ingredient ;
             :food food:Steak ;
             :hasImperialMeasurementUnit [ :quantity 1.0 ;
@@ -3139,8 +3139,7 @@ recipes:ChinesePepperSteak a :Recipe ;
             :name "tomatoes, halved"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pepper_steak.jpg?width=300> ;
     :instructions "Partially freeze steak and cut into thin strips. Combine cornstarch, sugar, ginger, and soy sauce. Pour over meat and stir. Cut into thin strips. Quickly brown meat in hot oil and remove. Add green pepper, onion, and garlic. Add water. Cook 5 to 6 minutes. Stir in meat, tomatoes and sherry. Serve over rice."@en ;
-    :name "Chinese Pepper Steak"@en ;
-    owl:sameAs dbpedia:Pepper_steak .
+    :name "Chinese Pepper Steak"@en .
 
 recipes:ChineseRoastPork a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -3178,6 +3177,7 @@ recipes:ChineseRoastPork a :Recipe ;
 recipes:ChineseStirFriedChickenwithPeanuts a :Recipe ;
     rdfs:label "Kung Pao chicken"@en,
         "Poulet impérial"@fr ;
+    :hasDbpediaLink dbpedia:Kung_Pao_chicken ;
     :hasIngredient [ a :Ingredient ;
             :food food:Chicken ;
             :hasImperialMeasurementUnit [ :quantity 1.0 ;
@@ -3238,12 +3238,12 @@ recipes:ChineseStirFriedChickenwithPeanuts a :Recipe ;
             :name "green onions"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Kung-pao-shanghai.jpg?width=300> ;
     :instructions "Mix sherry and cornstarch. Stir chicken to coat. Refirgerate 2 to 4 hours. Heat 2 tablespoons oil over high heat. Add ginger. Cook 15 seconds, stirring constantly. Add pepper. Stir fry 2 minutes. Add onion. Stir fry 1 minute. Tranfer to bowl. Add rest of oil. Add chicken and red pepper. Stir fry 2 minutes until chicken looses pink color and turns white. Add peanuts, cooked vegetables and soy sauce mixture (soy sauce, water, and cornstarch). Bring to rolling boil, stirring constantly until thick. Serve immediately, discard ginger. Serve with rice."@en ;
-    :name "Chinese Stir Fried Chicken with Peanuts"@en ;
-    owl:sameAs dbpedia:Kung_Pao_chicken .
+    :name "Chinese Stir Fried Chicken with Peanuts"@en .
 
 recipes:ChocolateCake a :Recipe ;
     rdfs:label "Chocolate cake"@en,
         "Gâteau au chocolat"@fr ;
+    :hasDbpediaLink dbpedia:Chocolate_cake ;
     :hasIngredient [ a :Ingredient ;
             :food food:Margarine ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ;
@@ -3296,8 +3296,7 @@ recipes:ChocolateCake a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chocolate_fudge_cake.jpg?width=300> ;
     :instructions "Mix all ingredients together.  Pour in 1 cup boiling water.  Mix well.  Bake about 35 minutes at 375 degrees."@en ;
     :name "Chocolate Cake"@en ;
-    :recipeCategory ns1:Cake ;
-    owl:sameAs dbpedia:Chocolate_cake .
+    :recipeCategory ns1:Cake .
 
 recipes:ChocolateCrispBranCookies a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -3712,6 +3711,7 @@ recipes:CompanyCabbage a :Recipe ;
 recipes:CoqauVin a :Recipe ;
     rdfs:label "Coq au vin"@en,
         "Coq au vin"@fr ;
+    :hasDbpediaLink dbpedia:Coq_au_vin ;
     :hasIngredient [ a :Ingredient ;
             :food food:Steak ;
             :hasImperialMeasurementUnit [ :quantity 0.3333333333333333 ;
@@ -3757,8 +3757,7 @@ recipes:CoqauVin a :Recipe ;
             :name "chicken"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Gourmet_coq_au_vin.jpg?width=300> ;
     :instructions "Cook pork, stirring until crisp and well browned. Lift out, set aside. Brown chicken parts, set aside. Stir in wine, broth and mustard. Add meat and chicken. Cover and simmer 35 to 40 minutes. Add cornstarch."@en ;
-    :name "Coq au Vin"@en ;
-    owl:sameAs dbpedia:Coq_au_vin .
+    :name "Coq au Vin"@en .
 
 recipes:CranberryMold a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -3792,6 +3791,7 @@ recipes:CranberryMold a :Recipe ;
 
 recipes:CrazyCake a :Recipe ;
     rdfs:label "Wacky cake"@en ;
+    :hasDbpediaLink dbpedia:Wacky_cake ;
     :hasIngredient [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -3829,11 +3829,11 @@ recipes:CrazyCake a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Wacky_Cake.jpg?width=300> ;
     :instructions "Mix first 5 ingredients well, about 4 minutes.  Bake at 350 degrees in a 9x13 pan for 35 minutes. Poke holes in warm cake and pour on mixture of powdered sugar and lemon juice."@en ;
     :name "Crazy Cake"@en ;
-    :recipeCategory ns1:Cake ;
-    owl:sameAs dbpedia:Wacky_cake .
+    :recipeCategory ns1:Cake .
 
 recipes:CrazyCrustPizza a :Recipe ;
     rdfs:label "Stuffed crust pizza"@en ;
+    :hasDbpediaLink dbpedia:Stuffed_crust_pizza ;
     :hasIngredient [ a :Ingredient ;
             :food food:Flour ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -3865,8 +3865,7 @@ recipes:CrazyCrustPizza a :Recipe ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cheese_stuffed_crust.jpg?width=300> ;
     :instructions "Mix well. Pour into greased and floured pan. Top with 1 1/2 pounds browned ground beef or sausage, and pepperoni. Add 1 can drained slice mushrooms over top. Bake at 375 degrees for 10 minutes. Add pizza sauce, cheese, etc. Bake 20 minutes more."@en ;
-    :name "Crazy Crust Pizza"@en ;
-    owl:sameAs dbpedia:Stuffed_crust_pizza .
+    :name "Crazy Crust Pizza"@en .
 
 recipes:CreamyApplePie a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -3927,6 +3926,7 @@ recipes:CreamyChickenBroccoliwithRice a :Recipe ;
 
 recipes:CreamyZucchiniMushroomSoup a :Recipe ;
     rdfs:label "Chicken soup"@en ;
+    :hasDbpediaLink dbpedia:Chicken_soup ;
     :hasIngredient [ a :Ingredient ;
             :food food:Mushroom ;
             :hasImperialMeasurementUnit [ :quantity 10.0 ;
@@ -3985,8 +3985,7 @@ recipes:CreamyZucchiniMushroomSoup a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chicken_Noodle_Soup.jpg?width=300> ;
     :instructions "Combine zucchini, onion, garlic and butter in 2 qt. microwave-safe casserole.  Cover and microwave on high setting 5 to 7 minutes, stirring every 3 minutes, until vegetables are tender.  Place zucchini mixture in blender container; blend until smooth.  Return to casserole dish; add all remaining ingredients except sour cream, pepper and pine nuts.  Cover and microwave 5 to 6 minutes, or until heated through.  Stir in sour cream and season to taste with pepper.  Ladle into soup bowls and garnish with sprinkle of pine nuts.  Serve immediately."@en ;
     :name "Creamy Zucchini Mushroom Soup"@en ;
-    :recipeCategory ns1:Soup ;
-    owl:sameAs dbpedia:Chicken_soup .
+    :recipeCategory ns1:Soup .
 
 recipes:CrispOatmealFruitStrips a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -4030,6 +4029,7 @@ recipes:CrispOatmealFruitStrips a :Recipe ;
 recipes:CrispPotatoPancakes a :Recipe ;
     rdfs:label "Potato pancake"@en,
         "Galette de pommes de terre"@fr ;
+    :hasDbpediaLink dbpedia:Potato_pancake ;
     :hasIngredient [ a :Ingredient ;
             :food food:Potatoes ;
             :hasImperialMeasurementUnit [ :quantity 1.5 ;
@@ -4042,8 +4042,7 @@ recipes:CrispPotatoPancakes a :Recipe ;
             :name "onion, grated"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Latkas.jpg?width=300> ;
     :instructions "Grate potatoes coarsely. Grate onion. Season with slat and pepper. Add bea10 egg. Form in 2 inch patties. Fry in 1/4 inch of hot oil. Serve with poached egg and salsa or sour cream and chives."@en ;
-    :name "Crisp Potato Pancakes"@en ;
-    owl:sameAs dbpedia:Potato_pancake .
+    :name "Crisp Potato Pancakes"@en .
 
 recipes:CucumbersinSourCream a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -4083,6 +4082,7 @@ recipes:CucumbersinSourCream a :Recipe ;
 recipes:DeepDishPizza a :Recipe ;
     rdfs:label "Chicago-style pizza"@en,
         "Pizza de Chicago"@fr ;
+    :hasDbpediaLink dbpedia:Chicago-style_pizza ;
     :hasIngredient [ a :Ingredient ;
             :food food:Hamburger ;
             :hasImperialMeasurementUnit [ :quantity 1.0 ;
@@ -4120,12 +4120,12 @@ recipes:DeepDishPizza a :Recipe ;
             :name "jack and mozzarella cheese, shredded"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chicago-Style_Stuffed_Pizza.jpg?width=300> ;
     :instructions "Mix dough as instructed. Line bottom of greased 9\" x 12\" baking dish, bringing dough up sides. Cook burger and onion. Put in dough, add mushrooms, and olives. Mix tomatoes with the canned pizza sauce. Pour over meat. Sprinkle with shredded cheese, and grated cheese from package. Bake at 425 degrees for 20 minutes."@en ;
-    :name "Deep Dish Pizza"@en ;
-    owl:sameAs dbpedia:Chicago-style_pizza .
+    :name "Deep Dish Pizza"@en .
 
 recipes:DutchApplePie a :Recipe ;
     rdfs:label "Apple pie"@en,
         "Tarte aux pommes"@fr ;
+    :hasDbpediaLink dbpedia:Apple_pie ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sugar ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -4158,8 +4158,7 @@ recipes:DutchApplePie a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Small_apple_pie_8.jpg?width=300> ;
     :instructions "Combine apples, 1/2 cup sugar, and cinnamon.  Put into the unbaked pie shell.  Top with 1/2 cup sugar, flour, butter, and cinnamon.  Bake 45-50 minutes at 350 degrees."@en ;
     :name "Dutch Apple Pie"@en ;
-    :recipeCategory ns1:Pie ;
-    owl:sameAs dbpedia:Apple_pie .
+    :recipeCategory ns1:Pie .
 
 recipes:EasyOvenBakedPotatoes a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -4238,6 +4237,7 @@ recipes:EasyPastaBake a :Recipe ;
 recipes:EggFooYoung a :Recipe ;
     rdfs:label "Egg foo young"@en,
         "Fu yung hai"@fr ;
+    :hasDbpediaLink dbpedia:Egg_foo_young ;
     :hasIngredient [ a :Ingredient ;
             :food food:GreenOnions ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ;
@@ -4294,8 +4294,7 @@ recipes:EggFooYoung a :Recipe ;
             :name "bea10 eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Efy.jpg?width=300> ;
     :instructions "Combine first 6 ingredients. Fry in oil to form 3 inch omelettes. To make brown gravy, melt butter, add flour combined with sugar and salt. Add hot water and soy sauce. Cook over low heat until thick. Serve gravy over omelettes."@en ;
-    :name "Egg Foo Young"@en ;
-    owl:sameAs dbpedia:Egg_foo_young .
+    :name "Egg Foo Young"@en .
 
 recipes:EggRollWrappers a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -4328,6 +4327,7 @@ recipes:EggRollWrappers a :Recipe ;
 recipes:EggplantRollatini a :Recipe ;
     rdfs:label "Rollatini"@en,
         "Rollatini"@fr ;
+    :hasDbpediaLink dbpedia:Rollatini ;
     :hasIngredient [ a :Ingredient ;
             :food food:Egg ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -4378,8 +4378,7 @@ recipes:EggplantRollatini a :Recipe ;
 SLice eggplant into 12 lengthwise slices. Arrange in single layer on broiler pan; brush with vinaigrette. Broil 3 to 4 minutes until speckled with brown. Turn slices, brush with vinaigrette; broil 3 to 4 minutes until brown and 10der.
 Adjust oven to 400 degrees. Spoon marinara over bottom of a 10 inch round shallow baking dish. Set aside.
 Place broiled eggplant slices on work surface. Spread each with 2 tablespoons of the filling and sprinkle with 1/4 teaspoon of basil. Roll slices; jelly roll style. Dip each in sauce in baking dish to coat. Place seam side down. Cover in marinara. Cover with foil. Bake for 35 minutes. Sprinkle with reserved mozzarella and fresh parsley."""@en ;
-    :name "Eggplant Rollatini"@en ;
-    owl:sameAs dbpedia:Rollatini .
+    :name "Eggplant Rollatini"@en .
 
 recipes:ElephantStew a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -4396,6 +4395,7 @@ recipes:ElephantStew a :Recipe ;
 
 recipes:FiveBeanSalad a :Recipe ;
     rdfs:label "Bean salad"@en ;
+    :hasDbpediaLink dbpedia:Bean_salad ;
     :hasIngredient [ a :Ingredient ;
             :food food:GreenBeans ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -4443,12 +4443,12 @@ recipes:FiveBeanSalad a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Colourful_bean_salad.jpg?width=300> ;
     :instructions "Drain beans and stir together.  Mix ingredients for dressing.  Combine dressing and beans."@en ;
     :name "Five Bean Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings ;
-    owl:sameAs dbpedia:Bean_salad .
+    :recipeCategory ns1:SaladAndDressings .
 
 recipes:FiveCupSalad a :Recipe ;
     rdfs:label "Ambrosia (fruit salad)"@en,
         "Salade d'ambroisie"@fr ;
+    :hasDbpediaLink dbpedia:Ambrosia_\(fruit_salad\) ;
     :hasIngredient [ a :Ingredient ;
             :food food:Pineapple ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -4477,12 +4477,12 @@ recipes:FiveCupSalad a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Ambrosia_salad.jpg?width=300> ;
     :instructions "Combine all ingredients.  Chill overnight."@en ;
     :name "Five Cup Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings ;
-    owl:sameAs dbpedia:Ambrosia_\(fruit_salad\) .
+    :recipeCategory ns1:SaladAndDressings .
 
 recipes:FreshAppleCake a :Recipe ;
     rdfs:label "Apple pie"@en,
         "Tarte aux pommes"@fr ;
+    :hasDbpediaLink dbpedia:Apple_pie ;
     :hasIngredient [ a :Ingredient ;
             :food food:Apples ;
             :hasStandardMeasurementUnit [ :quantity 4.0 ;
@@ -4540,12 +4540,12 @@ recipes:FreshAppleCake a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Small_apple_pie_8.jpg?width=300> ;
     :instructions "Mix apples and sugar well.  Add oil, nuts, and eggs.  Add vanilla and dry ingredients.  Bake at 350 degrees for 40-45 minutes.  Serve with whipped cream or top with cream cheese frosting."@en ;
     :name "Fresh Apple Cake"@en ;
-    :recipeCategory ns1:Cake ;
-    owl:sameAs dbpedia:Apple_pie .
+    :recipeCategory ns1:Cake .
 
 recipes:FreshPeachDessert a :Recipe ;
     rdfs:label "Peach Melba"@en,
         "Pêche Melba"@fr ;
+    :hasDbpediaLink dbpedia:Peach_Melba ;
     :hasIngredient [ a :Ingredient ;
             :food food:Peaches ;
             :hasStandardMeasurementUnit [ :quantity 4.0 ;
@@ -4587,8 +4587,7 @@ recipes:FreshPeachDessert a :Recipe ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Peach_Melba.jpg?width=300> ;
     :instructions "Soak gelatin in cold water. Combine margarine, sugar, and egg yolks. Cook until thick. Add gelatin - pour hot mixture over marshmallows. Blend. Fold in stiff-beaten egg whites and peaches. Alternate in layers with cookie crumbs in dish. Chill to serve."@en ;
-    :name "Fresh Peach Dessert"@en ;
-    owl:sameAs dbpedia:Peach_Melba .
+    :name "Fresh Peach Dessert"@en .
 
 recipes:FreshPearCake a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -4630,6 +4629,7 @@ recipes:FreshPearCake a :Recipe ;
 
 recipes:FreshStrawberryPie a :Recipe ;
     rdfs:label "Strawberry pie"@en ;
+    :hasDbpediaLink dbpedia:Strawberry_pie ;
     :hasIngredient [ a :Ingredient ;
             :food food:Cornstarch ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
@@ -4672,8 +4672,7 @@ recipes:FreshStrawberryPie a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Fresh_strawberry_pie.jpg?width=300> ;
     :instructions "Slice 1 basket of strawberries.  Put half the berries in the bottom of a baked pie shell. Prepare glaze by combining remaining ingredients and cooking in a double-boiler until thickened.   Stir the other half of the berries into the glaze.  Pour into the shell.  Cool.  Top with whipped cream and halved berries."@en ;
     :name "Fresh Strawberry Pie"@en ;
-    :recipeCategory ns1:Pie ;
-    owl:sameAs dbpedia:Strawberry_pie .
+    :recipeCategory ns1:Pie .
 
 recipes:FrostedDelights a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -4888,6 +4887,7 @@ recipes:GingerSnapBars a :Recipe ;
 recipes:GingerSnaps a :Recipe ;
     rdfs:label "Ginger snap"@en,
         "Piparkūkas"@fr ;
+    :hasDbpediaLink dbpedia:Ginger_snap ;
     :hasIngredient [ a :Ingredient ;
             :food food:Shortening ;
             :hasStandardMeasurementUnit [ :quantity 0.75 ;
@@ -4935,8 +4935,7 @@ recipes:GingerSnaps a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Arnott's_Ginger_Nut_04.jpg?width=300> ;
     :instructions "Roll in little balls.  Dip in sugar and flatten with glass dipped in water.  Bake at 350 degrees about 7 minutes."@en ;
     :name "Ginger Snaps"@en ;
-    :recipeCategory ns1:Cookie ;
-    owl:sameAs dbpedia:Ginger_snap .
+    :recipeCategory ns1:Cookie .
 
 recipes:GlazedCarrots a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -5029,6 +5028,7 @@ recipes:GoldenNuggetBeef a :Recipe ;
 recipes:GrahamCrackerCake a :Recipe ;
     rdfs:label "Graham cracker"@en,
         "Biscuit Graham"@fr ;
+    :hasDbpediaLink dbpedia:Graham_cracker ;
     :hasIngredient [ a :Ingredient ;
             :food food:Butter ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ;
@@ -5061,11 +5061,11 @@ recipes:GrahamCrackerCake a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Graham-Cracker-Stack.jpg?width=300> ;
     :instructions "Cream butter and sugar.  Add crushed crackers, sour milk, and soda.  Stir in nuts.  Bake in 10 inch square baking pan.  Bake in 350 degree oven for 30-35 minutes.  Serve with whipped cream or thin powdered sugar icing."@en ;
     :name "Graham Cracker Cake"@en ;
-    :recipeCategory ns1:Cake ;
-    owl:sameAs dbpedia:Graham_cracker .
+    :recipeCategory ns1:Cake .
 
 recipes:GreenBeanSalad a :Recipe ;
     rdfs:label "Bean salad"@en ;
+    :hasDbpediaLink dbpedia:Bean_salad ;
     :hasIngredient [ a :Ingredient ;
             :food food:Beans ;
             :hasImperialMeasurementUnit [ :quantity 1.0 ;
@@ -5094,8 +5094,7 @@ recipes:GreenBeanSalad a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Colourful_bean_salad.jpg?width=300> ;
     :instructions "Mix oil, vinegar, onion, and lemon.  Pour over beans.  Chill 3 hour or longer.  Spoon beans onto lettuce with slotted spoon.  Top with crumbled blue cheese and coarsely chopped walnuts"@en ;
     :name "Green Bean Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings ;
-    owl:sameAs dbpedia:Bean_salad .
+    :recipeCategory ns1:SaladAndDressings .
 
 recipes:GreenBeansSalerno a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -5135,6 +5134,7 @@ Before serving, toss beans with shredded lettuce and crumbled bacon."""@en ;
 recipes:HeavenlyCheeseSalad a :Recipe ;
     rdfs:label "Deviled egg"@en,
         "Œuf mimosa"@fr ;
+    :hasDbpediaLink dbpedia:Deviled_egg ;
     :hasIngredient [ a :Ingredient ;
             :food food:CreamCheese ;
             :hasImperialMeasurementUnit [ :quantity 8.0 ;
@@ -5168,12 +5168,12 @@ recipes:HeavenlyCheeseSalad a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/0.2014_Ostereier_zum_Frühstück,_Beskiden,_Nowotaniec.jpg?width=300> ;
     :instructions "Bring juice to a boil, pour over jello.  Cool.  Mix pineapple, nuts, and cheese.  Add to jello.  Fold in whipped cream.  Pour into mold.  Chill."@en ;
     :name "Heavenly Cheese Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings ;
-    owl:sameAs dbpedia:Deviled_egg .
+    :recipeCategory ns1:SaladAndDressings .
 
 recipes:HoneyGrahamCrackers a :Recipe ;
     rdfs:label "Graham cracker"@en,
         "Biscuit Graham"@fr ;
+    :hasDbpediaLink dbpedia:Graham_cracker ;
     :hasIngredient [ a :Ingredient ;
             :food food:Flour ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
@@ -5227,8 +5227,7 @@ recipes:HoneyGrahamCrackers a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Graham-Cracker-Stack.jpg?width=300> ;
     :instructions "Stir all ingredients about 3 minutes to mix well.  Divide in half.  Place each half on 17\"x14\" baking sheet.  Flatten and roll to 12\" x 10\" rectangle, dusting with flour to prevent sticking.  Cut into 2\" squares.  Prick with fork.Bake at 425 degrees for 8-10 minutes until lightly browned.  Cut apart while hot.  Cool on baking sheet.  Makes 60.  50 calories each."@en ;
     :name "Honey Graham Crackers"@en ;
-    :recipeCategory ns1:Cookie ;
-    owl:sameAs dbpedia:Graham_cracker .
+    :recipeCategory ns1:Cookie .
 
 recipes:HorseradishDressing a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -5287,6 +5286,7 @@ recipes:HorseradishDressing a :Recipe ;
 
 recipes:HotCrabDip a :Recipe ;
     rdfs:label "Crab dip"@en ;
+    :hasDbpediaLink dbpedia:Crab_dip ;
     :hasIngredient [ a :Ingredient ;
             :food food:CreamCheese ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
@@ -5307,8 +5307,7 @@ recipes:HotCrabDip a :Recipe ;
             :name "crab meat"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/CrabDipAndFlatbread.jpg?width=300> ;
     :instructions "Stir together all ingredients and top with cheddar cheese. Bake for 15-20 minutes. Serve with crackers."@en ;
-    :name "Hot Crab Dip"@en ;
-    owl:sameAs dbpedia:Crab_dip .
+    :name "Hot Crab Dip"@en .
 
 recipes:HotWaterChocolateCake a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -5367,6 +5366,7 @@ recipes:HotWaterChocolateCake a :Recipe ;
 recipes:HungryBearVegetableSoup a :Recipe ;
     rdfs:label "Matzah ball"@en,
         "Kneidleh"@fr ;
+    :hasDbpediaLink dbpedia:Matzah_ball ;
     :hasIngredient [ a :Ingredient ;
             :food food:Hamburger ;
             :hasImperialMeasurementUnit [ :quantity 1.0 ;
@@ -5410,8 +5410,7 @@ recipes:HungryBearVegetableSoup a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Matzah_balls.jpg?width=300> ;
     :instructions "Brown the meat, then add all of the ingredients, except the cabbage. Cover with water and simmer for about an hour until veggies are tender.  Then add the chopped cabbage and simmer again for about a half hour.  Add more liquid if necessary."@en ;
     :name "Hungry Bear Vegetable Soup"@en ;
-    :recipeCategory ns1:Soup ;
-    owl:sameAs dbpedia:Matzah_ball .
+    :recipeCategory ns1:Soup .
 
 recipes:ImpossibleTacoPie a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -5541,6 +5540,7 @@ recipes:ItalianZucchini a :Recipe ;
 
 recipes:JackZucchiniChicken a :Recipe ;
     rdfs:label "Chicken soup"@en ;
+    :hasDbpediaLink dbpedia:Chicken_soup ;
     :hasIngredient [ a :Ingredient ;
             :food food:Zucchini ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ;
@@ -5548,8 +5548,7 @@ recipes:JackZucchiniChicken a :Recipe ;
             :name "zucchini"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chicken_Noodle_Soup.jpg?width=300> ;
     :instructions "Preheat oven to 350 degrees. Shred zucchini through the large holes of a grater, then squeeze it firmly, a handful at a time to extract much of the juice. Toss the zucchini with the green onion and set aside. Stir together the flour, chili powder and 1 teaspoon of salt and set aside."@en ;
-    :name "Jack Zucchini Chicken"@en ;
-    owl:sameAs dbpedia:Chicken_soup .
+    :name "Jack Zucchini Chicken"@en .
 
 recipes:JelloPastelCookies a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -5631,8 +5630,6 @@ recipes:LemonCloudPie a :Recipe ;
     :recipeCategory ns1:Pie .
 
 recipes:LemonCloudSalad a :Recipe ;
-    rdfs:label "Souvlaki"@en,
-        "Souvláki"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Jello ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -5656,11 +5653,9 @@ recipes:LemonCloudSalad a :Recipe ;
             :food food:Bananas ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "bananas, sliced"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Souvlaki_in_Athens.jpg?width=300> ;
     :instructions "Set jello with 1/2 c. less water than package instructions.  When partially set stir in Dream Whip.  Add fruits.  Set several hours to chill."@en ;
     :name "Lemon Cloud Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings ;
-    owl:sameAs dbpedia:Souvlaki .
+    :recipeCategory ns1:SaladAndDressings .
 
 recipes:LemonLusciousPie a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -5714,6 +5709,7 @@ recipes:LemonLusciousPie a :Recipe ;
 recipes:LemonMeringuePie a :Recipe ;
     rdfs:label "Lemon meringue pie"@en,
         "Tarte au citron meringuée"@fr ;
+    :hasDbpediaLink dbpedia:Lemon_meringue_pie ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sugar ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -5765,8 +5761,7 @@ recipes:LemonMeringuePie a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Theres_always_room_for_pie_(7859650026).jpg?width=300> ;
     :instructions "Mix sugar, cornstarch, and salt in top of double boiler.  Place over boiling water and add remaining ingredients.  Cook until thick, stirring with whip.  Put into baked pie shell.  Top with meringue.  To make meringue whip 3 egg whites until stiff.  Add 1/4 cup sugar.  Brown 5 to 10 minutes in 400 degree oven.  Chill."@en ;
     :name "Lemon Meringue Pie"@en ;
-    :recipeCategory ns1:Pie ;
-    owl:sameAs dbpedia:Lemon_meringue_pie .
+    :recipeCategory ns1:Pie .
 
 recipes:LemonPoppyCake a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -5804,6 +5799,7 @@ recipes:LemonPoppyCake a :Recipe ;
 
 recipes:LemonSquares a :Recipe ;
     rdfs:label "Lemon bar"@en ;
+    :hasDbpediaLink dbpedia:Lemon_bar ;
     :hasIngredient [ a :Ingredient ;
             :food food:Flour ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -5847,11 +5843,11 @@ recipes:LemonSquares a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Lemon_Bar.jpg?width=300> ;
     :instructions "Mix first 3 ingredients well.  Press into 8\"x8\"x2\" pan.  Build up 1/2\" edge.  Bake 20 minutes at 350 degrees.  Beat remaining 6 ingredients until light and fluffy.  Pour over hot crust.  Bake another 25 minutes.  Cool.  Dust with the powdered sugar.  Cut into squares."@en ;
     :name "Lemon Squares"@en ;
-    :recipeCategory ns1:Cookie ;
-    owl:sameAs dbpedia:Lemon_bar .
+    :recipeCategory ns1:Cookie .
 
 recipes:LightOldFashionedFruitCake a :Recipe ;
     rdfs:label "Christmas cake"@en ;
+    :hasDbpediaLink dbpedia:Christmas_cake ;
     :hasIngredient [ a :Ingredient ;
             :food food:Pecans ;
             :hasImperialMeasurementUnit [ :quantity "24" ;
@@ -5919,11 +5915,11 @@ recipes:LightOldFashionedFruitCake a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Christmas_cake_(6954064737).jpg?width=300> ;
     :instructions "Sift dry ingredients into a 4 quart bowl.  Add fruit and nuts.  Mix until well coated.  Set aside.  Cream butter, gradually add sugar and cream until fluffy.  Add eggs one at a time, beating well after each.  Add brandy.  Combine with fruit mixture.  Mix well.  Turn into a 10 inch tube pan or four 1# coffee cans lined with foil, filling pans 2/3 full. Bake in slow oven, 275 degrees for 2 3/4 to 3 hours.  About 1/2 hour before done brush lightly with honey or light corn syrup.  Cool completely then wrap tightly in foil to store for several weeks.  Brush with brandy about once a week."@en ;
     :name "Light Old Fashioned Fruit Cake"@en ;
-    :recipeCategory ns1:Cake ;
-    owl:sameAs dbpedia:Christmas_cake .
+    :recipeCategory ns1:Cake .
 
 recipes:LimaBeanSalad a :Recipe ;
     rdfs:label "Bean salad"@en ;
+    :hasDbpediaLink dbpedia:Bean_salad ;
     :hasIngredient [ a :Ingredient ;
             :food food:Oregano ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ;
@@ -5965,11 +5961,11 @@ recipes:LimaBeanSalad a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Colourful_bean_salad.jpg?width=300> ;
     :instructions "Thoroughly mix vinegar, vegetable oil, and salt.  Cook beans until tender, drain and rinse under cold water.  Add other ingredients and toss.  Chill in refrigerator for 1-2 hours."@en ;
     :name "Lima Bean Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings ;
-    owl:sameAs dbpedia:Bean_salad .
+    :recipeCategory ns1:SaladAndDressings .
 
 recipes:MarylandFriedChicken a :Recipe ;
     rdfs:label "Chicken Maryland"@en ;
+    :hasDbpediaLink dbpedia:Chicken_Maryland ;
     :hasIngredient [ a :Ingredient ;
             :food food:Chicken ;
             :hasImperialMeasurementUnit [ :quantity "3.5" ;
@@ -6010,8 +6006,7 @@ recipes:MarylandFriedChicken a :Recipe ;
 Pour enough oil into a large deep skillet to make a half inch depth. Heat to 375 degrees on a deep-fat frying thermometer or until a cube of bread turns golden in about 6ty seconds.
 Carefully place a single layer of chicken pieces in hot oil; do not crowd pan. Cover and fry for 5 minutes. Uncover and fry until underside is a rich golden brown. Turn pieces, cover and fry for 5 more minutes. Uncover and fry until golden brown. Remove from skillet and drain on paper towels. Repeat with remaining chicken. Pour off oil from skillet. Return 2 tablespoons of oil to the skillet. Add water. Return all chicken to the skillet, skin side up. Cover and cook over low heat for 20 minutes or until chicken is 10der. Remove to serving platter and keep warm. Pour off fat from skillet.
 Melt butter in skillet. Sprinkle reserved 1 tablespoon seas1d flour over butter and cook for 1 minute. Add milk, stirring and scrapping up brown bits. Cook, stirring constantly until thickened. Spoon some of the gravy over chicken and pour remainder into a gravy boat and serve separately."""@en ;
-    :name "Maryland Fried Chicken"@en ;
-    owl:sameAs dbpedia:Chicken_Maryland .
+    :name "Maryland Fried Chicken"@en .
 
 recipes:MexicanMeatballSoup a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -6114,6 +6109,7 @@ recipes:MexicanMeatballSoup a :Recipe ;
 recipes:MinestroneSoup a :Recipe ;
     rdfs:label "Minestrone"@en,
         "Minestrone"@fr ;
+    :hasDbpediaLink dbpedia:Minestrone ;
     :hasIngredient [ a :Ingredient ;
             :food food:Hamburger ;
             :hasImperialMeasurementUnit [ :quantity 1.0 ;
@@ -6179,8 +6175,7 @@ recipes:MinestroneSoup a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Homemade_minestrone.jpg?width=300> ;
     :instructions "Brown hamburger and onions.  Add all other ingredients with enough water to cover.  Simmer two to three hours then add spaghetti and cook until tender."@en ;
     :name "Minestrone Soup"@en ;
-    :recipeCategory ns1:Soup ;
-    owl:sameAs dbpedia:Minestrone .
+    :recipeCategory ns1:Soup .
 
 recipes:Minties a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -6224,6 +6219,7 @@ recipes:Minties a :Recipe ;
 recipes:MushroomsinSourCream a :Recipe ;
     rdfs:label "Beef Stroganoff"@en,
         "Bœuf Stroganov"@fr ;
+    :hasDbpediaLink dbpedia:Beef_Stroganoff ;
     :hasIngredient [ a :Ingredient ;
             :food food:Mushrooms ;
             :hasImperialMeasurementUnit [ :quantity 1.0 ;
@@ -6256,11 +6252,11 @@ recipes:MushroomsinSourCream a :Recipe ;
             :name "worcestershire sauce"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Beef_Stroganoff-02_cropped.jpg?width=300> ;
     :instructions "In skillet, fry bacon until crisp. Drain on paper towel. Add onion and mushrooms. Saute 10 minutes on low heat. Stir in flour. Add cream and worcestershire sauce. Cook on low, stirring constantly. Spoon over toast. Sprinkle bacon on top."@en ;
-    :name "Mushrooms in Sour Cream"@en ;
-    owl:sameAs dbpedia:Beef_Stroganoff .
+    :name "Mushrooms in Sour Cream"@en .
 
 recipes:MyBestGingerbread a :Recipe ;
     rdfs:label "Gingerbread"@en ;
+    :hasDbpediaLink dbpedia:Gingerbread ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sugar ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ;
@@ -6318,11 +6314,11 @@ recipes:MyBestGingerbread a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mjuk_pepparkaka_med_lingon.jpg?width=300> ;
     :instructions "Bake in greased pan for 35 minutes at 325-350 degrees."@en ;
     :name "My Best Gingerbread"@en ;
-    :recipeCategory ns1:Cake ;
-    owl:sameAs dbpedia:Gingerbread .
+    :recipeCategory ns1:Cake .
 
 recipes:OatmealCake a :Recipe ;
     rdfs:label "Parkin (cake)"@en ;
+    :hasDbpediaLink dbpedia:Parkin_\(cake\) ;
     :hasIngredient [ a :Ingredient ;
             :food food:Oatmeal ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -6405,11 +6401,11 @@ recipes:OatmealCake a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/YorkShireParkin.jpg?width=300> ;
     :instructions "Pour the water over the oatmeal.  Let stand for 20 minutes.  Add remaining cake ingredients.  Mix well and pour into a greased 9\"x12\" pan.  Let stand while mixing topping.  To prepare topping:  Mix all ingredients together over low heat, until butter melts.  Spoon over unbaked cake.  Bake 45 minutes at 350 degrees."@en ;
     :name "Oatmeal Cake"@en ;
-    :recipeCategory ns1:Cake ;
-    owl:sameAs dbpedia:Parkin_\(cake\) .
+    :recipeCategory ns1:Cake .
 
 recipes:OatmealCookies a :Recipe ;
     rdfs:label "Oatmeal raisin cookie"@en ;
+    :hasDbpediaLink dbpedia:Oatmeal_raisin_cookie ;
     :hasIngredient [ a :Ingredient ;
             :food food:BrownSugar ;
             :hasStandardMeasurementUnit [ :quantity 1.25 ;
@@ -6472,8 +6468,7 @@ recipes:OatmealCookies a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Archway_Oatmeal_Raisin_cookies.jpg?width=300> ;
     :instructions "Mix ingredients in the order given.  Drop by teaspoonful onto a cookie sheet.  Bake 8-10 minutes at 350 degrees."@en ;
     :name "Oatmeal Cookies"@en ;
-    :recipeCategory ns1:Cookie ;
-    owl:sameAs dbpedia:Oatmeal_raisin_cookie .
+    :recipeCategory ns1:Cookie .
 
 recipes:OatmealFudgeBars a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -6558,6 +6553,7 @@ Fudge Layer:  Preheat oven to 350 degrees. In small sauce pan combine chocolate 
 recipes:OldFashionedApplePie a :Recipe ;
     rdfs:label "Apple pie"@en,
         "Tarte aux pommes"@fr ;
+    :hasDbpediaLink dbpedia:Apple_pie ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sliced ;
             :hasStandardMeasurementUnit [ :quantity 5.0 ;
@@ -6586,12 +6582,12 @@ recipes:OldFashionedApplePie a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Small_apple_pie_8.jpg?width=300> ;
     :instructions "Combine first 4 ingredients.  Put in unbaked pie shell.  Slice butter on top. Cover with top crust.  Bake at 350 degrees for 1 hour."@en ;
     :name "Old Fashioned Apple Pie"@en ;
-    :recipeCategory ns1:Pie ;
-    owl:sameAs dbpedia:Apple_pie .
+    :recipeCategory ns1:Pie .
 
 recipes:Orange-PoppySeedPoundCake a :Recipe ;
     rdfs:label "Poppy seed"@en,
         "Graine de pavot"@fr ;
+    :hasDbpediaLink dbpedia:Poppy_seed ;
     :hasIngredient [ a :Ingredient ;
             :food food:Butter ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -6660,8 +6656,7 @@ recipes:Orange-PoppySeedPoundCake a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Poppy_seeds.jpg?width=300> ;
     :instructions "Preheat oven to 325 degrees.  Grease and flour a 9x5x3 inch loaf pan; tap out excess flour.  In large bowl beat together softened butter, sugar, vanilla, and orange peel until pale and fluffy.  Beat in flour, then remaining ingredients, except the glaze (powdered sugar and 2 1/2 tsp. orange juice).  Mix until well blended.  Spread in prepared pan.  With handle of a wooden spoon, make 1/2 inch deep score down center length of batter.  Bake 50-60 minutes, until wooden pick inserted in center comes out clean.  Cool in pan on rack 30 minutes; invert onto rack; remove pan.  Cool completely.  To prepare glaze seal powdered sugar and orange juice in small zipper-style bag.  Gently massage mixture with fingers until blended and smooth.  Snip off corner of bag.  Drizzle glaze over cake.  Let stand 1 hour or until glaze is set."@en ;
     :name "Orange-Poppy Seed Pound Cake"@en ;
-    :recipeCategory ns1:Cake ;
-    owl:sameAs dbpedia:Poppy_seed .
+    :recipeCategory ns1:Cake .
 
 recipes:OrangeAngelFoodCake a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -6721,6 +6716,7 @@ Bake at 350 degrees for 30 to 40 minutes,"""@en ;
 recipes:OvenFriedChicken a :Recipe ;
     rdfs:label "Fried chicken"@en,
         "Poulet frit"@fr ;
+    :hasDbpediaLink dbpedia:Fried_chicken ;
     :hasIngredient [ a :Ingredient ;
             :food food:Chicken ;
             :hasImperialMeasurementUnit [ :quantity 2.0 ;
@@ -6758,8 +6754,7 @@ recipes:OvenFriedChicken a :Recipe ;
             :name "butter"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Fried-Chicken-Set.jpg?width=300> ;
     :instructions "Mix soup, milk, onion, and parley. Dip chicken in this, then into crumbs. Bake at 400 degrees for 1 hour. Drizzle butter over chicken."@en ;
-    :name "Oven Fried Chicken"@en ;
-    owl:sameAs dbpedia:Fried_chicken .
+    :name "Oven Fried Chicken"@en .
 
 recipes:ParsleyandParmasenBakedChicken a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -6815,6 +6810,7 @@ recipes:ParsleyandParmasenBakedChicken a :Recipe ;
 
 recipes:PastaPrimavera a :Recipe ;
     rdfs:label "Pasta primavera"@en ;
+    :hasDbpediaLink dbpedia:Pasta_primavera ;
     :hasIngredient [ a :Ingredient ;
             :food food:Linguine ;
             :hasImperialMeasurementUnit [ :quantity 8.0 ;
@@ -6874,8 +6870,7 @@ recipes:PastaPrimavera a :Recipe ;
     :instructions """For pesto, in a blender container or food processor bowl. Place fresh basil or parsley, red or green pepper, mayonnaise, parmesan cheese, lemon juice, salt, red pepper and black pepper. Cover; blend or process till pureed. Set aside.
 In a large amount of boiling salted water cook pasta for 6 minutes. Add carrots and onion. Return to boiling; cook for 2 minutes. Add zucchini or yellow squash. return to boiling; cook for 2 minutes more.
 Drain pasta and vegetables; return to saucepan. Stir in pesto; add chicken to turkey. Toss well to combine. Cook over very low heat for 2 minutes or until heated through, tossing occasionally. Serve immediately. Makes 4 servings."""@en ;
-    :name "Pasta Primavera"@en ;
-    owl:sameAs dbpedia:Pasta_primavera .
+    :name "Pasta Primavera"@en .
 
 recipes:PeaSalad a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -6991,6 +6986,7 @@ recipes:PeachParfaitPie a :Recipe ;
 
 recipes:PeanutButterCookies a :Recipe ;
     rdfs:label "Peanut butter cookie"@en ;
+    :hasDbpediaLink dbpedia:Peanut_butter_cookie ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sugar ;
             :hasStandardMeasurementUnit [ :quantity 1.25 ;
@@ -7038,12 +7034,12 @@ recipes:PeanutButterCookies a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Peanut_butter_cookies,_September_2009.jpg?width=300> ;
     :instructions "Form into balls.  Flatten with fork dipped in flour or sugar. Bake for 8 minutes at 375 degrees."@en ;
     :name "Peanut Butter Cookies"@en ;
-    :recipeCategory ns1:Cookie ;
-    owl:sameAs dbpedia:Peanut_butter_cookie .
+    :recipeCategory ns1:Cookie .
 
 recipes:PeanutButterIceCreamPie a :Recipe ;
     rdfs:label "Pecan pie"@en,
         "Tarte aux pacanes"@fr ;
+    :hasDbpediaLink dbpedia:Pecan_pie ;
     :hasIngredient [ a :Ingredient ;
             :food food:Cream ;
             :hasImperialMeasurementUnit [ :quantity 1.0 ;
@@ -7077,8 +7073,7 @@ recipes:PeanutButterIceCreamPie a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pecan_pie,_November_2010.jpg?width=300> ;
     :instructions "Mix graham cracker crumbs, sugar, and melted margarine.  Press into 9\" pie pan.  Chill.  To make filling whip 1/2 cup whipping cream.  Place ice cream in a bowl and stir to soften.  Fold in peanut butter; then fold in whipped cream.  Spoon mixture into crust.  Freeze about 5 hours.  Remove from freezer about 15 minutes before serving."@en ;
     :name "Peanut Butter Ice Cream Pie"@en ;
-    :recipeCategory ns1:Pie ;
-    owl:sameAs dbpedia:Pecan_pie .
+    :recipeCategory ns1:Pie .
 
 recipes:PeanutButterPie a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -7145,6 +7140,7 @@ recipes:Peas a :Recipe ;
 recipes:PieCrust a :Recipe ;
     rdfs:label "Shortcrust pastry"@en,
         "Pâte brisée"@fr ;
+    :hasDbpediaLink dbpedia:Shortcrust_pastry ;
     :hasIngredient [ a :Ingredient ;
             :food food:Flour ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
@@ -7168,12 +7164,12 @@ recipes:PieCrust a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Recette_pate_brisee_etape_8.jpg?width=300> ;
     :instructions "Mix flour, salt, and shortening.  Stir in water enough to bind mixture together to form soft dough.  Makes two 9\" pie crusts or 1 double crust.  For double crust pie bake at 350 degrees for 1 hour.  For pie shell bake at 400 degrees for 10 minutes."@en ;
     :name "Pie Crust"@en ;
-    :recipeCategory ns1:Pie ;
-    owl:sameAs dbpedia:Shortcrust_pastry .
+    :recipeCategory ns1:Pie .
 
 recipes:Pineapple-CarrotCake a :Recipe ;
     rdfs:label "Carrot cake"@en,
         "Gâteau aux carottes"@fr ;
+    :hasDbpediaLink dbpedia:Carrot_cake ;
     :hasIngredient [ a :Ingredient ;
             :food food:CreamCheese ;
             :hasImperialMeasurementUnit [ :quantity 3.0 ;
@@ -7256,11 +7252,11 @@ recipes:Pineapple-CarrotCake a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Carrot_cake_at_America_Graffiti_(cropped).jpg?width=300> ;
     :instructions "Mix all cake ingredients.  Bake in greased and floured 9\"x13\" pan at 350 degrees for 35 minutes.  Frost when cool."@en ;
     :name "Pineapple-Carrot Cake*"@en ;
-    :recipeCategory ns1:Cake ;
-    owl:sameAs dbpedia:Carrot_cake .
+    :recipeCategory ns1:Cake .
 
 recipes:PineappleCake a :Recipe ;
     rdfs:label "Pineapple cake"@en ;
+    :hasDbpediaLink dbpedia:Pineapple_cake ;
     :hasIngredient [ a :Ingredient ;
             :food food:Pineapple ;
             :hasImperialMeasurementUnit [ :quantity 2.0 ;
@@ -7284,8 +7280,7 @@ recipes:PineappleCake a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pineapple_Pastry.jpg?width=300> ;
     :instructions "Spread pineapple in baking dish.  Sprinkle cake mix on this.  Dice butter on top. Sprinkle with almonds.  Bake at 350 degrees for 30 minutes."@en ;
     :name "Pineapple Cake"@en ;
-    :recipeCategory ns1:Cake ;
-    owl:sameAs dbpedia:Pineapple_cake .
+    :recipeCategory ns1:Cake .
 
 recipes:PineappleGrahamBars a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -7897,8 +7892,6 @@ recipes:SaucyShrimpOverChineseNoodleCakes a :Recipe ;
     :name "Saucy Shrimp Over Chinese Noodle Cakes"@en .
 
 recipes:SauteZucchini a :Recipe ;
-    rdfs:label "Sundubu-jjigae"@en,
-        "Sundubu jjigae"@fr ;
     :hasIngredient [ a :Ingredient ;
             :food food:Zucchini ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
@@ -7914,10 +7907,8 @@ recipes:SauteZucchini a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
                     :unit measurements:Tablespoon ] ;
             :name "butter"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Sundubu-jjigae.jpg?width=300> ;
     :instructions "Melt butter in skillet. Slice zucchini thin, Add garlic. Cover and simmer for 5 minutes. Sprinkle with parmesan cheese. Cover and cook 5 minutes longer."@en ;
-    :name "Saute Zucchini"@en ;
-    owl:sameAs dbpedia:Sundubu-jjigae .
+    :name "Saute Zucchini"@en .
 
 recipes:SautedChickenBreats a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -8078,6 +8069,7 @@ Cover, cook 20 minutes. Pour over chicken. Bake covered at 375 degrees for 1 hou
 recipes:SavoryGoulash a :Recipe ;
     rdfs:label "Comfort food"@en,
         "Aliment-réconfort"@fr ;
+    :hasDbpediaLink dbpedia:Comfort_food ;
     :hasIngredient [ a :Ingredient ;
             :food food:Steak ;
             :hasImperialMeasurementUnit [ :quantity 1.5 ;
@@ -8119,8 +8111,7 @@ recipes:SavoryGoulash a :Recipe ;
             :name "sliced onions"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chicken_noodle_soup_(cropped).jpg?width=300> ;
     :instructions "Brown onion and meat. Add tomato sauce and water. Cook for 2 hours and serve over hot noodles."@en ;
-    :name "Savory Goulash"@en ;
-    owl:sameAs dbpedia:Comfort_food .
+    :name "Savory Goulash"@en .
 
 recipes:SherryWineCake a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -8270,6 +8261,7 @@ recipes:Sitr-FryBeefandBroccoli a :Recipe ;
 recipes:Snickerdoodles a :Recipe ;
     rdfs:label "Snickerdoodle"@en,
         "Snickerdoodle"@fr ;
+    :hasDbpediaLink dbpedia:Snickerdoodle ;
     :hasIngredient [ a :Ingredient ;
             :food food:Flour ;
             :hasStandardMeasurementUnit [ :quantity 2.75 ;
@@ -8317,8 +8309,7 @@ recipes:Snickerdoodles a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pile_of_snickerdoodles.jpg?width=300> ;
     :instructions "Mix first 7 ingredients.  Roll in balls.  Dip in mixture of cinnamon and sugar.  Bake for 8-10 minutes at 375 degrees.  Makes 4 dozen."@en ;
     :name "Snickerdoodles"@en ;
-    :recipeCategory ns1:Cookie ;
-    owl:sameAs dbpedia:Snickerdoodle .
+    :recipeCategory ns1:Cookie .
 
 recipes:SoftSugarCookies a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -8473,6 +8464,7 @@ Line bottom of baking dish with half of the bacon. Cover with onion. Sprinkle on
 recipes:SourCreamEnchiladas a :Recipe ;
     rdfs:label "Enchilada"@en,
         "Enchilada"@fr ;
+    :hasDbpediaLink dbpedia:Enchilada ;
     :hasIngredient [ a :Ingredient ;
             :food food:SourCream ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -8509,12 +8501,12 @@ recipes:SourCreamEnchiladas a :Recipe ;
             :name "corn tortillas"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Enchilada_Rice_Beans.jpg?width=300> ;
     :instructions "Blend sour cream, onions, cumin, and cheese. Heat tortillas in oil to make them flexible. Put small amount of sauce in bottom of baking dish. Roll filling in tortillas. Place in pan. Put remained of sauce over top. Top with cheese. Bake at 375 degrees for 20 minutes. Make 6 servings. This recipe also works well for chicken enchiladas. Just add two cooked chicken breasts, cut into bite-size pieces."@en ;
-    :name "Sour Cream Enchiladas"@en ;
-    owl:sameAs dbpedia:Enchilada .
+    :name "Sour Cream Enchiladas"@en .
 
 recipes:SourCreamRaisinPie a :Recipe ;
     rdfs:label "Cheesecake"@en,
         "Cheesecake"@fr ;
+    :hasDbpediaLink dbpedia:Cheesecake ;
     :hasIngredient [ a :Ingredient ;
             :food food:Raisins ;
             :hasStandardMeasurementUnit [ :quantity 1.5 ;
@@ -8557,12 +8549,12 @@ recipes:SourCreamRaisinPie a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/My_first_cheesecake_cropped.jpg?width=300> ;
     :instructions "Boil raisins in water until plump.  Add flour and sugar.  Cook to thicken slightly then add egg yolks, sour cream, vanilla and nutmeg.  Pour into 9\" bottom crust.  Add top crust.  Sprinkle with sugar.  Bake 50 minutes at 350 degrees."@en ;
     :name "Sour Cream Raisin Pie"@en ;
-    :recipeCategory ns1:Pie ;
-    owl:sameAs dbpedia:Cheesecake .
+    :recipeCategory ns1:Pie .
 
 recipes:SouthCarolinaCobbler a :Recipe ;
     rdfs:label "Cobbler (food)"@en,
         "Cobbler (nourriture)"@fr ;
+    :hasDbpediaLink dbpedia:Cobbler_\(food\) ;
     :hasIngredient [ a :Ingredient ;
             :food food:Peaches ;
             :hasStandardMeasurementUnit [ :quantity 4.0 ;
@@ -8603,12 +8595,12 @@ recipes:SouthCarolinaCobbler a :Recipe ;
 Melt butter in 2 quart baking dish. In a bowl, combine flour, baking powder, salt and 1/2 cup sugar. Stir in milk. Mix well. Pour evenly over butter. Do not stur. Spoon peaches on top.
 Bake at 350 degrees for 50-55 minutes, until golden brown.
 Serve with ice cream."""@en ;
-    :name "South Carolina Cobbler"@en ;
-    owl:sameAs dbpedia:Cobbler_\(food\) .
+    :name "South Carolina Cobbler"@en .
 
 recipes:SpanishCreamPudding a :Recipe ;
     rdfs:label "Bread pudding"@en,
         "Pudding au pain"@fr ;
+    :hasDbpediaLink dbpedia:Bread_pudding ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sugar ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ;
@@ -8640,11 +8632,11 @@ recipes:SpanishCreamPudding a :Recipe ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Rew13c05-745a_Bread_Pudding.jpg?width=300> ;
     :instructions "Separate eggs. Put whites in large bowl. Mix sugar, gelatin and salt in double boiler, add milk. Place over medium heat. Stir well until gelatin dissolves, 3-6 minutes. Beat egg yolks with fork, gradually add milk. Cook in double boiler, but do not let water boil. Cook 10-15 minutes. Add flavoring. Drip at side of egg whites. Fold in gradually."@en ;
-    :name "Spanish Cream Pudding"@en ;
-    owl:sameAs dbpedia:Bread_pudding .
+    :name "Spanish Cream Pudding"@en .
 
 recipes:SpecialPruneCake a :Recipe ;
     rdfs:label "Plum cake"@en ;
+    :hasDbpediaLink dbpedia:Plum_cake ;
     :hasIngredient [ a :Ingredient ;
             :food food:Oil ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -8738,11 +8730,11 @@ recipes:SpecialPruneCake a :Recipe ;
     :instructions """Blend sugar and oil.  Add beaten eggs.  Add dry ingredients with buttermilk.  Add vanilla, prunes, and nuts.  Pour into buttered pan about 12"x8" in size.  Bake at 300 degrees for 45 minutes.  When cake is done and brown remove from oven and while still hot cover with icing.  
 Icing Directions:  Put all ingredients in medium saucepan and boil to soft ball stage.  This will take 15 or 20 minutes, so start this before cake is to come out of the oven so icing may be poured on to cake immediately.  Leave in pan, cut in squares to serve."""@en ;
     :name "Special Prune Cake*"@en ;
-    :recipeCategory ns1:Cake ;
-    owl:sameAs dbpedia:Plum_cake .
+    :recipeCategory ns1:Cake .
 
 recipes:SpicyFruitandNutCake a :Recipe ;
     rdfs:label "Madeira cake"@en ;
+    :hasDbpediaLink dbpedia:Madeira_cake ;
     :hasIngredient [ a :Ingredient ;
             :food food:Prunes ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -8825,8 +8817,7 @@ recipes:SpicyFruitandNutCake a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cherry_madeira_cake.jpg?width=300> ;
     :instructions "Bake in greased and floured 9\" bundt pan at 350 degrees for 45-50 minutes.  Cool 15 minutes.  Loosen around edges with thin spatula.  Pierce with a wooden pick.  Glaze directions:  Cook glaze ingredients over medium heat until full boil and butter melts.  Ladle glaze over cake."@en ;
     :name "Spicy Fruit and Nut Cake*"@en ;
-    :recipeCategory ns1:Cake ;
-    owl:sameAs dbpedia:Madeira_cake .
+    :recipeCategory ns1:Cake .
 
 recipes:SpicySingaporeWings a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -8905,6 +8896,7 @@ Sprinkle with cheese. Place under broiler 2 or 3 minutes until eggs are complete
 recipes:SpinachPie a :Recipe ;
     rdfs:label "Spanakopita"@en,
         "Spanakópita"@fr ;
+    :hasDbpediaLink dbpedia:Spanakopita ;
     :hasIngredient [ a :Ingredient ;
             :food food:Spinach ;
             :hasImperialMeasurementUnit [ :quantity "30" ;
@@ -8966,11 +8958,11 @@ Brush a 13x9x2 inch baking pan lightly with some of the melted butter. In bottom
 Cover with 8 more leaves, brushing each with butter; pour any remaining melted butter over the top. Using scissors, trim off any uneven edges of pastry. Cut through top pastry layer to form 18 rectangles, about 3 by 2 inches.
 Bake 30 to 35 minutes, or until top crust is puffy and golden. Serve warm.
 Makes 18 servings."""@en ;
-    :name "Spinach Pie"@en ;
-    owl:sameAs dbpedia:Spanakopita .
+    :name "Spinach Pie"@en .
 
 recipes:SpinachSalad a :Recipe ;
     rdfs:label "Spinach salad"@en ;
+    :hasDbpediaLink dbpedia:Spinach_salad ;
     :hasIngredient [ a :Ingredient ;
             :food food:Spinach ;
             :hasImperialMeasurementUnit [ :quantity 0.5 ;
@@ -9022,8 +9014,7 @@ recipes:SpinachSalad a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Flickr_-_cyclonebill_-_Salat_af_spinat,_blommetomater,_gedeost_og_valnøddeolie.jpg?width=300> ;
     :instructions "Mix spinach and thinly sliced onion.  Fry bacon until crisp, drain.  To drippings add vinegar, water, sugar, and salt.  Bring to a boil.  Beat egg until light.  Add sour cream.  Pour boiling liquid over egg then pour back in skillet.  Cook over low heat until thick.  Pour over spinach, add bacon and chopped egg.  Toss lightly."@en ;
     :name "Spinach Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings ;
-    owl:sameAs dbpedia:Spinach_salad .
+    :recipeCategory ns1:SaladAndDressings .
 
 recipes:SpinachSaladwithAlfalfaSprouts a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -9037,6 +9028,7 @@ recipes:SpinachSaladwithAlfalfaSprouts a :Recipe ;
 
 recipes:SpinachSaladwithAvocado a :Recipe ;
     rdfs:label "Spinach salad"@en ;
+    :hasDbpediaLink dbpedia:Spinach_salad ;
     :hasIngredient [ a :Ingredient ;
             :food food:Spinach ;
             :hasImperialMeasurementUnit [ :quantity 1.0 ;
@@ -9108,8 +9100,7 @@ recipes:SpinachSaladwithAvocado a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Flickr_-_cyclonebill_-_Salat_af_spinat,_blommetomater,_gedeost_og_valnøddeolie.jpg?width=300> ;
     :instructions "Clean spinach.  Tear for salad.  Cut avocado in small pieces.  Sprinkle with lemon.  Slice onion as thin as possible.  Combine spinach, avocado, onion, and oranges.  Mix remaining ingredients to make dressing.  Pour dressing over salad.  Sprinkle on bacon bits."@en ;
     :name "Spinach Salad with Avocado"@en ;
-    :recipeCategory ns1:SaladAndDressings ;
-    owl:sameAs dbpedia:Spinach_salad .
+    :recipeCategory ns1:SaladAndDressings .
 
 recipes:SpinachSouffle a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -9152,6 +9143,7 @@ recipes:SpinachSouffle a :Recipe ;
 recipes:SpinachStrudels a :Recipe ;
     rdfs:label "Strudel"@en,
         "Strudel"@fr ;
+    :hasDbpediaLink dbpedia:Strudel ;
     :hasIngredient [ a :Ingredient ;
             :food food:Spinach ;
             :hasImperialMeasurementUnit [ :quantity 3.0 ;
@@ -9197,8 +9189,7 @@ recipes:SpinachStrudels a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Strudel.jpg?width=300> ;
     :instructions """Butter baking sheets. Steam spinach for 5 minutes. Squeeze out moisture. Melt 6 tablespoons of butter in a heavy skillet over medium heat. Add shallots, cook for 3 minutes. Add spinach and cook until dry, about 8 minutes. Transfer to large bowl. Mix in all cheeses. Arrange 1 phyllo sheet on kitchen towel. Brush with melted butter. Sprinkle with 1 tablespoon of crumbs, top with second sheet, butter and crumbs. Repeat with third, butter and crumbs, spread 1/6 of spinach mix down 1 long side of pastry, 2 inches from edge. Fold 2 inches over filling, then fold in sides. Roll up. Put seam side down on baking sheet. Repeat with remaining filling and phyllo. Cut each strudel into 4 slices,cutting only 1/3 through. Brush with butter.
 Bake at 350 degrees for 15 minutes. After brushing with egg increase to 400 degrees and bake for 5 minutes more. Cut rest of the way through. Arrange on platter with parsley sprigs."""@en ;
-    :name "Spinach Strudels"@en ;
-    owl:sameAs dbpedia:Strudel .
+    :name "Spinach Strudels"@en .
 
 recipes:StrawberrySpiceLoaf a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -9251,6 +9242,7 @@ recipes:StrawberrySpiceLoaf a :Recipe ;
 
 recipes:StuffedGreenPeppers a :Recipe ;
     rdfs:label "Stuffed peppers"@en ;
+    :hasDbpediaLink dbpedia:Stuffed_peppers ;
     :hasIngredient [ a :Ingredient ;
             :food food:Hamburger ;
             :hasImperialMeasurementUnit [ :quantity 1.0 ;
@@ -9291,11 +9283,11 @@ recipes:StuffedGreenPeppers a :Recipe ;
             :name "egg"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Quinoa_stuffed_peppers.jpg?width=300> ;
     :instructions "Parboil peppers. Mix all the above. Fill peppers. Place in casserole. Pour tomato sauce over top. Bake 1 hour at 350 degrees."@en ;
-    :name "Stuffed Green Peppers"@en ;
-    owl:sameAs dbpedia:Stuffed_peppers .
+    :name "Stuffed Green Peppers"@en .
 
 recipes:StuffedZucchini a :Recipe ;
     rdfs:label "Stuffed squash"@en ;
+    :hasDbpediaLink dbpedia:Stuffed_squash ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sausage ;
             :hasImperialMeasurementUnit [ :quantity 0.5 ;
@@ -9321,8 +9313,7 @@ recipes:StuffedZucchini a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Punjene_tikvice.jpg?width=300> ;
     :instructions """Cook zucchini to fork tender. Slice lengthwise. Remove center pulp to bowl. Brown hambugrer or sausage with chopped onion. Mix with pulp. Add croutons that have been sof10ed in water boullion cube. Add spices to taste. Stir in 2 eggs. Mixture will be quite soft. Spoon into zucchini shells. Sprinkle with parmesan and melted butter or olive oil.
 Bake 1/2 hour at 350 degrees until filling is set."""@en ;
-    :name "Stuffed Zucchini"@en ;
-    owl:sameAs dbpedia:Stuffed_squash .
+    :name "Stuffed Zucchini"@en .
 
 recipes:SummerFruitSalad a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -9384,6 +9375,7 @@ recipes:SummerSquash a :Recipe ;
 recipes:SweetandSourMeatballs a :Recipe ;
     rdfs:label "Pickled cucumber"@en,
         "Cornichon"@fr ;
+    :hasDbpediaLink dbpedia:Pickled_cucumber ;
     :hasIngredient [ a :Ingredient ;
             :food food:Hamburger ;
             :hasImperialMeasurementUnit [ :quantity 1.5 ;
@@ -9464,8 +9456,7 @@ recipes:SweetandSourMeatballs a :Recipe ;
             :name "butter"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pickle.jpg?width=300> ;
     :instructions "Shape into balls. Roll in flour and brown in hot oil. Bring to boil. Pour over meat. Cook for 30 minutes."@en ;
-    :name "Sweet and Sour Meatballs"@en ;
-    owl:sameAs dbpedia:Pickled_cucumber .
+    :name "Sweet and Sour Meatballs"@en .
 
 recipes:SweetandSourPork a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -10962,6 +10953,7 @@ recipes:TheSpinach a :Recipe ;
 
 recipes:ThreeCheeseSpinach a :Recipe ;
     rdfs:label "Minas cheese"@en ;
+    :hasDbpediaLink dbpedia:Minas_cheese ;
     :hasIngredient [ a :Ingredient ;
             :food food:Mushroom ;
             :hasImperialMeasurementUnit [ :quantity 4.0 ;
@@ -11001,8 +10993,7 @@ recipes:ThreeCheeseSpinach a :Recipe ;
 Add onion mixture to spinach, along with cottage cheese, parmesan cheese, eggs, salt and pepper. Stir well to blend. Microwave, uncovered, 8 to 11 minutes, rotating dish if necessary every 3 minutes, until misture is headted through and set.
 Sprinkle grated cheese over top and dust lightly with paprika. Microwave about 1 minute longer to melt cheese. Let stand 3 minutes before serving.
 Yields 6 to 8 servings."""@en ;
-    :name "Three Cheese Spinach"@en ;
-    owl:sameAs dbpedia:Minas_cheese .
+    :name "Three Cheese Spinach"@en .
 
 recipes:ThreeLayerChocolateMayonnaiseCake a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -11115,6 +11106,7 @@ recipes:TopRamenSalad a :Recipe ;
 
 recipes:TortillaSoup a :Recipe ;
     rdfs:label "Tortilla soup"@en ;
+    :hasDbpediaLink dbpedia:Tortilla_soup ;
     :hasIngredient [ a :Ingredient ;
             :food food:Green ;
             :hasImperialMeasurementUnit [ :quantity 4.0 ;
@@ -11171,8 +11163,7 @@ recipes:TortillaSoup a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Tortilla_soup_(49461127193).jpg?width=300> ;
     :instructions "Cut 3 thin slices from the lime; set aside.  Squeeze 1 tsp juice from remaining lime; set aside.  In 2-qt. saucepan over medium heat, in 1 tbsp hot oil, cook onion, cumin, oregano, and garlic until onion is tender.  Add broth, water, tomato, chiles, and reserved lime juice.  Heat to boiling.  Reduce heat to low and cook for 10 minutes.  Meanwhile, cut tortillas into thin strips.  In a 10-inch skillet heat 1/2 inch oil to 375 degree.  Fry tortilla strips, a few at a time until crisp.  Remove to paper towel to drain.  Place several tortilla strips in 3 bowls.  Ladle soup into bowls; sprinkle with cheese.  Top with reserved lime slices and lettuce.  Serve immediately."@en ;
     :name "Tortilla Soup"@en ;
-    :recipeCategory ns1:Soup ;
-    owl:sameAs dbpedia:Tortilla_soup .
+    :recipeCategory ns1:Soup .
 
 recipes:TulelakePotatoCasserole a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -17659,6 +17650,7 @@ recipes:TwoLayerChocolateMayonnaiseCake a :Recipe ;
 
 recipes:UpsideDownCake a :Recipe ;
     rdfs:label "Upside-down cake"@en ;
+    :hasDbpediaLink dbpedia:Upside-down_cake ;
     :hasIngredient [ a :Ingredient ;
             :food food:Butter ;
             :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
@@ -17706,8 +17698,7 @@ recipes:UpsideDownCake a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pineapple-upside-down-cake.jpg?width=300> ;
     :instructions "Melt butter in oven-proof skillet.  Add brown sugar.  Arrange fruit in pan.  To make cake batter, beat eggs about 5 minutes until thick and lemon colored.  Gradually add sugar.  Then add all at once fruit juice an vanilla.  Sift together and beat in flour, baking powder, and salt.  Pour batter over fruit an bake until done, about 45 minutes at 350 degrees."@en ;
     :name "Upside Down Cake"@en ;
-    :recipeCategory ns1:Cake ;
-    owl:sameAs dbpedia:Upside-down_cake .
+    :recipeCategory ns1:Cake .
 
 recipes:VealParmigan a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -17789,6 +17780,7 @@ recipes:VealParmigan a :Recipe ;
 recipes:VealScallopini a :Recipe ;
     rdfs:label "Scaloppine"@en,
         "Scaloppine"@fr ;
+    :hasDbpediaLink dbpedia:Scaloppine ;
     :hasIngredient [ a :Ingredient ;
             :food food:Steak ;
             :hasImperialMeasurementUnit [ :quantity 2.0 ;
@@ -17821,8 +17813,7 @@ recipes:VealScallopini a :Recipe ;
             :name "onion"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Scaloppine_al_limone.jpg?width=300> ;
     :instructions "Cut meat into 2 inch pieces and coat in flour. Brown in oil. Add mushrooms, salt, pepper, and wine. Pour over meat in a casserole. Cook in covered casserole for 1 hour at 375 degrees or a heavy covered skillet at low heat for 45 minutes."@en ;
-    :name "Veal Scallopini"@en ;
-    owl:sameAs dbpedia:Scaloppine .
+    :name "Veal Scallopini"@en .
 
 recipes:Walnut-Raisinpie a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -17934,6 +17925,7 @@ recipes:WalnutSquares a :Recipe ;
 recipes:WildMushroomandSpinachLasanga a :Recipe ;
     rdfs:label "Lasagna"@en,
         "Lasagnes"@fr ;
+    :hasDbpediaLink dbpedia:Lasagna ;
     :hasIngredient [ a :Ingredient ;
             :food food:Noodles ;
             :hasImperialMeasurementUnit [ :quantity 1.0 ;
@@ -18025,12 +18017,12 @@ Stir in gorgonzola, 1/2 up parmesan and the tomato paste. Continue cooking and s
 In large mixing bowl, combine spinach, ricotta, 3/4 cup parmesan, eggs, basil, nutmeg, salt and pepper to taste with remaining mushrooms mushroom mixture; stir to blend.
 (Both sauce and filling can be made a day in advance, covered tightly and refrigerated; reheat before assembling lasagna.)
 Preheat oven to 375 degrees. Spread a thin layer of sauce on bottom of 2-quart casserole or deep baking dish. Place layer of noodles over sauce. Spoon layer of spinach/mushroom filling over noodles and top with sauce. Repeat layers, ending with noodles and thin layer of sauce. Sprinkle remaining 1/4 cup parmesan over top. Bake about 35 to 40 minutes or until browned and bubbly. If top browns before sauce is bubbly, cover loosely with aluminum foil. Yields 6 to 8 servings."""@en ;
-    :name "Wild Mushroom and Spinach Lasanga"@en ;
-    owl:sameAs dbpedia:Lasagna .
+    :name "Wild Mushroom and Spinach Lasanga"@en .
 
 recipes:Zucchini-HamCheesePie a :Recipe ;
     rdfs:label "Quesadilla"@en,
         "Quesadilla"@fr ;
+    :hasDbpediaLink dbpedia:Quesadilla ;
     :hasIngredient [ a :Ingredient ;
             :food food:Zucchini ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ;
@@ -18088,8 +18080,7 @@ recipes:Zucchini-HamCheesePie a :Recipe ;
     :instructions """Saute onion, garlic, and zucchini in oil about 5 minutes, until tender. Removed from heat. Add ham, cheese, sour cream, eggs, and seasoning. Spoon into baked pie shell.
 Melt 2 tablespoons butter. Mix with 1/2 cup bread crumbs and 1/4 cup grated parmesan. Sprinkle in 2 inch ring around filling.
 Bake 350 degrees at 45 to 50 minutes until set. Let stand 10 minutes before serving."""@en ;
-    :name "Zucchini-Ham Cheese Pie"@en ;
-    owl:sameAs dbpedia:Quesadilla .
+    :name "Zucchini-Ham Cheese Pie"@en .
 
 recipes:ZucchiniAppleSlaw a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -18246,8 +18237,8 @@ food:AlmondExtract a :Food,
         skos:Concept ;
     rdfs:label "Almond"@en,
         "Amandier"@fr ;
+    :hasDbpediaLink dbpedia:Almond ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Prunus_dulcis_-_Köhler–s_Medizinal-Pflanzen-250.jpg?width=300> ;
-    owl:sameAs dbpedia:Almond ;
     skos:broaderTransitive food:Fruit,
         food:Nuts .
 
@@ -18255,97 +18246,97 @@ food:AngelFoodCake a :Food,
         skos:Concept ;
     rdfs:label "Angel food cake"@en,
         "Gâteau des anges"@fr ;
+    :hasDbpediaLink dbpedia:Angel_food_cake ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chocolate_angel_food_cake_with_various_toppings.jpg?width=300> ;
-    owl:sameAs dbpedia:Angel_food_cake ;
     skos:broader dbpedia:Sponge_cake .
 
 food:Anise a :Food,
         skos:Concept ;
     rdfs:label "Anise"@en,
         "Anis vert"@fr ;
+    :hasDbpediaLink dbpedia:Anise ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Koehler1887-PimpinellaAnisum.jpg?width=300> ;
-    owl:sameAs dbpedia:Anise ;
     skos:broaderTransitive food:Spice .
 
 food:Bamboo a :Food,
         skos:Concept ;
     rdfs:label "Bamboo"@en,
         "Bambusoideae"@fr ;
+    :hasDbpediaLink dbpedia:Bamboo ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Bamboo_Forest,_Arashiyama,_Kyoto,_Japan.jpg?width=300> ;
-    owl:sameAs dbpedia:Bamboo ;
     skos:broaderTransitive food:Vegetable .
 
 food:BeefBouillon a :Food,
         skos:Concept ;
     rdfs:label "Bouillon cube"@en,
         "Bouillon cube"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Brühwürfel-1.jpg?width=300> ;
-    owl:sameAs dbpedia:Bouillon_cube .
+    :hasDbpediaLink dbpedia:Bouillon_cube ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Brühwürfel-1.jpg?width=300> .
 
 food:Berries a :Food,
         skos:Concept ;
     rdfs:label "Berry"@en,
         "Petit fruit rouge"@fr ;
+    :hasDbpediaLink dbpedia:Berry ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Norwegian_blueberry.jpg?width=300> ;
-    owl:sameAs dbpedia:Berry ;
     skos:broaderTransitive food:Fruit .
 
 food:BlueCheese a :Food,
         skos:Concept ;
     rdfs:label "Blue cheese"@en,
         "Fromage à pâte persillée"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Bleu_de_Gex.jpg?width=300> ;
-    owl:sameAs dbpedia:Blue_cheese .
+    :hasDbpediaLink dbpedia:Blue_cheese ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Bleu_de_Gex.jpg?width=300> .
 
 food:Blueberries a :Food,
         skos:Concept ;
     rdfs:label "Blueberry"@en ;
+    :hasDbpediaLink dbpedia:Blueberry ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Blueberries.jpg?width=300> ;
-    owl:sameAs dbpedia:Blueberry ;
     skos:broaderTransitive food:Fruit .
 
 food:Bourbon a :Food,
         skos:Concept ;
     rdfs:label "Bourbon whiskey"@en,
         "Bourbon (eau-de-vie)"@fr ;
+    :hasDbpediaLink dbpedia:Bourbon_whiskey ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/DecaturBourbons.jpg?width=300> ;
-    owl:sameAs dbpedia:Bourbon_whiskey ;
     skos:broader dbpedia:American_whiskey .
 
 food:Brandy a :Food,
         skos:Concept ;
     rdfs:label "Brandy"@en,
         "Brandy (alcool)"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cognac_glass.jpg?width=300> ;
-    owl:sameAs dbpedia:Brandy .
+    :hasDbpediaLink dbpedia:Brandy ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cognac_glass.jpg?width=300> .
 
 food:ButtonMushrooms a :Food,
         skos:Concept ;
     rdfs:label "Agaricus bisporus"@en,
         "Agaricus bisporus"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/ChampignonMushroom.jpg?width=300> ;
-    owl:sameAs dbpedia:Agaricus_bisporus .
+    :hasDbpediaLink dbpedia:Agaricus_bisporus ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/ChampignonMushroom.jpg?width=300> .
 
 food:CakeFlour a :Food,
         skos:Concept ;
     rdfs:label "Wheat flour"@en,
         "Farine de blé"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Wheat_flour.jpg?width=300> ;
-    owl:sameAs dbpedia:Wheat_flour .
+    :hasDbpediaLink dbpedia:Wheat_flour ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Wheat_flour.jpg?width=300> .
 
 food:Cantaloupe a :Food,
         skos:Concept ;
     rdfs:label "Cantaloupe"@en,
         "Cantaloup"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Meloen_vrucht_met_bloem.jpg?width=300> ;
-    owl:sameAs dbpedia:Cantaloupe .
+    :hasDbpediaLink dbpedia:Cantaloupe ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Meloen_vrucht_met_bloem.jpg?width=300> .
 
 food:Cashews a :Food,
         skos:Concept ;
     rdfs:label "Cashew"@en,
         "Anacardier"@fr ;
+    :hasDbpediaLink dbpedia:Cashew ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cashew_apples.jpg?width=300> ;
-    owl:sameAs dbpedia:Cashew ;
     skos:broaderTransitive food:Fruit,
         food:Nuts .
 
@@ -18353,52 +18344,52 @@ food:CayennePepper a :Food,
         skos:Concept ;
     rdfs:label "Cayenne pepper"@en,
         "Piment de Cayenne"@fr ;
+    :hasDbpediaLink dbpedia:Cayenne_pepper ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Capsicum_annuum_-_Köhler–s_Medizinal-Pflanzen-027.jpg?width=300> ;
-    owl:sameAs dbpedia:Cayenne_pepper ;
     skos:broaderTransitive food:Spice .
 
 food:CelerySalt a :Food,
         skos:Concept ;
     rdfs:label "Celery salt"@en,
         "Sel au céleri"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Celery_Salt,_Penzeys_Spices,_Arlington_Heights_MA.jpg?width=300> ;
-    owl:sameAs dbpedia:Celery_salt .
+    :hasDbpediaLink dbpedia:Celery_salt ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Celery_Salt,_Penzeys_Spices,_Arlington_Heights_MA.jpg?width=300> .
 
 food:Cherries a :Food,
         skos:Concept ;
     rdfs:label "Cherry"@en,
         "Cerise"@fr ;
+    :hasDbpediaLink dbpedia:Cherry ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cherry_season_(48216568227).jpg?width=300> ;
-    owl:sameAs dbpedia:Cherry ;
     skos:broaderTransitive food:Fruit .
 
 food:ChickenWings a :Food,
         skos:Concept ;
     rdfs:label "Buffalo wing"@en,
         "Ailes de poulet à la mode de Buffalo"@fr ;
+    :hasDbpediaLink dbpedia:Buffalo_wing ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Buffalo_wings-01.jpg?width=300> ;
-    owl:sameAs dbpedia:Buffalo_wing ;
     skos:broaderTransitive food:Meat .
 
 food:ChineseNoodles a :Food,
         skos:Concept ;
     rdfs:label "Chinese noodles"@en ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/On_Hing_Noodle_Shop_in_Tuen_Mun.jpg?width=300> ;
-    owl:sameAs dbpedia:Chinese_noodles .
+    :hasDbpediaLink dbpedia:Chinese_noodles ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/On_Hing_Noodle_Shop_in_Tuen_Mun.jpg?width=300> .
 
 food:ChowMeinNoodles a :Food,
         skos:Concept ;
     rdfs:label "Chow mein"@en,
         "Chow mein"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg?width=300> ;
-    owl:sameAs dbpedia:Chow_mein .
+    :hasDbpediaLink dbpedia:Chow_mein ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Homemade_Chow_mein_with_shrimps_and_meat_with_a_choy_and_Choung.jpg?width=300> .
 
 food:Chuck a :Food,
         skos:Concept ;
     rdfs:label "Chuck steak"@en,
         "Paleron"@fr ;
+    :hasDbpediaLink dbpedia:Chuck_steak ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/BeefCutChuck.png?width=300> ;
-    owl:sameAs dbpedia:Chuck_steak ;
     skos:broader dbpedia:Cut_of_beef ;
     skos:broaderTransitive food:Meat .
 
@@ -18406,64 +18397,64 @@ food:CiderVinegar a :Food,
         skos:Concept ;
     rdfs:label "Apple cider vinegar"@en,
         "Vinaigre de cidre"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Apple_Cider_Vinegar_(4108653248).jpg?width=300> ;
-    owl:sameAs dbpedia:Apple_cider_vinegar .
+    :hasDbpediaLink dbpedia:Apple_cider_vinegar ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Apple_Cider_Vinegar_(4108653248).jpg?width=300> .
 
 food:Clams a :Food,
         skos:Concept ;
     rdfs:label "Clam"@en,
         "Palourde"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Clams_on_Sandy_Hook_beaches_-_panoramio.jpg?width=300> ;
-    owl:sameAs dbpedia:Clam .
+    :hasDbpediaLink dbpedia:Clam ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Clams_on_Sandy_Hook_beaches_-_panoramio.jpg?width=300> .
 
 food:CranberrySauce a :Food,
         skos:Concept ;
     rdfs:label "Cranberry sauce"@en,
         "Sauce aux canneberges"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cranberry_Sauce_(3617909597).jpg?width=300> ;
-    owl:sameAs dbpedia:Cranberry_sauce .
+    :hasDbpediaLink dbpedia:Cranberry_sauce ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cranberry_Sauce_(3617909597).jpg?width=300> .
 
 food:CreamedCorn a :Food,
         skos:Concept ;
     rdfs:label "Creamed corn"@en ;
+    :hasDbpediaLink dbpedia:Creamed_corn ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Creamed_corn.jpg?width=300> ;
-    owl:sameAs dbpedia:Creamed_corn ;
     skos:broader dbpedia:Creaming_\(food\) .
 
 food:Crisp a :Food,
         skos:Concept ;
     rdfs:label "Potato chip"@en,
         "Chips"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Potato-Chips.jpg?width=300> ;
-    owl:sameAs dbpedia:Potato_chip .
+    :hasDbpediaLink dbpedia:Potato_chip ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Potato-Chips.jpg?width=300> .
 
 food:Croutons a :Food,
         skos:Concept ;
     rdfs:label "Crouton"@en,
         "Croûton"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Croutons_on_a_salad.jpg?width=300> ;
-    owl:sameAs dbpedia:Crouton .
+    :hasDbpediaLink dbpedia:Crouton ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Croutons_on_a_salad.jpg?width=300> .
 
 food:CrushedRedPepper a :Food,
         skos:Concept ;
     rdfs:label "Crushed red pepper"@en ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/2014_Dried_chilli_flakes.jpg?width=300> ;
-    owl:sameAs dbpedia:Crushed_red_pepper .
+    :hasDbpediaLink dbpedia:Crushed_red_pepper ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/2014_Dried_chilli_flakes.jpg?width=300> .
 
 food:Cucumbers a :Food,
         skos:Concept ;
     rdfs:label "Cucumber"@en,
         "Concombre"@fr ;
+    :hasDbpediaLink dbpedia:Cucumber ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/ARS_cucumber.jpg?width=300> ;
-    owl:sameAs dbpedia:Cucumber ;
     skos:broaderTransitive food:Vegetable .
 
 food:CurryPowder a :Food,
         skos:Concept ;
     rdfs:label "Curry powder"@en,
         "Curry"@fr ;
+    :hasDbpediaLink dbpedia:Curry_powder ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Curry_powder_in_the_spice-bazaar_in_Istanbul.jpg?width=300> ;
-    owl:sameAs dbpedia:Curry_powder ;
     skos:broader dbpedia:Curry ;
     skos:broaderTransitive food:Spice .
 
@@ -18471,120 +18462,120 @@ food:Dates a :Food,
         skos:Concept ;
     rdfs:label "Date palm"@en,
         "Phoenix dactylifera"@fr ;
+    :hasDbpediaLink dbpedia:Date_palm ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Dates005.jpg?width=300> ;
-    owl:sameAs dbpedia:Date_palm ;
     skos:broaderTransitive food:Fruit .
 
 food:DijonMustard a :Food,
         skos:Concept ;
     rdfs:label "Dijon mustard"@en,
         "Moutarde de Dijon"@fr ;
+    :hasDbpediaLink dbpedia:Dijon_mustard ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Senf-5.jpg?width=300> ;
-    owl:sameAs dbpedia:Dijon_mustard ;
     skos:broader dbpedia:Condiment .
 
 food:Eggplant a :Food,
         skos:Concept ;
     rdfs:label "Eggplant"@en,
         "Aubergine"@fr ;
+    :hasDbpediaLink dbpedia:Eggplant ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Solanum_melongena_24_08_2012_(1).jpg?width=300> ;
-    owl:sameAs dbpedia:Eggplant ;
     skos:broaderTransitive food:Vegetable .
 
 food:Filets a :Food,
         skos:Concept ;
     rdfs:label "Fillet (cut)"@en,
         "Filet (viande)"@fr ;
+    :hasDbpediaLink dbpedia:Fillet_\(cut\) ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Doryfill.jpg?width=300> ;
-    owl:sameAs dbpedia:Fillet_\(cut\) ;
     skos:broaderTransitive food:Fish .
 
 food:FishFillets a :Food,
         skos:Concept ;
     rdfs:label "Fish fillet"@en ;
+    :hasDbpediaLink dbpedia:Fish_fillet ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pangasius_meat.jpg?width=300> ;
-    owl:sameAs dbpedia:Fish_fillet ;
     skos:broaderTransitive food:Fish .
 
 food:FoodColoring a :Food,
         skos:Concept ;
     rdfs:label "Food coloring"@en,
         "Colorant alimentaire"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Rainbow_of_food_natural_food_colors.jpg?width=300> ;
-    owl:sameAs dbpedia:Food_coloring .
+    :hasDbpediaLink dbpedia:Food_coloring ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Rainbow_of_food_natural_food_colors.jpg?width=300> .
 
 food:FrenchDressing a :Food,
         skos:Concept ;
     rdfs:label "French dressing"@en ;
+    :hasDbpediaLink dbpedia:French_dressing ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Sandwich_with_Catalina_dressing.jpg?width=300> ;
-    owl:sameAs dbpedia:French_dressing ;
     skos:broader dbpedia:Salad_dressing .
 
 food:GarbanzoBeans a :Food,
         skos:Concept ;
     rdfs:label "Chickpea"@en,
         "Pois chiche"@fr ;
+    :hasDbpediaLink dbpedia:Chickpea ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Sa-whitegreen-chickpea.jpg?width=300> ;
-    owl:sameAs dbpedia:Chickpea ;
     skos:broaderTransitive food:Vegetable .
 
 food:Gorgonzola a :Food,
         skos:Concept ;
     rdfs:label "Gorgonzola"@en,
         "Gorgonzola (fromage)"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/A_big_blue_cheese_from_Holiday_Inn_Golden_Mile_Hong_Kong.jpg?width=300> ;
-    owl:sameAs dbpedia:Gorgonzola .
+    :hasDbpediaLink dbpedia:Gorgonzola ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/A_big_blue_cheese_from_Holiday_Inn_Golden_Mile_Hong_Kong.jpg?width=300> .
 
 food:GrahamCrackers a :Food,
         skos:Concept ;
     rdfs:label "Graham cracker"@en,
         "Biscuit Graham"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Graham-Cracker-Stack.jpg?width=300> ;
-    owl:sameAs dbpedia:Graham_cracker .
+    :hasDbpediaLink dbpedia:Graham_cracker ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Graham-Cracker-Stack.jpg?width=300> .
 
 food:Grapes a :Food,
         skos:Concept ;
     rdfs:label "Grape"@en,
         "Raisin"@fr ;
+    :hasDbpediaLink dbpedia:Grape ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Abhar-iran.jpg?width=300> ;
-    owl:sameAs dbpedia:Grape ;
     skos:broaderTransitive food:Fruit .
 
 food:GreenBeans a :Food,
         skos:Concept ;
     rdfs:label "Green bean"@en,
         "Haricot vert"@fr ;
+    :hasDbpediaLink dbpedia:Green_bean ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Heaps_of_beans.jpg?width=300> ;
-    owl:sameAs dbpedia:Green_bean ;
     skos:broaderTransitive food:Vegetable .
 
 food:Honey a :Food,
         skos:Concept ;
     rdfs:label "Honey"@en,
         "Miel"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Runny_hunny.jpg?width=300> ;
-    owl:sameAs dbpedia:Honey .
+    :hasDbpediaLink dbpedia:Honey ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Runny_hunny.jpg?width=300> .
 
 food:Kelp a :Food,
         skos:Concept ;
     rdfs:label "Kelp"@en,
         "Laminariales"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Kelp_In_Freycinet_Tasmania.jpg?width=300> ;
-    owl:sameAs dbpedia:Kelp .
+    :hasDbpediaLink dbpedia:Kelp ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Kelp_In_Freycinet_Tasmania.jpg?width=300> .
 
 food:Lime a :Food,
         skos:Concept ;
     rdfs:label "Calcium oxide"@en,
         "Chaux (matière)"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Calcium-oxide-3D-vdW.png?width=300> ;
-    owl:sameAs dbpedia:Calcium_oxide .
+    :hasDbpediaLink dbpedia:Calcium_oxide ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Calcium-oxide-3D-vdW.png?width=300> .
 
 food:Linguine a :Food,
         skos:Concept ;
     rdfs:label "Linguine"@en,
         "Linguine"@fr ;
+    :hasDbpediaLink dbpedia:Linguine ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Linguine.jpg?width=300> ;
-    owl:sameAs dbpedia:Linguine ;
     skos:broader dbpedia:Pasta ;
     skos:broaderTransitive food:Pasta .
 
@@ -18592,15 +18583,15 @@ food:Livers a :Food,
         skos:Concept ;
     rdfs:label "Liver"@en,
         "Foie"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Anatomy_Abdomen_Tiesworks.jpg?width=300> ;
-    owl:sameAs dbpedia:Liver .
+    :hasDbpediaLink dbpedia:Liver ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Anatomy_Abdomen_Tiesworks.jpg?width=300> .
 
 food:Macaroni a :Food,
         skos:Concept ;
     rdfs:label "Macaroni"@en,
         "Macaroni"@fr ;
+    :hasDbpediaLink dbpedia:Macaroni ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg?width=300> ;
-    owl:sameAs dbpedia:Macaroni ;
     skos:broader dbpedia:Pasta ;
     skos:broaderTransitive food:Pasta .
 
@@ -18608,113 +18599,113 @@ food:MarinaraSauce a :Food,
         skos:Concept ;
     rdfs:label "Marinara sauce"@en,
         "Sauce marinara"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Ravioli_Marinara.jpg?width=300> ;
-    owl:sameAs dbpedia:Marinara_sauce .
+    :hasDbpediaLink dbpedia:Marinara_sauce ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Ravioli_Marinara.jpg?width=300> .
 
 food:MashedPotatoes a :Food,
         skos:Concept ;
     rdfs:label "Mashed potato"@en,
         "Purée de pommes de terre"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Sous_vide_mashed_potatoes.jpg?width=300> ;
-    owl:sameAs dbpedia:Mashed_potato .
+    :hasDbpediaLink dbpedia:Mashed_potato ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Sous_vide_mashed_potatoes.jpg?width=300> .
 
 food:MontereyJack a :Food,
         skos:Concept ;
     rdfs:label "Monterey Jack"@en,
         "Monterey jack"@fr ;
+    :hasDbpediaLink dbpedia:Monterey_Jack ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Vella_Cheese_Young_Jack_(cropped).jpg?width=300> ;
-    owl:sameAs dbpedia:Monterey_Jack ;
     skos:broaderTransitive food:Cheese .
 
 food:Olives a :Food,
         skos:Concept ;
     rdfs:label "Olive"@en,
         "Olea europaea"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Olivesfromjordan.jpg?width=300> ;
-    owl:sameAs dbpedia:Olive .
+    :hasDbpediaLink dbpedia:Olive ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Olivesfromjordan.jpg?width=300> .
 
 food:Orange a :Food,
         skos:Concept ;
     rdfs:label "Orange (fruit)"@en,
         "Orange (fruit)"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Oranges_-_whole-halved-segment.jpg?width=300> ;
-    owl:sameAs dbpedia:Orange_\(fruit\) .
+    :hasDbpediaLink dbpedia:Orange_\(fruit\) ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Oranges_-_whole-halved-segment.jpg?width=300> .
 
 food:OrangeJuice a :Food,
         skos:Concept ;
     rdfs:label "Orange juice"@en,
         "Jus d'orange"@fr ;
+    :hasDbpediaLink dbpedia:Orange_juice ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Orangejuice.jpg?width=300> ;
-    owl:sameAs dbpedia:Orange_juice ;
     skos:broaderTransitive food:Fruit .
 
 food:OrangeMarmalade a :Food,
         skos:Concept ;
     rdfs:label "Marmalade"@en,
         "Marmelade (confiserie)"@fr ;
+    :hasDbpediaLink dbpedia:Marmalade ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Homemade_marmalade,_England.jpg?width=300> ;
-    owl:sameAs dbpedia:Marmalade ;
     skos:broader dbpedia:Fruit_preserve .
 
 food:Pastry a :Food,
         skos:Concept ;
     rdfs:label "Pastry"@en,
         "Pâtisserie"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Palmeras_de_hojaldre_1.jpg?width=300> ;
-    owl:sameAs dbpedia:Pastry .
+    :hasDbpediaLink dbpedia:Pastry ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Palmeras_de_hojaldre_1.jpg?width=300> .
 
 food:Pears a :Food,
         skos:Concept ;
     rdfs:label "Pear"@en,
         "Pyrus"@fr ;
+    :hasDbpediaLink dbpedia:Pear ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pears.jpg?width=300> ;
-    owl:sameAs dbpedia:Pear ;
     skos:broaderTransitive food:Fruit .
 
 food:PepperSauce a :Food,
         skos:Concept ;
     rdfs:label "Hot sauce"@en,
         "Sauce piquante"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Fermented_hot_sauce.jpg?width=300> ;
-    owl:sameAs dbpedia:Hot_sauce .
+    :hasDbpediaLink dbpedia:Hot_sauce ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Fermented_hot_sauce.jpg?width=300> .
 
 food:Peppers a :Food,
         skos:Concept ;
     rdfs:label "Capsicum"@en,
         "Capsicum"@fr ;
+    :hasDbpediaLink dbpedia:Capsicum ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Red_capsicum_and_cross_section.jpg?width=300> ;
-    owl:sameAs dbpedia:Capsicum ;
     skos:broaderTransitive food:Vegetable .
 
 food:Pizza a :Food,
         skos:Concept ;
     rdfs:label "Pizza"@en,
         "Pizza"@fr ;
+    :hasDbpediaLink dbpedia:Pizza ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Eq_it-na_pizza-margherita_sep2005_sml.jpg?width=300> ;
-    owl:sameAs dbpedia:Pizza ;
     skos:broader dbpedia:Flatbread .
 
 food:PreparedMustard a :Food,
         skos:Concept ;
     rdfs:label "Mustard (condiment)"@en,
         "Moutarde (condiment)"@fr ;
+    :hasDbpediaLink dbpedia:Mustard_\(condiment\) ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mustard.jpg?width=300> ;
-    owl:sameAs dbpedia:Mustard_\(condiment\) ;
     skos:broaderTransitive food:Spice .
 
 food:Pudding a :Food,
         skos:Concept ;
     rdfs:label "Pudding"@en,
         "Pudding"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger_on_glass_platter,_full_view.jpg?width=300> ;
-    owl:sameAs dbpedia:Pudding .
+    :hasDbpediaLink dbpedia:Pudding ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger_on_glass_platter,_full_view.jpg?width=300> .
 
 food:Pumpkin a :Food,
         skos:Concept ;
     rdfs:label "Pumpkin"@en,
         "Citrouille"@fr ;
+    :hasDbpediaLink dbpedia:Pumpkin ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/FrenchMarketPumpkinsB.jpg?width=300> ;
-    owl:sameAs dbpedia:Pumpkin ;
     skos:broaderTransitive food:Nuts,
         food:Vegetable .
 
@@ -18722,62 +18713,62 @@ food:Rabbits a :Food,
         skos:Concept ;
     rdfs:label "Rabbit"@en,
         "Lapin"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Oryctolagus_cuniculus_Rcdo.jpg?width=300> ;
-    owl:sameAs dbpedia:Rabbit .
+    :hasDbpediaLink dbpedia:Rabbit ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Oryctolagus_cuniculus_Rcdo.jpg?width=300> .
 
 food:RedCabbage a :Food,
         skos:Concept ;
     rdfs:label "Red cabbage"@en,
         "Chou rouge"@fr ;
+    :hasDbpediaLink dbpedia:Red_cabbage ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Brassica_oleracea_var_capitata_Rubyball.jpg?width=300> ;
-    owl:sameAs dbpedia:Red_cabbage ;
     skos:broaderTransitive food:Vegetable .
 
 food:RolledOats a :Food,
         skos:Concept ;
     rdfs:label "Rolled oats"@en,
         "Flocon d'avoine"@fr ;
+    :hasDbpediaLink dbpedia:Rolled_oats ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/rolled_oats.jpg?width=300> ;
-    owl:sameAs dbpedia:Rolled_oats ;
     skos:broaderTransitive food:Cereals .
 
 food:Sauerkraut a :Food,
         skos:Concept ;
     rdfs:label "Sauerkraut"@en,
         "Choucroute"@fr ;
+    :hasDbpediaLink dbpedia:Sauerkraut ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Wesselburenkraut_19.06.2012_18-35-26.jpg?width=300> ;
-    owl:sameAs dbpedia:Sauerkraut ;
     skos:broaderTransitive food:Vegetable .
 
 food:Scallops a :Food,
         skos:Concept ;
     rdfs:label "Scallop"@en,
         "Pectinidae"@fr ;
+    :hasDbpediaLink dbpedia:Scallop ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Argopecten_irradians.jpg?width=300> ;
-    owl:sameAs dbpedia:Scallop ;
     skos:broaderTransitive food:SeaFood .
 
 food:SeasoningMix a :Food,
         skos:Concept ;
     rdfs:label "Spice mix"@en,
         "Liste de mélanges d'épices"@fr ;
+    :hasDbpediaLink dbpedia:Spice_mix ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Garam_Masala.jpg?width=300> ;
-    owl:sameAs dbpedia:Spice_mix ;
     skos:broaderTransitive food:Spice .
 
 food:Seed a :Food,
         skos:Concept ;
     rdfs:label "Seed"@en,
         "Graine"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Разнообразие_семян.jpg?width=300> ;
-    owl:sameAs dbpedia:Seed .
+    :hasDbpediaLink dbpedia:Seed ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Разнообразие_семян.jpg?width=300> .
 
 food:Spaghetti a :Food,
         skos:Concept ;
     rdfs:label "Spaghetti"@en,
         "Spaghetti"@fr ;
+    :hasDbpediaLink dbpedia:Spaghetti ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Spaghettoni.jpg?width=300> ;
-    owl:sameAs dbpedia:Spaghetti ;
     skos:broader dbpedia:Pasta ;
     skos:broaderTransitive food:Pasta .
 
@@ -18785,37 +18776,37 @@ food:Strawberries a :Food,
         skos:Concept ;
     rdfs:label "Strawberry"@en,
         "Fraise"@fr ;
+    :hasDbpediaLink dbpedia:Strawberry ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Garden_strawberry_(Fragaria_×_ananassa)_single2.jpg?width=300> ;
-    owl:sameAs dbpedia:Strawberry ;
     skos:broaderTransitive food:Fruit .
 
 food:Stuffing a :Food,
         skos:Concept ;
     rdfs:label "Stuffing"@en,
         "Farce (cuisine)"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Stuffing_a_turkey.jpg?width=300> ;
-    owl:sameAs dbpedia:Stuffing .
+    :hasDbpediaLink dbpedia:Stuffing ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Stuffing_a_turkey.jpg?width=300> .
 
 food:SweetChocolate a :Food,
         skos:Concept ;
     rdfs:label "Types of chocolate"@en ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Schokolade-schwarz-braun-weiss.jpg?width=300> ;
-    owl:sameAs dbpedia:Types_of_chocolate .
+    :hasDbpediaLink dbpedia:Types_of_chocolate ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Schokolade-schwarz-braun-weiss.jpg?width=300> .
 
 food:SweetPotatoes a :Food,
         skos:Concept ;
     rdfs:label "Sweet potato"@en,
         "Patate douce"@fr ;
+    :hasDbpediaLink dbpedia:Sweet_potato ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Ipomoea_batatas_006.jpg?width=300> ;
-    owl:sameAs dbpedia:Sweet_potato ;
     skos:broaderTransitive food:Vegetable .
 
 food:Toasted a :Food,
         skos:Concept ;
     rdfs:label "Toast (food)"@en,
         "Pain grillé"@fr ;
+    :hasDbpediaLink dbpedia:Toast_\(food\) ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Toast-3.jpg?width=300> ;
-    owl:sameAs dbpedia:Toast_\(food\) ;
     skos:broader dbpedia:Bread ;
     skos:broaderTransitive food:Bread .
 
@@ -18823,15 +18814,15 @@ food:TomatoPaste a :Food,
         skos:Concept ;
     rdfs:label "Tomato paste"@en,
         "Concentré de tomates"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Tomato_paste_on_spoon.jpg?width=300> ;
-    owl:sameAs dbpedia:Tomato_paste .
+    :hasDbpediaLink dbpedia:Tomato_paste ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Tomato_paste_on_spoon.jpg?width=300> .
 
 food:Tortillas a :Food,
         skos:Concept ;
     rdfs:label "Tortilla"@en,
         "Tortilla"@fr ;
+    :hasDbpediaLink dbpedia:Tortilla ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mexican_tortilla.jpg?width=300> ;
-    owl:sameAs dbpedia:Tortilla ;
     skos:broader dbpedia:Flatbread ;
     skos:broaderTransitive food:Bread .
 
@@ -18839,192 +18830,192 @@ food:Tuna a :Food,
         skos:Concept ;
     rdfs:label "Tuna"@en,
         "Thunnini"@fr ;
+    :hasDbpediaLink dbpedia:Tuna ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/tuna_assortment.png?width=300> ;
-    owl:sameAs dbpedia:Tuna ;
     skos:broaderTransitive food:Fish .
 
 food:TurkeyBreast a :Food,
         skos:Concept ;
     rdfs:label "Turkey as food"@en,
         "Viande de dinde"@fr ;
+    :hasDbpediaLink dbpedia:Turkey_as_food ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Thanksgiving_Turkey.jpg?width=300> ;
-    owl:sameAs dbpedia:Turkey_as_food ;
     skos:broaderTransitive food:Meat .
 
 food:Veal a :Food,
         skos:Concept ;
     rdfs:label "Veal"@en,
         "Viande de veau"@fr ;
+    :hasDbpediaLink dbpedia:Veal ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Holstein_cow_with_one-day_calf_01.jpg?width=300> ;
-    owl:sameAs dbpedia:Veal ;
     skos:broaderTransitive food:Meat .
 
 food:Velveeta a :Food,
         skos:Concept ;
     rdfs:label "Velveeta"@en ;
+    :hasDbpediaLink dbpedia:Velveeta ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Velveeta_2021.png?width=300> ;
-    owl:sameAs dbpedia:Velveeta ;
     skos:broaderTransitive food:Cheese .
 
 food:WaterChestnuts a :Food,
         skos:Concept ;
     rdfs:label "Eleocharis dulcis"@en,
         "Châtaigne d'eau chinoise"@fr ;
+    :hasDbpediaLink dbpedia:Eleocharis_dulcis ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Eleocharis_dulcis_Blanco1.15.jpg?width=300> ;
-    owl:sameAs dbpedia:Eleocharis_dulcis ;
     skos:broaderTransitive food:Vegetable .
 
 food:Watermelon a :Food,
         skos:Concept ;
     rdfs:label "Watermelon"@en,
         "Pastèque"@fr ;
+    :hasDbpediaLink dbpedia:Watermelon ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Taiwan_2009_Tainan_City_Organic_Farm_Watermelon_FRD_7962.jpg?width=300> ;
-    owl:sameAs dbpedia:Watermelon ;
     skos:broaderTransitive food:Fruit .
 
 food:WhiteSugar a :Food,
         skos:Concept ;
     rdfs:label "White sugar"@en ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/A_Bowl_of_Sugar_2.jpg?width=300> ;
-    owl:sameAs dbpedia:White_sugar .
+    :hasDbpediaLink dbpedia:White_sugar ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/A_Bowl_of_Sugar_2.jpg?width=300> .
 
 food:WhiteVinegar a :Food,
         skos:Concept ;
     rdfs:label "Vinegar"@en,
         "Vinaigre"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Eguilles_20110828_14.jpg?width=300> ;
-    owl:sameAs dbpedia:Vinegar .
+    :hasDbpediaLink dbpedia:Vinegar ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Eguilles_20110828_14.jpg?width=300> .
 
 food:Allspice a :Food,
         skos:Concept ;
     rdfs:label "Allspice"@en,
         "Piment de la Jamaïque"@fr ;
+    :hasDbpediaLink dbpedia:Allspice ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pimenta_dioica_-_Köhler–s_Medizinal-Pflanzen-239.jpg?width=300> ;
-    owl:sameAs dbpedia:Allspice ;
     skos:broaderTransitive food:Spice .
 
 food:Avocado a :Food,
         skos:Concept ;
     rdfs:label "Avocado"@en,
         "Avocatier"@fr ;
+    :hasDbpediaLink dbpedia:Avocado ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Persea_americana_fruit_2.jpg?width=300> ;
-    owl:sameAs dbpedia:Avocado ;
     skos:broaderTransitive food:Fruit .
 
 food:Bananas a :Food,
         skos:Concept ;
     rdfs:label "Banana"@en,
         "Banane"@fr ;
+    :hasDbpediaLink dbpedia:Banana ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Banana_and_cross_section.jpg?width=300> ;
-    owl:sameAs dbpedia:Banana ;
     skos:broaderTransitive food:Fruit .
 
 food:Cake a :Food,
         skos:Concept ;
     rdfs:label "Cake"@en,
         "Gâteau"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pound_layer_cake.jpg?width=300> ;
-    owl:sameAs dbpedia:Cake .
+    :hasDbpediaLink dbpedia:Cake ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pound_layer_cake.jpg?width=300> .
 
 food:Cereal a :Food,
         skos:Concept ;
     rdfs:label "Cereal"@en,
         "Céréale"@fr ;
+    :hasDbpediaLink dbpedia:Cereal ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Dried_Cereal_grains_and_other_similar_products_in_Glass_jars_in_the_Herbarium_collection_at_Leiden.jpg?width=300> ;
-    owl:sameAs dbpedia:Cereal ;
     skos:broaderTransitive food:Cereals .
 
 food:ChickenStock a :Food,
         skos:Concept ;
     rdfs:label "Stock (food)"@en ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Making_stock_for_pho_bo.jpg?width=300> ;
-    owl:sameAs dbpedia:Stock_\(food\) .
+    :hasDbpediaLink dbpedia:Stock_\(food\) ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Making_stock_for_pho_bo.jpg?width=300> .
 
 food:Corn a :Food,
         skos:Concept ;
     rdfs:label "Maize"@en,
         "Maïs"@fr ;
+    :hasDbpediaLink dbpedia:Maize ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Koeh-283.jpg?width=300> ;
-    owl:sameAs dbpedia:Maize ;
     skos:broaderTransitive food:Vegetable .
 
 food:CottageCheese a :Food,
         skos:Concept ;
     rdfs:label "Cottage cheese"@en,
         "Cottage cheese"@fr ;
+    :hasDbpediaLink dbpedia:Cottage_cheese ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cottagecheese200px.jpg?width=300> ;
-    owl:sameAs dbpedia:Cottage_cheese ;
     skos:broaderTransitive food:Cheese .
 
 food:Cream a :Food,
         skos:Concept ;
     rdfs:label "Cream"@en,
         "Crème (produit laitier)"@fr ;
+    :hasDbpediaLink dbpedia:Cream ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Milk-bottle.jpg?width=300> ;
-    owl:sameAs dbpedia:Cream ;
     skos:broaderTransitive food:DairyProduct .
 
 food:Crumbs a :Food,
         skos:Concept ;
     rdfs:label "Bread crumbs"@en,
         "Chapelure"@fr ;
+    :hasDbpediaLink dbpedia:Bread_crumbs ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Breadcrumb.jpg?width=300> ;
-    owl:sameAs dbpedia:Bread_crumbs ;
     skos:broaderTransitive food:Bread .
 
 food:Dill a :Food,
         skos:Concept ;
     rdfs:label "Dill"@en,
         "Aneth"@fr ;
+    :hasDbpediaLink dbpedia:Dill ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Illustration_Anethum_graveolens_clean.jpg?width=300> ;
-    owl:sameAs dbpedia:Dill ;
     skos:broaderTransitive food:Spice .
 
 food:EggWhites a :Food,
         skos:Concept ;
     rdfs:label "Egg white"@en,
         "Blanc d'œuf"@fr ;
+    :hasDbpediaLink dbpedia:Egg_white ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chicken_egg01_monovular.jpg?width=300> ;
-    owl:sameAs dbpedia:Egg_white ;
     skos:broaderTransitive food:Eggs .
 
 food:EvaporatedMilk a :Food,
         skos:Concept ;
     rdfs:label "Evaporated milk"@en,
         "Lait concentré non sucré"@fr ;
+    :hasDbpediaLink dbpedia:Evaporated_milk ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/MODOBordens.jpg?width=300> ;
-    owl:sameAs dbpedia:Evaporated_milk ;
     skos:broaderTransitive food:DairyProduct .
 
 food:Fat a :Food,
         skos:Concept ;
     rdfs:label "Fat"@en,
         "Graisse"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Trimyristin-3D-vdW.png?width=300> ;
-    owl:sameAs dbpedia:Fat .
+    :hasDbpediaLink dbpedia:Fat ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Trimyristin-3D-vdW.png?width=300> .
 
 food:GroundBeef a :Food,
         skos:Concept ;
     rdfs:label "Ground beef"@en,
         "Bœuf haché"@fr ;
+    :hasDbpediaLink dbpedia:Ground_beef ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Hackfleisch-1.jpg?width=300> ;
-    owl:sameAs dbpedia:Ground_beef ;
     skos:broaderTransitive food:Meat .
 
 food:Ham a :Food,
         skos:Concept ;
     rdfs:label "Ham"@en,
         "Jambon"@fr ;
+    :hasDbpediaLink dbpedia:Ham ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Ham_(4).jpg?width=300> ;
-    owl:sameAs dbpedia:Ham ;
     skos:broaderTransitive food:Meat .
 
 food:Horseradish a :Food,
         skos:Concept ;
     rdfs:label "Horseradish"@en,
         "Raifort"@fr ;
+    :hasDbpediaLink dbpedia:Horseradish ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Armoracia_rusticana.jpg?width=300> ;
-    owl:sameAs dbpedia:Horseradish ;
     skos:broaderTransitive food:Spice,
         food:Vegetable .
 
@@ -19032,42 +19023,42 @@ food:LemonPeel a :Food,
         skos:Concept ;
     rdfs:label "Zest (ingredient)"@en,
         "Zeste"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Zesting_an_orange.jpg?width=300> ;
-    owl:sameAs dbpedia:Zest_\(ingredient\) .
+    :hasDbpediaLink dbpedia:Zest_\(ingredient\) ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Zesting_an_orange.jpg?width=300> .
 
 food:LimaBeans a :Food,
         skos:Concept ;
     rdfs:label "Lima bean"@en,
         "Haricot de Lima"@fr ;
+    :hasDbpediaLink dbpedia:Lima_bean ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Phaseoulus_lunatus.jpg?width=300> ;
-    owl:sameAs dbpedia:Lima_bean ;
     skos:broaderTransitive food:Vegetable .
 
 food:Liquid a :Food,
         skos:Concept ;
     rdfs:label "Liquid"@en,
         "Liquide"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Water_drop_001.jpg?width=300> ;
-    owl:sameAs dbpedia:Liquid .
+    :hasDbpediaLink dbpedia:Liquid ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Water_drop_001.jpg?width=300> .
 
 food:Minced a :Food,
         skos:Concept ;
     rdfs:label "Mincing"@en ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Minced_carrots.jpg?width=300> ;
-    owl:sameAs dbpedia:Mincing .
+    :hasDbpediaLink dbpedia:Mincing ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Minced_carrots.jpg?width=300> .
 
 food:Mozzarella a :Food,
         skos:Concept ;
     rdfs:label "Mozzarella"@en,
         "Mozzarella"@fr ;
-    owl:sameAs dbpedia:Mozzarella ;
+    :hasDbpediaLink dbpedia:Mozzarella ;
     skos:broaderTransitive food:Cheese .
 
 food:Mustard a :Food,
         skos:Concept ;
     rdfs:label "Mustard plant"@en ;
+    :hasDbpediaLink dbpedia:Mustard_plant ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mustard_plant_flower.jpg?width=300> ;
-    owl:sameAs dbpedia:Mustard_plant ;
     skos:broaderTransitive food:Nuts,
         food:Vegetable .
 
@@ -19075,15 +19066,15 @@ food:Noodles a :Food,
         skos:Concept ;
     rdfs:label "Noodle"@en,
         "Nouille"@fr ;
+    :hasDbpediaLink dbpedia:Noodle ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Dalian_Liaoning_China_Noodlemaker-01.jpg?width=300> ;
-    owl:sameAs dbpedia:Noodle ;
     skos:broaderTransitive food:Pasta .
 
 food:Oatmeal a :Food,
         skos:Concept ;
     rdfs:label "Oatmeal"@en ;
+    :hasDbpediaLink dbpedia:Oatmeal ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Oatmeal.jpg?width=300> ;
-    owl:sameAs dbpedia:Oatmeal ;
     skos:broader dbpedia:Porridge ;
     skos:broaderTransitive food:Cereals .
 
@@ -19091,16 +19082,16 @@ food:Oats a :Food,
         skos:Concept ;
     rdfs:label "Oat"@en,
         "Avoine cultivée"@fr ;
+    :hasDbpediaLink dbpedia:Oat ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Avena_sativa_L.jpg?width=300> ;
-    owl:sameAs dbpedia:Oat ;
     skos:broaderTransitive food:Cereals .
 
 food:Peanut a :Food,
         skos:Concept ;
     rdfs:label "Peanut"@en,
         "Arachide"@fr ;
+    :hasDbpediaLink dbpedia:Peanut ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Koeh-163.jpg?width=300> ;
-    owl:sameAs dbpedia:Peanut ;
     skos:broaderTransitive food:Arachis,
         food:Nuts,
         food:Vegetable .
@@ -19109,8 +19100,8 @@ food:Pecans a :Food,
         skos:Concept ;
     rdfs:label "Pecan"@en,
         "Pacanier"@fr ;
+    :hasDbpediaLink dbpedia:Pecan ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Carya_illinoinensis.jpg?width=300> ;
-    owl:sameAs dbpedia:Pecan ;
     skos:broaderTransitive food:Fruit,
         food:Nuts .
 
@@ -19118,98 +19109,98 @@ food:PhylloPastry a :Food,
         skos:Concept ;
     rdfs:label "Filo"@en,
         "Pâte phyllo"@fr ;
+    :hasDbpediaLink dbpedia:Filo ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Baklava.jpg?width=300> ;
-    owl:sameAs dbpedia:Filo ;
     skos:broader dbpedia:Pastry .
 
 food:PineappleJuice a :Food,
         skos:Concept ;
     rdfs:label "Pineapple juice"@en,
         "Jus d'ananas"@fr ;
+    :hasDbpediaLink dbpedia:Pineapple_juice ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Batido_de_piña.jpg?width=300> ;
-    owl:sameAs dbpedia:Pineapple_juice ;
     skos:broaderTransitive food:Fruit .
 
 food:Poultry a :Food,
         skos:Concept ;
     rdfs:label "Poultry"@en,
         "Poulet"@fr ;
+    :hasDbpediaLink dbpedia:Poultry ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Poultry_of_the_world.jpg?width=300> ;
-    owl:sameAs dbpedia:Poultry ;
     skos:broaderTransitive food:Meat .
 
 food:RedOnion a :Food,
         skos:Concept ;
     rdfs:label "Red onion"@en ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Red_Onion_on_White.jpg?width=300> ;
-    owl:sameAs dbpedia:Red_onion .
+    :hasDbpediaLink dbpedia:Red_onion ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Red_Onion_on_White.jpg?width=300> .
 
 food:SaladDressing a :Food,
         skos:Concept ;
     rdfs:label "Salad dressing"@en ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Salad_dressing_(cropped).jpg?width=300> ;
-    owl:sameAs dbpedia:Salad_dressing .
+    :hasDbpediaLink dbpedia:Salad_dressing ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Salad_dressing_(cropped).jpg?width=300> .
 
 food:Sausage a :Food,
         skos:Concept ;
     rdfs:label "Sausage"@en,
         "Saucisse"@fr ;
+    :hasDbpediaLink dbpedia:Sausage ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Kielbasa7.jpg?width=300> ;
-    owl:sameAs dbpedia:Sausage ;
     skos:broaderTransitive food:Meat .
 
 food:Seasoning a :Food,
         skos:Concept ;
     rdfs:label "Seasoning"@en ;
+    :hasDbpediaLink dbpedia:Seasoning ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Achiote_paste_ingredients.jpg?width=300> ;
-    owl:sameAs dbpedia:Seasoning ;
     skos:broaderTransitive food:Spice .
 
 food:Shallots a :Food,
         skos:Concept ;
     rdfs:label "Shallot"@en,
         "Échalote"@fr ;
+    :hasDbpediaLink dbpedia:Shallot ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Shallots_-_sliced_and_whole.jpg?width=300> ;
-    owl:sameAs dbpedia:Shallot ;
     skos:broaderTransitive food:Vegetable .
 
 food:SweetenedCondensedMilk a :Food,
         skos:Concept ;
     rdfs:label "Condensed milk"@en,
         "Lait concentré sucré"@fr ;
+    :hasDbpediaLink dbpedia:Condensed_milk ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/2016-03-26-Gezuckerte_Kondensmilch-4699.jpg?width=300> ;
-    owl:sameAs dbpedia:Condensed_milk ;
     skos:broaderTransitive food:DairyProduct .
 
 food:Thyme a :Food,
         skos:Concept ;
     rdfs:label "Thyme"@en ;
+    :hasDbpediaLink dbpedia:Thyme ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Thyme-Bundle.jpg?width=300> ;
-    owl:sameAs dbpedia:Thyme ;
     skos:broaderTransitive food:Spice .
 
 food:WhiteWine a :Food,
         skos:Concept ;
     rdfs:label "White wine"@en,
         "Vin blanc"@fr ;
+    :hasDbpediaLink dbpedia:White_wine ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/White_Wine_Glas.jpg?width=300> ;
-    owl:sameAs dbpedia:White_wine ;
     skos:broader dbpedia:Wine .
 
 food:WorcestershireSauce a :Food,
         skos:Concept ;
     rdfs:label "Worcestershire sauce"@en,
         "Sauce Worcestershire"@fr ;
+    :hasDbpediaLink dbpedia:Worcestershire_sauce ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Worcester_Sauce_001.jpg?width=300> ;
-    owl:sameAs dbpedia:Worcestershire_sauce ;
     skos:broader dbpedia:Condiment .
 
 food:Cornmeal a :Food,
         skos:Concept ;
     rdfs:label "Cornmeal"@en,
         "Farine de maïs"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Polenta_uncooked.jpg?width=300> ;
-    owl:sameAs dbpedia:Cornmeal .
+    :hasDbpediaLink dbpedia:Cornmeal ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Polenta_uncooked.jpg?width=300> .
 
 food:Dried a :Food,
         skos:Concept ;
@@ -19217,18 +19208,18 @@ food:Dried a :Food,
         "Food drying"@en,
         "Fruit séché"@fr,
         "Séchage (cuisine)"@fr ;
+    :hasDbpediaLink dbpedia:Dried_fruit,
+        dbpedia:Food_drying ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/DriedfruitS.jpg?width=300>,
         <http://commons.wikimedia.org/wiki/Special:FilePath/Fish_drying_in_the_sun_poisson_seche_Madagascar.jpg?width=300> ;
-    owl:sameAs dbpedia:Dried_fruit,
-        dbpedia:Food_drying ;
     skos:broaderTransitive food:Fruit .
 
 food:FlankSteak a :Food,
         skos:Concept ;
     rdfs:label "Flank steak"@en,
         "Bavette (bœuf)"@fr ;
+    :hasDbpediaLink dbpedia:Flank_steak ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/BeefCutFlank.svg?width=300> ;
-    owl:sameAs dbpedia:Flank_steak ;
     skos:broader dbpedia:Cut_of_beef ;
     skos:broaderTransitive food:Meat .
 
@@ -19236,52 +19227,52 @@ food:Fresh a :Food,
         skos:Concept ;
     rdfs:label "Fruit"@en,
         "Fruit (botanique)"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Municipal_Market_of_São_Paulo_city.jpg?width=300> ;
-    owl:sameAs dbpedia:Fruit .
+    :hasDbpediaLink dbpedia:Fruit ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Municipal_Market_of_São_Paulo_city.jpg?width=300> .
 
 food:Juice a :Food,
         skos:Concept ;
     rdfs:label "Juice"@en,
         "Jus"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Orange_juice_1.jpg?width=300> ;
-    owl:sameAs dbpedia:Juice .
+    :hasDbpediaLink dbpedia:Juice ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Orange_juice_1.jpg?width=300> .
 
 food:KidneyBeans a :Food,
         skos:Concept ;
     rdfs:label "Kidney bean"@en ;
+    :hasDbpediaLink dbpedia:Kidney_bean ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Red_Rajma_BNC.jpg?width=300> ;
-    owl:sameAs dbpedia:Kidney_bean ;
     skos:broaderTransitive food:Vegetable .
 
 food:Lettuce a :Food,
         skos:Concept ;
     rdfs:label "Lettuce"@en,
         "Laitue cultivée"@fr ;
+    :hasDbpediaLink dbpedia:Lettuce ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Iceberg_lettuce_in_SB.jpg?width=300> ;
-    owl:sameAs dbpedia:Lettuce ;
     skos:broaderTransitive food:Vegetable .
 
 food:Molasses a :Food,
         skos:Concept ;
     rdfs:label "Molasses"@en,
         "Mélasse"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Blackstrapmolasses.jpg?width=300> ;
-    owl:sameAs dbpedia:Molasses .
+    :hasDbpediaLink dbpedia:Molasses ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Blackstrapmolasses.jpg?width=300> .
 
 food:Peaches a :Food,
         skos:Concept ;
     rdfs:label "Peach"@en,
         "Pêcher"@fr ;
+    :hasDbpediaLink dbpedia:Peach ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Illustration_Prunus_persica0.jpg?width=300> ;
-    owl:sameAs dbpedia:Peach ;
     skos:broaderTransitive food:Fruit .
 
 food:PeanutButter a :Food,
         skos:Concept ;
     rdfs:label "Peanut butter"@en,
         "Beurre de cacahuètes"@fr ;
+    :hasDbpediaLink dbpedia:Peanut_butter ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/PeanutButter.jpg?width=300> ;
-    owl:sameAs dbpedia:Peanut_butter ;
     skos:broader dbpedia:Spread_\(food\) ;
     skos:broaderTransitive food:Arachis .
 
@@ -19289,172 +19280,172 @@ food:Peas a :Food,
         skos:Concept ;
     rdfs:label "Pea"@en,
         "Pois cultivé"@fr ;
+    :hasDbpediaLink dbpedia:Pea ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Peas_in_pods_-_Studio.jpg?width=300> ;
-    owl:sameAs dbpedia:Pea ;
     skos:broaderTransitive food:Vegetable .
 
 food:Pods a :Food,
         skos:Concept ;
     rdfs:label "Legume"@en,
         "Légume sec"@fr ;
+    :hasDbpediaLink dbpedia:Legume ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Various_legumes.jpg?width=300> ;
-    owl:sameAs dbpedia:Legume ;
     skos:broaderTransitive food:Vegetable .
 
 food:RedPepper a :Food,
         skos:Concept ;
     rdfs:label "Chili pepper"@en,
         "Piment"@fr ;
+    :hasDbpediaLink dbpedia:Chili_pepper ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Madame_Jeanette_and_other_chillies.jpg?width=300> ;
-    owl:sameAs dbpedia:Chili_pepper ;
     skos:broaderTransitive food:Vegetable .
 
 food:RedWine a :Food,
         skos:Concept ;
     rdfs:label "Red wine"@en,
         "Vin rouge"@fr ;
+    :hasDbpediaLink dbpedia:Red_wine ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Red_Wine_Glass.jpg?width=300> ;
-    owl:sameAs dbpedia:Red_wine ;
     skos:broader dbpedia:Wine .
 
 food:SaladOil a :Food,
         skos:Concept ;
     rdfs:label "Vegetable oil"@en,
         "Huile végétale"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Olive_oil_from_Oneglia.jpg?width=300> ;
-    owl:sameAs dbpedia:Vegetable_oil .
+    :hasDbpediaLink dbpedia:Vegetable_oil ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Olive_oil_from_Oneglia.jpg?width=300> .
 
 food:Shrimp a :Food,
         skos:Concept ;
     rdfs:label "Shrimp"@en,
         "Crevette"@fr ;
+    :hasDbpediaLink dbpedia:Shrimp ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Palaemon_serratus_Croazia.jpg?width=300> ;
-    owl:sameAs dbpedia:Shrimp ;
     skos:broaderTransitive food:SeaFood .
 
 food:SodaWater a :Food,
         skos:Concept ;
     rdfs:label "Carbonated water"@en,
         "Eau gazeuse"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Drinking_glass_00118.gif?width=300> ;
-    owl:sameAs dbpedia:Carbonated_water .
+    :hasDbpediaLink dbpedia:Carbonated_water ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Drinking_glass_00118.gif?width=300> .
 
 food:Basil a :Food,
         skos:Concept ;
     rdfs:label "Basil"@en,
         "Basilic (plante)"@fr ;
+    :hasDbpediaLink dbpedia:Basil ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Basil-Basilico-Ocimum_basilicum-albahaca.jpg?width=300> ;
-    owl:sameAs dbpedia:Basil ;
     skos:broaderTransitive food:Spice .
 
 food:Beans a :Food,
         skos:Concept ;
     rdfs:label "Bean"@en,
         "Haricot (homonymie)"@fr ;
+    :hasDbpediaLink dbpedia:Bean ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/French_beans_J1.jpg?width=300> ;
-    owl:sameAs dbpedia:Bean ;
     skos:broaderTransitive food:Vegetable .
 
 food:Beef a :Food,
         skos:Concept ;
     rdfs:label "Beef"@en,
         "Viande bovine"@fr ;
+    :hasDbpediaLink dbpedia:Beef ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Standing-rib-roast.jpg?width=300> ;
-    owl:sameAs dbpedia:Beef ;
     skos:broaderTransitive food:Meat .
 
 food:Cabbage a :Food,
         skos:Concept ;
     rdfs:label "Cabbage"@en,
         "Chou commun"@fr ;
+    :hasDbpediaLink dbpedia:Cabbage ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cabbage_and_cross_section_on_white.jpg?width=300> ;
-    owl:sameAs dbpedia:Cabbage ;
     skos:broaderTransitive food:Vegetable .
 
 food:CarawaySeed a :Food,
         skos:Concept ;
     rdfs:label "Caraway"@en,
         "Carvi"@fr ;
+    :hasDbpediaLink dbpedia:Caraway ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Carum_carvi_-_Köhler–s_Medizinal-Pflanzen-172.jpg?width=300> ;
-    owl:sameAs dbpedia:Caraway ;
     skos:broaderTransitive food:Spice,
         food:Vegetable .
 
 food:GarlicPowder a :Food,
         skos:Concept ;
     rdfs:label "Garlic powder"@en ;
+    :hasDbpediaLink dbpedia:Garlic_powder ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Masterfoods_Garlic_Powder.jpg?width=300> ;
-    owl:sameAs dbpedia:Garlic_powder ;
     skos:broaderTransitive food:Spice .
 
 food:Green a :Food,
         skos:Concept ;
     rdfs:label "Green"@en,
         "Vert"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Spanish_jewellery-Gold_and_emerald_pendant_at_VAM-01.jpg?width=300> ;
-    owl:sameAs dbpedia:Green .
+    :hasDbpediaLink dbpedia:Green ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Spanish_jewellery-Gold_and_emerald_pendant_at_VAM-01.jpg?width=300> .
 
 food:Jello a :Food,
         skos:Concept ;
     rdfs:label "Jell-O"@en,
         "Jell-O"@fr ;
+    :hasDbpediaLink dbpedia:Jell-O ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Jello_brand_logo.png?width=300> ;
-    owl:sameAs dbpedia:Jell-O ;
     skos:broaderTransitive food:animalProduct .
 
 food:MandarinOranges a :Food,
         skos:Concept ;
     rdfs:label "Mandarin orange"@en,
         "Mandarinier"@fr ;
+    :hasDbpediaLink dbpedia:Mandarin_orange ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Citrus_reticulata_April_2013_Nordbaden.jpg?width=300> ;
-    owl:sameAs dbpedia:Mandarin_orange ;
     skos:broaderTransitive food:Fruit .
 
 food:Marshmallows a :Food,
         skos:Concept ;
     rdfs:label "Marshmallow"@en,
         "Guimauve (confiserie)"@fr ;
+    :hasDbpediaLink dbpedia:Marshmallow ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/White_Marshmallows.jpg?width=300> ;
-    owl:sameAs dbpedia:Marshmallow ;
     skos:broader dbpedia:Confectionery .
 
 food:Prunes a :Food,
         skos:Concept ;
     rdfs:label "Prune"@en,
         "Pruneau"@fr ;
+    :hasDbpediaLink dbpedia:Prune ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Rosales_-_Dried_Prunus_domestica_d.jpg?width=300> ;
-    owl:sameAs dbpedia:Prune ;
     skos:broaderTransitive food:Fruit .
 
 food:Rind a :Food,
         skos:Concept ;
     rdfs:label "Cheese"@en,
         "Fromage"@fr ;
+    :hasDbpediaLink dbpedia:Cheese ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cheese_(1105942243).jpg?width=300> ;
-    owl:sameAs dbpedia:Cheese ;
     skos:broaderTransitive food:DairyProduct .
 
 food:Sauce a :Food,
         skos:Concept ;
     rdfs:label "Sauce"@en,
         "Sauce"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Lunch_sauces.jpg?width=300> ;
-    owl:sameAs dbpedia:Sauce .
+    :hasDbpediaLink dbpedia:Sauce ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Lunch_sauces.jpg?width=300> .
 
 food:SourMilk a :Food,
         skos:Concept ;
     rdfs:label "Soured milk"@en,
         "Lait fermenté"@fr ;
+    :hasDbpediaLink dbpedia:Soured_milk ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Latte_025.jpg?width=300> ;
-    owl:sameAs dbpedia:Soured_milk ;
     skos:broaderTransitive food:DairyProduct .
 
 food:WhippedCream a :Food,
         skos:Concept ;
     rdfs:label "Whipped cream"@en,
         "Crème chantilly"@fr ;
+    :hasDbpediaLink dbpedia:Whipped_cream ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Hot_chocolate_(2).jpg?width=300> ;
-    owl:sameAs dbpedia:Whipped_cream ;
     skos:broader dbpedia:Cream ;
     skos:broaderTransitive food:DairyProduct .
 
@@ -19462,23 +19453,23 @@ food:Coconut a :Food,
         skos:Concept ;
     rdfs:label "Coconut"@en,
         "Cocotier"@fr ;
+    :hasDbpediaLink dbpedia:Coconut ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cocos_nucifera_-_Köhler–s_Medizinal-Pflanzen-187.jpg?width=300> ;
-    owl:sameAs dbpedia:Coconut ;
     skos:broaderTransitive food:Fruit .
 
 food:CornSyrup a :Food,
         skos:Concept ;
     rdfs:label "Corn syrup"@en,
         "Sirop de maïs"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Corn_syrup.jpg?width=300> ;
-    owl:sameAs dbpedia:Corn_syrup .
+    :hasDbpediaLink dbpedia:Corn_syrup ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Corn_syrup.jpg?width=300> .
 
 food:Fish a :Food,
         skos:Concept ;
     rdfs:label "Fish"@en,
         "Poisson"@fr ;
+    :hasDbpediaLink dbpedia:Fish ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Georgia_Aquarium_-_Giant_Grouper_edit.jpg?width=300> ;
-    owl:sameAs dbpedia:Fish ;
     skos:broaderTransitive food:Fish,
         food:SeaFood .
 
@@ -19486,168 +19477,168 @@ food:Gelatin a :Food,
         skos:Concept ;
     rdfs:label "Gelatin"@en,
         "Gélatine"@fr ;
+    :hasDbpediaLink dbpedia:Gelatin ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Gelatine.png?width=300> ;
-    owl:sameAs dbpedia:Gelatin ;
     skos:broaderTransitive food:animalProduct .
 
 food:Grated a :Food,
         skos:Concept ;
     rdfs:label "Grater"@en,
         "Râpe (ustensile)"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cheese_grater.jpg?width=300> ;
-    owl:sameAs dbpedia:Grater .
+    :hasDbpediaLink dbpedia:Grater ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cheese_grater.jpg?width=300> .
 
 food:OliveOil a :Food,
         skos:Concept ;
     rdfs:label "Olive oil"@en,
         "Huile d'olive"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Oliven_V1.jpg?width=300> ;
-    owl:sameAs dbpedia:Olive_oil .
+    :hasDbpediaLink dbpedia:Olive_oil ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Oliven_V1.jpg?width=300> .
 
 food:Pie a :Food,
         skos:Concept ;
     rdfs:label "Pie"@en,
         "Tourte (plat)"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Tarte_aux_poires_2a.jpg?width=300> ;
-    owl:sameAs dbpedia:Pie .
+    :hasDbpediaLink dbpedia:Pie ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Tarte_aux_poires_2a.jpg?width=300> .
 
 food:Steak a :Food,
         skos:Concept ;
     rdfs:label "Steak"@en,
         "Steak"@fr ;
+    :hasDbpediaLink dbpedia:Steak ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Beef_fillet_steak_with_mushrooms.jpg?width=300> ;
-    owl:sameAs dbpedia:Steak ;
     skos:broaderTransitive food:Meat .
 
 food:SwissCheese a :Food,
         skos:Concept ;
     rdfs:label "Swiss cheese (North America)"@en,
         "Fromage suisse (Amérique du Nord)"@fr ;
+    :hasDbpediaLink dbpedia:Swiss_cheese_\(North_America\) ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Swiss_cheese_cubes.jpg?width=300> ;
-    owl:sameAs dbpedia:Swiss_cheese_\(North_America\) ;
     skos:broaderTransitive food:Cheese .
 
 food:Wine a :Food,
         skos:Concept ;
     rdfs:label "Wine"@en,
         "Vin"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Red_and_white_wine_12-2015.jpg?width=300> ;
-    owl:sameAs dbpedia:Wine .
+    :hasDbpediaLink dbpedia:Wine ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Red_and_white_wine_12-2015.jpg?width=300> .
 
 food:Apples a :Food,
         skos:Concept ;
     rdfs:label "Apple"@en,
         "Pomme"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pink_lady_and_cross_section.jpg?width=300> ;
-    owl:sameAs dbpedia:Apple .
+    :hasDbpediaLink dbpedia:Apple ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pink_lady_and_cross_section.jpg?width=300> .
 
 food:Buttermilk a :Food,
         skos:Concept ;
     rdfs:label "Buttermilk"@en,
         "Babeurre"@fr ;
+    :hasDbpediaLink dbpedia:Buttermilk ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Buttermilk-(right)-and-Milk-(left).jpg?width=300> ;
-    owl:sameAs dbpedia:Buttermilk ;
     skos:broaderTransitive food:DairyProduct .
 
 food:ChiliPowder a :Food,
         skos:Concept ;
     rdfs:label "Chili powder"@en,
         "Chili (mélange d'épices)"@fr ;
+    :hasDbpediaLink dbpedia:Chili_powder ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/BolivianChilePowder2.jpg?width=300> ;
-    owl:sameAs dbpedia:Chili_powder ;
     skos:broaderTransitive food:Spice .
 
 food:ChocolateChips a :Food,
         skos:Concept ;
     rdfs:label "Chocolate chip"@en,
         "Pépite de chocolat"@fr ;
+    :hasDbpediaLink dbpedia:Chocolate_chip ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Semi-sweet_chocolate_chips.jpg?width=300> ;
-    owl:sameAs dbpedia:Chocolate_chip ;
     skos:broader dbpedia:Chocolate .
 
 food:Cocoa a :Food,
         skos:Concept ;
     rdfs:label "Cocoa bean"@en,
         "Fève de cacao"@fr ;
+    :hasDbpediaLink dbpedia:Cocoa_bean ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cocoa_Pods.jpg?width=300> ;
-    owl:sameAs dbpedia:Cocoa_bean ;
     skos:broaderTransitive food:Nuts .
 
 food:Cumin a :Food,
         skos:Concept ;
     rdfs:label "Cumin"@en,
         "Cumin"@fr ;
+    :hasDbpediaLink dbpedia:Cumin ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cuminum_cyminum_-_Köhler–s_Medizinal-Pflanzen-198.jpg?width=300> ;
-    owl:sameAs dbpedia:Cumin ;
     skos:broaderTransitive food:Spice .
 
 food:Pasta a :Food,
         skos:Concept ;
     rdfs:label "Pasta"@en,
         "Nouille"@fr ;
+    :hasDbpediaLink dbpedia:Pasta ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/(Pasta)_by_David_Adam_Kess_(pic.2).jpg?width=300> ;
-    owl:sameAs dbpedia:Pasta ;
     skos:broaderTransitive food:Pasta .
 
 food:TomatoSauce a :Food,
         skos:Concept ;
     rdfs:label "Tomato sauce"@en,
         "Sauce tomate"@fr ;
+    :hasDbpediaLink dbpedia:Tomato_sauce ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Fresh_Tomato_Sauce_(Unsplash).jpg?width=300> ;
-    owl:sameAs dbpedia:Tomato_sauce ;
     skos:broader dbpedia:Sauce .
 
 food:Bread a :Food,
         skos:Concept ;
     rdfs:label "Bread"@en,
         "Pain"@fr ;
+    :hasDbpediaLink dbpedia:Bread ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Korb_mit_Brötchen.jpg?width=300> ;
-    owl:sameAs dbpedia:Bread ;
     skos:broaderTransitive food:Bread .
 
 food:Carrots a :Food,
         skos:Concept ;
     rdfs:label "Carrot"@en,
         "Carotte"@fr ;
+    :hasDbpediaLink dbpedia:Carrot ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Vegetable-Carrot-Bundle-wStalks.jpg?width=300> ;
-    owl:sameAs dbpedia:Carrot ;
     skos:broaderTransitive food:Vegetable .
 
 food:Cloves a :Food,
         skos:Concept ;
     rdfs:label "Clove"@en,
         "Clou de girofle"@fr ;
+    :hasDbpediaLink dbpedia:Clove ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Syzygium_aromaticum_-_Köhler–s_Medizinal-Pflanzen-030.jpg?width=300> ;
-    owl:sameAs dbpedia:Clove ;
     skos:broaderTransitive food:Spice .
 
 food:CreamCheese a :Food,
         skos:Concept ;
     rdfs:label "Cream cheese"@en,
         "Fromage à la crème"@fr ;
+    :hasDbpediaLink dbpedia:Cream_cheese ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Philly_cream_cheese.jpg?width=300> ;
-    owl:sameAs dbpedia:Cream_cheese ;
     skos:broaderTransitive food:Cheese .
 
 food:Hamburger a :Food,
         skos:Concept ;
     rdfs:label "Hamburger"@en,
         "Hamburger"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Hamburger_(black_bg).jpg?width=300> ;
-    owl:sameAs dbpedia:Hamburger .
+    :hasDbpediaLink dbpedia:Hamburger ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Hamburger_(black_bg).jpg?width=300> .
 
 food:Paprika a :Food,
         skos:Concept ;
     rdfs:label "Paprika"@en,
         "Paprika"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pimentón_Tap_de_Cortí_(cropped).jpg?width=300> ;
-    owl:sameAs dbpedia:Paprika .
+    :hasDbpediaLink dbpedia:Paprika ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pimentón_Tap_de_Cortí_(cropped).jpg?width=300> .
 
 food:Sliced a :Food,
         skos:Concept ;
     rdfs:label "Sliced bread"@en ;
+    :hasDbpediaLink dbpedia:Sliced_bread ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Fresh_made_bread_05.jpg?width=300> ;
-    owl:sameAs dbpedia:Sliced_bread ;
     skos:broader dbpedia:Bread ;
     skos:broaderTransitive food:Bread .
 
@@ -19655,30 +19646,30 @@ food:ChickenBroth a :Food,
         skos:Concept ;
     rdfs:label "Broth"@en,
         "Bouillon (cuisine)"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Broth_hg.jpg?width=300> ;
-    owl:sameAs dbpedia:Broth .
+    :hasDbpediaLink dbpedia:Broth ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Broth_hg.jpg?width=300> .
 
 food:Raisins a :Food,
         skos:Concept ;
     rdfs:label "Raisin"@en,
         "Raisin sec"@fr ;
+    :hasDbpediaLink dbpedia:Raisin ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Raisins_01.jpg?width=300> ;
-    owl:sameAs dbpedia:Raisin ;
     skos:broaderTransitive food:Fruit .
 
 food:Rice a :Food,
         skos:Concept ;
     rdfs:label "Rice"@en,
         "Riz"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/White,_Brown,_Red_&_Wild_rice.jpg?width=300> ;
-    owl:sameAs dbpedia:Rice .
+    :hasDbpediaLink dbpedia:Rice ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/White,_Brown,_Red_&_Wild_rice.jpg?width=300> .
 
 food:Bacon a :Food,
         skos:Concept ;
     rdfs:label "Bacon"@en,
         "Lard fumé"@fr ;
+    :hasDbpediaLink dbpedia:Bacon ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Made20bacon.png?width=300> ;
-    owl:sameAs dbpedia:Bacon ;
     skos:broader dbpedia:Curing_\(food_preservation\),
         dbpedia:Pork ;
     skos:broaderTransitive food:Meat .
@@ -19687,75 +19678,75 @@ food:Broccoli a :Food,
         skos:Concept ;
     rdfs:label "Broccoli"@en,
         "Brocoli"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Broccoli_and_cross_section_edit.jpg?width=300> ;
-    owl:sameAs dbpedia:Broccoli .
+    :hasDbpediaLink dbpedia:Broccoli ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Broccoli_and_cross_section_edit.jpg?width=300> .
 
 food:EggYolk a :Food,
         skos:Concept ;
     rdfs:label "Yolk"@en,
         "Jaune d'œuf"@fr ;
+    :hasDbpediaLink dbpedia:Yolk ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Raw_egg.jpg?width=300> ;
-    owl:sameAs dbpedia:Yolk ;
     skos:broaderTransitive food:Eggs .
 
 food:PowderedSugar a :Food,
         skos:Concept ;
     rdfs:label "Powdered sugar"@en,
         "Sucre glace"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Powdered_Sugar_-_Macro.jpg?width=300> ;
-    owl:sameAs dbpedia:Powdered_sugar .
+    :hasDbpediaLink dbpedia:Powdered_sugar ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Powdered_Sugar_-_Macro.jpg?width=300> .
 
 food:Mayonnaise a :Food,
         skos:Concept ;
     rdfs:label "Mayonnaise"@en,
         "Mayonnaise"@fr ;
+    :hasDbpediaLink dbpedia:Mayonnaise ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mayonnaise_(1).jpg?width=300> ;
-    owl:sameAs dbpedia:Mayonnaise ;
     skos:broader dbpedia:Condiment .
 
 food:ParmesanCheese a :Food,
         skos:Concept ;
     rdfs:label "Parmesan"@en,
         "Parmigiano Reggiano"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano_as_wedding_celebration_antipasti.jpg?width=300> ;
-    owl:sameAs dbpedia:Parmesan .
+    :hasDbpediaLink dbpedia:Parmesan ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano_as_wedding_celebration_antipasti.jpg?width=300> .
 
 food:Sherry a :Food,
         skos:Concept ;
     rdfs:label "Sherry"@en,
         "Xérès (DO)"@fr ;
+    :hasDbpediaLink dbpedia:Sherry ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/DO_Jerez_location.svg?width=300> ;
-    owl:sameAs dbpedia:Sherry ;
     skos:broader dbpedia:Denominación_de_Origen .
 
 food:Soda a :Food,
         skos:Concept ;
     rdfs:label "Soft drink"@en,
         "Soda"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Tumbler_of_cola_with_ice.jpg?width=300> ;
-    owl:sameAs dbpedia:Soft_drink .
+    :hasDbpediaLink dbpedia:Soft_drink ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Tumbler_of_cola_with_ice.jpg?width=300> .
 
 food:GreenOnions a :Food,
         skos:Concept ;
     rdfs:label "Scallion"@en ;
+    :hasDbpediaLink dbpedia:Scallion ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/CSA-Red-Spring-Onions.jpg?width=300> ;
-    owl:sameAs dbpedia:Scallion ;
     skos:broaderTransitive food:Vegetable .
 
 food:Oregano a :Food,
         skos:Concept ;
     rdfs:label "Oregano"@en,
         "Origan"@fr ;
+    :hasDbpediaLink dbpedia:Oregano ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Origanum_vulgare_-_harilik_pune.jpg?width=300> ;
-    owl:sameAs dbpedia:Oregano ;
     skos:broaderTransitive food:Spice .
 
 food:Celery a :Food,
         skos:Concept ;
     rdfs:label "Celery"@en,
         "Céleri"@fr ;
+    :hasDbpediaLink dbpedia:Celery ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Illustration_Apium_graveolens0.jpg?width=300> ;
-    owl:sameAs dbpedia:Celery ;
     skos:broaderTransitive food:Spice,
         food:Vegetable .
 
@@ -19763,8 +19754,8 @@ food:Parsley a :Food,
         skos:Concept ;
     rdfs:label "Parsley"@en,
         "Persil"@fr ;
+    :hasDbpediaLink dbpedia:Parsley ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Petroselinum.jpg?width=300> ;
-    owl:sameAs dbpedia:Parsley ;
     skos:broaderTransitive food:Spice,
         food:Vegetable .
 
@@ -19772,169 +19763,169 @@ food:Shortening a :Food,
         skos:Concept ;
     rdfs:label "Shortening"@en,
         "Graisse alimentaire"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Strutto.jpg?width=300> ;
-    owl:sameAs dbpedia:Shortening .
+    :hasDbpediaLink dbpedia:Shortening ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Strutto.jpg?width=300> .
 
 food:Zucchini a :Food,
         skos:Concept ;
     rdfs:label "Zucchini"@en,
         "Courgette"@fr ;
+    :hasDbpediaLink dbpedia:Zucchini ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/CSA-Striped-Zucchini.jpg?width=300> ;
-    owl:sameAs dbpedia:Zucchini ;
     skos:broaderTransitive food:Vegetable .
 
 food:Pineapple a :Food,
         skos:Concept ;
     rdfs:label "Pineapple"@en,
         "Ananas"@fr ;
+    :hasDbpediaLink dbpedia:Pineapple ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/കൈതച്ചക്ക.jpg?width=300> ;
-    owl:sameAs dbpedia:Pineapple ;
     skos:broaderTransitive food:Fruit .
 
 food:Tomatoes a :Food,
         skos:Concept ;
     rdfs:label "Tomato"@en,
         "Tomate"@fr ;
+    :hasDbpediaLink dbpedia:Tomato ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Tomato_je.jpg?width=300> ;
-    owl:sameAs dbpedia:Tomato ;
     skos:broaderTransitive food:Vegetable .
 
 food:Walnuts a :Food,
         skos:Concept ;
     rdfs:label "Walnut"@en,
         "Noix"@fr ;
+    :hasDbpediaLink dbpedia:Walnut ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Walnuts_-_whole_and_open_with_halved_kernel.jpg?width=300> ;
-    owl:sameAs dbpedia:Walnut ;
     skos:broaderTransitive food:Nuts .
 
 food:BakingSoda a :Food,
         skos:Concept ;
     rdfs:label "Sodium bicarbonate"@en,
         "Bicarbonate de sodium"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Sodium_bicarbonate.jpg?width=300> ;
-    owl:sameAs dbpedia:Sodium_bicarbonate .
+    :hasDbpediaLink dbpedia:Sodium_bicarbonate ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Sodium_bicarbonate.jpg?width=300> .
 
 food:Meat a :Food,
         skos:Concept ;
     rdfs:label "Meat"@en,
         "Viande"@fr ;
+    :hasDbpediaLink dbpedia:Meat ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/FoodMeat.jpg?width=300> ;
-    owl:sameAs dbpedia:Meat ;
     skos:broaderTransitive food:Meat .
 
 food:Mushrooms a :Food,
         skos:Concept ;
     rdfs:label "Mushroom"@en,
         "Champignon"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Amanita_muscaria_(fly_agaric).jpg?width=300> ;
-    owl:sameAs dbpedia:Mushroom .
+    :hasDbpediaLink dbpedia:Mushroom ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Amanita_muscaria_(fly_agaric).jpg?width=300> .
 
 food:Nutmeg a :Food,
         skos:Concept ;
     rdfs:label "Nutmeg"@en,
         "Noix de muscade"@fr ;
+    :hasDbpediaLink dbpedia:Nutmeg ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Biji_Pala_Bubuk.jpg?width=300> ;
-    owl:sameAs dbpedia:Nutmeg ;
     skos:broaderTransitive food:Spice .
 
 food:Ketchup a :Food,
         skos:Concept ;
     rdfs:label "Ketchup"@en,
         "Ketchup"@fr ;
+    :hasDbpediaLink dbpedia:Ketchup ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Ketchup_20160918_181342_(cropped).jpg?width=300> ;
-    owl:sameAs dbpedia:Ketchup ;
     skos:broader dbpedia:Condiment .
 
 food:LemonJuice a :Food,
         skos:Concept ;
     rdfs:label "Lemon"@en,
         "Citronnier"@fr ;
+    :hasDbpediaLink dbpedia:Lemon ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/P1030323.jpg?width=300> ;
-    owl:sameAs dbpedia:Lemon ;
     skos:broaderTransitive food:Fruit .
 
 food:GreenPepper a :Food,
         skos:Concept ;
     rdfs:label "Bell pepper"@en,
         "Poivron"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Green-Yellow-Red-Pepper-2009.jpg?width=300> ;
-    owl:sameAs dbpedia:Bell_pepper .
+    :hasDbpediaLink dbpedia:Bell_pepper ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Green-Yellow-Red-Pepper-2009.jpg?width=300> .
 
 food:Nuts a :Food,
         skos:Concept ;
     rdfs:label "Pine nut"@en,
         "Pignon (pin)"@fr ;
+    :hasDbpediaLink dbpedia:Pine_nut ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pinoli.jpg?width=300> ;
-    owl:sameAs dbpedia:Pine_nut ;
     skos:broaderTransitive food:Nuts .
 
 food:BakingPowder a :Food,
         skos:Concept ;
     rdfs:label "Baking powder"@en,
         "Levure chimique"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/BakingPowder.jpg?width=300> ;
-    owl:sameAs dbpedia:Baking_powder .
+    :hasDbpediaLink dbpedia:Baking_powder ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/BakingPowder.jpg?width=300> .
 
 food:Margarine a :Food,
         skos:Concept ;
     rdfs:label "Margarine"@en,
         "Margarine"@fr ;
+    :hasDbpediaLink dbpedia:Margarine ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Margarine.jpg?width=300> ;
-    owl:sameAs dbpedia:Margarine ;
     skos:broader dbpedia:Spread_\(food\) .
 
 food:Pork a :Food,
         skos:Concept ;
     rdfs:label "Pork"@en,
         "Porc (viande)"@fr ;
+    :hasDbpediaLink dbpedia:Pork ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Schweinebauch-2.jpg?width=300> ;
-    owl:sameAs dbpedia:Pork ;
     skos:broaderTransitive food:Meat .
 
 food:Ginger a :Food,
         skos:Concept ;
     rdfs:label "Ginger"@en,
         "Gingembre"@fr ;
+    :hasDbpediaLink dbpedia:Ginger ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Koeh-146-no_text.jpg?width=300> ;
-    owl:sameAs dbpedia:Ginger ;
     skos:broaderTransitive food:Spice .
 
 food:Oil a :Food,
         skos:Concept ;
     rdfs:label "Oil"@en,
         "Huile"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Italian_olive_oil_2007.jpg?width=300> ;
-    owl:sameAs dbpedia:Oil .
+    :hasDbpediaLink dbpedia:Oil ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Italian_olive_oil_2007.jpg?width=300> .
 
 food:Milk a :Food,
         skos:Concept ;
     rdfs:label "Milk"@en,
         "Lait"@fr ;
+    :hasDbpediaLink dbpedia:Milk ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Glass_of_Milk_(33657535532).jpg?width=300> ;
-    owl:sameAs dbpedia:Milk ;
     skos:broaderTransitive food:DairyProduct .
 
 food:Spice a :Food,
         skos:Concept ;
     rdfs:label "Spice"@en,
         "Épice"@fr ;
+    :hasDbpediaLink dbpedia:Spice ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Spices1.jpg?width=300> ;
-    owl:sameAs dbpedia:Spice ;
     skos:broaderTransitive food:Spice .
 
 food:BrownSugar a :Food,
         skos:Concept ;
     rdfs:label "Brown sugar"@en,
         "Vergeoise"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Brown_sugar_crystals.jpg?width=300> ;
-    owl:sameAs dbpedia:Brown_sugar .
+    :hasDbpediaLink dbpedia:Brown_sugar ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Brown_sugar_crystals.jpg?width=300> .
 
 food:Garlic a :Food,
         skos:Concept ;
     rdfs:label "Garlic"@en,
         "Ail cultivé"@fr ;
+    :hasDbpediaLink dbpedia:Garlic ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Allium_sativum_Woodwill_1793.jpg?width=300> ;
-    owl:sameAs dbpedia:Garlic ;
     skos:broaderTransitive food:Spice,
         food:Vegetable .
 
@@ -19942,53 +19933,53 @@ food:Artichoke a :Food,
         skos:Concept ;
     rdfs:label "Artichoke"@en,
         "Artichaut"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Artichoke_J1.jpg?width=300> ;
-    owl:sameAs dbpedia:Artichoke .
+    :hasDbpediaLink dbpedia:Artichoke ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Artichoke_J1.jpg?width=300> .
 
 food:Cinnamon a :Food,
         skos:Concept ;
     rdfs:label "Cinnamon"@en,
         "Cannelle"@fr ;
+    :hasDbpediaLink dbpedia:Cinnamon ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cinnamomum_verum_spices.jpg?width=300> ;
-    owl:sameAs dbpedia:Cinnamon ;
     skos:broaderTransitive food:Spice .
 
 food:SoySauce a :Food,
         skos:Concept ;
     rdfs:label "Soy sauce"@en,
         "Sauce de soja"@fr ;
+    :hasDbpediaLink dbpedia:Soy_sauce ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Soy_sauce_2.jpg?width=300> ;
-    owl:sameAs dbpedia:Soy_sauce ;
     skos:broader dbpedia:Condiment .
 
 food:Vegetable a :Food,
         skos:Concept ;
     rdfs:label "Vegetable"@en,
         "Légume"@fr ;
+    :hasDbpediaLink dbpedia:Vegetable ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Marketvegetables.jpg?width=300> ;
-    owl:sameAs dbpedia:Vegetable ;
     skos:broaderTransitive food:Vegetable .
 
 food:Vanilla a :Food,
         skos:Concept ;
     rdfs:label "Vanilla"@en,
         "Vanille"@fr ;
+    :hasDbpediaLink dbpedia:Vanilla ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Vanilla_planifolia_(6998639597).jpg?width=300> ;
-    owl:sameAs dbpedia:Vanilla ;
     skos:broaderTransitive food:Spice .
 
 food:Cornstarch a :Food,
         skos:Concept ;
     rdfs:label "Corn starch"@en ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cornstarch_mixed_with_water.jpg?width=300> ;
-    owl:sameAs dbpedia:Corn_starch .
+    :hasDbpediaLink dbpedia:Corn_starch ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cornstarch_mixed_with_water.jpg?width=300> .
 
 food:Spinach a :Food,
         skos:Concept ;
     rdfs:label "Spinach"@en,
         "Spinacia"@fr ;
+    :hasDbpediaLink dbpedia:Spinach ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Spinacia_oleracea_Spinazie_bloeiend.jpg?width=300> ;
-    owl:sameAs dbpedia:Spinach ;
     skos:broaderTransitive food:Vegetable .
 
 food:Chicken a :Food,
@@ -19996,92 +19987,92 @@ food:Chicken a :Food,
     rdfs:label "Chicken"@en,
         "Chicken as food"@en,
         "Poulet"@fr ;
+    :hasDbpediaLink dbpedia:Chicken,
+        dbpedia:Chicken_as_food ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chickens_in_market.jpg?width=300>,
         <http://commons.wikimedia.org/wiki/Special:FilePath/Male_and_female_chicken_sitting_together.jpg?width=300> ;
-    owl:sameAs dbpedia:Chicken,
-        dbpedia:Chicken_as_food ;
     skos:broaderTransitive food:Meat .
 
 food:Hashbrowns a :Food,
         skos:Concept ;
     rdfs:label "Hash browns"@en ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mmm..._sliders_and_deep_fried_hash_browns_(7958927842).jpg?width=300> ;
-    owl:sameAs dbpedia:Hash_browns .
+    :hasDbpediaLink dbpedia:Hash_browns ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mmm..._sliders_and_deep_fried_hash_browns_(7958927842).jpg?width=300> .
 
 food:Teaspoon a :Food,
         skos:Concept ;
     rdfs:label "Teaspoon"@en,
         "Cuillère à café"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Loeffel_03.jpg?width=300> ;
-    owl:sameAs dbpedia:Teaspoon .
+    :hasDbpediaLink dbpedia:Teaspoon ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Loeffel_03.jpg?width=300> .
 
 food:Eggs a :Food,
         skos:Concept ;
     rdfs:label "Egg"@en,
         "Egg as food"@en,
         "Œuf (aliment)"@fr ;
+    :hasDbpediaLink dbpedia:Egg,
+        dbpedia:Egg_as_food ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Eggs,_parmesan_and_carrots_with_cream.jpeg?width=300>,
         <http://commons.wikimedia.org/wiki/Special:FilePath/Oeufs002b.jpg?width=300> ;
-    owl:sameAs dbpedia:Egg,
-        dbpedia:Egg_as_food ;
     skos:broaderTransitive food:Eggs .
 
 food:Potatoes a :Food,
         skos:Concept ;
     rdfs:label "Potato"@en,
         "Pomme de terre"@fr ;
+    :hasDbpediaLink dbpedia:Potato ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Patates.jpg?width=300> ;
-    owl:sameAs dbpedia:Potato ;
     skos:broaderTransitive food:Vegetable .
 
 food:Flour a :Food,
         skos:Concept ;
     rdfs:label "Flour"@en,
         "Farine"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Flours.jpg?width=300> ;
-    owl:sameAs dbpedia:Flour .
+    :hasDbpediaLink dbpedia:Flour ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Flours.jpg?width=300> .
 
 food:Sugar a :Food,
         skos:Concept ;
     rdfs:label "Sugar"@en,
         "Sucre"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Sucre_blanc_cassonade_complet_rapadura.jpg?width=300> ;
-    owl:sameAs dbpedia:Sugar .
+    :hasDbpediaLink dbpedia:Sugar ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Sucre_blanc_cassonade_complet_rapadura.jpg?width=300> .
 
 food:Water a :Food,
         skos:Concept ;
     rdfs:label "Water"@en,
         "Eau"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Water_drop_001.jpg?width=300> ;
-    owl:sameAs dbpedia:Water .
+    :hasDbpediaLink dbpedia:Water ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Water_drop_001.jpg?width=300> .
 
 food:Soup a :Food,
         skos:Concept ;
     rdfs:label "Soup"@en,
         "Soupe"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Hungarian_goulash_soup.jpg?width=300> ;
-    owl:sameAs dbpedia:Soup .
+    :hasDbpediaLink dbpedia:Soup ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Hungarian_goulash_soup.jpg?width=300> .
 
 food:Cornflakes a :Food,
         skos:Concept ;
     rdfs:label "Corn flakes"@en,
         "Flocon de maïs"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Kellogg's_Corn_Flakes,_with_milk.jpg?width=300> ;
-    owl:sameAs dbpedia:Corn_flakes .
+    :hasDbpediaLink dbpedia:Corn_flakes ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Kellogg's_Corn_Flakes,_with_milk.jpg?width=300> .
 
 food:CheddarCheese a :Food,
         skos:Concept ;
     rdfs:label "Cheddar cheese"@en,
         "Cheddar (fromage)"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/MidSomerset_Show_170803.jpg?width=300> ;
-    owl:sameAs dbpedia:Cheddar_cheese .
+    :hasDbpediaLink dbpedia:Cheddar_cheese ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/MidSomerset_Show_170803.jpg?width=300> .
 
 food:Onion a :Food,
         skos:Concept ;
     rdfs:label "Onion"@en,
         "Oignon"@fr ;
+    :hasDbpediaLink dbpedia:Onion ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mixed_onions.jpg?width=300> ;
-    owl:sameAs dbpedia:Onion ;
     skos:broaderTransitive food:Spice,
         food:Vegetable .
 
@@ -20089,31 +20080,31 @@ food:SourCream a :Food,
         skos:Concept ;
     rdfs:label "Sour cream"@en,
         "Crème aigre"@fr ;
+    :hasDbpediaLink dbpedia:Sour_cream ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Bowl_of_chili_with_sour_cream_and_cheese.jpg?width=300> ;
-    owl:sameAs dbpedia:Sour_cream ;
     skos:broaderTransitive food:DairyProduct .
 
 food:Pepper a :Food,
         skos:Concept ;
     rdfs:label "Black pepper"@en,
         "Poivrier noir"@fr ;
+    :hasDbpediaLink dbpedia:Black_pepper ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Piper_nigrum_-_Köhler–s_Medizinal-Pflanzen-107.jpg?width=300> ;
-    owl:sameAs dbpedia:Black_pepper ;
     skos:broaderTransitive food:Spice .
 
 food:Salt a :Food,
         skos:Concept ;
     rdfs:label "Salt"@en,
         "Sel (chimie)"@fr ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/DeadSeaIsrael5.jpg?width=300> ;
-    owl:sameAs dbpedia:Salt .
+    :hasDbpediaLink dbpedia:Salt ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/DeadSeaIsrael5.jpg?width=300> .
 
 food:Butter a :Food,
         skos:Concept ;
     rdfs:label "Butter"@en,
         "Beurre"@fr ;
+    :hasDbpediaLink dbpedia:Butter ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Švédský_koláč_naruby_904_(cropped).jpg?width=300> ;
-    owl:sameAs dbpedia:Butter ;
     skos:broaderTransitive food:DairyProduct .
 
 [] rdf:first :hasIngredient ;

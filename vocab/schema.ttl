@@ -231,7 +231,7 @@
     rdfs:label             "Food used in a recipe"@en, "Aliment utilisé dans une recette"@fr ;
     rdfs:comment           "The food item that is used in a recipe."@en,
                            "L'aliment qui est utilisé dans une recette."@fr ;
-    owl:sameAs             foodExte:containsIngredient .
+    owl:equivalentProperty foodExte:containsIngredient .
 
 :usedInRecipe
     a             owl:ObjectProperty ;
@@ -339,6 +339,12 @@
     rdfs:label   "ui label"@en, "étiquette ui"@fr ;
     rdfs:comment "Label used of the UI"@en, "Étiquette pour l'interface utilisateur"@fr .
 
+
+:hasDbpediaLink
+    a            owl:DatatypeProperty ;
+    rdfs:label   "has dbpedia link"@en, "a pour lien dbpedia"@fr ;
+    rdfs:comment "Indicates the link for the DBpedia resource."@en,
+                 "Indique le lien vers la ressource DBpedia."@fr .
 
 # UI Display properties
 :hasThumbnail
