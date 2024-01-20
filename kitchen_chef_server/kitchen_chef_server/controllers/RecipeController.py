@@ -22,10 +22,11 @@ debug = True
 async def get_recipes(
         q_ingredients: Annotated[list[str] | None, Query()] = None,
         q_filters: Annotated[list[str] | None, Query()] = None,
+        q_search_title: Annotated[str | None, Query()] = None,
 ):
     q_ingredients = q_ingredients if q_ingredients else []
     q_filters = q_filters if q_filters else []
-    query = build_search_query(q_ingredients, q_filters)
+    query = build_search_query(q_ingredients, q_filters, q_search_title)
     initBindings = {}
     if q_ingredients:
         for i, q_ingredient in enumerate(q_ingredients):
@@ -34,6 +35,9 @@ async def get_recipes(
     if q_filters:
         for i, q_filter in enumerate(q_filters):
             initBindings[f"recipeFilter{i}"] = URIRef(q_filter)
+
+    if q_search_title:
+        initBindings["recipeTitle"] = q_search_title
 
     results = g.query(query, initBindings=initBindings)
 

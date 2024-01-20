@@ -4,7 +4,6 @@ import Grid from '@mui/material/Grid';
 import { Button } from '@mui/material';
 import { useQuery } from 'react-query';
 import RecipeSearchBar from '../components/form/RecipeSearchBar';
-import SortOptions from '../components/form/SortOptions';
 import IngredientsAutocomplete from '../components/form/IngredientsAutocomplete';
 import Filters from '../components/form/Filters';
 import { getIngredients } from '../api/ingredients';
@@ -19,6 +18,7 @@ type TRecipeSearchFormProps = {
 
 const RecipeSearchForm:React.FC<TRecipeSearchFormProps> = ({ onUpdateRecipes }) => {
   const [recipeFilters, setRecipeFilters] = useState<TFilter[]>([]);
+  const [recipeSearchTitle, setRecipeSearchTitle] = useState<string>('');
 
   useEffect(() => {
     getRecipeFilters().then((resfilters) => {
@@ -30,6 +30,9 @@ const RecipeSearchForm:React.FC<TRecipeSearchFormProps> = ({ onUpdateRecipes }) 
 
   const [filteringIngredients, setFilteringIngredients] = useState<TIngredient[]>([]);
 
+  const handleChangeRecipeSearchTitle = (searchTitle:string) => {
+    setRecipeSearchTitle(searchTitle);
+  };
   const handleAddIngredient = (ingredient: TIngredient) => {
     setFilteringIngredients((prevState) => [...prevState, ingredient]);
   };
@@ -50,32 +53,24 @@ const RecipeSearchForm:React.FC<TRecipeSearchFormProps> = ({ onUpdateRecipes }) 
   };
 
   const handleFormSubmit = async () => {
-    console.log('before request');
-    const recipes = await getRecipes({ filteringIngredients, recipeFilters });
-    console.log('after request');
-    console.log("RESULT", recipes.data)
+    const recipes = await getRecipes({ filteringIngredients, recipeFilters, recipeSearchTitle });
     onUpdateRecipes(recipes.data);
   };
 
   return (
     <Container>
       <Grid container spacing={2}>
-        <Grid item xs={9}>
-          <RecipeSearchBar />
+        <Grid item xs={12}>
+          <RecipeSearchBar
+            searchTitle={recipeSearchTitle}
+            onSearchTitleChange={handleChangeRecipeSearchTitle}
+          />
         </Grid>
-        <Grid item xs={3}>
-          <SortOptions />
-        </Grid>
-        <Grid item xs={9}>
+        <Grid item xs={12}>
           <IngredientsAutocomplete
             onAddIngredient={handleAddIngredient}
             availableIngredients={availableIngredients?.data || []}
           />
-        </Grid>
-        <Grid item xs={3}>
-          <Button variant="contained" color="primary" fullWidth>
-            Add
-          </Button>
         </Grid>
         <Grid item xs={12}>
           <Filters

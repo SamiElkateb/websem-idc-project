@@ -18,11 +18,9 @@ import Instructions from '../components/recipe/Instructions';
 const RecipePage = () => {
   const params = useParams();
   const { recipeId } = params;
-  console.log('params', params);
 
   const { data: recipe, isLoading } = useQuery(`recipe/${recipeId}`, () => getRecipe(recipeId));
 
-  console.log('recipe', recipe);
   if (isLoading || !recipe?.data) return <CircularProgress />;
   const { nutritionalData } = recipe.data;
 
@@ -37,14 +35,23 @@ const RecipePage = () => {
         {recipe?.data?.name}
       </Typography>
       {recipe?.data.abstract ? <Abstract abstract={recipe?.data.abstract} /> : null}
-      <Grid container spacing={2} paddingY={5}>
+      <Grid
+        container
+        spacing={2}
+        paddingY={5}
+        style={{
+          display: 'grid',
+          gridAutoColumns: '1fr',
+          gridAutoFlow: 'column',
+        }}
+      >
         <Grid
           item
-          xs={6}
+          display="flex"
         >
           <IngredientsCard ingredients={recipe?.data.ingredients} thumbnail={recipe?.data.thumbnail} />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item>
           <NutritionalDataCard nutritionalData={nutritionalData} />
           <Box marginY={1} />
           {recipe?.data.instructions ? <Instructions instructions={recipe?.data.instructions} /> : null}

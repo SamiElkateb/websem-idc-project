@@ -13,28 +13,28 @@ const NutritionalDataCard = ({ nutritionalData, thumbnail }) => (
     <CardContent>
       <Typography gutterBottom component="div" align="left" display="flex" justifyContent="space-between">
         <span>Calories </span>
-        <span>{`${nutritionalData.kcal} kCal`}</span>
+        <span>{`${parseInt(nutritionalData.kcal, 10)} kCal`}</span>
       </Typography>
 
       <Typography gutterBottom component="div" align="left" display="flex" justifyContent="space-between">
         <span>Proteins </span>
-        <span>{`${nutritionalData.proteins} g`}</span>
+        <span>{`${parseInt(nutritionalData.proteins, 10)} g`}</span>
       </Typography>
       <Typography gutterBottom component="div" align="left" display="flex" justifyContent="space-between">
         <span>Fats </span>
-        <span>{`${nutritionalData.fat} g`}</span>
+        <span>{`${parseInt(nutritionalData.fat, 10)} g`}</span>
       </Typography>
       <Typography gutterBottom component="div" align="left" display="flex" justifyContent="space-between">
         <span>Carbohydrates </span>
-        <span>{`${nutritionalData.carbs} g`}</span>
+        <span>{`${parseInt(nutritionalData.carbs, 10)} g`}</span>
       </Typography>
       <Typography gutterBottom component="div" align="left" display="flex" justifyContent="space-between">
         <span>Sugar </span>
-        <span>{`${nutritionalData.sugar} g`}</span>
+        <span>{`${parseInt(nutritionalData.sugar, 10)} g`}</span>
       </Typography>
       <Typography gutterBottom component="div" align="left" display="flex" justifyContent="space-between">
         <span>Fibers </span>
-        <span>{`${nutritionalData.fibers} g`}</span>
+        <span>{`${parseInt(nutritionalData.fibers, 10)} g`}</span>
       </Typography>
     </CardContent>
   </Card>

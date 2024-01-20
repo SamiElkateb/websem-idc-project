@@ -45,7 +45,7 @@ const IngredientsCard = ({ ingredients, thumbnail }) => {
     setUnitSystem(newUnitSystem);
   };
   return (
-    <Card sx={{ backgroundColor: '#f4f4f3' }}>
+    <Card sx={{ backgroundColor: '#f4f4f3', flex: '1' }}>
       {
         thumbnail ? (
           <CardMedia
