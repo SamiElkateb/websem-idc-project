@@ -11,12 +11,27 @@
 measurements:MeasurementThesaurus
     a                  skos:ConceptScheme ;
     skos:prefLabel     "Measurement Thesaurus"@en ;
-    skos:hasTopConcept measurements:MeasurementUnit .
+    skos:hasTopConcept measurements:MetricMeasurementUnit ;
+    skos:hasTopConcept measurements:StandardMeasurementUnit ;
+    skos:hasTopConcept measurements:ImperialMeasurementUnit .
 
 measurements:MeasurementUnit
     a              skos:Concept ;
     skos:prefLabel "Measurement Unit"@en ;
     skos:narrowerTransitive measurements:VolumeMeasurementUnit , measurements:WeightMeasurementUnit .
+
+measurements:MetricMeasurementUnit
+    a              skos:Concept ;
+    skos:prefLabel "Metric Measurement Unit"@en .
+
+
+measurements:ImperialMeasurementUnit
+    a              skos:Concept ;
+    skos:prefLabel "Imperial Measurement Unit"@en .
+
+measurements:StandardMeasurementUnit
+    a              skos:Concept ;
+    skos:prefLabel "Standard Measurement Unit"@en .
 
 measurements:VolumeMeasurementUnit
     a              skos:Concept ;
@@ -32,17 +47,20 @@ measurements:Tablespoon
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Teaspoon ;
                          :conversionRatio 3.0 ] ;
-    skos:broaderTransitive measurements:VolumeMeasurementUnit .
+    skos:broaderTransitive measurements:VolumeMeasurementUnit ,
+                           measurements:StandardMeasurementUnit .
 
 measurements:Teaspoon
     a              :VolumeMeasurementUnit, skos:Concept ;
     skos:prefLabel "Teaspoon"@en ;
-    skos:broaderTransitive   measurements:VolumeMeasurementUnit .
+    skos:broaderTransitive   measurements:VolumeMeasurementUnit ,
+                           measurements:StandardMeasurementUnit .
 
 measurements:Liter
     a              :MetricMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
     skos:prefLabel "Liter"@en ;
-    skos:broaderTransitive measurements:VolumeMeasurementUnit .
+    skos:broaderTransitive measurements:VolumeMeasurementUnit ,
+                           measurements:MetricMeasurementUnit .
 
 measurements:CentiLiter
     a                  :MetricMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
@@ -50,7 +68,9 @@ measurements:CentiLiter
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Liter ;
                          :conversionRatio 0.01 ] ;
-    skos:broaderTransitive measurements:VolumeMeasurementUnit .
+    skos:broaderTransitive measurements:VolumeMeasurementUnit ,
+                           measurements:MetricMeasurementUnit .
+
 
 measurements:milliLiter
     a                  :MetricMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
@@ -58,42 +78,52 @@ measurements:milliLiter
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Liter ;
                          :conversionRatio 0.001 ] ;
-    skos:broaderTransitive measurements:VolumeMeasurementUnit .
+    skos:broaderTransitive measurements:VolumeMeasurementUnit ,
+                           measurements:MetricMeasurementUnit .
 
 measurements:Cup
     a                  :MeasurementUnit, skos:Concept ;
     skos:prefLabel     "Cup"@en ;
-    skos:broaderTransitive measurements:VolumeMeasurementUnit .
+    skos:broaderTransitive measurements:VolumeMeasurementUnit ,
+                           measurements:StandardMeasurementUnit .
 
 measurements:Package
     a              :MeasurementUnit, skos:Concept ;
     skos:prefLabel "Package"@en ;
-    skos:broaderTransitive measurements:MeasurementUnit .
+    skos:broaderTransitive measurements:MeasurementUnit ,
+                           measurements:StandardMeasurementUnit .
+
 
 measurements:Slice
     a              :MeasurementUnit, skos:Concept ;
     skos:prefLabel "Slice"@en ;
-    skos:broaderTransitive measurements:MeasurementUnit .
+    skos:broaderTransitive measurements:MeasurementUnit ,
+                           measurements:StandardMeasurementUnit .
+
 
 measurements:Pinch
     a              :MeasurementUnit, skos:Concept ;
     skos:prefLabel "Pinch"@en ;
-    skos:broaderTransitive measurements:MeasurementUnit .
+    skos:broaderTransitive measurements:MeasurementUnit ,
+                           measurements:StandardMeasurementUnit .
 
 measurements:Medium
     a              :MeasurementUnit, skos:Concept ;
     skos:prefLabel "Medium"@en ;
-    skos:broaderTransitive measurements:MeasurementUnit .
+    skos:broaderTransitive measurements:MeasurementUnit ,
+                           measurements:StandardMeasurementUnit .
 
 measurements:Small
     a              :MeasurementUnit, skos:Concept ;
     skos:prefLabel "Small"@en ;
-    skos:broaderTransitive measurements:MeasurementUnit .
+    skos:broaderTransitive measurements:MeasurementUnit ,
+                           measurements:StandardMeasurementUnit .
 
 measurements:Large
     a              :MeasurementUnit, skos:Concept ;
     skos:prefLabel "Large"@en ;
-    skos:broaderTransitive measurements:MeasurementUnit .
+    skos:broaderTransitive measurements:MeasurementUnit ,
+                           measurements:StandardMeasurementUnit .
 
 measurements:VolumicOunce
     a                  :ImperialMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
@@ -101,7 +131,8 @@ measurements:VolumicOunce
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Liter ;
                          :conversionRatio 0.0296 ] ;
-    skos:broaderTransitive measurements:VolumeMeasurementUnit .
+    skos:broaderTransitive measurements:VolumeMeasurementUnit ,
+                           measurements:ImperialMeasurementUnit .
 
 measurements:Quart
     a                  :ImperialMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
@@ -109,7 +140,8 @@ measurements:Quart
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Liter ;
                          :conversionRatio 0.8798789 ] ;
-    skos:broaderTransitive measurements:VolumeMeasurementUnit .
+    skos:broaderTransitive measurements:VolumeMeasurementUnit ,
+                           measurements:ImperialMeasurementUnit .
 
 measurements:Pound
     a                  :ImperialMeasurementUnit, :WeightMeasurementUnit, skos:Concept ;
@@ -117,7 +149,8 @@ measurements:Pound
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Kilogram ;
                          :conversionRatio 0.4536 ] ;
-    skos:broaderTransitive measurements:WeightMeasurementUnit .
+    skos:broaderTransitive measurements:WeightMeasurementUnit ,
+                           measurements:ImperialMeasurementUnit .
 
 measurements:WeightOunce
     a                  :ImperialMeasurementUnit, :WeightMeasurementUnit, skos:Concept ;
@@ -125,7 +158,8 @@ measurements:WeightOunce
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Kilogram ;
                          :conversionRatio 0.02835 ] ;
-    skos:broaderTransitive measurements:WeightMeasurementUnit .
+    skos:broaderTransitive measurements:WeightMeasurementUnit ,
+                           measurements:ImperialMeasurementUnit .
 
 measurements:Gram
     a                  :MetricMeasurementUnit, :WeightMeasurementUnit, skos:Concept ;
@@ -133,12 +167,14 @@ measurements:Gram
     :hasUnitConversion [ a                :UnitConversion ;
                          :unit            measurements:Kilogram ;
                          :conversionRatio 1000.0 ] ;
-    skos:broaderTransitive measurements:WeightMeasurementUnit .
+    skos:broaderTransitive measurements:WeightMeasurementUnit ,
+                           measurements:MetricMeasurementUnit .
 
 measurements:Kilogram
     a              :MetricMeasurementUnit, :WeightMeasurementUnit, skos:Concept ;
     skos:prefLabel "Kilogram"@en ;
-    skos:broaderTransitive measurements:WeightMeasurementUnit .
+    skos:broaderTransitive measurements:WeightMeasurementUnit ,
+                           measurements:MetricMeasurementUnit .
 
 
 measurements:Few

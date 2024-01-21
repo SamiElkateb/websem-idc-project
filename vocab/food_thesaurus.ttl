@@ -27,8 +27,7 @@ food:FoodThesaurus
     skos:hasTopConcept food:Fish ;
     skos:hasTopConcept food:DairyProduct ;
     skos:hasTopConcept food:Fruit ;
-    skos:hasTopConcept food:Vegetable ;
-    skos:hasTopConcept food:Eggs .
+    skos:hasTopConcept food:Vegetable .
 
 food:Meat
     a                      skos:Concept ;
