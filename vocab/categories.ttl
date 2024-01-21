@@ -1,0 +1,94 @@
+@prefix :         <http://project-kitchenchef.fr/schema#> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix dbpedia:  <http://dbpedia.org/resource/> .
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml:      <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix foodExte: <http://data.lirmm.fr/ontologies/food#> .
+@prefix fowl:     <http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#> .
+
+:Dish
+    a                   owl:Class ;
+    rdfs:label          "Dish"@en ;
+    rdfs:comment        "General category for recipes."@en ;
+    rdfs:subClassOf     owl:Thing ;
+    rdfs:seeAlso        dbpedia:Dish ;
+    owl:equivalentClass fowl:Dish .
+
+:Appetizer
+    a                owl:Class ;
+    rdfs:label       "Appetizer"@en, "Entrée"@fr, "Starter"@en ;
+    rdfs:comment     "An appetizer is a small first course of an overall meal."@en ;
+    owl:disjointWith :SideDish ;
+    rdfs:subClassOf  :Category ;
+    rdfs:seeAlso     dbpedia:Appetizer .
+
+:MainCourse
+    a               owl:Class ;
+    rdfs:label      "Main course"@en ;
+    rdfs:comment    "A main course is the featured or primary dish in a meal consisting of several courses."@en ;
+    rdfs:subClassOf :Category ;
+    rdfs:seeAlso    dbpedia:Main_course .
+
+:Dessert
+    a                   owl:Class ;
+    rdfs:label          "Dessert"@en ;
+    rdfs:comment        "Dessert is a course that concludes a meal."@en ;
+    rdfs:subClassOf     :Category ;
+    rdfs:seeAlso        dbpedia:Dessert ;
+    owl:equivalentClass fowl:DessertCourse .
+
+:SideDish
+    a               owl:Class ;
+    rdfs:label      "Side dish"@en ;
+    rdfs:comment    "A side dish, sometimes referred to as a side order or simply a side, is a food item that accompanies the entrée or main course at a meal."@en ;
+    rdfs:subClassOf :Category ;
+    rdfs:seeAlso    dbpedia:Side_dish .
+
+:SaladAndDressings
+    a                   owl:Class ;
+    rdfs:label          "Salad and dressings"@en ;
+    rdfs:comment        "Salad and dressings"@en ;
+    rdfs:subClassOf     :Appetizer ;
+    owl:disjointUnionOf ( :Salad :Dressing ) .
+
+:Dressing
+    a               owl:Class ;
+    rdfs:label      "Dressing"@en ;
+    rdfs:comment    "Dressing is a sauce that is used to add flavor to a salad."@en ;
+    rdfs:subClassOf :SaladAndDressings ;
+    rdfs:seeAlso    dbpedia:Salad_dressing .
+
+:Salad
+    a               owl:Class ;
+    rdfs:label      "Salad"@en ;
+    rdfs:comment    "Salad is a dish consisting of a mixture of small pieces of food, usually vegetables or fruit."@en ;
+    rdfs:subClassOf :SaladAndDressings .
+
+:Cake
+    a               owl:Class ;
+    rdfs:label      "Cake"@en ;
+    rdfs:comment    "Cake is a form of sweet dessert that is typically baked."@en ;
+    rdfs:subClassOf :Dessert .
+
+:Pie
+    a               owl:Class ;
+    rdfs:label      "Pie"@en ;
+    rdfs:comment    "Pie is a baked dish which is usually made of a pastry dough casing that covers or completely contains a filling of various sweet or savoury ingredients."@en ;
+    rdfs:subClassOf :Dessert ;
+    rdfs:seeAlso    :Cookie .
+
+:Cookie
+    a               owl:Class ;
+    rdfs:label      "Cookie"@en ;
+    rdfs:comment    "A cookie is a baked or cooked food that is small, flat and sweet."@en ;
+    rdfs:subClassOf :Dessert .
+
+:Soup
+    a               owl:Class ;
+    rdfs:label      "Soup"@en ;
+    rdfs:comment    "Soup is a primarily liquid food, generally served warm or hot (but may be cool or cold), that is made by combining ingredients such as meat and vegetables with stock, juice, water, or another liquid."@en ;
+    rdfs:subClassOf :Appetizer, :MainCourse .

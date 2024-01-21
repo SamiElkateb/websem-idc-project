@@ -13,7 +13,10 @@
 @prefix fowl:    <http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#> .
 
 :complementaryRecipe
-    a owl:ObjectProperty .
+    a owl:ObjectProperty ;
+    rdfs:label "Complementary recipe"@en, "Recette complémentaire"@fr ;
+    rdfs:comment "A category of recipes that is complementary to the current one"@en,
+                 "Une catégorie de recette qui est complémentaire à la recette courante"@fr .
 
 :RecipeWithArachis
     a                   owl:Class ;

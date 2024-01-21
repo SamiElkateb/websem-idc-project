@@ -1,15 +1,14 @@
 @prefix :<http://project-kitchenchef.fr/schema#> .
 @prefix recipes:<http://project-kitchenchef.fr/recipes/data#> .
 @prefix measurements:<http://project-kitchenchef.fr/measurements/data#> .
-@prefix recipeCategory:<http://project-kitchenchef.fr/recipes/categories#> .
 
 CONSTRUCT {
     ?subj ?pred ?obj .
-    ?salads a recipeCategory:SaladAndDressings
-    ?cakes a recipeCategory:Cake
-    ?soup a recipeCategory:Soup
-    ?cookies a recipeCategory:Cookie
-    ?pies a recipeCategory:Pie
+    ?salads a :SaladAndDressings
+    ?cakes a :Cake
+    ?soup a :Soup
+    ?cookies a :Cookie
+    ?pies a :Pie
 } WHERE {
     {
       ?subj ?pred ?obj .
