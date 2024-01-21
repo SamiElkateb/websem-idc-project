@@ -80,6 +80,21 @@ measurements:Pinch
     skos:prefLabel "Pinch"@en ;
     skos:broaderTransitive measurements:MeasurementUnit .
 
+measurements:Medium
+    a              :MeasurementUnit, skos:Concept ;
+    skos:prefLabel "Medium"@en ;
+    skos:broaderTransitive measurements:MeasurementUnit .
+
+measurements:Small
+    a              :MeasurementUnit, skos:Concept ;
+    skos:prefLabel "Small"@en ;
+    skos:broaderTransitive measurements:MeasurementUnit .
+
+measurements:Large
+    a              :MeasurementUnit, skos:Concept ;
+    skos:prefLabel "Large"@en ;
+    skos:broaderTransitive measurements:MeasurementUnit .
+
 measurements:VolumicOunce
     a                  :ImperialMeasurementUnit, :VolumeMeasurementUnit, skos:Concept ;
     skos:prefLabel     "Fluid ounce"@en ;

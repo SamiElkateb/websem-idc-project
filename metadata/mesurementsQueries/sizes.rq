@@ -1,0 +1,24 @@
+@prefix :<http://project-kitchenchef.fr/schema#> .
+@prefix recipes:<http://project-kitchenchef.fr/recipes/data#> .
+@prefix measurements:<http://project-kitchenchef.fr/measurements/data#> .
+
+CONSTRUCT {
+    ?subj ?pred ?obj .
+    ?smallIngredient :unit measurements:Small .
+    ?mediumIngredient :unit measurements:Medium .
+    ?largeIngredient :unit measurements:Large .
+} WHERE {
+    {
+      ?subj ?pred ?obj .
+      FILTER (!REGEX(?obj, "(small|medium|large)", "i")|| ?pred != :unit)
+    } UNION {
+        ?smallIngredient :unit ?unit .
+        FILTER REGEX(?unit, "(small)", "i")
+    } UNION {
+        ?mediumIngredient :unit ?unit .
+        FILTER REGEX(?unit, "(medium)", "i")
+    } UNION {
+        ?largeIngredient :unit ?unit .
+        FILTER REGEX(?unit, "(large)", "i")
+    }
+}
