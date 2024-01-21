@@ -16,7 +16,7 @@ FILTER(
         OPTIONAL {
             ?x :quantityFromUnit ?intUnit.
         }
-        FILTER(?int NOT IN (:Few, :Some, :Many))
+        FILTER(?int NOT IN (measurements:Few, measurements:Some, measurements:Many))
         BIND( IF((BOUND(?intUnit) && DATATYPE(?int) = xsd:decimal),?intUnit*?int,?int) AS ?adjustedValue )
     }
 }
