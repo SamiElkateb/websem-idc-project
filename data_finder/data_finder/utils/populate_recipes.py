@@ -61,7 +61,7 @@ def add_recipe_to_graph(g, recipe, recipe_uri, dbpedia_uri):
     thumbnail = recipe.get("thumbnail", None)
     if thumbnail:
         g.add((URIRef(recipe_uri), SCHEMA["hasThumbnail"], URIRef(thumbnail)))
-    g.add((URIRef(recipe_uri), OWL.sameAs, URIRef(dbpedia_uri)))
+    g.add((URIRef(recipe_uri), SCHEMA["hasDbpediaLink"], URIRef(dbpedia_uri)))
 
 
 def add_recipe_data(g, recipe_uri, dbpedia_uri):
