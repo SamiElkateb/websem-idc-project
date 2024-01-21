@@ -8,7 +8,7 @@
 @prefix owl:            <http://www.w3.org/2002/07/owl#> .
 @prefix skos:           <http://www.w3.org/2004/02/skos/core#> .
 @prefix recipeCategory: <http://project-kitchenchef.fr/recipeCategory#> .
-@prefix fowl:  <http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#> .
+@prefix fowl:           <http://www.w3.org/TR/2003/PR-owl-guide-20031209/food#> .
 
 recipeCategory:
     a            owl:Ontology ;
@@ -20,50 +20,50 @@ recipeCategory:Dish
     rdfs:label      "Dish"@en ;
     rdfs:comment    "General category for recipes."@en ;
     rdfs:subClassOf owl:Thing ;
-    owl:sameAs     dbpedia:Dish, fowl:Dish .
+    owl:equivalentClass      dbpedia:Dish, fowl:Dish .
 
 recipeCategory:Appetizer
-    a               owl:Class ;
-    rdfs:label      "Appetizer"@en , "Entrée"@fr , "Starter"@en ;
-    rdfs:comment    "An appetizer is a small first course of an overall meal."@en ;
+    a                owl:Class ;
+    rdfs:label       "Appetizer"@en, "Entrée"@fr, "Starter"@en ;
+    rdfs:comment     "An appetizer is a small first course of an overall meal."@en ;
     owl:disjointWith recipeCategory:SideDish ;
-    rdfs:subClassOf recipeCategory:Category ;
-    owl:sameAs     dbpedia:Appetizer .
+    rdfs:subClassOf  recipeCategory:Category ;
+    owl:equivalentClass       dbpedia:Appetizer .
 
 recipeCategory:MainCourse
     a               owl:Class ;
     rdfs:label      "Main course"@en ;
     rdfs:comment    "A main course is the featured or primary dish in a meal consisting of several courses."@en ;
     rdfs:subClassOf recipeCategory:Category ;
-    owl:sameAs     dbpedia:Main_course .
+    owl:equivalentClass      dbpedia:Main_course .
 
 recipeCategory:Dessert
-    a               owl:Class ;
-    rdfs:label      "Dessert"@en ;
-    rdfs:comment    "Dessert is a course that concludes a meal."@en ;
-    rdfs:subClassOf recipeCategory:Category ;
-    owl:sameAs     dbpedia:Dessert, fowl:DessertCourse .
+    a                   owl:Class ;
+    rdfs:label          "Dessert"@en ;
+    rdfs:comment        "Dessert is a course that concludes a meal."@en ;
+    rdfs:subClassOf     recipeCategory:Category ;
+    owl:equivalentClass dbpedia:Dessert, fowl:DessertCourse .
 
 recipeCategory:SideDish
     a               owl:Class ;
     rdfs:label      "Side dish"@en ;
     rdfs:comment    "A side dish, sometimes referred to as a side order or simply a side, is a food item that accompanies the entrée or main course at a meal."@en ;
-    rdfs:subClassOf recipeCategory:Category;
-    owl:sameAs     dbpedia:Side_dish .
+    rdfs:subClassOf recipeCategory:Category ;
+    owl:equivalentClass      dbpedia:Side_dish .
 
 recipeCategory:SaladAndDressings
-    a               owl:Class ;
-    rdfs:label      "Salad and dressings"@en ;
-    rdfs:comment    "Salad and dressings"@en ;
-    rdfs:subClassOf recipeCategory:Appetizer ;
-    owl:disjointUnionOf (recipeCategory:Salad recipeCategory:Dressing) .
+    a                   owl:Class ;
+    rdfs:label          "Salad and dressings"@en ;
+    rdfs:comment        "Salad and dressings"@en ;
+    rdfs:subClassOf     recipeCategory:Appetizer ;
+    owl:disjointUnionOf ( recipeCategory:Salad recipeCategory:Dressing ) .
 
 recipeCategory:Dressing
     a               owl:Class ;
     rdfs:label      "Dressing"@en ;
     rdfs:comment    "Dressing is a sauce that is used to add flavor to a salad."@en ;
-    rdfs:subClassOf recipeCategory:SaladAndDressings;
-    owl:sameAs     dbpedia:Salad_dressing .
+    rdfs:subClassOf recipeCategory:SaladAndDressings ;
+    owl:equivalentClass      dbpedia:Salad_dressing .
 
 recipeCategory:Salad
     a               owl:Class ;
