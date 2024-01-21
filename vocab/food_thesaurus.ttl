@@ -7,6 +7,15 @@
 @prefix recipes: <http://project-kitchenchef.fr/recipes/data#> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix :        <http://project-kitchenchef.fr/schema#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix food:    <http://project-kitchenchef.fr/food/data#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix recipes: <http://project-kitchenchef.fr/recipes/data#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 
 
 food:FoodThesaurus

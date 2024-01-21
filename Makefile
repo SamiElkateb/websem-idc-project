@@ -31,11 +31,11 @@ extract_quantity_from_units:
 
 quantityConversion :
 	@echo "quantityConversion: integers & fractions"
+	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/entier_fractions.rq -i output/recipes.ttl -o output/recipes.ttl
+	@echo "quantityConversion: integers & fractions"
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/integers.rq -i output/recipes.ttl -o output/recipes.ttl
 	@echo "quantityConversion: integers & fractions"
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/fractions.rq -i output/recipes.ttl -o output/recipes.ttl
-	@echo "quantityConversion: integers & fractions"
-	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/entier_fractions.rq -i output/recipes.ttl -o output/recipes.ttl
 	@echo "quantityConversion: integers & fractions"
 	@java -jar ./tools/corese-command-4.5.0.jar sparql -q ./metadata/quantityConversion/group.rq -i output/recipes.ttl -o output/recipes.ttl
 	@echo "quantityConversion : few, some, many"

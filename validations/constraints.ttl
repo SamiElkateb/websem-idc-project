@@ -42,8 +42,9 @@ s:UnitConversionShapeTargets
     a                  sh:NodeShape ;
     sh:targetObjectsOf :hasUnitConversion ;
     sh:nodeKind        sh:BlankNode ;
-    sh:property        [ sh:path     (:unit [sh:oneOrMorePath skos:broaderTransitive ]   ) ;
-                         sh:in ( skos:Concept measurements:VolumeMeasurementUnit measurements:WeightMeasurementUnit ) ;
+    sh:property        [ sh:path     ( :unit [ sh:oneOrMorePath skos:broaderTransitive ] ) ;
+                         sh:in       ( skos:Concept measurements:VolumeMeasurementUnit
+                                       measurements:WeightMeasurementUnit ) ;
                          sh:minCount 1 ;
                          sh:maxCount 1 ;
                          sh:message  "La conversion doit désigner une unité de mesure" ] ;
@@ -99,11 +100,13 @@ s:RecipeShape
                      sh:maxLength  10000 ;
                      sh:message    "Les instructions doivent être une chaîne de caractères" ] .
 
-s:MeasurementShape a sh:NodeShape ;
+s:MeasurementShape
+    a              sh:NodeShape ;
     sh:targetClass :VolumeMeasurementUnit, :WeightMeasurementUnit, :MeasurementUnit ;
-    sh:property      [ sh:path     skos:broaderTransitive  ;
-                       sh:nodeKind sh:IRI ;
-                       sh:in      (measurements:MeasurementUnit measurements:VolumeMeasurementUnit measurements:WeightMeasurementUnit) ;
-                       sh:minCount 1 ;
-                       sh:maxCount 1 ;
-                       sh:message  "L'unité doit être une unité de mesure" ] .
+    sh:property    [ sh:path     skos:broaderTransitive ;
+                     sh:nodeKind sh:IRI ;
+                     sh:in       ( measurements:MeasurementUnit measurements:VolumeMeasurementUnit
+                                   measurements:WeightMeasurementUnit ) ;
+                     sh:minCount 1 ;
+                     sh:maxCount 1 ;
+                     sh:message  "L'unité doit être une unité de mesure" ] .

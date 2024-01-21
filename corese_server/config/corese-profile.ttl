@@ -13,7 +13,6 @@ st:access st:namespace
 
 
 st:loadcontent a sw:Workflow; sw:body (
-  [ a sw:Load; sw:path </usr/local/corese/data/categories.ttl> ]
   [ a sw:Load; sw:path </usr/local/corese/data/entailment.ttl> ]
   [ a sw:Load; sw:path </usr/local/corese/data/fix_entailment.ttl> ]
   [ a sw:Load; sw:path </usr/local/corese/data/food_thesaurus.ttl> ]

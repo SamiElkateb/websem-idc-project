@@ -33,7 +33,7 @@ recipes:AlbertsChicken a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "onion, minced"@en ],
         [ a :Ingredient ;
             :food food:Parsley ;
@@ -47,7 +47,8 @@ recipes:AlbertsChicken a :Recipe ;
     :instructions "Place chicken in casserole. Heat together remaining ingredients to make sauce. Pour sauce over chicken. Cook in electric skillet or 350 degree oven for about 1 hour."@en ;
     :name "Albert's Chicken"@en .
 
-recipes:AngelHash a :Recipe ;
+recipes:AngelHash a ns1:Pie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Marshmallows ;
             :hasImperialMeasurementUnit [ :quantity 0.25 ;
@@ -88,8 +89,7 @@ recipes:AngelHash a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Cook cornstarch, sugar, pineapple juice, and egg yolks until thick.  Cool and fold in remaining ingredients."@en ;
-    :name "Angel Hash"@en ;
-    :recipeCategory ns1:Pie .
+    :name "Angel Hash"@en .
 
 recipes:AppleDessertforaCrowd a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -305,7 +305,7 @@ recipes:AsparagusTomatoQuiche a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Eggs ;
             :hasStandardMeasurementUnit [ :quantity 4.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "eggs, beaten"@en ],
         [ a :Ingredient ;
             :food food:Flour ;
@@ -339,7 +339,7 @@ recipes:AsparagusTomatoQuiche a :Recipe ;
         [ a :Ingredient ;
             :food food:Sliced ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "tomato, sliced into four 1/4\" slices"@en ],
         [ a :Ingredient ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
@@ -429,7 +429,7 @@ recipes:BakedZucchiniwithMushrooms a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion"@en ],
         [ a :Ingredient ;
             :food food:ChickenBroth ;
@@ -439,12 +439,12 @@ recipes:BakedZucchiniwithMushrooms a :Recipe ;
         [ a :Ingredient ;
             :food food:Eggs ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "eggs"@en ],
         [ a :Ingredient ;
             :food food:Zucchini ;
             :hasStandardMeasurementUnit [ :quantity 4.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "zucchini, shredded"@en ],
         [ a :Ingredient ;
             :food food:BreadCrumbs ;
@@ -476,7 +476,8 @@ recipes:BakedZucchiniwithMushrooms a :Recipe ;
 Beat eggs to blend; stir in zucchini crumbs, cheese, oregano, pepper, and mushroom mixture. Pour into a buttered 10 by 12 inch shallow oval casserole (or a 9 by 13 inch rectangle). Bake in a 325 degree oven until set in center when shaken, about 45 minutes top with green onions."""@en ;
     :name "Baked Zucchini with Mushrooms"@en .
 
-recipes:BananaCake a :Recipe ;
+recipes:BananaCake a ns1:Cake,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Shortening ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ;
@@ -513,10 +514,10 @@ recipes:BananaCake a :Recipe ;
                     :unit measurements:Cup ] ;
             :name "chopped nuts"@en ] ;
     :instructions "Bake in three layer pans at 350 degrees."@en ;
-    :name "Banana Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Banana Cake"@en .
 
-recipes:BananaCreamPie a :Recipe ;
+recipes:BananaCreamPie a ns1:Pie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:SweetenedCondensedMilk ;
             :hasImperialMeasurementUnit [ :quantity 14.0 ;
@@ -545,7 +546,7 @@ recipes:BananaCreamPie a :Recipe ;
         [ a :Ingredient ;
             :food food:Bananas ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "bananas"@en ],
         [ a :Ingredient ;
             :food food:Pastry ;
@@ -556,8 +557,7 @@ recipes:BananaCreamPie a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "egg yolks, beaten"@en ] ;
     :instructions "In a heavy saucepan dissolve cornstarch inwater; stir in sweetened condensed milk and egg yolks.  Cook and stir until thickened and bubbly.  Remove from heat; add margarine and vanilla.  Cool slightly.  Slice 2 bananas; dip in lemon juice and drain.  Arrange on bottom of prepare crust.  Pour filling over bananas; cover.  Chill 4 hours or until set.  Spread top with whipped cream.  Slice remaining bananas; dip in lemon juice, drain and garnish top of pie.  Refrigerate leftovers."@en ;
-    :name "Banana Cream Pie"@en ;
-    :recipeCategory ns1:Pie .
+    :name "Banana Cream Pie"@en .
 
 recipes:BarbecuedSpareribs a :Recipe ;
     rdfs:label "Crab Rangoon"@en,
@@ -663,7 +663,7 @@ recipes:BatterFriedChicken a :Recipe ;
         [ a :Ingredient ;
             :food food:Chicken ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "small" ] ;
+                    :unit measurements:Small ] ;
             :name "chicken, cut up"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
@@ -831,7 +831,7 @@ recipes:BeefSpinachQuiche a :Recipe ;
         [ a :Ingredient ;
             :food food:Eggs ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "eggs"@en ],
         [ a :Ingredient ;
             :food food:HeavyCream ;
@@ -930,7 +930,7 @@ recipes:BitOZucchiniBites a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ;
-                    :unit "small" ] ;
+                    :unit measurements:Small ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Garlic ;
@@ -975,7 +975,8 @@ recipes:BitOZucchiniBites a :Recipe ;
 In a bowl mix eggs, cheese, cornmeal, cumin, oregano, and zucchini mixture. Spoon a scant 2 tablespoons of the egg mixture into individual greased 1 and 3 quarter inch muffin pans. Bake at 325 degrees for 15 to eighteen minutes or until set. Remove from pans. Or, pour all the batter into a greased 8 by 8 by 2 inch baking pan. Bake for 20 to 25 minutes or until set. Cut in bite size squares. Serve hot. Makes about 24 appetizers."""@en ;
     :name "Bit O' Zucchini Bites"@en .
 
-recipes:BlueCheeseDressing a :Recipe ;
+recipes:BlueCheeseDressing a ns1:SaladAndDressings,
+        :Recipe ;
     rdfs:label "Blue cheese dressing"@en ;
     :hasDbpediaLink dbpedia:Blue_cheese_dressing ;
     :hasIngredient [ a :Ingredient ;
@@ -1000,10 +1001,10 @@ recipes:BlueCheeseDressing a :Recipe ;
             :name "buttermilk"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Blue_cheese_dressing.jpg?width=300> ;
     :instructions "Mix or shake well."@en ;
-    :name "Blue Cheese Dressing"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Blue Cheese Dressing"@en .
 
-recipes:BlueChipCookies a :Recipe ;
+recipes:BlueChipCookies a ns1:Cookie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Butter ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ;
@@ -1054,10 +1055,10 @@ recipes:BlueChipCookies a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :instructions "Mix at low speed.  Add chocolate chips and nuts by hand.  Press into balls in cookie scoop.  Bake at 300 degrees for 15 minutes on middle rack."@en ;
-    :name "Blue Chip Cookies"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Blue Chip Cookies"@en .
 
-recipes:BlueberryCoffeeCake a :Recipe ;
+recipes:BlueberryCoffeeCake a ns1:Cake,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:CreamCheese ;
             :hasImperialMeasurementUnit [ :quantity "12" ;
@@ -1111,10 +1112,10 @@ recipes:BlueberryCoffeeCake a :Recipe ;
 Mix cream cheese, 1/2 cup sugar, 1 egg, lemon juice and 1 tsp vanilla to make filling.  Put filling on top of batter.  Top with remaining batter.
 Make streusel topping from flour, butter, brown sugar, ad cinnamon.  Sprinkle on top of cake.
 Bake at 375 degrees for 1 hour and 5 minutes.  Check after 50 minutes."""@en ;
-    :name "Blueberry Coffee Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Blueberry Coffee Cake"@en .
 
-recipes:BourbonBalls a :Recipe ;
+recipes:BourbonBalls a ns1:Cookie,
+        :Recipe ;
     rdfs:label "Bourbon ball"@en ;
     :hasDbpediaLink dbpedia:Bourbon_ball ;
     :hasIngredient [ a :Ingredient ;
@@ -1149,8 +1150,7 @@ recipes:BourbonBalls a :Recipe ;
             :name "finely chopped walnuts"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Bourbon_Balls.jpg?width=300> ;
     :instructions "Melt chocolate in double boiler over hot water.  Combine syrup and liquid.  Combine crumbs, sugar, and nuts.  Add chocolate mixture.  Let stand 30 minutes.  Shape in 1\" balls.  Roll in granulated or powdered sugar.  Let ripen i covered container at lest 3 days."@en ;
-    :name "Bourbon Balls"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Bourbon Balls"@en .
 
 recipes:BroccoliCheesePie a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -1205,13 +1205,14 @@ recipes:BroccoliCheesePie a :Recipe ;
     :instructions "Cut florets from broccoli in thin slices; peel tender stems and cut coarsely. Cook 5 minutes to tender. Combine eggs, milk, salt, pepper, pepper sauce, nutmeg, parsley and swiss cheese. Stir in broccoli. Turn into buttered 10 inch pie pan. Sprinkle with parmesan. Bake in 350 degree oven for 30-35 minutes. Cool 10 minutes. Serve with sliced tomatoes and hot biscuits."@en ;
     :name "Broccoli Cheese Pie"@en .
 
-recipes:BroccoliCheeseSoup a :Recipe ;
+recipes:BroccoliCheeseSoup a ns1:Soup,
+        :Recipe ;
     rdfs:label "Cream of broccoli soup"@en ;
     :hasDbpediaLink dbpedia:Cream_of_broccoli_soup ;
     :hasIngredient [ a :Ingredient ;
             :food food:Potato ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "potato (2-3 cups), peeled and diced"@en ],
         [ a :Ingredient ;
             :food food:Broccoli ;
@@ -1221,12 +1222,12 @@ recipes:BroccoliCheeseSoup a :Recipe ;
         [ a :Ingredient ;
             :food food:Carrot ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "carrot, peeled and chopped"@en ],
         [ a :Ingredient ;
             :food food:Garlic ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "cloves of garlic, peeled"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
@@ -1260,10 +1261,10 @@ recipes:BroccoliCheeseSoup a :Recipe ;
             :name "dill"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cream_of_broccoli_soup.jpg?width=300> ;
     :instructions "Place potato, broccoli (reserve 2 cups), carrots, garlic, onion, salt, and water in large saucepan.  Bring to boil, then simmer until all vegetables are very tender.  Puree in blender or food processor, and transfer to kettle or dutch oven.  Steam reserved broccoli pieces until just tender.  Add to puree along with all remaining ingredients.  Heat gently.  Serve topped with additional grated cheddar cheese."@en ;
-    :name "Broccoli Cheese Soup"@en ;
-    :recipeCategory ns1:Soup .
+    :name "Broccoli Cheese Soup"@en .
 
-recipes:BroccoliSalad a :Recipe ;
+recipes:BroccoliSalad a ns1:SaladAndDressings,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Cheese ;
             :hasImperialMeasurementUnit [ :quantity 8.0 ;
@@ -1277,7 +1278,7 @@ recipes:BroccoliSalad a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "small" ] ;
+                    :unit measurements:Small ] ;
             :name "red onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Bacon ;
@@ -1300,10 +1301,10 @@ recipes:BroccoliSalad a :Recipe ;
                     :unit measurements:Tablespoon ] ;
             :name "vinegar"@en ] ;
     :instructions "Pour dressing over salad two hours before serving."@en ;
-    :name "Broccoli Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Broccoli Salad"@en .
 
-recipes:BroccoliSaladwithPineapple a :Recipe ;
+recipes:BroccoliSaladwithPineapple a ns1:SaladAndDressings,
+        :Recipe ;
     rdfs:label "Watergate salad"@en ;
     :hasDbpediaLink dbpedia:Watergate_salad ;
     :hasIngredient [ a :Ingredient ;
@@ -1347,8 +1348,7 @@ recipes:BroccoliSaladwithPineapple a :Recipe ;
             :name "red onion, chopped fine"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Watergate_salad_new.jpg?width=300> ;
     :instructions "Cut broccoli flowers.  Chop the top 2 inches of the stems into small pieces.  Mix together broccoli, crisp bacon, drained pineapple, onion, and sunflower seeds.  Blend mayonnaise, sugar, and vinegar to make dressing.  Pour over top of broccoli mixture.  Toss and serve.  Note:  This salad is also great with sliced raw carrots and cauliflower."@en ;
-    :name "Broccoli Salad with Pineapple"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Broccoli Salad with Pineapple"@en .
 
 recipes:BroccoliandRiceCasserole a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -1368,7 +1368,7 @@ recipes:BroccoliandRiceCasserole a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion"@en ],
         [ a :Ingredient ;
             :food food:Celery ;
@@ -1389,7 +1389,8 @@ recipes:BroccoliandRiceCasserole a :Recipe ;
 Can be made ahead of time and frozen. hen frozen, allow to thaw completely then heat about 10 minutes longer."""@en ;
     :name "Broccoli and Rice Casserole"@en .
 
-recipes:CarrotCarousel a :Recipe ;
+recipes:CarrotCarousel a ns1:SaladAndDressings,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Pineapple ;
             :hasImperialMeasurementUnit [ :quantity 13.4 ;
@@ -1426,8 +1427,7 @@ recipes:CarrotCarousel a :Recipe ;
                     :unit measurements:Cup ] ;
             :name "carrot pieces"@en ] ;
     :instructions "Sprinkle gelatine over 1/2 cup of cold orange juice in blender container that will hold 5 cups.  Add boiling orange juice; cover and process at low speed until gelatin dissolves.  Add remaining 1 cup cold orange juice, salt, and salad dressing; process until well blended.  Add carrot pieces; cover and turn to high speed, on and off several times until carrots are finely grated.  Stir in pineapple and syrup; pour into 6 cup mold.  Chill until firm."@en ;
-    :name "Carrot Carousel"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Carrot Carousel"@en .
 
 recipes:CatalinaChickenStirFry a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -2334,7 +2334,7 @@ recipes:ChickenLoMein a :Recipe ;
         [ a :Ingredient ;
             :food food:RedPepper ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "red pepper, chopped"@en ],
         [ a :Ingredient ;
             :food food:Chicken ;
@@ -2359,7 +2359,8 @@ Cook green onions, mushrooms, pea pods, and pepper. Add the bouillon and stir in
 Serve over linguini"""@en ;
     :name "Chicken Lo Mein"@en .
 
-recipes:ChickenNoodleSoup a :Recipe ;
+recipes:ChickenNoodleSoup a ns1:Soup,
+        :Recipe ;
     rdfs:label "Chicken soup"@en ;
     :hasDbpediaLink dbpedia:Chicken_soup ;
     :hasIngredient [ a :Ingredient ;
@@ -2370,12 +2371,12 @@ recipes:ChickenNoodleSoup a :Recipe ;
         [ a :Ingredient ;
             :food food:Potato ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "potato, diced"@en ],
         [ a :Ingredient ;
             :food food:Carrots ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "carrots, diced"@en ],
         [ a :Ingredient ;
             :food food:Celery ;
@@ -2385,7 +2386,7 @@ recipes:ChickenNoodleSoup a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Chicken ;
@@ -2394,8 +2395,7 @@ recipes:ChickenNoodleSoup a :Recipe ;
             :name "chicken bouillion"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chicken_Noodle_Soup.jpg?width=300> ;
     :instructions "Boil chicken, remove from bones and chop.  Set aside.  Cook potato, carrots, celery, and onion in water to cover.  When tender add the chicken, bouillon cubes, poultry seasoning, and salt.  Add a large handful of narrow egg noodles.  Add more liquid if necessary and cook until noodles are tender."@en ;
-    :name "Chicken Noodle Soup"@en ;
-    :recipeCategory ns1:Soup .
+    :name "Chicken Noodle Soup"@en .
 
 recipes:ChickenPaprika a :Recipe ;
     rdfs:label "Chicken paprikash"@en ;
@@ -2570,7 +2570,7 @@ recipes:ChickenTamalePie a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Cornmeal ;
@@ -2590,7 +2590,7 @@ recipes:ChickenTamalePie a :Recipe ;
         [ a :Ingredient ;
             :food food:Tomatoes ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large can" ] ;
+                    :unit measurements:Large ] ;
             :name "tomatoes"@en ],
         [ a :Ingredient ;
             :food food:CreamedCorn ;
@@ -2806,7 +2806,7 @@ recipes:ChiliChicken a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
@@ -3240,7 +3240,8 @@ recipes:ChineseStirFriedChickenwithPeanuts a :Recipe ;
     :instructions "Mix sherry and cornstarch. Stir chicken to coat. Refirgerate 2 to 4 hours. Heat 2 tablespoons oil over high heat. Add ginger. Cook 15 seconds, stirring constantly. Add pepper. Stir fry 2 minutes. Add onion. Stir fry 1 minute. Tranfer to bowl. Add rest of oil. Add chicken and red pepper. Stir fry 2 minutes until chicken looses pink color and turns white. Add peanuts, cooked vegetables and soy sauce mixture (soy sauce, water, and cornstarch). Bring to rolling boil, stirring constantly until thick. Serve immediately, discard ginger. Serve with rice."@en ;
     :name "Chinese Stir Fried Chicken with Peanuts"@en .
 
-recipes:ChocolateCake a :Recipe ;
+recipes:ChocolateCake a ns1:Cake,
+        :Recipe ;
     rdfs:label "Chocolate cake"@en,
         "Gâteau au chocolat"@fr ;
     :hasDbpediaLink dbpedia:Chocolate_cake ;
@@ -3295,10 +3296,10 @@ recipes:ChocolateCake a :Recipe ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chocolate_fudge_cake.jpg?width=300> ;
     :instructions "Mix all ingredients together.  Pour in 1 cup boiling water.  Mix well.  Bake about 35 minutes at 375 degrees."@en ;
-    :name "Chocolate Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Chocolate Cake"@en .
 
-recipes:ChocolateCrispBranCookies a :Recipe ;
+recipes:ChocolateCrispBranCookies a ns1:Cookie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Flour ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
@@ -3344,10 +3345,10 @@ recipes:ChocolateCrispBranCookies a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Sift flour, soda, and salt.  Blend butter and sugar.  Add eggs and vanilla; beat well.  Add All-Bran cereal and chocolate chips.  Add dry ingredients, mix well.  Drop by spoonful onto cookie sheet.  Bake at 375 degrees about 12 minutes."@en ;
-    :name "Chocolate Crisp Bran Cookies"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Chocolate Crisp Bran Cookies"@en .
 
-recipes:ChocolateMayonaiseCake a :Recipe ;
+recipes:ChocolateMayonaiseCake a ns1:Cake,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Flour ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ;
@@ -3389,10 +3390,10 @@ recipes:ChocolateMayonaiseCake a :Recipe ;
                     :unit measurements:Teaspoon ] ;
             :name "vanilla"@en ] ;
     :instructions "Makes  2 layer cake."@en ;
-    :name "Chocolate Mayonaise Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Chocolate Mayonaise Cake"@en .
 
-recipes:ChocolatePeanutBrunchBars a :Recipe ;
+recipes:ChocolatePeanutBrunchBars a ns1:Cookie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Flour ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ;
@@ -3443,10 +3444,10 @@ recipes:ChocolatePeanutBrunchBars a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg yolk, beaten"@en ] ;
     :instructions "Blend first 5 ingredients until it resembles corn meal.  Add egg and vanilla.  Mix well.  Press firmly into ungreased jelly roll pan.  Bake at 350 degrees for 25 minutes.  Cool slightly.  Melt chocolate over hot water.  Stir in peanut butter and cereal.  Spread on cookie dough.  Let stand until chocolate sets.  Cut into 35 bars."@en ;
-    :name "Chocolate Peanut Brunch Bars"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Chocolate Peanut Brunch Bars"@en .
 
-recipes:ChocolateTrioSquares a :Recipe ;
+recipes:ChocolateTrioSquares a ns1:Cookie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Margarine ;
             :hasStandardMeasurementUnit [ :quantity 0.25 ;
@@ -3508,10 +3509,10 @@ recipes:ChocolateTrioSquares a :Recipe ;
             :name "eggs, well beaten"@en ] ;
     :instructions """Cream butter, mis in four, and salt.  Spread in greased and floured 9" pan.  Bake 15 minutes at 350 degrees.  Beat eggs and sugar until smooth. Stir in all other ingredients and blend well.  Spread over first layer.  Bake 350 degrees for 15 minutes.  Cool in pan.
 Melt chocolate.  Blend in syrup and water,  Spread over cookies.  Sprinkle on nuts.  Leave in pan overnight.  Cut into 36 squares."""@en ;
-    :name "Chocolate Trio Squares*"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Chocolate Trio Squares*"@en .
 
-recipes:ChristmasLogs a :Recipe ;
+recipes:ChristmasLogs a ns1:Cookie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Walnuts ;
             :hasImperialMeasurementUnit [ :quantity 8.0 ;
@@ -3537,10 +3538,10 @@ recipes:ChristmasLogs a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Preheat oven to 350 degrees.  Put walnuts and dates through coarse blade of grinder.  Combine with 1 1/2 cup coconut, sugar, and eggs.  Mix well.  Shape by spoonfuls into 3\" logs, 3/4\" wide.  Roll in rest of coconut, coating well.  Bake 10-12 minutes until golden.  Cool.  Makes 30 logs."@en ;
-    :name "Christmas Logs"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Christmas Logs"@en .
 
-recipes:ChristmasSnowballs a :Recipe ;
+recipes:ChristmasSnowballs a ns1:Cookie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:ChocolateChips ;
             :hasImperialMeasurementUnit [ :quantity 6.0 ;
@@ -3582,10 +3583,10 @@ recipes:ChristmasSnowballs a :Recipe ;
                     :unit measurements:Cup ] ;
             :name "finely chopped walnuts"@en ] ;
     :instructions "Combine first 5 ingredients.  Blend well.  Stir in flour, chocolate chips, and nuts.  Form 1\" balls.   Place on ungreased cookie sheet.  Bake 30 minutes at 350 degrees. Roll in powdered sugar while still warm. Makes approx. 5 dozen."@en ;
-    :name "Christmas Snowballs"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Christmas Snowballs"@en .
 
-recipes:CleosClamChowder a :Recipe ;
+recipes:CleosClamChowder a ns1:Soup,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Bacon ;
             :hasImperialMeasurementUnit [ :quantity 0.5 ;
@@ -3599,7 +3600,7 @@ recipes:CleosClamChowder a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "onion, suated"@en ],
         [ a :Ingredient ;
             :food food:Celery ;
@@ -3621,10 +3622,10 @@ recipes:CleosClamChowder a :Recipe ;
                     :unit "cans" ] ;
             :name "chopped clams with juice"@en ] ;
     :instructions "Boil potatoes.  Save water.  When potatoes are tender add bacon, onion, and celery.  Add half and half, milk and seasonings.  Thicken with a cup of flour mixed with water.  Add to boiling soup.  Stir in clams, but not too soon or they will get tough."@en ;
-    :name "Cleo's Clam Chowder"@en ;
-    :recipeCategory ns1:Soup .
+    :name "Cleo's Clam Chowder"@en .
 
-recipes:Coleslaw a :Recipe ;
+recipes:Coleslaw a ns1:SaladAndDressings,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Cabbage ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ;
@@ -3661,8 +3662,7 @@ recipes:Coleslaw a :Recipe ;
                     :unit measurements:Teaspoon ] ;
             :name "caraway seed (optional)"@en ] ;
     :instructions "Shred cabbage.  Mix remaining ingredients to make dressing.  Stir together."@en ;
-    :name "Coleslaw"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Coleslaw"@en .
 
 recipes:CompanyCabbage a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -3725,7 +3725,7 @@ recipes:CoqauVin a :Recipe ;
         [ a :Ingredient ;
             :food food:Onions ;
             :hasStandardMeasurementUnit [ :quantity 8.0 ;
-                    :unit "small" ] ;
+                    :unit measurements:Small ] ;
             :name "boiling onions"@en ],
         [ a :Ingredient ;
             :food food:ChickenBroth ;
@@ -3759,7 +3759,8 @@ recipes:CoqauVin a :Recipe ;
     :instructions "Cook pork, stirring until crisp and well browned. Lift out, set aside. Brown chicken parts, set aside. Stir in wine, broth and mustard. Add meat and chicken. Cover and simmer 35 to 40 minutes. Add cornstarch."@en ;
     :name "Coq au Vin"@en .
 
-recipes:CranberryMold a :Recipe ;
+recipes:CranberryMold a ns1:SaladAndDressings,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Water ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
@@ -3786,10 +3787,10 @@ recipes:CranberryMold a :Recipe ;
                     :unit measurements:Cup ] ;
             :name "nuts, chopped"@en ] ;
     :instructions "Mix jello with hot water.  Jell slightly then add cranberry sauce, sour cream, and nuts.  Mix and chill until set."@en ;
-    :name "Cranberry Mold"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Cranberry Mold"@en .
 
-recipes:CrazyCake a :Recipe ;
+recipes:CrazyCake a ns1:Cake,
+        :Recipe ;
     rdfs:label "Wacky cake"@en ;
     :hasDbpediaLink dbpedia:Wacky_cake ;
     :hasIngredient [ a :Ingredient ;
@@ -3828,8 +3829,7 @@ recipes:CrazyCake a :Recipe ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Wacky_Cake.jpg?width=300> ;
     :instructions "Mix first 5 ingredients well, about 4 minutes.  Bake at 350 degrees in a 9x13 pan for 35 minutes. Poke holes in warm cake and pour on mixture of powdered sugar and lemon juice."@en ;
-    :name "Crazy Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Crazy Cake"@en .
 
 recipes:CrazyCrustPizza a :Recipe ;
     rdfs:label "Stuffed crust pizza"@en ;
@@ -3867,7 +3867,8 @@ recipes:CrazyCrustPizza a :Recipe ;
     :instructions "Mix well. Pour into greased and floured pan. Top with 1 1/2 pounds browned ground beef or sausage, and pepperoni. Add 1 can drained slice mushrooms over top. Bake at 375 degrees for 10 minutes. Add pizza sauce, cheese, etc. Bake 20 minutes more."@en ;
     :name "Crazy Crust Pizza"@en .
 
-recipes:CreamyApplePie a :Recipe ;
+recipes:CreamyApplePie a ns1:Pie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Pie ;
             :hasStandardMeasurementUnit [ :quantity 9.0 ;
@@ -3898,8 +3899,7 @@ recipes:CreamyApplePie a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity "4" ] ;
             :name "tart apples, peeled and sliced"@en ] ;
     :instructions "Place apples in the pie shell.  Mix together sugar, flour, and salt.  Sprinkle over apples.  in a sauce pan bring cream to boiling point.  Pour over apples.  Sprinkle generously with cinnamon.  Bake at 375 degrees for 45 minutes, until firm."@en ;
-    :name "Creamy Apple Pie"@en ;
-    :recipeCategory ns1:Pie .
+    :name "Creamy Apple Pie"@en .
 
 recipes:CreamyChickenBroccoliwithRice a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -3924,7 +3924,8 @@ recipes:CreamyChickenBroccoliwithRice a :Recipe ;
     :instructions "Heat salad dressing in a large skillet. Add chicken and completely cook for about 8 minutes. Stir in broccoli and cook until heated. Add Velveeta and stir until thoroughly melted. Serve over rice."@en ;
     :name "Creamy Chicken Broccoli with Rice"@en .
 
-recipes:CreamyZucchiniMushroomSoup a :Recipe ;
+recipes:CreamyZucchiniMushroomSoup a ns1:Soup,
+        :Recipe ;
     rdfs:label "Chicken soup"@en ;
     :hasDbpediaLink dbpedia:Chicken_soup ;
     :hasIngredient [ a :Ingredient ;
@@ -3984,10 +3985,10 @@ recipes:CreamyZucchiniMushroomSoup a :Recipe ;
             :name "pine nuts, toasted"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chicken_Noodle_Soup.jpg?width=300> ;
     :instructions "Combine zucchini, onion, garlic and butter in 2 qt. microwave-safe casserole.  Cover and microwave on high setting 5 to 7 minutes, stirring every 3 minutes, until vegetables are tender.  Place zucchini mixture in blender container; blend until smooth.  Return to casserole dish; add all remaining ingredients except sour cream, pepper and pine nuts.  Cover and microwave 5 to 6 minutes, or until heated through.  Stir in sour cream and season to taste with pepper.  Ladle into soup bowls and garnish with sprinkle of pine nuts.  Serve immediately."@en ;
-    :name "Creamy Zucchini Mushroom Soup"@en ;
-    :recipeCategory ns1:Soup .
+    :name "Creamy Zucchini Mushroom Soup"@en .
 
-recipes:CrispOatmealFruitStrips a :Recipe ;
+recipes:CrispOatmealFruitStrips a ns1:Cookie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Butter ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -4023,8 +4024,7 @@ recipes:CrispOatmealFruitStrips a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :instructions "Beat butter and sugar together until fluffy; beat in egg.  Stir flour with soda, then stir into creamed mixture with raisins and rolled oats.  Mix well.  Divide dough into 15 equal portions.  Place 3 or 4 portions each on ungreased 12\" by 15\" baking sheet.  Pinch dough to shape 8\" ropes and place at least 2 inches apart.  Flatten each rope into a 2\" wide strip.  Bake in a 30 degree oven until golden brown, about 10 minutes.  Let cool on pan about 2 minutes, then cut each strip diagonally into 1 inch wide bars.  Let cookies cool on pan then transfer from pan with a wide spatula.  Store in an airtight container at room temperature up to 2 weeks.  Makes about 12 dozen."@en ;
-    :name "Crisp Oatmeal Fruit Strips"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Crisp Oatmeal Fruit Strips"@en .
 
 recipes:CrispPotatoPancakes a :Recipe ;
     rdfs:label "Potato pancake"@en,
@@ -4038,13 +4038,14 @@ recipes:CrispPotatoPancakes a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "small" ] ;
+                    :unit measurements:Small ] ;
             :name "onion, grated"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Latkas.jpg?width=300> ;
     :instructions "Grate potatoes coarsely. Grate onion. Season with slat and pepper. Add bea10 egg. Form in 2 inch patties. Fry in 1/4 inch of hot oil. Serve with poached egg and salsa or sour cream and chives."@en ;
     :name "Crisp Potato Pancakes"@en .
 
-recipes:CucumbersinSourCream a :Recipe ;
+recipes:CucumbersinSourCream a ns1:SaladAndDressings,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Cucumbers ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ;
@@ -4076,8 +4077,7 @@ recipes:CucumbersinSourCream a :Recipe ;
                     :unit measurements:Tablespoon ] ;
             :name "lemon juice"@en ] ;
     :instructions "Stir together.  Refrigerate 30 minutes."@en ;
-    :name "Cucumbers in Sour Cream"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Cucumbers in Sour Cream"@en .
 
 recipes:DeepDishPizza a :Recipe ;
     rdfs:label "Chicago-style pizza"@en,
@@ -4122,7 +4122,8 @@ recipes:DeepDishPizza a :Recipe ;
     :instructions "Mix dough as instructed. Line bottom of greased 9\" x 12\" baking dish, bringing dough up sides. Cook burger and onion. Put in dough, add mushrooms, and olives. Mix tomatoes with the canned pizza sauce. Pour over meat. Sprinkle with shredded cheese, and grated cheese from package. Bake at 425 degrees for 20 minutes."@en ;
     :name "Deep Dish Pizza"@en .
 
-recipes:DutchApplePie a :Recipe ;
+recipes:DutchApplePie a ns1:Pie,
+        :Recipe ;
     rdfs:label "Apple pie"@en,
         "Tarte aux pommes"@fr ;
     :hasDbpediaLink dbpedia:Apple_pie ;
@@ -4157,19 +4158,18 @@ recipes:DutchApplePie a :Recipe ;
             :name "large apples, sliced"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Small_apple_pie_8.jpg?width=300> ;
     :instructions "Combine apples, 1/2 cup sugar, and cinnamon.  Put into the unbaked pie shell.  Top with 1/2 cup sugar, flour, butter, and cinnamon.  Bake 45-50 minutes at 350 degrees."@en ;
-    :name "Dutch Apple Pie"@en ;
-    :recipeCategory ns1:Pie .
+    :name "Dutch Apple Pie"@en .
 
 recipes:EasyOvenBakedPotatoes a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Potatoes ;
             :hasStandardMeasurementUnit [ :quantity 6.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "potatoes, unpeeled"@en ],
         [ a :Ingredient ;
             :food food:Onions ;
             :hasStandardMeasurementUnit [ :quantity 6.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onions"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
@@ -4246,7 +4246,7 @@ recipes:EggFooYoung a :Recipe ;
         [ a :Ingredient ;
             :food food:Shrimp ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "small" ] ;
+                    :unit measurements:Small ] ;
             :name "can of shrimp"@en ],
         [ a :Ingredient ;
             :food food:WaterChestnuts ;
@@ -4331,7 +4331,7 @@ recipes:EggplantRollatini a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Egg ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "egg, seperated"@en ],
         [ a :Ingredient ;
             :food food:Cheese ;
@@ -4356,7 +4356,7 @@ recipes:EggplantRollatini a :Recipe ;
         [ a :Ingredient ;
             :food food:Eggplant ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "eggplant"@en ],
         [ a :Ingredient ;
             :food food:RedWine ;
@@ -4380,20 +4380,21 @@ Adjust oven to 400 degrees. Spoon marinara over bottom of a 10 inch round shallo
 Place broiled eggplant slices on work surface. Spread each with 2 tablespoons of the filling and sprinkle with 1/4 teaspoon of basil. Roll slices; jelly roll style. Dip each in sauce in baking dish to coat. Place seam side down. Cover in marinara. Cover with foil. Bake for 35 minutes. Sprinkle with reserved mozzarella and fresh parsley."""@en ;
     :name "Eggplant Rollatini"@en .
 
-recipes:ElephantStew a :Recipe ;
+recipes:ElephantStew a ns1:Soup,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "elephant"@en ],
         [ a :Ingredient ;
             :food food:Rabbits ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "rabbits"@en ] ;
     :instructions "Cut elephant into bite-size pieces.  (Allow approximately 12 months.)  Add enough gravy to cover.  Cook over kerosene fire for 4 weeks at 463 degrees.  Makes 3,300 servings.  To extend recipe add rabbits, but only if necessary, as some people do not like to find hare in their stew."@en ;
-    :name "Elephant Stew"@en ;
-    :recipeCategory ns1:Soup .
+    :name "Elephant Stew"@en .
 
-recipes:FiveBeanSalad a :Recipe ;
+recipes:FiveBeanSalad a ns1:SaladAndDressings,
+        :Recipe ;
     rdfs:label "Bean salad"@en ;
     :hasDbpediaLink dbpedia:Bean_salad ;
     :hasIngredient [ a :Ingredient ;
@@ -4442,10 +4443,10 @@ recipes:FiveBeanSalad a :Recipe ;
             :name "red onion, sliced"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Colourful_bean_salad.jpg?width=300> ;
     :instructions "Drain beans and stir together.  Mix ingredients for dressing.  Combine dressing and beans."@en ;
-    :name "Five Bean Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Five Bean Salad"@en .
 
-recipes:FiveCupSalad a :Recipe ;
+recipes:FiveCupSalad a ns1:SaladAndDressings,
+        :Recipe ;
     rdfs:label "Ambrosia (fruit salad)"@en,
         "Salade d'ambroisie"@fr ;
     :hasDbpediaLink dbpedia:Ambrosia_\(fruit_salad\) ;
@@ -4476,10 +4477,10 @@ recipes:FiveCupSalad a :Recipe ;
             :name "sour cream"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Ambrosia_salad.jpg?width=300> ;
     :instructions "Combine all ingredients.  Chill overnight."@en ;
-    :name "Five Cup Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Five Cup Salad"@en .
 
-recipes:FreshAppleCake a :Recipe ;
+recipes:FreshAppleCake a ns1:Cake,
+        :Recipe ;
     rdfs:label "Apple pie"@en,
         "Tarte aux pommes"@fr ;
     :hasDbpediaLink dbpedia:Apple_pie ;
@@ -4539,8 +4540,7 @@ recipes:FreshAppleCake a :Recipe ;
             :name "eggs, well beaten"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Small_apple_pie_8.jpg?width=300> ;
     :instructions "Mix apples and sugar well.  Add oil, nuts, and eggs.  Add vanilla and dry ingredients.  Bake at 350 degrees for 40-45 minutes.  Serve with whipped cream or top with cream cheese frosting."@en ;
-    :name "Fresh Apple Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Fresh Apple Cake"@en .
 
 recipes:FreshPeachDessert a :Recipe ;
     rdfs:label "Peach Melba"@en,
@@ -4589,7 +4589,8 @@ recipes:FreshPeachDessert a :Recipe ;
     :instructions "Soak gelatin in cold water. Combine margarine, sugar, and egg yolks. Cook until thick. Add gelatin - pour hot mixture over marshmallows. Blend. Fold in stiff-beaten egg whites and peaches. Alternate in layers with cookie crumbs in dish. Chill to serve."@en ;
     :name "Fresh Peach Dessert"@en .
 
-recipes:FreshPearCake a :Recipe ;
+recipes:FreshPearCake a ns1:Cake,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Butter ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
@@ -4624,10 +4625,10 @@ recipes:FreshPearCake a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Butter and flour a 9 inch round pan.  Peel and slice pears.  Blend eggs, sugar, milk, and salt.  Add flour, mix well.  Fold 1/2 of pears into batter.  Pour into pan, fan remaining pears on top.  Dot with butter.  Bake at 350 degrees about 55 minutes.  Sprinkle with powdered sugar."@en ;
-    :name "Fresh Pear Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Fresh Pear Cake"@en .
 
-recipes:FreshStrawberryPie a :Recipe ;
+recipes:FreshStrawberryPie a ns1:Pie,
+        :Recipe ;
     rdfs:label "Strawberry pie"@en ;
     :hasDbpediaLink dbpedia:Strawberry_pie ;
     :hasIngredient [ a :Ingredient ;
@@ -4671,10 +4672,10 @@ recipes:FreshStrawberryPie a :Recipe ;
             :name "pie shell, baked"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Fresh_strawberry_pie.jpg?width=300> ;
     :instructions "Slice 1 basket of strawberries.  Put half the berries in the bottom of a baked pie shell. Prepare glaze by combining remaining ingredients and cooking in a double-boiler until thickened.   Stir the other half of the berries into the glaze.  Pour into the shell.  Cool.  Top with whipped cream and halved berries."@en ;
-    :name "Fresh Strawberry Pie"@en ;
-    :recipeCategory ns1:Pie .
+    :name "Fresh Strawberry Pie"@en .
 
-recipes:FrostedDelights a :Recipe ;
+recipes:FrostedDelights a ns1:Cookie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Flour ;
             :hasStandardMeasurementUnit [ :quantity 1.5 ;
@@ -4724,8 +4725,7 @@ recipes:FrostedDelights a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg white, stiffly beaten"@en ] ;
     :instructions "Sift flour, salt and baking powder together.  Cream shortening with sugar until fluffy.  Add eggs, vanilla and sifted ingredients and mix well.  Spread batter very thin on baking sheets.  Fold brown sugar into egg whites, add nuts.  Spread over cookie batter.  Bake at 325 degrees for 30 minutes.  Cut into squares.  Makes 30."@en ;
-    :name "Frosted Delights"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Frosted Delights"@en .
 
 recipes:FumGum a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -4741,7 +4741,7 @@ recipes:FumGum a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "small" ] ;
+                    :unit measurements:Small ] ;
             :name "onion, diced"@en ],
         [ a :Ingredient ;
             :food food:Beef ;
@@ -4815,7 +4815,8 @@ recipes:GardenQuiche a :Recipe ;
 Reduce oven temperature to 300 degrees. Bake until knife inserted 1 inch from edge comes out clean, about 35 minutes. Let stand 10 minutes before cutting. Serves 6."""@en ;
     :name "Garden Quiche"@en .
 
-recipes:GingerSnapBars a :Recipe ;
+recipes:GingerSnapBars a ns1:Cookie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:BrownSugar ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -4881,10 +4882,10 @@ recipes:GingerSnapBars a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :instructions "Mix first four ingredients.  Add dry ingredients with milk.  Mix well.  Add nuts.  Pour into greased 9\" square pan.  Bake at 350 degrees for 35 to 40 minutes.  Cool in pan.  Cut into 24 bars, roll in powdered sugar."@en ;
-    :name "Ginger Snap Bars"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Ginger Snap Bars"@en .
 
-recipes:GingerSnaps a :Recipe ;
+recipes:GingerSnaps a ns1:Cookie,
+        :Recipe ;
     rdfs:label "Ginger snap"@en,
         "Piparkūkas"@fr ;
     :hasDbpediaLink dbpedia:Ginger_snap ;
@@ -4934,8 +4935,7 @@ recipes:GingerSnaps a :Recipe ;
             :name "egg"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Arnott's_Ginger_Nut_04.jpg?width=300> ;
     :instructions "Roll in little balls.  Dip in sugar and flatten with glass dipped in water.  Bake at 350 degrees about 7 minutes."@en ;
-    :name "Ginger Snaps"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Ginger Snaps"@en .
 
 recipes:GlazedCarrots a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -4951,7 +4951,7 @@ recipes:GlazedCarrots a :Recipe ;
         [ a :Ingredient ;
             :food food:OrangeMarmalade ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "spoonful of orange marmalade"@en ] ;
     :instructions "Cut carrots in strips or rounds. Boil with butter, sugar and water to almost covered. Cook to fork tender. Stir in orange marmalade."@en ;
     :name "Glazed Carrots"@en .
@@ -4965,7 +4965,7 @@ recipes:GoldenNuggetBeef a :Recipe ;
         [ a :Ingredient ;
             :food food:Oranges ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "oranges"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
@@ -5025,7 +5025,8 @@ recipes:GoldenNuggetBeef a :Recipe ;
     :instructions "Peel oranges, remove outer membrance. Cut into 4 slices per orange, cut slices in half. Place in bowl, mix sugar and soy sauce. Pour over oranges. Let stand 15 minutes. Stir occasionally. Set aside. Combine cornstarch, ginger and pepper. Blend in boullion and water. Stir until smooth. Set aside. Cut flank diagonally into very thin slices. Heat 1 tbsp of oil in large skillet on high heat. Cook half of the meat at a time, just until it looses red color. Use second tbsp of oil with second half of meat. Remove meat from skillet, saute garlic and onion and celery just until transparent, return meat, stir. Add cornstarch mixture. Cook for 30 seconds, stirring constantly. Add oranges and marinade. Cook 10 seconds, serve over mounds of steamed rice."@en ;
     :name "Golden Nugget Beef"@en .
 
-recipes:GrahamCrackerCake a :Recipe ;
+recipes:GrahamCrackerCake a ns1:Cake,
+        :Recipe ;
     rdfs:label "Graham cracker"@en,
         "Biscuit Graham"@fr ;
     :hasDbpediaLink dbpedia:Graham_cracker ;
@@ -5060,10 +5061,10 @@ recipes:GrahamCrackerCake a :Recipe ;
             :name "graham crackers, crushed"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Graham-Cracker-Stack.jpg?width=300> ;
     :instructions "Cream butter and sugar.  Add crushed crackers, sour milk, and soda.  Stir in nuts.  Bake in 10 inch square baking pan.  Bake in 350 degree oven for 30-35 minutes.  Serve with whipped cream or thin powdered sugar icing."@en ;
-    :name "Graham Cracker Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Graham Cracker Cake"@en .
 
-recipes:GreenBeanSalad a :Recipe ;
+recipes:GreenBeanSalad a ns1:SaladAndDressings,
+        :Recipe ;
     rdfs:label "Bean salad"@en ;
     :hasDbpediaLink dbpedia:Bean_salad ;
     :hasIngredient [ a :Ingredient ;
@@ -5093,8 +5094,7 @@ recipes:GreenBeanSalad a :Recipe ;
             :name "grated lemon rind"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Colourful_bean_salad.jpg?width=300> ;
     :instructions "Mix oil, vinegar, onion, and lemon.  Pour over beans.  Chill 3 hour or longer.  Spoon beans onto lettuce with slotted spoon.  Top with crumbled blue cheese and coarsely chopped walnuts"@en ;
-    :name "Green Bean Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Green Bean Salad"@en .
 
 recipes:GreenBeansSalerno a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -5131,10 +5131,8 @@ recipes:GreenBeansSalerno a :Recipe ;
 Before serving, toss beans with shredded lettuce and crumbled bacon."""@en ;
     :name "Green Beans Salerno"@en .
 
-recipes:HeavenlyCheeseSalad a :Recipe ;
-    rdfs:label "Deviled egg"@en,
-        "Œuf mimosa"@fr ;
-    :hasDbpediaLink dbpedia:Deviled_egg ;
+recipes:HeavenlyCheeseSalad a ns1:SaladAndDressings,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:CreamCheese ;
             :hasImperialMeasurementUnit [ :quantity 8.0 ;
@@ -5165,12 +5163,11 @@ recipes:HeavenlyCheeseSalad a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
                     :unit "pint" ] ;
             :name "whipped cream"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/0.2014_Ostereier_zum_Frühstück,_Beskiden,_Nowotaniec.jpg?width=300> ;
     :instructions "Bring juice to a boil, pour over jello.  Cool.  Mix pineapple, nuts, and cheese.  Add to jello.  Fold in whipped cream.  Pour into mold.  Chill."@en ;
-    :name "Heavenly Cheese Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Heavenly Cheese Salad"@en .
 
-recipes:HoneyGrahamCrackers a :Recipe ;
+recipes:HoneyGrahamCrackers a ns1:Cookie,
+        :Recipe ;
     rdfs:label "Graham cracker"@en,
         "Biscuit Graham"@fr ;
     :hasDbpediaLink dbpedia:Graham_cracker ;
@@ -5226,10 +5223,10 @@ recipes:HoneyGrahamCrackers a :Recipe ;
             :name "baking soda"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Graham-Cracker-Stack.jpg?width=300> ;
     :instructions "Stir all ingredients about 3 minutes to mix well.  Divide in half.  Place each half on 17\"x14\" baking sheet.  Flatten and roll to 12\" x 10\" rectangle, dusting with flour to prevent sticking.  Cut into 2\" squares.  Prick with fork.Bake at 425 degrees for 8-10 minutes until lightly browned.  Cut apart while hot.  Cool on baking sheet.  Makes 60.  50 calories each."@en ;
-    :name "Honey Graham Crackers"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Honey Graham Crackers"@en .
 
-recipes:HorseradishDressing a :Recipe ;
+recipes:HorseradishDressing a ns1:SaladAndDressings,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Horseradish ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ;
@@ -5281,8 +5278,7 @@ recipes:HorseradishDressing a :Recipe ;
                     :unit measurements:Cup ] ;
             :name "vinegar"@en ] ;
     :instructions "Combine all ingredients in blender or food processor."@en ;
-    :name "Horseradish Dressing"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Horseradish Dressing"@en .
 
 recipes:HotCrabDip a :Recipe ;
     rdfs:label "Crab dip"@en ;
@@ -5309,7 +5305,8 @@ recipes:HotCrabDip a :Recipe ;
     :instructions "Stir together all ingredients and top with cheddar cheese. Bake for 15-20 minutes. Serve with crackers."@en ;
     :name "Hot Crab Dip"@en .
 
-recipes:HotWaterChocolateCake a :Recipe ;
+recipes:HotWaterChocolateCake a ns1:Cake,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Margarine ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ;
@@ -5360,10 +5357,10 @@ recipes:HotWaterChocolateCake a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Mix all ingredients together.  Pour in 1 cup boiling water. Mix well.  Bake about 35 minutes at 375 degrees."@en ;
-    :name "Hot Water Chocolate Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Hot Water Chocolate Cake"@en .
 
-recipes:HungryBearVegetableSoup a :Recipe ;
+recipes:HungryBearVegetableSoup a ns1:Soup,
+        :Recipe ;
     rdfs:label "Matzah ball"@en,
         "Kneidleh"@fr ;
     :hasDbpediaLink dbpedia:Matzah_ball ;
@@ -5375,17 +5372,17 @@ recipes:HungryBearVegetableSoup a :Recipe ;
         [ a :Ingredient ;
             :food food:Potatoes ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "potatoes, diced"@en ],
         [ a :Ingredient ;
             :food food:Carrots ;
             :hasStandardMeasurementUnit [ :quantity 4.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "carrots, diced"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "onion, coarsely chopped"@en ],
         [ a :Ingredient ;
             :food food:Celery ;
@@ -5395,12 +5392,12 @@ recipes:HungryBearVegetableSoup a :Recipe ;
         [ a :Ingredient ;
             :food food:Tomatoes ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large can" ] ;
+                    :unit measurements:Large ] ;
             :name "stewed tomatoes, crushed"@en ],
         [ a :Ingredient ;
             :food food:Tomatoes ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "small can" ] ;
+                    :unit measurements:Small ] ;
             :name "tomatoes, crushed"@en ],
         [ a :Ingredient ;
             :food food:Cabbage ;
@@ -5409,8 +5406,7 @@ recipes:HungryBearVegetableSoup a :Recipe ;
             :name "cabbage"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Matzah_balls.jpg?width=300> ;
     :instructions "Brown the meat, then add all of the ingredients, except the cabbage. Cover with water and simmer for about an hour until veggies are tender.  Then add the chopped cabbage and simmer again for about a half hour.  Add more liquid if necessary."@en ;
-    :name "Hungry Bear Vegetable Soup"@en ;
-    :recipeCategory ns1:Soup .
+    :name "Hungry Bear Vegetable Soup"@en .
 
 recipes:ImpossibleTacoPie a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -5515,7 +5511,7 @@ recipes:InaHurryChickenCurry a :Recipe ;
         [ a :Ingredient ;
             :food food:Apple ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "cooking apple, cored and chopped"@en ],
         [ a :Ingredient ;
             :food food:Raisins ;
@@ -5544,13 +5540,14 @@ recipes:JackZucchiniChicken a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Zucchini ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "zucchini"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chicken_Noodle_Soup.jpg?width=300> ;
     :instructions "Preheat oven to 350 degrees. Shred zucchini through the large holes of a grater, then squeeze it firmly, a handful at a time to extract much of the juice. Toss the zucchini with the green onion and set aside. Stir together the flour, chili powder and 1 teaspoon of salt and set aside."@en ;
     :name "Jack Zucchini Chicken"@en .
 
-recipes:JelloPastelCookies a :Recipe ;
+recipes:JelloPastelCookies a ns1:Cookie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Fruit ;
             :hasImperialMeasurementUnit [ :quantity 3.0 ;
@@ -5587,10 +5584,10 @@ recipes:JelloPastelCookies a :Recipe ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ] ;
     :instructions "Mix shortening, sugar, gelatin, eggs, and vanilla.  Blend in dry ingredients.  Roll into 3/4\" balls.  Place 3\" apart on a cookie sheet.  Flatten each with the bottom of a glass dipped in sugar.  Bake 6-8 minutes at 375 degrees.  Makes 4 dozen."@en ;
-    :name "Jello Pastel Cookies"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Jello Pastel Cookies"@en .
 
-recipes:LemonCloudPie a :Recipe ;
+recipes:LemonCloudPie a ns1:Pie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:CreamCheese ;
             :hasImperialMeasurementUnit [ :quantity 4.0 ;
@@ -5626,10 +5623,13 @@ recipes:LemonCloudPie a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Combine in sauce pan 3/4 cup sugar, cornstarch, water, lemon rind, and juice, and slightly beaten egg yolk.  Cook over medium heat stirring constantly until thick.  Remove from heat.  Add softened cheese, blend well.  Cool.  Beat egg whites until stiff.  Add 1/4 sugar.  Fold into lemon mixture.  Spoon into crust.  Chill 2 hours.  Serve with whipped cream."@en ;
-    :name "Lemon Cloud Pie"@en ;
-    :recipeCategory ns1:Pie .
+    :name "Lemon Cloud Pie"@en .
 
-recipes:LemonCloudSalad a :Recipe ;
+recipes:LemonCloudSalad a ns1:SaladAndDressings,
+        :Recipe ;
+    rdfs:label "Souvlaki"@en,
+        "Souvláki"@fr ;
+    :hasDbpediaLink dbpedia:Souvlaki ;
     :hasIngredient [ a :Ingredient ;
             :food food:Jello ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -5653,11 +5653,12 @@ recipes:LemonCloudSalad a :Recipe ;
             :food food:Bananas ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "bananas, sliced"@en ] ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Souvlaki_in_Athens.jpg?width=300> ;
     :instructions "Set jello with 1/2 c. less water than package instructions.  When partially set stir in Dream Whip.  Add fruits.  Set several hours to chill."@en ;
-    :name "Lemon Cloud Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Lemon Cloud Salad"@en .
 
-recipes:LemonLusciousPie a :Recipe ;
+recipes:LemonLusciousPie a ns1:Pie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sugar ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -5703,10 +5704,10 @@ recipes:LemonLusciousPie a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "egg yolks, slightly beaten"@en ] ;
     :instructions "Combine sugar, cornstarch, butter, lemon rind, and egg yolk in saucepan.  Stir in milk.  Cook over medium heat, stirring until mixture thickens.  Cool.  Fold in sour cream.  Spoon into pie shell.  Col 12 hours or longer.  Top with whipped cream.  Garnish with chopped walnuts if desired."@en ;
-    :name "Lemon Luscious Pie"@en ;
-    :recipeCategory ns1:Pie .
+    :name "Lemon Luscious Pie"@en .
 
-recipes:LemonMeringuePie a :Recipe ;
+recipes:LemonMeringuePie a ns1:Pie,
+        :Recipe ;
     rdfs:label "Lemon meringue pie"@en,
         "Tarte au citron meringuée"@fr ;
     :hasDbpediaLink dbpedia:Lemon_meringue_pie ;
@@ -5760,10 +5761,10 @@ recipes:LemonMeringuePie a :Recipe ;
             :name "egg whites"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Theres_always_room_for_pie_(7859650026).jpg?width=300> ;
     :instructions "Mix sugar, cornstarch, and salt in top of double boiler.  Place over boiling water and add remaining ingredients.  Cook until thick, stirring with whip.  Put into baked pie shell.  Top with meringue.  To make meringue whip 3 egg whites until stiff.  Add 1/4 cup sugar.  Brown 5 to 10 minutes in 400 degree oven.  Chill."@en ;
-    :name "Lemon Meringue Pie"@en ;
-    :recipeCategory ns1:Pie .
+    :name "Lemon Meringue Pie"@en .
 
-recipes:LemonPoppyCake a :Recipe ;
+recipes:LemonPoppyCake a ns1:Cake,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -5794,10 +5795,10 @@ recipes:LemonPoppyCake a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Mix all for 4 minutes.  Bake at 350 degrees for 40 minutes."@en ;
-    :name "Lemon Poppy Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Lemon Poppy Cake"@en .
 
-recipes:LemonSquares a :Recipe ;
+recipes:LemonSquares a ns1:Cookie,
+        :Recipe ;
     rdfs:label "Lemon bar"@en ;
     :hasDbpediaLink dbpedia:Lemon_bar ;
     :hasIngredient [ a :Ingredient ;
@@ -5842,10 +5843,10 @@ recipes:LemonSquares a :Recipe ;
             :name "Lemon juice"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Lemon_Bar.jpg?width=300> ;
     :instructions "Mix first 3 ingredients well.  Press into 8\"x8\"x2\" pan.  Build up 1/2\" edge.  Bake 20 minutes at 350 degrees.  Beat remaining 6 ingredients until light and fluffy.  Pour over hot crust.  Bake another 25 minutes.  Cool.  Dust with the powdered sugar.  Cut into squares."@en ;
-    :name "Lemon Squares"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Lemon Squares"@en .
 
-recipes:LightOldFashionedFruitCake a :Recipe ;
+recipes:LightOldFashionedFruitCake a ns1:Cake,
+        :Recipe ;
     rdfs:label "Christmas cake"@en ;
     :hasDbpediaLink dbpedia:Christmas_cake ;
     :hasIngredient [ a :Ingredient ;
@@ -5914,10 +5915,10 @@ recipes:LightOldFashionedFruitCake a :Recipe ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Christmas_cake_(6954064737).jpg?width=300> ;
     :instructions "Sift dry ingredients into a 4 quart bowl.  Add fruit and nuts.  Mix until well coated.  Set aside.  Cream butter, gradually add sugar and cream until fluffy.  Add eggs one at a time, beating well after each.  Add brandy.  Combine with fruit mixture.  Mix well.  Turn into a 10 inch tube pan or four 1# coffee cans lined with foil, filling pans 2/3 full. Bake in slow oven, 275 degrees for 2 3/4 to 3 hours.  About 1/2 hour before done brush lightly with honey or light corn syrup.  Cool completely then wrap tightly in foil to store for several weeks.  Brush with brandy about once a week."@en ;
-    :name "Light Old Fashioned Fruit Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Light Old Fashioned Fruit Cake"@en .
 
-recipes:LimaBeanSalad a :Recipe ;
+recipes:LimaBeanSalad a ns1:SaladAndDressings,
+        :Recipe ;
     rdfs:label "Bean salad"@en ;
     :hasDbpediaLink dbpedia:Bean_salad ;
     :hasIngredient [ a :Ingredient ;
@@ -5960,8 +5961,7 @@ recipes:LimaBeanSalad a :Recipe ;
             :name "parsley, choped"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Colourful_bean_salad.jpg?width=300> ;
     :instructions "Thoroughly mix vinegar, vegetable oil, and salt.  Cook beans until tender, drain and rinse under cold water.  Add other ingredients and toss.  Chill in refrigerator for 1-2 hours."@en ;
-    :name "Lima Bean Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Lima Bean Salad"@en .
 
 recipes:MarylandFriedChicken a :Recipe ;
     rdfs:label "Chicken Maryland"@en ;
@@ -6008,7 +6008,8 @@ Carefully place a single layer of chicken pieces in hot oil; do not crowd pan. C
 Melt butter in skillet. Sprinkle reserved 1 tablespoon seas1d flour over butter and cook for 1 minute. Add milk, stirring and scrapping up brown bits. Cook, stirring constantly until thickened. Spoon some of the gravy over chicken and pour remainder into a gravy boat and serve separately."""@en ;
     :name "Maryland Fried Chicken"@en .
 
-recipes:MexicanMeatballSoup a :Recipe ;
+recipes:MexicanMeatballSoup a ns1:Soup,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Hamburger ;
             :hasImperialMeasurementUnit [ :quantity 1.0 ;
@@ -6103,10 +6104,10 @@ recipes:MexicanMeatballSoup a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "onion, chopped"@en ] ;
     :instructions "Mix first 8 ingredients.  Shape into 1' balls.  Brown in small amount of oil.  Put remaining ingredients in a large pot.  Heat to boiling.  Add meatballs.  Cover and simmer 15 minutes.  Salt and pepper to taste.  Add rice and simmer 15 minutes.  Salt and pepper to taste.  Add rice and simmer 15 minutes."@en ;
-    :name "Mexican Meatball Soup"@en ;
-    :recipeCategory ns1:Soup .
+    :name "Mexican Meatball Soup"@en .
 
-recipes:MinestroneSoup a :Recipe ;
+recipes:MinestroneSoup a ns1:Soup,
+        :Recipe ;
     rdfs:label "Minestrone"@en,
         "Minestrone"@fr ;
     :hasDbpediaLink dbpedia:Minestrone ;
@@ -6118,7 +6119,7 @@ recipes:MinestroneSoup a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:KidneyBeans ;
@@ -6133,7 +6134,7 @@ recipes:MinestroneSoup a :Recipe ;
         [ a :Ingredient ;
             :food food:Zucchini ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
-                    :unit "small" ] ;
+                    :unit measurements:Small ] ;
             :name "zucchini, diced"@en ],
         [ a :Ingredient ;
             :food food:Cabbage ;
@@ -6143,12 +6144,12 @@ recipes:MinestroneSoup a :Recipe ;
         [ a :Ingredient ;
             :food food:Tomatoes ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large can" ] ;
+                    :unit measurements:Large ] ;
             :name "stewed tomatoes"@en ],
         [ a :Ingredient ;
             :food food:TomatoSauce ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large can" ] ;
+                    :unit measurements:Large ] ;
             :name "tomato sauce"@en ],
         [ a :Ingredient ;
             :food food:SpaghettiSauce ;
@@ -6174,10 +6175,10 @@ recipes:MinestroneSoup a :Recipe ;
             :name "stalks of celery, chopped"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Homemade_minestrone.jpg?width=300> ;
     :instructions "Brown hamburger and onions.  Add all other ingredients with enough water to cover.  Simmer two to three hours then add spaghetti and cook until tender."@en ;
-    :name "Minestrone Soup"@en ;
-    :recipeCategory ns1:Soup .
+    :name "Minestrone Soup"@en .
 
-recipes:Minties a :Recipe ;
+recipes:Minties a ns1:Cookie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Oil ;
             :hasStandardMeasurementUnit [ :quantity 0.6666666666666666 ;
@@ -6213,8 +6214,7 @@ recipes:Minties a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :instructions "Beat eggs until thick and foamy.  Gradually add sugar and continue to beat.  Soften mint jelly with a fork and add oil.  Mix well.  Add the flour, baking powder, and salt.  Spread mixture in a 9\"x13\" pan that is oiled.  Bake at 350 degrees for 25 minutes.  Frost with mint frosting:  Cream 1/4 cup margarine.  Add 1/2 cup mint jelly.  Blend.  Add 2 cups sifted powdered sugar.  Mix Well.  Cut into 32 bars."@en ;
-    :name "Minties"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Minties"@en .
 
 recipes:MushroomsinSourCream a :Recipe ;
     rdfs:label "Beef Stroganoff"@en,
@@ -6254,7 +6254,8 @@ recipes:MushroomsinSourCream a :Recipe ;
     :instructions "In skillet, fry bacon until crisp. Drain on paper towel. Add onion and mushrooms. Saute 10 minutes on low heat. Stir in flour. Add cream and worcestershire sauce. Cook on low, stirring constantly. Spoon over toast. Sprinkle bacon on top."@en ;
     :name "Mushrooms in Sour Cream"@en .
 
-recipes:MyBestGingerbread a :Recipe ;
+recipes:MyBestGingerbread a ns1:Cake,
+        :Recipe ;
     rdfs:label "Gingerbread"@en ;
     :hasDbpediaLink dbpedia:Gingerbread ;
     :hasIngredient [ a :Ingredient ;
@@ -6313,10 +6314,10 @@ recipes:MyBestGingerbread a :Recipe ;
             :name "egg"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Mjuk_pepparkaka_med_lingon.jpg?width=300> ;
     :instructions "Bake in greased pan for 35 minutes at 325-350 degrees."@en ;
-    :name "My Best Gingerbread"@en ;
-    :recipeCategory ns1:Cake .
+    :name "My Best Gingerbread"@en .
 
-recipes:OatmealCake a :Recipe ;
+recipes:OatmealCake a ns1:Cake,
+        :Recipe ;
     rdfs:label "Parkin (cake)"@en ;
     :hasDbpediaLink dbpedia:Parkin_\(cake\) ;
     :hasIngredient [ a :Ingredient ;
@@ -6400,10 +6401,10 @@ recipes:OatmealCake a :Recipe ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/YorkShireParkin.jpg?width=300> ;
     :instructions "Pour the water over the oatmeal.  Let stand for 20 minutes.  Add remaining cake ingredients.  Mix well and pour into a greased 9\"x12\" pan.  Let stand while mixing topping.  To prepare topping:  Mix all ingredients together over low heat, until butter melts.  Spoon over unbaked cake.  Bake 45 minutes at 350 degrees."@en ;
-    :name "Oatmeal Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Oatmeal Cake"@en .
 
-recipes:OatmealCookies a :Recipe ;
+recipes:OatmealCookies a ns1:Cookie,
+        :Recipe ;
     rdfs:label "Oatmeal raisin cookie"@en ;
     :hasDbpediaLink dbpedia:Oatmeal_raisin_cookie ;
     :hasIngredient [ a :Ingredient ;
@@ -6467,10 +6468,10 @@ recipes:OatmealCookies a :Recipe ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Archway_Oatmeal_Raisin_cookies.jpg?width=300> ;
     :instructions "Mix ingredients in the order given.  Drop by teaspoonful onto a cookie sheet.  Bake 8-10 minutes at 350 degrees."@en ;
-    :name "Oatmeal Cookies"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Oatmeal Cookies"@en .
 
-recipes:OatmealFudgeBars a :Recipe ;
+recipes:OatmealFudgeBars a ns1:Cookie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:BakingSoda ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ;
@@ -6547,10 +6548,10 @@ recipes:OatmealFudgeBars a :Recipe ;
             :name "sifted flour"@en ] ;
     :instructions """Oatmeal Layer:  Grease 9"x9" baking pan.  Beat shortening with sugar until fluffy.  Beat in egg and vanilla.  Sift flour with soda and salt into sugar mixture.  Mix well.  Stir in oats and nuts.  Remove 1 cup for topping.  Press the rest of the mixture evenly into the bottom of the pan.
 Fudge Layer:  Preheat oven to 350 degrees. In small sauce pan combine chocolate chips butter, milk, and salt.  Cook over low heat, stirring until chocolate and butter are melted.  Remove from the heat.  Stir in nuts and vanilla.  Spread chocolate mixture over oatmeal layer.  Sprinkle top with reserved oatmeal mixture.  Bake 25 minutes or until topping is lightly browned."""@en ;
-    :name "Oatmeal Fudge Bars*"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Oatmeal Fudge Bars*"@en .
 
-recipes:OldFashionedApplePie a :Recipe ;
+recipes:OldFashionedApplePie a ns1:Pie,
+        :Recipe ;
     rdfs:label "Apple pie"@en,
         "Tarte aux pommes"@fr ;
     :hasDbpediaLink dbpedia:Apple_pie ;
@@ -6581,10 +6582,10 @@ recipes:OldFashionedApplePie a :Recipe ;
             :name "butter"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Small_apple_pie_8.jpg?width=300> ;
     :instructions "Combine first 4 ingredients.  Put in unbaked pie shell.  Slice butter on top. Cover with top crust.  Bake at 350 degrees for 1 hour."@en ;
-    :name "Old Fashioned Apple Pie"@en ;
-    :recipeCategory ns1:Pie .
+    :name "Old Fashioned Apple Pie"@en .
 
-recipes:Orange-PoppySeedPoundCake a :Recipe ;
+recipes:Orange-PoppySeedPoundCake a ns1:Cake,
+        :Recipe ;
     rdfs:label "Poppy seed"@en,
         "Graine de pavot"@fr ;
     :hasDbpediaLink dbpedia:Poppy_seed ;
@@ -6621,7 +6622,7 @@ recipes:Orange-PoppySeedPoundCake a :Recipe ;
         [ a :Ingredient ;
             :food food:Eggs ;
             :hasStandardMeasurementUnit [ :quantity 4.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "eggs"@en ],
         [ a :Ingredient ;
             :food food:BakingPowder ;
@@ -6655,10 +6656,10 @@ recipes:Orange-PoppySeedPoundCake a :Recipe ;
             :name "fresh orange juice"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Poppy_seeds.jpg?width=300> ;
     :instructions "Preheat oven to 325 degrees.  Grease and flour a 9x5x3 inch loaf pan; tap out excess flour.  In large bowl beat together softened butter, sugar, vanilla, and orange peel until pale and fluffy.  Beat in flour, then remaining ingredients, except the glaze (powdered sugar and 2 1/2 tsp. orange juice).  Mix until well blended.  Spread in prepared pan.  With handle of a wooden spoon, make 1/2 inch deep score down center length of batter.  Bake 50-60 minutes, until wooden pick inserted in center comes out clean.  Cool in pan on rack 30 minutes; invert onto rack; remove pan.  Cool completely.  To prepare glaze seal powdered sugar and orange juice in small zipper-style bag.  Gently massage mixture with fingers until blended and smooth.  Snip off corner of bag.  Drizzle glaze over cake.  Let stand 1 hour or until glaze is set."@en ;
-    :name "Orange-Poppy Seed Pound Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Orange-Poppy Seed Pound Cake"@en .
 
-recipes:OrangeAngelFoodCake a :Recipe ;
+recipes:OrangeAngelFoodCake a ns1:Cake,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:AngelFoodCake ;
             :hasImperialMeasurementUnit [ :quantity 15.0 ;
@@ -6680,14 +6681,13 @@ recipes:OrangeAngelFoodCake a :Recipe ;
                     :unit measurements:Cup ] ;
             :name "plain low fat yogurt"@en ] ;
     :instructions "Prepare angel food cake as directed on package, but pour 1/3 cup of the thawed orange juice into a 2 cup measure and add enough water for the mixture to equal the amount of water called for in package directions.  Continue to prepare cake as directed, baking the batter in an ungreased 10 inch tube pan.  Immediately invert the cake, leaving in pan.  Cool completely.  Loosen sides of cake from pan; remove cake.  To make the topping, in a medium bowl, gently stir together the thawed topping and yogurt.  Fold in remaining orange juice concentrate.  Spread topping mixture over top ad sides of cake."@en ;
-    :name "Orange Angel Food Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Orange Angel Food Cake"@en .
 
 recipes:OrangeSweetPotatoes a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:SweetPotatoes ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "sweet potatoes"@en ],
         [ a :Ingredient ;
             :food food:Water ;
@@ -6829,7 +6829,7 @@ recipes:PastaPrimavera a :Recipe ;
         [ a :Ingredient ;
             :food food:GreenPepper ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "red or green pepper, cut up"@en ],
         [ a :Ingredient ;
             :food food:Mayonnaise ;
@@ -6864,7 +6864,7 @@ recipes:PastaPrimavera a :Recipe ;
         [ a :Ingredient ;
             :food food:Carrots ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "carrots, julienned"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pasta_primavera.jpg?width=300> ;
     :instructions """For pesto, in a blender container or food processor bowl. Place fresh basil or parsley, red or green pepper, mayonnaise, parmesan cheese, lemon juice, salt, red pepper and black pepper. Cover; blend or process till pureed. Set aside.
@@ -6872,7 +6872,11 @@ In a large amount of boiling salted water cook pasta for 6 minutes. Add carrots 
 Drain pasta and vegetables; return to saucepan. Stir in pesto; add chicken to turkey. Toss well to combine. Cook over very low heat for 2 minutes or until heated through, tossing occasionally. Serve immediately. Makes 4 servings."""@en ;
     :name "Pasta Primavera"@en .
 
-recipes:PeaSalad a :Recipe ;
+recipes:PeaSalad a ns1:SaladAndDressings,
+        :Recipe ;
+    rdfs:label "Ham salad"@en,
+        "Salade de jambon"@fr ;
+    :hasDbpediaLink dbpedia:Ham_salad ;
     :hasIngredient [ a :Ingredient ;
             :food food:Peas ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -6901,13 +6905,14 @@ recipes:PeaSalad a :Recipe ;
         [ a :Ingredient ;
             :food food:SourCream ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "small carton" ] ;
+                    :unit measurements:Small ] ;
             :name "sour cream"@en ] ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Ham_Salad_Sandwich_(39117585832).jpg?width=300> ;
     :instructions "Stir together and enjoy."@en ;
-    :name "Pea Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Pea Salad"@en .
 
-recipes:PeachAlmondPie a :Recipe ;
+recipes:PeachAlmondPie a ns1:Pie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Peaches ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
@@ -6944,10 +6949,10 @@ recipes:PeachAlmondPie a :Recipe ;
                     :unit "9 inch" ] ;
             :name "pie shell"@en ] ;
     :instructions "Sprinkle peaches with lemon and sugar.  Let stand 1 hour.  Drain to get 1 cup syrup.  Add cornstarch to syrup and blend.  Cook over low heat until thick.  Remove from heat.  Add butter, salt, and almond extract.  Cool.  Carefully stir in peaches.  Put in shell.  Chill.  Serve with whipped cream, topped with slivered almonds and marachino cherries."@en ;
-    :name "Peach Almond Pie"@en ;
-    :recipeCategory ns1:Pie .
+    :name "Peach Almond Pie"@en .
 
-recipes:PeachParfaitPie a :Recipe ;
+recipes:PeachParfaitPie a ns1:Pie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Gelatin ;
             :hasImperialMeasurementUnit [ :quantity 3.0 ;
@@ -6981,10 +6986,10 @@ recipes:PeachParfaitPie a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "baked pie shell, chilled"@en ] ;
     :instructions "Dissolve gelatin in hot water.  At once add 1/4 of ice cream and stir until blended.  Repeat until all of ice cream is added.  Chill until almost firm.  Mix peaches with sugar and fold into mixture.  Pour into baked shell and chill unit firm.  Whip cream and spread on pie."@en ;
-    :name "Peach Parfait Pie"@en ;
-    :recipeCategory ns1:Pie .
+    :name "Peach Parfait Pie"@en .
 
-recipes:PeanutButterCookies a :Recipe ;
+recipes:PeanutButterCookies a ns1:Cookie,
+        :Recipe ;
     rdfs:label "Peanut butter cookie"@en ;
     :hasDbpediaLink dbpedia:Peanut_butter_cookie ;
     :hasIngredient [ a :Ingredient ;
@@ -7033,10 +7038,10 @@ recipes:PeanutButterCookies a :Recipe ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Peanut_butter_cookies,_September_2009.jpg?width=300> ;
     :instructions "Form into balls.  Flatten with fork dipped in flour or sugar. Bake for 8 minutes at 375 degrees."@en ;
-    :name "Peanut Butter Cookies"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Peanut Butter Cookies"@en .
 
-recipes:PeanutButterIceCreamPie a :Recipe ;
+recipes:PeanutButterIceCreamPie a ns1:Pie,
+        :Recipe ;
     rdfs:label "Pecan pie"@en,
         "Tarte aux pacanes"@fr ;
     :hasDbpediaLink dbpedia:Pecan_pie ;
@@ -7072,10 +7077,10 @@ recipes:PeanutButterIceCreamPie a :Recipe ;
             :name "chunk style peanut buter"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pecan_pie,_November_2010.jpg?width=300> ;
     :instructions "Mix graham cracker crumbs, sugar, and melted margarine.  Press into 9\" pie pan.  Chill.  To make filling whip 1/2 cup whipping cream.  Place ice cream in a bowl and stir to soften.  Fold in peanut butter; then fold in whipped cream.  Spoon mixture into crust.  Freeze about 5 hours.  Remove from freezer about 15 minutes before serving."@en ;
-    :name "Peanut Butter Ice Cream Pie"@en ;
-    :recipeCategory ns1:Pie .
+    :name "Peanut Butter Ice Cream Pie"@en .
 
-recipes:PeanutButterPie a :Recipe ;
+recipes:PeanutButterPie a ns1:Pie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:CornSyrup ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -7110,8 +7115,7 @@ recipes:PeanutButterPie a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "pie shell, unbaked"@en ] ;
     :instructions "Combine first 5 ingredients.  Mix thoroughly.  Pour into pie shell.  Bake at 350 degrees for 15 minutes.  Reduce heat to 350 degrees and bake for 30 to 35 minutes.  It should appear less set in the center.  Chill.  Top with whipped cream."@en ;
-    :name "Peanut Butter Pie"@en ;
-    :recipeCategory ns1:Pie .
+    :name "Peanut Butter Pie"@en .
 
 recipes:Peas a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -7137,7 +7141,8 @@ recipes:Peas a :Recipe ;
     :instructions "Thicken liquid from peas and onions. Add other ingredients."@en ;
     :name "Peas"@en .
 
-recipes:PieCrust a :Recipe ;
+recipes:PieCrust a ns1:Pie,
+        :Recipe ;
     rdfs:label "Shortcrust pastry"@en,
         "Pâte brisée"@fr ;
     :hasDbpediaLink dbpedia:Shortcrust_pastry ;
@@ -7163,10 +7168,10 @@ recipes:PieCrust a :Recipe ;
             :name "ice water or 7-up"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Recette_pate_brisee_etape_8.jpg?width=300> ;
     :instructions "Mix flour, salt, and shortening.  Stir in water enough to bind mixture together to form soft dough.  Makes two 9\" pie crusts or 1 double crust.  For double crust pie bake at 350 degrees for 1 hour.  For pie shell bake at 400 degrees for 10 minutes."@en ;
-    :name "Pie Crust"@en ;
-    :recipeCategory ns1:Pie .
+    :name "Pie Crust"@en .
 
-recipes:Pineapple-CarrotCake a :Recipe ;
+recipes:Pineapple-CarrotCake a ns1:Cake,
+        :Recipe ;
     rdfs:label "Carrot cake"@en,
         "Gâteau aux carottes"@fr ;
     :hasDbpediaLink dbpedia:Carrot_cake ;
@@ -7251,10 +7256,10 @@ recipes:Pineapple-CarrotCake a :Recipe ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Carrot_cake_at_America_Graffiti_(cropped).jpg?width=300> ;
     :instructions "Mix all cake ingredients.  Bake in greased and floured 9\"x13\" pan at 350 degrees for 35 minutes.  Frost when cool."@en ;
-    :name "Pineapple-Carrot Cake*"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Pineapple-Carrot Cake*"@en .
 
-recipes:PineappleCake a :Recipe ;
+recipes:PineappleCake a ns1:Cake,
+        :Recipe ;
     rdfs:label "Pineapple cake"@en ;
     :hasDbpediaLink dbpedia:Pineapple_cake ;
     :hasIngredient [ a :Ingredient ;
@@ -7279,10 +7284,10 @@ recipes:PineappleCake a :Recipe ;
             :name "sliced almonds"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pineapple_Pastry.jpg?width=300> ;
     :instructions "Spread pineapple in baking dish.  Sprinkle cake mix on this.  Dice butter on top. Sprinkle with almonds.  Bake at 350 degrees for 30 minutes."@en ;
-    :name "Pineapple Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Pineapple Cake"@en .
 
-recipes:PineappleGrahamBars a :Recipe ;
+recipes:PineappleGrahamBars a ns1:Cookie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Pineapple ;
             :hasImperialMeasurementUnit [ :quantity 8.5 ;
@@ -7318,8 +7323,7 @@ recipes:PineappleGrahamBars a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :instructions "Preheat oven to 350 degrees.  Lightly grease 8\"x8\"x2\" pan.  Mix butter with sugar until light.  Beat in egg.  Stir in flour, graham cracker crumbs, pineapple, and walnuts.  Bake 30-35 minutes or until browned and surface is firm to the touch.  Let cool completely in plan. Cut into 20 bars."@en ;
-    :name "Pineapple Graham Bars"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Pineapple Graham Bars"@en .
 
 recipes:PineappleSpareribs a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -7399,12 +7403,13 @@ recipes:PorkFuManChow a :Recipe ;
         [ a :Ingredient ;
             :food food:ChineseNoodles ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large can" ] ;
+                    :unit measurements:Large ] ;
             :name "chinese noodles"@en ] ;
     :instructions "Saute onion and celery in oil. Add pork, bean sprouts and all other ingredients except peas and noodles. Simmer for 30 minutes. Add peas and simmer for 30 more minutes. Serve over noodles."@en ;
     :name "Pork Fu Man Chow"@en .
 
-recipes:PotatoeCake a :Recipe ;
+recipes:PotatoeCake a ns1:Cake,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sugar ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
@@ -7455,10 +7460,10 @@ recipes:PotatoeCake a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "eggs, beaten separately"@en ] ;
     :instructions "Mix in order given.   Bake at 350 degrees for 25 minutes in two, 9\" pans."@en ;
-    :name "Potatoe Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Potatoe Cake"@en .
 
-recipes:PruneNutBars a :Recipe ;
+recipes:PruneNutBars a ns1:Cookie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Prunes ;
             :hasStandardMeasurementUnit [ :quantity 1.5 ;
@@ -7519,10 +7524,10 @@ recipes:PruneNutBars a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Cook Prunes - drain and chop.  Mix margarine, sugar and 1 cup of four.  Press into 9\" square pan.  Bake at 350 degrees for 25 minutes.   Sift remaining 1/3 cup flour with baking powder and salt.  Beat brown sugar into eggs, lemon and vanilla.  Add flour, mix well.  Add prunes, nuts, and coconut.  Spread over baked bars.  Bake at 350 degrees for 30-35 minutes.  Cool.  Cut into 24 bars.  Roll in confectioner's sugar."@en ;
-    :name "Prune Nut Bars"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Prune Nut Bars"@en .
 
-recipes:PumpkinOatmealCookies a :Recipe ;
+recipes:PumpkinOatmealCookies a ns1:Cookie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sugar ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ;
@@ -7591,7 +7596,7 @@ recipes:PumpkinOatmealCookies a :Recipe ;
         [ a :Ingredient ;
             :food food:Spice ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "small can" ] ;
+                    :unit measurements:Small ] ;
             :name "pumpkin pie spice"@en ],
         [ a :Ingredient ;
             :food food:Flour ;
@@ -7603,10 +7608,10 @@ recipes:PumpkinOatmealCookies a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Mix eggs, sugar, oil, spices, and pumpkin.  Add oats, soda, salt nuts, and raisins.  Mix well.  Add flour, 1/2 at a time.  Drop by teaspoons on ungreased cookie sheet.  (These will not spread.)  Bake 10 minutes at 325 degrees.  Remove from pan.  Store in tightly sealed container."@en ;
-    :name "Pumpkin Oatmeal Cookies"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Pumpkin Oatmeal Cookies"@en .
 
-recipes:PumpkinSwirlCheesecake a :Recipe ;
+recipes:PumpkinSwirlCheesecake a ns1:Cake,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:CreamCheese ;
             :hasImperialMeasurementUnit [ :quantity 16.0 ;
@@ -7653,8 +7658,7 @@ recipes:PumpkinSwirlCheesecake a :Recipe ;
             :name "eggs"@en ] ;
     :instructions """CRUST:  Combine crumbs and melted margarine, press into bottom and sides of 9 inch form pan.
 FILLING:  Combine cheese, 1/2 cup sugar and vanilla.  Mix at medium speed until well blended.  Add eggs, one at a time.  Reserve 1 cup of this mixture, then add pumpkin, remaining sugar and spices to remaining cheese mixture.  Mix well.  Layer half of pumpkin mixture an half of cheese mixture over crust.  Repeat layers.  Cut through bater with knife several times to marble.  Bake at 350 degrees for 55 minutes.  Loosen from rim of pan.  Cool before removing.  Chill."""@en ;
-    :name "Pumpkin Swirl Cheesecake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Pumpkin Swirl Cheesecake"@en .
 
 recipes:Ranch-styleBakedBeans a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -7707,7 +7711,8 @@ In large skillet melt butter or margarine and brown meat.
 Stir in remaining ingredients. Pour into 2 1/2 quart casserole. Bake 30-45 minutes."""@en ;
     :name "Ranch-style Baked Beans"@en .
 
-recipes:RefrigeratorCheesecake a :Recipe ;
+recipes:RefrigeratorCheesecake a ns1:Cake,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:CottageCheese ;
             :hasImperialMeasurementUnit [ :quantity 1.0 ;
@@ -7768,8 +7773,7 @@ recipes:RefrigeratorCheesecake a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs, separated"@en ] ;
     :instructions "Crush flakes, mix with butter and sugar.  Press 3/4 of mixture into spring for pan.  Chill.  Soften gelatin in water.  Beat egg yolks slightly; stir in salt, sugar and milk.  Cook over hot water or very low heat.  Stir constantly until it thickens.  Remove from heat.  Stir in softened gelatin.  Cool.  Beat cheese until creamy.  Combine with lemon rind and juice.  Add to gelatin mixture, mixing well.  Whip cream until stiff.  Beat egg whites until stiff but not dry.  Fold cheese mixture to whipped cream.  Spread in pan over crumb mixture.  Sprinkle remaining crumbs on top.  Chill until firm."@en ;
-    :name "Refrigerator Cheesecake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Refrigerator Cheesecake"@en .
 
 recipes:Sandras%22TreeTrimmer%22Chicken a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -7805,7 +7809,7 @@ recipes:Sandras%22TreeTrimmer%22Chicken a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "sliced onion"@en ],
         [ a :Ingredient ;
             :food food:Garlic ;
@@ -7815,7 +7819,7 @@ recipes:Sandras%22TreeTrimmer%22Chicken a :Recipe ;
         [ a :Ingredient ;
             :food food:Tomatoes ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "can Italian style tomatoes"@en ],
         [ a :Ingredient ;
             :food food:RedWine ;
@@ -7895,7 +7899,7 @@ recipes:SauteZucchini a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Zucchini ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
-                    :unit "small" ] ;
+                    :unit measurements:Small ] ;
             :name "zucchini"@en ],
         [ a :Ingredient ;
             :food food:Garlic ;
@@ -8055,7 +8059,7 @@ recipes:SavoryChickenCasserole a :Recipe ;
         [ a :Ingredient ;
             :food food:Onions ;
             :hasStandardMeasurementUnit [ :quantity 6.0 ;
-                    :unit "small" ] ;
+                    :unit measurements:Small ] ;
             :name "onions"@en ],
         [ a :Ingredient ;
             :food food:Carrots ;
@@ -8113,7 +8117,8 @@ recipes:SavoryGoulash a :Recipe ;
     :instructions "Brown onion and meat. Add tomato sauce and water. Cook for 2 hours and serve over hot noodles."@en ;
     :name "Savory Goulash"@en .
 
-recipes:SherryWineCake a :Recipe ;
+recipes:SherryWineCake a ns1:Cake,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Cake ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -8144,8 +8149,7 @@ recipes:SherryWineCake a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Beat for 5 minutes.  Bake for 45 minutes at 350 degrees in angel food pan that has been greased and floured.  Turn to 300 degrees after 20 minutes."@en ;
-    :name "Sherry Wine Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Sherry Wine Cake"@en .
 
 recipes:ShrimpSaute a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -8171,7 +8175,7 @@ recipes:ShrimpSaute a :Recipe ;
         [ a :Ingredient ;
             :food food:GreenPepper ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ;
-                    :unit "small" ] ;
+                    :unit measurements:Small ] ;
             :name "green pepper, chopped"@en ],
         [ a :Ingredient ;
             :food food:Cloves ;
@@ -8243,7 +8247,7 @@ recipes:Sitr-FryBeefandBroccoli a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, cut in thin wedges"@en ],
         [ a :Ingredient ;
             :food food:ChickenStock ;
@@ -8258,7 +8262,8 @@ recipes:Sitr-FryBeefandBroccoli a :Recipe ;
     :instructions "Cut flank steak across the grain into thin slices. Mix the soy sauce, dry sherry, cornstarch, ginger and garlic ad pour over the beef, tossing to mix well. Cut the broccoli into florets about 2 inches long; slice the stalks into .5 inch pieces. Heat 1 tbsp of the oil in a large, non-stick skillet or wok until hot. Add the beef and stir-fry over high heat until seared, about 2 minutes. Remove beef to a plate. Heat remaining oil in the skillet and add the broccoli and onion. Cook, stirring constantly, for 2 minutes. Add the 2 tablespoons of water or stock, cover the pan, reduce the heat and simmer for 3 to 5 minutes, or until the broccoli is crisp-tender. Stir in the beef and bean sprouts. Toss and stir until heated through."@en ;
     :name "Sitr-Fry Beef and Broccoli"@en .
 
-recipes:Snickerdoodles a :Recipe ;
+recipes:Snickerdoodles a ns1:Cookie,
+        :Recipe ;
     rdfs:label "Snickerdoodle"@en,
         "Snickerdoodle"@fr ;
     :hasDbpediaLink dbpedia:Snickerdoodle ;
@@ -8308,10 +8313,10 @@ recipes:Snickerdoodles a :Recipe ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pile_of_snickerdoodles.jpg?width=300> ;
     :instructions "Mix first 7 ingredients.  Roll in balls.  Dip in mixture of cinnamon and sugar.  Bake for 8-10 minutes at 375 degrees.  Makes 4 dozen."@en ;
-    :name "Snickerdoodles"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Snickerdoodles"@en .
 
-recipes:SoftSugarCookies a :Recipe ;
+recipes:SoftSugarCookies a ns1:Cookie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Butter ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ;
@@ -8357,8 +8362,7 @@ recipes:SoftSugarCookies a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Cream butter.  Add sugar gradually while continuing to cream.  Ad eggs one at a time, beating well after each.  Add vanilla.  Beat until light and fluffy.  Add mixed dry ingredients, alternately with sour cream; begin and end with dry ingredients.  For 3 inch cookies drop by heaping teaspoons.  With spatula flatten into circles about 2 inch wide.  Sprinkle with sugar and cinnamon.  Bake in hot oven - 400 degrees for 10-20 minutes.  Makes about thirty - 3 inch cookies."@en ;
-    :name "Soft Sugar Cookies"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Soft Sugar Cookies"@en .
 
 recipes:SoleAlmondie a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -8503,10 +8507,8 @@ recipes:SourCreamEnchiladas a :Recipe ;
     :instructions "Blend sour cream, onions, cumin, and cheese. Heat tortillas in oil to make them flexible. Put small amount of sauce in bottom of baking dish. Roll filling in tortillas. Place in pan. Put remained of sauce over top. Top with cheese. Bake at 375 degrees for 20 minutes. Make 6 servings. This recipe also works well for chicken enchiladas. Just add two cooked chicken breasts, cut into bite-size pieces."@en ;
     :name "Sour Cream Enchiladas"@en .
 
-recipes:SourCreamRaisinPie a :Recipe ;
-    rdfs:label "Cheesecake"@en,
-        "Cheesecake"@fr ;
-    :hasDbpediaLink dbpedia:Cheesecake ;
+recipes:SourCreamRaisinPie a ns1:Pie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Raisins ;
             :hasStandardMeasurementUnit [ :quantity 1.5 ;
@@ -8546,10 +8548,8 @@ recipes:SourCreamRaisinPie a :Recipe ;
             :food food:Yolks ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "egg yolks, slightly beaten"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/My_first_cheesecake_cropped.jpg?width=300> ;
     :instructions "Boil raisins in water until plump.  Add flour and sugar.  Cook to thicken slightly then add egg yolks, sour cream, vanilla and nutmeg.  Pour into 9\" bottom crust.  Add top crust.  Sprinkle with sugar.  Bake 50 minutes at 350 degrees."@en ;
-    :name "Sour Cream Raisin Pie"@en ;
-    :recipeCategory ns1:Pie .
+    :name "Sour Cream Raisin Pie"@en .
 
 recipes:SouthCarolinaCobbler a :Recipe ;
     rdfs:label "Cobbler (food)"@en,
@@ -8634,7 +8634,8 @@ recipes:SpanishCreamPudding a :Recipe ;
     :instructions "Separate eggs. Put whites in large bowl. Mix sugar, gelatin and salt in double boiler, add milk. Place over medium heat. Stir well until gelatin dissolves, 3-6 minutes. Beat egg yolks with fork, gradually add milk. Cook in double boiler, but do not let water boil. Cook 10-15 minutes. Add flavoring. Drip at side of egg whites. Fold in gradually."@en ;
     :name "Spanish Cream Pudding"@en .
 
-recipes:SpecialPruneCake a :Recipe ;
+recipes:SpecialPruneCake a ns1:Cake,
+        :Recipe ;
     rdfs:label "Plum cake"@en ;
     :hasDbpediaLink dbpedia:Plum_cake ;
     :hasIngredient [ a :Ingredient ;
@@ -8729,10 +8730,10 @@ recipes:SpecialPruneCake a :Recipe ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Plum_cake_08_ies.jpg?width=300> ;
     :instructions """Blend sugar and oil.  Add beaten eggs.  Add dry ingredients with buttermilk.  Add vanilla, prunes, and nuts.  Pour into buttered pan about 12"x8" in size.  Bake at 300 degrees for 45 minutes.  When cake is done and brown remove from oven and while still hot cover with icing.  
 Icing Directions:  Put all ingredients in medium saucepan and boil to soft ball stage.  This will take 15 or 20 minutes, so start this before cake is to come out of the oven so icing may be poured on to cake immediately.  Leave in pan, cut in squares to serve."""@en ;
-    :name "Special Prune Cake*"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Special Prune Cake*"@en .
 
-recipes:SpicyFruitandNutCake a :Recipe ;
+recipes:SpicyFruitandNutCake a ns1:Cake,
+        :Recipe ;
     rdfs:label "Madeira cake"@en ;
     :hasDbpediaLink dbpedia:Madeira_cake ;
     :hasIngredient [ a :Ingredient ;
@@ -8816,8 +8817,7 @@ recipes:SpicyFruitandNutCake a :Recipe ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Cherry_madeira_cake.jpg?width=300> ;
     :instructions "Bake in greased and floured 9\" bundt pan at 350 degrees for 45-50 minutes.  Cool 15 minutes.  Loosen around edges with thin spatula.  Pierce with a wooden pick.  Glaze directions:  Cook glaze ingredients over medium heat until full boil and butter melts.  Ladle glaze over cake."@en ;
-    :name "Spicy Fruit and Nut Cake*"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Spicy Fruit and Nut Cake*"@en .
 
 recipes:SpicySingaporeWings a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -8866,7 +8866,7 @@ recipes:SpinachFritatta a :Recipe ;
         [ a :Ingredient ;
             :food food:Garlic ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "clove garlic, minced"@en ],
         [ a :Ingredient ;
             :food food:Basil ;
@@ -8960,7 +8960,8 @@ Bake 30 to 35 minutes, or until top crust is puffy and golden. Serve warm.
 Makes 18 servings."""@en ;
     :name "Spinach Pie"@en .
 
-recipes:SpinachSalad a :Recipe ;
+recipes:SpinachSalad a ns1:SaladAndDressings,
+        :Recipe ;
     rdfs:label "Spinach salad"@en ;
     :hasDbpediaLink dbpedia:Spinach_salad ;
     :hasIngredient [ a :Ingredient ;
@@ -8971,7 +8972,7 @@ recipes:SpinachSalad a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, red is best"@en ],
         [ a :Ingredient ;
             :food food:Bacon ;
@@ -9013,20 +9014,20 @@ recipes:SpinachSalad a :Recipe ;
             :name "egg, hard-boiled"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Flickr_-_cyclonebill_-_Salat_af_spinat,_blommetomater,_gedeost_og_valnøddeolie.jpg?width=300> ;
     :instructions "Mix spinach and thinly sliced onion.  Fry bacon until crisp, drain.  To drippings add vinegar, water, sugar, and salt.  Bring to a boil.  Beat egg until light.  Add sour cream.  Pour boiling liquid over egg then pour back in skillet.  Cook over low heat until thick.  Pour over spinach, add bacon and chopped egg.  Toss lightly."@en ;
-    :name "Spinach Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Spinach Salad"@en .
 
-recipes:SpinachSaladwithAlfalfaSprouts a :Recipe ;
+recipes:SpinachSaladwithAlfalfaSprouts a ns1:SaladAndDressings,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sugar ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
                     :unit measurements:Teaspoon ] ;
             :name "sugar"@en ] ;
     :instructions "Mix dressing ingredients:  mayonnaise, catsup, lemon juice, and sugar.  Combine remaining ingredients.  Toss with dressing."@en ;
-    :name "Spinach Salad with Alfalfa Sprouts"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Spinach Salad with Alfalfa Sprouts"@en .
 
-recipes:SpinachSaladwithAvocado a :Recipe ;
+recipes:SpinachSaladwithAvocado a ns1:SaladAndDressings,
+        :Recipe ;
     rdfs:label "Spinach salad"@en ;
     :hasDbpediaLink dbpedia:Spinach_salad ;
     :hasIngredient [ a :Ingredient ;
@@ -9099,8 +9100,7 @@ recipes:SpinachSaladwithAvocado a :Recipe ;
             :name "red onion"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Flickr_-_cyclonebill_-_Salat_af_spinat,_blommetomater,_gedeost_og_valnøddeolie.jpg?width=300> ;
     :instructions "Clean spinach.  Tear for salad.  Cut avocado in small pieces.  Sprinkle with lemon.  Slice onion as thin as possible.  Combine spinach, avocado, onion, and oranges.  Mix remaining ingredients to make dressing.  Pour dressing over salad.  Sprinkle on bacon bits."@en ;
-    :name "Spinach Salad with Avocado"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Spinach Salad with Avocado"@en .
 
 recipes:SpinachSouffle a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -9191,7 +9191,8 @@ recipes:SpinachStrudels a :Recipe ;
 Bake at 350 degrees for 15 minutes. After brushing with egg increase to 400 degrees and bake for 5 minutes more. Cut rest of the way through. Arrange on platter with parsley sprigs."""@en ;
     :name "Spinach Strudels"@en .
 
-recipes:StrawberrySpiceLoaf a :Recipe ;
+recipes:StrawberrySpiceLoaf a ns1:Cake,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Berries ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ;
@@ -9237,8 +9238,7 @@ recipes:StrawberrySpiceLoaf a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Bake in two 9\" loaf pans, greased and floured, at 350 degrees for one hour."@en ;
-    :name "Strawberry Spice Loaf"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Strawberry Spice Loaf"@en .
 
 recipes:StuffedGreenPeppers a :Recipe ;
     rdfs:label "Stuffed peppers"@en ;
@@ -9315,7 +9315,8 @@ recipes:StuffedZucchini a :Recipe ;
 Bake 1/2 hour at 350 degrees until filling is set."""@en ;
     :name "Stuffed Zucchini"@en .
 
-recipes:SummerFruitSalad a :Recipe ;
+recipes:SummerFruitSalad a ns1:SaladAndDressings,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Pineapple ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -9351,14 +9352,13 @@ recipes:SummerFruitSalad a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ] ;
             :name "cantaloupe, cut into chunks"@en ] ;
     :instructions "Combine all ingredients.  Cover and chill several hours or overnight."@en ;
-    :name "Summer Fruit Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Summer Fruit Salad"@en .
 
 recipes:SummerSquash a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "small" ] ;
+                    :unit measurements:Small ] ;
             :name "onion, grated"@en ],
         [ a :Ingredient ;
             :food food:ParmesanCheese ;
@@ -9496,7 +9496,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Ketchup ;
@@ -9526,7 +9526,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "lemon"@en ],
         [ a :Ingredient ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -9565,7 +9565,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Ketchup ;
@@ -9595,7 +9595,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "lemon"@en ],
         [ a :Ingredient ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -9634,7 +9634,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Ketchup ;
@@ -9664,7 +9664,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "lemon"@en ],
         [ a :Ingredient ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -9703,7 +9703,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Ketchup ;
@@ -9733,7 +9733,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "lemon"@en ],
         [ a :Ingredient ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -9772,7 +9772,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Ketchup ;
@@ -9802,7 +9802,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "lemon"@en ],
         [ a :Ingredient ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -9841,7 +9841,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Ketchup ;
@@ -9871,7 +9871,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "lemon"@en ],
         [ a :Ingredient ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -9910,7 +9910,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Ketchup ;
@@ -9940,7 +9940,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "lemon"@en ],
         [ a :Ingredient ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -9979,7 +9979,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Ketchup ;
@@ -10009,7 +10009,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "lemon"@en ],
         [ a :Ingredient ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -10048,7 +10048,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Ketchup ;
@@ -10078,7 +10078,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "lemon"@en ],
         [ a :Ingredient ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -10117,7 +10117,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Ketchup ;
@@ -10147,7 +10147,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "lemon"@en ],
         [ a :Ingredient ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -10186,7 +10186,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Ketchup ;
@@ -10216,7 +10216,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "lemon"@en ],
         [ a :Ingredient ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -10255,7 +10255,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Ketchup ;
@@ -10285,7 +10285,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "lemon"@en ],
         [ a :Ingredient ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -10324,7 +10324,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Ketchup ;
@@ -10354,7 +10354,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "lemon"@en ],
         [ a :Ingredient ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -10393,7 +10393,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Ketchup ;
@@ -10423,7 +10423,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "lemon"@en ],
         [ a :Ingredient ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -10734,7 +10734,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Ketchup ;
@@ -10764,7 +10764,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "lemon"@en ],
         [ a :Ingredient ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -10803,7 +10803,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Ketchup ;
@@ -10833,7 +10833,7 @@ recipes:SweetandSourPork a :Recipe ;
         [ a :Ingredient ;
             :food food:Lemon ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "lemon"@en ] ;
     :instructions "Cut pork into chunks. Marinade for 30 minutes in dressing made by combining: salt, soy sauce, cornstarch, and water. Drain pork and dip in a batter of coating mix, ice water, and egg. Brown in a few tablespoons of oil in a wok about 3 minutes or until brown and crisp. Remove with a slotted spoon. Add green pepper, onion, and carrot. Stir fry about 5 minutes. Add sweet and sour sauce made by combining: ketchup, brown sugar, white sugar, cinnamon, ginger, and juice of the large lemon. Stir until sauce thickens. Add pineapple chunks and the pork. Ser with hot steamed rice."@en,
         "Cut pork tenderloin into chunks. Combine salt, soy sauce, cornstarch and cold water. Marinade pork for 30 minutes. Drain pork and dip a few pieces at a time in a batter made from chicken coating mix, water and egg yolk. Brown pork in hot oil in wok about 3 minutes or until brown. Remove with slotted spoon. Stir in green pepper carrot and onion. Combine catsup, brown sugar, granulated sugar, cinnamon, ginger, lemon and pineapple. Cook until sauce thickens. Add pork mixture and serve over rice."@en ;
@@ -10926,7 +10926,7 @@ recipes:TheSpinach a :Recipe ;
         [ a :Ingredient ;
             :food food:Onions ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "onions, chopped"@en ],
         [ a :Ingredient ;
             :food food:Flour ;
@@ -10967,7 +10967,7 @@ recipes:ThreeCheeseSpinach a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Fat ;
@@ -10995,7 +10995,8 @@ Sprinkle grated cheese over top and dust lightly with paprika. Microwave about 1
 Yields 6 to 8 servings."""@en ;
     :name "Three Cheese Spinach"@en .
 
-recipes:ThreeLayerChocolateMayonnaiseCake a :Recipe ;
+recipes:ThreeLayerChocolateMayonnaiseCake a ns1:Cake,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Flour ;
             :hasStandardMeasurementUnit [ :quantity 4.5 ;
@@ -11037,10 +11038,10 @@ recipes:ThreeLayerChocolateMayonnaiseCake a :Recipe ;
                     :unit measurements:Teaspoon ] ;
             :name "vanilla"@en ] ;
     :instructions "Grease three 9\" layer pans, one with waxed paper.  Sift dry ingredients into large bowl.  Stir in mayonnaise.  Stir in water and vanilla until smooth.  Pour into pans.  Bake at 350 degrees for 30 minutes.  Cool.  Frost with chocolate frosting."@en ;
-    :name "Three Layer Chocolate Mayonnaise Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Three Layer Chocolate Mayonnaise Cake"@en .
 
-recipes:ThumbprintCookies a :Recipe ;
+recipes:ThumbprintCookies a ns1:Cookie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Shortening ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ;
@@ -11071,10 +11072,10 @@ recipes:ThumbprintCookies a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :instructions "Mix first 5 ingredients.  Add flour.  Roll into ball.   Make a thumbprint in each ball.  Cook 8-10 minutes at 350 degrees.  Fill with jelly or chopped nuts."@en ;
-    :name "Thumbprint Cookies"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Thumbprint Cookies"@en .
 
-recipes:TopRamenSalad a :Recipe ;
+recipes:TopRamenSalad a ns1:SaladAndDressings,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Chicken ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -11101,10 +11102,10 @@ recipes:TopRamenSalad a :Recipe ;
                     :unit measurements:Cup ] ;
             :name "frozen peas"@en ] ;
     :instructions "Mix Ramen seasoning packet with oil, vinegar, and sugar.  pour over mixture of salad greens, red onion, and peas.  Add crushed Ramen noodles."@en ;
-    :name "Top Ramen Salad"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Top Ramen Salad"@en .
 
-recipes:TortillaSoup a :Recipe ;
+recipes:TortillaSoup a ns1:Soup,
+        :Recipe ;
     rdfs:label "Tortilla soup"@en ;
     :hasDbpediaLink dbpedia:Tortilla_soup ;
     :hasIngredient [ a :Ingredient ;
@@ -11162,8 +11163,7 @@ recipes:TortillaSoup a :Recipe ;
             :name "corn tortillas"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Tortilla_soup_(49461127193).jpg?width=300> ;
     :instructions "Cut 3 thin slices from the lime; set aside.  Squeeze 1 tsp juice from remaining lime; set aside.  In 2-qt. saucepan over medium heat, in 1 tbsp hot oil, cook onion, cumin, oregano, and garlic until onion is tender.  Add broth, water, tomato, chiles, and reserved lime juice.  Heat to boiling.  Reduce heat to low and cook for 10 minutes.  Meanwhile, cut tortillas into thin strips.  In a 10-inch skillet heat 1/2 inch oil to 375 degree.  Fry tortilla strips, a few at a time until crisp.  Remove to paper towel to drain.  Place several tortilla strips in 3 bowls.  Ladle soup into bowls; sprinkle with cheese.  Top with reserved lime slices and lettuce.  Serve immediately."@en ;
-    :name "Tortilla Soup"@en ;
-    :recipeCategory ns1:Soup .
+    :name "Tortilla Soup"@en .
 
 recipes:TulelakePotatoCasserole a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -17583,7 +17583,7 @@ recipes:TurkeyTenderloinSupreme a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "onion, sliced into rings"@en ],
         [ a :Ingredient ;
             :food food:Soup ;
@@ -17603,7 +17603,8 @@ recipes:TurkeyTenderloinSupreme a :Recipe ;
     :instructions "Melt butter in skillet on medium high. Add turkey and onion. Cook 5 minutes, turning occasionally. Stir in soup. Reduce heat. Cover. Simmer for 20 minutes. Remove turkey to platter. Add cheese to skillet. Stir until melted. Serve over turkey and rice or noodles."@en ;
     :name "Turkey Tenderloin Supreme"@en .
 
-recipes:TwoLayerChocolateMayonnaiseCake a :Recipe ;
+recipes:TwoLayerChocolateMayonnaiseCake a ns1:Cake,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Flour ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ;
@@ -17645,10 +17646,10 @@ recipes:TwoLayerChocolateMayonnaiseCake a :Recipe ;
                     :unit measurements:Teaspoon ] ;
             :name "vanilla"@en ] ;
     :instructions "Grease two 9\" layer pans, line with waxed paper.  Sift dry ingredients into large bowl.  Stir in mayonnaise.  Stir in water and vanilla until smooth.  Pour into pans.  Bake at 350 degrees for 30 minutes.  Cool.  Frost with chocolate frosting."@en ;
-    :name "Two Layer Chocolate Mayonnaise Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Two Layer Chocolate Mayonnaise Cake"@en .
 
-recipes:UpsideDownCake a :Recipe ;
+recipes:UpsideDownCake a ns1:Cake,
+        :Recipe ;
     rdfs:label "Upside-down cake"@en ;
     :hasDbpediaLink dbpedia:Upside-down_cake ;
     :hasIngredient [ a :Ingredient ;
@@ -17697,8 +17698,7 @@ recipes:UpsideDownCake a :Recipe ;
             :name "eggs"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pineapple-upside-down-cake.jpg?width=300> ;
     :instructions "Melt butter in oven-proof skillet.  Add brown sugar.  Arrange fruit in pan.  To make cake batter, beat eggs about 5 minutes until thick and lemon colored.  Gradually add sugar.  Then add all at once fruit juice an vanilla.  Sift together and beat in flour, baking powder, and salt.  Pour batter over fruit an bake until done, about 45 minutes at 350 degrees."@en ;
-    :name "Upside Down Cake"@en ;
-    :recipeCategory ns1:Cake .
+    :name "Upside Down Cake"@en .
 
 recipes:VealParmigan a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -17815,7 +17815,8 @@ recipes:VealScallopini a :Recipe ;
     :instructions "Cut meat into 2 inch pieces and coat in flour. Brown in oil. Add mushrooms, salt, pepper, and wine. Pour over meat in a casserole. Cook in covered casserole for 1 hour at 375 degrees or a heavy covered skillet at low heat for 45 minutes."@en ;
     :name "Veal Scallopini"@en .
 
-recipes:Walnut-Raisinpie a :Recipe ;
+recipes:Walnut-Raisinpie a ns1:Pie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sugar ;
             :hasStandardMeasurementUnit [ :quantity 0.75 ;
@@ -17846,10 +17847,10 @@ recipes:Walnut-Raisinpie a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Mix sugar and butter.  Add eggs one at a time, beating after each is added.  Add raisins nuts, and vanilla. Pour into unbaked pie shell.  Bake at 400 degrees for 10 minutes.  Reduce heat to 375 degrees for 30 minutes."@en ;
-    :name "Walnut-Raisin pie"@en ;
-    :recipeCategory ns1:Pie .
+    :name "Walnut-Raisin pie"@en .
 
-recipes:WalnutPie a :Recipe ;
+recipes:WalnutPie a ns1:Pie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sugar ;
             :hasStandardMeasurementUnit [ :quantity 0.75 ;
@@ -17885,10 +17886,10 @@ recipes:WalnutPie a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "eggs"@en ] ;
     :instructions "Mix well.  Pour into unbaked pie shell.  Top with 1 cup walnuts or pecans.  Bake at 350 degrees for 1 hour."@en ;
-    :name "Walnut Pie"@en ;
-    :recipeCategory ns1:Pie .
+    :name "Walnut Pie"@en .
 
-recipes:WalnutSquares a :Recipe ;
+recipes:WalnutSquares a ns1:Cookie,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Margarine ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -17919,8 +17920,7 @@ recipes:WalnutSquares a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
     :instructions "Cream butter and sugar.  Beat in egg yolk.  Sift four and spice, add to creamed mixture.  Spread dough in 15\"x10\"x1\" jelly roll pan.  Press flat with hands.  Beat egg white slightly, brush on dough.  Sprinkle nuts on top and press into dough.  Bake in 250 degree oven for 1 hour.  While hot cut into 1 1/2\" squares.  Cool.  Makes about 70."@en ;
-    :name "Walnut Squares"@en ;
-    :recipeCategory ns1:Cookie .
+    :name "Walnut Squares"@en .
 
 recipes:WildMushroomandSpinachLasanga a :Recipe ;
     rdfs:label "Lasagna"@en,
@@ -17994,7 +17994,7 @@ recipes:WildMushroomandSpinachLasanga a :Recipe ;
         [ a :Ingredient ;
             :food food:Eggs ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "eggs, lightly beaten"@en ],
         [ a :Ingredient ;
             :food food:Dried ;
@@ -18026,12 +18026,12 @@ recipes:Zucchini-HamCheesePie a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Zucchini ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ;
-                    :unit "small" ] ;
+                    :unit measurements:Small ] ;
             :name "zucchini, sliced"@en ],
         [ a :Ingredient ;
             :food food:Garlic ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large clove" ] ;
+                    :unit measurements:Large ] ;
             :name "garlic, minced"@en ],
         [ a :Ingredient ;
             :food food:Oil ;
@@ -18082,7 +18082,8 @@ Melt 2 tablespoons butter. Mix with 1/2 cup bread crumbs and 1/4 cup grated parm
 Bake 350 degrees at 45 to 50 minutes until set. Let stand 10 minutes before serving."""@en ;
     :name "Zucchini-Ham Cheese Pie"@en .
 
-recipes:ZucchiniAppleSlaw a :Recipe ;
+recipes:ZucchiniAppleSlaw a ns1:SaladAndDressings,
+        :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Mayonnaise ;
             :hasStandardMeasurementUnit [ :quantity 0.5 ;
@@ -18118,8 +18119,7 @@ recipes:ZucchiniAppleSlaw a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity "2" ] ;
             :name "tart apples, cut in chunks"@en ] ;
     :instructions "Mix together.  Put on crisp lettuce.  Top with dressing."@en ;
-    :name "Zucchini Apple Slaw"@en ;
-    :recipeCategory ns1:SaladAndDressings .
+    :name "Zucchini Apple Slaw"@en .
 
 recipes:ZucchiniCasserole a :Recipe ;
     :hasIngredient [ a :Ingredient ;
@@ -18130,7 +18130,7 @@ recipes:ZucchiniCasserole a :Recipe ;
         [ a :Ingredient ;
             :food food:Onion ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
-                    :unit "large" ] ;
+                    :unit measurements:Large ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Garlic ;
@@ -18184,7 +18184,7 @@ recipes:ZucchiniPatties a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Zucchini ;
             :hasStandardMeasurementUnit [ :quantity 5.0 ;
-                    :unit "medium" ] ;
+                    :unit measurements:Medium ] ;
             :name "zucchini"@en ],
         [ a :Ingredient ;
             :food food:ParmesanCheese ;
@@ -18668,14 +18668,6 @@ food:PepperSauce a :Food,
         "Sauce piquante"@fr ;
     :hasDbpediaLink dbpedia:Hot_sauce ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Fermented_hot_sauce.jpg?width=300> .
-
-food:Peppers a :Food,
-        skos:Concept ;
-    rdfs:label "Capsicum"@en,
-        "Capsicum"@fr ;
-    :hasDbpediaLink dbpedia:Capsicum ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Red_capsicum_and_cross_section.jpg?width=300> ;
-    skos:broaderTransitive food:Vegetable .
 
 food:Pizza a :Food,
         skos:Concept ;
@@ -19294,10 +19286,14 @@ food:Pods a :Food,
 
 food:RedPepper a :Food,
         skos:Concept ;
-    rdfs:label "Chili pepper"@en,
+    rdfs:label "Capsicum"@en,
+        "Chili pepper"@en,
+        "Capsicum"@fr,
         "Piment"@fr ;
-    :hasDbpediaLink dbpedia:Chili_pepper ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Madame_Jeanette_and_other_chillies.jpg?width=300> ;
+    :hasDbpediaLink dbpedia:Capsicum,
+        dbpedia:Chili_pepper ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Madame_Jeanette_and_other_chillies.jpg?width=300>,
+        <http://commons.wikimedia.org/wiki/Special:FilePath/Red_capsicum_and_cross_section.jpg?width=300> ;
     skos:broaderTransitive food:Vegetable .
 
 food:RedWine a :Food,
@@ -20106,6 +20102,9 @@ food:Butter a :Food,
     :hasDbpediaLink dbpedia:Butter ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Švédský_koláč_naruby_904_(cropped).jpg?width=300> ;
     skos:broaderTransitive food:DairyProduct .
+
+[] rdf:first :Salad ;
+    rdf:rest ( :Dressing ) .
 
 [] rdf:first :hasIngredient ;
     rdf:rest ( :food ) .

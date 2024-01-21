@@ -5,11 +5,11 @@
 
 CONSTRUCT {
     ?subj ?pred ?obj .
-    ?salads :recipeCategory recipeCategory:SaladAndDressings
-    ?cakes :recipeCategory recipeCategory:Cake
-    ?soup :recipeCategory recipeCategory:Soup
-    ?cookies :recipeCategory recipeCategory:Cookie
-    ?pies :recipeCategory recipeCategory:Pie
+    ?salads a recipeCategory:SaladAndDressings
+    ?cakes a recipeCategory:Cake
+    ?soup a recipeCategory:Soup
+    ?cookies a recipeCategory:Cookie
+    ?pies a recipeCategory:Pie
 } WHERE {
     {
       ?subj ?pred ?obj .
