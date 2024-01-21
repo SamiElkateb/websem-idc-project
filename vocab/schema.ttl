@@ -112,6 +112,8 @@
 
 :name
     a            owl:DatatypeProperty ;
+    rdfs:subPropertyOf rdfs:label ;
+    owl:equivalentProperty schema:name ;
     rdfs:domain  owl:Class ;
     rdfs:range   rdf:langString ;
     rdfs:label   "name"@en, "nom"@fr ;
