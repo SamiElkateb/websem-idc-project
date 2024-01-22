@@ -21,7 +21,7 @@ const displayQuantity = (quantity: string | number) => {
 function decimalToFraction(decimalStr: string) {
   const decimal = parseFloat(decimalStr);
   const integer = parseInt(decimalStr, 10);
-  if (isNaN(decimal) || isNaN(integer)) return decimalStr;
+  if (Number.isNaN(decimal) || Number.isNaN(integer)) return decimalStr;
   const epsilon = Math.abs(integer - decimal);
   if (epsilon < Number.EPSILON) return integer;
   const fractions = [2, 3, 4, 5, 6, 8];

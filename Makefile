@@ -83,3 +83,5 @@ docker-all:
 docker-dbspotlight:
 	docker compose up -d dbpedia-spotlight
 
+report:
+	@pandoc -o ./rapport_project_websem_idc_ELKATEB_JEANNES.pdf -V colorlinks=true -V linkcolor=blue  rapport.md
