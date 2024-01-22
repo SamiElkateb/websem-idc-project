@@ -69,7 +69,7 @@ async def get_recipe(recipe_identifier: str):
 
     SELECT * WHERE{{
     {{
-        SELECT ?recipeLabel
+        SELECT ?recipeLabel ?dbLink
         (group_concat(?query; separator=" and ") AS ?queryList)
         (group_concat(str(?ingredientName); separator="|-|") AS ?ingredientNames)
         (group_concat(str(?ingredientQuantityImperialName); separator="|-|") AS ?ingredientImperialQuantities)
@@ -78,6 +78,7 @@ async def get_recipe(recipe_identifier: str):
         (group_concat(str(?labelUnitMetricName); separator="|-|") AS ?labelUnitMetricNames)
         WHERE {{
             ?recipe :hasIngredient ?ingredient.
+            OPTIONAL {{ ?recipe :hasDbpediaLink ?dbLinkTmp . }}
             OPTIONAL {{ 
                 SELECT * WHERE{{
                 ?recipe :name ?recipeLabelTmp.
@@ -85,7 +86,11 @@ async def get_recipe(recipe_identifier: str):
                 }}LIMIT 1
              }}
             ?ingredient :name ?ingredientName ;
-            OPTIONAL {{ ?ingredient :hasStandardMeasurementUnit/:quantity ?ingredientQuantityStandard . }}
+            OPTIONAL {{ ?ingredient :hasStandardMeasurementUnit/:quantity ?ingredientQuantityStandard . 
+                OPTIONAL {{ ?ingredientQuantityStandard rdfs:label ?ingredientQuantityStandardLabel
+                    FILTER(LANG(?ingredientQuantityStandardLabel) = "en")
+                }}
+            }}
             OPTIONAL {{ ?ingredient :hasStandardMeasurementUnit/:unit ?ingredientUnitTmp.
                 OPTIONAL {{ ?ingredientUnitTmp skos:prefLabel ?labelUnitStandard }}
             }}
@@ -96,22 +101,26 @@ async def get_recipe(recipe_identifier: str):
             OPTIONAL {{ ?ingredient :hasMetricMeasurementUnit/:unit ?ingredientUnitTmp2 .
             ?ingredientUnitTmp2 skos:prefLabel ?labelUnitMetric}}
             FILTER(?recipe = ?uri)
+            BIND(IF(BOUND(?dbLinkTmp),?dbLinkTmp,"") AS ?dbLink)
             BIND(IF(BOUND(?recipeLabelTmp),?recipeLabelTmp,"No Label Found") AS ?recipeLabel)
             
-            BIND(IF(BOUND(?ingredientQuantityStandard),?ingredientQuantityStandard,
+            BIND(
+            IF(BOUND(?ingredientQuantityStandardLabel),?ingredientQuantityStandardLabel,
+            IF(BOUND(?ingredientQuantityStandard),?ingredientQuantityStandard,
             IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityImperial,
-            IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityMetric, ""))) AS ?ingredientQuantity)
+            IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityMetric, "")))) AS ?ingredientQuantity)
             
             BIND(IF(BOUND(?labelUnitStandard),?labelUnitStandard,
             IF(BOUND(?labelUnitImperial),?labelUnitImperial,
             IF(BOUND(?labelUnitMetric),?labelUnitMetric, ""))) AS ?labelUnit)
             BIND(IF(?labelUnit!="",CONCAT(?labelUnit," of "),?labelUnit) AS ?unit)
             
-            BIND(STRBEFORE(STR(IF(BOUND(?labelUnitStandard) && ?labelUnitStandard = "Cup",8,1)*ROUND(?ingredientQuantity)),".") AS ?quantityQuery)
+            BIND(STR(IF(BOUND(?labelUnitStandard) && ?labelUnitStandard = "Cup",8,1)*ROUND(?ingredientQuantity)) AS ?quantityQueryAdjusted)
+            BIND(IF(DATATYPE(?ingredientQuantity)=xsd:decimal,STRBEFORE(?quantityQueryAdjusted,"."),?ingredientQuantity) AS ?quantityQuery)
             BIND(LCASE(CONCAT(?quantityQuery," ",
             IF(?unit = "Cup of ","fluid ounces of ",?unit),?ingredientName)) AS ?query)
 
-            BIND(IF(BOUND(?ingredientQuantityStandard),?ingredientQuantityStandard,"") AS ?ingredientQuantityStandardName)
+            BIND(IF(BOUND(?ingredientQuantityStandardLabel),?ingredientQuantityStandardLabel,IF(BOUND(?ingredientQuantityStandard),?ingredientQuantityStandard,"")) AS ?ingredientQuantityStandardName)
             BIND(IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityImperial,?ingredientQuantityStandardName) AS ?ingredientQuantityImperialName)
             BIND(IF(BOUND(?ingredientQuantityMetric),?ingredientQuantityMetric,?ingredientQuantityStandardName) AS ?ingredientQuantityMetricName)
 
@@ -176,8 +185,8 @@ async def get_recipe(recipe_identifier: str):
         SELECT ?comment WHERE {{
             OPTIONAL {{
                 SERVICE <https://dbpedia.org/sparql> {{
-                    ?nameRecipe ^rdfs:label/dbo:abstract ?abstract .
-                    FILTER(?nameRecipe = "{row_quantities.get("recipeLabel")}"@en && LANG(?abstract)="en")
+                    <{row_quantities.dbLink}> dbo:abstract ?abstract .
+                    FILTER(LANG(?abstract)="en")
                 }}
             }}
             BIND(IF(BOUND(?abstract), ?abstract, "") AS ?comment)
