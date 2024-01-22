@@ -32,6 +32,7 @@ function decimalToFraction(decimalStr: string) {
       return `${Math.round(multiplied)}/${fraction}`;
     }
   }
+  if (Number.isNaN(decimalStr)) return decimalStr;
   return Math.round(parseFloat(decimalStr) * 100) / 100;
 }
 
