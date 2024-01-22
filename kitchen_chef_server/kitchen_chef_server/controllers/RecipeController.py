@@ -14,7 +14,6 @@ from kitchen_chef_server.models.Recipe import Recipe
 from kitchen_chef_server.sparql.queries.build_search_query import \
     build_search_query
 
-
 RECIPES = Namespace("http://project-kitchenchef.fr/recipes/data#")
 FOODS = Namespace("http://project-kitchenchef.fr/food/data#")
 debug = True
@@ -49,7 +48,8 @@ async def get_recipes(
 
     recipes = []
     for index, row in results:
-        recipe = Recipe(row.get("recipe"), row.get("name"), ingredients=[], instructions=row.get("instructions"), category=row.get("category"), thumbnail=row.get("thumbnail"))
+        recipe = Recipe(row.get("recipe"), row.get("name"), ingredients=[], instructions=row.get("instructions"),
+                        category=row.get("category"), thumbnail=row.get("thumbnail"))
         recipes.append(recipe)
 
     return recipes
@@ -103,7 +103,8 @@ async def get_recipe(recipe_identifier: str):
             IF(BOUND(?labelUnitMetric),?labelUnitMetric, ""))) AS ?labelUnit)
             BIND(IF(?labelUnit!="",CONCAT(?labelUnit," of "),?labelUnit) AS ?unit)
             
-            BIND(LCASE(CONCAT(STR(IF(BOUND(?labelUnitStandard) && ?labelUnitStandard = "Cup",8,1)*ROUND(?ingredientQuantity))," ",
+            BIND(STRBEFORE(STR(IF(BOUND(?labelUnitStandard) && ?labelUnitStandard = "Cup",8,1)*ROUND(?ingredientQuantity)),".") AS ?quantityQuery)
+            BIND(LCASE(CONCAT(?quantityQuery," ",
             IF(?unit = "Cup of ","fluid ounces of ",?unit),?ingredientName)) AS ?query)
 
             BIND(IF(BOUND(?ingredientQuantityStandard),?ingredientQuantityStandard,"") AS ?ingredientQuantityStandardName)
@@ -113,8 +114,6 @@ async def get_recipe(recipe_identifier: str):
             BIND(IF(BOUND(?labelUnitStandard),CONCAT(?labelUnitStandard," of "),"") AS ?labelUnitStandardName)
             BIND(IF(BOUND(?labelUnitImperial),CONCAT(?labelUnitImperial, " of "),?labelUnitStandardName) AS ?labelUnitImperialName)
             BIND(IF(BOUND(?labelUnitMetric),CONCAT(?labelUnitMetric," of "),?labelUnitStandardName) AS ?labelUnitMetricName)
-
-
         }} GROUP BY ?recipe
     }}
     BIND(CONCAT("http://{MICROSERVICE_HOSTNAME}/service/calorieninjas/nutrition?food=", ?queryList) AS ?urlMicroServ)
@@ -151,8 +150,10 @@ async def get_recipe(recipe_identifier: str):
     if debug:
         print("Label", row_quantities.get("recipeLabel"))
         print("URL", row_quantities.get("urlMicroServ"))
-        print("Metrics : \n", row_quantities.get("ingredientMetricQuantities"), "\n", row_quantities.get("ingredientImperialQuantities"))
-        print("Units : \n", row_quantities.get("labelUnitMetricNames"), "\n", row_quantities.get("labelUnitImperialNames"))
+        print("Metrics : \n", row_quantities.get("ingredientMetricQuantities"), "\n",
+              row_quantities.get("ingredientImperialQuantities"))
+        print("Units : \n", row_quantities.get("labelUnitMetricNames"), "\n",
+              row_quantities.get("labelUnitImperialNames"))
         print("Names : \n", row_quantities.get("ingredientNames"))
         print("X : \n", row_quantities.get("x"))
 
@@ -195,7 +196,9 @@ async def get_recipe(recipe_identifier: str):
     results = corese_query(query)
     row_recipe = get_row(results)
     if debug:
-        print("Kcal", row_quantities.get("kcal"), "Fat", row_quantities.get("fat"), "Carbs", row_quantities.get("carbs"), "Sugar", row_quantities.get("sugar"), "Fiber", row_quantities.get("fiber"), "Proteins", row_quantities.get("proteins"))
+        print("Kcal", row_quantities.get("kcal"), "Fat", row_quantities.get("fat"), "Carbs",
+              row_quantities.get("carbs"), "Sugar", row_quantities.get("sugar"), "Fiber", row_quantities.get("fiber"),
+              "Proteins", row_quantities.get("proteins"))
         try:
             print("Abstract", row_quantities.get("comment"))
         except Exception:
@@ -209,14 +212,20 @@ async def get_recipe(recipe_identifier: str):
         row_quantities.get("ingredientMetricQuantities"),
         row_quantities.get("labelUnitMetricNames"),
     )
-    nutritional_data = NutritionalData(row_quantities.get("kcal"), row_quantities.get("proteins"), row_quantities.get("fat"), row_quantities.get("carbs"), row_quantities.get("sugar"), row_quantities.get("fiber"))
-    return Recipe(row_recipe.get("recipe"), row_recipe.get("name"), ingredients, row_recipe.get("instructions"), row_recipe.get("category"), row_recipe.get("thumbnail"), row_recipe.get("comment"), nutritional_data=nutritional_data)
+    nutritional_data = NutritionalData(row_quantities.get("kcal"), row_quantities.get("proteins"),
+                                       row_quantities.get("fat"), row_quantities.get("carbs"),
+                                       row_quantities.get("sugar"), row_quantities.get("fiber"))
+    return Recipe(row_recipe.get("recipe"), row_recipe.get("name"), ingredients, row_recipe.get("instructions"),
+                  row_recipe.get("category"), row_recipe.get("thumbnail"), row_recipe.get("comment"),
+                  nutritional_data=nutritional_data)
+
 
 def get_row(results):
     results = list(results)
     if len(results) == 0:
         raise HTTPException(status_code=404, detail="Item not found")
     return results[0][1]
+
 
 @app.get("/recipe_filters")
 async def get_recipe_filters():
