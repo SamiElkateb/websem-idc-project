@@ -28,76 +28,81 @@ Finalement, la page fournit des informations nutritionnelles adaptées à la rec
 
 ## Modélisation et contraintes sur les données
 
-
 Pour représenter nos données, nous avons commencé par créer plusieurs vocabulaires et thésaurus.
-Nous avons d’abord créé le vocabulaire le plus général du projet,
-qui permet de définir les classes :Food, :Recipe, :Quantity et :Ingrédient, ainsi que les relations des recettes.
+Nous avons d’abord créé le vocabulaire général du projet.
+Celui-ci permet de définir les classes *:Recipe*, *:Food*, *:Quantity* et *:Ingredient*, ainsi que les propriétés des recettes.
 Chaque recette est le sujet de plusieurs relations que nous avons défini dans ce vocabulaire.
-Les instructions d’une recette sont définies avec la relation :instructions et le nom 
-de la recette est lié à la relation :name. Lorsque que cela est possible,
-la miniature d’une recette est renseignée avec la relation :hasThumbnail
-et un lien vers l'entrée Dbpedia de la recette est lié avec la relation :hasDbpediaLink.
-La catégorie d’une recette est définie comme la classe de la recette.
+Les instructions d’une recette sont définies avec la relation *:instructions* et le nom 
+de la recette est lié à la relation *:name*. Lorsque que cela est possible,
+la miniature d’une recette est renseignée avec la relation *:hasThumbnail*
+et un lien vers l'entrée Dbpedia de la recette est lié avec la relation *:hasDbpediaLink*.
 
-Dans le vocabulaire, nous avons défini la plupart des catégories de plats sous forme de classes,
-réparties dans une hiérarchie. Par exemple, la catégorie :Appetizer contient la catégorie :SaladsAndDressings.
-Cela permet à d’autres utilisateurs de réutiliser facilement les catégories de ce vocabulaire 
-pour d'autres projets si cela est nécessaire. De plus, nous avons aligné ce vocabulaire 
-avec les catégories de plats dans dbpedia et dans le vocabulaire fowl,
-pour le rendre interopérable plus facilement avec d’autres vocabulaires.
+Les ingrédients d’une recette sont définis par la relation *:hasIngredient*.
+Chaque ingrédient est représenté par un n\oe{}ud anonyme.
+Ce n\oe{}ud anonyme est relié à un nom par la relation *:name*,
+à un aliment lorsque cela est possible grâce à la relation *:food*
+et à la quantité et l’unité grâce à un autre n\oe{} anonyme par les propriétés *:hasStandardMeasurementUnit*,
+*:hasImperialMeasurementUnit* ou *:hasMetricMeasurementUnit*.
+Il est important de faire la distinction entre **un aliment** (*:Food*) qui est une substance qu'il possible de manger (lait, viande, pain)
+et un **ingrédient** (*:Ingredient*) qui fait parti d'une recette et qui est définit par une quantité, une unité et **un aliment** (*:Food*).
 
-Les ingrédients d’une recette sont définis par la relation :hasIngredient.
-Chaque ingrédient est représenté par une node anonyme.
-Cette node anonyme est reliée à un nom par la relation :name,
-relié à une nourriture lorsque cela est possible grâce à la relation food:food 
-et reliée à la quantité et l’unité grâce à une autre node anonyme par les propriétées :hasStandardMeasurementUnit ,
-:hasImperialMeasurementUnit ou :hasMetricMeasurementUnit.
+Dans le vocabulaire, nous avons défini la plupart des catégories de plats sous forme de classes.
+Celles classes nous permettent de typer nos recettes.
+Nous avons par exemple, la classe *:Cookie* qui est une sous-classe de la classe *:Dessert*.
+Ces données pourraient nous permettre de fournir plus d'informations sur les recettes
+ainsi que d'offrir plus de choix de recherche à l'utilisateur.
+De plus, nous avons aligné ce vocabulaire sur le vocabulaire fowl quand cela est possible.
 
-Nous avons ensuite deux thésaurus de plus, permettant de définir les unités et la nourriture.
-Le thésaurus des unités, défini avec le préfix measurements nous a permis de définir les unités et de les diviser en trois groupes.
-Les deux premiers groupes contiennent les unités du système métrique et les unités du système impérial.
-Les unités de ces deux groupes peuvent être converties d’un système vers l’autre, grâce à la relation :hasUnitConversion.
-Le sujet de cette relation doit être une node anonyme,
-qui contient l’unité vers laquelle convertir ainsi que le ratio permettant de passer d’une unité à l’autre.
-Le troisième groupe contient les unités dites standards, qui n’ont pas besoin d’être converties,
-comme les tasses, les pincées et les tranches. Ces mesures n’ont donc pas de relation :hasUnitConversion associée.
-Ce thésaurus contient également trois quantités indéfinies,
-lorsque de la granularité est nécessaire, mais qu’une quantité exacte ne peut pas être renseignée.
+Nous avons ensuite deux thésaurus, permettant de définir les unités de mesures et les aliments.
 
-Le dernier thésaurus est celui sur la nourriture.
-Ce thésaurus est défini par le préfix food et désigne les aliments.
-Ce thésaurus contient toutes les grandes catégories d’aliments, comme la viande,
-désignée par food:Meat et food:DairyProduct, qui désigne les produits laitiers.
-Les aliments sont désignés par les classes, comme les fruits à coque, les céréales,
-les pâtes et les épices. En utilisant ces classes,
-nous pouvons utiliser OWL pour inférer les recettes correspondantes a certains régimes spécifiques,
-que nous pouvons utiliser pour filtrer les recettes dans l’application.
+Le thésaurus des unités est divisé en trois concepts principaux, et ses entités sont précédées du le prefix *measurements*.
+Les deux premiers groupes contiennent les unités du système métrique et les unités du système impérial (US).
+Les unités de ces deux groupes peuvent être converties d’un système vers l’autre, grâce à la relation *:hasUnitConversion*.
+L'objet de cette relation est un n\oe{}ud anonyme,
+contenant l’unité vers laquelle convertir ainsi que le ratio de conversion.
+Le troisième groupe contient les unités dites standards n'ayant pas besoin d’être converties.
+Nous y retrouvons par examples les tranches, les pincées et les cuillères à soupes. 
+Ce thésaurus contient également trois quantités approximatives,
+lorsque la granularité n'est nécessaire (*measurements:Some*, *measurements:Few* et *measurements:Many*).
+
+Le thésaurus des aliments contient quant à lui tous les aliments disponibles dans nos recettes. 
+Ses entités sont précédées du prefix *food* et il possède en concepts principaux
+toutes les grandes catégories d’aliments, comme la viande,
+le poisson, les fruits et les légumes. 
+Les autres aliments sont liés à ces concepts principaux à l'aide de la relation *skos:broaderTransitive*.
+Ses relations nous permettent, une fois couplées à l'inférence OWL, de lier les recettes à des régimes alimentaires.
+Nous pouvons ainsi créer la classe *:RecipeWithAnimalProduct* qui regroupe les recettes ayant un aliment ayant pour 
+concept plus large *food:animalProduct*. Nous pouvons ensuite en déduire les recettes veganes qui sont l'intersection
+de complement des recettes et des *:RecipeWithAnimalProduct*.
+Cependant le raisonneur OWL RL ne réaliser pas l'inférence complementOf qui est prise en charge par les raisonneurs OWL DL.
+Nous avons donc créé une propriété *:complementaryRecipe* que nous utilisons pour ce cas d'usage. Nous l'utilisons
+pour générer les recettes complémentaires grâce à une requête SPARQL lancée au démarrage de notre serveur.
 
 
 Une fois le vocabulaire et les thésaurus définis,
 nous avons pu utiliser OWL pour ajouter automatiquement plusieurs relations.
-Nous nous sommes par exemple servis d’un property axiom pour ajouter à chaque recette les ingrédients utilisés,
-et nous avons inféré l’inverse de cette propriété,
-ce qui permet à chaque ingrédient de savoir dans quelle recette il est utilisé.
-Cela permet notamment de simplifier les requêtes servant à faire les recherches.
+Nous nous sommes par exemple servis d’un property axiom pour ajouter directement à chaque recette les aliments utilisés,
+et nous avons inféré l’inverse de cette propriété.
+Ceci nous permet de savoir dans quelle recette chaque aliment est utilisé et ainsi de simplifier 
+les requêtes permettant de faire les recherches.
 
-Pour s’assurer que les structures de données répondaient à la forme souhaitée,
-nous avons  également imposé des contraintes à l’aide de SHACL.
-Cela permet par exemple de s’assurer que les objets d’une relation :hasUnitConversion 
-ont un ratio de conversion qui est un nombre décimal qui n’est pas 0, ce qui évite les divisions par 0. 
+Pour s’assurer que les structures de données répondent à la forme souhaitée,
+nous avons également imposé des contraintes à l’aide de SHACL.
+Cela permet par exemple de s’assurer que les objets d’une relation *:hasUnitConversion* 
+ont un ratio de conversion qui est un nombre décimal différent de 0. 
 
-Cela permet également de vérifier la structure des recettes et des ingrédients.
-Par exemple, nous vérifions que les quantités soient des nombres décimaux non nuls,
-ou l’une des valeurs correspondant aux quantités indéfinies que nous avons déclarées dans le thésaurus Measurements.
-Cela nous permet aussi de vérifier que l’unité liée à la quantité d’un ingrédient 
+Nous utilisons également SHACL pour vérifier la structure des recettes et des ingrédients.
+Par exemple, nous vérifions que les quantités soient soit des nombres décimaux non nuls soit
+l’une des valeurs correspondant aux quantités approximatives que nous avons déclarées dans le thésaurus des mesures.
+Finalement, cela nous permet de vérifier que l’unité liée à la quantité d’un ingrédient 
 est une IRI qui correspond à une unité dans le thésaurus Measurements.
 Pour vérifier cette condition, nous pouvons utiliser la propriété sh:pattern 
-qui permet de limiter les URI possibles qu’aux URI qui désignent des unités.
+qui permet de limiter les URI possibles aux URI qui désignent des unités.
 
 
 ## Traitement des données 
 
-Pour avoir toutes les informations nécessaires à la réalisation de notre application,
+Pour obtenir toutes les informations nécessaires à la réalisation de notre application,
 nous avons utilisé plusieurs sources de données, et fait de nombreux traitements sur ces données,
 afin de les standardiser pour les rendre exploitables.
 

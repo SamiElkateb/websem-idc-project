@@ -52,21 +52,18 @@
     a                   owl:Class ;
     rdfs:label          "Salad and dressings"@en ;
     rdfs:comment        "Salad and dressings"@en ;
-    rdfs:subClassOf     :Appetizer ;
     owl:disjointUnionOf ( :Salad :Dressing ) .
 
 :Dressing
     a               owl:Class ;
     rdfs:label      "Dressing"@en ;
     rdfs:comment    "Dressing is a sauce that is used to add flavor to a salad."@en ;
-    rdfs:subClassOf :SaladAndDressings ;
     rdfs:seeAlso    dbpedia:Salad_dressing .
 
 :Salad
     a               owl:Class ;
     rdfs:label      "Salad"@en ;
-    rdfs:comment    "Salad is a dish consisting of a mixture of small pieces of food, usually vegetables or fruit."@en ;
-    rdfs:subClassOf :SaladAndDressings .
+    rdfs:comment    "Salad is a dish consisting of a mixture of small pieces of food, usually vegetables or fruit."@en .
 
 :Cake
     a               owl:Class ;
@@ -77,18 +74,16 @@
 :Pie
     a               owl:Class ;
     rdfs:label      "Pie"@en ;
-    rdfs:comment    "Pie is a baked dish which is usually made of a pastry dough casing that covers or completely contains a filling of various sweet or savoury ingredients."@en ;
-    rdfs:subClassOf :Dessert ;
-    rdfs:seeAlso    :Cookie .
+    rdfs:comment    "Pie is a baked dish which is usually made of a pastry dough casing that covers or completely contains a filling of various sweet or savoury ingredients."@en .
 
 :Cookie
     a               owl:Class ;
     rdfs:label      "Cookie"@en ;
     rdfs:comment    "A cookie is a baked or cooked food that is small, flat and sweet."@en ;
-    rdfs:subClassOf :Dessert .
+    rdfs:subClassOf :Dessert ;
+    rdfs:seeAlso    :Cookie .
 
 :Soup
     a               owl:Class ;
     rdfs:label      "Soup"@en ;
-    rdfs:comment    "Soup is a primarily liquid food, generally served warm or hot (but may be cool or cold), that is made by combining ingredients such as meat and vegetables with stock, juice, water, or another liquid."@en ;
-    rdfs:subClassOf :Appetizer, :MainCourse .
+    rdfs:comment    "Soup is a primarily liquid food, generally served warm or hot (but may be cool or cold), that is made by combining ingredients such as meat and vegetables with stock, juice, water, or another liquid."@en .
