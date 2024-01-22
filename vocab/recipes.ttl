@@ -1264,6 +1264,7 @@ recipes:BroccoliCheeseSoup a :Recipe,
 
 recipes:BroccoliSalad a :Recipe,
         :SaladAndDressings ;
+    :hasDbpediaLink dbpedia:Broccoli_slaw ;
     :hasIngredient [ a :Ingredient ;
             :food food:Cheese ;
             :hasImperialMeasurementUnit [ :quantity 8.0 ;
@@ -1271,7 +1272,7 @@ recipes:BroccoliSalad a :Recipe,
             :name "mozzarella cheese, shredded"@en ],
         [ a :Ingredient ;
             :food food:Broccoli ;
-            :hasStandardMeasurementUnit [ :quantity "2" ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ;
                     :unit "heads" ] ;
             :name "broccoli florets, bite size"@en ],
         [ a :Ingredient ;
@@ -1281,7 +1282,7 @@ recipes:BroccoliSalad a :Recipe,
             :name "red onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Bacon ;
-            :hasStandardMeasurementUnit [ :quantity "4" ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ;
                     :unit "strips" ] ;
             :name "crisp bacon, crumbled"@en ],
         [ a :Ingredient ;
@@ -1313,7 +1314,7 @@ recipes:BroccoliSaladwithPineapple a :Recipe,
             :name "crushed pineapple, well drained"@en ],
         [ a :Ingredient ;
             :food food:Bacon ;
-            :hasStandardMeasurementUnit [ :quantity "5" ;
+            :hasStandardMeasurementUnit [ :quantity 5.0 ;
                     :unit "strips" ] ;
             :name "bacon, but small, fry until crisp"@en ],
         [ a :Ingredient ;
@@ -2195,8 +2196,9 @@ Pour into buttered 9" x 13" baking dish. Bake 35 minutes or until top is brown a
     :name "Chili Cheese Puff"@en .
 
 recipes:ChiliChicken a :Recipe ;
-    rdfs:label "Chilli chicken"@en ;
-    :hasDbpediaLink dbpedia:Chilli_chicken ;
+    rdfs:label "Kung Pao chicken"@en,
+        "Poulet impérial"@fr ;
+    :hasDbpediaLink dbpedia:Kung_Pao_chicken ;
     :hasIngredient [ a :Ingredient ;
             :food food:Noodles ;
             :hasImperialMeasurementUnit [ :quantity 12.0 ;
@@ -2236,7 +2238,7 @@ recipes:ChiliChicken a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
                     :unit measurements:Cup ] ;
             :name "cheddar cheese, grated"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chicken_Chili_HR2.jpg?width=300> ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Kung-pao-shanghai.jpg?width=300> ;
     :instructions """saute onion in butter, add soups, pimento, chiles, chicken and 1/2 the cheese.
 Cook noodles until tender. Drain. Stir sauce into noodles. Pour into large baking dish. Add rest of cheese or buttered crumbs.
 Chill over night. Bake at 350 degrees for 1 hour."""@en ;
@@ -2397,7 +2399,7 @@ recipes:ChineseChickenSalad a :Recipe ;
             :name "chicken breast, poached 15 minutes"@en ],
         [ a :Ingredient ;
             :food food:GreenOnions ;
-            :hasStandardMeasurementUnit [ :quantity "4" ] ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "slivered green onions"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chinesechickensalad.jpg?width=300> ;
     :instructions "Mix soy sauce, sherry, water, orange peel, and anise. Simmer 10 minutes to make marinade. Poach chicken breasts 10 to 15 minutes over low flame. Cool in liquid. Shred. Mix together shredded chicken, onions, and lettuce. Serve over rice noodles that have been cooked in hot oil in wok."@en ;
@@ -2437,7 +2439,7 @@ recipes:ChineseFriedRice a :Recipe ;
             :name "tbsp"@en ],
         [ a :Ingredient ;
             :food food:SoySauce ;
-            :hasStandardMeasurementUnit [ :quantity "2" ] ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "soy sauce"@en ],
         [ a :Ingredient ;
             :food food:Egg ;
@@ -3304,7 +3306,7 @@ recipes:CreamyApplePie a :Pie,
             :name "heavy cream"@en ],
         [ a :Ingredient ;
             :food food:Apples ;
-            :hasStandardMeasurementUnit [ :quantity "4" ] ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ] ;
             :name "tart apples, peeled and sliced"@en ] ;
     :instructions "Place apples in the pie shell.  Mix together sugar, flour, and salt.  Sprinkle over apples.  in a sauce pan bring cream to boiling point.  Pour over apples.  Sprinkle generously with cinnamon.  Bake at 375 degrees for 45 minutes, until firm."@en ;
     :name "Creamy Apple Pie"@en .
@@ -4084,6 +4086,8 @@ recipes:FreshStrawberryPie a :Pie,
 
 recipes:FrostedDelights a :Cookie,
         :Recipe ;
+    rdfs:label "Frosted Mini-Wheats"@en ;
+    :hasDbpediaLink dbpedia:Frosted_Mini-Wheats ;
     :hasIngredient [ a :Ingredient ;
             :food food:Flour ;
             :hasStandardMeasurementUnit [ :quantity 1.5 ;
@@ -4132,6 +4136,7 @@ recipes:FrostedDelights a :Cookie,
             :food food:EggWhite ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg white, stiffly beaten"@en ] ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Frosted_Mini-Wheats_logo.svg?width=300> ;
     :instructions "Sift flour, salt and baking powder together.  Cream shortening with sugar until fluffy.  Add eggs, vanilla and sifted ingredients and mix well.  Spread batter very thin on baking sheets.  Fold brown sugar into egg whites, add nuts.  Spread over cookie batter.  Bake at 325 degrees for 30 minutes.  Cut into squares.  Makes 30."@en ;
     :name "Frosted Delights"@en .
 
@@ -4294,9 +4299,6 @@ recipes:GingerSnapBars a :Cookie,
 
 recipes:GingerSnaps a :Cookie,
         :Recipe ;
-    rdfs:label "Ginger snap"@en,
-        "Piparkūkas"@fr ;
-    :hasDbpediaLink dbpedia:Ginger_snap ;
     :hasIngredient [ a :Ingredient ;
             :food food:Shortening ;
             :hasStandardMeasurementUnit [ :quantity 0.75 ;
@@ -4341,7 +4343,6 @@ recipes:GingerSnaps a :Cookie,
             :food food:Egg ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ] ;
             :name "egg"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Arnott's_Ginger_Nut_04.jpg?width=300> ;
     :instructions "Roll in little balls.  Dip in sugar and flatten with glass dipped in water.  Bake at 350 degrees about 7 minutes."@en ;
     :name "Ginger Snaps"@en .
 
@@ -4701,7 +4702,7 @@ recipes:HotCrabDip a :Recipe ;
                     :unit measurements:Package ] ;
             :name "cream cheese"@en ],
         [ a :Ingredient ;
-            :hasStandardMeasurementUnit [ :quantity "3" ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ;
                     :unit measurements:Tablespoon ] ;
             :name "mayonaise"@en ],
         [ a :Ingredient ;
@@ -4941,7 +4942,7 @@ recipes:InaHurryChickenCurry a :Recipe ;
 recipes:ItalianZucchini a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Zucchini ;
-            :hasStandardMeasurementUnit [ :quantity "5" ] ;
+            :hasStandardMeasurementUnit [ :quantity 5.0 ] ;
             :name "zucchini"@en ] ;
     :instructions "Cut zucchini in thick slices. Saute onion and garlic in oil. Add squash, mushrooms, and seasonings. Simmer slowly until tender."@en ;
     :name "Italian Zucchini"@en .
@@ -5071,9 +5072,6 @@ recipes:LemonCloudSalad a :Recipe,
 
 recipes:LemonLusciousPie a :Pie,
         :Recipe ;
-    rdfs:label "Cheesecake"@en,
-        "Cheesecake"@fr ;
-    :hasDbpediaLink dbpedia:Cheesecake ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sugar ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -5118,7 +5116,6 @@ recipes:LemonLusciousPie a :Pie,
             :food food:Yolks ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "egg yolks, slightly beaten"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/My_first_cheesecake_cropped.jpg?width=300> ;
     :instructions "Combine sugar, cornstarch, butter, lemon rind, and egg yolk in saucepan.  Stir in milk.  Cook over medium heat, stirring until mixture thickens.  Cool.  Fold in sour cream.  Spoon into pie shell.  Col 12 hours or longer.  Top with whipped cream.  Garnish with chopped walnuts if desired."@en ;
     :name "Lemon Luscious Pie"@en .
 
@@ -5263,8 +5260,6 @@ recipes:LemonSquares a :Cookie,
 
 recipes:LightOldFashionedFruitCake a :Cake,
         :Recipe ;
-    rdfs:label "Christmas cake"@en ;
-    :hasDbpediaLink dbpedia:Christmas_cake ;
     :hasIngredient [ a :Ingredient ;
             :food food:Pecans ;
             :hasImperialMeasurementUnit [ :quantity "24" ;
@@ -5329,7 +5324,6 @@ recipes:LightOldFashionedFruitCake a :Cake,
             :food food:Eggs ;
             :hasStandardMeasurementUnit [ :quantity 6.0 ] ;
             :name "eggs"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Christmas_cake_(6954064737).jpg?width=300> ;
     :instructions "Sift dry ingredients into a 4 quart bowl.  Add fruit and nuts.  Mix until well coated.  Set aside.  Cream butter, gradually add sugar and cream until fluffy.  Add eggs one at a time, beating well after each.  Add brandy.  Combine with fruit mixture.  Mix well.  Turn into a 10 inch tube pan or four 1# coffee cans lined with foil, filling pans 2/3 full. Bake in slow oven, 275 degrees for 2 3/4 to 3 hours.  About 1/2 hour before done brush lightly with honey or light corn syrup.  Cool completely then wrap tightly in foil to store for several weeks.  Brush with brandy about once a week."@en ;
     :name "Light Old Fashioned Fruit Cake"@en .
 
@@ -6579,7 +6573,7 @@ recipes:PieCrust a :Pie,
             :name "shortening"@en ],
         [ a :Ingredient ;
             :food food:Water ;
-            :hasStandardMeasurementUnit [ :quantity "4" ;
+            :hasStandardMeasurementUnit [ :quantity 4.0 ;
                     :unit measurements:Tablespoon ] ;
             :name "ice water or 7-up"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Recette_pate_brisee_etape_8.jpg?width=300> ;
@@ -6788,7 +6782,7 @@ recipes:PorkFuManChow a :Recipe ;
             :name "celery, cut into large chunks"@en ],
         [ a :Ingredient ;
             :food food:Pork ;
-            :hasStandardMeasurementUnit [ :quantity "3" ;
+            :hasStandardMeasurementUnit [ :quantity 3.0 ;
                     :unit measurements:Cup ] ;
             :name "cooked pork, cubed"@en ],
         [ a :Ingredient ;
@@ -7312,6 +7306,9 @@ recipes:SaucyShrimpOverChineseNoodleCakes a :Recipe ;
     :name "Saucy Shrimp Over Chinese Noodle Cakes"@en .
 
 recipes:SauteZucchini a :Recipe ;
+    rdfs:label "Sundubu-jjigae"@en,
+        "Sundubu jjigae"@fr ;
+    :hasDbpediaLink dbpedia:Sundubu-jjigae ;
     :hasIngredient [ a :Ingredient ;
             :food food:Zucchini ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
@@ -7327,6 +7324,7 @@ recipes:SauteZucchini a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
                     :unit measurements:Tablespoon ] ;
             :name "butter"@en ] ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Sundubu-jjigae.jpg?width=300> ;
     :instructions "Melt butter in skillet. Slice zucchini thin, Add garlic. Cover and simmer for 5 minutes. Sprinkle with parmesan cheese. Cover and cook 5 minutes longer."@en ;
     :name "Saute Zucchini"@en .
 
@@ -7925,9 +7923,6 @@ recipes:SourCreamEnchiladas a :Recipe ;
 
 recipes:SourCreamRaisinPie a :Pie,
         :Recipe ;
-    rdfs:label "Cheesecake"@en,
-        "Cheesecake"@fr ;
-    :hasDbpediaLink dbpedia:Cheesecake ;
     :hasIngredient [ a :Ingredient ;
             :food food:Raisins ;
             :hasStandardMeasurementUnit [ :quantity 1.5 ;
@@ -7967,7 +7962,6 @@ recipes:SourCreamRaisinPie a :Pie,
             :food food:Yolks ;
             :hasStandardMeasurementUnit [ :quantity 3.0 ] ;
             :name "egg yolks, slightly beaten"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/My_first_cheesecake_cropped.jpg?width=300> ;
     :instructions "Boil raisins in water until plump.  Add flour and sugar.  Cook to thicken slightly then add egg yolks, sour cream, vanilla and nutmeg.  Pour into 9\" bottom crust.  Add top crust.  Sprinkle with sugar.  Bake 50 minutes at 350 degrees."@en ;
     :name "Sour Cream Raisin Pie"@en .
 
@@ -9081,8 +9075,6 @@ recipes:TheSpinach a :Recipe ;
     :name "The Spinach"@en .
 
 recipes:ThreeCheeseSpinach a :Recipe ;
-    rdfs:label "Minas cheese"@en ;
-    :hasDbpediaLink dbpedia:Minas_cheese ;
     :hasIngredient [ a :Ingredient ;
             :food food:Mushroom ;
             :hasImperialMeasurementUnit [ :quantity 4.0 ;
@@ -9117,7 +9109,6 @@ recipes:ThreeCheeseSpinach a :Recipe ;
             :food food:Eggs ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs, lightly beaten"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Queijo_Minas_Frescal.jpg?width=300> ;
     :instructions """Combine onions and mushrooms in small microwave-safe bowl. Microwave 1 to 3 minutes or until onions are soft. Place spinach in 1 1/2 quart microwave-safe casserole. Cover and microwave 6 to 9 minutes, breaking up and rearranging every 3 minutes, until defrosted. Drain well.
 Add onion mixture to spinach, along with cottage cheese, parmesan cheese, eggs, salt and pepper. Stir well to blend. Microwave, uncovered, 8 to 11 minutes, rotating dish if necessary every 3 minutes, until misture is headted through and set.
 Sprinkle grated cheese over top and dust lightly with paprika. Microwave about 1 minute longer to melt cheese. Let stand 3 minutes before serving.
@@ -9895,7 +9886,7 @@ recipes:ZucchiniAppleSlaw a :Recipe,
             :name "green onions, sliced"@en ],
         [ a :Ingredient ;
             :food food:Apples ;
-            :hasStandardMeasurementUnit [ :quantity "2" ] ;
+            :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "tart apples, cut in chunks"@en ] ;
     :instructions "Mix together.  Put on crisp lettuce.  Top with dressing."@en ;
     :name "Zucchini Apple Slaw"@en .

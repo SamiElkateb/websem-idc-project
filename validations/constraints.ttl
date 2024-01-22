@@ -97,7 +97,7 @@ s:RecipeShape
                      sh:minCount   1 ;
                      sh:maxCount   1 ;
                      sh:languageIn ( "en" "fr" "de" "es" "it" ) ;
-                     sh:maxLength  10000 ;
+                     sh:maxLength  30000 ;
                      sh:message    "Les instructions doivent être une chaîne de caractères" ] .
 
 s:MeasurementShape

@@ -13,7 +13,7 @@ FILTER(?p != :quantity || !REGEX(?divers, "(^[0-9]+ [^0-9]|^[0-9]$)"))
         ?x :quantity ?int.
         FILTER(REGEX(?int, "(^[0-9]+ [^0-9]|^[0-9]$)"))
 #        FILTER(REGEX(?int, "(^ *[0-9]*(.[0-9]*)? [^0-9]|^ *[0-9](.[0-9]*)? *$)"))
-        BIND(IF(STRBEFORE(?int," ") != "",STRBEFORE(?int," "),xsd:decimal(?int)) AS ?intConverted)
+        BIND(IF(STRBEFORE(?int," ") != "",xsd:decimal(STRBEFORE(?int," ")),xsd:decimal(?int)) AS ?intConverted)
     }
 }
 

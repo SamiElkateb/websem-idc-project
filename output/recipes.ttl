@@ -4492,7 +4492,7 @@ _:b1760 :hasImperialMeasurementUnit _:b2255 ;
   :name "vanilla ice cream"@en ;
   a :Ingredient .
 
-_:b2849 :quantity "3" ;
+_:b2849 :quantity "3"^^xsd:decimal ;
   :unit measurements:Cup .
 
 _:b2848 :quantity "1"^^xsd:decimal ;
@@ -5721,7 +5721,7 @@ _:b3247 :quantity "1"^^xsd:decimal ;
 _:b3246 :quantity "2"^^xsd:decimal ;
   :unit measurements:Package .
 
-_:b3245 :quantity "3" ;
+_:b3245 :quantity "3"^^xsd:decimal ;
   :unit measurements:Tablespoon .
 
 _:b3244 :quantity "4"^^xsd:decimal ;
@@ -7501,7 +7501,7 @@ _:b3179 :quantity "4"^^xsd:decimal ;
 _:b3178 :quantity "0.5"^^xsd:decimal ;
   :unit measurements:Cup .
 
-_:b3177 :quantity "4" ;
+_:b3177 :quantity "4"^^xsd:decimal ;
   :unit "strips" .
 
 _:b3176 :quantity "0.25"^^xsd:decimal ;
@@ -7532,7 +7532,7 @@ _:b2087 :quantity "1"^^xsd:decimal ;
 _:b2086 :quantity "1"^^xsd:decimal ;
   :unit "can" .
 
-_:b3170 :quantity "2" ;
+_:b3170 :quantity "2"^^xsd:decimal ;
   :unit "heads" .
 
 _:b2085 :quantity "3"^^xsd:decimal ;
@@ -7575,7 +7575,7 @@ _:b3163 :quantity "4"^^xsd:decimal ;
 _:b2079 :quantity "2"^^xsd:decimal ;
   :unit measurements:Tablespoon .
 
-_:b2078 :quantity "2" .
+_:b2078 :quantity "2"^^xsd:decimal .
 
 _:b3162 :quantity "0.5"^^xsd:decimal ;
   :unit measurements:Cup .
@@ -8898,7 +8898,7 @@ _:b1530 :hasStandardMeasurementUnit _:b3154 ;
 
 _:b2619 :quantity "1"^^xsd:decimal .
 
-_:b2618 :quantity "5" ;
+_:b2618 :quantity "5"^^xsd:decimal ;
   :unit "strips" .
 
 _:b2617 :quantity "4"^^xsd:decimal .
@@ -12660,7 +12660,7 @@ _:b1954 :quantity "1"^^xsd:decimal ;
 _:b1953 :quantity "1"^^xsd:decimal ;
   :unit measurements:Teaspoon .
 
-_:b1952 :quantity "4" .
+_:b1952 :quantity "4"^^xsd:decimal .
 
 _:b1951 :quantity "1"^^xsd:decimal ;
   :unit measurements:Teaspoon .
@@ -13304,7 +13304,7 @@ _:b3479 :quantity "2"^^xsd:decimal .
 
 _:b3478 :quantity "1"^^xsd:decimal .
 
-_:b3477 :quantity "5" .
+_:b3477 :quantity "5"^^xsd:decimal .
 
 _:b3476 :quantity "0.5"^^xsd:decimal ;
   :unit measurements:Teaspoon .
@@ -13641,7 +13641,7 @@ _:b1268 :hasStandardMeasurementUnit _:b2326 ;
 _:b2352 :quantity "1"^^xsd:decimal ;
   :unit measurements:Pound .
 
-_:b2351 :quantity "2" .
+_:b2351 :quantity "2"^^xsd:decimal .
 
 _:b1267 :hasStandardMeasurementUnit _:b2318 ;
   :name "ginger"@en ;
@@ -14300,7 +14300,7 @@ _:b2971 :quantity "0.5"^^xsd:decimal ;
 _:b1887 :quantity "0.5"^^xsd:decimal ;
   :unit measurements:Cup .
 
-_:b1886 :quantity "4" .
+_:b1886 :quantity "4"^^xsd:decimal .
 
 _:b2970 :quantity "0.5"^^xsd:decimal ;
   :unit measurements:Teaspoon .
@@ -14335,7 +14335,7 @@ _:b2967 :quantity "2"^^xsd:decimal ;
 _:b2966 :quantity "1"^^xsd:decimal ;
   :unit measurements:Pound .
 
-_:b2965 :quantity "4" ;
+_:b2965 :quantity "4"^^xsd:decimal ;
   :unit measurements:Tablespoon .
 
 _:b2964 :quantity "1"^^xsd:decimal ;

@@ -58,7 +58,7 @@ async def get_recipes(
 @app.get("/recipe")
 async def get_recipe(recipe_identifier: str):
     """
-    Une fois en cache, la requête prend ~3 secondes à s'exécuter
+    Une fois en cache, la requête prend ~5 secondes à s'exécuter
     """
     query = f"""
     prefix :        <http://project-kitchenchef.fr/schema#>
@@ -78,8 +78,12 @@ async def get_recipe(recipe_identifier: str):
         (group_concat(str(?labelUnitMetricName); separator="|-|") AS ?labelUnitMetricNames)
         WHERE {{
             ?recipe :hasIngredient ?ingredient.
-            OPTIONAL {{ ?recipe rdfs:label ?recipeLabelTmp.
-             FILTER(LANG(?recipeLabelTmp) = "en")}}
+            OPTIONAL {{ 
+                SELECT * WHERE{{
+                ?recipe :name ?recipeLabelTmp.
+                FILTER(LANG(?recipeLabelTmp) = "en")
+                }}LIMIT 1
+             }}
             ?ingredient :name ?ingredientName ;
             OPTIONAL {{ ?ingredient :hasStandardMeasurementUnit/:quantity ?ingredientQuantityStandard . }}
             OPTIONAL {{ ?ingredient :hasStandardMeasurementUnit/:unit ?ingredientUnitTmp.
@@ -92,7 +96,7 @@ async def get_recipe(recipe_identifier: str):
             OPTIONAL {{ ?ingredient :hasMetricMeasurementUnit/:unit ?ingredientUnitTmp2 .
             ?ingredientUnitTmp2 skos:prefLabel ?labelUnitMetric}}
             FILTER(?recipe = ?uri)
-            BIND(IF(BOUND(?recipeLabelTmp),?recipeLabelTmp,"") AS ?recipeLabel)
+            BIND(IF(BOUND(?recipeLabelTmp),?recipeLabelTmp,"No Label Found") AS ?recipeLabel)
             
             BIND(IF(BOUND(?ingredientQuantityStandard),?ingredientQuantityStandard,
             IF(BOUND(?ingredientQuantityImperial),?ingredientQuantityImperial,
@@ -125,18 +129,6 @@ async def get_recipe(recipe_identifier: str):
             }}
         }}
     }}
-
-    # {{
-    #     SELECT ?comment WHERE {{
-    #         OPTIONAL {{
-    #             SERVICE <https://dbpedia.org/sparql> {{
-    #                 ?nameRecipe ^rdfs:label/dbo:abstract ?abstract .
-    #                 FILTER(?nameRecipe = ?recipeLabel && LANG(?abstract)="en")
-    #             }}
-    #         }}
-    #         BIND(IF(BOUND(?abstract), ?abstract, "") AS ?comment)
-    #     }}
-    # }}
     }}
     """
     results = corese_query(
