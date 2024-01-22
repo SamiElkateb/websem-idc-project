@@ -4,30 +4,26 @@ author: "EL KATEB Sami, JEANNES Théo"
 geometry: margin=1in
 ---
 
-Pour ce projet, nous avons décidé de construire une application permettant aux utilisateurs 
-de choisir une recette parmi une liste de possibilité en fonction des ingrédients à leur disposition.
-Pour cela, nous avons dû récupérer et structurer les données de plusieurs sources,
-afin de créer un ensemble de données cohérent comportant toutes les informations nécessaires aux fonctionnalités souhaitées.
+Dans le cadre de notre projet, nous avons décidé de développer une application permettant aux utilisateurs 
+de découvrir et de choisir des recettes de cuisine adaptées, en fonction de leur régime alimentaire et 
+des ingrédients dont ils disposent.
+Pour cela, nous avons récupéré et structuré les données de plusieurs sources,
+afin de créer un ensemble cohérent, comportant toutes les informations nécessaires aux fonctionnalités souhaitées.
 
 ## Description et spécifications de l’application
 
+Notre application propose une interface permettant aux utilisateurs de découvrir facilement de nouvelles recettes. 
+Grâce à une fonction de recherche avancée, ils peuvent trouver des recettes par nom, ingrédients, ou en utilisant des filtres spécifiques. 
+Cette fonctionnalité est particulièrement utile pour ceux qui souhaitent sélectionner des recettes en fonction de leurs préférences alimentaires, 
+telles que des options végétariennes.
 
-Nous proposons une liste de recettes à l'utilisateur dans laquelle il peut rechercher une recette.
-L’application lui permet de rechercher une recette par son nom, mais également d’utiliser des filtres s’il le souhaite.
-L’utilisateur peut par exemple filtrer les recettes selon son régime, 
-pour n’afficher que les recettes végétariennes.
-Il doit également pouvoir les filtrer en imposant un ou plusieurs aliments qui doivent être contenus dans les recettes proposées.
+Lorsqu'une recette est sélectionnée,
+l'utilisateur est dirigé vers une page détaillée présentant les informations usuelles des recettes telles que 
+le titre, la liste d'instructions, et une image si celle-ci est disponible sur DBPedia.
+La page inclut également une liste complète des ingrédients,
+avec leurs quantités et unités respectives. Ces dernières peuvent être aisément converties entre les systèmes métrique et impérial.
 
-Une fois que l’utilisateur aura sélectionné une recette, il pourra consulter sa page,
-sur laquelle il pourra trouver de nombreuses informations. 
-Il pourra consulter les informations courantes d’une recette de cuisine,
-comme le titre, la liste des instructions et une image lorsque celle-ci est disponible sur DBPedia.
-
-Il aura également à sa disposition la liste des ingrédients de la recette avec leurs quantitées et leurs unitées,
-qu’il pourra afficher à la fois dans le système métrique, avec des kilogrammes et des centilitres,
-ou dans le système US, ou Impérial, qui affichera des onces et des pounds.
-Il trouvera également les informations nutritionnelles de la recette,
-qui sont adaptées à la recette et aux quantités affichées dans la liste d'ingrédients.
+Finalement, la page fournit des informations nutritionnelles adaptées à la recette et aux quantités d'ingrédients indiquées.
 
 
 ## Modélisation et contraintes sur les données
