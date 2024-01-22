@@ -32,7 +32,7 @@ function decimalToFraction(decimalStr: string) {
       return `${Math.round(multiplied)}/${fraction}`;
     }
   }
-  return decimalStr;
+  return Math.round(parseFloat(decimalStr) * 100) / 100;
 }
 
 type TIngredientsCardProps = { ingredients: TIngredient[];
