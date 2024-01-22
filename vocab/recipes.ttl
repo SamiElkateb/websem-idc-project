@@ -16,7 +16,7 @@ recipes:AlbertsChicken a :Recipe ;
             :name "dry sherry"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "butter"@en ],
         [ a :Ingredient ;
@@ -50,7 +50,8 @@ recipes:AngelHash a :Pie,
         :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Marshmallows ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.25 ;
+                    :unit measurements:Pound ] ;
             :name "marshmallows"@en ],
         [ a :Ingredient ;
             :food food:Cornstarch ;
@@ -59,7 +60,7 @@ recipes:AngelHash a :Pie,
             :name "cornstarch"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
@@ -79,7 +80,7 @@ recipes:AngelHash a :Pie,
             :name "pineapple tidbits"@en ],
         [ a :Ingredient ;
             :food food:Walnuts ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "walnuts, chopped"@en ],
         [ a :Ingredient ;
@@ -159,17 +160,17 @@ recipes:AppleDumplings a :Recipe ;
             :name "water"@en ],
         [ a :Ingredient ;
             :food food:Cinnamon ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "cinnamon"@en ],
         [ a :Ingredient ;
             :food food:Nutmeg ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "nutmeg"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "butter, melted"@en ],
         [ a :Ingredient ;
@@ -189,12 +190,12 @@ recipes:AppleDumplings a :Recipe ;
             :name "baking powder"@en ],
         [ a :Ingredient ;
             :food food:Shortening ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "shortening"@en ],
         [ a :Ingredient ;
             :food food:Milk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "milk"@en ],
         [ a :Ingredient ;
@@ -213,7 +214,8 @@ recipes:Artichoke-MozzarellaCasserole a :Recipe ;
             :name "artichoke hearts, drained, finely chopped"@en ],
         [ a :Ingredient ;
             :food food:Cheese ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.5 ;
+                    :unit measurements:Pound ] ;
             :name "mozzarella cheese, shredded"@en ],
         [ a :Ingredient ;
             :food food:OliveOil ;
@@ -222,7 +224,7 @@ recipes:Artichoke-MozzarellaCasserole a :Recipe ;
             :name "olive oil"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "green onion, minced"@en ],
         [ a :Ingredient ;
@@ -242,12 +244,12 @@ recipes:Artichoke-MozzarellaCasserole a :Recipe ;
             :name "leaf oregano"@en ],
         [ a :Ingredient ;
             :food food:BreadCrumbs ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "dry bread crumbs"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -282,7 +284,7 @@ recipes:AsparagusStir-Fried a :Recipe ;
             :name "fresh ginger, minced"@en ],
         [ a :Ingredient ;
             :food food:ChickenStock ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "chicken stock"@en ],
         [ a :Ingredient ;
@@ -292,7 +294,7 @@ recipes:AsparagusStir-Fried a :Recipe ;
             :name "soy sauce"@en ],
         [ a :Ingredient ;
             :food food:Cornstarch ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "cornstarch"@en ] ;
     :instructions "Snap asparagus at their breaking point, cut diagonally into 1 inch lengths and blanch in rapidly boiling, salted water. Heat a wok or skillet over moderately high heat, add oil and heat until very hot. Add garlic and ginger and stir-fry for several seconds. Add asparagus and stir-fry to coat with oil and heat through. Add stock, soy sauce and cornstarch and simmer for 2 to 3 minutes. Season to taste and serve."@en ;
@@ -321,7 +323,7 @@ recipes:AsparagusTomatoQuiche a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Mustard ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "dry mustard"@en ],
         [ a :Ingredient ;
@@ -371,7 +373,7 @@ recipes:AvocadoChickenMelt a :Recipe ;
             :name "water"@en ],
         [ a :Ingredient ;
             :food food:Cornmeal ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "cornmeal"@en ],
         [ a :Ingredient ;
@@ -386,17 +388,17 @@ recipes:AvocadoChickenMelt a :Recipe ;
             :name "monteray jack cheese, shredded"@en ],
         [ a :Ingredient ;
             :food food:SourCream ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sour cream"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "green onion tops, sliced"@en ],
         [ a :Ingredient ;
             :food food:RedPepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "red pepper, chopped"@en ],
         [ a :Ingredient ;
@@ -445,22 +447,22 @@ recipes:BakedZucchiniwithMushrooms a :Recipe ;
             :name "zucchini, shredded"@en ],
         [ a :Ingredient ;
             :food food:BreadCrumbs ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "fine dried bread crumbs"@en ],
         [ a :Ingredient ;
             :food food:Cheese ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "parmasen cheese, grated"@en ],
         [ a :Ingredient ;
             :food food:Oregano ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "dried oregano"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
@@ -477,7 +479,7 @@ recipes:BananaCake a :Cake,
         :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Shortening ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "shortening"@en ],
         [ a :Ingredient ;
@@ -487,7 +489,7 @@ recipes:BananaCake a :Cake,
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:SourMilk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sour milk"@en ],
         [ a :Ingredient ;
@@ -507,7 +509,7 @@ recipes:BananaCake a :Cake,
             :name "baking powder"@en ],
         [ a :Ingredient ;
             :food food:Nuts ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "chopped nuts"@en ] ;
     :instructions "Bake in three layer pans at 350 degrees."@en ;
@@ -567,7 +569,7 @@ recipes:BarbecuedSpareribs a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
@@ -582,12 +584,12 @@ recipes:BarbecuedSpareribs a :Recipe ;
             :name "celery salt"@en ],
         [ a :Ingredient ;
             :food food:Vinegar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "vinegar"@en ],
         [ a :Ingredient ;
             :food food:Sauce ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "worchestershire sauce"@en ],
         [ a :Ingredient ;
@@ -597,7 +599,7 @@ recipes:BarbecuedSpareribs a :Recipe ;
             :name "garlic, chopped"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
@@ -612,7 +614,7 @@ recipes:BarbecuedSpareribs a :Recipe ;
             :name "hot water"@en ],
         [ a :Ingredient ;
             :food food:BrownSugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "brown sugar"@en ],
         [ a :Ingredient ;
@@ -629,7 +631,7 @@ recipes:BatterFriedChicken a :Recipe ;
     :hasDbpediaLink dbpedia:Fried_chicken ;
     :hasIngredient [ a :Ingredient ;
             :food food:Milk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.6666666666666666 ;
                     :unit measurements:Cup ] ;
             :name "milk"@en ],
         [ a :Ingredient ;
@@ -654,7 +656,7 @@ recipes:BatterFriedChicken a :Recipe ;
             :name "seas1d salt"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
@@ -721,7 +723,7 @@ recipes:BeefEnchiladas a :Recipe ;
             :name "garlic, chopped"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
@@ -756,7 +758,7 @@ recipes:BeefEnchiladas a :Recipe ;
             :name "chili powder"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -842,22 +844,22 @@ recipes:BeefSpinachQuiche a :Recipe ;
             :name "spinach, drained"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
             :food food:Nutmeg ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "nutmeg"@en ],
         [ a :Ingredient ;
             :food food:Cheese ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "cheese"@en ],
         [ a :Ingredient ;
@@ -872,7 +874,8 @@ recipes:BeefStroganoff a :Recipe ;
     :hasDbpediaLink dbpedia:Beef_Stroganoff ;
     :hasIngredient [ a :Ingredient ;
             :food food:Mushrooms ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.5 ;
+                    :unit measurements:Pound ] ;
             :name "mushrooms, sliced"@en ],
         [ a :Ingredient ;
             :food food:Garlic ;
@@ -891,17 +894,17 @@ recipes:BeefStroganoff a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Oil ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "oil"@en ],
         [ a :Ingredient ;
@@ -925,7 +928,7 @@ recipes:BeefStroganoff a :Recipe ;
 recipes:BitOZucchiniBites a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Small ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
@@ -955,12 +958,12 @@ recipes:BitOZucchiniBites a :Recipe ;
             :name "cornmeal"@en ],
         [ a :Ingredient ;
             :food food:CuminSeed ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "cumin seed, crushed"@en ],
         [ a :Ingredient ;
             :food food:Oregano ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "dried oregano, crushed"@en ],
         [ a :Ingredient ;
@@ -1003,17 +1006,17 @@ recipes:BlueChipCookies a :Cookie,
         :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "cold butter"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:BrownSugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "brown sugar"@en ],
         [ a :Ingredient ;
@@ -1028,12 +1031,12 @@ recipes:BlueChipCookies a :Cookie,
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:BakingSoda ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "baking soda"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -1043,7 +1046,7 @@ recipes:BlueChipCookies a :Cookie,
             :name "chocolate chips"@en ],
         [ a :Ingredient ;
             :food food:Walnuts ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "walnuts"@en ],
         [ a :Ingredient ;
@@ -1077,7 +1080,7 @@ recipes:BlueberryCoffeeCake a :Cake,
             :name "vanilla"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "butter"@en ],
         [ a :Ingredient ;
@@ -1126,7 +1129,7 @@ recipes:BourbonBalls a :Cookie,
             :name "light corn syrup"@en ],
         [ a :Ingredient ;
             :food food:Bourbon ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "bourbon (or light cream)"@en ],
         [ a :Ingredient ;
@@ -1136,7 +1139,7 @@ recipes:BourbonBalls a :Cookie,
             :name "crushed vanilla wafers"@en ],
         [ a :Ingredient ;
             :food food:PowderedSugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "powdered sugar"@en ],
         [ a :Ingredient ;
@@ -1156,7 +1159,7 @@ recipes:BroccoliCheesePie a :Recipe ;
             :name "fresh broccoli"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.6666666666666666 ;
                     :unit measurements:Cup ] ;
             :name "onion, minced"@en ],
         [ a :Ingredient ;
@@ -1166,12 +1169,12 @@ recipes:BroccoliCheesePie a :Recipe ;
             :name "milk"@en ],
         [ a :Ingredient ;
             :food food:Nutmeg ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "nutmeg"@en ],
         [ a :Ingredient ;
             :food food:ParmesanCheese ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "parmesan cheese"@en ],
         [ a :Ingredient ;
@@ -1191,7 +1194,7 @@ recipes:BroccoliCheesePie a :Recipe ;
             :name "parsley"@en ],
         [ a :Ingredient ;
             :food food:SwissCheese ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.6666666666666666 ;
                     :unit measurements:Cup ] ;
             :name "swiss cheese"@en ],
         [ a :Ingredient ;
@@ -1247,7 +1250,7 @@ recipes:BroccoliCheeseSoup a :Recipe,
             :name "cheddar cheese, grated"@en ],
         [ a :Ingredient ;
             :food food:Milk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "low-fat milk"@en ],
         [ a :Ingredient ;
@@ -1288,7 +1291,7 @@ recipes:BroccoliSalad a :Recipe,
             :name "mayonnaise"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
@@ -1320,7 +1323,7 @@ recipes:BroccoliSaladwithPineapple a :Recipe,
             :name "broccoli"@en ],
         [ a :Ingredient ;
             :food food:Seeds ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sunflower seeds"@en ],
         [ a :Ingredient ;
@@ -1368,7 +1371,7 @@ recipes:BroccoliandRiceCasserole a :Recipe ;
             :name "onion"@en ],
         [ a :Ingredient ;
             :food food:Celery ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "celery, chopped"@en ],
         [ a :Ingredient ;
@@ -1378,7 +1381,7 @@ recipes:BroccoliandRiceCasserole a :Recipe ;
             :name "mushroom soup"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit "stick" ] ;
             :name "butter"@en ] ;
     :instructions """Cook rice and put in buttered casserole. Boil broccoli according to instructions on the package. Brown onions and celery in butter, add cooked broccoli and soup together. Pour over rice, top with cheese. Can use grated cheddar if you choose. Dot with butter. Put in oven until heated about 10 to 15 minutes at 350 degrees.
@@ -1404,12 +1407,12 @@ recipes:CarrotCarousel a :Recipe,
             :name "cold orange juice, divided"@en ],
         [ a :Ingredient ;
             :food food:Orange ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "boiling orange juice"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -1438,17 +1441,17 @@ recipes:CatalinaChickenStirFry a :Recipe ;
             :name "any frozen mixed vegetable, thawed"@en ],
         [ a :Ingredient ;
             :food food:FrenchDressing ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "catalina french dressing"@en ],
         [ a :Ingredient ;
             :food food:SoySauce ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "soy sauce"@en ],
         [ a :Ingredient ;
             :food food:GarlicPowder ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "garlic powder"@en ] ;
     :instructions "Heat dressing, soy sauce and garlic powder in large skillet. Stir in chicken and completely cook, about 8 minutes. Add vegetables and cook, stirring until heated. Serve over cooked rice."@en ;
@@ -1495,17 +1498,17 @@ recipes:CheeseStrata a :Recipe ;
             :name "milk"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
             :food food:Mustard ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "dry mustard"@en ],
         [ a :Ingredient ;
@@ -1543,7 +1546,7 @@ recipes:CheesyFishFilletswithSpinach a :Recipe ;
             :name "milk"@en ],
         [ a :Ingredient ;
             :food food:CheddarCheese ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.6666666666666666 ;
                     :unit measurements:Cup ] ;
             :name "shredded Swiss or cheddar cheese"@en ],
         [ a :Ingredient ;
@@ -1558,7 +1561,7 @@ recipes:CheesyFishFilletswithSpinach a :Recipe ;
             :name "lemon juice or sherry"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -1594,12 +1597,12 @@ recipes:CheesySpinachBake a :Recipe ;
             :name "white bread, cubed"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "green onion"@en ],
         [ a :Ingredient ;
             :food food:ParmesanCheese ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "parmesan cheese"@en ],
         [ a :Ingredient ;
@@ -1633,12 +1636,12 @@ recipes:ChickenBreastsFlorentine a :Recipe ;
             :name "skinless b1less chicken breasts, cut in 1/2"@en ],
         [ a :Ingredient ;
             :food food:BreadCrumbs ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "dry bread crumbs"@en ],
         [ a :Ingredient ;
             :food food:BasilLeaves ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "basil leaves"@en ],
         [ a :Ingredient ;
@@ -1654,7 +1657,8 @@ recipes:ChickenCashew a :Recipe ;
     :hasDbpediaLink dbpedia:Cashew_chicken ;
     :hasIngredient [ a :Ingredient ;
             :food food:Pods ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.5 ;
+                    :unit measurements:Pound ] ;
             :name "pea pods, fresh or frozen"@en ],
         [ a :Ingredient ;
             :food food:Bamboo ;
@@ -1673,12 +1677,12 @@ recipes:ChickenCashew a :Recipe ;
             :name "mushrooms, sliced"@en ],
         [ a :Ingredient ;
             :food food:GreenOnions ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "green onions, sliced"@en ],
         [ a :Ingredient ;
             :food food:Sliced ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "water chestnuts, sliced"@en ],
         [ a :Ingredient ;
@@ -1688,7 +1692,7 @@ recipes:ChickenCashew a :Recipe ;
             :name "chicken boullion"@en ],
         [ a :Ingredient ;
             :food food:SoySauce ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "soy sauce"@en ],
         [ a :Ingredient ;
@@ -1698,12 +1702,12 @@ recipes:ChickenCashew a :Recipe ;
             :name "cornstarch"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -1743,7 +1747,7 @@ recipes:ChickenLoMein a :Recipe ;
             :name "red pepper, chopped"@en ],
         [ a :Ingredient ;
             :food food:Chicken ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "chicken boullion"@en ],
         [ a :Ingredient ;
@@ -1817,17 +1821,17 @@ recipes:ChickenPaprika a :Recipe ;
             :name "paprika"@en ],
         [ a :Ingredient ;
             :food food:Cayenne ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "cayenne"@en ],
         [ a :Ingredient ;
             :food food:Ginger ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "ginger"@en ],
         [ a :Ingredient ;
             :food food:Nutmeg ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "nutmeg"@en ],
         [ a :Ingredient ;
@@ -1837,12 +1841,12 @@ recipes:ChickenPaprika a :Recipe ;
             :name "basil"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
@@ -1890,32 +1894,32 @@ recipes:ChickenSchnitzel a :Recipe ;
     :hasDbpediaLink dbpedia:Schnitzel ;
     :hasIngredient [ a :Ingredient ;
             :food food:Flour ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
             :food food:BreadCrumbs ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "bread crumbs, dried"@en ],
         [ a :Ingredient ;
             :food food:Paprika ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "paprika"@en ],
         [ a :Ingredient ;
             :food food:GarlicPowder ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Teaspoon ] ;
             :name "garlic powder"@en ],
         [ a :Ingredient ;
@@ -1969,7 +1973,8 @@ To serve, spoon sauerkraut mixture on to center of serving plate and surround wi
 recipes:ChickenTamalePie a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Bacon ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.25 ;
+                    :unit measurements:Pound ] ;
             :name "bacon, chopped"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
@@ -2031,7 +2036,7 @@ recipes:ChickenWithPineapple a :Recipe ;
     :hasDbpediaLink dbpedia:Pininyahang_manok ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sherry ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "sherry"@en ],
         [ a :Ingredient ;
@@ -2084,12 +2089,12 @@ recipes:ChickenandShrimpCantonese a :Recipe ;
             :name "peanut or vegetable oil"@en ],
         [ a :Ingredient ;
             :food food:GreenPepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "red or green pepper, cut in thin strips"@en ],
         [ a :Ingredient ;
             :food food:Celery ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "celery, sliced"@en ],
         [ a :Ingredient ;
@@ -2109,7 +2114,7 @@ recipes:ChickenandShrimpCantonese a :Recipe ;
             :name "soy sauce"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
@@ -2157,7 +2162,7 @@ recipes:ChiliCheesePuff a :Recipe ;
             :name "diced green chiles"@en ],
         [ a :Ingredient ;
             :food food:Flour ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "flour"@en ],
         [ a :Ingredient ;
@@ -2167,7 +2172,7 @@ recipes:ChiliCheesePuff a :Recipe ;
             :name "baking powder"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -2191,8 +2196,9 @@ Pour into buttered 9" x 13" baking dish. Bake 35 minutes or until top is brown a
     :name "Chili Cheese Puff"@en .
 
 recipes:ChiliChicken a :Recipe ;
-    rdfs:label "Chilli chicken"@en ;
-    :hasDbpediaLink dbpedia:Chilli_chicken ;
+    rdfs:label "Kung Pao chicken"@en,
+        "Poulet impérial"@fr ;
+    :hasDbpediaLink dbpedia:Kung_Pao_chicken ;
     :hasIngredient [ a :Ingredient ;
             :food food:Noodles ;
             :hasImperialMeasurementUnit [ :quantity 12.0 ;
@@ -2232,7 +2238,7 @@ recipes:ChiliChicken a :Recipe ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ;
                     :unit measurements:Cup ] ;
             :name "cheddar cheese, grated"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Chicken_Chili_HR2.jpg?width=300> ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Kung-pao-shanghai.jpg?width=300> ;
     :instructions """saute onion in butter, add soups, pimento, chiles, chicken and 1/2 the cheese.
 Cook noodles until tender. Drain. Stir sauce into noodles. Pour into large baking dish. Add rest of cheese or buttered crumbs.
 Chill over night. Bake at 350 degrees for 1 hour."""@en ;
@@ -2251,12 +2257,12 @@ recipes:ChilledPruneWhip a :Recipe ;
             :name "water"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
@@ -2266,7 +2272,7 @@ recipes:ChilledPruneWhip a :Recipe ;
             :name "lemon juice"@en ],
         [ a :Ingredient ;
             :food food:Pecans ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "pecans, chopped"@en ],
         [ a :Ingredient ;
@@ -2306,17 +2312,17 @@ recipes:ChineseBeef a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Ginger ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "ground ginger"@en ],
         [ a :Ingredient ;
             :food food:SoySauce ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "soy sauce"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
@@ -2326,7 +2332,7 @@ recipes:ChineseBeef a :Recipe ;
             :name "cornstarch"@en ],
         [ a :Ingredient ;
             :food food:Water ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "water"@en ],
         [ a :Ingredient ;
@@ -2344,7 +2350,7 @@ recipes:ChineseBeef a :Recipe ;
 recipes:ChineseBroccoli a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:ChickenBroth ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "chicken broth"@en ],
         [ a :Ingredient ;
@@ -2365,7 +2371,7 @@ recipes:ChineseChickenSalad a :Recipe ;
             :name "soy sauce"@en ],
         [ a :Ingredient ;
             :food food:Sherry ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "dry sherry"@en ],
         [ a :Ingredient ;
@@ -2380,7 +2386,7 @@ recipes:ChineseChickenSalad a :Recipe ;
             :name "anise"@en ],
         [ a :Ingredient ;
             :food food:Lettuce ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit "head" ] ;
             :name "slivered lettuce"@en ],
         [ a :Ingredient ;
@@ -2414,7 +2420,7 @@ recipes:ChineseFriedRice a :Recipe ;
             :name "cold cooked rice"@en ],
         [ a :Ingredient ;
             :food food:Pork ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "diced ham, pork or chicken"@en ],
         [ a :Ingredient ;
@@ -2424,7 +2430,7 @@ recipes:ChineseFriedRice a :Recipe ;
             :name "oil"@en ],
         [ a :Ingredient ;
             :food food:GreenOnions ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "chopped green onions"@en ],
         [ a :Ingredient ;
@@ -2469,7 +2475,7 @@ recipes:ChineseNoodleCasserole a :Recipe ;
             :name "celery, chopped"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
@@ -2496,17 +2502,17 @@ recipes:ChinesePepperSteak a :Recipe ;
             :name "cornstarch"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Ginger ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "ginger"@en ],
         [ a :Ingredient ;
             :food food:Sauce ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "sauce"@en ],
         [ a :Ingredient ;
@@ -2521,7 +2527,7 @@ recipes:ChinesePepperSteak a :Recipe ;
             :name "garlic"@en ],
         [ a :Ingredient ;
             :food food:Water ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit "can" ] ;
             :name "water"@en ],
         [ a :Ingredient ;
@@ -2604,27 +2610,27 @@ recipes:ChineseStirFriedChickenwithPeanuts a :Recipe ;
             :name "vegetable oil"@en ],
         [ a :Ingredient ;
             :food food:GingerRoot ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Slice ] ;
             :name "ginger root"@en ],
         [ a :Ingredient ;
             :food food:CrushedRedPepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "crushed red pepper"@en ],
         [ a :Ingredient ;
             :food food:Peanuts ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "unsalted peanuts"@en ],
         [ a :Ingredient ;
             :food food:SoySauce ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "soy sauce"@en ],
         [ a :Ingredient ;
             :food food:Water ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "water"@en ],
         [ a :Ingredient ;
@@ -2651,7 +2657,7 @@ recipes:ChocolateCake a :Cake,
     :hasDbpediaLink dbpedia:Chocolate_cake ;
     :hasIngredient [ a :Ingredient ;
             :food food:Margarine ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "margarine"@en ],
         [ a :Ingredient ;
@@ -2666,12 +2672,12 @@ recipes:ChocolateCake a :Cake,
             :name "cocoa"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:SourMilk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sour milk"@en ],
         [ a :Ingredient ;
@@ -2686,7 +2692,7 @@ recipes:ChocolateCake a :Cake,
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Cloves ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "cloves"@en ],
         [ a :Ingredient ;
@@ -2711,12 +2717,12 @@ recipes:ChocolateCrispBranCookies a :Cookie,
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:BakingSoda ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "baking soda"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -2765,7 +2771,7 @@ recipes:ChocolateMayonaiseCake a :Cake,
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Cocoa ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "cocoa"@en ],
         [ a :Ingredient ;
@@ -2810,17 +2816,17 @@ recipes:ChocolatePeanutBrunchBars a :Cookie,
             :name "brown sugar"@en ],
         [ a :Ingredient ;
             :food food:Margarine ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "margarine"@en ],
         [ a :Ingredient ;
             :food food:PeanutButter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "crunchy peanut butter"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -2835,7 +2841,7 @@ recipes:ChocolatePeanutBrunchBars a :Cookie,
             :name "chocolate chips"@en ],
         [ a :Ingredient ;
             :food food:PeanutButter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "crunchy peanut butter"@en ],
         [ a :Ingredient ;
@@ -2854,7 +2860,7 @@ recipes:ChocolateTrioSquares a :Cookie,
         :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Margarine ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "margarine"@en ],
         [ a :Ingredient ;
@@ -2864,17 +2870,17 @@ recipes:ChocolateTrioSquares a :Cookie,
             :name "sifted flour"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:BrownSugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "light brown sugar"@en ],
         [ a :Ingredient ;
             :food food:Coconut ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "coconut"@en ],
         [ a :Ingredient ;
@@ -2884,7 +2890,7 @@ recipes:ChocolateTrioSquares a :Cookie,
             :name "vanilla"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -2899,7 +2905,7 @@ recipes:ChocolateTrioSquares a :Cookie,
             :name "semisweet chocolate chips"@en ],
         [ a :Ingredient ;
             :food food:CornSyrup ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "light corn syrup"@en ],
         [ a :Ingredient ;
@@ -2953,7 +2959,7 @@ recipes:ChristmasSnowballs a :Cookie,
             :name "chocolate chips"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "butter"@en ],
         [ a :Ingredient ;
@@ -2968,12 +2974,12 @@ recipes:ChristmasSnowballs a :Cookie,
             :name "water"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
@@ -2993,7 +2999,8 @@ recipes:CleosClamChowder a :Recipe,
         :Soup ;
     :hasIngredient [ a :Ingredient ;
             :food food:Bacon ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.5 ;
+                    :unit measurements:Pound ] ;
             :name "bacon, chopped and browned"@en ],
         [ a :Ingredient ;
             :food food:Milk ;
@@ -3031,17 +3038,17 @@ recipes:Coleslaw a :Recipe,
         :SaladAndDressings ;
     :hasIngredient [ a :Ingredient ;
             :food food:Cabbage ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit "head" ] ;
             :name "cabbage"@en ],
         [ a :Ingredient ;
             :food food:Mayonnaise ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "mayonnaise"@en ],
         [ a :Ingredient ;
             :food food:SourCream ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sour cream"@en ],
         [ a :Ingredient ;
@@ -3056,7 +3063,7 @@ recipes:Coleslaw a :Recipe,
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Horseradish ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "horseradish"@en ],
         [ a :Ingredient ;
@@ -3085,7 +3092,7 @@ recipes:CompanyCabbage a :Recipe ;
             :name "garlic, minced"@en ],
         [ a :Ingredient ;
             :food food:SourCream ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sour cream"@en ],
         [ a :Ingredient ;
@@ -3105,7 +3112,7 @@ recipes:CompanyCabbage a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:CarawaySeed ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "caraway seed"@en ] ;
     :instructions "Melt butter. Add cabbage, garlic and 1/4 cup of water. Cover tightly, steam over low heat for 10-12 minutes. Blend next 4 ingredients. Stir into cabbage. Heat thoroughly, but do not boil. Sprinkle with seeds."@en ;
@@ -3117,11 +3124,13 @@ recipes:CoqauVin a :Recipe ;
     :hasDbpediaLink dbpedia:Coq_au_vin ;
     :hasIngredient [ a :Ingredient ;
             :food food:Steak ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.3333333333333333 ;
+                    :unit measurements:Pound ] ;
             :name "pork shoulder steak, cut into 1/2 inch cubes"@en ],
         [ a :Ingredient ;
             :food food:Mushrooms ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.5 ;
+                    :unit measurements:Pound ] ;
             :name "mushrooms"@en ],
         [ a :Ingredient ;
             :food food:Onions ;
@@ -3184,7 +3193,7 @@ recipes:CranberryMold a :Recipe,
             :name "sour cream"@en ],
         [ a :Ingredient ;
             :food food:Nuts ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "nuts, chopped"@en ] ;
     :instructions "Mix jello with hot water.  Jell slightly then add cranberry sauce, sour cream, and nuts.  Mix and chill until set."@en ;
@@ -3201,7 +3210,7 @@ recipes:CrazyCake a :Cake,
             :name "lemon cake mix"@en ],
         [ a :Ingredient ;
             :food food:Water ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "water"@en ],
         [ a :Ingredient ;
@@ -3211,7 +3220,7 @@ recipes:CrazyCake a :Cake,
             :name "lemon jello"@en ],
         [ a :Ingredient ;
             :food food:VegetableOil ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "vegetable oil"@en ],
         [ a :Ingredient ;
@@ -3221,7 +3230,7 @@ recipes:CrazyCake a :Cake,
             :name "powdered sugar"@en ],
         [ a :Ingredient ;
             :food food:LemonJuice ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "lemon juice"@en ],
         [ a :Ingredient ;
@@ -3247,17 +3256,17 @@ recipes:CrazyCrustPizza a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Oregano ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "oregano or italian seasoning"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
             :food food:Milk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.6666666666666666 ;
                     :unit measurements:Cup ] ;
             :name "milk"@en ],
         [ a :Ingredient ;
@@ -3282,12 +3291,12 @@ recipes:CreamyApplePie a :Pie,
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Flour ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -3310,10 +3319,11 @@ recipes:CreamyChickenBroccoliwithRice a :Recipe ;
             :name "b1less, skinless chicken breast, cubed"@en ],
         [ a :Ingredient ;
             :food food:Velveeta ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.5 ;
+                    :unit measurements:Pound ] ;
             :name "Velveeta"@en ],
         [ a :Ingredient ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "miracle whip"@en ],
         [ a :Ingredient ;
@@ -3330,7 +3340,7 @@ recipes:CreamyZucchiniMushroomSoup a :Recipe,
     :hasDbpediaLink dbpedia:Chicken_soup ;
     :hasIngredient [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
@@ -3350,12 +3360,12 @@ recipes:CreamyZucchiniMushroomSoup a :Recipe,
             :name "water"@en ],
         [ a :Ingredient ;
             :food food:Milk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "milk"@en ],
         [ a :Ingredient ;
             :food food:Oregano ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "fresh oregano, chopped or 1/4 tsp dried"@en ],
         [ a :Ingredient ;
@@ -3365,12 +3375,12 @@ recipes:CreamyZucchiniMushroomSoup a :Recipe,
             :name "fresh basil, or 1/4 tsp dried"@en ],
         [ a :Ingredient ;
             :food food:SourCream ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sour cream"@en ],
         [ a :Ingredient ;
             :food food:Toasted ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "pine nuts, toasted"@en ],
         [ a :Ingredient ;
@@ -3458,7 +3468,7 @@ recipes:CucumbersinSourCream a :Recipe,
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
@@ -3500,7 +3510,7 @@ recipes:DeepDishPizza a :Recipe ;
             :name "Chef Boyardee package pizza mix"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "chopped onion"@en ],
         [ a :Ingredient ;
@@ -3510,7 +3520,7 @@ recipes:DeepDishPizza a :Recipe ;
             :name "mushroom stems and pieces"@en ],
         [ a :Ingredient ;
             :food food:Olives ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sliced olives"@en ],
         [ a :Ingredient ;
@@ -3539,17 +3549,17 @@ recipes:DutchApplePie a :Pie,
             :name "cinnamon"@en ],
         [ a :Ingredient ;
             :food food:Flour ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "butter"@en ],
         [ a :Ingredient ;
             :food food:Cinnamon ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "cinnamon"@en ],
         [ a :Ingredient ;
@@ -3573,7 +3583,7 @@ recipes:EasyOvenBakedPotatoes a :Recipe ;
             :name "onions"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "butter"@en ],
         [ a :Ingredient ;
@@ -3583,22 +3593,22 @@ recipes:EasyOvenBakedPotatoes a :Recipe ;
             :name "garlic, crushed"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
             :food food:CelerySeed ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "celery seed"@en ],
         [ a :Ingredient ;
             :food food:Paprika ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "paprika"@en ] ;
     :instructions """Cut potatoes and onions into 1/4 inch slices. Layer in baking dish. Combine remaining ingredients. Drizzle over top.
@@ -3628,7 +3638,7 @@ recipes:EasyPastaBake a :Recipe ;
             :name "cooked pasta"@en ],
         [ a :Ingredient ;
             :food food:ParmesanCheese ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "parmesan cheese"@en ] ;
     :instructions "Cook ground beef in skillet; drain. Stir in cooked pasta, spaghetti sauce and grated parmesan cheese. Spoon into 13\" x 9\" baking dish. Top with mozzarella cheese. Bake at 375 degrees for 20 minutes."@en ;
@@ -3640,7 +3650,7 @@ recipes:EggFooYoung a :Recipe ;
     :hasDbpediaLink dbpedia:Egg_foo_young ;
     :hasIngredient [ a :Ingredient ;
             :food food:GreenOnions ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "green onions, chopped"@en ],
         [ a :Ingredient ;
@@ -3675,7 +3685,7 @@ recipes:EggFooYoung a :Recipe ;
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -3709,7 +3719,7 @@ recipes:EggRollWrappers a :Recipe ;
             :name "cornstarch"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -3735,12 +3745,12 @@ recipes:EggplantRollatini a :Recipe ;
             :name "egg, seperated"@en ],
         [ a :Ingredient ;
             :food food:Cheese ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "ricotta cheese"@en ],
         [ a :Ingredient ;
             :food food:Mozzarella ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "mozzarella or provol1, coarsely grated"@en ],
         [ a :Ingredient ;
@@ -3750,7 +3760,7 @@ recipes:EggplantRollatini a :Recipe ;
             :name "fresh parsley, chopped"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
@@ -3760,7 +3770,7 @@ recipes:EggplantRollatini a :Recipe ;
             :name "eggplant"@en ],
         [ a :Ingredient ;
             :food food:RedWine ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "red wine vinaigrette"@en ],
         [ a :Ingredient ;
@@ -3824,17 +3834,17 @@ recipes:FiveBeanSalad a :Recipe,
             :name "bean sprouts"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Vinegar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "vinegar"@en ],
         [ a :Ingredient ;
             :food food:Oil ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "oil"@en ],
         [ a :Ingredient ;
@@ -3921,7 +3931,7 @@ recipes:FreshAppleCake a :Cake,
             :name "cinnamon"@en ],
         [ a :Ingredient ;
             :food food:VegetableOil ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "vegetable oil"@en ],
         [ a :Ingredient ;
@@ -3953,12 +3963,12 @@ recipes:FreshPeachDessert a :Recipe ;
             :name "peaches, sliced"@en ],
         [ a :Ingredient ;
             :food food:Marshmallows ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "small marshmallows"@en ],
         [ a :Ingredient ;
             :food food:Water ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "cold water"@en ],
         [ a :Ingredient ;
@@ -3978,7 +3988,7 @@ recipes:FreshPeachDessert a :Recipe ;
             :name "knox gelatin"@en ],
         [ a :Ingredient ;
             :food food:Margarine ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "margarine"@en ],
         [ a :Ingredient ;
@@ -4008,12 +4018,12 @@ recipes:FreshPearCake a :Cake,
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Milk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "milk"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -4048,7 +4058,7 @@ recipes:FreshStrawberryPie a :Pie,
             :name "water"@en ],
         [ a :Ingredient ;
             :food food:FoodColoring ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity measurements:Few ;
                     :unit "drops" ] ;
             :name "red food coloring"@en ],
         [ a :Ingredient ;
@@ -4085,7 +4095,7 @@ recipes:FrostedDelights a :Cookie,
             :name "sifted flour"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -4095,7 +4105,7 @@ recipes:FrostedDelights a :Cookie,
             :name "baking soda"@en ],
         [ a :Ingredient ;
             :food food:Shortening ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "shortening"@en ],
         [ a :Ingredient ;
@@ -4105,7 +4115,7 @@ recipes:FrostedDelights a :Cookie,
             :name "granulated sugar"@en ],
         [ a :Ingredient ;
             :food food:Vanilla ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "vanilla"@en ],
         [ a :Ingredient ;
@@ -4172,7 +4182,7 @@ recipes:GardenQuiche a :Recipe ;
             :name "Bisquick baking mix"@en ],
         [ a :Ingredient ;
             :food food:Water ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "cold water"@en ],
         [ a :Ingredient ;
@@ -4197,17 +4207,17 @@ recipes:GardenQuiche a :Recipe ;
             :name "whipping cream"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:CayennePepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "cayenne pepper"@en ],
         [ a :Ingredient ;
@@ -4232,7 +4242,7 @@ recipes:GingerSnapBars a :Cookie,
             :name "margarine"@en ],
         [ a :Ingredient ;
             :food food:Molasses ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "molasses"@en ],
         [ a :Ingredient ;
@@ -4247,32 +4257,32 @@ recipes:GingerSnapBars a :Cookie,
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Soda ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "soda"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Cinnamon ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "cinnamon"@en ],
         [ a :Ingredient ;
             :food food:Ginger ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "ginger"@en ],
         [ a :Ingredient ;
             :food food:Cloves ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "cloves"@en ],
         [ a :Ingredient ;
             :food food:Milk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "milk"@en ],
         [ a :Ingredient ;
@@ -4291,7 +4301,7 @@ recipes:GingerSnaps a :Cookie,
         :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Shortening ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "shortening"@en ],
         [ a :Ingredient ;
@@ -4301,7 +4311,7 @@ recipes:GingerSnaps a :Cookie,
             :name "brown sugar"@en ],
         [ a :Ingredient ;
             :food food:Molasses ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "molasses"@en ],
         [ a :Ingredient ;
@@ -4316,7 +4326,7 @@ recipes:GingerSnaps a :Cookie,
             :name "cinnamon"@en ],
         [ a :Ingredient ;
             :food food:Cloves ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "cloves"@en ],
         [ a :Ingredient ;
@@ -4339,12 +4349,12 @@ recipes:GingerSnaps a :Cookie,
 recipes:GlazedCarrots a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "butter"@en ],
         [ a :Ingredient ;
             :food food:PowderedSugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "powdered sugar"@en ],
         [ a :Ingredient ;
@@ -4383,22 +4393,22 @@ recipes:GoldenNuggetBeef a :Recipe ;
             :name "cornstarch"@en ],
         [ a :Ingredient ;
             :food food:Ginger ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "ginger"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
             :food food:Beef ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "unsalted beef boullion"@en ],
         [ a :Ingredient ;
             :food food:Water ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "water"@en ],
         [ a :Ingredient ;
@@ -4431,7 +4441,7 @@ recipes:GrahamCrackerCake a :Cake,
     :hasDbpediaLink dbpedia:Graham_cracker ;
     :hasIngredient [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "butter"@en ],
         [ a :Ingredient ;
@@ -4473,7 +4483,7 @@ recipes:GreenBeanSalad a :Recipe,
             :name "fresh beans"@en ],
         [ a :Ingredient ;
             :food food:SaladOil ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "salad oil"@en ],
         [ a :Ingredient ;
@@ -4483,7 +4493,7 @@ recipes:GreenBeanSalad a :Recipe,
             :name "white vinegar"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "red onion, chopped"@en ],
         [ a :Ingredient ;
@@ -4503,7 +4513,7 @@ recipes:GreenBeansSalerno a :Recipe ;
             :name "salad oil"@en ],
         [ a :Ingredient ;
             :food food:Vinegar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "vinegar"@en ],
         [ a :Ingredient ;
@@ -4581,32 +4591,32 @@ recipes:HoneyGrahamCrackers a :Cookie,
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:WheatFlour ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "whole wheat flour"@en ],
         [ a :Ingredient ;
             :food food:BrownSugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "brown sugar"@en ],
         [ a :Ingredient ;
             :food food:Shortening ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "shortening"@en ],
         [ a :Ingredient ;
             :food food:Cinnamon ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "cinnamon"@en ],
         [ a :Ingredient ;
             :food food:Honey ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "honey"@en ],
         [ a :Ingredient ;
             :food food:Oil ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "oil"@en ],
         [ a :Ingredient ;
@@ -4632,7 +4642,7 @@ recipes:HorseradishDressing a :Recipe,
         :SaladAndDressings ;
     :hasIngredient [ a :Ingredient ;
             :food food:Horseradish ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "horseradish"@en ],
         [ a :Ingredient ;
@@ -4647,12 +4657,12 @@ recipes:HorseradishDressing a :Recipe,
             :name "sour cream"@en ],
         [ a :Ingredient ;
             :food food:Buttermilk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "buttermilk"@en ],
         [ a :Ingredient ;
             :food food:Oil ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "oil"@en ],
         [ a :Ingredient ;
@@ -4667,17 +4677,17 @@ recipes:HorseradishDressing a :Recipe,
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
             :food food:Kelp ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Teaspoon ] ;
             :name "kelp"@en ],
         [ a :Ingredient ;
             :food food:Vinegar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "vinegar"@en ] ;
     :instructions "Combine all ingredients in blender or food processor."@en ;
@@ -4712,7 +4722,7 @@ recipes:HotWaterChocolateCake a :Cake,
         :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Margarine ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "margarine"@en ],
         [ a :Ingredient ;
@@ -4727,12 +4737,12 @@ recipes:HotWaterChocolateCake a :Cake,
             :name "cocoa"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:SourMilk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sour milk"@en ],
         [ a :Ingredient ;
@@ -4747,7 +4757,7 @@ recipes:HotWaterChocolateCake a :Cake,
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Cloves ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "cloves"@en ],
         [ a :Ingredient ;
@@ -4804,7 +4814,7 @@ recipes:HungryBearVegetableSoup a :Recipe,
             :name "tomatoes, crushed"@en ],
         [ a :Ingredient ;
             :food food:Cabbage ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit "head" ] ;
             :name "cabbage"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Matzah_balls.jpg?width=300> ;
@@ -4824,7 +4834,7 @@ recipes:ImpossibleTacoPie a :Recipe ;
             :name "chopped green chiles, drained"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
@@ -4838,7 +4848,7 @@ recipes:ImpossibleTacoPie a :Recipe ;
                     :unit measurements:Cup ] ;
             :name "milk"@en ],
         [ a :Ingredient ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "Bisquick baking mix"@en ],
         [ a :Ingredient ;
@@ -4868,7 +4878,8 @@ recipes:InaHurryChickenCurry a :Recipe ;
             :name "skinless b1less chicken breasts"@en ],
         [ a :Ingredient ;
             :food food:Broccoli ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.5 ;
+                    :unit measurements:Pound ] ;
             :name "broccoli florets, bite size pieces"@en ],
         [ a :Ingredient ;
             :food food:VegetableOil ;
@@ -4877,7 +4888,7 @@ recipes:InaHurryChickenCurry a :Recipe ;
             :name "vegetable oil"@en ],
         [ a :Ingredient ;
             :food food:Onions ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "white onions, chopped"@en ],
         [ a :Ingredient ;
@@ -4887,7 +4898,7 @@ recipes:InaHurryChickenCurry a :Recipe ;
             :name "garlic, minced"@en ],
         [ a :Ingredient ;
             :food food:GreenOnions ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "green onions, sliced"@en ],
         [ a :Ingredient ;
@@ -4917,12 +4928,12 @@ recipes:InaHurryChickenCurry a :Recipe ;
             :name "cooking apple, cored and chopped"@en ],
         [ a :Ingredient ;
             :food food:Raisins ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "raisins"@en ],
         [ a :Ingredient ;
             :food food:Peanuts ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "chopped peanuts"@en ] ;
     :instructions "Cut chicken into 1 inch cubes. Heat 2 tablespoons of oil over medium-high heat in a large skillet or wok. Add chicken and saute, stirring for about 5 minutes. Remove to side dish. Place remaining tablespoon of oil in the skillet and cook white onion, garlic and green onion until 10der. Stir in curry, ginger and cornstarch. Slowly add chicken broth; stir until smooth. Add broccoli, apple, raisins and cooked chicken. Cover and simmer for 10 minutes. Serve on a bed of rice and garnish with chopped peanuts. Makes 4 servings."@en ;
@@ -4957,12 +4968,12 @@ recipes:JelloPastelCookies a :Cookie,
             :name "fruit jello"@en ],
         [ a :Ingredient ;
             :food food:Margarine ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "margarine"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
@@ -5002,7 +5013,7 @@ recipes:LemonCloudPie a :Pie,
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Cornstarch ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "cornstarch"@en ],
         [ a :Ingredient ;
@@ -5017,7 +5028,7 @@ recipes:LemonCloudPie a :Pie,
             :name "lemon rind, grated"@en ],
         [ a :Ingredient ;
             :food food:LemonJuice ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "lemon juice"@en ],
         [ a :Ingredient ;
@@ -5073,7 +5084,7 @@ recipes:LemonLusciousPie a :Pie,
             :name "cornstarch"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "butter"@en ],
         [ a :Ingredient ;
@@ -5083,7 +5094,7 @@ recipes:LemonLusciousPie a :Pie,
             :name "lemon rind, grated"@en ],
         [ a :Ingredient ;
             :food food:LemonJuice ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "lemon juice"@en ],
         [ a :Ingredient ;
@@ -5125,7 +5136,7 @@ recipes:LemonMeringuePie a :Pie,
             :name "cornstarch"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -5135,7 +5146,7 @@ recipes:LemonMeringuePie a :Pie,
             :name "hot water"@en ],
         [ a :Ingredient ;
             :food food:LemonJuice ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "lemon juice, fresh or bottled"@en ],
         [ a :Ingredient ;
@@ -5150,7 +5161,7 @@ recipes:LemonMeringuePie a :Pie,
             :name "butter"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
@@ -5184,12 +5195,12 @@ recipes:LemonPoppyCake a :Cake,
             :name "water"@en ],
         [ a :Ingredient ;
             :food food:Oil ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "oil"@en ],
         [ a :Ingredient ;
             :food food:Seeds ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "poppy seeds"@en ],
         [ a :Ingredient ;
@@ -5210,12 +5221,12 @@ recipes:LemonSquares a :Cookie,
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Margarine ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "margarine"@en ],
         [ a :Ingredient ;
             :food food:PowderedSugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "powdered sugar"@en ],
         [ a :Ingredient ;
@@ -5225,12 +5236,12 @@ recipes:LemonSquares a :Cookie,
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:BakingPowder ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "baking powder"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -5249,6 +5260,8 @@ recipes:LemonSquares a :Cookie,
 
 recipes:LightOldFashionedFruitCake a :Cake,
         :Recipe ;
+    rdfs:label "Christmas cake"@en ;
+    :hasDbpediaLink dbpedia:Christmas_cake ;
     :hasIngredient [ a :Ingredient ;
             :food food:Pecans ;
             :hasImperialMeasurementUnit [ :quantity 24.0 ;
@@ -5261,7 +5274,7 @@ recipes:LightOldFashionedFruitCake a :Cake,
             :name "sifted flour"@en ],
         [ a :Ingredient ;
             :food food:BakingPowder ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "baking powder"@en ],
         [ a :Ingredient ;
@@ -5313,6 +5326,7 @@ recipes:LightOldFashionedFruitCake a :Cake,
             :food food:Eggs ;
             :hasStandardMeasurementUnit [ :quantity 6.0 ] ;
             :name "eggs"@en ] ;
+    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Christmas_cake_(6954064737).jpg?width=300> ;
     :instructions "Sift dry ingredients into a 4 quart bowl.  Add fruit and nuts.  Mix until well coated.  Set aside.  Cream butter, gradually add sugar and cream until fluffy.  Add eggs one at a time, beating well after each.  Add brandy.  Combine with fruit mixture.  Mix well.  Turn into a 10 inch tube pan or four 1# coffee cans lined with foil, filling pans 2/3 full. Bake in slow oven, 275 degrees for 2 3/4 to 3 hours.  About 1/2 hour before done brush lightly with honey or light corn syrup.  Cool completely then wrap tightly in foil to store for several weeks.  Brush with brandy about once a week."@en ;
     :name "Light Old Fashioned Fruit Cake"@en .
 
@@ -5322,7 +5336,7 @@ recipes:LimaBeanSalad a :Recipe,
     :hasDbpediaLink dbpedia:Bean_salad ;
     :hasIngredient [ a :Ingredient ;
             :food food:Oregano ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "oregano"@en ],
         [ a :Ingredient ;
@@ -5332,7 +5346,7 @@ recipes:LimaBeanSalad a :Recipe,
             :name "vegetable oil"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -5372,22 +5386,22 @@ recipes:MarylandFriedChicken a :Recipe ;
             :name "broiler chicken, cut up"@en ],
         [ a :Ingredient ;
             :food food:Flour ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "all-purpose flour"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
             :food food:Water ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "water"@en ],
         [ a :Ingredient ;
@@ -5416,27 +5430,27 @@ recipes:MexicanMeatballSoup a :Recipe,
             :name "hamburger"@en ],
         [ a :Ingredient ;
             :food food:Rice ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "minute rice"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "onion, finely chopped"@en ],
         [ a :Ingredient ;
             :food food:GarlicPowder ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "garlic powder"@en ],
         [ a :Ingredient ;
             :food food:Oregano ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "oregano"@en ],
         [ a :Ingredient ;
             :food food:Cumin ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "cumin"@en ],
         [ a :Ingredient ;
@@ -5491,7 +5505,7 @@ recipes:MexicanMeatballSoup a :Recipe,
             :name "tomato sauce"@en ],
         [ a :Ingredient ;
             :food food:Rice ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "instant rice"@en ],
         [ a :Ingredient ;
@@ -5537,7 +5551,7 @@ recipes:MinestroneSoup a :Recipe,
             :name "zucchini, diced"@en ],
         [ a :Ingredient ;
             :food food:Cabbage ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit "head" ] ;
             :name "cabbage, chopped"@en ],
         [ a :Ingredient ;
@@ -5580,17 +5594,17 @@ recipes:Minties a :Cookie,
         :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Oil ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.6666666666666666 ;
                     :unit measurements:Cup ] ;
             :name "oil"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Apple ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "mint apple jelly"@en ],
         [ a :Ingredient ;
@@ -5631,7 +5645,7 @@ recipes:MushroomsinSourCream a :Recipe ;
             :name "bacon, cut up"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "onion, minced"@en ],
         [ a :Ingredient ;
@@ -5659,12 +5673,12 @@ recipes:MyBestGingerbread a :Cake,
     :hasDbpediaLink dbpedia:Gingerbread ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "butter"@en ],
         [ a :Ingredient ;
@@ -5694,12 +5708,12 @@ recipes:MyBestGingerbread a :Cake,
             :name "ginger"@en ],
         [ a :Ingredient ;
             :food food:Cloves ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "cloves"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -5741,7 +5755,7 @@ recipes:OatmealCake a :Cake,
             :name "white sugar"@en ],
         [ a :Ingredient ;
             :food food:Margarine ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "margarine"@en ],
         [ a :Ingredient ;
@@ -5751,7 +5765,7 @@ recipes:OatmealCake a :Cake,
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -5776,7 +5790,7 @@ recipes:OatmealCake a :Cake,
             :name "chopped nuts"@en ],
         [ a :Ingredient ;
             :food food:EvaporatedMilk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "evaporated milk"@en ],
         [ a :Ingredient ;
@@ -5873,12 +5887,12 @@ recipes:OatmealFudgeBars a :Cookie,
         :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:BakingSoda ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "baking soda"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -5888,7 +5902,7 @@ recipes:OatmealFudgeBars a :Cookie,
             :name "quick-cooking oats"@en ],
         [ a :Ingredient ;
             :food food:Walnuts ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "walnuts, chopped"@en ],
         [ a :Ingredient ;
@@ -5898,17 +5912,17 @@ recipes:OatmealFudgeBars a :Cookie,
             :name "butter or margarine"@en ],
         [ a :Ingredient ;
             :food food:SweetenedCondensedMilk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "sweetened condensed milk"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Walnuts ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "walnuts, chopped"@en ],
         [ a :Ingredient ;
@@ -5927,7 +5941,7 @@ recipes:OatmealFudgeBars a :Cookie,
             :name "semi-sweet chocolate chips"@en ],
         [ a :Ingredient ;
             :food food:Shortening ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "shortening"@en ],
         [ a :Ingredient ;
@@ -5937,12 +5951,12 @@ recipes:OatmealFudgeBars a :Cookie,
             :name "light brown sugar, firmly packed"@en ],
         [ a :Ingredient ;
             :food food:Vanilla ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "vanilla"@en ],
         [ a :Ingredient ;
             :food food:Flour ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "sifted flour"@en ] ;
     :instructions """Oatmeal Layer:  Grease 9"x9" baking pan.  Beat shortening with sugar until fluffy.  Beat in egg and vanilla.  Sift flour with soda and salt into sugar mixture.  Mix well.  Stir in oats and nuts.  Remove 1 cup for topping.  Press the rest of the mixture evenly into the bottom of the pan.
@@ -5966,12 +5980,12 @@ recipes:OldFashionedApplePie a :Pie,
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Cinnamon ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "cinnamon"@en ],
         [ a :Ingredient ;
             :food food:Water ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "water"@en ],
         [ a :Ingredient ;
@@ -6015,7 +6029,7 @@ recipes:Orange-PoppySeedPoundCake a :Cake,
             :name "unsifted cake flour"@en ],
         [ a :Ingredient ;
             :food food:Fresh ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "fresh orange juice"@en ],
         [ a :Ingredient ;
@@ -6025,17 +6039,17 @@ recipes:Orange-PoppySeedPoundCake a :Cake,
             :name "eggs"@en ],
         [ a :Ingredient ;
             :food food:BakingPowder ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Teaspoon ] ;
             :name "baking powder"@en ],
         [ a :Ingredient ;
             :food food:BakingSoda ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "baking soda"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -6045,7 +6059,7 @@ recipes:Orange-PoppySeedPoundCake a :Cake,
             :name "poppy seeds"@en ],
         [ a :Ingredient ;
             :food food:PowderedSugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "powdered sugar"@en ],
         [ a :Ingredient ;
@@ -6066,7 +6080,7 @@ recipes:OrangeAngelFoodCake a :Cake,
             :name "angel food cake mix"@en ],
         [ a :Ingredient ;
             :food food:Juice ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "frozen orange juice concentrate, thawed"@en ],
         [ a :Ingredient ;
@@ -6076,7 +6090,7 @@ recipes:OrangeAngelFoodCake a :Cake,
             :name "frozen light whipped topping, thawed"@en ],
         [ a :Ingredient ;
             :food food:Fat ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "plain low fat yogurt"@en ] ;
     :instructions "Prepare angel food cake as directed on package, but pour 1/3 cup of the thawed orange juice into a 2 cup measure and add enough water for the mixture to equal the amount of water called for in package directions.  Continue to prepare cake as directed, baking the batter in an ungreased 10 inch tube pan.  Immediately invert the cake, leaving in pan.  Cool completely.  Loosen sides of cake from pan; remove cake.  To make the topping, in a medium bowl, gently stir together the thawed topping and yogurt.  Fold in remaining orange juice concentrate.  Spread topping mixture over top ad sides of cake."@en ;
@@ -6095,7 +6109,7 @@ recipes:OrangeSweetPotatoes a :Recipe ;
             :name "water"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "butter"@en ],
         [ a :Ingredient ;
@@ -6128,7 +6142,7 @@ recipes:OvenFriedChicken a :Recipe ;
             :name "cream of mushroom soup"@en ],
         [ a :Ingredient ;
             :food food:Milk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "milk"@en ],
         [ a :Ingredient ;
@@ -6158,7 +6172,7 @@ recipes:OvenFriedChicken a :Recipe ;
 recipes:ParsleyandParmasenBakedChicken a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:SaladDressing ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "Italian salad dressing"@en ],
         [ a :Ingredient ;
@@ -6168,12 +6182,12 @@ recipes:ParsleyandParmasenBakedChicken a :Recipe ;
             :name "water"@en ],
         [ a :Ingredient ;
             :food food:Cheese ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "parmasen cheese"@en ],
         [ a :Ingredient ;
             :food food:BreadCrumbs ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "bread crumbs"@en ],
         [ a :Ingredient ;
@@ -6183,17 +6197,17 @@ recipes:ParsleyandParmasenBakedChicken a :Recipe ;
             :name "parsley"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Paprika ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "paprika"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
@@ -6232,7 +6246,7 @@ recipes:PastaPrimavera a :Recipe ;
             :name "red or green pepper, cut up"@en ],
         [ a :Ingredient ;
             :food food:Mayonnaise ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "reduced calorie mayonnaise"@en ],
         [ a :Ingredient ;
@@ -6247,17 +6261,17 @@ recipes:PastaPrimavera a :Recipe ;
             :name "lemon juice"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:RedPepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "ground red pepper"@en ],
         [ a :Ingredient ;
             :food food:BlackPepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "ground black pepper"@en ],
         [ a :Ingredient ;
@@ -6288,7 +6302,7 @@ recipes:PeaSalad a :Recipe,
             :name "green onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:BaconBits ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "crumbled bacon bits"@en ],
         [ a :Ingredient ;
@@ -6324,7 +6338,7 @@ recipes:PeachAlmondPie a :Pie,
             :name "lemon juice"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
@@ -6339,7 +6353,7 @@ recipes:PeachAlmondPie a :Pie,
             :name "butter"@en ],
         [ a :Ingredient ;
             :food food:AlmondExtract ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "almond extract"@en ],
         [ a :Ingredient ;
@@ -6369,12 +6383,12 @@ recipes:PeachParfaitPie a :Pie,
             :name "Peach or vanilla ice cream"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:HeavyCream ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "heavy cream"@en ],
         [ a :Ingredient ;
@@ -6423,7 +6437,7 @@ recipes:PeanutButterCookies a :Cookie,
             :name "soda"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -6456,22 +6470,22 @@ recipes:PeanutButterIceCreamPie a :Pie,
             :name "graham cracker crumbs, 18 squares"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Margarine ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "margarine, melted"@en ],
         [ a :Ingredient ;
             :food food:WhippedCream ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "whipped cream or cool whip"@en ],
         [ a :Ingredient ;
             :food food:Peanut ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "chunk style peanut buter"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Pecan_pie,_November_2010.jpg?width=300> ;
@@ -6492,12 +6506,12 @@ recipes:PeanutButterPie a :Pie,
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Vanilla ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "vanilla"@en ],
         [ a :Ingredient ;
             :food food:Peanut ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "chunk style peanut butter"@en ],
         [ a :Ingredient ;
@@ -6529,7 +6543,7 @@ recipes:Peas a :Recipe ;
             :name "small onions"@en ],
         [ a :Ingredient ;
             :food food:Wine ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sauterne wine"@en ],
         [ a :Ingredient ;
@@ -6552,12 +6566,12 @@ recipes:PieCrust a :Pie,
             :name "sifted flour"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Shortening ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.6666666666666666 ;
                     :unit measurements:Cup ] ;
             :name "shortening"@en ],
         [ a :Ingredient ;
@@ -6581,7 +6595,8 @@ recipes:Pineapple-CarrotCake a :Cake,
             :name "cream cheese"@en ],
         [ a :Ingredient ;
             :food food:Margarine ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.25 ;
+                    :unit measurements:Pound ] ;
             :name "margarine"@en ],
         [ a :Ingredient ;
             :food food:Oil ;
@@ -6605,7 +6620,7 @@ recipes:Pineapple-CarrotCake a :Cake,
             :name "soda"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -6693,27 +6708,27 @@ recipes:PineappleGrahamBars a :Cookie,
             :name "crushed pineapple, drained."@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "butter or margarine"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "light brown sugar, firmly packed"@en ],
         [ a :Ingredient ;
             :food food:Flour ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sifted flour"@en ],
         [ a :Ingredient ;
             :food food:Crumbs ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "graham cracker crumbs"@en ],
         [ a :Ingredient ;
             :food food:Walnuts ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "walnuts, chopped"@en ],
         [ a :Ingredient ;
@@ -6726,22 +6741,22 @@ recipes:PineappleGrahamBars a :Cookie,
 recipes:PineappleSpareribs a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Vinegar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "vinegar"@en ],
         [ a :Ingredient ;
             :food food:Water ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "water"@en ],
         [ a :Ingredient ;
             :food food:Pineapple ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "pineapple chunks, injuice"@en ],
         [ a :Ingredient ;
@@ -6820,7 +6835,7 @@ recipes:PotatoeCake a :Cake,
             :name "shortening"@en ],
         [ a :Ingredient ;
             :food food:Milk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "milk"@en ],
         [ a :Ingredient ;
@@ -6869,12 +6884,12 @@ recipes:PruneNutBars a :Cookie,
             :name "pitted prunes"@en ],
         [ a :Ingredient ;
             :food food:Margarine ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "margarine"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
@@ -6884,12 +6899,12 @@ recipes:PruneNutBars a :Cookie,
             :name "sifted flour"@en ],
         [ a :Ingredient ;
             :food food:BakingPowder ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "baking powder"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -6914,7 +6929,7 @@ recipes:PruneNutBars a :Cookie,
             :name "walnuts, chopped"@en ],
         [ a :Ingredient ;
             :food food:Coconut ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "coconut"@en ],
         [ a :Ingredient ;
@@ -6963,12 +6978,12 @@ recipes:PumpkinOatmealCookies a :Cookie,
             :name "raisins"@en ],
         [ a :Ingredient ;
             :food food:Allspice ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "allspice"@en ],
         [ a :Ingredient ;
             :food food:Ginger ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Teaspoon ] ;
             :name "ginger"@en ],
         [ a :Ingredient ;
@@ -7022,12 +7037,12 @@ recipes:PumpkinSwirlCheesecake a :Cake,
             :name "vanilla wafer crumbs"@en ],
         [ a :Ingredient ;
             :food food:Margarine ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "melted margarine"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
@@ -7042,12 +7057,12 @@ recipes:PumpkinSwirlCheesecake a :Cake,
             :name "pumpkin"@en ],
         [ a :Ingredient ;
             :food food:Cinnamon ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Teaspoon ] ;
             :name "cinnamon"@en ],
         [ a :Ingredient ;
             :food food:Nutmeg ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "nutmeg"@en ],
         [ a :Ingredient ;
@@ -7091,7 +7106,7 @@ recipes:Ranch-styleBakedBeans a :Recipe ;
             :name "ketchup"@en ],
         [ a :Ingredient ;
             :food food:Water ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "cold water"@en ],
         [ a :Ingredient ;
@@ -7123,12 +7138,12 @@ recipes:RefrigeratorCheesecake a :Cake,
             :name "cornflakes"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "butter"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
@@ -7138,17 +7153,17 @@ recipes:RefrigeratorCheesecake a :Cake,
             :name "gelatin"@en ],
         [ a :Ingredient ;
             :food food:Water ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "cold water"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Milk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "milk"@en ],
         [ a :Ingredient ;
@@ -7158,12 +7173,12 @@ recipes:RefrigeratorCheesecake a :Cake,
             :name "grated lemon rind"@en ],
         [ a :Ingredient ;
             :food food:LemonJuice ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "lemon juice"@en ],
         [ a :Ingredient ;
             :food food:HeavyCream ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "heavy cream"@en ],
         [ a :Ingredient ;
@@ -7196,12 +7211,12 @@ recipes:Sandras%22TreeTrimmer%22Chicken a :Recipe ;
             :name "Uncle Ben's Converted Rice"@en ],
         [ a :Ingredient ;
             :food food:Ham ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "slivered ham"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -7221,12 +7236,12 @@ recipes:Sandras%22TreeTrimmer%22Chicken a :Recipe ;
             :name "can Italian style tomatoes"@en ],
         [ a :Ingredient ;
             :food food:RedWine ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "red wine"@en ],
         [ a :Ingredient ;
             :food food:Seasoning ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Teaspoon ] ;
             :name "Italian seasoning"@en ] ;
     :instructions "Brown chicken in marinade from artichokes. Put raw rice in bottom of large baking dish. Lay chicken on top. Add artichokes, mushrooms, onion, and hand in layers. Pour other ingredients over this. Cover and bake for 1 hour. Remove cover. Bake for another half hour or until thick and chicken is browned."@en ;
@@ -7235,7 +7250,8 @@ recipes:Sandras%22TreeTrimmer%22Chicken a :Recipe ;
 recipes:SaucyShrimpOverChineseNoodleCakes a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Shrimp ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.5 ;
+                    :unit measurements:Pound ] ;
             :name "medium-size raw shrimp, peeled and deveined"@en ],
         [ a :Ingredient ;
             :food food:Water ;
@@ -7269,7 +7285,7 @@ recipes:SaucyShrimpOverChineseNoodleCakes a :Recipe ;
             :name "minced garlic"@en ],
         [ a :Ingredient ;
             :food food:Minced ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "minced ginger"@en ],
         [ a :Ingredient ;
@@ -7323,7 +7339,7 @@ recipes:SautedChickenBreats a :Recipe ;
             :name "mushrooms, sliced"@en ],
         [ a :Ingredient ;
             :food food:Wine ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "wine cooler"@en ],
         [ a :Ingredient ;
@@ -7356,31 +7372,32 @@ recipes:SautedChickenLivers a :Recipe ;
             :name "chicken livers"@en ],
         [ a :Ingredient ;
             :food food:Mushrooms ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.25 ;
+                    :unit measurements:Pound ] ;
             :name "mushrooms, sliced"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "butter"@en ],
         [ a :Ingredient ;
             :food food:Onions ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "onions, minced"@en ],
         [ a :Ingredient ;
             :food food:Flour ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:WhiteWine ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "dry white wine"@en ],
         [ a :Ingredient ;
             :food food:Poultry ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "poultry seasoning"@en ],
         [ a :Ingredient ;
@@ -7390,7 +7407,7 @@ recipes:SautedChickenLivers a :Recipe ;
             :name "parsley"@en ],
         [ a :Ingredient ;
             :food food:Oregano ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "oregano"@en ] ;
     :instructions "Rinse livers and drain. Shake in flour. Brown in butter a few at a time on medium high heat. Drain excess butter. Put livers in a large skillet. Add all other ingredients. Simmer about 30 minutes with the lid on. Turn of10. Uncover and cook about 15 minutes until slightly dry and sauce is thick."@en ;
@@ -7433,7 +7450,7 @@ recipes:SavoryChickenCasserole a :Recipe ;
             :name "shortening"@en ],
         [ a :Ingredient ;
             :food food:Milk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit "can" ] ;
             :name "milk"@en ],
         [ a :Ingredient ;
@@ -7443,12 +7460,12 @@ recipes:SavoryChickenCasserole a :Recipe ;
             :name "cream of chicken soup"@en ],
         [ a :Ingredient ;
             :food food:Poultry ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "poultry seasoning"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -7531,12 +7548,12 @@ recipes:SherryWineCake a :Cake,
             :name "instant vanilla pudding"@en ],
         [ a :Ingredient ;
             :food food:Oil ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "oil"@en ],
         [ a :Ingredient ;
             :food food:Sherry ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "sherry cooking wine"@en ],
         [ a :Ingredient ;
@@ -7559,7 +7576,8 @@ recipes:ShrimpSaute a :Recipe ;
             :name "raw shrimp, peeled and deveined"@en ],
         [ a :Ingredient ;
             :food food:Mushrooms ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.5 ;
+                    :unit measurements:Pound ] ;
             :name "fresh mushrooms, sliced"@en ],
         [ a :Ingredient ;
             :food food:Linguini ;
@@ -7568,12 +7586,12 @@ recipes:ShrimpSaute a :Recipe ;
             :name "linguini or spaghetti"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "butter or margarine"@en ],
         [ a :Ingredient ;
             :food food:GreenPepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Small ] ;
             :name "green pepper, chopped"@en ],
         [ a :Ingredient ;
@@ -7588,15 +7606,16 @@ recipes:ShrimpSaute a :Recipe ;
             :name "grated Romano cheese"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ] ;
             :name "fresh parsely, chopped"@en ] ;
     :instructions "In a skillet, melt butter over medium heat. Add shrimp, mushrooms, green pepper and garlic. Saute until shrimp turn pink, about 3-5 minutes. Meanwhile, cook pasta according to package directions; drain and place on a large serving platter. Top with shrimp mixture. Sprinkle with cheese, salt, pepper and parsley. Toss well; garnish with lemon. Serve immediately."@en ;
     :name "Shrimp Saute"@en .
@@ -7609,7 +7628,8 @@ recipes:Sitr-FryBeefandBroccoli a :Recipe ;
             :name "flank steak"@en ],
         [ a :Ingredient ;
             :food food:Broccoli ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.75 ;
+                    :unit measurements:Pound ] ;
             :name "broccoli"@en ],
         [ a :Ingredient ;
             :food food:SoySauce ;
@@ -7681,12 +7701,12 @@ recipes:Snickerdoodles a :Cookie,
             :name "baking soda"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Margarine ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "margarine"@en ],
         [ a :Ingredient ;
@@ -7714,11 +7734,9 @@ recipes:Snickerdoodles a :Cookie,
 
 recipes:SoftSugarCookies a :Cookie,
         :Recipe ;
-    rdfs:label "Chocolate chip cookie"@en ;
-    :hasDbpediaLink dbpedia:Chocolate_chip_cookie ;
     :hasIngredient [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "butter or margarine"@en ],
         [ a :Ingredient ;
@@ -7743,12 +7761,12 @@ recipes:SoftSugarCookies a :Cookie,
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:BakingPowder ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "baking powder"@en ],
         [ a :Ingredient ;
             :food food:BakingSoda ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "baking soda"@en ],
         [ a :Ingredient ;
@@ -7760,7 +7778,6 @@ recipes:SoftSugarCookies a :Cookie,
             :food food:Eggs ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/2ChocolateChipCookies.jpg?width=300> ;
     :instructions "Cream butter.  Add sugar gradually while continuing to cream.  Ad eggs one at a time, beating well after each.  Add vanilla.  Beat until light and fluffy.  Add mixed dry ingredients, alternately with sour cream; begin and end with dry ingredients.  For 3 inch cookies drop by heaping teaspoons.  With spatula flatten into circles about 2 inch wide.  Sprinkle with sugar and cinnamon.  Bake in hot oven - 400 degrees for 10-20 minutes.  Makes about thirty - 3 inch cookies."@en ;
     :name "Soft Sugar Cookies"@en .
 
@@ -7772,22 +7789,22 @@ recipes:SoleAlmondie a :Recipe ;
             :name "sole filets"@en ],
         [ a :Ingredient ;
             :food food:Flour ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:WhitePepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "white pepper"@en ],
         [ a :Ingredient ;
             :food food:Milk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "milk"@en ],
         [ a :Ingredient ;
@@ -7821,7 +7838,8 @@ recipes:SoleThermidor a :Recipe ;
             :name "fish fillets"@en ],
         [ a :Ingredient ;
             :food food:Cheese ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.5 ;
+                    :unit measurements:Pound ] ;
             :name "grated cheese"@en ],
         [ a :Ingredient ;
             :food food:Milk ;
@@ -7835,21 +7853,21 @@ recipes:SoleThermidor a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "margerine"@en ],
         [ a :Ingredient ;
             :food food:Flour ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Juice ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "lemon juice or sherry"@en ],
         [ a :Ingredient ;
@@ -7880,7 +7898,7 @@ recipes:SourCreamEnchiladas a :Recipe ;
             :name "green onions, chopped"@en ],
         [ a :Ingredient ;
             :food food:Cumin ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "cumin"@en ],
         [ a :Ingredient ;
@@ -7925,7 +7943,7 @@ recipes:SourCreamRaisinPie a :Pie,
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
@@ -7940,7 +7958,7 @@ recipes:SourCreamRaisinPie a :Pie,
             :name "vanilla"@en ],
         [ a :Ingredient ;
             :food food:Nutmeg ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "nutmeg"@en ],
         [ a :Ingredient ;
@@ -7966,17 +7984,17 @@ recipes:SouthCarolinaCobbler a :Recipe ;
             :name "sugar, divided"@en ],
         [ a :Ingredient ;
             :food food:Almond ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "almond flavoring"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "butter or margarine, melted"@en ],
         [ a :Ingredient ;
             :food food:Flour ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "flour"@en ],
         [ a :Ingredient ;
@@ -7986,7 +8004,7 @@ recipes:SouthCarolinaCobbler a :Recipe ;
             :name "baking powder"@en ],
         [ a :Ingredient ;
             :food food:Milk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "milk"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Plum_Blueberry_Cobbler.jpg?width=300> ;
@@ -8002,7 +8020,7 @@ recipes:SpanishCreamPudding a :Recipe ;
     :hasDbpediaLink dbpedia:Bread_pudding ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
@@ -8012,7 +8030,7 @@ recipes:SpanishCreamPudding a :Recipe ;
             :name "knox gelatin"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -8059,7 +8077,7 @@ recipes:SpecialPruneCake a :Cake,
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -8069,7 +8087,7 @@ recipes:SpecialPruneCake a :Cake,
             :name "soda"@en ],
         [ a :Ingredient ;
             :food food:BakingPowder ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "baking powder"@en ],
         [ a :Ingredient ;
@@ -8089,7 +8107,7 @@ recipes:SpecialPruneCake a :Cake,
             :name "cooked prunes"@en ],
         [ a :Ingredient ;
             :food food:Nuts ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "chopped nuts"@en ],
         [ a :Ingredient ;
@@ -8099,12 +8117,12 @@ recipes:SpecialPruneCake a :Cake,
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Buttermilk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "buttermilk"@en ],
         [ a :Ingredient ;
             :food food:SodaWater ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "soda water"@en ],
         [ a :Ingredient ;
@@ -8114,7 +8132,7 @@ recipes:SpecialPruneCake a :Cake,
             :name "white corn syrup"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "butter"@en ],
         [ a :Ingredient ;
@@ -8172,7 +8190,7 @@ recipes:SpicyFruitandNutCake a :Cake,
             :name "allspice"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -8192,22 +8210,22 @@ recipes:SpicyFruitandNutCake a :Cake,
             :name "buttermilk"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Buttermilk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "buttermilk"@en ],
         [ a :Ingredient ;
             :food food:Soda ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "soda"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "unsalted butter"@en ],
         [ a :Ingredient ;
@@ -8249,7 +8267,8 @@ recipes:SpicySingaporeWings a :Recipe ;
 recipes:SpinachFritatta a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Spinach ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.5 ;
+                    :unit measurements:Pound ] ;
             :name "fresh spinach"@en ],
         [ a :Ingredient ;
             :food food:Bacon ;
@@ -8258,7 +8277,7 @@ recipes:SpinachFritatta a :Recipe ;
             :name "bacon"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "green onion, chopped"@en ],
         [ a :Ingredient ;
@@ -8268,17 +8287,17 @@ recipes:SpinachFritatta a :Recipe ;
             :name "clove garlic, minced"@en ],
         [ a :Ingredient ;
             :food food:Basil ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "basil"@en ],
         [ a :Ingredient ;
             :food food:Water ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "water"@en ],
         [ a :Ingredient ;
             :food food:Grated ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "swiss cheese, grated"@en ],
         [ a :Ingredient ;
@@ -8302,7 +8321,8 @@ recipes:SpinachPie a :Recipe ;
             :name "frozen chopped spinach, thawed and drained"@en ],
         [ a :Ingredient ;
             :food food:Cheese ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.5 ;
+                    :unit measurements:Pound ] ;
             :name "feta cheese, crumbled"@en ],
         [ a :Ingredient ;
             :food food:PhylloPastry ;
@@ -8311,17 +8331,17 @@ recipes:SpinachPie a :Recipe ;
             :name "phyllo pastry"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "butter or margarine"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "onion, finely chopped"@en ],
         [ a :Ingredient ;
             :food food:Parsley ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "parsley, chopped"@en ],
         [ a :Ingredient ;
@@ -8336,12 +8356,12 @@ recipes:SpinachPie a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "butter or margarine, melted"@en ],
         [ a :Ingredient ;
@@ -8363,7 +8383,8 @@ recipes:SpinachSalad a :Recipe,
     :hasDbpediaLink dbpedia:Spinach_salad ;
     :hasIngredient [ a :Ingredient ;
             :food food:Spinach ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.5 ;
+                    :unit measurements:Pound ] ;
             :name "spinach leaves"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
@@ -8377,12 +8398,12 @@ recipes:SpinachSalad a :Recipe,
             :name "bacon"@en ],
         [ a :Ingredient ;
             :food food:Vinegar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.6666666666666666 ;
                     :unit measurements:Cup ] ;
             :name "vinegar"@en ],
         [ a :Ingredient ;
             :food food:Water ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "water"@en ],
         [ a :Ingredient ;
@@ -8453,22 +8474,22 @@ recipes:SpinachSaladwithAvocado a :Recipe,
             :name "garlic, crushed"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:LemonPeel ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "lemon peel"@en ],
         [ a :Ingredient ;
             :food food:Paprika ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "paprika"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
@@ -8478,7 +8499,7 @@ recipes:SpinachSaladwithAvocado a :Recipe,
             :name "vinegar"@en ],
         [ a :Ingredient ;
             :food food:OliveOil ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "olive oil"@en ],
         [ a :Ingredient ;
@@ -8511,7 +8532,7 @@ recipes:SpinachSouffle a :Recipe ;
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt and pepper"@en ],
         [ a :Ingredient ;
@@ -8521,7 +8542,7 @@ recipes:SpinachSouffle a :Recipe ;
             :name "worcestershire sauce"@en ],
         [ a :Ingredient ;
             :food food:Milk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "milk"@en ],
         [ a :Ingredient ;
@@ -8656,12 +8677,12 @@ recipes:StuffedGreenPeppers a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Rice ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "cooked rice"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "chopped onion"@en ],
         [ a :Ingredient ;
@@ -8686,7 +8707,8 @@ recipes:StuffedZucchini a :Recipe ;
     :hasDbpediaLink dbpedia:Stuffed_squash ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sausage ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.5 ;
+                    :unit measurements:Pound ] ;
             :name "hamburger or sausage"@en ],
         [ a :Ingredient ;
             :food food:Zucchini ;
@@ -8744,6 +8766,7 @@ recipes:SummerFruitSalad a :Recipe,
             :name "sour cream"@en ],
         [ a :Ingredient ;
             :food food:Cantaloupe ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ] ;
             :name "cantaloupe, cut into chunks"@en ] ;
     :instructions "Combine all ingredients.  Cover and chill several hours or overnight."@en ;
     :name "Summer Fruit Salad"@en .
@@ -8756,7 +8779,7 @@ recipes:SummerSquash a :Recipe ;
             :name "onion, grated"@en ],
         [ a :Ingredient ;
             :food food:ParmesanCheese ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "parmesan cheese"@en ],
         [ a :Ingredient ;
@@ -8777,7 +8800,8 @@ recipes:SweetandSourMeatballs a :Recipe ;
             :name "hamburger"@en ],
         [ a :Ingredient ;
             :food food:Sausage ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.5 ;
+                    :unit measurements:Pound ] ;
             :name "sausage"@en ],
         [ a :Ingredient ;
             :hasStandardMeasurementUnit [ :quantity 1.0 ;
@@ -8785,7 +8809,7 @@ recipes:SweetandSourMeatballs a :Recipe ;
             :name "accent"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -8795,12 +8819,12 @@ recipes:SweetandSourMeatballs a :Recipe ;
             :name "chopped onion"@en ],
         [ a :Ingredient ;
             :food food:BreadCrumbs ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "bread crumbs"@en ],
         [ a :Ingredient ;
             :food food:Milk ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "milk"@en ],
         [ a :Ingredient ;
@@ -8829,12 +8853,12 @@ recipes:SweetandSourMeatballs a :Recipe ;
             :name "boullion"@en ],
         [ a :Ingredient ;
             :food food:Water ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "water"@en ],
         [ a :Ingredient ;
             :food food:Vinegar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "vinegar"@en ],
         [ a :Ingredient ;
@@ -8859,7 +8883,7 @@ recipes:SweetandSourPork a :Recipe ;
             :name "pork 10derloin"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -8879,12 +8903,12 @@ recipes:SweetandSourPork a :Recipe ;
             :name "cold water"@en ],
         [ a :Ingredient ;
             :food food:Chicken ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "chicken coasting mix"@en ],
         [ a :Ingredient ;
             :food food:Water ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "ice water"@en ],
         [ a :Ingredient ;
@@ -8899,22 +8923,22 @@ recipes:SweetandSourPork a :Recipe ;
             :name "ketchup"@en ],
         [ a :Ingredient ;
             :food food:BrownSugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.6666666666666666 ;
                     :unit measurements:Cup ] ;
             :name "brown sugar"@en ],
         [ a :Ingredient ;
             :food food:GranulatedSugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.6666666666666666 ;
                     :unit measurements:Cup ] ;
             :name "granulated sugar"@en ],
         [ a :Ingredient ;
             :food food:Cinnamon ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "cinnamon"@en ],
         [ a :Ingredient ;
             :food food:Ginger ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "ginger"@en ],
         [ a :Ingredient ;
@@ -8959,22 +8983,22 @@ recipes:SweetandSourRedCabbage a :Recipe ;
             :name "unparred apple, cubed"@en ],
         [ a :Ingredient ;
             :food food:BrownSugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "brown sugar"@en ],
         [ a :Ingredient ;
             :food food:Vinegar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "vinegar"@en ],
         [ a :Ingredient ;
             :food food:Water ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "water"@en ],
         [ a :Ingredient ;
             :food food:CarawaySeed ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Teaspoon ] ;
             :name "caraway seed"@en ] ;
     :instructions "Heat oil in skillet. add cabbage and apple. Combine rest of ingredients, pour over cabbage, Cover tightly. Cook over low heat, sit occasionally for 15-20 minutes, until tender."@en ;
@@ -8983,12 +9007,12 @@ recipes:SweetandSourRedCabbage a :Recipe ;
 recipes:TeriyakiSteak a :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:SoySauce ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "soy sauce"@en ],
         [ a :Ingredient ;
             :food food:WhiteWine ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "white wine"@en ],
         [ a :Ingredient ;
@@ -9042,7 +9066,7 @@ recipes:TheSpinach a :Recipe ;
             :name "milk"@en ],
         [ a :Ingredient ;
             :food food:Nutmeg ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "nutmeg"@en ],
         [ a :Ingredient ;
@@ -9054,8 +9078,6 @@ recipes:TheSpinach a :Recipe ;
     :name "The Spinach"@en .
 
 recipes:ThreeCheeseSpinach a :Recipe ;
-    rdfs:label "Minas cheese"@en ;
-    :hasDbpediaLink dbpedia:Minas_cheese ;
     :hasIngredient [ a :Ingredient ;
             :food food:Mushroom ;
             :hasImperialMeasurementUnit [ :quantity 4.0 ;
@@ -9068,7 +9090,7 @@ recipes:ThreeCheeseSpinach a :Recipe ;
             :name "frozen chopped spinach"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Medium ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
@@ -9078,19 +9100,18 @@ recipes:ThreeCheeseSpinach a :Recipe ;
             :name "low fat cottage cheese"@en ],
         [ a :Ingredient ;
             :food food:ParmesanCheese ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "grated parmesan cheese"@en ],
         [ a :Ingredient ;
             :food food:Grated ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "grated swiss cheese"@en ],
         [ a :Ingredient ;
             :food food:Eggs ;
             :hasStandardMeasurementUnit [ :quantity 2.0 ] ;
             :name "eggs, lightly beaten"@en ] ;
-    :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Queijo_Minas_Frescal.jpg?width=300> ;
     :instructions """Combine onions and mushrooms in small microwave-safe bowl. Microwave 1 to 3 minutes or until onions are soft. Place spinach in 1 1/2 quart microwave-safe casserole. Cover and microwave 6 to 9 minutes, breaking up and rearranging every 3 minutes, until defrosted. Drain well.
 Add onion mixture to spinach, along with cottage cheese, parmesan cheese, eggs, salt and pepper. Stir well to blend. Microwave, uncovered, 8 to 11 minutes, rotating dish if necessary every 3 minutes, until misture is headted through and set.
 Sprinkle grated cheese over top and dust lightly with paprika. Microwave about 1 minute longer to melt cheese. Let stand 3 minutes before serving.
@@ -9111,7 +9132,7 @@ recipes:ThreeLayerChocolateMayonnaiseCake a :Cake,
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Cocoa ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "cocoa"@en ],
         [ a :Ingredient ;
@@ -9146,7 +9167,7 @@ recipes:ThumbprintCookies a :Cookie,
         :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Shortening ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "Crisco (shortening)"@en ],
         [ a :Ingredient ;
@@ -9156,7 +9177,7 @@ recipes:ThumbprintCookies a :Cookie,
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -9185,17 +9206,17 @@ recipes:TopRamenSalad a :Recipe,
             :name "chicken Ramen"@en ],
         [ a :Ingredient ;
             :food food:Oil ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "oil"@en ],
         [ a :Ingredient ;
             :food food:Vinegar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "vinegar"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
@@ -9217,17 +9238,17 @@ recipes:TortillaSoup a :Recipe,
             :name "chopped green chiles"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "onion, chopped"@en ],
         [ a :Ingredient ;
             :food food:Cumin ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "ground cumin"@en ],
         [ a :Ingredient ;
             :food food:Oregano ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "diced oregano leaves, crushed"@en ],
         [ a :Ingredient ;
@@ -9247,7 +9268,7 @@ recipes:TortillaSoup a :Recipe,
             :name "water"@en ],
         [ a :Ingredient ;
             :food food:Tomato ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "tomato, chopped"@en ],
         [ a :Ingredient ;
@@ -9275,7 +9296,7 @@ recipes:TulelakePotatoCasserole a :Recipe ;
             :name "frozen hashbrown potatoes, thawed"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "butter, melted"@en ],
         [ a :Ingredient ;
@@ -9285,7 +9306,7 @@ recipes:TulelakePotatoCasserole a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
@@ -9310,7 +9331,7 @@ recipes:TulelakePotatoCasserole a :Recipe ;
             :name "sour cream"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "butter, melted"@en ],
         [ a :Ingredient ;
@@ -9369,7 +9390,7 @@ recipes:TwoLayerChocolateMayonnaiseCake a :Cake,
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:Cocoa ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "cocoa"@en ],
         [ a :Ingredient ;
@@ -9406,17 +9427,17 @@ recipes:UpsideDownCake a :Cake,
     :hasDbpediaLink dbpedia:Upside-down_cake ;
     :hasIngredient [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "butter"@en ],
         [ a :Ingredient ;
             :food food:BrownSugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "brown sugar"@en ],
         [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.6666666666666666 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
@@ -9436,12 +9457,12 @@ recipes:UpsideDownCake a :Cake,
             :name "sifted flour"@en ],
         [ a :Ingredient ;
             :food food:BakingPowder ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Teaspoon ] ;
             :name "baking powder"@en ],
         [ a :Ingredient ;
             :food food:Salt ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "salt"@en ],
         [ a :Ingredient ;
@@ -9470,7 +9491,8 @@ recipes:VealParmigan a :Recipe ;
             :name "veal, sliced thinly"@en ],
         [ a :Ingredient ;
             :food food:Mozzarella ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.5 ;
+                    :unit measurements:Pound ] ;
             :name "mozzarella, sliced thinly"@en ],
         [ a :Ingredient ;
             :food food:Oil ;
@@ -9489,7 +9511,7 @@ recipes:VealParmigan a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
@@ -9504,7 +9526,7 @@ recipes:VealParmigan a :Recipe ;
             :name "bread crumbs"@en ],
         [ a :Ingredient ;
             :food food:ParmesanCheese ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "grated parmesan cheese"@en ],
         [ a :Ingredient ;
@@ -9514,7 +9536,7 @@ recipes:VealParmigan a :Recipe ;
             :name "oil"@en ],
         [ a :Ingredient ;
             :food food:Parmesan ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "parmesan"@en ],
         [ a :Ingredient ;
@@ -9539,7 +9561,7 @@ recipes:VealScallopini a :Recipe ;
             :name "veal steak, sliced thinly"@en ],
         [ a :Ingredient ;
             :food food:Flour ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "flour"@en ],
         [ a :Ingredient ;
@@ -9559,7 +9581,7 @@ recipes:VealScallopini a :Recipe ;
             :name "sauterne wine"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "onion"@en ] ;
     :hasThumbnail <http://commons.wikimedia.org/wiki/Special:FilePath/Scaloppine_al_limone.jpg?width=300> ;
@@ -9570,7 +9592,7 @@ recipes:Walnut-Raisinpie a :Pie,
         :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
@@ -9580,7 +9602,7 @@ recipes:Walnut-Raisinpie a :Pie,
             :name "walnuts, chopped"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "butter"@en ],
         [ a :Ingredient ;
@@ -9604,12 +9626,12 @@ recipes:WalnutPie a :Pie,
         :Recipe ;
     :hasIngredient [ a :Ingredient ;
             :food food:Sugar ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "sugar"@en ],
         [ a :Ingredient ;
             :food food:CornSyrup ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.75 ;
                     :unit measurements:Cup ] ;
             :name "light corn syrup"@en ],
         [ a :Ingredient ;
@@ -9629,7 +9651,7 @@ recipes:WalnutPie a :Pie,
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Nutmeg ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "nutmeg"@en ],
         [ a :Ingredient ;
@@ -9658,7 +9680,7 @@ recipes:WalnutSquares a :Cookie,
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Nutmeg ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Teaspoon ] ;
             :name "nutmeg"@en ],
         [ a :Ingredient ;
@@ -9684,11 +9706,13 @@ recipes:WildMushroomandSpinachLasanga a :Recipe ;
             :name "lasagna noodles"@en ],
         [ a :Ingredient ;
             :food food:ButtonMushrooms ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.75 ;
+                    :unit measurements:Pound ] ;
             :name "button mushrooms, chopped"@en ],
         [ a :Ingredient ;
             :food food:Mushrooms ;
-            :hasImperialMeasurementUnit [ :unit measurements:Pound ] ;
+            :hasImperialMeasurementUnit [ :quantity 0.5 ;
+                    :unit measurements:Pound ] ;
             :name "shitake mushrooms, chopped"@en ],
         [ a :Ingredient ;
             :food food:Spinach ;
@@ -9707,12 +9731,12 @@ recipes:WildMushroomandSpinachLasanga a :Recipe ;
             :name "garlic, finely chopped"@en ],
         [ a :Ingredient ;
             :food food:Butter ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "butter"@en ],
         [ a :Ingredient ;
             :food food:Flour ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Cup ] ;
             :name "flour"@en ],
         [ a :Ingredient ;
@@ -9722,7 +9746,7 @@ recipes:WildMushroomandSpinachLasanga a :Recipe ;
             :name "milk"@en ],
         [ a :Ingredient ;
             :food food:Gorgonzola ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "gorgonzola, crumbled"@en ],
         [ a :Ingredient ;
@@ -9752,7 +9776,7 @@ recipes:WildMushroomandSpinachLasanga a :Recipe ;
             :name "dried basil"@en ],
         [ a :Ingredient ;
             :food food:Nutmeg ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "grated nutmeg"@en ],
         [ a :Ingredient ;
@@ -9784,7 +9808,7 @@ recipes:Zucchini-HamCheesePie a :Recipe ;
             :name "garlic, minced"@en ],
         [ a :Ingredient ;
             :food food:Oil ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.3333333333333333 ;
                     :unit measurements:Cup ] ;
             :name "oil"@en ],
         [ a :Ingredient ;
@@ -9804,7 +9828,7 @@ recipes:Zucchini-HamCheesePie a :Recipe ;
             :name "sour cream"@en ],
         [ a :Ingredient ;
             :food food:Oregano ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "oregano"@en ],
         [ a :Ingredient ;
@@ -9814,7 +9838,7 @@ recipes:Zucchini-HamCheesePie a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.25 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
@@ -9835,7 +9859,7 @@ recipes:ZucchiniAppleSlaw a :Recipe,
         :SaladAndDressings ;
     :hasIngredient [ a :Ingredient ;
             :food food:Mayonnaise ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "mayonnaise"@en ],
         [ a :Ingredient ;
@@ -9860,7 +9884,7 @@ recipes:ZucchiniAppleSlaw a :Recipe,
             :name "zucchini, coarsely shredded"@en ],
         [ a :Ingredient ;
             :food food:GreenOnions ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "green onions, sliced"@en ],
         [ a :Ingredient ;
@@ -9908,17 +9932,17 @@ recipes:ZucchiniCasserole a :Recipe ;
             :name "cheese, shredded"@en ],
         [ a :Ingredient ;
             :food food:ParmesanCheese ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "parmesan cheese"@en ],
         [ a :Ingredient ;
             :food food:Thyme ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "thyme"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.125 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
@@ -9952,12 +9976,12 @@ recipes:ZucchiniPatties a :Recipe ;
             :name "flour"@en ],
         [ a :Ingredient ;
             :food food:Parsley ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "parsley"@en ],
         [ a :Ingredient ;
             :food food:Onion ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "onion"@en ],
         [ a :Ingredient ;
@@ -9967,12 +9991,12 @@ recipes:ZucchiniPatties a :Recipe ;
             :name "salt"@en ],
         [ a :Ingredient ;
             :food food:Pepper ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Teaspoon ] ;
             :name "pepper"@en ],
         [ a :Ingredient ;
             :food food:OliveOil ;
-            :hasStandardMeasurementUnit [ :quantity measurements:Some ;
+            :hasStandardMeasurementUnit [ :quantity 0.5 ;
                     :unit measurements:Cup ] ;
             :name "olive oil"@en ],
         [ a :Ingredient ;
