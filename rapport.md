@@ -104,10 +104,12 @@ qui permet de limiter les URI possibles aux URI qui désignent des unités.
 
 Pour obtenir toutes les informations nécessaires à la réalisation de notre application,
 nous avons utilisé plusieurs sources de données, et fait de nombreux traitements sur ces données,
-afin de les standardiser pour les rendre exploitables.
+afin de les standardiser pour les rendre exploitables. Nous retrouvons une vue d'ensemble de ces traitements dans la figure 1.
+
+![Schéma de la pipeline de traitement des données. Cette illustration détaille les étapes clés impliquées dans notre processus de traitement de données. Le processus commence par la conversion de fichiers CSV en format RDF. Ensuite, les données sont restructurées et nettoyées grâce à l'application de requêtes SPARQL. Ceci est suivi par l'extraction et la désambiguïsation d'entités à partir du texte. Finalement, les données sont enrichies à l'aide de DBPedia.](./images/data-pipeline.png)
+
 
 ### Extraction et Mise en forme depuis le CSV
-
 
 Pour commencer, nous avons lifté les données d’un CSV contenant une liste de recettes en utilisant csv2rdf.
 Le [CSV](https://github.com/cweber/cookbook/blob/master/recipes.csv) choisi décrit chaque recette avec une colonne pour le nom,
@@ -157,25 +159,28 @@ Une fois cela fait, nous pouvons définir la catégorie comme le type des recett
 
 ### Extraction de mots-clés, désambiguïsation et linking
 
-Nous avons ensuite utilisé Dbpedia Spotlight pour identifier les nourritures désignées par le nom des ingrédients.
+Dans nos données, nous pouvons retrouver des ingrédient dont les aliments sont facilement identifiables comme "Tomato" mais
+aussi d'ingrédient plus difficile à identifier comme "broccoli florets, cut or broken". Pour pouvoir extraire correctement les
+entités depuis le texte, nous commençons par extraire les mots clés des noms d'ingrédients à l'aide de KeyBERT. Pour cela, nous 
+utilisons comme paramètre 1 à 3 n-grams car il est possible d'avoir des noms d'aliments en un mot comme "Potato" mais 
+également des noms composés de plusieurs mots comme "Green onion". Une fois les différents n-grams récupérés, nous utilisons
+DBSpotlight pour retrouver les entités associées sur DBPedia. Finalement, nous vérifions que l'entité extraite
+est bien un aliment. 
+Pour cela, nous effectuons une requête SPARQL à DBPedia pour savoir si l'entité est de type *(dbo:Food)*,
+si elle est l'ingrédient d'une recette *(dbo:mainIngredient)*, si elle possède un ingrédient ou si elle possède des informations
+nutritionnelles *(dbo:protein)*. 
+Si l'entité extraite n'est pas un aliment, nous essayons le mot clef suivant fourni par KeyBERT.
+Cette méthode nous a permis d’ajouter un aliment pour tous les ingrédients que nous avons reconnu.
+Par la suite, nous avons effectué des requêtes à DBPedia pour obtenir des informations supplémentaires sur les ingrédients. Notamment,
+nous avons cherché à quelle catégorie d'aliments ceux-ci appartenaient (viande, légumes, fruits). Ces informations nous permettent
+par la suite d'attribuer chaque recette à un ou plusieurs régimes alimentaires.
 
-Pour cela, nous avons récupéré le nom de chaque ingrédient que nous avons fourni à dbpedia pour essayer de reconnaître une entité.
-La difficulté de cette étape vient du fait que les noms sont susceptibles de contenir plusieurs entitées.
-Dans ce cas, nous sélectionnons l’entité avec le support le plus important  et qui est de la nourriture.
-Pour vérifier que l’entité est une nourriture,
-nous cherchons dans dbpedia à l'aide d’une requête fédérée si l’entité est un ingrédient d’une recette,
-ou défini avec le type dbo:Food.
-
-Cela nous a permis d’ajouter une nourriture pour tous les ingrédients que nous avons reconnu.
-Ceux-ci nous permettront ensuite de catégoriser les recettes en fonction de ce qu’elles contiennent. 
-
-Nous nous servons également de dbpedia pour ajouter des informations sur les recettes lorsque cela est possible.
-Nous recherchons dans le nom de la recette dans dbpedia. Si celui-ci est trouvé,
-nous lions notre recette à la recette dans dbpedia, et nous ajoutons à notre recette la miniature
-
-
-### Ajout de données depuis DBPedia
-
+Par la suite, nous avons souhaité retrouver nos recettes sur DBPedia lorsque celles-ci y sont présente. Cependant,
+dans ce cas, les résultat fournit par DBSpotlight nous ont semblé moins pertinents que les résultat fournir par la fonctionnalité de recherche de 
+Wikipedia.
+Nous avons donc choisit d'utiliser l'API Wikipedia Search pour rechercher directement une page Wikipedia associée au nom de la recette.
+Nous pouvons ensuite effectuer une requête a DBPedia pour récupérer l'entité DBPedia associée à cette page. Si celle-ci est trouvé,
+nous lions notre recette à la recette dans DBpedia, et nous ajoutons à notre recette l'image miniature associée *(:hasThumbnail)*.
 
 ### Inférence sur les données
 
@@ -227,4 +232,3 @@ qui nous permet de récupérer si cela existe, un commentaire permettant de déc
 
 ## Annexes
 
-![Pipeline de traitement des données](./images/data-pipeline.png)
