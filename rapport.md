@@ -110,51 +110,52 @@ afin de les standardiser pour les rendre exploitables.
 
 
 Pour commencer, nous avons lifté les données d’un CSV contenant une liste de recettes en utilisant csv2rdf.
-Le CSV choisi ( https://github.com/cweber/cookbook/blob/master/recipes.csv ) décrit chaque recette avec une colonne pour le nom,
+Le [CSV](https://github.com/cweber/cookbook/blob/master/recipes.csv) choisi décrit chaque recette avec une colonne pour le nom,
 une colonne pour la catégorie de recettes et une colonne avec les instructions.
-Les quantités, ingrédients et unités sont décrits dans les colonnes ‘UnitX’,
-’IngredientX’ et ‘QuantityX’, ou X est un nombre entre 1 et 19.
-Les données dans ces colonnes sont toutes des chaînes de caractères ou Null.
+Les quantités, ingrédients et unités sont décrits dans les colonnes "UnitX",
+"IngredientX" et "QuantityX", ou X est un nombre entre 1 et 19.
+Les données de ces colonnes sont toutes des chaînes de caractères ou Null.
 
 Une fois les données insérées dans un graph RDF avec csv2rdf,
 nous les avons transformées pour pouvoir les utiliser.
 Pour traiter ces données, nous avons utilisé Corese-command pour faire de multiples requêtes CONSTRUCT sur les données.
-La première chose a été de créer les nodes anonymes désignant les ingrédients,
+La première chose a été de créer les n\oe{}uds anonymes désignant les ingrédients,
 qui regroupent un aliment, une quantité et une unité.
 Nous pouvons ensuite supprimer tous les ingrédients sans noms,
-ce qui évite les nombreuses nodes anonymes du aux colonnes Null dans le CSV.
+ce qui évite les nombreux n\oe{}uds anonymes du aux colonnes Null dans le CSV.
 
-Une fois cela fait, il a fallu standardiser les unités et les quantités.
-Idéalement, toutes les quantités devraient être exprimées comme un nombre décimal,
+Une fois cela fait, il a été nécessaire de standardiser les unités et les quantités.
+Idéalement, toutes les quantités devraient être exprimées par un nombre décimal,
 et toutes les unités devraient être un concept RDF défini dans le thésaurus Measurements.
-Pour ce faire, nous avons d’abord utilisé des expressions régulières pour extraire la quantité de l’unité lorsque cela était nécessaire.
-Par exemple l'unité “6 oz. pkg.” contient à la fois l’unité,
-measurements:WeightOunce et la quantité, 6.
-Nous extrayons donc cette quantité, que nous mappons à la relation :quantityFromUnit de façon temporaire. 
+Pour ce faire, nous avons tout d’abord utilisé des expressions régulières pour extraire la quantité de l’unité lorsque cela était nécessaire.
+Par exemple l'unité "6 oz. pkg." contient à la fois l’unité,
+*(measurements:WeightOunce)* et la quantité (6).
+Nous extrayons donc cette quantité, que nous associons à la relation *:quantityFromUnit* de façon temporaire. 
 
-Nous avons ensuite utilisé des regex pour remplacer les chaînes de caractères par un 
+Nous avons ensuite utilisé des expressions régulières pour remplacer les chaînes de caractères par un 
 maximum d'unités existantes dans le thésaurus Measurements.
 	
 Nous pouvons ensuite convertir les chaînes de caractères des quantités en unités.
-Pour cela, nous utilisons encore une fois des regex pour pouvoir récupérer les quantités.
-En effet, le CSV contient des quantités sous différents formats qu’il faut prendre en compte,
-comme par exemple “1.5”, “1 ½” et “3/2”.  
-Nous avons également introduit des quantités indéfinies,
-qui sont measurements:Few, measurements:Some et measurements:Many,
-pour pouvoir mapper les quantités indéfinies dans le CSV comme “a few”.
-Cela permettra de pouvoir les convertir du système métrique au système impérial et vice versa.
+Pour cela, nous utilisons encore une fois des expressions régulières pour pouvoir récupérer les quantités.
+En effet, le CSV contient des quantités sous différents formats qu'il faut prendre en compte,
+comme par exemple "1.5", "1 ½" et "3/2".  
+
+Nous avons également introduit des quantités approximatives,
+qui sont *measurements:Few*, *measurements:Some* et *measurements:Many*,
+pour pouvoir mapper les quantités indéfinies dans le CSV comme "a few".
+Cela permettra de pouvoir les convertir du système métrique au système impérial et vice versa grâce à leur propriété
+*:hasQuantityValue*. Nous pouvons ainsi convertir *some ounces* en 3 ounces puis en 85 grammes.
 
 Une fois les unités et les quantités définies,
-nous pouvons multiplier les quantités par le champ :quantityFromUnit récupéré précédemment,
+nous pouvons multiplier les quantités par le champ *:quantityFromUnit* récupéré précédemment,
 et séparer les unités selon leur système de mesures. Cela permet d’identifier rapidement les unités impériales,
 ou standards, ce qui nous permet d’utiliser un CONSTRUCT pour ajouter facilement 
-les quantités et unités converties dans un autre système de mesure, en utilisant la propriété :conversionRatio.
+les quantités et unités converties dans un autre système de mesure, en utilisant la propriété *:conversionRatio*.
 
-La dernière étape pour le CSV est de mapper la colonne Catégorie aux catégories dans le vocabulaire.
+La dernière étape pour le CSV est de mapper la colonne Catégorie aux catégories de notre vocabulaire.
 Une fois cela fait, nous pouvons définir la catégorie comme le type des recettes.
 
-### Extraction de mots-clés, désambiguation et linking
-
+### Extraction de mots-clés, désambiguïsation et linking
 
 Nous avons ensuite utilisé Dbpedia Spotlight pour identifier les nourritures désignées par le nom des ingrédients.
 
