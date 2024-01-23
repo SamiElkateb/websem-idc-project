@@ -158,6 +158,11 @@ async def get_recipe(recipe_identifier: str):
         print("Names : \n", row_quantities.get("ingredientNames"))
         print("X : \n", row_quantities.get("x"))
 
+    # Nous avions initialement scindé notre requête en 2 car RDFLib ne permet pas d'effectuer un
+    # appel à un service à travers une variable (?urlMicroServ)
+    # Nous avons par la suite changé notre serveur pour utiliser Corese Serveur.
+    # Cependant, nous avons préférer ne pas regrouper les 2 requête par manque de temps et pour
+    # ne pas risquer de détériorer les fonctionnalités de notre application
     query = f"""
     prefix :        <http://project-kitchenchef.fr/schema#>
     prefix recipes: <http://project-kitchenchef.fr/recipes/data#>
