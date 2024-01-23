@@ -73,9 +73,9 @@ Ces relations nous permettent, une fois couplées à l'inférence OWL, de lier l
 Nous pouvons ainsi créer la classe *:RecipeWithAnimalProduct* qui regroupe les recettes ayant un aliment ayant pour 
 concept plus large *food:animalProduct*. Nous pouvons ensuite en déduire les recettes veganes qui sont l'intersection
 des recettes et du complément de *:RecipeWithAnimalProduct*.
-Cependant, le raisonneur OWL RL ne réaliser pas l'inférence complementOf qui est prise en charge par les raisonneurs OWL DL.
-Nous avons donc créé une propriété *:complementaryRecipe* que nous utilisons pour ce cas d'usage. Nous l'utilisons
-pour générer les recettes complémentaires grâce à une requête SPARQL lancée au démarrage de notre serveur.
+Cependant, le raisonneur OWL RL ne réalise pas l'inférence complementOf qui est prise en charge par les raisonneurs OWL DL.
+Nous avons donc créé une propriété *:complementaryRecipe* que nous utilisons pour ce cas d'usage. Elle nous permet
+de générer les recettes complémentaires grâce à une requête SPARQL lancée au démarrage de notre serveur.
 
 
 Une fois le vocabulaire et les thésaurus définis,
@@ -95,7 +95,7 @@ Par exemple, nous vérifions que les quantités soient soit des nombres décimau
 l’une des valeurs correspondant aux quantités approximatives que nous avons déclarées dans le thésaurus des mesures.
 Finalement, cela nous permet de vérifier que l’unité liée à la quantité d’un ingrédient 
 est une IRI qui correspond à une unité dans le thésaurus Measurements.
-Pour vérifier cette condition, nous pouvons utiliser la propriété sh:pattern 
+Pour vérifier cette condition, nous pouvons utiliser la propriété *sh:pattern* 
 qui permet de limiter les URI possibles aux URI qui désignent des unités.
 
 
@@ -111,7 +111,7 @@ afin de les standardiser pour les rendre exploitables. Nous retrouvons une vue d
 ### Extraction et Mise en forme depuis le CSV
 
 Pour commencer, nous avons lifté les données d’un CSV contenant une liste de recettes en utilisant csv2rdf.
-Le [CSV](https://github.com/cweber/cookbook/blob/master/recipes.csv) choisi décrit chaque recette avec une colonne pour le nom,
+Le [CSV choisi](https://github.com/cweber/cookbook/blob/master/recipes.csv) décrit chaque recette avec une colonne pour le nom,
 une colonne pour la catégorie de recettes et une colonne avec les instructions.
 Les quantités, ingrédients et unités sont décrits dans les colonnes "UnitX",
 "IngredientX" et "QuantityX", ou X est un nombre entre 1 et 19.
@@ -143,7 +143,7 @@ comme "1.5", "1 ½" et "3/2".
 
 Nous avons également introduit des quantités approximatives,
 qui sont *measurements:Few*, *measurements:Some* et *measurements:Many*,
-pour pouvoir mapper les quantités indéfinies dans le CSV comme "a few".
+pour pouvoir mapper les quantités approximatives dans le CSV comme "a few".
 Cela permettra de pouvoir les convertir du système métrique au système impérial et vice versa grâce à leur propriété
 *:hasQuantityValue*. Nous pouvons ainsi convertir *some ounces* en 3 ounces puis en 85 grammes.
 
@@ -159,7 +159,7 @@ Une fois cela fait, nous pouvons définir la catégorie comme le type des recett
 ### Extraction de mots-clés, désambiguïsation et linking
 
 Dans nos données, nous pouvons retrouver des ingrédients dont les aliments sont facilement identifiables comme "Tomato" mais
-aussi d'ingrédient plus difficile à identifier comme "broccoli florets, cut or broken". Pour pouvoir extraire correctement les
+aussi d'autres ingrédients plus difficile à identifier comme "broccoli florets, cut or broken". Pour pouvoir extraire correctement les
 entités depuis le texte, nous commençons par extraire les mots clés des noms d'ingrédients à l'aide de KeyBERT. Pour cela, nous 
 utilisons comme paramètre 1 à 3 n-grams car il est possible d'avoir des noms d'aliments en un mot comme "Potato" mais 
 également des noms composés de plusieurs mots comme "Green onion". Une fois les différents n-grams récupérés, nous utilisons
