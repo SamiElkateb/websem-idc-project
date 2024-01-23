@@ -46,7 +46,7 @@ Il est important de faire la distinction entre **un aliment** (*:Food*) qui est 
 et un **ingrédient** (*:Ingredient*) qui fait partie d'une recette et qui est défini par une quantité, une unité et **un aliment** (*:Food*).
 
 Dans le vocabulaire, nous avons défini la plupart des catégories de plats sous forme de classes.
-Celles classes nous permettent de typer nos recettes.
+Ces classes nous permettent de typer nos recettes.
 Nous avons par exemple, la classe *:Cookie* qui est une sous-classe de la classe *:Dessert*.
 Ces données pourraient nous permettre de fournir plus d'informations sur les recettes
 ainsi que d'offrir plus de choix de recherche à l'utilisateur.
@@ -69,10 +69,10 @@ Ses entités sont précédées du prefix *food:* et il possède en concepts prin
 toutes les grandes catégories d’aliments, comme la viande,
 le poisson, les fruits et les légumes.
 Les autres aliments sont liés à ces concepts principaux à l'aide de la relation *skos:broaderTransitive*.
-Ses relations nous permettent, une fois couplées à l'inférence OWL, de lier les recettes à des régimes alimentaires.
+Ces relations nous permettent, une fois couplées à l'inférence OWL, de lier les recettes à des régimes alimentaires.
 Nous pouvons ainsi créer la classe *:RecipeWithAnimalProduct* qui regroupe les recettes ayant un aliment ayant pour 
 concept plus large *food:animalProduct*. Nous pouvons ensuite en déduire les recettes veganes qui sont l'intersection
-de complément des recettes et des *:RecipeWithAnimalProduct*.
+des recettes et du complément de *:RecipeWithAnimalProduct*.
 Cependant, le raisonneur OWL RL ne réaliser pas l'inférence complementOf qui est prise en charge par les raisonneurs OWL DL.
 Nous avons donc créé une propriété *:complementaryRecipe* que nous utilisons pour ce cas d'usage. Nous l'utilisons
 pour générer les recettes complémentaires grâce à une requête SPARQL lancée au démarrage de notre serveur.
