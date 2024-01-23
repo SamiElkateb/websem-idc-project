@@ -9,6 +9,7 @@ de découvrir et de choisir des recettes de cuisine adaptées, en fonction de le
 des ingrédients dont ils disposent.
 Pour cela, nous avons récupéré et structuré les données de plusieurs sources,
 afin de créer un ensemble cohérent, comportant toutes les informations nécessaires aux fonctionnalités souhaitées.
+[Lien GitHub](https://github.com/SamiElkateb/websem-idc-project)
 
 ## Description et spécifications de l’application
 
@@ -217,10 +218,10 @@ pour avoir entre autres, la quantité de sucre ou le nombre de calories de la re
 Pour faire appel à ce microservice de façon dynamique,
 lorsque l'utilisateur accède à une recette, nous construisons la query de la requête au service 
 avec les quantités et le nom de chaque ingrédient. Nous concaténons ensuite cette query à l'URL du microservice.
-À travers cette requête, nous pouvons récupérer les informations de la recette depuis notre graphe, les
+À travers cette requête, nous pouvons récupérer les informations de la recette depuis notre graph, les
 informations nutritionnelles depuis le microservice CalorieNinjas et un commentaire permettant de décrire la recette
 lorsque nous disposons du lien vers l'entité DBPedia.
 
 ![Diagramme de séquence pour une requête fédérée. Cette illustration représente les différentes étapes de la récupération d'informations relatives à une recette. 
-Initialement, une requête est envoyée à notre serveur. Ce dernier procède ensuite à une requête fédérée vers le serveur Corese. Le serveur Corese interroge alors notre graphe de connaissances ainsi que deux sources externes : le microservice agissant comme un proxy pour l'API Calorie Ninja et la base de connaissances DBpedia.](./images/microservice.png)
+Initialement, une requête est envoyée à notre serveur. Ce dernier procède ensuite à une requête fédérée vers le serveur Corese. Le serveur Corese interroge alors notre graph de connaissances ainsi que deux sources externes : le microservice agissant comme un proxy pour l'API Calorie Ninja et la base de connaissances DBpedia.](./images/microservice.png)
 
