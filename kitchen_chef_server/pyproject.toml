@@ -8,7 +8,7 @@ packages = [{include = "kitchen_chef_server"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-fastapi = "^0.108.0"
+fastapi = "^0.109.1"
 rdflib = "^7.0.0"
 uvicorn = {extras = ["standard"], version = "^0.25.0"}
 pyshacl = "^0.25.0"
